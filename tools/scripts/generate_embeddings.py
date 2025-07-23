@@ -65,9 +65,11 @@ class EmbeddingGenerator:
         self.model = "text-embedding-3-small"
         self.dimensions = 1024
         
-        # Cost estimation (approximate as of 2024)
-        self.cost_per_1k_tokens = 0.00002  # $0.020 per 1M tokens
-        self.avg_tokens_per_response = 50  # Rough estimate
+        # Cost estimation for text-embedding-3-small (as of 2024)
+        # OpenAI pricing: $0.02 per 1M tokens = $0.00002 per 1K tokens
+        self.cost_per_1k_tokens = 0.00002  
+        # Average response length is typically 100-200 tokens for dialogue responses
+        self.avg_tokens_per_response = 150  # More realistic estimate
         
         # Progress tracking
         self.total_responses = 0
@@ -294,13 +296,15 @@ class EmbeddingGenerator:
         estimated_cost, estimated_minutes = self.estimate_cost_and_time(self.total_responses)
         
         # Display summary and get confirmation
+        total_tokens = self.total_responses * self.avg_tokens_per_response
         print("\n" + "="*60)
         print(f"EMBEDDING GENERATION SUMMARY FOR GD{self.gd_number}")
         print("="*60)
         print(f"Total responses to embed: {self.total_responses:,}")
         print(f"Open-ended questions: {len(question_indices)}")
+        print(f"Estimated tokens: {total_tokens:,} (~{self.avg_tokens_per_response} per response)")
         print(f"Estimated time: {timedelta(minutes=int(estimated_minutes))}")
-        print(f"Estimated cost: ${estimated_cost:.2f}")
+        print(f"Estimated cost: ${estimated_cost:.4f} (at $0.02 per 1M tokens)")
         print(f"Model: {self.model}")
         print(f"Dimensions: {self.dimensions}")
         print("="*60)
