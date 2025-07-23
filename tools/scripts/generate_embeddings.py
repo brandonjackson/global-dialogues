@@ -3,8 +3,11 @@
 Generate embeddings for Global Dialogues responses.
 
 This script generates embeddings for all open-ended responses in a Global Dialogue dataset
-using OpenAI's text-embedding-3-small model. The process typically takes ~2 minutes per 
-1000 responses (approximately 30-50 minutes for a full dataset).
+using OpenAI's text-embedding-3-small model. It reads the raw aggregate CSV file exported
+directly from Remesh and saves embeddings in the same format as the notebook.
+
+The process typically takes ~2 minutes per 1000 responses (approximately 30-50 minutes 
+for a full dataset).
 
 Usage:
     python generate_embeddings.py --gd_number <N>
@@ -75,7 +78,8 @@ class EmbeddingGenerator:
         """Check if all prerequisites are met."""
         if not self.aggregate_file.exists():
             logger.error(f"Aggregate file not found: {self.aggregate_file}")
-            logger.info(f"Please run preprocessing first: make preprocess GD={self.gd_number}")
+            logger.info(f"Please ensure you have exported the aggregate CSV from Remesh")
+            logger.info(f"Expected file: {self.aggregate_file}")
             return False
         
         return True
@@ -92,8 +96,8 @@ class EmbeddingGenerator:
         return True
     
     def load_aggregate_data(self) -> List[pd.DataFrame]:
-        """Load the aggregate CSV file and parse it into the qs structure."""
-        logger.info(f"Loading aggregate data from {self.aggregate_file}")
+        """Load the raw aggregate CSV file (direct Remesh export) and parse it into the qs structure."""
+        logger.info(f"Loading raw aggregate data from {self.aggregate_file}")
         
         # This mimics the notebook's CSV loading logic
         with open(self.aggregate_file, 'r') as file:
