@@ -233,7 +233,7 @@ generate-embeddings:
 	fi
 	@if [ ! -f Data/GD$(GD)/GD$(GD)_aggregate.csv ]; then \
 		echo "$(RED)Error: Data/GD$(GD)/GD$(GD)_aggregate.csv not found$(RESET)"; \
-		echo "$(YELLOW)Please run preprocessing first: make preprocess GD=$(GD)$(RESET)"; \
+		echo "$(YELLOW)Please ensure you have exported the aggregate CSV from Remesh$(RESET)"; \
 		exit 1; \
 	fi
 	@echo "$(BLUE)Generating embeddings for GD$(GD)...$(RESET)"
