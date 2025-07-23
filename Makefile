@@ -16,6 +16,7 @@ RESET := \033[0m
         preprocess-all preprocess-tags analyze-all \
         consensus divergence indicators tags \
         download-embeddings download-all-embeddings \
+        generate-embeddings \
         run-thematic-ranking \
         pri pri-llm export-unreliable \
         preview-csvs
@@ -34,6 +35,7 @@ help:
 	@echo "  $(GREEN)make download-embeddings GD=<N>$(RESET) - Download embeddings for GD<N>"
 	@echo "  $(GREEN)make download-embeddings$(RESET)  - Show available embedding files and download options"
 	@echo "  $(GREEN)make download-all-embeddings$(RESET) - Download all embeddings"
+	@echo "  $(GREEN)make generate-embeddings GD=<N>$(RESET) - Generate embeddings for GD<N> (requires OPENAI_API_KEY)"
 	@echo ""
 	@echo "$(BLUE)Analysis Commands:$(RESET)"
 	@echo "  $(GREEN)make analyze GD=<N>$(RESET)       - Run full analysis pipeline on GD<N>"
@@ -214,6 +216,29 @@ download-embeddings:
 
 download-all-embeddings:
 	$(PYTHON) $(TOOLS_DIR)/download_embeddings.py --all
+
+# Generate embeddings using OpenAI API
+generate-embeddings:
+	@if [ -z "$(GD)" ]; then \
+		echo "$(RED)Error: Please specify GD number$(RESET)"; \
+		echo "$(YELLOW)Usage: make generate-embeddings GD=<N>$(RESET)"; \
+		echo "$(YELLOW)Example: make generate-embeddings GD=5$(RESET)"; \
+		exit 1; \
+	fi
+	@if [ ! -f .env ]; then \
+		echo "$(RED)Error: .env file with OPENAI_API_KEY not found$(RESET)"; \
+		echo "$(YELLOW)Please create a .env file with your OpenAI API key$(RESET)"; \
+		echo "$(YELLOW)Example: echo 'OPENAI_API_KEY=your_key_here' > .env$(RESET)"; \
+		exit 1; \
+	fi
+	@if [ ! -f Data/GD$(GD)/GD$(GD)_aggregate.csv ]; then \
+		echo "$(RED)Error: Data/GD$(GD)/GD$(GD)_aggregate.csv not found$(RESET)"; \
+		echo "$(YELLOW)Please run preprocessing first: make preprocess GD=$(GD)$(RESET)"; \
+		exit 1; \
+	fi
+	@echo "$(BLUE)Generating embeddings for GD$(GD)...$(RESET)"
+	@echo "$(YELLOW)WARNING: This is a long-running process (30-50 minutes) that uses ~$$20 of OpenAI credits$(RESET)"
+	$(PYTHON) $(TOOLS_DIR)/generate_embeddings.py --gd_number $(GD)
 
 # Thematic ranking using variables
 run-thematic-ranking:
