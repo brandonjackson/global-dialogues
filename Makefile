@@ -238,6 +238,7 @@ generate-embeddings:
 	fi
 	@echo "$(BLUE)Generating embeddings for GD$(GD)...$(RESET)"
 	@echo "$(YELLOW)WARNING: This is a long-running process (30-50 minutes) that will use OpenAI API credits$(RESET)"
+	@echo "$(GREEN)NOTE: Progress is automatically saved. If interrupted, you can resume by running the same command.$(RESET)"
 	$(PYTHON) $(TOOLS_DIR)/generate_embeddings.py --gd_number $(GD)
 
 # Thematic ranking using variables

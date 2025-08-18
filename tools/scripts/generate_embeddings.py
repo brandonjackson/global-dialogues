@@ -34,6 +34,11 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# Suppress HTTP request logs from OpenAI/httpx
+logging.getLogger("httpx").setLevel(logging.WARNING)
+logging.getLogger("openai").setLevel(logging.WARNING)
+logging.getLogger("httpcore").setLevel(logging.WARNING)
+
 # Load environment variables
 load_dotenv()
 
@@ -53,6 +58,7 @@ class EmbeddingGenerator:
         self.data_dir = Path("Data") / f"GD{gd_number}"
         self.aggregate_file = self.data_dir / f"GD{gd_number}_aggregate.csv"
         self.embeddings_file = self.data_dir / f"GD{gd_number}_embeddings.json"
+        self.checkpoint_file = self.data_dir / f"GD{gd_number}_embeddings_checkpoint.json"
         
         # Initialize OpenAI client
         api_key = os.getenv("OPENAI_API_KEY")
@@ -75,6 +81,7 @@ class EmbeddingGenerator:
         self.total_responses = 0
         self.processed_responses = 0
         self.start_time = None
+        self.checkpoint_data = None
         
     def check_prerequisites(self) -> bool:
         """Check if all prerequisites are met."""
@@ -96,6 +103,59 @@ class EmbeddingGenerator:
             return response == 'yes'
         
         return True
+    
+    def check_checkpoint(self) -> Dict[str, Any]:
+        """Check if a checkpoint exists and load it."""
+        if self.checkpoint_file.exists():
+            logger.info(f"Found checkpoint file: {self.checkpoint_file}")
+            try:
+                with open(self.checkpoint_file, 'r') as f:
+                    checkpoint = json.load(f)
+                
+                completed_questions = checkpoint.get('completed_questions', [])
+                total_processed = checkpoint.get('total_processed', 0)
+                
+                logger.info(f"Checkpoint contains {len(completed_questions)} completed questions")
+                logger.info(f"Total responses processed: {total_processed}")
+                
+                return checkpoint
+            except Exception as e:
+                logger.warning(f"Failed to load checkpoint: {e}")
+                return None
+        return None
+    
+    def save_checkpoint(self, qs: List[pd.DataFrame], completed_questions: List[int], 
+                       question_indices: List[int]) -> None:
+        """Save current progress to checkpoint file."""
+        checkpoint = {
+            'completed_questions': completed_questions,
+            'total_processed': self.processed_responses,
+            'timestamp': datetime.now().isoformat(),
+            'total_questions': len(question_indices),
+            'question_indices': question_indices
+        }
+        
+        # Save partial results
+        qs_checkpoint = []
+        for i, df in enumerate(qs):
+            if i in completed_questions:
+                # Save with embeddings
+                df_dict = df.to_dict('records')
+            else:
+                # Save without embeddings for uncompleted questions
+                df_without_embeddings = df.drop('embedding', axis=1) if 'embedding' in df.columns else df
+                df_dict = df_without_embeddings.to_dict('records')
+            qs_checkpoint.append(df_dict)
+        
+        checkpoint['partial_qs'] = qs_checkpoint
+        
+        # Write checkpoint
+        try:
+            with open(self.checkpoint_file, 'w') as f:
+                json.dump(checkpoint, f)
+            # Silent save - no logging to keep terminal clean
+        except Exception as e:
+            logger.error(f"Failed to save checkpoint: {e}")
     
     def load_aggregate_data(self) -> List[pd.DataFrame]:
         """Load the raw aggregate CSV file (direct Remesh export) and parse it into the qs structure."""
@@ -217,17 +277,41 @@ class EmbeddingGenerator:
         df['embedding'] = embeddings
         return df
     
-    def generate_embeddings(self, qs: List[pd.DataFrame], question_indices: List[int]) -> List[pd.DataFrame]:
+    def generate_embeddings(self, qs: List[pd.DataFrame], question_indices: List[int], 
+                          completed_questions: List[int] = None) -> List[pd.DataFrame]:
         """Generate embeddings for all open-ended responses."""
+        if completed_questions is None:
+            completed_questions = []
+            
         logger.info("Starting embedding generation...")
+        if completed_questions:
+            logger.info(f"Resuming from checkpoint - {len(completed_questions)} questions already completed")
+            
         self.start_time = time.time()
         
-        # Create progress bar
-        pbar = tqdm(total=self.total_responses, desc="Generating embeddings", unit="response")
+        # Calculate already processed responses for progress bar
+        already_processed = sum(len(qs[i]) for i in completed_questions if i in question_indices)
+        self.processed_responses = already_processed
+        
+        # Create progress bar with better formatting
+        pbar = tqdm(total=self.total_responses, initial=already_processed, 
+                   desc="Generating embeddings", unit=" responses",
+                   bar_format='{desc}: {percentage:3.0f}%|{bar}| {n_fmt}/{total_fmt} [{elapsed}<{remaining}, {rate_fmt}]')
         
         try:
-            for i in question_indices:
-                logger.info(f"Processing question {i+1}/{len(qs)}: {qs[i]['Question'].iloc[0][:80]}...")
+            # Log how many questions we're skipping if resuming
+            if completed_questions:
+                skip_count = len([i for i in question_indices if i in completed_questions])
+                logger.info(f"Skipping {skip_count} already completed questions")
+            
+            for idx, i in enumerate(question_indices):
+                # Skip if already completed
+                if i in completed_questions:
+                    continue
+                    
+                # Only log every 5th question to reduce clutter
+                if idx % 5 == 0:
+                    logger.info(f"Processing questions {i+1}-{min(i+5, len(qs))}/{len(qs)}...")
                 
                 # Update progress bar description
                 pbar.set_description(f"Question {i+1}/{len(qs)}")
@@ -238,15 +322,19 @@ class EmbeddingGenerator:
                 # Update progress
                 pbar.update(len(qs[i]))
                 
-                # Log progress
-                elapsed = time.time() - self.start_time
-                rate = self.processed_responses / elapsed if elapsed > 0 else 0
-                remaining = (self.total_responses - self.processed_responses) / rate if rate > 0 else 0
+                # Mark question as completed and save checkpoint
+                completed_questions.append(i)
+                self.save_checkpoint(qs, completed_questions, question_indices)
                 
-                logger.info(f"Progress: {self.processed_responses}/{self.total_responses} responses "
-                          f"({self.processed_responses/self.total_responses*100:.1f}%) - "
-                          f"Rate: {rate:.1f} resp/sec - "
-                          f"Est. remaining: {timedelta(seconds=int(remaining))}")
+                # Log progress every 5 questions or at milestones
+                if idx % 5 == 0 or idx == len(question_indices) - 1:
+                    elapsed = time.time() - self.start_time
+                    rate = (self.processed_responses - already_processed) / elapsed if elapsed > 0 else 0
+                    remaining = (self.total_responses - self.processed_responses) / rate if rate > 0 else 0
+                    
+                    logger.info(f"Checkpoint saved | {self.processed_responses}/{self.total_responses} responses "
+                              f"({self.processed_responses/self.total_responses*100:.1f}%) | "
+                              f"Est. remaining: {timedelta(seconds=int(remaining))}")
         
         finally:
             pbar.close()
@@ -277,13 +365,40 @@ class EmbeddingGenerator:
         if not self.check_prerequisites():
             return
         
-        # Check existing embeddings
-        if not self.check_existing_embeddings():
+        # Check for existing checkpoint
+        checkpoint = self.check_checkpoint()
+        completed_questions = []
+        qs = None
+        
+        if checkpoint:
+            response = input("\nA previous run was interrupted. Do you want to resume from checkpoint? (yes/no): ").strip().lower()
+            if response == 'yes':
+                completed_questions = checkpoint.get('completed_questions', [])
+                # Try to restore the partial qs data structure
+                if 'partial_qs' in checkpoint:
+                    logger.info("Restoring data from checkpoint...")
+                    qs = []
+                    for df_dict in checkpoint['partial_qs']:
+                        qs.append(pd.DataFrame(df_dict))
+                else:
+                    logger.info("No partial data in checkpoint, reloading from scratch...")
+                    qs = self.load_aggregate_data()
+            else:
+                # User chose not to resume, delete checkpoint
+                try:
+                    self.checkpoint_file.unlink()
+                    logger.info("Checkpoint deleted, starting fresh...")
+                except Exception as e:
+                    logger.warning(f"Failed to delete checkpoint: {e}")
+        
+        # Check existing embeddings only if not resuming
+        if not completed_questions and not self.check_existing_embeddings():
             logger.info("Embedding generation cancelled by user")
             return
         
-        # Load data
-        qs = self.load_aggregate_data()
+        # Load data if not already loaded from checkpoint
+        if qs is None:
+            qs = self.load_aggregate_data()
         
         # Count responses and estimate cost/time
         self.total_responses, question_indices = self.count_responses_to_embed(qs)
@@ -292,22 +407,31 @@ class EmbeddingGenerator:
             logger.warning("No open-ended responses found to embed")
             return
         
-        # Estimate cost and time
-        estimated_cost, estimated_minutes = self.estimate_cost_and_time(self.total_responses)
+        # Calculate remaining work
+        completed_responses = sum(len(qs[i]) for i in completed_questions if i in question_indices)
+        remaining_responses = self.total_responses - completed_responses
+        remaining_questions = len([i for i in question_indices if i not in completed_questions])
+        
+        # Estimate cost and time for remaining work
+        estimated_cost, estimated_minutes = self.estimate_cost_and_time(remaining_responses)
         
         # Display summary and get confirmation
-        total_tokens = self.total_responses * self.avg_tokens_per_response
+        total_tokens = remaining_responses * self.avg_tokens_per_response
         print("\n" + "="*60)
         print(f"EMBEDDING GENERATION SUMMARY FOR GD{self.gd_number}")
         print("="*60)
         print(f"Total responses to embed: {self.total_responses:,}")
-        print(f"Open-ended questions: {len(question_indices)}")
-        print(f"Estimated tokens: {total_tokens:,} (~{self.avg_tokens_per_response} per response)")
+        if completed_questions:
+            print(f"Already completed: {completed_responses:,} responses")
+            print(f"Remaining to process: {remaining_responses:,} responses")
+            print(f"Questions completed: {len(completed_questions)}/{len(question_indices)}")
+        print(f"Open-ended questions: {len(question_indices)} (remaining: {remaining_questions})")
         print(f"Estimated time: {timedelta(minutes=int(estimated_minutes))}")
-        print(f"Estimated cost: ${estimated_cost:.4f} (at $0.02 per 1M tokens)")
+        print(f"Estimated cost: ${estimated_cost:.2f}")
         print(f"Model: {self.model}")
         print(f"Dimensions: {self.dimensions}")
         print("="*60)
+        print("\nNOTE: Progress is saved after each question. If interrupted, you can resume later.")
         
         response = input("\nDo you want to proceed with embedding generation? (yes/no): ").strip().lower()
         if response != 'yes':
@@ -315,20 +439,32 @@ class EmbeddingGenerator:
             return
         
         # Generate embeddings
-        qs = self.generate_embeddings(qs, question_indices)
+        qs = self.generate_embeddings(qs, question_indices, completed_questions)
         
         # Save results
         self.save_embeddings(qs)
         
+        # Clean up checkpoint file on successful completion
+        if self.checkpoint_file.exists():
+            try:
+                self.checkpoint_file.unlink()
+                logger.info("Checkpoint file cleaned up")
+            except Exception as e:
+                logger.warning(f"Failed to delete checkpoint file: {e}")
+        
         # Final summary
         total_time = time.time() - self.start_time
-        logger.info("\n" + "="*60)
-        logger.info(f"EMBEDDING GENERATION COMPLETE")
-        logger.info("="*60)
-        logger.info(f"Total time: {timedelta(seconds=int(total_time))}")
-        logger.info(f"Average time per response: {total_time/self.total_responses:.2f} seconds")
-        logger.info(f"Output file: {self.embeddings_file}")
-        logger.info("="*60)
+        actual_processed = self.processed_responses - completed_responses
+        print("\n" + "="*60)
+        print(f"✓ EMBEDDING GENERATION COMPLETE")
+        print("="*60)
+        print(f"Total time: {timedelta(seconds=int(total_time))}")
+        if actual_processed > 0:
+            print(f"Processing rate: {actual_processed/total_time:.1f} responses/second")
+        print(f"Output saved to: {self.embeddings_file}")
+        file_size = self.embeddings_file.stat().st_size / (1024 * 1024)  # MB
+        print(f"File size: {file_size:.1f} MB")
+        print("="*60)
 
 
 def main():
@@ -350,9 +486,11 @@ def main():
         generator.run()
     except KeyboardInterrupt:
         logger.warning("\nEmbedding generation interrupted by user")
+        logger.info("Progress has been saved. You can resume by running the same command again.")
         sys.exit(1)
     except Exception as e:
         logger.error(f"Error during embedding generation: {e}")
+        logger.info("Progress has been saved. You can resume by running the same command again.")
         sys.exit(1)
 
 
