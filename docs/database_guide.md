@@ -108,7 +108,7 @@ SELECT * FROM responses_with_pri WHERE pri_score < 0.5;
 #### `responses_with_tags`
 Responses with concatenated tag names.
 ```sql
-SELECT Question_Text, Response_Text, tags 
+SELECT "Question", "Response", tags 
 FROM responses_with_tags 
 WHERE tags LIKE '%climate%';
 ```
@@ -121,11 +121,13 @@ WHERE tags LIKE '%climate%';
 -- Count total responses
 SELECT COUNT(*) FROM responses;
 
--- Find all responses from a specific country
-SELECT * FROM responses WHERE Country = 'United States';
+-- Find all responses with high votes
+SELECT "Question", "Response", "Star" 
+FROM responses 
+WHERE "Star" > 100;
 
 -- Get questions with highest divergence
-SELECT DISTINCT Question_ID, Question_Text, divergence_score
+SELECT DISTINCT "Question ID", "Question", divergence_score
 FROM responses
 WHERE divergence_score IS NOT NULL
 ORDER BY divergence_score DESC
@@ -138,25 +140,25 @@ LIMIT 10;
 -- Find low-reliability participants
 SELECT p.participant_id, p.pri_score, COUNT(r.response_id) as response_count
 FROM participants p
-JOIN responses r ON p.participant_id = r.Participant_ID
+JOIN responses r ON p.participant_id = r."Participant ID"
 WHERE p.pri_score < 0.3
 GROUP BY p.participant_id
 ORDER BY p.pri_score;
 
--- Responses with high divergence by segment
-SELECT Segment, AVG(divergence_score) as avg_divergence
+-- Responses with high divergence by language
+SELECT "Language", AVG(divergence_score) as avg_divergence
 FROM responses
 WHERE divergence_score IS NOT NULL
-GROUP BY Segment
+GROUP BY "Language"
 ORDER BY avg_divergence DESC;
 
 -- Most voted responses per question
-SELECT Question_ID, Question_Text, Response_Text, Vote_Count
+SELECT "Question ID", "Question", "Response", "Star"
 FROM responses r1
-WHERE Vote_Count = (
-    SELECT MAX(Vote_Count) 
+WHERE "Star" = (
+    SELECT MAX("Star") 
     FROM responses r2 
-    WHERE r2.Question_ID = r1.Question_ID
+    WHERE r2."Question ID" = r1."Question ID"
 );
 ```
 
@@ -172,7 +174,7 @@ ORDER BY usage_count DESC
 LIMIT 20;
 
 -- Responses with specific tag
-SELECT r.Question_Text, r.Response_Text, r.Vote_Count
+SELECT r."Question", r."Response", r."Star"
 FROM responses r
 JOIN response_tags rt ON r.response_id = rt.response_id
 JOIN tags t ON rt.tag_id = t.tag_id
@@ -193,20 +195,21 @@ LIMIT 10;
 ### Cross-Segment Analysis
 
 ```sql
--- Compare average PRI scores by country
-SELECT r.Country, AVG(p.pri_score) as avg_pri
+-- Compare average PRI scores by language
+SELECT r."Language", AVG(p.pri_score) as avg_pri, COUNT(DISTINCT r."Participant ID") as participant_count
 FROM responses r
-JOIN participants p ON r.Participant_ID = p.participant_id
-GROUP BY r.Country
+JOIN participants p ON r."Participant ID" = p.participant_id
+GROUP BY r."Language"
 ORDER BY avg_pri DESC;
 
--- Consensus variance by segment
-SELECT Segment, 
-       AVG(consensus_score) as avg_consensus,
-       STDEV(consensus_score) as consensus_variance
-FROM responses
-WHERE consensus_score IS NOT NULL
-GROUP BY Segment;
+-- Consensus profiles table query
+SELECT question_id, response_text, 
+       minagree_50pct as median_consensus,
+       minagree_90pct as high_consensus
+FROM consensus_profiles
+WHERE minagree_50pct > 0.7
+ORDER BY minagree_50pct DESC
+LIMIT 10;
 ```
 
 ## Python Usage
@@ -220,10 +223,10 @@ conn = sqlite3.connect('Data/GD4/GD4.db')
 
 # Query into pandas DataFrame
 query = """
-SELECT Question_Text, Response_Text, Vote_Count, divergence_score
+SELECT "Question", "Response", "Star", divergence_score
 FROM responses
 WHERE divergence_score > 0.7
-ORDER BY Vote_Count DESC
+ORDER BY "Star" DESC
 """
 df = pd.read_sql_query(query, conn)
 
@@ -237,9 +240,9 @@ conn.close()
 
 ## Tips
 
-1. **Indexes**: The database includes indexes on commonly queried columns (Question_ID, Participant_ID, Segment, Country) for better performance.
+1. **Indexes**: The database includes indexes on commonly queried columns ("Question ID", "Participant ID", "Language") for better performance.
 
-2. **NULL handling**: Analysis scores (divergence_score, consensus_score) may be NULL if analysis hasn't been run or if the metric couldn't be calculated.
+2. **NULL handling**: Analysis scores (divergence_score, consensus_minagree_50pct) may be NULL if analysis hasn't been run or if the metric couldn't be calculated.
 
 3. **Data freshness**: The database reflects the state of files at creation time. Rerun `make db GD=<N>` after running new analyses to update scores.
 
