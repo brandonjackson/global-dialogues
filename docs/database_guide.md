@@ -4,7 +4,11 @@
 
 Each Global Dialogue has its own SQLite database file stored at `Data/GD<N>/GD<N>.db`. These databases provide a structured, queryable interface to all response data, analysis metrics, participant reliability scores, and tags.
 
-**Important:** Column names in the database preserve their original format from the CSV files, which means many contain spaces (e.g., `"Question ID"`, `"Participant ID"`). Always use double quotes around column names with spaces in your SQL queries.
+**Important:** All column names are automatically normalized to `lowercase_underscored` format for consistency. This means:
+- `Question ID` becomes `question_id`
+- `Participant ID` becomes `participant_id`
+- `Star` (votes) becomes `star`
+- Special characters and spaces are replaced with underscores
 
 ## Quick Start
 
@@ -36,15 +40,15 @@ Main table containing all participant responses with analysis metrics.
 | Column | Type | Description |
 |--------|------|-------------|
 | response_id | INTEGER | Auto-incrementing primary key |
-| "Question ID" | TEXT | Unique question identifier |
-| "Participant ID" | TEXT | Unique participant identifier |
-| "Question" | TEXT | Full text of the question |
-| "Response" | TEXT | Participant's response text |
-| "Star" | REAL | Number of votes received |
-| "Language" | TEXT | Response language |
+| question_id | TEXT | Unique question identifier |
+| participant_id | TEXT | Unique participant identifier |
+| question | TEXT | Full text of the question |
+| response | TEXT | Participant's response text |
+| star | REAL | Number of votes received |
+| language | TEXT | Response language |
 | divergence_score | REAL | Calculated divergence score (if available) |
 | consensus_minagree_50pct | REAL | Consensus score at 50% threshold (if available) |
-| ... | | All segment columns (e.g., "Africa", "Asia", "O1: English") |
+| ... | | All segment columns normalized (e.g., africa, asia, o1_english) |
 
 **Note:** No unique constraint since participants can have multiple responses per question.
 
@@ -53,7 +57,7 @@ Participant-level metrics including PRI scores.
 
 | Column | Type | Description |
 |--------|------|-------------|
-| participant_id | TEXT | Primary key, matches "Participant ID" in responses |
+| participant_id | TEXT | Primary key, matches participant_id in responses |
 | pri_score | REAL | Participant Reliability Index score |
 | pri_scale_1_5 | REAL | PRI score scaled to 1-5 range |
 | duration_seconds | REAL | Time spent on survey |
@@ -108,7 +112,7 @@ SELECT * FROM responses_with_pri WHERE pri_score < 0.5;
 #### `responses_with_tags`
 Responses with concatenated tag names.
 ```sql
-SELECT "Question", "Response", tags 
+SELECT question, response, tags 
 FROM responses_with_tags 
 WHERE tags LIKE '%climate%';
 ```
@@ -122,12 +126,12 @@ WHERE tags LIKE '%climate%';
 SELECT COUNT(*) FROM responses;
 
 -- Find all responses with high votes
-SELECT "Question", "Response", "Star" 
+SELECT question, response, star 
 FROM responses 
-WHERE "Star" > 100;
+WHERE star > 100;
 
 -- Get questions with highest divergence
-SELECT DISTINCT "Question ID", "Question", divergence_score
+SELECT DISTINCT question_id, question, divergence_score
 FROM responses
 WHERE divergence_score IS NOT NULL
 ORDER BY divergence_score DESC
@@ -140,25 +144,25 @@ LIMIT 10;
 -- Find low-reliability participants
 SELECT p.participant_id, p.pri_score, COUNT(r.response_id) as response_count
 FROM participants p
-JOIN responses r ON p.participant_id = r."Participant ID"
+JOIN responses r ON p.participant_id = r.participant_id
 WHERE p.pri_score < 0.3
 GROUP BY p.participant_id
 ORDER BY p.pri_score;
 
 -- Responses with high divergence by language
-SELECT "Language", AVG(divergence_score) as avg_divergence
+SELECT language, AVG(divergence_score) as avg_divergence
 FROM responses
 WHERE divergence_score IS NOT NULL
-GROUP BY "Language"
+GROUP BY language
 ORDER BY avg_divergence DESC;
 
 -- Most voted responses per question
-SELECT "Question ID", "Question", "Response", "Star"
+SELECT question_id, question, response, star
 FROM responses r1
-WHERE "Star" = (
-    SELECT MAX("Star") 
+WHERE star = (
+    SELECT MAX(star) 
     FROM responses r2 
-    WHERE r2."Question ID" = r1."Question ID"
+    WHERE r2.question_id = r1.question_id
 );
 ```
 
@@ -174,7 +178,7 @@ ORDER BY usage_count DESC
 LIMIT 20;
 
 -- Responses with specific tag
-SELECT r."Question", r."Response", r."Star"
+SELECT r.question, r.response, r.star
 FROM responses r
 JOIN response_tags rt ON r.response_id = rt.response_id
 JOIN tags t ON rt.tag_id = t.tag_id
@@ -196,10 +200,11 @@ LIMIT 10;
 
 ```sql
 -- Compare average PRI scores by language
-SELECT r."Language", AVG(p.pri_score) as avg_pri, COUNT(DISTINCT r."Participant ID") as participant_count
+SELECT r.language, AVG(p.pri_score) as avg_pri, 
+       COUNT(DISTINCT r.participant_id) as participant_count
 FROM responses r
-JOIN participants p ON r."Participant ID" = p.participant_id
-GROUP BY r."Language"
+JOIN participants p ON r.participant_id = p.participant_id
+GROUP BY r.language
 ORDER BY avg_pri DESC;
 
 -- Consensus profiles table query
@@ -210,6 +215,13 @@ FROM consensus_profiles
 WHERE minagree_50pct > 0.7
 ORDER BY minagree_50pct DESC
 LIMIT 10;
+
+-- Segment-specific analysis (using normalized column names)
+SELECT AVG(CAST(africa AS REAL)) as africa_avg,
+       AVG(CAST(asia AS REAL)) as asia_avg,
+       AVG(CAST(europe AS REAL)) as europe_avg
+FROM responses
+WHERE question_id = 'some_question_id';
 ```
 
 ## Python Usage
@@ -223,10 +235,10 @@ conn = sqlite3.connect('Data/GD4/GD4.db')
 
 # Query into pandas DataFrame
 query = """
-SELECT "Question", "Response", "Star", divergence_score
+SELECT question, response, star, divergence_score
 FROM responses
 WHERE divergence_score > 0.7
-ORDER BY "Star" DESC
+ORDER BY star DESC
 """
 df = pd.read_sql_query(query, conn)
 
@@ -234,13 +246,35 @@ df = pd.read_sql_query(query, conn)
 print(df.head())
 print(f"High divergence responses: {len(df)}")
 
+# Access segment columns programmatically
+segment_query = """
+SELECT * FROM responses 
+WHERE CAST(africa AS REAL) > 0.5
+"""
+df_segment = pd.read_sql_query(segment_query, conn)
+
 # Close connection
 conn.close()
 ```
 
+## Column Name Normalization
+
+The database creation script automatically normalizes all column names:
+
+| Original CSV Column | Normalized Database Column |
+|---------------------|---------------------------|
+| Question ID | question_id |
+| Participant ID | participant_id |
+| Question Text | question_text |
+| Response Text | response_text |
+| Star | star |
+| O1: English | o1_english |
+| O2: 18-25 | o2_18_25 |
+| Branches (...) | branches |
+
 ## Tips
 
-1. **Indexes**: The database includes indexes on commonly queried columns ("Question ID", "Participant ID", "Language") for better performance.
+1. **Indexes**: The database includes indexes on commonly queried columns (question_id, participant_id, language) for better performance.
 
 2. **NULL handling**: Analysis scores (divergence_score, consensus_minagree_50pct) may be NULL if analysis hasn't been run or if the metric couldn't be calculated.
 
@@ -250,9 +284,12 @@ conn.close()
 
 5. **Backup**: The database can be recreated anytime from source CSVs, but consider backing up if you create custom tables or views.
 
+6. **Segment columns**: Geographic and demographic segment columns (africa, asia, o1_english, etc.) contain percentage values as TEXT. Cast to REAL for numeric operations.
+
 ## Troubleshooting
 
 - **Database not found**: Run `make db GD=<N>` first
 - **Missing scores**: Ensure analysis has been run (`make analyze GD=<N>`) before creating database
 - **Missing tags**: Tags require preprocessed tag files in `Data/GD<N>/tags/`
+- **Column not found**: Remember all columns are lowercase_underscored (e.g., use `question_id` not `Question ID`)
 - **Corrupted database**: Simply recreate with `make db GD=<N>`
