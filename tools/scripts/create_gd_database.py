@@ -7,6 +7,8 @@ This script creates a comprehensive SQLite database combining:
 - PRI scores per participant
 - Divergence and consensus scores per response
 - Tag labels for responses
+
+All column names are normalized to lowercase_underscored format for consistency.
 """
 
 import argparse
@@ -14,11 +16,29 @@ import sqlite3
 import pandas as pd
 from pathlib import Path
 import sys
-import json
+import re
 
 # Constants for file paths
 DIVERGENCE_FILE = "divergence/divergence_by_question.csv"
 CONSENSUS_FILE = "consensus/consensus_profiles.csv"
+
+def normalize_column_name(name):
+    """Convert column names to lowercase_underscored format."""
+    # Remove content in parentheses and the parentheses themselves
+    name = re.sub(r'\([^)]*\)', '', name)
+    # Replace special characters and spaces with underscores
+    name = re.sub(r'[^a-zA-Z0-9]+', '_', name)
+    # Remove leading/trailing underscores
+    name = name.strip('_')
+    # Convert to lowercase
+    name = name.lower()
+    # Replace multiple underscores with single
+    name = re.sub(r'_+', '_', name)
+    # Handle specific common patterns
+    if name.startswith('o1_') or name.startswith('o2_') or name.startswith('o3_') or name.startswith('o4_') or name.startswith('o5_') or name.startswith('o6_') or name.startswith('o7_'):
+        # These are option columns, keep them distinct
+        pass
+    return name
 
 def create_database(gd_number: int, force: bool = False):
     """Create SQLite database for a specific Global Dialogue."""
@@ -55,6 +75,22 @@ def create_database(gd_number: int, force: bool = False):
     # Filter to only include rows with Participant ID (skip aggregate rows)
     df_responses = df_aggregate[df_aggregate['Participant ID'].notna()].copy()
     
+    # Normalize all column names
+    print("Normalizing column names...")
+    column_mapping = {}
+    for col in df_responses.columns:
+        new_col = normalize_column_name(col)
+        # Ensure unique column names
+        if new_col in column_mapping.values():
+            # Add a suffix to make it unique
+            suffix = 1
+            while f"{new_col}_{suffix}" in column_mapping.values():
+                suffix += 1
+            new_col = f"{new_col}_{suffix}"
+        column_mapping[col] = new_col
+    
+    df_responses.rename(columns=column_mapping, inplace=True)
+    
     # Add columns for scores that will be populated later
     df_responses['divergence_score'] = None
     df_responses['consensus_minagree_50pct'] = None
@@ -64,8 +100,9 @@ def create_database(gd_number: int, force: bool = False):
     df_responses.to_sql('responses', conn, if_exists='replace', index=True, index_label='response_id')
     
     # Create indexes on key columns
-    cursor.execute('CREATE INDEX IF NOT EXISTS idx_resp_qid ON responses("Question ID")')
-    cursor.execute('CREATE INDEX IF NOT EXISTS idx_resp_pid ON responses("Participant ID")')
+    cursor.execute('CREATE INDEX IF NOT EXISTS idx_resp_qid ON responses(question_id)')
+    cursor.execute('CREATE INDEX IF NOT EXISTS idx_resp_pid ON responses(participant_id)')
+    cursor.execute('CREATE INDEX IF NOT EXISTS idx_resp_lang ON responses(language)')
     
     # Load and add PRI scores if available
     pri_file = output_dir / f"pri/GD{gd_number}_pri_scores.csv"
@@ -73,9 +110,11 @@ def create_database(gd_number: int, force: bool = False):
         print(f"Loading PRI scores from {pri_file}")
         df_pri = pd.read_csv(pri_file)
         
-        # Check actual column names in PRI file
-        print(f"  PRI columns: {df_pri.columns.tolist()}")
+        # Normalize PRI column names
+        pri_column_mapping = {col: normalize_column_name(col) for col in df_pri.columns}
+        df_pri.rename(columns=pri_column_mapping, inplace=True)
         
+        # Create participants table
         cursor.execute("""
             CREATE TABLE participants (
                 participant_id TEXT PRIMARY KEY,
@@ -90,16 +129,16 @@ def create_database(gd_number: int, force: bool = False):
         
         for _, row in df_pri.iterrows():
             cursor.execute("""
-                INSERT INTO participants (participant_id, pri_score, pri_scale_1_5, duration_seconds, 
-                                        lowqualitytag_perc, universaldisagreement_perc, asc_score_raw)
-                VALUES (?, ?, ?, ?, ?, ?, ?)
-            """, (row['Participant ID'], 
-                  row.get('PRI_Score'), 
-                  row.get('PRI_Scale_1_5'),
-                  row.get('Duration_seconds'),
-                  row.get('LowQualityTag_Perc'),
-                  row.get('UniversalDisagreement_Perc'),
-                  row.get('ASC_Score_Raw')))
+                INSERT INTO participants VALUES (?, ?, ?, ?, ?, ?, ?)
+            """, (
+                row['participant_id'], 
+                row.get('pri_score'), 
+                row.get('pri_scale_1_5'),
+                row.get('duration_seconds'),
+                row.get('lowqualitytag_perc'),
+                row.get('universaldisagreement_perc'),
+                row.get('asc_score_raw')
+            ))
     else:
         print(f"PRI scores not found at {pri_file}, skipping...")
     
@@ -109,16 +148,17 @@ def create_database(gd_number: int, force: bool = False):
         print(f"Loading divergence scores from {divergence_file}")
         df_divergence = pd.read_csv(divergence_file)
         
-        # Check actual column names in divergence file
-        print(f"  Divergence columns: {df_divergence.columns.tolist()}")
+        # Normalize divergence column names
+        div_column_mapping = {col: normalize_column_name(col) for col in df_divergence.columns}
+        df_divergence.rename(columns=div_column_mapping, inplace=True)
         
         # Update responses with divergence scores
         for _, row in df_divergence.iterrows():
             cursor.execute("""
                 UPDATE responses 
                 SET divergence_score = ?
-                WHERE "Question ID" = ? AND "Response" = ?
-            """, (row.get('Divergence Score'), row['Question ID'], row['Response Text']))
+                WHERE question_id = ? AND response = ?
+            """, (row.get('divergence_score'), row['question_id'], row['response_text']))
     else:
         print(f"Divergence scores not found at {divergence_file}, skipping...")
     
@@ -128,8 +168,9 @@ def create_database(gd_number: int, force: bool = False):
         print(f"Loading consensus scores from {consensus_file}")
         df_consensus = pd.read_csv(consensus_file)
         
-        # Check actual column names in consensus file
-        print(f"  Consensus columns: {df_consensus.columns.tolist()}")
+        # Normalize consensus column names
+        cons_column_mapping = {col: normalize_column_name(col) for col in df_consensus.columns}
+        df_consensus.rename(columns=cons_column_mapping, inplace=True)
         
         # Create a consensus_profiles table to store all percentage profiles
         cursor.execute("""
@@ -157,28 +198,28 @@ def create_database(gd_number: int, force: bool = False):
             cursor.execute("""
                 INSERT OR REPLACE INTO consensus_profiles VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """, (
-                row['Question ID'],
-                row['Response Text'],
-                row.get('Num Valid Segments'),
-                row.get('MinAgree_100pct'),
-                row.get('MinAgree_95pct'),
-                row.get('MinAgree_90pct'),
-                row.get('MinAgree_80pct'),
-                row.get('MinAgree_70pct'),
-                row.get('MinAgree_60pct'),
-                row.get('MinAgree_50pct'),
-                row.get('MinAgree_40pct'),
-                row.get('MinAgree_30pct'),
-                row.get('MinAgree_20pct'),
-                row.get('MinAgree_10pct')
+                row['question_id'],
+                row['response_text'],
+                row.get('num_valid_segments'),
+                row.get('minagree_100pct'),
+                row.get('minagree_95pct'),
+                row.get('minagree_90pct'),
+                row.get('minagree_80pct'),
+                row.get('minagree_70pct'),
+                row.get('minagree_60pct'),
+                row.get('minagree_50pct'),
+                row.get('minagree_40pct'),
+                row.get('minagree_30pct'),
+                row.get('minagree_20pct'),
+                row.get('minagree_10pct')
             ))
             
             # Also update the responses table with the 50% consensus score as default
             cursor.execute("""
                 UPDATE responses 
                 SET consensus_minagree_50pct = ?
-                WHERE "Question ID" = ? AND "Response" = ?
-            """, (row.get('MinAgree_50pct'), row['Question ID'], row['Response Text']))
+                WHERE question_id = ? AND response = ?
+            """, (row.get('minagree_50pct'), row['question_id'], row['response_text']))
     else:
         print(f"Consensus scores not found at {consensus_file}, skipping...")
     
@@ -187,6 +228,10 @@ def create_database(gd_number: int, force: bool = False):
     if tags_file.exists():
         print(f"Loading tags from {tags_file}")
         df_tags = pd.read_csv(tags_file)
+        
+        # Normalize tag column names
+        tag_column_mapping = {col: normalize_column_name(col) for col in df_tags.columns}
+        df_tags.rename(columns=tag_column_mapping, inplace=True)
         
         # Create tags tables
         cursor.execute("""
@@ -206,8 +251,8 @@ def create_database(gd_number: int, force: bool = False):
             )
         """)
         
-        # Process tags (assuming format: Question_ID, Participant_ID, Tag1, Tag2, ...)
-        tag_columns = [col for col in df_tags.columns if col not in ['Question_ID', 'Participant_ID']]
+        # Process tags (assuming format: question_id, participant_id, Tag1, Tag2, ...)
+        tag_columns = [col for col in df_tags.columns if col not in ['question_id', 'participant_id']]
         
         # Insert unique tags
         unique_tags = set()
@@ -223,8 +268,8 @@ def create_database(gd_number: int, force: bool = False):
             # Get response_id
             cursor.execute("""
                 SELECT response_id FROM responses 
-                WHERE "Question ID" = ? AND "Participant ID" = ?
-            """, (row.get('Question_ID', row.get('Question ID')), row.get('Participant_ID', row.get('Participant ID'))))
+                WHERE question_id = ? AND participant_id = ?
+            """, (row['question_id'], row['participant_id']))
             
             result = cursor.fetchone()
             if result:
@@ -246,7 +291,6 @@ def create_database(gd_number: int, force: bool = False):
     
     # Create additional indexes for better query performance
     print("Creating indexes...")
-    cursor.execute('CREATE INDEX IF NOT EXISTS idx_responses_language ON responses("Language")')
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_response_tags_response ON response_tags(response_id)")
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_response_tags_tag ON response_tags(tag_id)")
     
@@ -258,7 +302,7 @@ def create_database(gd_number: int, force: bool = False):
         CREATE VIEW IF NOT EXISTS responses_with_pri AS
         SELECT r.*, p.pri_score, p.pri_scale_1_5
         FROM responses r
-        LEFT JOIN participants p ON r."Participant ID" = p.participant_id
+        LEFT JOIN participants p ON r.participant_id = p.participant_id
     """)
     
     # View for responses with their tags
@@ -278,10 +322,10 @@ def create_database(gd_number: int, force: bool = False):
     cursor.execute("SELECT COUNT(*) FROM responses")
     response_count = cursor.fetchone()[0]
     
-    cursor.execute('SELECT COUNT(DISTINCT "Participant ID") FROM responses')
+    cursor.execute('SELECT COUNT(DISTINCT participant_id) FROM responses')
     participant_count = cursor.fetchone()[0]
     
-    cursor.execute('SELECT COUNT(DISTINCT "Question ID") FROM responses')
+    cursor.execute('SELECT COUNT(DISTINCT question_id) FROM responses')
     question_count = cursor.fetchone()[0]
     
     print(f"\nDatabase created successfully!")
@@ -293,6 +337,13 @@ def create_database(gd_number: int, force: bool = False):
     cursor.execute("SELECT name FROM sqlite_master WHERE type='table'")
     tables = cursor.fetchall()
     print(f"  Tables created: {', '.join([t[0] for t in tables])}")
+    
+    # Show sample of normalized column names
+    cursor.execute("PRAGMA table_info(responses)")
+    columns = cursor.fetchall()
+    print(f"\nSample normalized column names in responses table:")
+    for col in columns[:10]:
+        print(f"  - {col[1]}")
     
     conn.close()
     print(f"\nDatabase saved to: {db_path}")
