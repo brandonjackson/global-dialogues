@@ -56,6 +56,10 @@ help:
 	@echo "  $(GREEN)make run-thematic-ranking GD=<N>$(RESET) - Run thematic ranking for GD<N> (requires API key and embeddings)"
 	@echo "  $(GREEN)make run-thematic-ranking$(RESET) - Show thematic ranking options"
 	@echo ""
+	@echo "$(BLUE)Database Commands:$(RESET)"
+	@echo "  $(GREEN)make db GD=<N>$(RESET)            - Create/recreate SQLite database for GD<N>"
+	@echo "  $(GREEN)make db-connect GD=<N>$(RESET)    - Connect to SQLite database for GD<N>"
+	@echo ""
 	@echo "$(BLUE)Utilities:$(RESET)"
 	@echo "  $(GREEN)make preview-csvs GD=<N>$(RESET)  - Preview all CSV files in GD<N> directory"
 	@echo "  $(GREEN)make clean$(RESET)                - Clean up cache and temporary files"
@@ -262,6 +266,33 @@ run-thematic-ranking:
 		exit 1; \
 	fi
 	$(PYTHON) $(ANALYSIS_DIR)/thematic_ranking.py --gd $(GD)
+
+# Database commands
+db:
+	@if [ -z "$(GD)" ]; then \
+		echo "$(RED)Error: Please specify GD number$(RESET)"; \
+		echo "$(YELLOW)Usage: make db GD=<N>$(RESET)"; \
+		echo "$(YELLOW)Example: make db GD=4$(RESET)"; \
+		exit 1; \
+	fi
+	@echo "$(BLUE)Creating SQLite database for GD$(GD)...$(RESET)"
+	$(PYTHON) $(TOOLS_DIR)/create_gd_database.py $(GD) --force
+
+db-connect:
+	@if [ -z "$(GD)" ]; then \
+		echo "$(RED)Error: Please specify GD number$(RESET)"; \
+		echo "$(YELLOW)Usage: make db-connect GD=<N>$(RESET)"; \
+		echo "$(YELLOW)Example: make db-connect GD=4$(RESET)"; \
+		exit 1; \
+	fi
+	@if [ ! -f Data/GD$(GD)/GD$(GD).db ]; then \
+		echo "$(RED)Error: Database Data/GD$(GD)/GD$(GD).db not found$(RESET)"; \
+		echo "$(YELLOW)Run 'make db GD=$(GD)' first to create the database$(RESET)"; \
+		exit 1; \
+	fi
+	@echo "$(BLUE)Connecting to GD$(GD) database...$(RESET)"
+	@echo "$(YELLOW)Type .help for help, .quit to exit$(RESET)"
+	sqlite3 Data/GD$(GD)/GD$(GD).db
 
 # CSV preview using variables
 preview-csvs:
