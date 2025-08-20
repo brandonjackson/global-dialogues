@@ -26,3 +26,17 @@ Given the investigation questions in GD[N]_investigation_questions.md, investiga
 Save each investigation question and its answer (and include any other relevant information like the final query(s) or script used to answer the question if it is not obvious from the question itself) in the file GD[N]_investigation_answers.md as you go. Use the same question numbering-hierarchy system in the answers document for clear reference.
 
 ----
+
+Given the investigation questions in @analysis_output/GD4/research/GD4_investigation_questions.md, investigate each question one at a time by first carefully thinking through what the question is asking for,
+│   then using the sql connection to the GD data to run any queries that are needed to help you answer the question, and, if needed, running python code for any additional analysis until you've successfully
+│   answered the question.
+│
+│   Use and follow the @Data/GD4/research/GD4_claude_research_guide.md as a guide for conducting this investigation.
+│
+│   Save each investigation question and its answer (and include any other relevant information like the final query(s) or script used to answer the question if it is not obvious from the question itself) in a
+│   new file analysis_output/GD4/research/GD4_investigation_answers.md as you go. Refer to the GD4_claude_research_guide.md for formatting this answers document.
+│
+│   After each answered question, save the GD4_investigation_answers.md and git commit with a succinct and simple git commit message that clearly identifies which investigation question was answered.
+│
+│   CONTINUE until you have successfully answered all questions. If you get stuck in a circular loop trying to answer a single question or find an issue with the question or some other issue that cannot be
+│   resolved after multiple attempts to approach the issue from multiple angles, document the issue and your attempted approaches and continue to the next question.
