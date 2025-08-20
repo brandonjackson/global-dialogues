@@ -3,7 +3,7 @@
 Create SQLite database for Global Dialogues data analysis.
 
 This script creates a comprehensive SQLite database combining:
-- Core response data from aggregate_standardized.csv
+- ALL data from aggregate_standardized.csv (both poll questions and open-ended responses)
 - PRI scores per participant
 - Divergence and consensus scores per response
 - Tag labels for responses
@@ -72,8 +72,8 @@ def create_database(gd_number: int, force: bool = False):
     print(f"Loading aggregate data from {aggregate_file}")
     df_aggregate = pd.read_csv(aggregate_file, low_memory=False)
     
-    # Filter to only include rows with Participant ID (skip aggregate rows)
-    df_responses = df_aggregate[df_aggregate['Participant ID'].notna()].copy()
+    # Use all data from the aggregate file (including poll questions and open-ended responses)
+    df_responses = df_aggregate.copy()
     
     # Normalize all column names
     print("Normalizing column names...")
@@ -322,16 +322,23 @@ def create_database(gd_number: int, force: bool = False):
     cursor.execute("SELECT COUNT(*) FROM responses")
     response_count = cursor.fetchone()[0]
     
-    cursor.execute('SELECT COUNT(DISTINCT participant_id) FROM responses')
+    cursor.execute('SELECT COUNT(DISTINCT participant_id) FROM responses WHERE participant_id IS NOT NULL')
     participant_count = cursor.fetchone()[0]
     
     cursor.execute('SELECT COUNT(DISTINCT question_id) FROM responses')
     question_count = cursor.fetchone()[0]
     
+    # Get breakdown by question type
+    cursor.execute('SELECT question_type, COUNT(DISTINCT question_id) as num_questions, COUNT(*) as num_responses FROM responses GROUP BY question_type')
+    question_type_stats = cursor.fetchall()
+    
     print(f"\nDatabase created successfully!")
-    print(f"  Responses: {response_count}")
+    print(f"  Total responses: {response_count}")
     print(f"  Participants: {participant_count}")
-    print(f"  Questions: {question_count}")
+    print(f"  Total questions: {question_count}")
+    print(f"\n  Breakdown by question type:")
+    for qt_type, qt_count, qt_responses in question_type_stats:
+        print(f"    {qt_type}: {qt_count} questions, {qt_responses} responses")
     
     # Check what additional tables were created
     cursor.execute("SELECT name FROM sqlite_master WHERE type='table'")
