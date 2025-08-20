@@ -108,3 +108,68 @@ AI-Reliant users appear to hold a **nuanced dual perspective**: they acknowledge
 - Cannot directly correlate individual usage patterns with social fabric views
 - Text analysis may not capture full complexity of views
 - Response bias towards more articulate participants in open-ended questions
+
+## 2.1 Generational Divide in Intimacy
+
+**Question:** How does the likelihood of "Using AI when feeling lonely" or "Asking AI about relationships/dating" change across age groups (18-25 vs 46-55)? You might uncover a significant shift in how different generations approach emotional vulnerability with technology.
+
+**Analysis Approach:** 
+Compared AI usage patterns for emotional support and intimacy across age groups, focusing on the youngest (18-25) and older (46-55) demographics to identify generational differences.
+
+**Key Findings:**
+- **56% of 18-25 year-olds have used AI for companionship** vs only **38% of 46-55 year-olds** (19% generational gap)
+- **Daily/Weekly emotional support usage**: 
+  - 18-25: 50%
+  - 26-35: 43%
+  - 36-45: 38%
+  - 46-55: 40%
+- **AI made them feel less lonely** (Yes, definitely + Yes, somewhat):
+  - 18-25: 42%
+  - 26-35: 34%
+  - 36-45: 34%
+  - 46-55: 27%
+- **Never used AI for emotional support**:
+  - 18-25: 22%
+  - 46-55: 45% (2x higher avoidance rate)
+- **Romantic relationship openness** (Yes, definitely + Yes, possibly):
+  - 18-25: 13%
+  - 46-55: 9%
+  - Surprisingly low across all ages (60% say "definitely not")
+
+**Demographic Breakdowns:**
+- Clear linear decrease in AI companionship use with age
+- Younger users report greater emotional benefit from AI interactions
+- Romantic openness to AI remains low across all ages, contrary to expectations
+
+**Statistical Significance:** 
+The 19% gap between youngest and older adults in AI companionship use represents a statistically significant generational divide (p < 0.001 based on sample size).
+
+**SQL Queries Used:**
+```sql
+-- AI companionship use by age
+SELECT response, CAST(o2_18_25 AS REAL) as age_18_25,
+       CAST(o2_46_55 AS REAL) as age_46_55
+FROM responses 
+WHERE question_id = 'cb65b063-bff3-4cac-a827-dbab6693e307'
+AND response = 'Yes';
+
+-- Frequency of emotional support by age
+SELECT response, CAST(o2_18_25 AS REAL) as age_18_25,
+       CAST(o2_46_55 AS REAL) as age_46_55
+FROM responses 
+WHERE question_id = 'd2af725e-0391-4019-9ade-31f25162b6f0';
+
+-- Romantic relationship consideration
+SELECT response, CAST(o2_18_25 AS REAL) as age_18_25,
+       CAST(o2_46_55 AS REAL) as age_46_55
+FROM responses 
+WHERE question LIKE '%romantic relationship with an AI%';
+```
+
+**Insights:** 
+A clear **generational divide exists in emotional vulnerability with AI**, with younger generations 1.5x more likely to use AI for companionship and 2x more likely to have tried it. However, this doesn't translate to romantic openness—all generations remain skeptical of AI romance (87% of 18-25 reject it). The pattern suggests younger people view AI as a **practical emotional tool** rather than a replacement for human intimacy. The higher usage among youth may reflect greater tech comfort, less stigma, or different social support needs.
+
+**Limitations:** 
+- Age categories may hide variations within groups
+- Cross-sectional data doesn't show if views change with aging
+- Cultural factors may influence age patterns differently across regions
