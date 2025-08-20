@@ -34,16 +34,37 @@ sqlite3 Data/GD4/GD4.db
 ### Core Tables
 
 #### `responses`
-Main table containing ALL data from the aggregate_standardized.csv file, including both poll questions and open-ended responses.
+Main table containing ALL data from the aggregate_standardized.csv file. **IMPORTANT**: Each row represents different things depending on the question type:
+
+##### What Each Row Represents
+
+**Poll Questions (Poll Single Select, Poll Multi Select)**
+- Each row represents one poll option
+- The `response` column contains the option text (e.g., "Yes", "No", "Strongly Agree")
+- Agreement rate columns show the exact percentage of participants in each segment who selected that option
+- Example: If `africa` = 0.65 for a "Yes" option, then 65% of African participants selected "Yes"
+
+**Ask Opinion Questions**
+- Each row represents ONE individual participant's text response
+- The `response` column contains their written answer
+- Agreement rate columns show the estimated agreement rate from other participants in that segment who voted on this response
+- These estimates come from participants voting "agree/disagree" on a random selection of others' responses
+- Example: If `o1_english` = 0.72, then approximately 72% of English-speaking participants who saw this response agreed with it
+
+**Ask Experience Questions**
+- Each row represents ONE individual participant's text response about their experience
+- Participants did NOT vote on each other's responses for these questions
+- If the survey creator specified categories, agreement rates show the percentage of participants in each segment who categorized their own response in the same category
+- If no categories were specified, agreement rate columns will be NULL
 
 | Column | Type | Description |
 |--------|------|-------------|
 | response_id | INTEGER | Auto-incrementing primary key |
 | question_id | TEXT | Unique question identifier |
 | question_type | TEXT | Type of question (Poll Single Select, Poll Multi Select, Ask Opinion, Ask Experience) |
-| participant_id | TEXT | Unique participant identifier (may be NULL for aggregate rows) |
-| question | TEXT | Full text of the question |
-| response | TEXT | Participant's response text or poll option selected |
+| participant_id | TEXT | Unique participant identifier (NULL for poll option rows, populated for individual responses) |
+| question | TEXT | Full text of the question (may include "Branch A/B/C -" prefix for branched questions) |
+| response | TEXT | Poll option text OR individual participant's response text |
 | sentiment | TEXT | Sentiment classification from tags (Positive, Negative, Neutral) if available |
 | language | TEXT | Response language |
 | divergence_score | REAL | Calculated divergence score (if available) |
@@ -57,6 +78,8 @@ Main table containing ALL data from the aggregate_standardized.csv file, includi
 | o2_18_25, o2_26_35, etc. | REAL | Agreement rates by age group |
 | o3_male, o3_female, etc. | REAL | Agreement rates by gender |
 | o4_rural, o4_urban, etc. | REAL | Agreement rates by location type |
+| branch_a, branch_b, branch_c | REAL | Agreement rates within poll-based branches (see Branching section below) |
+| branches_* | TEXT | Branch metadata columns (see Branching section below) |
 | ... | REAL | Additional demographic segment agreement rates |
 
 **Note:** No unique constraint since participants can have multiple responses per question.
@@ -83,6 +106,38 @@ The consensus metrics measure how broadly a response is agreed upon across diffe
 - High `50pct` values (>0.8) = Strong median consensus, at least half of groups strongly agree
 
 These metrics help identify responses with broad cross-demographic appeal and are particularly useful for finding viewpoints that resonate across diverse populations.
+
+##### Understanding Branching in Survey Flow
+
+The survey supports "branching" where a poll question can lead to different follow-up questions based on the answer selected. This creates focused discussion groups where only participants who gave similar answers vote on each other's explanations.
+
+**How Branching Works:**
+1. A poll question (e.g., "Have you used AI?") can have up to 3 branches
+2. Each branch leads to ONE "Ask Opinion" question immediately after the poll
+3. Only participants who selected the option(s) for that branch see and vote on responses within that branch
+4. After the branched question, all participants rejoin the main survey flow
+
+**How Branches are Represented in the Database:**
+
+1. **Branch Identification**: Branched questions have their question text prefixed with "Branch A -", "Branch B -", or "Branch C -"
+
+2. **Branch Agreement Columns**: 
+   - `branch_a`, `branch_b`, `branch_c` columns contain agreement rates ONLY from participants within that specific branch
+   - These columns are reused across ALL branched questions in the survey
+
+3. **Branch Metadata Columns**:
+   - Columns starting with `branches_` (e.g., `branches_have_you_ever_felt_an_ai_truly_understood`) contain TEXT indicating which branch and option
+   - Format: "Branch A - Yes" or "Branch B - No"
+   - These identify which poll option led to this branched discussion
+
+**Example:**
+- Poll: "Have you used AI companions?" with options Yes/No
+- Branch A follows "Yes" → "Branch A - What benefits did you experience?"
+- Branch B follows "No" → "Branch B - What concerns prevented you from trying?"
+- For responses to Branch A question:
+  - `branch_a` shows agreement from other "Yes" voters only
+  - `branches_have_you_used_ai_companions` = "Branch A - Yes"
+  - All other segment columns (africa, o1_english, etc.) are NULL or show general population data
 
 #### `participants`
 Participant-level metrics including PRI scores.
@@ -226,6 +281,59 @@ ORDER BY co_occurrence DESC
 LIMIT 10;
 ```
 
+### Working with Branched Questions
+
+```sql
+-- Find all branched questions
+SELECT DISTINCT question, question_type
+FROM responses
+WHERE question LIKE 'Branch %'
+ORDER BY question;
+
+-- Get responses from a specific branch with high agreement
+SELECT question, response, branch_a
+FROM responses
+WHERE question LIKE 'Branch A -%'
+  AND branch_a > 0.7
+ORDER BY branch_a DESC;
+
+-- Identify which poll options led to each branch
+-- (Note: column name will vary based on the poll question)
+SELECT DISTINCT 
+    substr(question, 1, 50) as branch_question,
+    branches_have_you_ever_felt_an_ai_truly_understood as branch_option
+FROM responses
+WHERE branches_have_you_ever_felt_an_ai_truly_understood IS NOT NULL;
+
+-- Compare agreement rates between branches for the same base question
+SELECT 
+    CASE 
+        WHEN question LIKE 'Branch A -%' THEN 'Branch A'
+        WHEN question LIKE 'Branch B -%' THEN 'Branch B'
+        WHEN question LIKE 'Branch C -%' THEN 'Branch C'
+    END as branch,
+    AVG(CASE 
+        WHEN question LIKE 'Branch A -%' THEN branch_a
+        WHEN question LIKE 'Branch B -%' THEN branch_b
+        WHEN question LIKE 'Branch C -%' THEN branch_c
+    END) as avg_agreement_within_branch,
+    COUNT(*) as response_count
+FROM responses
+WHERE question LIKE 'Branch %'
+GROUP BY branch;
+
+-- Find high-consensus responses within each branch
+SELECT 
+    substr(question, 1, 10) as branch,
+    response,
+    branch_a, branch_b, branch_c
+FROM responses
+WHERE question LIKE 'Branch %'
+  AND (branch_a > 0.8 OR branch_b > 0.8 OR branch_c > 0.8)
+ORDER BY COALESCE(branch_a, branch_b, branch_c) DESC
+LIMIT 10;
+```
+
 ### Cross-Segment Analysis
 
 ```sql
@@ -315,7 +423,11 @@ The database creation script automatically normalizes all column names:
 
 5. **Backup**: The database can be recreated anytime from source CSVs, but consider backing up if you create custom tables or views.
 
-6. **Agreement rate columns**: All columns after `participant_id` (except divergence_score and consensus_minagree_50pct) represent agreement rates from different demographic segments. These are stored as REAL type with values from 0.0 to 1.0 representing the percentage of that segment that agreed with the response.
+6. **Agreement rate columns**: All segment columns (africa, asia, o1_english, branch_a, etc.) represent different types of agreement:
+   - For **poll options**: Exact percentage who selected that option (0.0-1.0)
+   - For **Ask Opinion**: Estimated agreement rate from voting (0.0-1.0)
+   - For **Ask Experience**: Percentage who used same category, if applicable
+   - For **branches**: Agreement only from participants within that branch
 
 ## Troubleshooting
 
