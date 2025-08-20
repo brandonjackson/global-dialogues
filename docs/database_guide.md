@@ -7,7 +7,6 @@ Each Global Dialogue has its own SQLite database file stored at `Data/GD<N>/GD<N
 **Important:** All column names are automatically normalized to `lowercase_underscored` format for consistency. This means:
 - `Question ID` becomes `question_id`
 - `Participant ID` becomes `participant_id`
-- `Star` (votes) becomes `star`
 - Special characters and spaces are replaced with underscores
 
 ## Quick Start
@@ -35,20 +34,28 @@ sqlite3 Data/GD4/GD4.db
 ### Core Tables
 
 #### `responses`
-Main table containing all participant responses with analysis metrics.
+Main table containing ALL data from the aggregate_standardized.csv file, including both poll questions and open-ended responses.
 
 | Column | Type | Description |
 |--------|------|-------------|
 | response_id | INTEGER | Auto-incrementing primary key |
 | question_id | TEXT | Unique question identifier |
-| participant_id | TEXT | Unique participant identifier |
+| question_type | TEXT | Type of question (Poll Single Select, Poll Multi Select, Ask Opinion, Ask Experience) |
+| participant_id | TEXT | Unique participant identifier (may be NULL for aggregate rows) |
 | question | TEXT | Full text of the question |
-| response | TEXT | Participant's response text |
-| star | REAL | Number of votes received |
+| response | TEXT | Participant's response text or poll option selected |
+| sentiment | TEXT | Sentiment classification from tags (Positive, Negative, Neutral) if available |
 | language | TEXT | Response language |
 | divergence_score | REAL | Calculated divergence score (if available) |
 | consensus_minagree_50pct | REAL | Consensus score at 50% threshold (if available) |
-| ... | | All segment columns normalized (e.g., africa, asia, o1_english) |
+| **Agreement Rate Columns** | **REAL** | **All remaining columns represent agreement rates (0.0-1.0) from different demographic segments** |
+| all | REAL | Agreement rate from all participants |
+| africa, asia, europe, etc. | REAL | Agreement rates by geographic region |
+| o1_english, o1_spanish, etc. | REAL | Agreement rates by language preference |
+| o2_18_25, o2_26_35, etc. | REAL | Agreement rates by age group |
+| o3_male, o3_female, etc. | REAL | Agreement rates by gender |
+| o4_rural, o4_urban, etc. | REAL | Agreement rates by location type |
+| ... | REAL | Additional demographic segment agreement rates |
 
 **Note:** No unique constraint since participants can have multiple responses per question.
 
@@ -125,10 +132,10 @@ WHERE tags LIKE '%climate%';
 -- Count total responses
 SELECT COUNT(*) FROM responses;
 
--- Find all responses with high votes
-SELECT question, response, star 
+-- Find all poll questions
+SELECT DISTINCT question, question_type 
 FROM responses 
-WHERE star > 100;
+WHERE question_type LIKE 'Poll%';
 
 -- Get questions with highest divergence
 SELECT DISTINCT question_id, question, divergence_score
@@ -156,14 +163,12 @@ WHERE divergence_score IS NOT NULL
 GROUP BY language
 ORDER BY avg_divergence DESC;
 
--- Most voted responses per question
-SELECT question_id, question, response, star
-FROM responses r1
-WHERE star = (
-    SELECT MAX(star) 
-    FROM responses r2 
-    WHERE r2.question_id = r1.question_id
-);
+-- Find responses with high agreement across all segments
+SELECT question, response, "all" as overall_agreement
+FROM responses
+WHERE "all" > 0.8
+AND question_type IN ('Ask Opinion', 'Ask Experience')
+ORDER BY "all" DESC;
 ```
 
 ### Tag Analysis
@@ -261,16 +266,17 @@ conn.close()
 
 The database creation script automatically normalizes all column names:
 
-| Original CSV Column | Normalized Database Column |
-|---------------------|---------------------------|
-| Question ID | question_id |
-| Participant ID | participant_id |
-| Question Text | question_text |
-| Response Text | response_text |
-| Star | star |
-| O1: English | o1_english |
-| O2: 18-25 | o2_18_25 |
-| Branches (...) | branches |
+| Original CSV Column | Normalized Database Column | Data Type | Description |
+|---------------------|---------------------------|-----------|-------------|
+| Question ID | question_id | TEXT | Question identifier |
+| Participant ID | participant_id | TEXT | Participant identifier |
+| Question | question | TEXT | Question text |
+| Response | response | TEXT | Response text |
+| Sentiment | sentiment | TEXT | Sentiment from tags file |
+| All | all | REAL | Agreement rate (0.0-1.0) |
+| O1: English | o1_english | REAL | Agreement rate for English speakers |
+| O2: 18-25 | o2_18_25 | REAL | Agreement rate for age 18-25 |
+| Africa | africa | REAL | Agreement rate for Africa region |
 
 ## Tips
 
@@ -284,7 +290,7 @@ The database creation script automatically normalizes all column names:
 
 5. **Backup**: The database can be recreated anytime from source CSVs, but consider backing up if you create custom tables or views.
 
-6. **Segment columns**: Geographic and demographic segment columns (africa, asia, o1_english, etc.) contain percentage values as TEXT. Cast to REAL for numeric operations.
+6. **Agreement rate columns**: All columns after `participant_id` (except divergence_score and consensus_minagree_50pct) represent agreement rates from different demographic segments. These are stored as REAL type with values from 0.0 to 1.0 representing the percentage of that segment that agreed with the response.
 
 ## Troubleshooting
 
