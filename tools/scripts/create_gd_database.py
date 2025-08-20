@@ -75,6 +75,10 @@ def create_database(gd_number: int, force: bool = False):
     # Use all data from the aggregate file (including poll questions and open-ended responses)
     df_responses = df_aggregate.copy()
     
+    # Drop the 'Star' column if it exists (vestigial feature not used)
+    if 'Star' in df_responses.columns:
+        df_responses = df_responses.drop(columns=['Star'])
+    
     # Normalize all column names
     print("Normalizing column names...")
     column_mapping = {}
@@ -91,9 +95,30 @@ def create_database(gd_number: int, force: bool = False):
     
     df_responses.rename(columns=column_mapping, inplace=True)
     
+    # Identify agreement rate columns (everything after participant_id except special columns)
+    # These columns contain percentage values (0.0 to 1.0) and should be REAL type
+    core_columns = ['response_id', 'question_id', 'question_type', 'question', 'response', 
+                    'originalresponse', 'categories', 'sentiment', 'submitted_by', 
+                    'language', 'sample_id', 'participant_id']
+    
+    # All columns that are not in core_columns are agreement rate columns
+    agreement_columns = [col for col in df_responses.columns if col not in core_columns]
+    
+    # Convert agreement rate columns to numeric (REAL) type
+    print("Converting agreement rate columns to numeric...")
+    for col in agreement_columns:
+        # Remove percentage signs and convert to decimal (0.0-1.0)
+        if col in df_responses.columns:
+            # Convert percentage strings (e.g., "9.1%") to decimals (0.091)
+            df_responses[col] = df_responses[col].astype(str).str.rstrip('%')
+            df_responses[col] = pd.to_numeric(df_responses[col], errors='coerce') / 100.0
+    
     # Add columns for scores that will be populated later
     df_responses['divergence_score'] = None
     df_responses['consensus_minagree_50pct'] = None
+    
+    # Drop the sentiment column temporarily (will be populated from tags later)
+    df_responses['sentiment'] = None
     
     # Create main responses table by directly importing the dataframe
     print("Creating responses table...")
@@ -233,6 +258,17 @@ def create_database(gd_number: int, force: bool = False):
         tag_column_mapping = {col: normalize_column_name(col) for col in df_tags.columns}
         df_tags.rename(columns=tag_column_mapping, inplace=True)
         
+        # Update sentiment column in responses table from tags file
+        if 'sentiment' in df_tags.columns:
+            print("Updating sentiment values from tags file...")
+            for _, row in df_tags.iterrows():
+                if pd.notna(row.get('sentiment')):
+                    cursor.execute("""
+                        UPDATE responses 
+                        SET sentiment = ?
+                        WHERE question_id = ? AND participant_id = ?
+                    """, (row['sentiment'], row['question_id'], row['participant_id']))
+        
         # Create tags tables
         cursor.execute("""
             CREATE TABLE tags (
@@ -251,8 +287,8 @@ def create_database(gd_number: int, force: bool = False):
             )
         """)
         
-        # Process tags (assuming format: question_id, participant_id, Tag1, Tag2, ...)
-        tag_columns = [col for col in df_tags.columns if col not in ['question_id', 'participant_id']]
+        # Process tags (assuming format: question_id, participant_id, sentiment, Tag1, Tag2, ...)
+        tag_columns = [col for col in df_tags.columns if col not in ['question_id', 'participant_id', 'responsetext', 'sentiment']]
         
         # Insert unique tags
         unique_tags = set()
