@@ -125,10 +125,14 @@ The survey supports "branching" where a poll question can lead to different foll
    - `branch_a`, `branch_b`, `branch_c` columns contain agreement rates ONLY from participants within that specific branch
    - These columns are reused across ALL branched questions in the survey
 
-3. **Branch Metadata Columns**:
-   - Columns starting with `branches_` (e.g., `branches_have_you_ever_felt_an_ai_truly_understood`) contain TEXT indicating which branch and option
-   - Format: "Branch A - Yes" or "Branch B - No"
-   - These identify which poll option led to this branched discussion
+3. **Branch Mapping Table (`branch_mappings`)**:
+   - Provides a clean, queryable way to connect branched responses to their source poll questions
+   - Contains the source poll question text and the specific option(s) that led to each branch
+   - Eliminates the need to parse dynamic column names with embedded question text
+
+4. **Convenient View (`branched_responses`)**:
+   - Joins responses with branch_mappings for easy analysis
+   - Includes the appropriate branch agreement rate (branch_a/b/c) based on the branch_id
 
 **Example:**
 - Poll: "Have you used AI companions?" with options Yes/No
@@ -168,6 +172,17 @@ Many-to-many relationship between responses and tags.
 | response_id | INTEGER | Foreign key to responses table |
 | tag_id | INTEGER | Foreign key to tags table |
 
+#### `branch_mappings`
+Maps branched "Ask Opinion" questions back to their source poll questions.
+
+| Column | Type | Description |
+|--------|------|-------------|
+| response_id | INTEGER | Primary key, foreign key to responses table |
+| source_poll_question_id | TEXT | Question ID of the poll that created the branch |
+| source_poll_question | TEXT | Full text of the source poll question |
+| branch_id | TEXT | Branch identifier ('A', 'B', or 'C') |
+| branch_condition | TEXT | The poll option(s) that led to this branch (e.g., "Yes", "No") |
+
 #### `consensus_profiles`
 Detailed consensus agreement profiles for each response.
 
@@ -202,6 +217,14 @@ Responses with concatenated tag names.
 SELECT question, response, tags 
 FROM responses_with_tags 
 WHERE tags LIKE '%climate%';
+```
+
+#### `branched_responses`
+Convenient view for analyzing branched questions with full context.
+```sql
+SELECT question, response, source_poll_question, branch_condition, branch_agreement
+FROM branched_responses
+WHERE branch_id = 'A' AND branch_agreement > 0.7;
 ```
 
 ## Example Queries
@@ -297,13 +320,15 @@ WHERE question LIKE 'Branch A -%'
   AND branch_a > 0.7
 ORDER BY branch_a DESC;
 
--- Identify which poll options led to each branch
--- (Note: column name will vary based on the poll question)
+-- Identify which poll options led to each branch (using new branch_mappings table)
 SELECT DISTINCT 
-    substr(question, 1, 50) as branch_question,
-    branches_have_you_ever_felt_an_ai_truly_understood as branch_option
-FROM responses
-WHERE branches_have_you_ever_felt_an_ai_truly_understood IS NOT NULL;
+    bm.source_poll_question,
+    bm.branch_id,
+    bm.branch_condition,
+    COUNT(*) as response_count
+FROM branch_mappings bm
+GROUP BY bm.source_poll_question, bm.branch_id, bm.branch_condition
+ORDER BY bm.source_poll_question, bm.branch_id;
 
 -- Compare agreement rates between branches for the same base question
 SELECT 

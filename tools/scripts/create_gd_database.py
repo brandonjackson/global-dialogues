@@ -24,6 +24,19 @@ CONSENSUS_FILE = "consensus/consensus_profiles.csv"
 
 def normalize_column_name(name):
     """Convert column names to lowercase_underscored format."""
+    import re
+    original_name = name
+    
+    # Special handling for "Branches" columns - keep the question part as identifier
+    if name.startswith('Branches (') and name.endswith(')'):
+        # Extract the question part and create a unique identifier
+        match = re.search(r'Branches \((.*?)\)', name)
+        if match:
+            question_part = match.group(1)
+            # Create a short identifier from the question
+            question_id = re.sub(r'[^a-zA-Z0-9]+', '_', question_part[:50]).strip('_').lower()
+            return f'branches_{question_id}'
+    
     # Remove content in parentheses and the parentheses themselves
     name = re.sub(r'\([^)]*\)', '', name)
     # Replace special characters and spaces with underscores
@@ -101,8 +114,11 @@ def create_database(gd_number: int, force: bool = False):
                     'originalresponse', 'categories', 'sentiment', 'submitted_by', 
                     'language', 'sample_id', 'participant_id']
     
-    # All columns that are not in core_columns are agreement rate columns
-    agreement_columns = [col for col in df_responses.columns if col not in core_columns]
+    # Identify branch metadata columns that should remain as TEXT
+    branch_metadata_columns = [col for col in df_responses.columns if col.startswith('branches_') and col not in ['branches', 'branches_1']]
+    
+    # All columns that are not in core_columns or branch_metadata are agreement rate columns
+    agreement_columns = [col for col in df_responses.columns if col not in core_columns and col not in branch_metadata_columns]
     
     # Convert agreement rate columns to numeric (REAL) type
     print("Converting agreement rate columns to numeric...")
@@ -112,6 +128,11 @@ def create_database(gd_number: int, force: bool = False):
             # Convert percentage strings (e.g., "9.1%") to decimals (0.091)
             df_responses[col] = df_responses[col].astype(str).str.rstrip('%')
             df_responses[col] = pd.to_numeric(df_responses[col], errors='coerce') / 100.0
+    
+    # Keep branch metadata columns as TEXT
+    for col in branch_metadata_columns:
+        if col in df_responses.columns:
+            df_responses[col] = df_responses[col].astype(str).replace('nan', None)
     
     # Add columns for scores that will be populated later (explicitly as float type)
     df_responses['divergence_score'] = pd.Series(dtype='float64')
@@ -333,6 +354,67 @@ def create_database(gd_number: int, force: bool = False):
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_response_tags_response ON response_tags(response_id)")
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_response_tags_tag ON response_tags(tag_id)")
     
+    # Create branch mapping table
+    print("Creating branch mapping table...")
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS branch_mappings (
+            response_id INTEGER PRIMARY KEY,
+            source_poll_question_id TEXT,
+            source_poll_question TEXT,
+            branch_id TEXT,  -- 'A', 'B', or 'C'
+            branch_condition TEXT,  -- The poll option(s) that led to this branch
+            FOREIGN KEY (response_id) REFERENCES responses(response_id)
+        )
+    """)
+    
+    # Populate branch mappings from the Branches columns
+    print("Populating branch mappings...")
+    branches_columns = [col for col in df_responses.columns if col.startswith('branches_') and col not in ['branches', 'branches_1']]
+    
+    for branches_col in branches_columns:
+        # Extract the poll question from the column name
+        branch_data = df_responses[df_responses[branches_col].notna()]
+        
+        if not branch_data.empty:
+            # Get the source poll question from the column name (in parentheses in original CSV)
+            original_col_name = None
+            for orig_col in df_aggregate.columns:
+                if 'Branches' in orig_col and normalize_column_name(orig_col) == branches_col:
+                    # Extract question from parentheses
+                    import re
+                    match = re.search(r'\((.*?)\)$', orig_col)
+                    if match:
+                        original_col_name = match.group(1)
+                    break
+            
+            for idx, row in branch_data.iterrows():
+                # Parse the branch value (e.g., "Branch A - Yes")
+                branch_value = row[branches_col]
+                if pd.notna(branch_value) and ' - ' in str(branch_value):
+                    parts = str(branch_value).split(' - ', 1)
+                    branch_letter = parts[0].replace('Branch ', '').strip()
+                    branch_condition = parts[1].strip() if len(parts) > 1 else ''
+                    
+                    # Get response_id from the DataFrame index
+                    cursor.execute("""
+                        SELECT response_id FROM responses 
+                        WHERE question_id = ? AND participant_id = ?
+                        LIMIT 1
+                    """, (row['question_id'], row.get('participant_id')))
+                    
+                    result = cursor.fetchone()
+                    if result:
+                        response_id = result[0]
+                        cursor.execute("""
+                            INSERT OR IGNORE INTO branch_mappings 
+                            (response_id, source_poll_question, branch_id, branch_condition)
+                            VALUES (?, ?, ?, ?)
+                        """, (response_id, original_col_name, branch_letter, branch_condition))
+    
+    # Create index for branch lookups
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_branch_mappings_branch ON branch_mappings(branch_id)")
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_branch_mappings_question ON branch_mappings(source_poll_question)")
+    
     # Create useful views
     print("Creating views...")
     
@@ -352,6 +434,23 @@ def create_database(gd_number: int, force: bool = False):
         LEFT JOIN response_tags rt ON r.response_id = rt.response_id
         LEFT JOIN tags t ON rt.tag_id = t.tag_id
         GROUP BY r.response_id
+    """)
+    
+    # View for branched responses with source poll question info
+    cursor.execute("""
+        CREATE VIEW IF NOT EXISTS branched_responses AS
+        SELECT 
+            r.*,
+            bm.source_poll_question,
+            bm.branch_id,
+            bm.branch_condition,
+            CASE 
+                WHEN bm.branch_id = 'A' THEN r.branch_a
+                WHEN bm.branch_id = 'B' THEN r.branch_b
+                WHEN bm.branch_id = 'C' THEN r.branch_c
+            END as branch_agreement
+        FROM responses r
+        JOIN branch_mappings bm ON r.response_id = bm.response_id
     """)
     
     # Commit and close
@@ -383,6 +482,12 @@ def create_database(gd_number: int, force: bool = False):
     cursor.execute("SELECT name FROM sqlite_master WHERE type='table'")
     tables = cursor.fetchall()
     print(f"  Tables created: {', '.join([t[0] for t in tables])}")
+    
+    # Check branch mappings
+    cursor.execute("SELECT COUNT(*) FROM branch_mappings")
+    branch_count = cursor.fetchone()[0]
+    if branch_count > 0:
+        print(f"  Branch mappings: {branch_count}")
     
     # Show sample of normalized column names
     cursor.execute("PRAGMA table_info(responses)")
