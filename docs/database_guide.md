@@ -220,8 +220,17 @@ WHERE tags LIKE '%climate%';
 ```
 
 #### `branched_responses`
-Convenient view for analyzing branched questions with full context.
+Convenient view for analyzing branched questions with full context. Joins responses with branch_mappings and automatically selects the appropriate branch agreement column.
+
+**Columns include:**
+- All columns from `responses` table
+- `source_poll_question` - The poll question that created this branch
+- `branch_id` - Which branch (A, B, or C)
+- `branch_condition` - The poll option(s) that led to this branch
+- `branch_agreement` - Agreement rate within this specific branch (from branch_a/b/c column)
+
 ```sql
+-- Example: Find high-agreement responses in Branch A
 SELECT question, response, source_poll_question, branch_condition, branch_agreement
 FROM branched_responses
 WHERE branch_id = 'A' AND branch_agreement > 0.7;
@@ -320,7 +329,7 @@ WHERE question LIKE 'Branch A -%'
   AND branch_a > 0.7
 ORDER BY branch_a DESC;
 
--- Identify which poll options led to each branch (using new branch_mappings table)
+-- Use branch_mappings to understand branch structure
 SELECT DISTINCT 
     bm.source_poll_question,
     bm.branch_id,
@@ -329,6 +338,20 @@ SELECT DISTINCT
 FROM branch_mappings bm
 GROUP BY bm.source_poll_question, bm.branch_id, bm.branch_condition
 ORDER BY bm.source_poll_question, bm.branch_id;
+
+-- Use branched_responses view for comprehensive analysis
+SELECT 
+    substr(question, 10, 50) as branch_question,
+    source_poll_question,
+    branch_condition,
+    response,
+    branch_agreement,
+    consensus_minagree_50pct
+FROM branched_responses
+WHERE branch_id = 'A' 
+  AND branch_agreement > 0.7
+ORDER BY branch_agreement DESC
+LIMIT 10;
 
 -- Compare agreement rates between branches for the same base question
 SELECT 
