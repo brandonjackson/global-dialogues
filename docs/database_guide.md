@@ -47,7 +47,9 @@ Main table containing ALL data from the aggregate_standardized.csv file, includi
 | sentiment | TEXT | Sentiment classification from tags (Positive, Negative, Neutral) if available |
 | language | TEXT | Response language |
 | divergence_score | REAL | Calculated divergence score (if available) |
-| consensus_minagree_50pct | REAL | Consensus score at 50% threshold (if available) |
+| consensus_minagree_50pct | REAL | **Median consensus**: Minimum agreement rate among the top 50% of demographic segments (see explanation below) |
+| consensus_minagree_95pct | REAL | **Near-universal consensus**: Minimum agreement rate among the top 95% of demographic segments |
+| consensus_minagree_100pct | REAL | **Universal consensus**: Minimum agreement rate across ALL demographic segments (strictest threshold) |
 | **Agreement Rate Columns** | **REAL** | **All remaining columns represent agreement rates (0.0-1.0) from different demographic segments** |
 | all | REAL | Agreement rate from all participants |
 | africa, asia, europe, etc. | REAL | Agreement rates by geographic region |
@@ -58,6 +60,29 @@ Main table containing ALL data from the aggregate_standardized.csv file, includi
 | ... | REAL | Additional demographic segment agreement rates |
 
 **Note:** No unique constraint since participants can have multiple responses per question.
+
+##### Understanding Consensus Metrics
+
+The consensus metrics measure how broadly a response is agreed upon across different demographic segments. Each metric represents the minimum agreement rate among a percentage of segments, sorted from highest to lowest agreement:
+
+- **`consensus_minagree_100pct` (Universal Consensus)**: The minimum agreement rate across ALL demographic segments. This is the strictest measure - if this value is 0.7, it means EVERY demographic group (every region, age group, language, etc.) had at least 70% agreement with this response.
+
+- **`consensus_minagree_95pct` (Near-Universal Consensus)**: The minimum agreement rate among the top 95% of demographic segments. This excludes the bottom 5% of segments (outliers), providing a more robust measure of broad agreement while still being quite strict.
+
+- **`consensus_minagree_50pct` (Median Consensus)**: The minimum agreement rate among the top 50% of demographic segments. This is the median measure, showing the agreement level that at least half of all segments reached or exceeded.
+
+**Example**: Consider a response with these agreement rates across 10 segments:
+- Sorted rates: [0.95, 0.92, 0.88, 0.85, 0.82, 0.75, 0.45, 0.32, 0.28, 0.15]
+- `consensus_minagree_100pct` = 0.15 (the lowest agreement from any segment)
+- `consensus_minagree_95pct` = 0.28 (excluding the bottom 1 segment: minimum of top 9)
+- `consensus_minagree_50pct` = 0.75 (the lowest agreement among the top 5 segments)
+
+**Interpretation Guide**:
+- High `100pct` values (>0.6) = Truly universal agreement across ALL groups
+- High `95pct` values (>0.7) = Near-universal agreement, robust to outliers
+- High `50pct` values (>0.8) = Strong median consensus, at least half of groups strongly agree
+
+These metrics help identify responses with broad cross-demographic appeal and are particularly useful for finding viewpoints that resonate across diverse populations.
 
 #### `participants`
 Participant-level metrics including PRI scores.
@@ -282,7 +307,7 @@ The database creation script automatically normalizes all column names:
 
 1. **Indexes**: The database includes indexes on commonly queried columns (question_id, participant_id, language) for better performance.
 
-2. **NULL handling**: Analysis scores (divergence_score, consensus_minagree_50pct) may be NULL if analysis hasn't been run or if the metric couldn't be calculated.
+2. **NULL handling**: Analysis scores (divergence_score, consensus_minagree_50pct, consensus_minagree_95pct, consensus_minagree_100pct) may be NULL if analysis hasn't been run or if the metric couldn't be calculated.
 
 3. **Data freshness**: The database reflects the state of files at creation time. Rerun `make db GD=<N>` after running new analyses to update scores.
 

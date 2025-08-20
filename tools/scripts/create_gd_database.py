@@ -113,9 +113,11 @@ def create_database(gd_number: int, force: bool = False):
             df_responses[col] = df_responses[col].astype(str).str.rstrip('%')
             df_responses[col] = pd.to_numeric(df_responses[col], errors='coerce') / 100.0
     
-    # Add columns for scores that will be populated later
-    df_responses['divergence_score'] = None
-    df_responses['consensus_minagree_50pct'] = None
+    # Add columns for scores that will be populated later (explicitly as float type)
+    df_responses['divergence_score'] = pd.Series(dtype='float64')
+    df_responses['consensus_minagree_50pct'] = pd.Series(dtype='float64')
+    df_responses['consensus_minagree_95pct'] = pd.Series(dtype='float64')
+    df_responses['consensus_minagree_100pct'] = pd.Series(dtype='float64')
     
     # Drop the sentiment column temporarily (will be populated from tags later)
     df_responses['sentiment'] = None
@@ -239,12 +241,13 @@ def create_database(gd_number: int, force: bool = False):
                 row.get('minagree_10pct')
             ))
             
-            # Also update the responses table with the 50% consensus score as default
+            # Update the responses table with 50%, 95%, and 100% consensus scores
             cursor.execute("""
                 UPDATE responses 
-                SET consensus_minagree_50pct = ?
+                SET consensus_minagree_50pct = ?, consensus_minagree_95pct = ?, consensus_minagree_100pct = ?
                 WHERE question_id = ? AND response = ?
-            """, (row.get('minagree_50pct'), row['question_id'], row['response_text']))
+            """, (row.get('minagree_50pct'), row.get('minagree_95pct'), row.get('minagree_100pct'), 
+                  row['question_id'], row['response_text']))
     else:
         print(f"Consensus scores not found at {consensus_file}, skipping...")
     
