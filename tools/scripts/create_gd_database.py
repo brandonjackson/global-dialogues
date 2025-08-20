@@ -354,6 +354,142 @@ def create_database(gd_number: int, force: bool = False):
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_response_tags_response ON response_tags(response_id)")
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_response_tags_tag ON response_tags(tag_id)")
     
+    # Load and process participant-level responses if available
+    participants_file = data_dir / f"GD{gd_number}_participants.csv"
+    survey_readable_file = data_dir / f"GD{gd_number}_survey_human_readable.md"
+    
+    if participants_file.exists() and survey_readable_file.exists():
+        print(f"Loading participant responses from {participants_file}")
+        
+        # Parse question mapping from human readable file
+        import re
+        question_mapping = {}
+        with open(survey_readable_file, 'r') as f:
+            lines = f.readlines()
+        
+        for line in lines:
+            match = re.match(r'^(\d+)\.\s+(.+)', line.strip())
+            if match:
+                q_num = int(match.group(1))
+                q_text = match.group(2).strip()
+                question_mapping[q_text] = f"q{q_num}"
+        
+        # Load participant data
+        df_participants = pd.read_csv(participants_file, low_memory=False)
+        
+        # Drop muted column if it exists
+        if 'Muted' in df_participants.columns:
+            df_participants = df_participants.drop(columns=['Muted'])
+        
+        # Create mapping of CSV columns to question IDs
+        column_to_qid = {}
+        new_columns = {}
+        used_names = set()
+        
+        for col in df_participants.columns:
+            if col in ['Participant Id', 'Sample Provider Id']:
+                new_columns[col] = normalize_column_name(col)
+                used_names.add(new_columns[col])
+                continue
+            
+            # Handle columns with (Original) and (English) suffixes
+            base_col = col
+            suffix = ''
+            if col.endswith(' (Original)'):
+                base_col = col[:-11]
+                suffix = '_original'
+            elif col.endswith(' (English)'):
+                base_col = col[:-10]
+                suffix = ''  # English version gets the plain q_id
+            
+            # Handle multi-select poll columns (e.g., "Which of these... - Option")
+            if ' - ' in base_col and not base_col.startswith('Branch'):
+                # Split on last ' - ' to get question and option
+                parts = base_col.rsplit(' - ', 1)
+                if len(parts) == 2:
+                    question_part = parts[0].strip()
+                    option_part = parts[1].strip()
+                    # Find matching question
+                    for q_text, q_id in question_mapping.items():
+                        if q_text.startswith(question_part[:50]) or question_part.startswith(q_text[:50]):
+                            # Create column name like q64_option_name
+                            option_id = re.sub(r'[^a-zA-Z0-9]+', '_', option_part[:30]).lower()
+                            new_columns[col] = f"{q_id}_{option_id}{suffix}"
+                            break
+                    else:
+                        # No match found, use normalized version
+                        new_columns[col] = normalize_column_name(col)
+            else:
+                # Regular question column
+                found_match = False
+                for q_text, q_id in question_mapping.items():
+                    # Try to match question text (allowing for minor differences)
+                    if (q_text[:50] in base_col or base_col[:50] in q_text or 
+                        q_text.replace(',', '').replace('?', '') in base_col.replace(',', '').replace('?', '')):
+                        new_columns[col] = f"{q_id}{suffix}"
+                        found_match = True
+                        break
+                
+                if not found_match:
+                    # No match found, use normalized column name
+                    new_columns[col] = normalize_column_name(col)
+            
+            # Ensure unique column names
+            if new_columns[col] in used_names:
+                counter = 2
+                base_name = new_columns[col]
+                while f"{base_name}_{counter}" in used_names:
+                    counter += 1
+                new_columns[col] = f"{base_name}_{counter}"
+            used_names.add(new_columns[col])
+        
+        # Rename columns
+        df_participants.rename(columns=new_columns, inplace=True)
+        
+        # Create participant_responses table
+        print("Creating participant_responses table...")
+        df_participants.to_sql('participant_responses', conn, if_exists='replace', index=False)
+        
+        # Create index on participant_id
+        cursor.execute("CREATE INDEX IF NOT EXISTS idx_participant_responses_pid ON participant_responses(participant_id)")
+        
+        # Create question_columns table to document the mapping
+        print("Creating question_columns mapping table...")
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS question_columns (
+                column_name TEXT PRIMARY KEY,
+                question_id TEXT,
+                question_text TEXT,
+                column_type TEXT  -- 'question', 'question_original', 'multi_select_option'
+            )
+        """)
+        
+        # Populate question_columns table
+        for orig_col, new_col in new_columns.items():
+            if new_col in ['participant_id', 'sample_provider_id']:
+                continue
+            
+            col_type = 'question'
+            if new_col.endswith('_original'):
+                col_type = 'question_original'
+            elif '_' in new_col and new_col.split('_')[0] in [f"q{i}" for i in range(1, 200)]:
+                if len(new_col.split('_')) > 1 and not new_col.endswith('_original'):
+                    # This might be a multi-select option
+                    if ' - ' in orig_col:
+                        col_type = 'multi_select_option'
+            
+            cursor.execute("""
+                INSERT OR IGNORE INTO question_columns (column_name, question_id, question_text, column_type)
+                VALUES (?, ?, ?, ?)
+            """, (new_col, new_col.split('_')[0] if new_col.startswith('q') else None, orig_col, col_type))
+        
+        print(f"  Loaded {len(df_participants)} participant response records")
+    else:
+        if not participants_file.exists():
+            print(f"Participant responses file not found at {participants_file}, skipping...")
+        if not survey_readable_file.exists():
+            print(f"Survey human readable file not found at {survey_readable_file}, skipping...")
+    
     # Create branch mapping table
     print("Creating branch mapping table...")
     cursor.execute("""

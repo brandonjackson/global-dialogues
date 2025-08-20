@@ -143,6 +143,31 @@ The survey supports "branching" where a poll question can lead to different foll
   - `branches_have_you_used_ai_companions` = "Branch A - Yes"
   - All other segment columns (africa, o1_english, etc.) are NULL or show general population data
 
+#### `participant_responses`
+Individual participant responses with one row per participant and columns for each survey question. This table complements the aggregate data in `responses` by providing participant-level detail.
+
+**Key Features:**
+- Each row represents one participant's complete survey responses
+- Question columns are named using question IDs (q1, q2, q3, etc.) mapped from the survey structure
+- Open-ended questions have both original language (`q19_original`) and English translation (`q19`) columns
+- Multi-select poll options are represented as separate columns (e.g., `q64_chatgpt`, `q64_claude`)
+
+**Column Naming Convention:**
+- `participant_id` - Unique participant identifier
+- `q1`, `q2`, etc. - Response to question 1, 2, etc. (English version for open-ended)
+- `q19_original` - Original language version of open-ended response
+- `q64_option_name` - Multi-select option columns
+
+#### `question_columns`
+Maps the column names in `participant_responses` to their corresponding question text and type.
+
+| Column | Type | Description |
+|--------|------|-------------|
+| column_name | TEXT | Column name in participant_responses table |
+| question_id | TEXT | Question ID (q1, q2, etc.) |
+| question_text | TEXT | Full text of the question or option |
+| column_type | TEXT | Type: 'question', 'question_original', or 'multi_select_option' |
+
 #### `participants`
 Participant-level metrics including PRI scores.
 
@@ -380,6 +405,51 @@ WHERE question LIKE 'Branch %'
   AND (branch_a > 0.8 OR branch_b > 0.8 OR branch_c > 0.8)
 ORDER BY COALESCE(branch_a, branch_b, branch_c) DESC
 LIMIT 10;
+```
+
+### Working with Individual Participant Data
+
+```sql
+-- Get all responses from a specific participant
+SELECT * FROM participant_responses 
+WHERE participant_id = 'some_participant_id';
+
+-- Find participants who selected specific options
+SELECT participant_id, q1 as language, q2 as age, q5 as ai_sentiment
+FROM participant_responses
+WHERE q5 = 'More excited than concerned';
+
+-- Analyze multi-select responses (e.g., which AI tools people know)
+SELECT 
+    COUNT(*) as total_participants,
+    SUM(CASE WHEN q64_chatgpt = '1' THEN 1 ELSE 0 END) as knows_chatgpt,
+    SUM(CASE WHEN q64_claude = '1' THEN 1 ELSE 0 END) as knows_claude
+FROM participant_responses;
+
+-- Compare original vs English translations
+SELECT 
+    participant_id,
+    q19_original as original_response,
+    q19 as english_translation
+FROM participant_responses
+WHERE q1 != 'English' AND q19 IS NOT NULL
+LIMIT 10;
+
+-- Use question_columns to understand what each column represents
+SELECT column_name, question_text, column_type
+FROM question_columns
+WHERE question_id = 'q64'
+ORDER BY column_name;
+
+-- Join participant responses with PRI scores
+SELECT 
+    pr.participant_id,
+    pr.q2 as age_group,
+    pr.q3 as gender,
+    p.pri_score
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score > 0.8;
 ```
 
 ### Cross-Segment Analysis
