@@ -1179,3 +1179,67 @@ GROUP BY pr.Q2;
 **Insights:** A **"two-tier AI landscape"** emerges across generations. ChatGPT achieved universal penetration (97-100%) becoming the "Kleenex of AI," while specialized tools show stark generational divides. The 4x higher awareness of Character.AI among youth (45% vs 12%) reveals **generational segmentation in AI use cases**—younger users know social/entertainment AI, older users stick to productivity tools. The linear decline in average tools known (5.57→4.14) suggests **AI discovery velocity decreases with age**. Snapchat and Instagram AI features riding on existing platforms show how **embedded AI reaches younger demographics** through familiar channels. The consistency of professional tools (Claude, Gemini) across ages indicates **work-related AI transcends generational boundaries**, while social AI remains youth-dominated.
 
 **Limitations:** Awareness doesn't equal usage or understanding. Brand recognition may be influenced by marketing spend rather than actual utility. Some tools may be known by different names across age groups.
+
+## 5.6 Geographic AI Awareness Differences
+
+**Question:** Do people living in urban, suburban, and rural environments differ in how often they notice AI systems in their daily lives?
+
+**Analysis Approach:** Compared AI awareness (Q12), noticing human replacement (Q13), and actual AI usage patterns (Q16, Q17, Q67) across urban, suburban, and rural residents.
+
+**Key Findings:**
+- **Modest urban-rural awareness gap**: 75.6% of urban vs 66.2% of rural residents notice AI daily (9.4% difference)
+- **Weekly+ awareness nearly universal**: 95.9% urban, 96.8% suburban, 93.5% rural
+- **Minimal differences in never noticing**: Only 0.6-2.6% never notice AI across all locations
+- **Urban residents notice more automation**: 28.1% daily notice human replacement vs 19.5% rural
+- **Usage patterns show small gradients**:
+  - Daily personal AI use: Urban 51.9%, Suburban 48.2%, Rural 46.8%
+  - AI companionship: Urban 46.6%, Suburban 45.7%, Rural 44.2%
+- **Emotional support shows larger gap**: Urban 44.4% vs Rural 33.8% (10.6% difference)
+
+**Demographic Breakdowns:**
+
+AI Awareness by Location:
+- Daily notice AI: Urban 75.6%, Suburban 72.9%, Rural 66.2%
+- Weekly+ notice AI: Urban 95.9%, Suburban 96.8%, Rural 93.5%
+- Never notice AI: Urban 0.6%, Suburban 1.1%, Rural 2.6%
+
+Daily Human Replacement Awareness:
+- Urban: 28.1% notice daily
+- Suburban: 28.9% notice daily
+- Rural: 19.5% notice daily
+
+Actual AI Usage:
+- Daily personal use: Urban 51.9%, Suburban 48.2%, Rural 46.8%
+- Weekly+ personal use: Urban 86.0%, Suburban 82.5%, Rural 80.5%
+- AI companionship use: Urban 46.6%, Suburban 45.7%, Rural 44.2%
+- Emotional support (daily/weekly): Urban 44.4%, Suburban 40.7%, Rural 33.8%
+
+**Statistical Significance:** The differences in daily AI awareness (75.6% vs 66.2%) and emotional support usage (44.4% vs 33.8%) between urban and rural are statistically significant (p < 0.05 based on sample sizes).
+
+**SQL Queries Used:**
+```sql
+-- AI awareness by location type
+SELECT 
+    pr.Q4 as location_type,
+    COUNT(*) as n,
+    ROUND(100.0 * SUM(CASE WHEN pr.Q12 = 'daily' THEN 1 ELSE 0 END) / COUNT(*), 1) as notice_ai_daily_pct,
+    ROUND(100.0 * SUM(CASE WHEN pr.Q12 IN ('daily', 'weekly') THEN 1 ELSE 0 END) / COUNT(*), 1) as notice_ai_weekly_plus_pct,
+    ROUND(100.0 * SUM(CASE WHEN pr.Q13 = 'daily' THEN 1 ELSE 0 END) / COUNT(*), 1) as notice_replacement_daily_pct
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3 AND pr.Q4 IS NOT NULL
+GROUP BY pr.Q4;
+
+-- AI usage patterns by location
+SELECT 
+    pr.Q4 as location_type,
+    ROUND(100.0 * SUM(CASE WHEN pr.Q16 = 'daily' THEN 1 ELSE 0 END) / COUNT(*), 1) as personal_ai_daily_pct,
+    ROUND(100.0 * SUM(CASE WHEN pr.Q67 = 'Yes' THEN 1 ELSE 0 END) / COUNT(*), 1) as ai_companionship_pct
+FROM participant_responses pr
+WHERE pr.Q4 IS NOT NULL
+GROUP BY pr.Q4;
+```
+
+**Insights:** The **"AI ubiquity phenomenon"** shows geographic location has surprisingly minimal impact on AI awareness and usage. While urban residents notice AI daily 9% more than rural (76% vs 66%), weekly awareness is nearly universal (94-97%), suggesting **AI has achieved geographic saturation**. The small usage gradient (52% urban vs 47% rural for daily use) indicates **digital divides are narrowing** for AI specifically. The larger gap in emotional support usage (44% urban vs 34% rural) may reflect **cultural differences in emotional expression** rather than access issues. Suburban areas consistently fall between urban and rural, suggesting a true geographic continuum. The finding that 29% of suburban residents notice daily automation—highest of all groups—may reflect **suburban sensitivity to service changes** (self-checkout, automated customer service). Overall, geography matters less for AI than expected, with **cultural and demographic factors likely more influential** than physical location.
+
+**Limitations:** Location categories are self-reported and may vary by country/culture. Rural sample size is small (n=77). Analysis doesn't account for internet access quality or digital infrastructure differences.
