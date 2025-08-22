@@ -2721,3 +2721,61 @@ Parents exhibit **"pragmatic protectionism"**—highly concerned about children'
 - Cannot directly link individual parental concerns with usage
 - Benefits are estimated from aggregate patterns
 - Cross-sectional design doesn't capture changing views as children age
+
+---
+
+## 12.1 Is AI a Cure for, or a Symptom of, Disconnection?
+
+**Question:** Do people who report feeling chronically lonely or isolated ("I lack companionship," "I feel isolated from others") view AI's role in relationships with more **hope** (e.g., "significant reduction in loneliness") or more **fear** (e.g., "widespread social isolation")?
+
+**Analysis Approach:** 
+Created loneliness scores from 8 items (Q51-58), categorized participants into tertiles, and analyzed their selection of hopes vs fears about AI's impact on relationships from Q115.
+
+**Key Findings:**
+- **No significant correlation between loneliness and AI outlook** (r=0.001 for hopes, r=0.002 for fears, both p>0.6)
+- **Fears dominate across all loneliness levels**: Average 2.6 fears vs 2.2 hopes selected
+- **Hope for loneliness reduction slightly increases with loneliness**: 25.8% (low) → 33.0% (moderate) → 31.3% (high), but not statistically significant (χ²=4.81, p=0.09)
+- **Fear of social isolation stable across groups**: 34.1% (low), 34.8% (moderate), 30.3% (high), no significant difference (χ²=1.71, p=0.43)
+- **Hope-fear balance negative for all groups**: Only 10-12% have more hopes than fears, while 26-37% have more fears
+
+**Demographic Breakdowns:**
+- Low Loneliness (n=372): 2.19 hopes, 2.65 fears, -0.46 balance
+- Moderate Loneliness (n=330): 2.32 hopes, 2.62 fears, -0.30 balance  
+- High Loneliness (n=310): 2.19 hopes, 2.69 fears, -0.50 balance
+
+**Statistical Significance:** 
+- Spearman correlations near zero (all p>0.6)
+- Chi-square tests non-significant for both specific items
+- The lack of relationship is itself the key finding
+
+**SQL Queries Used:**
+```sql
+SELECT pr.participant_id,
+       pr.Q51, pr.Q52, pr.Q53, pr.Q54, pr.Q55, pr.Q56, pr.Q57, pr.Q58,
+       pr.Q115, p.pri_score
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3
+```
+
+**Scripts Used:**
+```python
+# Calculate loneliness score (higher = more lonely)
+df['loneliness_score'] = 0
+df['loneliness_score'] += df['Q51'].apply(lambda x: score_response(x, reverse=True))  # in tune - reverse
+df['loneliness_score'] += df['Q52'].apply(lambda x: score_response(x))  # lack companionship
+# ... etc for all 8 items
+
+# Parse hopes and fears from Q115 JSON
+items = json.loads(response)
+hope_count = sum(1 for item in items if item in hope_items)
+fear_count = sum(1 for item in items if item in fear_items)
+```
+
+**Insights:** 
+The data reveals AI is viewed as **neither cure nor symptom, but parallel phenomenon**. Lonely individuals don't see AI as salvation—their 31-33% hoping for loneliness reduction barely exceeds the 26% among non-lonely. Crucially, the **uniformly negative hope-fear balance** (-0.30 to -0.50) across all loneliness levels suggests AI relationships are seen as **risk management rather than solution**. The stable ~34% fearing social isolation regardless of current loneliness indicates this fear is **ideological, not experiential**—those already isolated don't particularly fear AI will worsen it. The slight uptick in loneliness-reduction hope among moderate loneliness (33%) versus high loneliness (31%) suggests a **curvilinear relationship**: those somewhat lonely see potential, while the chronically lonely may have realistic skepticism. This frames AI not as addressing disconnection's root causes but as a **technological development requiring navigation regardless of one's social status**.
+
+**Limitations:** 
+- Cross-sectional data cannot establish causality
+- Loneliness scale may not capture all dimensions of social isolation
+- Q115 provided fixed options that may constrain expression of nuanced views
