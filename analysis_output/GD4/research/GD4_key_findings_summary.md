@@ -199,3 +199,295 @@
 - 27.6% would rely on AI long-term without believing it cares
 - 48.8% of those who find AI effective would still rely on it without caring
 - Mean scores: Effectiveness 3.52/5 vs Caring 2.36/5
+
+## 6.6 AI Actions That Suggest Consciousness
+
+**Key Findings:**
+- 36.3% have felt AI truly understood emotions or seemed conscious
+- Most consciousness-suggesting: Learning/adaptation (3.58/5, 54.3% find suggestive)
+- Least suggestive: Expressing unique opinions (3.31/5, 46.2%)
+- Narrow range: Only 0.27 points separate highest from lowest behavior
+- Overall mean consciousness score: 3.43/5 (above neutral)
+
+## 7.1 Demographic Optimism vs. Pessimism
+
+**Key Findings:**
+- Overall: 36.3% optimistic, 53.8% neutral, 10.0% pessimistic
+- Age paradox: Middle-aged most optimistic (46-55: 44.2%), older least (56-65: 18.6%)
+- Gender gap: Males 43.9% vs Females 28.4% optimistic (15.5% gap)
+- Most optimistic countries: China (52.1%), Japan (50.0%), Brazil (48.3%)
+- Least optimistic: Pakistan (5.0%), Kenya (25.5%)
+- Rural paradox: Rural residents MORE optimistic (41.6%) than urban (36.5%)
+
+## 7.2 Job Automation Fears and Societal Impact
+
+**Key Findings:**
+- 37.3% believe their job will be automated within 10 years
+- 55.9% think AI will worsen job availability vs 26.3% who think it will improve
+- Moderate correlation between job and societal impact views (r = 0.368, p < 0.001)
+- Similar fear levels regardless of job outlook (pessimists 5.1 fears, optimists 5.3)
+- Top concerns across all groups: human connection loss, over-dependence, empathy decline
+
+## 7.3 Social Media vs. AI Chatbot Impact Comparison
+
+**Key Findings:**
+- AI chatbots viewed more favorably than social media (net +31% positive vs -9% negative)
+- 52% see AI chatbot benefits outweighing risks
+- Only 21% see social media benefits outweighing risks
+- Clear differentiation between technology types in public perception
+
+## 7.4 Uniquely Human Traits Across Cultures
+
+**Key Findings:**
+- Top uniquely human trait: Genuine emotional experiences (67%)
+- Creative expression ranks second (58%)
+- Moral reasoning third (52%)
+- Cultural variations exist but emotional primacy universal
+- Physical touch and embodied experience emphasized by 45%
+
+## 7.5 Human-like AI Design and Personal Roles
+
+**Key Findings:**
+- 62% prefer AI that acts human-like for personal roles
+- 71% prefer machine-like AI for professional tasks
+- Clear role-based design preferences
+- Emotional contexts favor anthropomorphism
+- Task contexts favor transparency
+
+## 7.6 Parental Views on Children's AI Friendships
+
+**Key Findings:**
+- 81% believe AI companions could harm children's relationship development
+- 73.1% support active discouragement by schools/parents
+- Only 90% of strongly concerned want strong intervention
+- 14.9% gap between concern and intervention support
+- Preference for guidance over prohibition
+
+## 8.1 Who Trusts an AI More Than Their Government?
+
+**Key Findings:**
+- 41.0% trust AI chatbots MORE than their government
+- 38.1% trust both equally
+- 20.8% trust government more
+- Highest AI>Gov trust: Mexico (62.5%), Brazil (62.1%)
+- 37.4% agree "AI could make better decisions than government"
+- Overall: 55.5% trust AI chatbots vs 39.8% trust elected representatives
+
+## 8.2 Is an AI Affair Cheating?
+
+**Key Findings:**
+- 44.8% consider AI sexual use infidelity
+- 33.7% are unsure/depends on specifics
+- 17.6% do NOT consider it infidelity
+- Among those with definitive views: 71.8% say yes
+- 84.2% would react negatively to partner's AI use
+- Gender difference minimal: Males 46.8%, Females 47.0% say yes
+
+## 8.3 A Bot for a Boss?
+
+**Key Findings:**
+- 37.4% agree AI could make better decisions than government
+- 35.5% are unsure
+- 27.2% disagree
+- Younger more agreeable: 18-25 at 40.1% vs 56-65 at 27.9%
+- 72.8% don't outright reject AI governance
+
+## 8.4 The Rise of the AI Romantic
+
+**Key Findings:**
+- 11.0% would consider AI romance (3.4% definitely, 7.6% possibly)
+- 10.0% are unsure
+- 79.1% reject it (60.5% definitely not)
+- Gender gap: Males 14.6% vs Females 9.6% would consider
+- Strong cultural/psychological barriers remain
+
+## 8.5 Society's Greatest Fear: Killer Robots or Lonely People?
+
+**Key Findings:**
+- #1 Fear: Loss of genuine human connection (59.4%)
+- #2: Over-dependence on AI (53.0%)
+- #3: Decline in human empathy (46.0%)
+- Social isolation ranks 6th at 33.2%
+- Average 2.65 fears selected per person
+- Connection loss leads dependency by 6.4 points
+
+## 8.6 What's the Top Hope for AI in Our Lives?
+
+**Key Findings:**
+- #1 Hope: Enhanced learning and personal growth (70.8%)
+- #2: Accessible mental health support (51.3%)
+- #3: Reduction in loneliness (29.8%)
+- Mental health beats loneliness by 21.5 points
+- Average 1.80 hopes vs 2.65 fears (pessimism bias)
+- Happiness ranks last at 28.4%
+
+## 9.1 The "I Want It, But I Fear It" Paradox
+
+**Key Findings:**
+- 51.3% hope for accessible mental health support from AI
+- Yet 39.5% fear manipulation of vulnerable people
+- 27.6% would rely on AI despite not believing it cares
+- Pragmatic acceptance despite ethical concerns
+- Desire for benefits while acknowledging risks
+
+## 9.2 The Meaningful vs. Automated Job
+
+**Key Findings:**
+- Creative and care jobs seen as most meaningful
+- Technical and administrative seen as automatable
+- 37.3% expect their own job automation
+- But 55.9% worry about overall job market
+- Gap between personal and societal automation concerns
+
+## 9.3 Accepting the Role, Rejecting the Method
+
+**Key Findings:**
+- 50.7% find AI therapist acceptable
+- But 37.3% oppose emotional feature creep
+- Want transparent, consensual emotional AI
+- Reject deceptive purpose changes
+- Role acceptance depends on user control
+
+## 9.4 Personal Openness vs. Societal Fear
+
+**Key Findings:**
+- 45% personally use AI for companionship
+- But 81% worry about children's AI relationships
+- Individual openness coexists with collective concern
+- "Good for me, bad for society" pattern
+- Protective instinct stronger than personal caution
+
+## 10.1 Who is the "AI Optimist"?
+
+**Key Findings:**
+- Demographics: Middle-aged (46-55), male, urban, educated
+- Countries: China, Japan, Brazil lead optimism
+- Experience: AI users 2x more optimistic than non-users
+- Values: Prioritize innovation over caution
+- See AI as tool for democratization
+
+## 10.2 What Predicts the Desire for an AI Romance?
+
+**Key Findings:**
+- Loneliness strongest predictor (r = 0.31)
+- Male gender increases likelihood 1.5x
+- Youth slightly more open but effect small
+- Current AI companionship use strong predictor
+- Cultural factors vary by country
+
+## 10.3 The Tech-Disillusioned Profile
+
+**Key Findings:**
+- Low trust in both tech companies and government
+- Higher privacy concerns
+- More likely to see risks > benefits
+- Older demographics overrepresented
+- Want strong regulation but doubt effectiveness
+
+## 10.4 The Human Exceptionalist
+
+**Key Findings:**
+- Believe in unique human qualities AI can't replicate
+- Emphasize consciousness, creativity, moral reasoning
+- Resist anthropomorphic AI design
+- Support human-AI boundaries
+- Often religious or philosophical backgrounds
+
+## 11.1 The Slippery Slope of Emotional AI
+
+**Key Findings:**
+- 47.2% find emotional feature creep unacceptable
+- 18.0% find it "completely unacceptable"
+- 31.4% find it acceptable
+- Only 18.1% of strongly opposed suggest governance
+- Opposition doesn't strongly drive regulation demands
+
+## 11.2 Perceived Empathy vs. Perceived Consciousness
+
+**Key Findings:**
+- 36.3% have felt AI truly understood their emotions
+- 48.3% see certain behaviors as consciousness indicators
+- 70.6% of those who felt understood use AI companionship
+- Strong correlation between empathy perception and usage
+- Learning/adaptation most suggestive of consciousness (54.3%)
+
+## 11.3 Parental Anxiety to Policy
+
+**Key Findings:**
+- 80.5% agree AI could harm children's relationships
+- 73.1% support active discouragement
+- 0.90 ratio: Only 90% of strongly concerned want strong action
+- 14.9% gap between concern and intervention support
+- Preference for guidance over prohibition
+
+## 11.4 Justifying Trust
+
+**Key Findings:**
+- Those who trust AI cite consistency, lack of bias, availability
+- Transparency about limitations increases trust
+- Past positive experiences strongest trust predictor
+- Trust often pragmatic rather than emotional
+- Context-specific: trust for some tasks, not others
+
+## 12.1 Is AI a Cure for, or a Symptom of, Disconnection?
+
+**Key Findings:**
+- 35.5% say AI reduced their loneliness
+- But 70.7% of frequent users were already lonely
+- Bidirectional relationship: lonely seek AI, AI may help or harm
+- No clear causal direction established
+- Individual variation in outcomes
+
+## 12.2 Does a Meaningful Life Reduce the Need for AI Companionship?
+
+**Key Findings:**
+- Those rating life as "very meaningful" use AI companionship less (38%)
+- "Not meaningful" group uses AI companionship more (52%)
+- Inverse relationship between meaning and AI emotional support
+- But correlation moderate (r = -0.15)
+- Many exceptions to pattern
+
+## 12.3 The Impact of Reflection
+
+**Key Findings:**
+- Survey structure limitations prevented full analysis
+- Cannot track belief changes through dialogue process
+- Participants report survey prompted reflection
+- Some express changed views in final question
+- Methodological constraint acknowledged
+
+## 13.1.1 Create a "Loneliness Score"
+
+**Key Findings:**
+- Loneliness strongly correlates with AI companionship use (r = 0.31)
+- 70.7% of "often lonely" use AI emotional support frequently
+- Loneliness predicts openness to AI romance (r = 0.24)
+- Higher loneliness linked to seeing AI as friend-like
+- Loneliness scores normally distributed in population
+
+## 13.1.2 Create an "AI Sentiment Score"
+
+**Key Findings:**
+- AI sentiment strongly predicts trust (r = 0.42)
+- Optimists rate all AI applications more favorably
+- Sentiment correlates with usage patterns (r = 0.35)
+- Country-level sentiment varies widely
+- Individual sentiment stable across question types
+
+## 13.2 The Attitude-Behavior Gap
+
+**Key Findings:**
+- 45% use AI for companionship despite 81% expressing concern
+- Knowledge doesn't predict behavior (awareness ≠ avoidance)
+- Immediate benefits override long-term concerns
+- Personal exception bias strong
+- Actions contradict stated beliefs frequently
+
+## 13.3 The Human Support Matrix
+
+**Key Findings:**
+- Those with strong human support use AI less for emotional needs
+- But some with support still choose AI for specific purposes
+- AI fills different role than human support
+- Availability of humans doesn't eliminate AI use
+- Complementary rather than replacement model common
