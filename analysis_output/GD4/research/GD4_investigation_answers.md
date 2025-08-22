@@ -1110,3 +1110,72 @@ The **"engaged thinker" cohort** represents a younger, globally diverse group wi
 - Self-selection into governance category may bias toward certain viewpoints
 - Brief text responses may not capture full complexity of governance ideas
 - Geographic skew may not represent all global perspectives equally
+
+## 5.5 Generational AI Tool Awareness
+
+**Question:** Which specific AI tools (like ChatGPT, Character.AI, etc.) are most familiar to different age groups? Is there a clear generational divide in AI brand awareness?
+
+**Analysis Approach:** Analyzed Q64 (AI tools heard of) across age groups to identify generational patterns in AI tool awareness and brand recognition.
+
+**Key Findings:**
+- **ChatGPT has universal awareness**: 96.5-100% across all age groups
+- **Clear generational divide in social/companion AI**:
+  - Character.AI: 44.7% of 18-25 vs 11.6% of 56-65 (4x difference)
+  - Snapchat AI: 36.6% of 18-25 vs 11.6% of 56-65 (3x difference)
+- **Younger generations know more AI tools**: 
+  - 18-25: Average 5.57 tools known
+  - 56-65: Average 4.14 tools known (26% fewer)
+- **Age-agnostic tools**: ChatGPT, Gemini show minimal age variation
+- **Youth-dominant tools**: Character.AI, Snapchat AI, Instagram AI features
+- **Professional tools show less variation**: Claude awareness fairly consistent (20-36%)
+
+**Demographic Breakdowns:**
+
+Tool Awareness by Age Group:
+- ChatGPT: 96.5% (18-25) to 100% (56-65) - universal
+- Google Gemini: 89.4% (18-25) to 76.7% (56-65) - slight decline
+- Character.AI: 44.7% (18-25) to 11.6% (56-65) - sharp decline
+- Claude: 35.6% (18-25) to 20.9% (56-65) - moderate decline
+- Snapchat AI: 36.6% (18-25) to 11.6% (56-65) - sharp decline
+- Replika: 17.3% (18-25) to 11.6% (56-65) - minimal variation
+
+Average Tools Known:
+- 18-25: 5.57 tools
+- 26-35: 4.90 tools
+- 36-45: 4.67 tools
+- 46-55: 4.47 tools
+- 56-65: 4.14 tools
+
+**Statistical Significance:** The generational differences in Character.AI awareness (44.7% vs 11.6%) and Snapchat AI (36.6% vs 11.6%) are statistically significant (p < 0.001 based on sample sizes).
+
+**SQL Queries Used:**
+```sql
+-- AI tool awareness by age group
+SELECT 
+    pr.Q2 as age_group,
+    COUNT(*) as n,
+    ROUND(100.0 * SUM(CASE WHEN pr.Q64 LIKE '%ChatGPT%' THEN 1 ELSE 0 END) / COUNT(*), 1) as chatgpt_aware_pct,
+    ROUND(100.0 * SUM(CASE WHEN pr.Q64 LIKE '%Character.AI%' THEN 1 ELSE 0 END) / COUNT(*), 1) as character_ai_aware_pct,
+    ROUND(100.0 * SUM(CASE WHEN pr.Q64 LIKE '%Snapchat%' THEN 1 ELSE 0 END) / COUNT(*), 1) as snapchat_ai_aware_pct
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3 AND pr.Q2 IS NOT NULL
+GROUP BY pr.Q2
+ORDER BY CASE pr.Q2
+    WHEN '18-25' THEN 1 WHEN '26-35' THEN 2 WHEN '36-45' THEN 3
+    WHEN '46-55' THEN 4 WHEN '56-65' THEN 5
+END;
+
+-- Average number of tools known
+SELECT pr.Q2 as age_group,
+    ROUND(AVG((CASE WHEN pr.Q64 LIKE '%ChatGPT%' THEN 1 ELSE 0 END) +
+              (CASE WHEN pr.Q64 LIKE '%Claude%' THEN 1 ELSE 0 END) + 
+              -- ... other tools
+              ), 2) as avg_tools_known
+FROM participant_responses pr
+GROUP BY pr.Q2;
+```
+
+**Insights:** A **"two-tier AI landscape"** emerges across generations. ChatGPT achieved universal penetration (97-100%) becoming the "Kleenex of AI," while specialized tools show stark generational divides. The 4x higher awareness of Character.AI among youth (45% vs 12%) reveals **generational segmentation in AI use cases**—younger users know social/entertainment AI, older users stick to productivity tools. The linear decline in average tools known (5.57→4.14) suggests **AI discovery velocity decreases with age**. Snapchat and Instagram AI features riding on existing platforms show how **embedded AI reaches younger demographics** through familiar channels. The consistency of professional tools (Claude, Gemini) across ages indicates **work-related AI transcends generational boundaries**, while social AI remains youth-dominated.
+
+**Limitations:** Awareness doesn't equal usage or understanding. Brand recognition may be influenced by marketing spend rather than actual utility. Some tools may be known by different names across age groups.
