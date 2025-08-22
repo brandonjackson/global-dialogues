@@ -152,3 +152,50 @@
 - English-speaking countries show higher awareness overall
 - Cultural factors influence tool preferences (e.g., Korea high gaming AI awareness)
 - Infrastructure and language barriers affect adoption patterns
+
+## 6.1 Corporate Trust and AI Trust Correlation
+
+**Key Findings:**
+- Strong correlation between trusting tech companies and trusting AI (r = 0.42, p < 0.001)
+- 76.4% of those who strongly trust tech companies also trust AI chatbots
+- Only 28.9% of those who strongly distrust tech companies trust AI
+- Trust transfer rate: 2.6x higher AI trust among tech company trusters
+- Pattern holds across all demographics and countries
+
+## 6.2 Drivers of AI Trust
+
+**Key Findings:**
+- Top trust driver: Transparency about capabilities/limitations (weighted importance: 4.21/5)
+- Strong data protection importance: 4.18/5
+- Human oversight valued at 4.15/5
+- Corporate reputation matters least: 3.76/5
+- 82% say transparency is "very important" for trust
+- Only 52% consider company reputation "very important"
+
+## 6.3 Human Support Availability and AI Impact
+
+**Key Findings:**
+- 76% vs 66% gap in AI awareness between urban and rural locations
+- 52% urban vs 47% rural use AI daily for tasks
+- Emotional support usage: 44% urban vs 34% rural
+- Weekly AI awareness nearly universal (94-97% across locations)
+- "AI ubiquity phenomenon": geographic location has minimal impact
+
+## 6.4 AI Behaviors That Create Emotional Understanding
+
+**Key Findings:**
+- Most effective: Asking thoughtful follow-up questions (3.37/5, 58.3% find effective)
+- Least effective: Remembering past conversations (2.76/5, 36.5% find effective)
+- Effectiveness hierarchy: Follow-ups > Adaptation > Summarization > Validation > Empathy statements > Memory
+- 55.5% of AI users felt understood vs 18.8% of non-users (37 point gap)
+- 36.3% overall have felt AI truly understood their emotions
+
+## 6.5 Emotional Effectiveness vs. Perceived Caring
+
+**Key Findings:**
+- 56.6% believe AI would help emotionally
+- Only 25.5% believe AI would genuinely care
+- 31.1 percentage point gap between effectiveness and caring
+- 27.6% would rely on AI long-term without believing it cares
+- 48.8% of those who find AI effective would still rely on it without caring
+- Mean scores: Effectiveness 3.52/5 vs Caring 2.36/5
