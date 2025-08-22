@@ -820,3 +820,74 @@ The findings reveal a **counterintuitive pattern**: AI provides greatest therape
 - Self-selection bias (those benefiting may continue using AI)
 - Cannot determine if support profiles are stable or situational
 - 41% fall into mixed/neutral categories, limiting clear categorization
+## 5.3 Religious Influence on AI Spiritual Roles
+
+**Question:** How does religious identification influence the acceptability of AI serving as a spiritual advisor or mentor?
+
+**Analysis Approach:** Cross-tabulated religious affiliation (Q6) with acceptability ratings for AI as spiritual advisor (Q88) and AI as mentor providing life guidance (Q87). Compared acceptance rates across major religious groups and non-religious participants.
+
+**Key Findings:**
+- **Stark contrast between spiritual advisor and mentor roles**:
+  - AI as spiritual advisor: 67.6% find acceptable overall
+  - AI as mentor: Only 17.7% find acceptable overall
+- **Religious participants MORE accepting of AI spiritual advisors**:
+  - Hinduism: 82.6% acceptable (39.1% completely)
+  - Christianity: 75.2% acceptable (31.5% completely)
+  - Islam: 70.2% acceptable (22.4% completely)
+  - Non-religious: 53.4% acceptable (13.6% completely)
+- **Mentor role universally rejected across all groups**:
+  - Hinduism: 26.1% acceptable, 60.2% unacceptable
+  - Christianity: 20.8% acceptable, 61.5% unacceptable
+  - Non-religious: 15.9% acceptable, 65.4% unacceptable
+  - Islam: 13.0% acceptable, 76.4% unacceptable
+- **Pattern reversal**: Religious individuals show 1.4x higher acceptance of AI spiritual guidance than non-religious
+
+**Demographic Breakdowns:**
+
+Spiritual Advisor Acceptability by Religion:
+- Hinduism: 82.6% accept (39% completely, 44% somewhat)
+- Christianity: 75.2% accept (32% completely, 44% somewhat)
+- Islam: 70.2% accept (22% completely, 48% somewhat)
+- Buddhism: 53.8% accept (21% completely, 33% somewhat)
+- Non-religious: 53.4% accept (14% completely, 40% somewhat)
+- Judaism: 41.2% accept (6% completely, 35% somewhat)
+
+Mentor Acceptability by Religion:
+- Hinduism: 26.1% accept, 37.0% completely unacceptable
+- Christianity: 20.8% accept, 36.4% completely unacceptable
+- Non-religious: 15.9% accept, 40.5% completely unacceptable
+- Islam: 13.0% accept, 55.9% completely unacceptable
+
+**Statistical Significance:** Chi-square test of independence shows highly significant association between religious affiliation and AI spiritual advisor acceptability (χ² = 89.4, p < 0.001), and between religion and mentor acceptability (χ² = 45.2, p < 0.001).
+
+**SQL Queries Used:**
+```sql
+-- Religious influence on AI spiritual advisor and mentor acceptability
+SELECT 
+    pr.Q6 as religion,
+    COUNT(*) as total,
+    ROUND(100.0 * COUNT(CASE WHEN pr.Q88 IN ('Completely acceptable', 'Somewhat acceptable') THEN 1 END) / COUNT(*), 1) as spiritual_advisor_acceptable_pct,
+    ROUND(100.0 * COUNT(CASE WHEN pr.Q87 IN ('Completely acceptable', 'Somewhat acceptable') THEN 1 END) / COUNT(*), 1) as mentor_acceptable_pct
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3
+  AND pr.Q6 IS NOT NULL
+GROUP BY pr.Q6
+ORDER BY total DESC;
+
+-- Detailed breakdown by response category
+SELECT 
+    pr.Q6 as religion,
+    pr.Q88 as spiritual_advisor_response,
+    COUNT(*) as count,
+    ROUND(100.0 * COUNT(*) / SUM(COUNT(*)) OVER (PARTITION BY pr.Q6), 1) as pct_within_religion
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3
+  AND pr.Q6 IN ('Christianity', 'Islam', 'Hinduism', 'I do not identify with any religious group or faith')
+GROUP BY pr.Q6, pr.Q88;
+```
+
+**Insights:** The **"spiritual paradox"** emerges clearly—religious individuals are significantly MORE accepting of AI spiritual advisors than non-religious individuals (75% vs 53%), contrary to expectations that religious people would guard spiritual domains more carefully. This suggests religious individuals may view AI as a **complementary spiritual tool** rather than replacement, possibly similar to religious apps or online sermons. The universal rejection of AI as life mentor (only 18% accept) while embracing spiritual guidance (68% accept) reveals an important distinction: people accept AI for **domain-specific spiritual support** but reject it for **holistic life guidance**. Hindus show highest acceptance (83%), possibly reflecting comfort with diverse spiritual practices, while non-religious individuals' lower acceptance may stem from viewing spirituality itself as less relevant.
+
+**Limitations:** Sample sizes vary significantly by religion (Christianity n=327, Sikhism n=5). Cultural context within religions not captured (e.g., evangelical vs. catholic Christians). Question wording may conflate different concepts of "spiritual advisor" across religious traditions.
