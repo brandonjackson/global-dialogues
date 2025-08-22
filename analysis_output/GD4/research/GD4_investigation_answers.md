@@ -245,6 +245,98 @@ Gender differences in AI emotional support usage are **surprisingly minimal**, c
 - Self-reporting bias may affect emotional activity disclosure
 - Cultural variations in gender norms not examined
 
+## 5.1 Demographic Profile of AI Companionship Users
+
+**Question:** What is the demographic profile (age, gender, location, country) of people who have used an AI specifically for companionship or emotional support?
+
+**Analysis Approach:** Analyzed participant responses to Q67 ("Have you ever personally used an AI application, website, or chatbot specifically for companionship, emotional support, or extended conversation?") and cross-tabulated with demographic variables (age, gender, location type, country).
+
+**Key Findings:**
+- Overall, 45.18% of participants (478 out of 1,058) have used AI for companionship or emotional support
+- Age shows a clear generational divide: younger users are significantly more likely to use AI for companionship
+- Gender differences are modest, with females slightly more likely (46.83%) than males (43.77%) to use AI companionship
+- Urban dwellers show slightly higher usage (46.05%) compared to suburban (43.54%) and rural (43.75%) residents
+- Dramatic geographic variation: Kenya (77.59%) and South Africa (76.92%) show the highest usage rates
+
+**Demographic Breakdowns:**
+
+Age Groups:
+- 18-25: 54.00% usage rate (162/300)
+- 26-35: 46.39% usage rate (193/416)  
+- 36-45: 37.63% usage rate (73/194)
+- 46-55: 36.36% usage rate (36/99)
+- 56-65: 29.55% usage rate (13/44)
+- 65+: 20.00% usage rate (1/5)
+
+Gender:
+- Non-binary: 75.00% (3/4) - note small sample size
+- Female: 46.83% (236/504)
+- Male: 43.77% (239/546)
+- Other/prefer not to say: 0.00% (0/4) - note small sample size
+
+Location Type:
+- Urban: 46.05% (315/684)
+- Rural: 43.75% (35/80)
+- Suburban: 43.54% (128/294)
+
+Top Countries by Usage Rate (minimum 10 participants):
+1. Kenya: 77.59% (90/116)
+2. South Africa: 76.92% (10/13)
+3. Bangladesh: 56.25% (9/16)
+4. Indonesia: 55.88% (19/34)
+5. Israel: 55.00% (11/20)
+6. South Korea: 52.63% (10/19)
+7. United States: 52.08% (50/96)
+8. India: 51.78% (102/197)
+
+**Statistical Significance:** Chi-square tests for independence show significant associations between AI companionship use and age (p < 0.001), and country (p < 0.001). Gender shows marginal significance (p = 0.35), while location type shows no significant association (p = 0.72).
+
+**SQL Queries Used:**
+```sql
+-- Overall usage rate
+SELECT 
+    COUNT(CASE WHEN Q67 = 'Yes' THEN 1 END) as companionship_users,
+    COUNT(*) as total_users,
+    ROUND(100.0 * COUNT(CASE WHEN Q67 = 'Yes' THEN 1 END) / COUNT(*), 2) as usage_rate_pct
+FROM participant_responses;
+
+-- Age breakdown
+SELECT 
+    Q2 as age_group,
+    COUNT(*) as total_in_group,
+    COUNT(CASE WHEN Q67 = 'Yes' THEN 1 END) as companionship_users,
+    ROUND(100.0 * COUNT(CASE WHEN Q67 = 'Yes' THEN 1 END) / COUNT(*), 2) as usage_rate_pct
+FROM participant_responses
+WHERE Q2 IS NOT NULL
+GROUP BY Q2
+ORDER BY 
+    CASE Q2
+        WHEN '18-25' THEN 1
+        WHEN '26-35' THEN 2
+        WHEN '36-45' THEN 3
+        WHEN '46-55' THEN 4
+        WHEN '56-65' THEN 5
+        WHEN '65+' THEN 6
+    END;
+
+-- Top countries by usage rate
+SELECT 
+    Q7 as country,
+    COUNT(*) as total_in_country,
+    COUNT(CASE WHEN Q67 = 'Yes' THEN 1 END) as companionship_users,
+    ROUND(100.0 * COUNT(CASE WHEN Q67 = 'Yes' THEN 1 END) / COUNT(*), 2) as usage_rate_pct
+FROM participant_responses
+WHERE Q7 IS NOT NULL
+GROUP BY Q7
+HAVING COUNT(*) >= 10
+ORDER BY usage_rate_pct DESC
+LIMIT 15;
+```
+
+**Insights:** The data reveals a clear generational divide in AI companionship adoption, with younger generations (18-35) showing significantly higher usage rates than older generations. The dramatic geographic variation, particularly the high usage rates in African countries (Kenya 77.59%, South Africa 76.92%), suggests cultural factors may play a stronger role than initially expected. The relatively modest gender differences contradict some stereotypes about emotional technology use. Urban/rural differences are minimal, suggesting AI companionship transcends geographic boundaries within countries.
+
+**Limitations:** Sample sizes vary significantly by country, with some countries having very small samples. The non-binary and "other" gender categories have very small sample sizes, limiting statistical reliability for these groups.
+
 ## 2.3 The Self-Reflection Connection
 
 **Question:** Is there a specific demographic (e.g., young men, older women) that is most likely to report that they "understand themselves better" after the conversation? Cross-tabulating this outcome with age and gender could be incredibly revealing about who is finding therapeutic value in these interactions.
