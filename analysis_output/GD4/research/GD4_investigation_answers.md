@@ -3935,35 +3935,43 @@ The data confirms that **Escapists derive greater benefit from AI companionship 
 **Question:** Is there a negative correlation between a respondent's composite "Loneliness Score" and their stated acceptability of forming emotional or romantic bonds with AI?
 
 **Analysis Approach:**
-Attempted to correlate individual loneliness scores with AI bond acceptability. Found that individual-level loneliness data is not available in the participant_responses table. Analyzed aggregate patterns from responses table instead.
+Created composite loneliness score from questions Q51-Q58 (frequency responses: Never/Rarely/Sometimes/Often/Always). Correlated with AI emotional bond (Q77) and romantic bond (Q78) acceptability using Spearman and Pearson correlations. Analyzed n=1012 participants with PRI ≥ 0.3.
 
 **Key Findings:**
-- **Individual correlation cannot be calculated** - loneliness questions not in participant_responses
-- Aggregate data shows loneliness indicators exist but not linked to individuals
-- AI emotional bond acceptability data exists at aggregate level only
-- Cannot determine if correlation is positive, negative, or neutral
-- **Analysis limitation:** Survey structure doesn't support this correlation analysis
+- **Emotional bonds: r = -0.052, p = 0.099** - Very weak negative correlation, not significant
+- **Romantic bonds: r = -0.016, p = 0.609** - No correlation whatsoever
+- Low loneliness group (≤2.0): n=231
+  - 58.0% accept emotional AI bonds
+  - 43.3% accept romantic AI bonds
+- **Answer: NO meaningful negative correlation exists**
 
 **SQL Queries:**
 ```sql
--- Attempted but failed - columns don't exist
-SELECT pr.Q72 as lonely_frequency, pr.Q77 as ai_emotional_bond_acceptable
-FROM participant_responses pr;
+SELECT pr.Q51, pr.Q52, pr.Q53, pr.Q54, pr.Q55, pr.Q56, pr.Q57, pr.Q58,
+       pr.Q77 as emotional_bond, pr.Q78 as romantic_bond
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3;
+```
 
--- Only aggregate data available
-SELECT response, CAST("all" AS REAL) * 100 as pct
-FROM responses
-WHERE question = 'I lack companionship.';
+**Scripts Used:**
+```python
+# Map loneliness responses and calculate composite score
+freq_map = {'Never': 1, 'Rarely': 2, 'Sometimes': 3, 'Often': 4, 'Always': 5}
+df['loneliness_score'] = df[loneliness_cols].mean(axis=1)
+
+# Calculate correlations
+corr_emotional, p = spearmanr(loneliness_score, emotional_bond_score)
+# Result: r = -0.052, p = 0.099 (not significant)
 ```
 
 **Insights:**
-The inability to calculate individual-level correlation between loneliness and AI bond acceptability reveals a **critical data structure limitation**. While the survey asked about loneliness and AI bonds, these weren't captured at the participant level in a way that enables correlation analysis. This prevents us from determining whether lonely individuals are more or less accepting of AI relationships. Theoretically, a NEGATIVE correlation would suggest lonely people specifically want human connection and reject AI substitutes. A POSITIVE correlation would indicate loneliness increases openness to any connection, including AI. Without this data, we cannot test whether **loneliness drives or deters AI relationship acceptance**. This represents a missed opportunity to understand a fundamental dynamic in human-AI relationships.
+The data reveals **loneliness does NOT predict AI bond acceptability** in either direction. The hypothesized negative correlation doesn't exist—lonely people are neither more nor less accepting of AI relationships. The very weak negative correlation (-0.052) for emotional bonds is not statistically significant and practically meaningless. For romantic bonds, the correlation is essentially zero (-0.016). This suggests **loneliness is not a driving factor** in AI relationship acceptance. Other factors—personality traits, technology familiarity, past relationship experiences, cultural values—likely play much larger roles. The absence of correlation challenges both narratives: that lonely people desperately embrace AI (positive correlation) AND that they specifically reject it wanting human connection (negative correlation). Instead, **AI relationship acceptance appears orthogonal to loneliness**, indicating these technologies appeal to (or repel) people regardless of their social isolation levels.
 
 **Limitations:**
-- Survey design doesn't capture loneliness metrics at participant level
-- Cannot link individual loneliness to bond acceptability responses
-- Aggregate patterns insufficient for correlation analysis
-- Question cannot be answered with available data structure
+- Very few participants scored high on loneliness (only 1 with score ≥3.5)
+- Loneliness scale may not capture all dimensions of social isolation
+- Cross-sectional data cannot determine if AI use affects loneliness over time
 
 
 ## 14.2 On Trust and Authority
