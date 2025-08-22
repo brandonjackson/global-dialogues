@@ -20,12 +20,14 @@ This document consolidates the key findings from GD4_investigation_answers.md, m
 **Question:** Are the AI-Reliant more likely to believe AI relationships will weaken human social connections?
 
 **Key Findings:**
-- 81% believe AI could negatively impact children's ability to form human relationships
-- When asked about most significant social impact: 11.6% mentioned over-dependence, 7.0% loss of human connection
-- Despite concerns about children, 52% see AI chatbot benefits outweighing risks
-- AI chatbots viewed more favorably than social media (net +31% vs -9%)
+- 64.0% of AI-Reliant see benefits > risks vs 52% general population
+- 16.6% of AI-Reliant see risks > benefits vs 21% general population
+- Mean impact score: 3.74 (AI-Reliant) vs 3.00 (Non-Users) on 1-5 scale
+- Chi-square test: χ² = 31.46, p < 0.0001
+- Only 3.4% of AI-Reliant express social fabric concerns in final thoughts
+- General population: 80.5% worry AI harms children's relationships
 
-**Significance:** Users hold dual perspective - acknowledge risks for vulnerable populations while seeing personal benefits. View AI as supplement, not replacement.
+**Significance:** Experience reverses concerns - AI-Reliant users are 2x more likely than non-users to see AI as beneficial. Directly contradicts hypothesis that experience would breed concern about social fabric.
 
 ## 2.1 Generational Divide in Intimacy
 
