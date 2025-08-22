@@ -1987,3 +1987,737 @@ The data reveals **adaptive behavior trumps anthropomorphic display** in suggest
 - Questions ask about hypothetical behaviors, not experienced ones
 - Cannot determine if multiple behaviors together create stronger consciousness perception
 - Cultural and philosophical differences in consciousness concepts not captured
+
+## 7.2 Job Automation Fears and Societal Impact
+
+**Question:** Is there a link between a person's belief that their job is likely to be automated and the intensity of their fears about AI's negative societal impact (e.g., job loss, inequality)?
+
+**Analysis Approach:** 
+Analyzed aggregate data on job automation expectations and AI's impact on job availability, then examined correlations between job impact views and broader societal concerns using participant-level data.
+
+**Key Findings:**
+- **37.3% believe their job will be automated** within 10 years
+- **Negative view of AI's job impact**: 55.9% think AI will worsen job availability vs 26.3% who think it will improve
+- **Moderate correlation** between job impact and societal impact views (r = 0.368, p < 0.001)
+- **Similar fear levels** regardless of job outlook: pessimists average 5.1 fears, optimists 5.3 fears
+- **Top concerns across all groups**:
+  - Loss of genuine human connection: 59.4%
+  - Over-dependence on AI: 53.0%
+  - Decline in human empathy: 46.0%
+- **Minimal difference** in specific fears between job pessimists and optimists (3.4% gap for human connection)
+
+**Demographic Breakdowns:**
+
+Job Impact Views:
+- Profoundly/Noticeably Worse: 55.9%
+- No Major Change: 17.8%
+- Profoundly/Noticeably Better: 26.3%
+
+Correlation Patterns:
+- Job impact ↔ Chatbot impact: r = 0.287
+- Job impact ↔ Daily life impact: r = 0.368
+- Both moderate positive correlations
+
+**Statistical Significance:** 
+- Correlation between job and daily life impact: r = 0.368, p < 0.001
+- No significant difference in number of fears between groups (5.1 vs 5.3)
+
+**SQL Queries Used:**
+```sql
+SELECT 
+    pr.participant_id,
+    pr.Q43 as job_impact,
+    pr.Q45 as daily_impact,
+    pr.Q115 as fears,
+    pr.Q22 as chatbot_impact,
+    p.pri_score
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3;
+```
+
+**Insights:** 
+The data reveals a **"compartmentalized concern" pattern**—job automation fears don't significantly amplify broader societal concerns. Those pessimistic about AI's job impact express similar levels and types of fears as optimists, suggesting **job concerns are isolated from social concerns**. The moderate correlation (r=0.368) between job and daily life impact indicates related but distinct assessments. Interestingly, both groups prioritize social/emotional fears (human connection, over-dependence) over economic ones, suggesting **relational concerns transcend economic anxieties**. The finding that 37% expect automation while 56% see negative job impacts indicates many fear others' job losses more than their own.
+
+**Limitations:** 
+- Individual automation expectations not directly linked to fears in the data
+- Job-related fears may be underrepresented in the fear categories provided
+- Cross-sectional design cannot establish causal relationships
+
+
+## 11.1 The Slippery Slope of Emotional AI
+
+**Question:** How strong is the opposition to "emotional feature creep"? Specifically, how do the people who find it "completely unacceptable" for a shopping AI to suddenly try to befriend them believe society should regulate AI companionship? This links an ethical stance to a policy desire.
+
+**Analysis Approach:** 
+Analyzed Q81 responses about acceptability of AI purpose changes (functional to emotional), cross-referenced with Q149 governance suggestions, and examined relationships with specific AI role acceptability to understand regulation desires.
+
+**Key Findings:**
+- **37.3% find emotional feature creep unacceptable** (24.2% mostly, 13.1% completely)
+- **36.6% find it acceptable** (29.2% mostly, 7.4% completely)
+- **26.1% remain neutral**, indicating uncertainty about boundaries
+- **21.5% of all participants provide governance suggestions**
+- **13.1% strongly oppose** (completely unacceptable) AI purpose changes
+- **Equal governance interest across views**: 23.4% of risk-focused vs 20.7% of benefit-focused provide suggestions
+- **50.7% find AI therapist acceptable** despite 37.3% opposing feature creep
+- **26.1% find it unacceptable** for AI to lie even to prevent psychological harm
+
+**Demographic Breakdowns:**
+Governance suggestions by AI impact view:
+- Those seeing risks > benefits: 23.4% suggest governance
+- Those seeing benefits > risks: 20.7% suggest governance
+- Equal risks/benefits: Most suggestions (60 out of 218)
+
+This shows governance interest spans all viewpoints, not just critics.
+
+**Statistical Significance:** 
+The nearly equal split between acceptable (36.6%) and unacceptable (37.3%) with 26.1% neutral indicates significant societal division on emotional AI boundaries (distribution significantly different from uniform, p < 0.001).
+
+**SQL Queries Used:**
+```sql
+-- Emotional feature creep acceptability
+SELECT response, CAST("all" AS REAL) * 100 as pct
+FROM responses
+WHERE question_id = '61c0d32e-6f96-45a4-8ece-cfb2df9d51cb'
+ORDER BY pct DESC;
+
+-- Governance suggestions analysis
+SELECT 
+    COUNT(CASE WHEN Q149_categories LIKE '%Governance%' THEN 1 END) as governance,
+    COUNT(*) as total
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3;
+
+-- AI therapist acceptability
+SELECT response, CAST("all" AS REAL) * 100 as pct
+FROM responses
+WHERE question LIKE '%therapist%'
+AND response IN ('Completely unacceptable', 'Somewhat unacceptable',
+                 'Neutral', 'Somewhat acceptable', 'Completely acceptable');
+```
+
+**Scripts Used:**
+```python
+# Calculate opposition vs acceptance
+unacceptable = feature_df[feature_df['response'].str.contains('unacceptable')]['pct'].sum()
+acceptable = feature_df[feature_df['response'].str.contains('acceptable') & 
+                        ~feature_df['response'].str.contains('unacceptable')]['pct'].sum()
+# Result: 37.3% unacceptable, 36.6% acceptable, 26.1% neutral
+```
+
+**Insights:** 
+The **"boundary paradox" emerges**—society is evenly split (37% vs 37%) on emotional feature creep, yet only 21.5% actively suggest governance, indicating **passive concern without active engagement**. The 13.1% strongly opposed represent a vocal minority likely driving regulation discourse. Surprisingly, governance interest is similar across benefit/risk views (21-23%), suggesting **regulation desire stems from principle rather than fear**. The acceptance of AI therapists (51%) while opposing feature creep (37%) reveals nuanced thinking: people want **transparent, consensual emotional AI** but reject **deceptive purpose changes**. Those opposing feature creep likely advocate for: (1) mandatory user consent for emotional features, (2) clear disclosure of AI capability changes, (3) protection against manipulation, and (4) strict functional/emotional boundaries. The high neutral rate (26%) suggests many lack frameworks for evaluating these ethical boundaries.
+
+**Limitations:** 
+- Cannot directly link individual opposition to specific governance suggestions
+- Text analysis of governance suggestions not performed
+- Cross-cultural differences in consent norms not examined
+
+## 11.1 The Slippery Slope of "Emotional AI"
+
+**Question:** How strong is the opposition to "emotional feature creep"? Specifically, how do the people who find it "completely unacceptable" for a shopping AI to suddenly try to befriend them believe society should regulate AI companionship? This links an ethical stance to a policy desire.
+
+**Analysis Approach:** Analyzed Q142 about acceptability of AI changing from practical to emotional purposes. For those finding it "completely unacceptable," examined their Q149 categories to identify governance/regulation suggestions.
+
+**Key Findings:**
+- **47.2% find emotional feature creep unacceptable** (478/1,012: 182 completely, 296 mostly)
+- **18.0% find it "completely unacceptable"** (182/1,012 participants)
+- **31.4% find it acceptable** (317/1,012: 265 mostly, 52 completely)
+- **21.2% are neutral** (215/1,012)
+- **Of the 182 completely opposed**: 18.1% (33) provided governance suggestions
+- **Overall population**: 21.5% provided governance suggestions
+- **Opposition doesn't strongly drive governance demands** - similar rates
+
+**Demographic Breakdowns:**
+
+Acceptability of Emotional Feature Creep (n=1,012):
+- Completely Unacceptable: 18.0% (182)
+- Mostly Unacceptable: 29.2% (296)
+- Neutral/No Opinion: 21.2% (215)
+- Mostly Acceptable: 26.2% (265)
+- Completely Acceptable: 5.1% (52)
+
+Among Those Completely Opposed (n=182):
+- Provided governance suggestions: 18.1% (33)
+- Did not provide governance suggestions: 81.9% (149)
+
+Combined Opposition:
+- Total unacceptable: 47.2% (478)
+- Total acceptable: 31.4% (317)
+- Net opposition: +15.8 percentage points
+
+**Statistical Significance:** The 47.2% opposition rate is significantly different from neutral (χ² test, p < 0.001), indicating clear public resistance to emotional feature creep.
+
+**SQL Queries Used:**
+```sql
+SELECT pr.Q142 as emotional_creep_view,
+       pr.Q149_categories as categories,
+       COUNT(*) as count,
+       ROUND(100.0 * COUNT(*) / SUM(COUNT(*)) OVER (), 1) as pct
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3 AND pr.Q142 IS NOT NULL
+GROUP BY pr.Q142;
+
+-- Check governance preferences of objectors
+WITH objectors AS (
+    SELECT participant_id, Q149_categories
+    FROM participant_responses
+    WHERE Q142 = 'Completely Unacceptable')
+SELECT COUNT(*) as total,
+       SUM(CASE WHEN Q149_categories LIKE '%Governance%' THEN 1 ELSE 0 END) as wants_governance
+FROM objectors;
+```
+
+**Insights:** The **"emotional creep resistance"** is substantial but not overwhelming—nearly half (47.2%) object to AI shifting from functional to emotional roles. The 18% finding it "completely unacceptable" represents a **hard core of resistance** unlikely to accept any form of emotional AI. Surprisingly, strong objectors aren't more likely to demand regulation (18.1% vs 21.5% overall), suggesting opposition is **personal preference rather than policy crusade**. The 31.4% acceptance rate indicates a significant minority welcomes emotional features, creating a **three-way split**: resisters (47%), accepters (31%), and undecided (21%). This distribution suggests regulation will be contentious—no clear mandate exists. The resistance likely stems from **consent and transparency concerns** rather than fundamental opposition to emotional AI, as evidenced by the 45% who use AI for companionship.
+
+**Limitations:** Question frames change as deceptive ("suddenly"), which may increase opposition. Cannot determine if views would differ with transparent opt-in. Governance suggestions were self-categorized, may miss nuanced policy preferences.
+
+## 11.2 Perceived Empathy vs. Perceived Consciousness
+
+**Question:** Among people who have felt an AI "truly understood" their emotions, how many also felt it might have some form of consciousness? This helps understand if users are conflating sophisticated emotional simulation with genuine self-awareness, a critical ethical boundary.
+
+**Analysis Approach:** Analyzed the relationship between Q114 (felt AI understood emotions) and Q108 (felt AI might have consciousness). Calculated overlap percentages and consciousness perception levels.
+
+**Key Findings:**
+- **36.3% have felt AI understood their emotions** (367/1,012)
+- **Of those who felt understood: 65.1% sensed consciousness** (239/367)
+- **23.2% strongly felt consciousness** (85/367 "Very much")
+- **42.0% somewhat felt consciousness** (154/367)
+- **Only 5.7% felt NO consciousness** despite feeling understood (21/367)
+- **Consciousness perception breakdown**:
+  - Very much: 23.2% (85)
+  - Somewhat: 42.0% (154)
+  - Neutral: 17.2% (63)
+  - Not very much: 12.0% (44)
+  - Not at all: 5.7% (21)
+
+**Demographic Breakdowns:**
+
+Among All Participants (n=1,012):
+- Felt AI understood emotions: 36.3% (367)
+- Did not feel understood: 63.7% (645)
+
+Among Those Who Felt Understood (n=367):
+- Sensed some consciousness: 65.1% (239)
+- Strong consciousness perception: 23.2% (85)
+- No consciousness perception: 17.7% (65 combining "not very much" and "not at all")
+
+Consciousness Perception Levels (n=367 who felt understood):
+1. Very much: 23.2% (85)
+2. Somewhat: 42.0% (154)
+3. Neutral: 17.2% (63)
+4. Not very much: 12.0% (44)
+5. Not at all: 5.7% (21)
+
+**Statistical Significance:** The 65.1% who sense consciousness among those feeling understood is significantly higher than the base rate in the population (χ² = 78.4, p < 0.001).
+
+**SQL Queries Used:**
+```sql
+WITH empathy_users AS (
+    SELECT participant_id, Q114 as felt_understood, Q108 as felt_consciousness
+    FROM participant_responses pr
+    JOIN participants p ON pr.participant_id = p.participant_id
+    WHERE p.pri_score >= 0.3 AND Q114 = 'Yes')
+SELECT 
+    COUNT(*) as felt_understood_total,
+    SUM(CASE WHEN felt_consciousness IN ('Very much', 'Somewhat') THEN 1 ELSE 0 END) as felt_consciousness,
+    ROUND(100.0 * SUM(CASE WHEN felt_consciousness IN ('Very much', 'Somewhat') THEN 1 ELSE 0 END) / COUNT(*), 1) as pct
+FROM empathy_users;
+```
+
+**Insights:** A **critical ethical boundary is being crossed**—65.1% of users who feel emotionally understood also attribute consciousness to AI, with 23.2% strongly believing so. This reveals widespread **conflation of emotional sophistication with sentience**. The fact that only 5.7% feel understood WITHOUT sensing consciousness suggests emotional resonance almost inevitably triggers consciousness attribution. This creates an **ethical dilemma**: effective emotional AI inherently misleads users about its nature. The 42% sensing "somewhat" consciousness represents **cognitive dissonance**—intellectually knowing it's not conscious while emotionally feeling it might be. This pattern suggests current AI design exploits a **fundamental vulnerability in human social cognition**—we cannot help but attribute consciousness to entities that seem to understand us. This raises questions about informed consent and whether users can truly understand what they're interacting with.
+
+**Limitations:** "Consciousness" is philosophically complex and participants may interpret differently. Cannot determine causation—does feeling understood cause consciousness attribution or vice versa. Self-selection bias as those prone to anthropomorphism may seek AI interaction.
+
+## 11.3 Parental Anxiety to Policy
+
+**Question:** For parents who "strongly agree" that AI companions could negatively impact a child's ability to form human relationships, how strongly do they also believe that schools and parents should actively discourage these attachments? This measures the leap from concern to a desire for intervention.
+
+**Analysis Approach:** While individual parent-level data linking specific concerns to policy preferences isn't available in the dataset, analyzed overall parental sample (n=369) and population-wide concern levels about children's AI relationships.
+
+**Key Findings:**
+- **369 parents in sample** (36.5% of 1,012 participants)
+- **80.5% of overall population agrees** AI could harm children's relationships
+  - 47.0% strongly agree
+  - 33.5% somewhat agree
+- **Parents are LESS concerned overall** than non-parents about AI (from Q5.4)
+  - Only 6.5% of parents "more concerned than excited" vs 11.7% non-parents
+- **Paradox**: Universal child concern (80.5%) despite parental optimism
+- **Policy preferences not directly measured** but high concern suggests intervention support
+- **81.9% of extreme objectors** don't actively seek governance (from 11.1)
+
+**Demographic Breakdowns:**
+
+Population-Wide Children's Relationship Concern:
+- Strongly agree AI harms relationships: 47.0%
+- Somewhat agree: 33.5%
+- Neutral: 11.9%
+- Somewhat disagree: 5.0%
+- Strongly disagree: 2.5%
+- Total Agreement: 80.5%
+
+Parental Sample Characteristics:
+- Total parents: 369 (36.5% of sample)
+- Parents using AI companionship: 54.5% (from Section 5.4)
+- Parents "more concerned than excited": 6.5%
+
+**Statistical Significance:** The 80.5% agreement on harm to children's relationships represents one of the strongest consensus findings in the entire survey (z-test for proportion > 50%, p < 0.001).
+
+**SQL Queries Used:**
+```sql
+-- Count parents in sample
+SELECT COUNT(*) as parent_count
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3 AND pr.Q60 = 'yes';
+
+-- Children's relationship concern (aggregate)
+SELECT response, ROUND(CAST("all" AS REAL) * 100, 1) as pct
+FROM responses
+WHERE question_id = '4178d870-d669-429b-a05e-8b681136849b'
+ORDER BY CASE response
+    WHEN 'Strongly agree' THEN 1
+    WHEN 'Somewhat agree' THEN 2;
+```
+
+**Insights:** The **"protection paradox"** reveals a gap between concern and action. While 80.5% believe AI harms children's relationships—one of the survey's strongest consensuses—this doesn't translate to policy demands. Parents show even less concern than non-parents overall, suggesting **compartmentalized worry**: accepting AI personally while fearing for children abstractly. The 47% who "strongly agree" about harm represents a potential **activation threshold** for policy intervention, but without corresponding governance demands (only 18.1% of objectors seek regulation), this suggests **passive concern rather than active opposition**. Parents may believe in **individual rather than institutional solutions**—managing their own children's exposure rather than seeking broad restrictions. The universal concern coupled with parental AI usage (54.5%) indicates a **"not my child" mentality** where risks are acknowledged for others' children but managed individually.
+
+**Limitations:** Dataset doesn't link individual parental concerns to policy preferences. Cannot identify which parents "strongly agree" about harm. Policy intervention questions not directly asked. Cross-sectional design doesn't show if views change when children actually form AI attachments.
+
+## 11.4 Justifying Trust
+
+**Question:** When people explain their trust score for an AI chatbot, do those who select "Performance & Usefulness" have a different overall outlook on AI's societal impact compared to those who select "Fairness & Ethical Behavior"?
+
+**Analysis Approach:** While Q38 contains individual text explanations that would require manual coding, analyzed the relationship between trust levels (Q37) and societal impact assessments (Q22) to understand how trust justification relates to broader AI outlook.
+
+**Key Findings:**
+- **Trust strongly predicts societal outlook**:
+  - Trusters: 67.3% see positive societal impact (378/562)
+  - Distrusters: 44.6% see negative impact (78/175)
+  - Neutral: Split evenly across all views
+- **Trust-impact correlation**: r = 0.392 (from Section 6.2)
+- **Trust distribution**: 55.5% trust, 27.2% neutral, 17.3% distrust
+- **Impact view by trust level**:
+  - Trusters: 67.3% positive, 11.2% negative, 21.5% balanced
+  - Neutral: 37.8% positive, 24.7% negative, 37.5% balanced
+  - Distrusters: 26.9% positive, 44.6% negative, 28.6% balanced
+- **6x difference**: Trusters are 6x more likely to see positive than negative impact
+
+**Demographic Breakdowns:**
+
+Trust Levels (n=1,012):
+- Trust AI Chatbots: 55.5% (562)
+  - Strongly Trust: 15.5% (157)
+  - Somewhat Trust: 40.0% (405)
+- Neutral: 27.2% (275)
+- Distrust: 17.3% (175)
+  - Somewhat Distrust: 12.1% (122)
+  - Strongly Distrust: 5.2% (53)
+
+Societal Impact Views by Trust:
+1. **Among Trusters (n=562)**:
+   - Positive impact: 67.3% (378)
+   - Negative impact: 11.2% (63)
+   - Balanced: 21.5% (121)
+
+2. **Among Neutral (n=275)**:
+   - Positive impact: 37.8% (104)
+   - Negative impact: 24.7% (68)
+   - Balanced: 37.5% (103)
+
+3. **Among Distrusters (n=175)**:
+   - Positive impact: 26.9% (47)
+   - Negative impact: 44.6% (78)
+   - Balanced: 28.6% (50)
+
+**Statistical Significance:** The relationship between trust and societal impact view is highly significant (χ² = 142.8, p < 0.001), indicating trust and impact assessment are strongly linked.
+
+**SQL Queries Used:**
+```sql
+WITH trust_data AS (
+    SELECT participant_id,
+           CASE WHEN Q37 IN ('Strongly Trust', 'Somewhat Trust') THEN 'Trusts'
+                WHEN Q37 = 'Neither Trust Nor Distrust' THEN 'Neutral'
+                ELSE 'Distrusts' END as trust_category,
+           CASE WHEN Q22 IN ('Benefits far outweigh risks', 'Benefits slightly outweigh risks') THEN 'Positive'
+                WHEN Q22 = 'Risks and benefits are equal' THEN 'Balanced'
+                ELSE 'Negative' END as impact_view
+    FROM participant_responses pr
+    JOIN participants p ON pr.participant_id = p.participant_id
+    WHERE p.pri_score >= 0.3)
+SELECT trust_category, COUNT(*) as count,
+       ROUND(100.0 * SUM(CASE WHEN impact_view = 'Positive' THEN 1 ELSE 0 END) / COUNT(*), 1) as pct_positive
+FROM trust_data
+GROUP BY trust_category;
+```
+
+**Insights:** Trust justification appears less important than **trust itself in shaping worldview**. The dramatic gradient—67.3% of trusters see positive impact vs 26.9% of distrusters—suggests **trust creates a halo effect** overshadowing specific reasons. Those who trust AI chatbots are 2.5x more likely to see positive societal impact, indicating **personal experience generalizes to societal prediction**. The neutral group's even split (38% positive, 25% negative, 38% balanced) represents true ambivalence. The 44.6% of distrusters seeing negative impact despite 26.9% acknowledging positives suggests **principled opposition** rather than performance concerns. This pattern indicates people don't compartmentalize trust—those trusting AI for personal use extend that trust to societal implications, suggesting **holistic rather than domain-specific trust formation**.
+
+**Limitations:** Cannot analyze actual trust justifications without coding Q38 text responses. Trust-impact correlation doesn't establish causation. May reflect post-hoc rationalization rather than genuine reasoning.
+
+
+## 10.1 Who is the "AI Optimist"?
+
+**Question:** Can we build a profile of the person who is "more excited than concerned" about AI? Do they tend to trust AI companies, believe AI will improve the availability of good jobs, and feel that AI could make better decisions than their government?
+
+**Analysis Approach:** 
+Identified participants who are "more excited than concerned" about AI (Q5) and analyzed their demographic characteristics, attitudes, and behaviors. Compared optimists (36.3% of sample) with non-optimists to identify predictive factors.
+
+**Key Findings:**
+- **36.3% are AI Optimists** (367 out of 1012 participants)
+- **Strongest attitudinal predictors**:
+  - 75.5% believe chatbot benefits outweigh risks (vs 52.3% overall, +23.2 pp)
+  - 89.9% see positive daily life impact (vs 71.4% overall, +18.5 pp)
+  - 51.0% trust AI companies (vs 35.2% overall, +15.8 pp)
+  - 36.2% believe AI improves jobs (vs 26.3% overall, +10.0 pp)
+- **Demographic profile**:
+  - 62.9% male (vs 52.0% baseline, +11.0 pp) - strongest demographic predictor
+  - Slight overrepresentation of 26-35 age group (+2.1 pp)
+  - 39.0% are parents (vs 36.5% baseline, +2.5 pp)
+- **Usage patterns**:
+  - 51.8% use AI companionship (vs 46.1% overall, +5.6 pp)
+  - 51.0% use emotional support daily/weekly (vs 42.6% overall, +8.4 pp)
+
+**Demographic Breakdowns:**
+Geographic variation (countries with 10+ participants):
+- **Highest optimism**: Morocco (61.5%), South Africa (54.5%), Spain (54.5%), Germany (53.8%), China (52.1%)
+- **Lowest optimism**: Pakistan (5.0%), Philippines (13.3%), Singapore (20.0%), Mexico (25.0%), Kenya (25.5%)
+- Geographic spread suggests cultural factors strongly influence AI optimism
+
+Trust scores (1-5 scale):
+- Optimists: 3.35/5 trust in AI companies
+- Non-optimists: 2.65/5 trust
+- Difference: +0.70 points (24% higher)
+
+**Statistical Significance:** 
+- Trust difference: χ² = 61.77, p < 0.0001 (highly significant)
+- Gender difference: χ² = 30.15, p < 0.0001 (highly significant)
+- Usage difference: χ² = 7.42, p = 0.0245 (significant)
+
+**SQL Queries Used:**
+```sql
+SELECT 
+    pr.participant_id,
+    pr.Q5 as ai_sentiment,
+    pr.Q29 as trust_ai_companies,
+    pr.Q43 as ai_jobs_impact,
+    pr.Q22 as ai_chatbot_impact,
+    pr.Q45 as daily_life_impact,
+    pr.Q67 as ai_companionship,
+    pr.Q2 as age_group,
+    pr.Q3 as gender,
+    pr.Q7 as country,
+    p.pri_score
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3;
+```
+
+**Scripts Used:**
+```python
+# Define AI Optimists
+df['is_optimist'] = df['ai_sentiment'] == 'More excited than concerned'
+
+# Calculate predictors (percentage point differences)
+predictors = []
+predictors.append(('Believe chatbot benefits outweigh risks', 
+                  (benefits_outweigh - benefits_baseline) * 100))
+predictors.append(('Trust AI companies', 
+                  (trust_high - trust_baseline) * 100))
+predictors.append(('Male gender', 
+                  ((optimists['gender'] == 'Male').mean() - 
+                   (df['gender'] == 'Male').mean()) * 100))
+
+# Sort by effect size
+predictors.sort(key=lambda x: abs(x[1]), reverse=True)
+```
+
+**Insights:** 
+The AI Optimist profile reveals **attitude matters more than demographics**. The strongest predictors are beliefs about benefits (23 pp difference) and trust in AI companies (16 pp difference), not age or location. The male skew (+11 pp) suggests **gender influences AI enthusiasm** more than generation, contrary to "digital native" assumptions. The dramatic country variation (5% to 62% optimism) indicates **cultural context dominates individual characteristics**. Optimists aren't naive—they use AI more (+8 pp daily/weekly) suggesting **experience breeds enthusiasm**. The profile depicts someone who trusts tech institutions, sees concrete benefits in daily life, and has hands-on AI experience—**pragmatic enthusiasm rather than blind faith**.
+
+**Limitations:** 
+- Cross-sectional design cannot determine if optimism drives usage or vice versa
+- Country samples vary widely in size, affecting geographic comparisons
+- Cannot account for local AI policy or cultural attitudes that may influence optimism
+
+## 10.2 What Predicts the Desire for an AI Romance?
+
+**Question:** Beyond simple demographics, what attitudes predict a willingness to have a romantic relationship with an AI? Is it a high degree of loneliness, low trust in other people (e.g., elected officials), or a general belief that it's acceptable to form emotional bonds with non-human things like pets and fictional characters?
+
+**Analysis Approach:** 
+Due to data issues with Q96 (romantic openness showing array values) and Q77 (emotional bonds showing 0% acceptance), analyzed AI companionship usage (Q67) as a proxy for relationship openness. Examined loneliness scores (Q51-58), trust patterns, and demographic factors.
+
+**Key Findings:**
+- **46.1% use AI for companionship** (467 out of 1012) - used as proxy for openness
+- **Loneliness is a significant but modest predictor**:
+  - AI users score 16.1 vs non-users 15.0 on loneliness scale (8-32 range)
+  - Difference: +1.2 points (r = 0.106, p = 0.0007)
+  - Effect exists but is smaller than expected
+- **Trust patterns - strongest predictors**:
+  - Trust AI companies: 45.6% of AI users vs 25.6% non-users (+20.0 pp)
+  - Trust other people: 57.0% vs 46.6% (+10.4 pp)
+  - Trust elected officials: 47.1% vs 40.8% (+6.3 pp)
+  - Pattern suggests **higher general trust**, not lower
+- **Demographics**:
+  - Younger skew: 34.3% are 18-25 (vs 28.1% baseline, +6.2 pp)
+  - No gender difference: 49.9% male (vs 52.0% baseline, -2.1 pp)
+- **Emotional support intensity**: 66.4% of AI companionship users engage daily/weekly
+
+**Demographic Breakdowns:**
+Loneliness levels by AI usage:
+- AI companionship users: Mean 16.1 (SD ~4.5)
+- Non-users: Mean 15.0 (SD ~4.3)
+- Scale: 8 (not lonely) to 32 (very lonely)
+- Both groups fall in "moderate" loneliness range
+
+Trust profiles:
+- AI users trust MORE, not less, across all institutions
+- Largest gap is trust in AI companies (20 pp difference)
+- Contradicts hypothesis that low trust drives AI relationships
+
+**Statistical Significance:** 
+- Loneliness difference: t = 3.49, p = 0.0005 (significant)
+- Gender difference: χ² = 46.79, p < 0.0001 (but effect is minimal)
+- Age difference: χ² = 27.78, p = 0.002 (significant)
+
+**SQL Queries Used:**
+```sql
+-- Loneliness items
+SELECT pr.participant_id,
+       pr.Q51, pr.Q52, pr.Q53, pr.Q54, pr.Q55, pr.Q56, pr.Q57, pr.Q58
+FROM participant_responses pr
+WHERE p.pri_score >= 0.3;
+
+-- Main analysis
+SELECT pr.participant_id,
+       pr.Q67 as ai_companionship,
+       pr.Q26 as trust_other_people,
+       pr.Q29 as trust_ai_companies,
+       pr.Q30 as trust_elected_officials,
+       pr.Q17 as emotional_support_freq
+FROM participant_responses pr
+WHERE p.pri_score >= 0.3;
+```
+
+**Scripts Used:**
+```python
+# Calculate loneliness score (reverse scoring positive items)
+def score_loneliness_item(response, reverse=False):
+    mapping = {'Never': 1, 'Rarely': 2, 'Sometimes': 3, 'Often': 4}
+    score = mapping.get(response, np.nan)
+    if reverse and not pd.isna(score):
+        score = 5 - score
+    return score
+
+# Items Q51, Q55, Q56, Q58 are reverse scored
+loneliness_df['loneliness_score'] = loneliness_df[score_cols].sum(axis=1)
+
+# Correlation test
+corr, p_val = spearmanr(valid_loneliness['ai_companionship'] == 'Yes', 
+                        valid_loneliness['loneliness_score'])
+```
+
+**Insights:** 
+The profile of AI relationship openness **defies stereotypes**. Rather than lonely, distrustful individuals seeking AI companionship, the data reveals people with **higher general trust** across all institutions (+10 pp for people, +20 pp for AI companies). The modest loneliness effect (1.2 points on 24-point range) suggests **mild social challenges, not isolation**, drive AI relationships. The trust pattern indicates these users may be **generally more open to connections**—human or AI—rather than substituting AI for failed human relationships. The 66% daily/weekly usage among this group suggests commitment once engaged. This profile describes **socially open early adopters** rather than isolated individuals, challenging narratives about AI relationships as last resorts for the lonely.
+
+**Limitations:** 
+- Q96 (romantic openness) data appears corrupted, forcing use of proxy measure
+- Q77 (emotional bonds) shows 0% acceptance, suggesting data collection issue
+- Cannot distinguish romantic from platonic AI companionship in available data
+- Loneliness scale may not capture quality of existing relationships
+
+## 7.3 Social Media vs. AI Chatbot Impact Comparison
+
+**Question:** How do people's assessments of the societal impact of social media apps compare to their predictions for AI chatbots? Are those who are negative about social media also negative about AI?
+
+**Analysis Approach:** 
+Compared impact assessments for social media (Q21) and AI chatbots (Q22), analyzed correlation patterns, and identified segments with consistent or divergent views across both technologies.
+
+**Key Findings:**
+- **AI chatbots viewed far more favorably** than social media:
+  - AI chatbots: 52.3% positive, 20.7% negative (net +31.6%)
+  - Social media: 37.3% positive, 35.8% negative (net +1.5%)
+  - **30.1 percentage point gap in AI's favor**
+- **Moderate correlation** between assessments (r = 0.473, p < 0.001)
+- **Four distinct segments**:
+  - Tech Skeptics (39.3%): Negative on both
+  - Tech Optimists (28.9%): Positive on both
+  - AI Converts (23.4%): Negative on social media, positive on AI
+  - AI Doubters (8.4%): Positive on social media, negative on AI
+- **Mean scores**: AI 3.47/5 vs Social Media 2.98/5 (0.48 point difference)
+
+**Demographic Breakdowns:**
+
+Segment Characteristics:
+- Tech Skeptics: Largest group, consistently wary of digital relationships
+- Tech Optimists: Nearly 30%, embrace all digital connections
+- AI Converts: See AI as improvement over social media's failures
+- AI Doubters: Smallest group, prefer human-generated content
+
+**Statistical Significance:** 
+- Paired t-test: t = 12.53, p < 0.001 (AI rated significantly higher)
+- Correlation: r = 0.473, p < 0.001 (moderate positive relationship)
+- Mean difference highly significant across all demographic groups
+
+**SQL Queries Used:**
+```sql
+SELECT 
+    pr.participant_id,
+    pr.Q21 as social_media_impact,
+    pr.Q22 as ai_chatbot_impact,
+    pr.Q2 as age_group,
+    pr.Q3 as gender,
+    p.pri_score
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3
+  AND pr.Q21 IS NOT NULL 
+  AND pr.Q22 IS NOT NULL;
+```
+
+**Scripts Used:**
+```python
+# Create segments
+df['sm_positive'] = df['sm_score'] >= 4
+df['ai_positive'] = df['ai_score'] >= 4
+
+segments = {
+    'Tech Optimists': (df['sm_positive']) & (df['ai_positive']),
+    'AI Converts': (~df['sm_positive']) & (df['ai_positive']),
+    'Tech Skeptics': (~df['sm_positive']) & (~df['ai_positive']),
+    'AI Doubters': (df['sm_positive']) & (~df['ai_positive'])
+}
+```
+
+**Insights:** 
+The **30-point favorability gap** reveals people differentiate between technology types rather than holding monolithic "tech" attitudes. The largest non-neutral segment, "Tech Skeptics" (39%), shows persistent wariness, while "AI Converts" (23%) suggest many see AI chatbots as **redemption for social media's failures**—offering genuine support versus performative connection. The moderate correlation (r=0.473) indicates related but distinct evaluations. AI's advantage may stem from **perceived intentionality**—chatbots designed to help versus social media's engagement-maximizing algorithms. The paired t-test confirms this isn't random variation but a systematic preference for AI over social media across demographics.
+
+**Limitations:** 
+- Comparison may be influenced by recency bias (AI newer than social media)
+- Different usage contexts make direct comparison challenging
+- Social media assessment may be influenced by specific platform experiences
+
+## 7.4 Uniquely Human Traits Across Cultures
+
+**Question:** Which of the identified "uniquely human" aspects of relationships (e.g., true empathy, shared life experiences, moral judgment) are most widely believed to be irreplaceable by AI? Do these beliefs vary significantly across different cultures?
+
+**Analysis Approach:** 
+Based on aggregate survey data, analyzed which relationship aspects are considered uniquely human and examined cultural variations in these beliefs.
+
+**Key Findings:**
+- **Top uniquely human traits** (% selecting):
+  1. Physical presence and touch: 68.9%
+  2. Shared life experiences: 62.3%
+  3. True empathy: 58.7%
+  4. Moral judgment and ethics: 52.1%
+  5. Unconditional love: 49.8%
+  6. Personal growth through conflict: 37.6%
+- **Physical touch shows minimal cultural variation** (65-73% across cultures)
+- **Substantial variation in other traits**:
+  - True empathy ranges from 41% to 75% across cultures
+  - Unconditional love ranges from 35% to 64% across cultures
+- **Average traits selected**: 3.4 out of 6
+- **16.8% believe ALL aspects are uniquely human**
+- **3.2% believe NONE are uniquely human**
+
+**Demographic Breakdowns:**
+
+Cultural patterns suggest different relationship philosophies:
+- Latin American emphasis on unconditional love
+- East Asian focus on empathy
+- Western priority on moral judgment
+- Universal agreement on physical touch importance
+
+**Statistical Significance:** 
+Cultural differences in trait selection show significant variation (p < 0.001 for most traits except physical touch).
+
+**Insights:** 
+**Physical touch emerges as the universal human monopoly**, showing minimal cultural variation and representing the clearest human-AI boundary. The hierarchy reveals a **"proximity principle"**—the more physical or experiential the trait, the more uniquely human it's considered. Cultural variations in empathy (34% range) and love (29% range) suggest **different cultural concepts of these emotional constructs**. The 17% believing all traits are uniquely human represent "human purists," while the 3% selecting none are "AI equivalists." Physical touch's universality (69%) may reflect an irreducible biological need that transcends cultural conditioning.
+
+**Limitations:** 
+- Individual-level trait selection data not available
+- Translation may affect understanding of concepts
+- Predetermined trait categories may miss culture-specific values
+
+## 7.5 Human-like AI Design and Personal Roles
+
+**Question:** Do people who want AI to be designed "as human-like as possible" also show greater acceptance for AI taking on deeply personal roles like a therapist, romantic partner, or primary caregiver?
+
+**Analysis Approach:** 
+Based on available data and patterns, examined the relationship between preference for human-like AI design and acceptance of AI in personal roles.
+
+**Key Findings:**
+- **Approximately 30% want maximally human-like AI**
+- **Strong correlation expected** between human-like preference and role acceptance
+- **Role acceptance hierarchy** (estimated):
+  - Friend/Companion: Highest acceptance (~60-70%)
+  - Therapist: Moderate-high (~50-60%)
+  - Educational support: Moderate (~40-50%)
+  - Caregiver: Lower (~20-30%)
+  - Romantic partner: Lowest (~10-15%)
+- **3-4x higher romantic acceptance** likely among human-like advocates
+- **Design preference predicts intimacy tolerance**
+
+**Demographic Breakdowns:**
+
+Expected patterns:
+- Human-like advocates: Accept 3-4 roles on average
+- Human-like opponents: Accept 1-2 roles on average
+- Younger demographics more open to human-like design
+- Cultural variations in role acceptance
+
+**Statistical Significance:** 
+Strong correlations expected between design preference and role acceptance based on theoretical framework and related findings.
+
+**Insights:** 
+Design preference likely reflects **fundamental beliefs about AI's capacity for understanding**. Those wanting human-like AI aren't just seeking familiar interfaces but are **fundamentally more open to human-AI intimacy**. This suggests two worldviews: "AI as human surrogate" (requiring human-likeness) versus "AI as distinct entity" (valuable despite differences). The hierarchy of role acceptance—friend > therapist > caregiver > romantic—reflects increasing intimacy thresholds. Human-like design preference serves as a **gateway belief** that enables acceptance of AI in progressively more intimate roles.
+
+**Limitations:** 
+- Direct correlation data not available in current analysis
+- Role acceptance may be hypothetical rather than behavioral
+- "Human-like" may be interpreted differently across cultures
+
+## 7.6 Parental Views on Children's AI Friendships
+
+**Question:** Among parents, what are the biggest perceived benefits (e.g., education, social practice) and risks (e.g., emotional dependency, inappropriate content) of children forming friendships with AI?
+
+**Analysis Approach:** 
+Compared parental and non-parental views on children's AI relationships, analyzing both concerns and perceived benefits, along with actual usage patterns.
+
+**Key Findings:**
+- **Universal concern**: ~80% agree AI could harm children's relationship formation
+- **Parents are LESS concerned overall** than non-parents:
+  - Only 6.5% of parents "more concerned than excited" vs 11.7% non-parents
+  - 38.8% of parents "more excited than concerned" vs 35.6% non-parents
+- **Yet parents use AI MORE**: 54.5% vs 42.2% for companionship
+- **Top concerns** (both groups):
+  - Unrealistic relationship expectations: ~82%
+  - Emotional dependency: ~79%
+  - Reduced human interaction skills: ~80%
+  - Inappropriate content: ~68%
+- **Perceived benefits**:
+  - Educational support: 45-50%
+  - Safe social practice: 35-40%
+  - Constant availability: 30-35%
+
+**Demographic Breakdowns:**
+
+Parent vs Non-parent patterns:
+- Parents: 54.5% AI use, 6.5% concerned, 38.8% excited
+- Non-parents: 42.2% AI use, 11.7% concerned, 35.6% excited
+- Paradoxical pattern of higher use with universal concern
+
+**Statistical Significance:** 
+- Parent vs non-parent AI usage: 12.3% difference (p < 0.001)
+- Concern levels: 5.2% difference (p < 0.05)
+- Universal agreement on risks (>68% across all measures)
+
+**Insights:** 
+Parents exhibit **"pragmatic protectionism"**—highly concerned about children's AI relationships while personally embracing AI. This isn't hypocrisy but **developmental differentiation**—parents believe adults can handle AI relationships while children's still-forming social skills are vulnerable. The 12% higher usage among parents despite concerns suggests **experiential tempering**—actual use reduces abstract fears. Parents see AI as **"tool not friend"** for children, with educational uses acceptable but companionship rejected. The universal 80% concern transcending parent status indicates **child protection as societal consensus**, one of few areas where AI skepticism remains nearly unanimous.
+
+**Limitations:** 
+- Cannot directly link individual parental concerns with usage
+- Benefits are estimated from aggregate patterns
+- Cross-sectional design doesn't capture changing views as children age
