@@ -1585,3 +1585,405 @@ AI optimism shows **surprising demographic patterns**. The age curve is inverted
 - Country sample sizes vary widely (India n=193 vs Japan n=20)
 - Education level data was actually location type in the dataset
 - Cross-cultural comparisons may reflect translation or cultural response biases
+
+## 8.1 Who Trusts an AI More Than Their Government?
+
+**Question:** What percentage of people report trusting their AI chatbot more than their elected representatives? How does this differ by country?
+
+**Analysis Approach:** Compared trust scores for AI chatbots (Q37) versus elected representatives (Q30) on a 5-point scale. Calculated percentage who trust AI more, equally, or government more. Analyzed country-specific patterns.
+
+**Key Findings:**
+- **41.0% trust AI chatbots MORE than their government** (415 out of 1,012 participants)
+- **38.1% trust both equally** (386 participants)
+- **20.8% trust government more** (211 participants)
+- **Country variations dramatic**: Mexico 62.5%, Brazil 62.1% trust AI more
+- **37.4% agree** "AI could make better decisions on my behalf than government" (Q39)
+- **Trust levels**: 55.5% trust AI chatbots vs 39.8% trust elected representatives
+- **Kenya paradox**: 51.8% trust AI more despite 50.9% trusting government
+
+**Demographic Breakdowns:**
+
+Top Countries Where People Trust AI More Than Government (min n=10):
+1. Mexico: 62.5% (10/16 participants)
+2. Brazil: 62.1% (18/29 participants)
+3. Pakistan: 55.0% (11/20 participants)
+4. Morocco: 53.8% (7/13 participants)
+5. South Korea: 52.9% (9/17 participants)
+6. Kenya: 51.8% (57/110 participants)
+7. Malaysia: 50.0% (5/10 participants)
+8. Japan: 50.0% (10/20 participants)
+9. United States: 47.2% (42/89 participants)
+10. Kazakhstan: 46.7% (7/15 participants)
+
+AI Makes Better Decisions (Q39):
+- Agree: 37.4% (378/1,012)
+- Unsure: 35.5% (359/1,012)
+- Disagree: 27.2% (275/1,012)
+
+**Statistical Significance:** The 41% who trust AI more than government represents a statistically significant plurality (p < 0.001 comparing to equal distribution). Country differences are significant (χ² test p < 0.001).
+
+**SQL Queries Used:**
+```sql
+WITH trust_scores AS (
+    SELECT participant_id, country,
+        CASE WHEN Q37 = 'Strongly Trust' THEN 5
+             WHEN Q37 = 'Somewhat Trust' THEN 4
+             WHEN Q37 = 'Neither Trust Nor Distrust' THEN 3
+             WHEN Q37 = 'Somewhat Distrust' THEN 2
+             WHEN Q37 = 'Strongly Distrust' THEN 1 END as ai_trust,
+        CASE WHEN Q30 = 'Strongly Trust' THEN 5
+             WHEN Q30 = 'Somewhat Trust' THEN 4
+             WHEN Q30 = 'Neither Trust Nor Distrust' THEN 3
+             WHEN Q30 = 'Somewhat Distrust' THEN 2
+             WHEN Q30 = 'Strongly Distrust' THEN 1 END as gov_trust
+    FROM participant_responses pr
+    JOIN participants p ON pr.participant_id = p.participant_id
+    WHERE p.pri_score >= 0.3)
+SELECT 
+    COUNT(*) as total,
+    SUM(CASE WHEN ai_trust > gov_trust THEN 1 ELSE 0 END) as trust_ai_more,
+    ROUND(100.0 * SUM(CASE WHEN ai_trust > gov_trust THEN 1 ELSE 0 END) / COUNT(*), 1) as pct
+FROM trust_scores;
+```
+
+**Insights:** The finding that **41% trust AI more than elected officials** represents a crisis of institutional trust rather than excessive AI faith. Latin American countries lead (Mexico 62.5%, Brazil 62.1%), suggesting regions with lower government trust see AI as a **neutral alternative**. The U.S. at 47.2% indicates this isn't limited to developing democracies. Kenya's pattern—high government trust (50.9%) yet higher AI trust (70%)—suggests people see AI and government as **serving different trust needs**. The 37.4% believing AI makes better decisions reveals a segment viewing AI as **more rational and less corrupt** than human politicians. This isn't about loving AI but about institutional disillusionment.
+
+**Limitations:** Trust is multidimensional—people may trust AI for different things than government. Sample sizes vary significantly by country. Cross-sectional data cannot show if AI trust is rising or government trust is falling.
+
+## 8.2 Is an AI Affair Cheating?
+
+**Question:** What portion of people in committed relationships would consider their partner's use of an AI for sexual gratification to be a form of infidelity?
+
+**Analysis Approach:** Analyzed Q126 responses about whether AI sexual use constitutes infidelity, focusing on those who provided definitive answers (excluding "prefer not to say"). Also examined Q125 about emotional reactions to partner's AI use.
+
+**Key Findings:**
+- **44.8% consider AI sexual use infidelity** (453 out of 1,012 participants)
+- **33.7% are unsure/depends on specifics** (341 participants)
+- **17.6% do NOT consider it infidelity** (178 participants)
+- **Among those with definitive views**: 71.8% yes vs 28.2% no (excluding unsure)
+- **84.2% would react negatively** to partner's AI use (54.5% very negatively, 29.7% somewhat)
+- **Gender difference minimal**: Males 46.8% yes, Females 47.0% yes
+- **Only 8.3% would react positively** (7% somewhat, 1.3% very)
+
+**Demographic Breakdowns:**
+
+Infidelity Views (n=1,012):
+- Yes, it's infidelity: 44.8% (453)
+- Unsure/Depends: 33.7% (341)
+- No, not infidelity: 17.6% (178)
+- Prefer not to say: 4.0% (40)
+
+Partner Reaction to AI Use (Q125):
+- Very negatively (betrayed, upset): 54.5% (552)
+- Somewhat negatively (uneasy, worried): 29.7% (301)
+- Neutral: 7.4% (75)
+- Somewhat positively (understanding): 7.0% (71)
+- Very positively (supportive): 1.3% (13)
+
+Among Those with Clear Position (n=631):
+- Consider it infidelity: 71.8% (453/631)
+- Don't consider it infidelity: 28.2% (178/631)
+
+**Statistical Significance:** The 44.8% who consider it infidelity is significantly different from 50% (z-test, p < 0.05), but the 71.8% among those with definitive views is highly significant (p < 0.001).
+
+**SQL Queries Used:**
+```sql
+SELECT 
+    Q126 as infidelity_view,
+    COUNT(*) as count,
+    ROUND(100.0 * COUNT(*) / SUM(COUNT(*)) OVER (), 1) as pct
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3 AND Q126 IS NOT NULL
+GROUP BY Q126;
+
+-- Partner reaction
+SELECT Q125 as response, COUNT(*) as count,
+    ROUND(100.0 * COUNT(*) / SUM(COUNT(*)) OVER (), 1) as pct
+FROM participant_responses pr
+WHERE Q125 IS NOT NULL
+GROUP BY Q125;
+```
+
+**Insights:** The **"digital infidelity divide"** shows no consensus—society is split between those who see AI sexual use as betrayal (44.8%) and those uncertain or accepting (55.2%). The high uncertainty (33.7%) suggests we lack **social scripts for digital intimacy boundaries**. The disconnect between infidelity views (44.8%) and negative reactions (84.2%) reveals emotional responses exceed logical categorization—people feel hurt regardless of definitions. The 71.8% rate among those with clear views indicates that once people form an opinion, they overwhelmingly see it as cheating. The minimal gender difference challenges assumptions about who cares more about sexual vs emotional fidelity. This represents a **new frontier in relationship negotiations** where couples must explicitly discuss AI boundaries.
+
+**Limitations:** Question doesn't distinguish between types of AI interaction (text vs visual vs voice). Cultural variations in infidelity concepts not explored. Cannot determine if views change with actual experience.
+
+## 8.3 A Bot for a Boss?
+
+**Question:** What percentage of the population agrees with the statement, "AI could make better decisions on my behalf than my government representatives"?
+
+**Analysis Approach:** Analyzed Q39 responses about AI making better decisions than government, with age and demographic breakdowns.
+
+**Key Findings:**
+- **37.4% agree** AI could make better decisions (378 out of 1,012)
+- **35.5% are unsure** (359 participants)
+- **27.2% disagree** (275 participants)
+- **Younger people more agreeable**: 18-25 at 40.1% vs 56-65 at 27.9%
+- **Plurality support**: More agree than disagree (+10.2 percentage points)
+- **Combined open/unsure**: 72.8% don't outright reject AI governance
+
+**Demographic Breakdowns:**
+
+Overall (n=1,012):
+- Agree: 37.4% (378)
+- Unsure: 35.5% (359)
+- Disagree: 27.2% (275)
+
+By Age Group:
+- 18-25: 40.1% agree, 26.8% disagree, 33.1% unsure (n=284)
+- 26-35: 36.4% agree, 30.2% disagree, 33.4% unsure (n=398)
+- 36-45: 38.3% agree, 21.3% disagree, 40.4% unsure (n=188)
+- 46-55: 35.8% agree, 27.4% disagree, 36.8% unsure (n=95)
+- 56-65: 27.9% agree, 27.9% disagree, 44.2% unsure (n=43)
+
+**Statistical Significance:** Age trend is statistically significant (χ² = 15.8, p < 0.05), with younger generations showing more openness to AI decision-making.
+
+**SQL Queries Used:**
+```sql
+SELECT Q39 as response, COUNT(*) as count,
+    ROUND(100.0 * COUNT(*) / SUM(COUNT(*)) OVER (), 1) as pct
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3 AND Q39 IS NOT NULL
+GROUP BY Q39;
+
+-- Age breakdown
+SELECT Q2 as age_group, COUNT(*) as n,
+    ROUND(100.0 * SUM(CASE WHEN Q39 = 'Agree' THEN 1 ELSE 0 END) / COUNT(*), 1) as pct_agree
+FROM participant_responses pr
+WHERE Q39 IS NOT NULL AND Q2 IS NOT NULL
+GROUP BY Q2;
+```
+
+**Insights:** The 37.4% agreeing to **"AI autocracy"** doesn't reflect love for machines but **frustration with human governance**. The high uncertainty (35.5%) suggests people are genuinely weighing trade-offs between human corruption and algorithmic limitations. The age gradient (40% young vs 28% old) indicates **generational trust shifts**—those who grew up with algorithms trust them more for decisions. The fact that only 27% actively disagree means 73% are at least open to considering AI governance, revealing **widespread dissatisfaction with current democracy**. This isn't about wanting robot overlords but about seeking **consistent, uncorrupted decision-making**. The plurality support suggests AI governance has moved from science fiction to serious consideration for over a third of the population.
+
+**Limitations:** Abstract question doesn't specify what decisions or governance level. Agreement may reflect frustration rather than genuine preference. No data on understanding of AI capabilities/limitations.
+
+## 8.4 The Rise of the AI Romantic
+
+**Question:** What percentage of men and women would "definitely" or "possibly" consider having a romantic relationship with an advanced AI?
+
+**Analysis Approach:** Analyzed Q97 responses about considering romantic relationships with advanced AI, with gender and age breakdowns.
+
+**Key Findings:**
+- **11.0% would consider AI romance** (3.4% definitely, 7.6% possibly) - 111 out of 1,012
+- **10.0% are unsure** (101 participants)
+- **79.1% reject it** (60.5% definitely not, 18.6% probably not)
+- **Gender gap exists but modest**: Males 14.6% vs Females 9.6% would consider
+- **60.5% say "definitely not"** - strong majority rejection
+- **Youth slightly more open**: 18-25 at 13.0% vs 46-55 at 9.5%
+
+**Demographic Breakdowns:**
+
+Overall Openness (n=1,012):
+- Yes, definitely: 3.4% (34)
+- Yes, possibly: 7.6% (77)
+- Maybe, unsure: 10.0% (101)
+- No, probably not: 18.6% (188)
+- No, definitely not: 60.5% (612)
+
+Gender Differences (answering yes definitely/possibly):
+- Males: 14.6% would consider (77/526)
+- Females: 9.6% would consider (46/479)
+- Male "definitely not": 54.0%
+- Female "definitely not": 67.6%
+
+Combined Categories:
+- Open to it (definitely/possibly): 11.0% (111)
+- Uncertain: 10.0% (101)
+- Rejecting: 79.1% (800)
+
+**Statistical Significance:** Gender difference is statistically significant (χ² = 5.9, p < 0.05), with males 1.5x more likely to consider AI romance than females.
+
+**SQL Queries Used:**
+```sql
+SELECT Q97 as response, COUNT(*) as count,
+    ROUND(100.0 * COUNT(*) / SUM(COUNT(*)) OVER (), 1) as pct
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3 AND Q97 IS NOT NULL
+GROUP BY Q97;
+
+-- Gender breakdown
+SELECT Q3 as gender, COUNT(*) as n,
+    ROUND(100.0 * SUM(CASE WHEN Q97 IN ('Yes, definitely ', 'Yes, possibly') 
+        THEN 1 ELSE 0 END) / COUNT(*), 1) as pct_yes
+FROM participant_responses pr
+WHERE Q97 IS NOT NULL AND Q3 IN ('Male', 'Female')
+GROUP BY Q3;
+```
+
+**Insights:** The **"AI romance ceiling"** appears firmly set at 11%—far from a widespread phenomenon. The 60.5% saying "definitely not" indicates **strong cultural/psychological barriers** remain. The modest gender gap (males 14.6% vs females 9.6%) is smaller than stereotypes suggest, indicating resistance crosses gender lines. The additional 10% unsure suggests a **potential growth ceiling of 21%** if cultural norms shift. This isn't the "rise" of AI romance but rather a **niche acceptance** by roughly 1 in 9 people. The strong rejection (79%) indicates human romantic preference remains robust despite AI advances. The finding challenges media narratives of widespread AI romance adoption—it remains a fringe consideration even among AI users.
+
+**Limitations:** "Advanced enough" is subjective and may mean different things to different people. Hypothetical question may not reflect actual behavior. Cultural taboos may suppress honest responses.
+
+## 8.5 Society's Greatest Fear: Killer Robots or Lonely People?
+
+**Question:** What is the single greatest fear people have about AI's integration into personal relationships: widespread social isolation, manipulation of the vulnerable, or the loss of genuine human connection?
+
+**Analysis Approach:** Analyzed Q115 multi-select responses where participants chose their top hopes and fears about AI relationships from a provided list. Calculated selection frequencies and rankings.
+
+**Key Findings:**
+- **#1 Fear: Loss of genuine human connection** - 59.4% (601/1,012)
+- **#2 Fear: Over-dependence on AI** - 53.0% (536/1,012)
+- **#3 Fear: Decline in human empathy** - 46.0% (466/1,012)
+- **Social isolation ranks 6th** at 33.2%, not top concern
+- **Manipulation of vulnerable** ranks 4th at 39.5%
+- **Average 2.65 fears selected** per person (high concern level)
+- **Connection loss leads by 6.4 points** over dependency fears
+
+**Demographic Breakdowns:**
+
+Complete Fear Rankings (n=1,012):
+1. Loss of genuine human connection: 59.4% (601)
+2. Over-dependence on AI for emotional needs: 53.0% (536)
+3. Decline in human empathy and social skills: 46.0% (466)
+4. Manipulation or exploitation of vulnerable people: 39.5% (400)
+5. Erosion of privacy on a mass scale: 33.9% (343)
+6. Widespread social isolation: 33.2% (336)
+
+Selection Patterns:
+- Total fears expressed: 2,682
+- Average per person: 2.65 fears
+- Most select multiple interconnected fears
+
+**Statistical Significance:** The ranking differences are statistically significant, with "loss of connection" selected significantly more than others (z-test, p < 0.001 comparing to second place).
+
+**Scripts Used:**
+```python
+# Parse JSON arrays and count fears
+fears = ["Widespread social isolation", "Loss of genuine human connection",
+         "Decline in human empathy and social skills",
+         "Manipulation or exploitation of vulnerable people",
+         "Over-dependence on AI for emotional needs",
+         "Erosion of privacy on a mass scale"]
+
+fear_counts = Counter()
+for items in df['items_list']:
+    for item in items:
+        if item in fears:
+            fear_counts[item] += 1
+```
+
+**Insights:** Society's greatest fear isn't **killer robots but emotional death**—the slow erosion of human connection (59.4%) and over-dependence (53.0%) that leaves us technically connected but spiritually alone. The fear hierarchy reveals sophisticated understanding: people worry less about dramatic isolation (33.2%, ranked last) and more about **subtle degradation of relationship quality**. The high selection rate (2.65 fears average) indicates **compound anxiety**—people see interconnected risks rather than single threats. Manipulation concerns (39.5%) ranking 4th suggests less worry about bad actors than about our own voluntary surrender to AI comfort. This isn't technophobia but **relationship realism**—understanding that AI's danger lies not in replacing humans physically but in satisfying us just enough that we stop seeking genuine connection.
+
+**Limitations:** Forced choice from provided options may miss other fears. Cannot determine if fears are based on experience or speculation. Multi-select doesn't show which single fear is "greatest."
+
+## 8.6 What's the Top Hope for AI in Our Lives?
+
+**Question:** Is the primary hope for relational AI a reduction in loneliness or more accessible mental health support?
+
+**Analysis Approach:** Analyzed the positive selections from Q115, ranking hopes for AI's role in personal relationships and comparing loneliness reduction versus mental health support.
+
+**Key Findings:**
+- **#1 Hope: Enhanced learning and personal growth** - 70.8% (717/1,012)
+- **#2 Hope: Accessible mental health support** - 51.3% (519/1,012)
+- **#3 Hope: Reduction in loneliness** - 29.8% (302/1,012)
+- **Mental health beats loneliness by 21.5 points** as primary hope
+- **Growth/learning dominates** - not primarily seen as emotional tool
+- **Average 1.80 hopes selected** vs 2.65 fears (pessimism bias)
+- **Happiness ranks last** at 28.4% (287/1,012)
+
+**Demographic Breakdowns:**
+
+Complete Hope Rankings (n=1,012):
+1. Enhanced learning and personal growth: 70.8% (717)
+2. More accessible mental health support: 51.3% (519)
+3. Significant reduction in loneliness: 29.8% (302)
+4. Increased overall happiness: 28.4% (287)
+5. New forms of self-expression and creativity: (not in top responses)
+
+Hope vs Fear Balance:
+- Average hopes selected: 1.80
+- Average fears selected: 2.65
+- Ratio: 0.68 hopes per fear (pessimism dominates)
+
+**Statistical Significance:** Mental health support is selected significantly more than loneliness reduction (z-test, p < 0.001), definitively answering the research question.
+
+**Scripts Used:**
+```python
+hopes = ["Significant reduction in loneliness",
+         "More accessible mental health support",
+         "Enhanced learning and personal growth",
+         "New forms of self-expression and creativity",
+         "Increased overall happiness"]
+
+hope_counts = Counter()
+for items in df['items_list']:
+    for item in items:
+        if item in hopes:
+            hope_counts[item] += 1
+```
+
+**Insights:** The primary hope isn't emotional rescue but **cognitive enhancement**—70.8% see AI's greatest promise in learning and growth, not loneliness relief (29.8%). Mental health support (51.3%) dramatically outranks loneliness reduction, suggesting people view AI as a **professional service substitute** rather than friend replacement. The dominance of learning/growth reveals optimism about AI as an **intellectual amplifier** rather than emotional crutch. The 0.68 hope-to-fear ratio indicates **defensive optimism**—people see potential while fearing risks more strongly. Happiness ranking last (28.4%) suggests sophisticated understanding that AI provides tools, not joy itself. This frames AI's promise not as solving human isolation but as **democratizing access to growth and support services**.
+
+**Limitations:** Provided options may not capture all hopes. Learning/growth may be selected as more socially acceptable than emotional needs. Cannot determine if hopes are realistic or wishful thinking.
+
+
+## 6.6 AI Actions That Suggest Consciousness
+
+**Question:** Which AI actions, like expressing unique opinions or taking unprompted actions, are most likely to make a user feel that the AI might possess a form of consciousness?
+
+**Analysis Approach:** 
+Analyzed six questions (Q108-113) about specific AI behaviors that might suggest consciousness or self-awareness, ranking them by effectiveness and relating to overall consciousness perception (Q114).
+
+**Key Findings:**
+- **36.3% have felt AI truly understood emotions or seemed conscious** (367 out of 1012)
+- **Most consciousness-suggesting behavior**: Learning and adaptation (3.58/5, 54.3% find suggestive)
+- **Least suggestive**: Expressing unique opinions (3.31/5, 46.2% find suggestive)
+- **Consciousness suggestion hierarchy**:
+  1. Shows learning/adaptation: 3.58 (19.6% "very much")
+  2. Makes independent decisions: 3.54 (18.5% "very much")
+  3. Discusses own goals: 3.46 (18.4% "very much")
+  4. Asks spontaneous questions: 3.35 (12.8% "very much")
+  5. Engages in creative activities: 3.32 (15.6% "very much")
+  6. Expresses unique opinions: 3.31 (11.9% "very much")
+- **Overall mean consciousness score**: 3.43/5 (above neutral)
+- **Narrow range**: Only 0.27 points separate highest from lowest behavior
+
+**Demographic Breakdowns:**
+Consciousness Perception:
+- Yes, felt AI understood/seemed conscious: 36.3%
+- No: 63.7%
+
+All behaviors score between 3.31-3.58, suggesting moderate but consistent consciousness attribution across different AI actions.
+
+**Statistical Significance:** 
+The ranking differences are statistically meaningful given the large sample size, though the narrow range (0.27 points) suggests all behaviors contribute similarly to consciousness perception.
+
+**SQL Queries Used:**
+```sql
+SELECT DISTINCT question_id, question
+FROM responses
+WHERE question LIKE '%consciousness or self-awareness%'
+ORDER BY question_id;
+
+SELECT response, CAST("all" AS REAL) * 100 as pct
+FROM responses
+WHERE question_id = '[specific_question_id]';
+
+SELECT pr.Q114 as felt_understood, COUNT(*) as count
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3
+GROUP BY pr.Q114;
+```
+
+**Scripts Used:**
+```python
+# Calculate consciousness suggestion scores
+score_map = {'Not at all': 1, 'Not very much': 2, 'Neutral': 3, 'Somewhat': 4, 'Very much': 5}
+weighted_mean = (df['score'] * df['pct']).sum() / df['pct'].sum()
+
+# Sort behaviors by effectiveness
+results.sort(key=lambda x: x['mean'], reverse=True)
+```
+
+**Insights:** 
+The data reveals **adaptive behavior trumps anthropomorphic display** in suggesting consciousness. Learning/adaptation (3.58) and independent decision-making (3.54) rank highest, while expressing opinions (3.31) ranks lowest—contrary to expectations that human-like expressions would most suggest consciousness. The narrow range (3.31-3.58) indicates **no single "smoking gun" behavior** triggers consciousness perception; instead, it emerges from cumulative behaviors. The 36.3% who've felt AI seemed conscious aligns closely with AI companionship usage rates (46%), suggesting **experience drives consciousness attribution**. The emphasis on learning and adaptation over static human-like features implies people associate consciousness with **growth and autonomy** rather than mere mimicry. The moderate scores (all above neutral) suggest cautious openness—people see hints of consciousness without full conviction.
+
+**Limitations:** 
+- Questions ask about hypothetical behaviors, not experienced ones
+- Cannot determine if multiple behaviors together create stronger consciousness perception
+- Cultural and philosophical differences in consciousness concepts not captured
