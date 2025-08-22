@@ -4229,3 +4229,73 @@ The lack of significant religious differences reveals **human exceptionalism as 
 - Small sample sizes for some religions (Judaism n=17, Sikhism n=5)
 - Western bias in religious categories may miss Eastern religious nuances
 - Trait list may reflect Western concepts of human uniqueness
+## 14.4 On Work and Purpose
+
+**Question:** What percentage of people believe their job is both meaningful and *should* be automated? What does this group predict for AI's impact on their "sense of purpose"?
+
+**Analysis Approach:** 
+Analyzed the relationship between believing one's job contributes positively (Q42) and thinking it should be automated (Q41), then examined this paradox group's predictions about AI's impact on their sense of purpose (Q44).
+
+**Key Findings:**
+- **52.7% believe their job is meaningful** (makes things noticeably/profoundly better)
+- **66.6% think their job should be automated** 
+- **44.4% hold both views simultaneously** - the "paradox group" (449 people)
+- **84.2% of those with meaningful jobs think they should be automated**
+- Paradox group's purpose predictions:
+  - 63.7% expect positive impact on purpose (46.3% noticeably, 17.4% profoundly better)
+  - Only 10.5% expect negative impact
+  - Mean score: 3.69/5 (between neutral and noticeably better)
+- **Strong positive correlations**:
+  - Job meaningful ↔ Should automate: r = 0.496
+  - Job meaningful ↔ Purpose impact: r = 0.492
+
+**Demographic Breakdowns:**
+
+Purpose Impact by Group (mean scores):
+- Paradox group (meaningful + should automate): 3.69/5
+- Only meaningful (not automate): 3.29/5
+- Only automate (not meaningful): 3.00/5
+- Neither: 2.72/5
+
+The paradox group is most optimistic about maintaining purpose.
+
+**Statistical Significance:** 
+- Group differences in purpose impact: F = 73.10, p < 0.0001 (highly significant)
+- All correlations significant at p < 0.0001
+- Paradox group significantly more optimistic than all other groups
+
+**SQL Queries Used:**
+```sql
+SELECT 
+    pr.participant_id,
+    pr.Q42 as job_meaningful,
+    pr.Q41 as job_should_be_automated,
+    pr.Q44 as ai_impact_purpose,
+    pr.Q43 as ai_impact_jobs,
+    p.pri_score
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3;
+```
+
+**Scripts Used:**
+```python
+# Identify paradox group
+df['job_is_meaningful'] = df['meaningful_score'] >= 4  # Noticeably/Profoundly Better
+df['should_be_automated'] = df['should_automate_score'] >= 4
+paradox_group = df[(df['job_is_meaningful']) & (df['should_be_automated'])]
+
+# Compare purpose impact across groups
+f_stat, p_val = stats.f_oneway(paradox_group['purpose_impact_score'].dropna(),
+                               only_meaningful['purpose_impact_score'].dropna(),
+                               only_automate['purpose_impact_score'].dropna(),
+                               neither['purpose_impact_score'].dropna())
+```
+
+**Insights:** 
+The finding that **84% of people with meaningful jobs want them automated** reveals a profound reconceptualization of work's purpose. Rather than clinging to meaningful work, people embrace automation even for valuable roles, expecting **enhanced rather than diminished purpose** (mean 3.69/5). The strong positive correlations (r≈0.5) between meaningfulness, automation desire, and purpose expectations suggest a **"liberation narrative"**—automation frees humans for higher purposes. The paradox group's optimism (64% expect improved purpose) indicates they see automation not as job loss but as **evolution toward more fulfilling activities**. This challenges the assumption that meaningful work provides irreplaceable purpose; instead, people may find purpose in enabling progress through their own obsolescence. The split view on job impacts (43% positive, 41% negative) shows they recognize disruption while maintaining personal optimism.
+
+**Limitations:** 
+- Questions measure perceived impact rather than actual job meaningfulness
+- Cannot determine if optimism about purpose is realistic or wishful thinking
+- Cross-sectional data doesn't capture how views change with actual automation
