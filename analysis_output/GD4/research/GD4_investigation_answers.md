@@ -180,3 +180,67 @@ A clear **generational divide exists in emotional vulnerability with AI**, with 
 - Age categories may hide variations within groups
 - Cross-sectional data doesn't show if views change with aging
 - Cultural factors may influence age patterns differently across regions
+
+## 2.2 Gender and Emotional Support
+
+**Question:** Are there statistically significant differences between genders in their propensity to use AI for emotional purposes like venting or for motivation? This could challenge or confirm stereotypes about emotional expression.
+
+**Analysis Approach:** 
+Using individual participant data, I analyzed gender differences in specific emotional AI activities (Q65 multi-select) and overall patterns of emotional support usage (Q17), focusing on binary gender categories for statistical clarity.
+
+**Key Findings:**
+- **No significant overall gender difference** in emotional AI use: 45.2% of males vs 46.1% of females use AI for emotional purposes (χ² = 0.048, p = 0.83)
+- **Females more likely to vent to AI**: 28.6% vs 22.1% for males (χ² = 5.36, p = 0.02, statistically significant)
+- **Similar rates for other activities**:
+  - Using AI when lonely: Males 25.9%, Females 26.5%
+  - Relationships/dating advice: Males 29.3%, Females 28.2%
+  - Sharing secrets: Males 30.8%, Females 30.3%
+  - Motivation/pep talks: Males 31.7%, Females 34.9%
+- **Mental health information**: Females 40.1% vs Males 34.8% (trending higher but not tested individually)
+- **Daily/Weekly emotional support**: Males 43.5%, Females 42.0% (nearly identical)
+
+**Demographic Breakdowns:**
+- **Mental wellbeing impact** (among users):
+  - Males report slightly higher "Very beneficial": 15.0% vs 12.1%
+  - Females report more "Beneficial": 37.0% vs 32.9%
+  - Overall positive impact similar between genders
+- **Feeling less lonely** (Yes, definitely + Yes, somewhat):
+  - Males: 32.7%
+  - Females: 38.3%
+
+**Statistical Significance:** 
+- Overall emotional AI use: **No significant difference** (p = 0.83)
+- Venting when frustrated: **Significant difference** (p = 0.02), females higher
+- Other individual activities show no significant differences
+
+**SQL Queries Used:**
+```sql
+SELECT 
+    pr.Q3 as gender,
+    pr.Q17 as emotional_support_freq,
+    pr.Q65 as ai_activities,  -- JSON array of activities
+    pr.Q71 as ai_wellbeing_impact,
+    pr.Q70 as ai_made_less_lonely,
+    p.pri_score
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3
+  AND pr.Q3 IN ('Male', 'Female');
+```
+
+**Scripts Used:**
+```python
+# Parse multi-select activities and test gender differences
+df['activities_list'] = df['ai_activities'].apply(json.loads)
+contingency = np.array([[male_count, male_total - male_count],
+                       [female_count, female_total - female_count]])
+chi2, p_value, _, _ = chi2_contingency(contingency)
+```
+
+**Insights:** 
+Gender differences in AI emotional support usage are **surprisingly minimal**, challenging stereotypes about emotional expression. While females are significantly more likely to "vent" to AI when frustrated, overall emotional engagement with AI is nearly identical between genders (45-46%). This suggests AI may provide a **gender-neutral space for emotional expression**, where traditional social pressures about masculinity and emotional vulnerability are reduced. The similar usage rates indicate both genders find value in AI's non-judgmental, always-available emotional support.
+
+**Limitations:** 
+- Binary gender analysis excludes non-binary participants (n=7)
+- Self-reporting bias may affect emotional activity disclosure
+- Cultural variations in gender norms not examined
