@@ -891,3 +891,77 @@ GROUP BY pr.Q6, pr.Q88;
 **Insights:** The **"spiritual paradox"** emerges clearly—religious individuals are significantly MORE accepting of AI spiritual advisors than non-religious individuals (75% vs 53%), contrary to expectations that religious people would guard spiritual domains more carefully. This suggests religious individuals may view AI as a **complementary spiritual tool** rather than replacement, possibly similar to religious apps or online sermons. The universal rejection of AI as life mentor (only 18% accept) while embracing spiritual guidance (68% accept) reveals an important distinction: people accept AI for **domain-specific spiritual support** but reject it for **holistic life guidance**. Hindus show highest acceptance (83%), possibly reflecting comfort with diverse spiritual practices, while non-religious individuals' lower acceptance may stem from viewing spirituality itself as less relevant.
 
 **Limitations:** Sample sizes vary significantly by religion (Christianity n=327, Sikhism n=5). Cultural context within religions not captured (e.g., evangelical vs. catholic Christians). Question wording may conflate different concepts of "spiritual advisor" across religious traditions.
+
+## 5.4 Parental Concerns About AI
+
+**Question:** Are parents more or less likely than non-parents to be "more concerned than excited" about AI's role in daily life?
+
+**Analysis Approach:** Compared AI sentiment (Q5), impact assessments (Q22, Q45), and AI usage patterns between parents (Q60=yes) and non-parents. Also examined overall population views on children-AI relationships.
+
+**Key Findings:**
+- **Parents are LESS concerned than non-parents**:
+  - Only 6.5% of parents are "more concerned than excited" vs 11.7% of non-parents
+  - 38.8% of parents are "more excited than concerned" vs 35.6% of non-parents
+- **Parents see MORE positive AI impact**:
+  - Daily life impact: Parents 3.96/5 vs Non-parents 3.76/5 (p < 0.0001)
+  - Chatbot societal impact: Parents 3.67/5 vs Non-parents 3.37/5 (p < 0.0001)
+- **Parents use AI companionship MORE**: 54.5% vs 42.2% of non-parents (p < 0.001)
+- **Universal concern about children**: 80.5% of full population agrees AI could negatively impact children's ability to form relationships (47% strongly, 34% somewhat)
+- **Paradox**: Parents are less concerned overall despite universal worry about children
+
+**Demographic Breakdowns:**
+
+AI Sentiment Distribution:
+- Parents: 6.5% concerned, 54.7% equally both, 38.8% excited
+- Non-parents: 11.7% concerned, 52.6% equally both, 35.6% excited
+
+Impact Assessments (1=worse, 5=better):
+- Daily life: Parents 3.96 vs Non-parents 3.76 (difference +0.20)
+- Chatbot impact: Parents 3.67 vs Non-parents 3.37 (difference +0.30)
+
+Children-AI Concerns (overall population):
+- Negative impact on relationships: 80.5% agree (47.0% strongly, 33.5% somewhat)
+- Unrealistic expectations: ~80% agree
+- Emotional dependency: ~90% agree
+
+**Statistical Significance:**
+- AI sentiment difference: χ² = 7.24, p = 0.027 (significant)
+- Daily life impact: t = 3.96, p < 0.0001 (highly significant)
+- Chatbot impact: t = 3.93, p < 0.0001 (highly significant)
+- AI companionship usage: χ² = 15.65, p = 0.0004 (highly significant)
+
+**SQL Queries Used:**
+```sql
+-- Parent vs non-parent AI sentiment
+SELECT 
+    CASE WHEN pr.Q60 = 'yes' THEN 'Parent' ELSE 'Non-parent' END as parent_status,
+    COUNT(*) as total,
+    ROUND(100.0 * COUNT(CASE WHEN pr.Q5 = 'More concerned than excited' THEN 1 END) / COUNT(*), 1) as more_concerned_pct,
+    ROUND(100.0 * COUNT(CASE WHEN pr.Q5 = 'More excited than concerned' THEN 1 END) / COUNT(*), 1) as more_excited_pct
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3 AND pr.Q60 IN ('yes', 'no')
+GROUP BY parent_status;
+
+-- Children-AI relationship concerns
+SELECT response, ROUND(CAST("all" AS REAL) * 100, 1) as agree_pct
+FROM responses
+WHERE question_id = '4178d870-d669-429b-a05e-8b681136849b';  -- negative impact question
+```
+
+**Scripts Used:**
+```python
+# Convert impact assessments to numeric and compare
+impact_map = {'Profoundly Worse': 1, 'Noticeably Worse': 2, 'No Major Change': 3,
+              'Noticeably Better': 4, 'Profoundly Better': 5}
+df['daily_life_numeric'] = df['daily_life_impact'].map(impact_map)
+
+# T-test for significance
+t_daily, p_daily = stats.ttest_ind(
+    df[df['is_parent']]['daily_life_numeric'].dropna(),
+    df[~df['is_parent']]['daily_life_numeric'].dropna())
+```
+
+**Insights:** The **"parental optimism paradox"** reveals that parents are significantly LESS concerned about AI than non-parents, despite universal agreement (80%) that AI could harm children's relationships. This suggests parents may have **pragmatic acceptance**—they worry about specific risks to children while recognizing overall benefits. The higher AI companionship usage among parents (54.5% vs 42.2%) indicates they may see practical value in AI assistance for parenting tasks or personal support. Parents' more positive view (+0.30 points on societal impact) could reflect **lived experience with technology's benefits** in managing family life. The disconnect between general optimism and specific child-related concerns suggests parents compartmentalize risks—accepting AI broadly while maintaining vigilance about children's exposure.
+
+**Limitations:** Cannot determine if parental status causes different AI attitudes or if optimistic people are more likely to become parents. Children-specific concern data isn't broken down by parental status in the dataset. Cross-sectional design doesn't capture how views change after becoming a parent.
