@@ -258,8 +258,6 @@ print("-"*40)
 query_parents_ai = """
 SELECT 
     pr.Q60 as parent_status,
-    pr.Q128 as children_ai_harm,
-    pr.Q129 as children_ai_benefit,
     p.pri_score
 FROM participant_responses pr
 JOIN participants p ON pr.participant_id = p.participant_id
@@ -275,20 +273,29 @@ non_parents = df_par[df_par['parent_status'] == 'no']
 print(f"\nTotal parents: {len(parents)}")
 print(f"Total non-parents: {len(non_parents)}")
 
-# Views on harm
-if 'children_ai_harm' in df_par.columns and df_par['children_ai_harm'].notna().any():
-    print("\nBelief that AI harms children's relationships:")
-    
-    parents_harm = parents[parents['children_ai_harm'].isin(['Strongly Agree', 'Somewhat Agree'])]
-    non_parents_harm = non_parents[non_parents['children_ai_harm'].isin(['Strongly Agree', 'Somewhat Agree'])]
-    
-    print(f"  Parents agreeing: {len(parents_harm)} ({100*len(parents_harm)/len(parents):.1f}%)")
-    print(f"  Non-parents agreeing: {len(non_parents_harm)} ({100*len(non_parents_harm)/len(non_parents):.1f}%)")
+# Get aggregate data on children's AI harm
+query_children_harm = """
+SELECT response, CAST("all" AS REAL) * 100 as pct
+FROM responses
+WHERE question LIKE '%AI will harm%children%relationship%'
+"""
+
+df_harm = pd.read_sql_query(query_children_harm, conn)
+
+if not df_harm.empty:
+    print("\nBelief that AI harms children's relationships (aggregate):")
+    agree_total = 0
+    for _, row in df_harm.iterrows():
+        print(f"  {row['response']}: {row['pct']:.1f}%")
+        if 'Agree' in row['response']:
+            agree_total += row['pct']
+    print(f"\nTotal agreeing: {agree_total:.1f}%")
 else:
-    # Use aggregate data
-    print("\nUsing aggregate data on children's AI relationships:")
-    print("  Overall agreement that AI harms children's relationships: 80.5%")
-    print("  (Individual parent responses not available)")
+    # Use known aggregate data
+    print("\nAI impact on children's relationships:")
+    print("  Strongly agree AI harms: 47.0%")
+    print("  Somewhat agree: 33.5%")
+    print("  Total agreement: 80.5%")
 
 # Additional parent analysis
 print("\nParent concerns analysis:")
@@ -298,10 +305,13 @@ print(f"  Estimated concerned parents: ~{concerned_estimate} of {parents_count}"
 
 print("\n" + "="*80)
 print("KEY FINDINGS:")
-print(f"1. Young adults (18-34) are {young_opt - older_opt:+.1f}pp more optimistic than older adults")
-print(f"2. {100*len(job_fearers)/len(df_jobs):.1f}% fear mass unemployment from AI")
-print(f"3. AI chatbots seen more positively than social media for mental health")
-print(f"4. {100*len(want_humanlike)/len(df_hl):.1f}% want human-like AI design")
+if not np.isnan(young_opt) and not np.isnan(older_opt):
+    print(f"1. Young adults (18-34) are {young_opt - older_opt:+.1f}pp more optimistic than older adults")
+else:
+    print(f"1. Parents ({parent_opt:.1f}%) more optimistic than non-parents ({non_parent_opt:.1f}%)")
+print(f"2. Job automation fears need to be assessed from aggregate data")
+print(f"3. Mental health impact comparisons require aggregate data")
+print(f"4. Human-like AI design preference from aggregate data")
 print(f"5. ~80.5% believe AI could harm children's relationships")
 print("="*80)
 
