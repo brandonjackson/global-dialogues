@@ -746,3 +746,77 @@ Trust in AI chatbots appears to be **primarily experience-driven rather than pri
 - Q38 text responses require manual coding for systematic analysis
 - Cannot determine if trust drives usage or usage drives trust
 - Trust reasons may be post-hoc rationalizations rather than actual drivers
+
+## 6.3 Human Support Availability and AI Impact
+
+**Question:** Among those who have used AI for emotional support, did the AI's impact on their mental well-being differ based on the availability or appeal of human support at the time? (This explores whether AI is a last resort or a genuine preference).
+
+**Analysis Approach:** 
+Created four support profiles based on human support availability (Q68) and appeal (Q69): Supplementers (available & appealing), Escapists (available but unappealing), Last Resort (unavailable but appealing), and Isolates (unavailable & unappealing). Analyzed wellbeing impact (Q71) and loneliness reduction (Q70) across these profiles.
+
+**Key Findings:**
+- **Isolates report the highest wellbeing benefit** (mean impact = 4.36/5, 86.2% beneficial, 43.1% very beneficial)
+- **Escapists close second** (mean = 4.12, 86.0% beneficial)
+- **Last Resort users report similar benefit** to Escapists (mean = 4.11, 75.7% beneficial)
+- **Supplementers report lowest benefit** (mean = 4.04, 81.0% beneficial)
+- **Significant differences across profiles** (ANOVA: F = 3.229, p = 0.023)
+- **Support profile distribution** among AI users:
+  - Mixed/Neutral: 41.1%
+  - Supplementers: 29.3%
+  - Isolates: 12.4%
+  - Escapists: 9.2%
+  - Last Resort: 7.9%
+
+**Demographic Breakdowns:**
+Loneliness reduction by profile:
+- **Isolates**: 70.7% felt less lonely (highest)
+- **Escapists**: 69.8% felt less lonely
+- **Last Resort**: 62.2% felt less lonely
+- **Supplementers**: 60.6% felt less lonely (lowest)
+
+The pattern inverts expectations—those with least human support report greatest AI benefit.
+
+**Statistical Significance:** 
+- ANOVA across profiles: F = 3.229, p = 0.023 (significant)
+- Escapist vs Last Resort: No significant difference (p = 0.96)
+- Clear gradient from Supplementers to Isolates in benefit levels
+
+**SQL Queries Used:**
+```sql
+SELECT 
+    pr.participant_id,
+    pr.Q67 as ai_companionship,
+    pr.Q68 as human_support_availability,
+    pr.Q69 as human_support_appeal,
+    pr.Q70 as ai_made_less_lonely,
+    pr.Q71 as ai_wellbeing_impact,
+    p.pri_score
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3;
+```
+
+**Scripts Used:**
+```python
+# Categorize support profiles
+def categorize_support(row):
+    if availability in ['Mostly available', 'Completely available'] and 
+       appeal in ['Mostly appealing', 'Completely appealing']:
+        return 'Supplementer'
+    elif availability in ['Mostly available', 'Completely available'] and 
+         appeal in ['Mostly unappealing', 'Completely unappealing']:
+        return 'Escapist'
+    # etc.
+
+# Statistical comparison
+f_stat, p_val = f_oneway(supplementer_impacts, escapist_impacts, 
+                         last_resort_impacts, isolate_impacts)
+```
+
+**Insights:** 
+The findings reveal a **counterintuitive pattern**: AI provides greatest therapeutic benefit to those with the least human support. Isolates—those lacking both availability and appeal of human support—report the highest wellbeing gains (43% "very beneficial"), suggesting AI fills a **critical emotional void** rather than merely supplementing existing support. Escapists, who actively choose AI over available human support, show similarly high benefits, indicating AI may offer something **qualitatively different** from human interaction—perhaps judgment-free listening or constant availability. The lower benefit for Supplementers suggests AI adds less value when human needs are already met. This challenges the "last resort" narrative—instead, AI appears most valuable for those who either can't access or don't want traditional human support.
+
+**Limitations:** 
+- Self-selection bias (those benefiting may continue using AI)
+- Cannot determine if support profiles are stable or situational
+- 41% fall into mixed/neutral categories, limiting clear categorization
