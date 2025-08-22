@@ -7,55 +7,62 @@ This document contains the answers to the investigation questions from GD4_inves
 **Question:** One might assume heavy users are purely optimistic, but they may have more nuanced concerns because of their deeper experience. Do they express more "Concerns or Warnings about AI" or more "Hopes or Positive Visions" in the final survey question?
 
 **Analysis Approach:** 
-Since individual participant data isn't available in the database, I analyzed aggregate patterns and text responses to understand the relationship between AI usage intensity and expressed hopes vs concerns. I identified "AI-Reliant" users as those using AI for emotional support daily or weekly (43% of participants).
+Using individual participant data from the participant_responses table, I identified "AI-Reliant" users as those who have used AI for companionship (Q67) AND use it for emotional support daily or weekly (Q17). I then analyzed their Q149 responses categorizing what they felt they couldn't express.
 
 **Key Findings:**
-- **43% of participants** use AI for emotional support daily (15%) or weekly (28%), forming the "AI-Reliant" group
-- **46% have used AI for companionship** (Q66), with higher rates among younger users (56% of 18-25 year-olds)
-- Among responses mentioning heavy AI use or companionship (n=166):
-  - 38.0% expressed **Hopes/Positive** themes
-  - 15.7% expressed **Concerns/Warnings**
-  - 19.9% offered **Suggestions** for development
-  - **Hope-to-Concern Ratio: 2.4:1** (more hopes than fears)
+- **30.6% of participants are AI-Reliant** (n=310 out of 1012 reliable participants with PRI ≥ 0.3)
+- **AI-Reliant users express significantly more hopes than fears**:
+  - 33.9% expressed **Hopes or Positive Visions for AI**
+  - 27.4% expressed **Concerns or Warnings about AI**
+  - **Hope-to-Concern Ratio: 1.24:1** (105 hopes vs 85 concerns)
+- **Non-Users show opposite pattern**:
+  - 20.5% expressed hopes
+  - 32.1% expressed concerns
+  - **Hope-to-Concern Ratio: 0.64:1** (114 hopes vs 178 concerns)
+- **AI-Curious users** (12.1% of sample) are most optimistic:
+  - **Hope-to-Concern Ratio: 1.47:1**
 
 **Demographic Breakdowns:**
-- **Age 18-25**: 56% have used AI companionship (vs 46% overall)
-- **Daily/Weekly emotional support users**: Higher among younger demographics
-- **Gender**: Similar usage rates (Male: 44%, Female: 48% for companionship)
+- **AI-Reliant users**: 41.9% are "More excited than concerned" about AI (vs 33.0% of Non-Users)
+- **Non-Users**: 13.2% are "More concerned than excited" (vs 5.8% of AI-Reliant)
+- Majority in both groups (52-54%) are "Equally concerned and excited"
 
 **Statistical Significance:** 
-While individual-level correlation couldn't be calculated due to data structure, the pattern shows that responses mentioning heavy use/companionship skew more positive (38%) than concerned (15.7%), contrary to the hypothesis that heavy users would express more concerns.
+Chi-square test comparing hopes vs concerns between AI-Reliant and Non-Users: **χ² = 11.572, p = 0.0007**
+- AI-Reliant: 55.3% of their hopes/concerns are hopes
+- Non-Users: 39.0% of their hopes/concerns are hopes
+- **Highly statistically significant difference (p < 0.001)**
 
 **SQL Queries Used:**
 ```sql
--- Q66: AI Companionship Use
-SELECT response, CAST("all" AS REAL) as all_pct,
-       CAST(o2_18_25 AS REAL) as age_18_25,
-       CAST(o3_male AS REAL) as male,
-       CAST(o3_female AS REAL) as female
-FROM responses 
-WHERE question_id = 'cb65b063-bff3-4cac-a827-dbab6693e307';
+-- Individual participant analysis with categories
+SELECT 
+    pr.participant_id,
+    pr.Q67 as ai_companionship,  
+    pr.Q17 as emotional_support_freq,
+    pr.Q149_categories as final_categories,
+    pr.Q5 as ai_sentiment,
+    p.pri_score
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3;
+```
 
--- Q17: Frequency of emotional support
-SELECT response, CAST("all" AS REAL) as all_pct
-FROM responses 
-WHERE question_id = 'd2af725e-0391-4019-9ade-31f25162b6f0';
-
--- Q148: Final expression sentiment
-SELECT response, sentiment, COUNT(*) as count
-FROM responses 
-WHERE question_id = 'f5d8656f-39ba-4ef5-a683-614caeffde4b'
-AND sentiment IS NOT NULL
-GROUP BY sentiment;
+**Scripts Used:**
+```python
+# Parse JSON categories and calculate ratios
+df['categories_list'] = df['final_categories'].apply(json.loads)
+reliant_hopes = sum('Hopes or Positive Visions for AI' in cats for cats in reliant['categories_list'])
+reliant_concerns = sum('Concerns or Warnings about AI' in cats for cats in reliant['categories_list'])
 ```
 
 **Insights:** 
-Contrary to the initial hypothesis, AI-Reliant users (those using AI for emotional support frequently) appear **more optimistic than concerned**. The 2.4:1 hope-to-concern ratio among heavy use mentions suggests that deeper experience with AI companionship correlates with more positive rather than negative outlooks. This challenges the assumption that familiarity breeds concern—instead, those with direct experience seem to see more potential benefits than risks.
+Contrary to the initial hypothesis, AI-Reliant users are **significantly more optimistic** than Non-Users. The 1.24:1 hope-to-concern ratio among AI-Reliant users (vs 0.64:1 for Non-Users) suggests that **deeper experience with AI companionship correlates with more positive outlooks**. This challenges the assumption that familiarity breeds concern—instead, those with direct experience see more potential benefits than risks. The pattern suggests a "positive experience bias" where continued use selects for those finding value in AI relationships.
 
 **Limitations:** 
-- Analysis based on aggregate data and text responses rather than individual-level correlations
-- Sentiment classification may not capture full nuance of mixed feelings
 - Self-selection bias (those continuing to use AI frequently likely have positive experiences)
+- Categories were self-selected by participants, may not capture full nuance
+- Cross-sectional data cannot establish causality
 
 ## 1.2 How does reliance impact their view of the social fabric?
 
