@@ -6,6 +6,10 @@ Global Dialogues is a recurring international survey series that collects public
 
 Global Dialogues 4 (GD4) focuses on **human-AI relationships**, exploring how people form relationships with AI systems, their feelings about these relationships, concerns about societal impacts, and governance preferences.
 
+## Research Task
+
+Your task is to answer the investigation questions located in `analysis_output/GD4/research/GD4_investigation_questions.md` one at a time, following the guidelines in this guide, and document your answers rigorously and thoroughly according to the guidance in this document in `analysis_output/GD4/research/GD4_investigation_answers.md`, using the connection to the Sqlite db to run queries on the GD4 data (refer to the `docs/database_guide.md`) and any Python scripts needed to complete the analysis. After documenting your answer, commit your work to git with a succinct message clearly indicating the investigation question number answered.
+
 ## Essential Resources
 
 ### Database Access

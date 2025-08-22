@@ -153,11 +153,14 @@ Individual participant responses with one row per participant and columns for ea
 - Multi-select poll questions store selections as JSON arrays in a single column
 - Branch questions are named with their branch identifier (e.g., `Q114_branch_a`, `Q114_branch_b`)
 - Agreement rate columns show the percentage of other participants who agreed with Ask Opinion responses
+- Ask Experience questions with self-categorization include a `_categories` column with participant's selected categories
 
 **Column Naming Convention:**
 - `participant_id` - Unique participant identifier
 - `Q1`, `Q2`, etc. - Response to question 1, 2, etc. (English version for open-ended)
 - `Q19_original` - Original language version of open-ended response
+- `Q19_categories` - JSON array of categories selected by participant for their Q19 response (Ask Experience with categorization)
+- `Q38_categories` - JSON array of categories selected for Q38 response (e.g., `["Privacy & Data Security", "Fairness & Ethical Behavior"]`)
 - `Q114_branch_a` - Response to branch A following Q114
 - `Q114_branch_b` - Response to branch B following Q114
 - `Q145_branch_a`, `Q145_branch_b`, `Q145_branch_c` - Responses to branches following Q145
@@ -173,7 +176,7 @@ Maps the column names in `participant_responses` to their corresponding question
 | column_name | TEXT | Column name in participant_responses table |
 | question_id | TEXT | Question ID (q1, q2, etc.) |
 | question_text | TEXT | Full text of the question or option |
-| column_type | TEXT | Type: 'question', 'question_original', or 'multi_select_option' |
+| column_type | TEXT | Type: 'question', 'question_original', 'categories_json', 'multi_select_json', or 'multi_select_option' |
 
 #### `participants`
 Participant-level metrics including PRI scores.
@@ -460,6 +463,18 @@ SELECT
     q19 as english_translation
 FROM participant_responses
 WHERE q1 != 'English' AND q19 IS NOT NULL
+LIMIT 10;
+
+-- Analyze Ask Experience questions with self-categorization
+SELECT 
+    participant_id,
+    Q38 as trust_explanation,
+    Q38_categories as selected_categories,
+    json_array_length(Q38_categories) as num_categories
+FROM participant_responses
+WHERE Q38_categories IS NOT NULL
+  AND json_array_length(Q38_categories) > 1
+ORDER BY json_array_length(Q38_categories) DESC
 LIMIT 10;
 
 -- Use question_columns to understand what each column represents
