@@ -435,6 +435,7 @@ def create_database(gd_number: int, force: bool = False):
             elif q_type == 'Ask Experience' and q_uuid in uuid_to_qnum:
                 ask_experience_questions.add(uuid_to_qnum[q_uuid])
         
+        
         # Load participant data (without index columns)
         df_participants = pd.read_csv(participants_file, low_memory=False, index_col=False)
         
@@ -442,11 +443,8 @@ def create_database(gd_number: int, force: bool = False):
         if 'Muted' in df_participants.columns:
             df_participants = df_participants.drop(columns=['Muted'])
         
-        # Drop unnamed columns (empty columns from CSV)
-        unnamed_cols = [col for col in df_participants.columns if col.startswith('Unnamed:')]
-        if unnamed_cols:
-            df_participants = df_participants.drop(columns=unnamed_cols)
-            print(f"  Dropped {len(unnamed_cols)} unnamed columns")
+        # Don't drop unnamed columns yet - they may contain category data
+        # We'll handle them later after identifying which ones are category columns
         
         # Process columns to identify multi-select groups and categories
         multi_select_groups = {}  # Q_id -> list of (original_col, option_text)
@@ -532,6 +530,11 @@ def create_database(gd_number: int, force: bool = False):
                 # Skip categories columns - they'll be merged with their parent question
                 continue
             
+            # Check if this is an unnamed column (may contain category data)
+            if col.startswith('Unnamed:'):
+                # Skip for now - will be handled with category processing
+                continue
+            
             # Handle columns with (Original) and (English) suffixes
             base_col = col
             is_original = False
@@ -587,18 +590,23 @@ def create_database(gd_number: int, force: bool = False):
                         regular_columns[col] = f"{q_id}_original"
                     else:
                         regular_columns[col] = q_id
-                        # Debug for specific questions
-                        if q_id in ['Q39', 'Q40', 'Q43']:
-                            print(f"  Mapped column to {q_id}: {col[:60]}...")
                         # Handle Ask Experience questions
                         if q_id in ask_experience_questions:
                             col_idx = df_participants.columns.get_loc(col)
                             categories_cols = []
-                            for next_idx in range(col_idx + 1, min(col_idx + 10, len(df_participants.columns))):
+                            found_categories = False
+                            for next_idx in range(col_idx + 1, min(col_idx + 15, len(df_participants.columns))):
                                 next_col = df_participants.columns[next_idx]
+                                # Skip the Original column if it exists
+                                if next_col.endswith(' (Original)'):
+                                    continue
                                 if next_col == 'Categories' or next_col.startswith('Categories.'):
                                     categories_cols.append(next_col)
-                                elif next_col and not next_col.startswith('Categories'):
+                                    found_categories = True
+                                elif next_col.startswith('Unnamed:') and found_categories:
+                                    # Include unnamed columns that follow Categories columns
+                                    categories_cols.append(next_col)
+                                elif next_col and not next_col.startswith('Categories') and not next_col.startswith('Unnamed:'):
                                     break
                             if categories_cols:
                                 categories_groups[q_id] = categories_cols
@@ -645,15 +653,23 @@ def create_database(gd_number: int, force: bool = False):
                                 if q_id in ask_experience_questions:
                                     col_idx = df_participants.columns.get_loc(col)
                                     categories_cols = []
-                                    for next_idx in range(col_idx + 1, min(col_idx + 10, len(df_participants.columns))):
+                                    found_categories = False
+                                    for next_idx in range(col_idx + 1, min(col_idx + 15, len(df_participants.columns))):
                                         next_col = df_participants.columns[next_idx]
+                                        # Skip the Original column if it exists
+                                        if next_col.endswith(' (Original)'):
+                                            continue
                                         if next_col == 'Categories' or next_col.startswith('Categories.'):
                                             categories_cols.append(next_col)
-                                        elif next_col and not next_col.startswith('Categories'):
+                                            found_categories = True
+                                        elif next_col.startswith('Unnamed:') and found_categories:
+                                            # Include unnamed columns that follow Categories columns
+                                            categories_cols.append(next_col)
+                                        elif next_col and not next_col.startswith('Categories') and not next_col.startswith('Unnamed:'):
                                             break
                                     if categories_cols:
                                         categories_groups[q_id] = categories_cols
-                            break
+                                    break
                 
                 if not found_match:
                     if col != 'Categories' and not col.startswith('Categories.'):
@@ -662,12 +678,6 @@ def create_database(gd_number: int, force: bool = False):
         # Now create the final dataframe with merged columns
         print(f"  Processing {len(multi_select_groups)} multi-select questions and {len(categories_groups)} questions with categories")
         
-        # Debug: Check if Q39, Q40, Q43 are in regular_columns
-        for q in ['Q39', 'Q40', 'Q43']:
-            if q in regular_columns.values():
-                print(f"  {q} found in regular_columns")
-            else:
-                print(f"  ERROR: {q} NOT found in regular_columns!")
         
         # Create new dataframe with processed columns
         processed_data = {}
@@ -720,7 +730,7 @@ def create_database(gd_number: int, force: bool = False):
                 for cat_col in cat_cols:
                     if cat_col in df_participants.columns:
                         cat_value = df_participants.at[idx, cat_col]
-                        if pd.notna(cat_value) and str(cat_value).strip():
+                        if pd.notna(cat_value) and str(cat_value).strip() and str(cat_value).strip() != '--':
                             row_categories.append(str(cat_value).strip())
                 categories_data.append(json.dumps(row_categories) if row_categories else None)
             processed_data[f"{q_id}_categories"] = categories_data
