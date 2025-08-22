@@ -1378,3 +1378,64 @@ The ranking reveals **interactive behaviors trump performative ones**—asking f
 - Questions ask about hypothetical behaviors, not actual experienced ones
 - Cannot determine which combinations of behaviors work best together
 - Self-reported effectiveness may not match actual emotional impact
+
+## 6.5 Emotional Effectiveness vs. Perceived Caring
+
+**Question:** What is the relationship between finding AI emotionally effective (it makes you feel better) and believing the AI genuinely "cares"? Are people willing to rely on an AI they know doesn't truly "care"?
+
+**Analysis Approach:** 
+Analyzed hypothetical scenario questions about AI emotional support effectiveness (Q99), perceived genuine caring (Q100), and willingness to rely long-term without believing AI cares (Q101). Calculated the gap between effectiveness and caring perceptions.
+
+**Key Findings:**
+- **56.6% believe AI would help emotionally** (46% somewhat, 11% strongly agree)
+- **Only 25.5% believe AI would genuinely care** (21% somewhat, 5% strongly agree)
+- **31.1 percentage point gap** between effectiveness and caring
+- **27.6% would rely on AI long-term without believing it cares**
+- **Mean scores reveal stark contrast**: Effectiveness 3.52/5 vs Caring 2.36/5 (1.15 point gap)
+- **48.8% of those who find AI effective would still rely on it without caring**
+- **54.1% actively disagree** that AI genuinely cares (27% strongly)
+
+**Demographic Breakdowns:**
+Response distributions:
+- **Effectiveness**: 56.6% agree, 23.6% neutral, 19.8% disagree
+- **Caring**: 25.5% agree, 20.4% neutral, 54.1% disagree
+- **Long-term reliance**: 27.6% likely, 24.4% unsure, 47.9% unlikely
+
+The pattern shows people differentiate between functional and emotional authenticity.
+
+**Statistical Significance:** 
+The 31.1 percentage point gap between effectiveness (56.6%) and caring (25.5%) is highly statistically significant (p < 0.001 based on sample size), indicating a robust distinction in how people conceptualize AI support.
+
+**SQL Queries Used:**
+```sql
+SELECT question_id, response, CAST("all" AS REAL) * 100 as pct
+FROM responses
+WHERE question LIKE '%helped me feel emotionally better%';
+
+SELECT question_id, response, CAST("all" AS REAL) * 100 as pct
+FROM responses
+WHERE question LIKE '%genuinely cared about my feelings%';
+
+SELECT question_id, response, CAST("all" AS REAL) * 100 as pct
+FROM responses
+WHERE question LIKE '%how likely would you be to regularly rely%';
+```
+
+**Scripts Used:**
+```python
+# Calculate weighted means
+score_map = {'Strongly disagree': 1, 'Somewhat disagree': 2, 'Neutral': 3,
+             'Somewhat agree': 4, 'Strongly agree': 5}
+weighted_mean = (df['score'] * df['pct']).sum() / df['pct'].sum()
+
+# Calculate effectiveness-caring gap
+gap = means['helped'] - means['cared']  # 3.52 - 2.36 = 1.15
+```
+
+**Insights:** 
+The data reveals a **"pragmatic acceptance" model** of AI emotional support. The majority (56.6%) believe AI can provide effective emotional help while simultaneously rejecting that it genuinely cares (only 25.5% agree). This 31-point gap suggests people make a **clear distinction between functional and authentic support**. Remarkably, 27.6% would rely on AI long-term despite not believing it cares—nearly half of those who find it effective. This indicates many view AI emotional support like taking medication for depression: **the mechanism doesn't need to "care" to be helpful**. The 1.15-point gap on the 5-point scale represents one of the largest perception differences in the survey, highlighting how people separate utility from authenticity in AI relationships.
+
+**Limitations:** 
+- Hypothetical scenarios may not reflect actual behavior
+- Cannot determine if those willing to rely without caring have tried AI support
+- Binary framing of caring may miss nuanced views about AI empathy
