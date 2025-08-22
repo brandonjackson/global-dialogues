@@ -356,99 +356,381 @@ def create_database(gd_number: int, force: bool = False):
     
     # Load and process participant-level responses if available
     participants_file = data_dir / f"GD{gd_number}_participants.csv"
-    survey_readable_file = data_dir / f"GD{gd_number}_survey_human_readable.md"
+    question_id_mapping_file = data_dir / f"GD{gd_number}_question_id_mapping.csv"
     
-    if participants_file.exists() and survey_readable_file.exists():
+    if participants_file.exists() and question_id_mapping_file.exists():
         print(f"Loading participant responses from {participants_file}")
         
-        # Parse question mapping from human readable file
+        # Load question ID mapping from CSV
+        import csv
         import re
-        question_mapping = {}
-        with open(survey_readable_file, 'r') as f:
-            lines = f.readlines()
+        import json
         
-        for line in lines:
-            match = re.match(r'^(\d+)\.\s+(.+)', line.strip())
-            if match:
-                q_num = int(match.group(1))
-                q_text = match.group(2).strip()
-                question_mapping[q_text] = f"q{q_num}"
+        def normalize_text_for_matching(text):
+            """Normalize text for better matching between different sources"""
+            # Replace various apostrophes with standard one
+            text = text.replace('\u2019', "'")  # Right single quotation mark
+            text = text.replace('\u2018', "'")  # Left single quotation mark  
+            text = text.replace('\u201d', '"')  # Right double quotation mark
+            text = text.replace('\u201c', '"')  # Left double quotation mark
+            # Replace multiple spaces/newlines with single space
+            text = re.sub(r'\s+', ' ', text)
+            # Remove extra spaces around punctuation
+            text = re.sub(r'\s+([.,!?;:])', r'\1', text)
+            text = re.sub(r'([.,!?;:])\s+', r'\1 ', text)
+            # Strip outer quotes if the entire text is quoted
+            text = text.strip()
+            if len(text) > 2 and text[0] == '"' and text[-1] == '"':
+                text = text[1:-1].strip()
+            return text
         
-        # Load participant data
-        df_participants = pd.read_csv(participants_file, low_memory=False)
+        question_mapping = {}  # Maps question text to Q{number}
+        uuid_to_qnum = {}  # Maps UUID to Q{number}
+        question_uuids = {}  # Maps Q{number} to UUID
+        normalized_mapping = {}  # Maps normalized text to Q{number} for fuzzy matching
+        
+        with open(question_id_mapping_file, 'r') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                q_num = row['human_readable_id']
+                uuid = row['uuid']
+                q_text = row['question_text'].strip()
+                
+                # Create mapping - add Q prefix only if not already present
+                if q_num.startswith('Q'):
+                    q_id = q_num  # Already has Q prefix (like Q114_branch_a)
+                else:
+                    q_id = f"Q{q_num}"  # Add Q prefix for regular numbers
+                
+                # Map both full text and UUID to question ID
+                question_mapping[q_text] = q_id
+                uuid_to_qnum[uuid] = q_id
+                question_uuids[q_id] = uuid
+                
+                # Add normalized version for better matching
+                normalized_text = normalize_text_for_matching(q_text)
+                normalized_mapping[normalized_text] = q_id
+                
+                # Also add shorter versions for matching (first 50, 75, 100 chars)
+                for length in [50, 75, 100]:
+                    short_text = q_text[:length].strip()
+                    if short_text not in question_mapping:
+                        question_mapping[short_text] = q_id
+                    
+                    short_normalized = normalized_text[:length].strip()
+                    if short_normalized not in normalized_mapping:
+                        normalized_mapping[short_normalized] = q_id
+        
+        # Identify multi-select poll questions from aggregate data
+        multi_select_questions = set()
+        ask_experience_questions = set()
+        
+        # Query the responses table for question types
+        cursor.execute("SELECT DISTINCT question_id, question_type FROM responses")
+        for row in cursor.fetchall():
+            q_uuid = row[0]
+            q_type = row[1]
+            if q_type == 'Poll Multi Select' and q_uuid in uuid_to_qnum:
+                multi_select_questions.add(uuid_to_qnum[q_uuid])
+            elif q_type == 'Ask Experience' and q_uuid in uuid_to_qnum:
+                ask_experience_questions.add(uuid_to_qnum[q_uuid])
+        
+        # Load participant data (without index columns)
+        df_participants = pd.read_csv(participants_file, low_memory=False, index_col=False)
         
         # Drop muted column if it exists
         if 'Muted' in df_participants.columns:
             df_participants = df_participants.drop(columns=['Muted'])
         
-        # Create mapping of CSV columns to question IDs
-        column_to_qid = {}
-        new_columns = {}
-        used_names = set()
+        # Drop unnamed columns (empty columns from CSV)
+        unnamed_cols = [col for col in df_participants.columns if col.startswith('Unnamed:')]
+        if unnamed_cols:
+            df_participants = df_participants.drop(columns=unnamed_cols)
+            print(f"  Dropped {len(unnamed_cols)} unnamed columns")
         
-        for col in df_participants.columns:
+        # Process columns to identify multi-select groups and categories
+        multi_select_groups = {}  # Q_id -> list of (original_col, option_text)
+        categories_groups = {}    # Q_id -> list of category columns
+        regular_columns = {}      # Regular single-value columns
+        
+        # First pass: identify column types and group them
+        agreement_columns = {}  # Maps agreement columns to their question
+        for col_idx, col in enumerate(df_participants.columns):
+            # Skip empty column names and columns with no data
+            if not col or col.strip() == '' or col == 'Muted':
+                continue
+            
+            # Also skip columns that are entirely empty (no actual header text)
+            if len(str(col).strip()) == 0:
+                continue
+            
+            # Check if this is an agreement rate column
+            if '(%agree)' in col.lower():
+                # This is an agreement column
+                # Check if it's for a branch question
+                agreement_col_name = None
+                
+                if 'branch a' in col.lower():
+                    # This is for a branch A question - find Q114 or Q145
+                    if col_idx > 0:
+                        # Look for the associated branch question
+                        for prev_idx in range(col_idx - 1, max(0, col_idx - 10), -1):
+                            prev_col = df_participants.columns[prev_idx]
+                            if 'Branch A' in prev_col and prev_col in regular_columns:
+                                base_q_id = regular_columns[prev_col]
+                                if base_q_id.endswith('_original'):
+                                    base_q_id = base_q_id[:-9]  # Remove '_original' suffix
+                                agreement_col_name = f"{base_q_id}_agree_pct"
+                                break
+                elif 'branch b' in col.lower():
+                    # This is for a branch B question
+                    for prev_idx in range(col_idx - 1, max(0, col_idx - 10), -1):
+                        prev_col = df_participants.columns[prev_idx]
+                        if 'Branch B' in prev_col and prev_col in regular_columns:
+                            base_q_id = regular_columns[prev_col]
+                            if base_q_id.endswith('_original'):
+                                base_q_id = base_q_id[:-9]  # Remove '_original' suffix
+                            agreement_col_name = f"{base_q_id}_agree_pct"
+                            break
+                elif 'branch c' in col.lower():
+                    # This is for a branch C question
+                    for prev_idx in range(col_idx - 1, max(0, col_idx - 10), -1):
+                        prev_col = df_participants.columns[prev_idx]
+                        if 'Branch C' in prev_col and prev_col in regular_columns:
+                            base_q_id = regular_columns[prev_col]
+                            if base_q_id.endswith('_original'):
+                                base_q_id = base_q_id[:-9]  # Remove '_original' suffix
+                            agreement_col_name = f"{base_q_id}_agree_pct"
+                            break
+                else:
+                    # Regular "All (%agree)" column - find the previous Ask Opinion question
+                    for prev_idx in range(col_idx - 1, max(0, col_idx - 10), -1):
+                        prev_col = df_participants.columns[prev_idx]
+                        if prev_col in regular_columns:
+                            # Get the base question ID without _original suffix
+                            base_q_id = regular_columns[prev_col]
+                            if base_q_id.endswith('_original'):
+                                base_q_id = base_q_id[:-9]  # Remove '_original' suffix
+                            agreement_col_name = f"{base_q_id}_agree_pct"
+                            break
+                
+                if agreement_col_name:
+                    agreement_columns[col] = agreement_col_name
+                    print(f"  Found agreement column: {agreement_col_name} for {col[:50]}...")
+                else:
+                    # Couldn't find the associated question
+                    print(f"  WARNING: Agreement column without clear question: {col[:50]}...")
+                    regular_columns[col] = f"unmapped_{len(regular_columns) + len(multi_select_groups) + 1}"
+                continue
+                
             if col in ['Participant Id', 'Sample Provider Id']:
-                new_columns[col] = normalize_column_name(col)
-                used_names.add(new_columns[col])
+                regular_columns[col] = normalize_column_name(col)
+                continue
+            
+            # Check if this is a "Categories" column (follows an Ask Experience question)
+            if col == 'Categories' or col.startswith('Categories.'):
+                # Skip categories columns - they'll be merged with their parent question
                 continue
             
             # Handle columns with (Original) and (English) suffixes
             base_col = col
-            suffix = ''
+            is_original = False
             if col.endswith(' (Original)'):
                 base_col = col[:-11]
-                suffix = '_original'
+                is_original = True
             elif col.endswith(' (English)'):
                 base_col = col[:-10]
-                suffix = ''  # English version gets the plain q_id
             
-            # Handle multi-select poll columns (e.g., "Which of these... - Option")
+            # Check if this is a multi-select poll column
             if ' - ' in base_col and not base_col.startswith('Branch'):
                 # Split on last ' - ' to get question and option
                 parts = base_col.rsplit(' - ', 1)
                 if len(parts) == 2:
                     question_part = parts[0].strip()
                     option_part = parts[1].strip()
+                    normalized_question = normalize_text_for_matching(question_part)
+                    
                     # Find matching question
-                    for q_text, q_id in question_mapping.items():
-                        if q_text.startswith(question_part[:50]) or question_part.startswith(q_text[:50]):
-                            # Create column name like q64_option_name
-                            option_id = re.sub(r'[^a-zA-Z0-9]+', '_', option_part[:30]).lower()
-                            new_columns[col] = f"{q_id}_{option_id}{suffix}"
+                    found_match = False
+                    
+                    # First try normalized exact/partial matches
+                    for normalized_q, q_id in normalized_mapping.items():
+                        if (normalized_question == normalized_q or
+                            (len(normalized_question) > 30 and normalized_question[:30] in normalized_q) or
+                            (len(normalized_q) > 30 and normalized_q[:30] in normalized_question)):
+                            
+                            # Check if this is a multi-select question
+                            if q_id in multi_select_questions:
+                                if not is_original:  # Only process English versions for multi-select
+                                    if q_id not in multi_select_groups:
+                                        multi_select_groups[q_id] = []
+                                    multi_select_groups[q_id].append((col, option_part))
+                            else:
+                                # Not a multi-select, treat as regular column
+                                regular_columns[col] = f"{q_id}_{re.sub(r'[^a-zA-Z0-9]+', '_', option_part[:30]).lower()}"
+                            found_match = True
                             break
-                    else:
-                        # No match found, use normalized version
-                        new_columns[col] = normalize_column_name(col)
+                    
+                    if not found_match:
+                        # No match found
+                        regular_columns[col] = f"unmapped_{len(regular_columns) + len(multi_select_groups) + 1}"
             else:
                 # Regular question column
                 found_match = False
-                for q_text, q_id in question_mapping.items():
-                    # Try to match question text (allowing for minor differences)
-                    if (q_text[:50] in base_col or base_col[:50] in q_text or 
-                        q_text.replace(',', '').replace('?', '') in base_col.replace(',', '').replace('?', '')):
-                        new_columns[col] = f"{q_id}{suffix}"
-                        found_match = True
-                        break
+                clean_col = base_col.replace('\n', ' ').replace('  ', ' ').strip()
+                normalized_col = normalize_text_for_matching(base_col)
+                
+                # First try exact match on normalized text
+                if normalized_col in normalized_mapping:
+                    q_id = normalized_mapping[normalized_col]
+                    if is_original:
+                        regular_columns[col] = f"{q_id}_original"
+                    else:
+                        regular_columns[col] = q_id
+                        # Debug for specific questions
+                        if q_id in ['Q39', 'Q40', 'Q43']:
+                            print(f"  Mapped column to {q_id}: {col[:60]}...")
+                        # Handle Ask Experience questions
+                        if q_id in ask_experience_questions:
+                            col_idx = df_participants.columns.get_loc(col)
+                            categories_cols = []
+                            for next_idx in range(col_idx + 1, min(col_idx + 10, len(df_participants.columns))):
+                                next_col = df_participants.columns[next_idx]
+                                if next_col == 'Categories' or next_col.startswith('Categories.'):
+                                    categories_cols.append(next_col)
+                                elif next_col and not next_col.startswith('Categories'):
+                                    break
+                            if categories_cols:
+                                categories_groups[q_id] = categories_cols
+                    found_match = True
+                else:
+                    # Try partial matches on normalized text
+                    for normalized_q, q_id in normalized_mapping.items():
+                        # Try various matching strategies
+                        if (len(normalized_col) > 40 and len(normalized_q) > 40 and 
+                            normalized_col[:40] == normalized_q[:40]):
+                            # First 40 chars match
+                            found_match = True
+                        elif (len(normalized_col) > 60 and len(normalized_q) > 60 and 
+                              normalized_col[:60] == normalized_q[:60]):
+                            # First 60 chars match
+                            found_match = True
+                        elif (len(normalized_col) > 80 and len(normalized_q) > 80 and 
+                              normalized_col[:80] == normalized_q[:80]):
+                            # First 80 chars match  
+                            found_match = True
+                        elif (len(normalized_col) > 90 and len(normalized_q) > 90 and 
+                              normalized_col[:90] == normalized_q[:90]):
+                            # First 90 chars match  
+                            found_match = True
+                        elif len(normalized_col) > 30 and normalized_col[:30] in normalized_q:
+                            # Start of column matches part of question
+                            found_match = True
+                        elif len(normalized_q) > 30 and normalized_q[:30] in normalized_col:
+                            # Start of question matches part of column
+                            found_match = True
+                        elif len(normalized_col) > 50 and normalized_col in normalized_q:
+                            # Entire column text is subset of question
+                            found_match = True
+                        elif len(normalized_q) > 50 and normalized_q in normalized_col:
+                            # Entire question text is subset of column
+                            found_match = True
+                        
+                        if found_match:
+                            if is_original:
+                                regular_columns[col] = f"{q_id}_original"
+                            else:
+                                regular_columns[col] = q_id
+                                # Handle Ask Experience questions
+                                if q_id in ask_experience_questions:
+                                    col_idx = df_participants.columns.get_loc(col)
+                                    categories_cols = []
+                                    for next_idx in range(col_idx + 1, min(col_idx + 10, len(df_participants.columns))):
+                                        next_col = df_participants.columns[next_idx]
+                                        if next_col == 'Categories' or next_col.startswith('Categories.'):
+                                            categories_cols.append(next_col)
+                                        elif next_col and not next_col.startswith('Categories'):
+                                            break
+                                    if categories_cols:
+                                        categories_groups[q_id] = categories_cols
+                            break
                 
                 if not found_match:
-                    # No match found, use normalized column name
-                    new_columns[col] = normalize_column_name(col)
-            
-            # Ensure unique column names
-            if new_columns[col] in used_names:
-                counter = 2
-                base_name = new_columns[col]
-                while f"{base_name}_{counter}" in used_names:
-                    counter += 1
-                new_columns[col] = f"{base_name}_{counter}"
-            used_names.add(new_columns[col])
+                    if col != 'Categories' and not col.startswith('Categories.'):
+                        regular_columns[col] = f"unmapped_{len(regular_columns) + len(multi_select_groups) + 1}"
         
-        # Rename columns
-        df_participants.rename(columns=new_columns, inplace=True)
+        # Now create the final dataframe with merged columns
+        print(f"  Processing {len(multi_select_groups)} multi-select questions and {len(categories_groups)} questions with categories")
+        
+        # Debug: Check if Q39, Q40, Q43 are in regular_columns
+        for q in ['Q39', 'Q40', 'Q43']:
+            if q in regular_columns.values():
+                print(f"  {q} found in regular_columns")
+            else:
+                print(f"  ERROR: {q} NOT found in regular_columns!")
+        
+        # Create new dataframe with processed columns
+        processed_data = {}
+        
+        # Add regular columns first
+        for orig_col, new_col in regular_columns.items():
+            if orig_col in df_participants.columns:
+                processed_data[new_col] = df_participants[orig_col]
+        
+        # Add agreement columns with percentage conversion
+        for orig_col, new_col in agreement_columns.items():
+            if orig_col in df_participants.columns:
+                # Convert percentage strings to floats
+                agree_data = []
+                for val in df_participants[orig_col]:
+                    if pd.isna(val) or str(val).strip() in ['--', '', 'N/A']:
+                        agree_data.append(None)
+                    elif '%' in str(val):
+                        try:
+                            # Remove % and convert to decimal (52% -> 0.52)
+                            pct_value = float(str(val).replace('%', '').strip()) / 100.0
+                            agree_data.append(pct_value)
+                        except ValueError:
+                            agree_data.append(None)
+                    else:
+                        agree_data.append(None)
+                processed_data[new_col] = agree_data
+        
+        # Process multi-select columns into JSON arrays
+        for q_id, option_cols in multi_select_groups.items():
+            selected_options = []
+            for idx, row in df_participants.iterrows():
+                row_options = []
+                for orig_col, option_text in option_cols:
+                    if orig_col in df_participants.columns:
+                        cell_value = df_participants.at[idx, orig_col]
+                        # Check if this option was selected (cell contains the option text)
+                        if pd.notna(cell_value) and str(cell_value).strip() == option_text:
+                            row_options.append(option_text)
+                selected_options.append(json.dumps(row_options) if row_options else None)
+            processed_data[q_id] = selected_options
+        
+        # Process Ask Experience questions with categories
+        for q_id, cat_cols in categories_groups.items():
+            # The main question response is already in regular_columns
+            # Create a categories JSON column
+            categories_data = []
+            for idx, row in df_participants.iterrows():
+                row_categories = []
+                for cat_col in cat_cols:
+                    if cat_col in df_participants.columns:
+                        cat_value = df_participants.at[idx, cat_col]
+                        if pd.notna(cat_value) and str(cat_value).strip():
+                            row_categories.append(str(cat_value).strip())
+                categories_data.append(json.dumps(row_categories) if row_categories else None)
+            processed_data[f"{q_id}_categories"] = categories_data
+        
+        # Create new dataframe from processed data
+        df_participants_processed = pd.DataFrame(processed_data)
         
         # Create participant_responses table
         print("Creating participant_responses table...")
-        df_participants.to_sql('participant_responses', conn, if_exists='replace', index=False)
+        df_participants_processed.to_sql('participant_responses', conn, if_exists='replace', index=False)
         
         # Create index on participant_id
         cursor.execute("CREATE INDEX IF NOT EXISTS idx_participant_responses_pid ON participant_responses(participant_id)")
@@ -464,31 +746,49 @@ def create_database(gd_number: int, force: bool = False):
             )
         """)
         
-        # Populate question_columns table
-        for orig_col, new_col in new_columns.items():
-            if new_col in ['participant_id', 'sample_provider_id']:
+        # Populate question_columns table with new structure
+        for col_name in df_participants_processed.columns:
+            if col_name in ['participant_id', 'sample_provider_id']:
                 continue
             
             col_type = 'question'
-            if new_col.endswith('_original'):
+            question_id = None
+            question_text = None
+            
+            if col_name.endswith('_original'):
                 col_type = 'question_original'
-            elif '_' in new_col and new_col.split('_')[0] in [f"q{i}" for i in range(1, 200)]:
-                if len(new_col.split('_')) > 1 and not new_col.endswith('_original'):
-                    # This might be a multi-select option
-                    if ' - ' in orig_col:
-                        col_type = 'multi_select_option'
+                question_id = col_name.replace('_original', '')
+            elif col_name.endswith('_categories'):
+                col_type = 'categories_json'
+                question_id = col_name.replace('_categories', '')
+            elif col_name in multi_select_groups:
+                col_type = 'multi_select_json'
+                question_id = col_name
+                # Get the original question text from mapping
+                if col_name in question_uuids:
+                    uuid = question_uuids[col_name]
+                    for q_text, q_id in question_mapping.items():
+                        if q_id == col_name:
+                            question_text = q_text
+                            break
+            elif col_name.startswith('Q'):
+                question_id = col_name.split('_')[0]
+                if '_' in col_name:
+                    col_type = 'question_subfield'
+            elif col_name.startswith('unmapped'):
+                col_type = 'unmapped'
             
             cursor.execute("""
                 INSERT OR IGNORE INTO question_columns (column_name, question_id, question_text, column_type)
                 VALUES (?, ?, ?, ?)
-            """, (new_col, new_col.split('_')[0] if new_col.startswith('q') else None, orig_col, col_type))
+            """, (col_name, question_id, question_text, col_type))
         
-        print(f"  Loaded {len(df_participants)} participant response records")
+        print(f"  Loaded {len(df_participants_processed)} participant response records")
     else:
         if not participants_file.exists():
             print(f"Participant responses file not found at {participants_file}, skipping...")
-        if not survey_readable_file.exists():
-            print(f"Survey human readable file not found at {survey_readable_file}, skipping...")
+        if not question_id_mapping_file.exists():
+            print(f"Question ID mapping file not found at {question_id_mapping_file}, skipping...")
     
     # Create branch mapping table
     print("Creating branch mapping table...")

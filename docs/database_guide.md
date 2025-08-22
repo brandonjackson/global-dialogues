@@ -148,15 +148,22 @@ Individual participant responses with one row per participant and columns for ea
 
 **Key Features:**
 - Each row represents one participant's complete survey responses
-- Question columns are named using question IDs (q1, q2, q3, etc.) mapped from the survey structure
-- Open-ended questions have both original language (`q19_original`) and English translation (`q19`) columns
-- Multi-select poll options are represented as separate columns (e.g., `q64_chatgpt`, `q64_claude`)
+- Question columns are named using question IDs (Q1, Q2, Q3, etc.) mapped from the survey structure
+- Open-ended questions have both original language (`Q19_original`) and English translation (`Q19`) columns
+- Multi-select poll questions store selections as JSON arrays in a single column
+- Branch questions are named with their branch identifier (e.g., `Q114_branch_a`, `Q114_branch_b`)
+- Agreement rate columns show the percentage of other participants who agreed with Ask Opinion responses
 
 **Column Naming Convention:**
 - `participant_id` - Unique participant identifier
-- `q1`, `q2`, etc. - Response to question 1, 2, etc. (English version for open-ended)
-- `q19_original` - Original language version of open-ended response
-- `q64_option_name` - Multi-select option columns
+- `Q1`, `Q2`, etc. - Response to question 1, 2, etc. (English version for open-ended)
+- `Q19_original` - Original language version of open-ended response
+- `Q114_branch_a` - Response to branch A following Q114
+- `Q114_branch_b` - Response to branch B following Q114
+- `Q145_branch_a`, `Q145_branch_b`, `Q145_branch_c` - Responses to branches following Q145
+- `Q98_agree_pct` - Agreement rate (0.0-1.0) for Q98 Ask Opinion response
+- `Q114_branch_a_agree_pct` - Agreement rate within branch A for that response
+- Multi-select responses stored as JSON arrays (e.g., `["ChatGPT", "Claude", "Gemini"]`)
 
 #### `question_columns`
 Maps the column names in `participant_responses` to their corresponding question text and type.
@@ -415,16 +422,36 @@ SELECT * FROM participant_responses
 WHERE participant_id = 'some_participant_id';
 
 -- Find participants who selected specific options
-SELECT participant_id, q1 as language, q2 as age, q5 as ai_sentiment
+SELECT participant_id, Q1 as language, Q2 as age, Q5 as ai_sentiment
 FROM participant_responses
-WHERE q5 = 'More excited than concerned';
+WHERE Q5 = 'More excited than concerned';
 
--- Analyze multi-select responses (e.g., which AI tools people know)
+-- Analyze multi-select responses stored as JSON arrays
 SELECT 
-    COUNT(*) as total_participants,
-    SUM(CASE WHEN q64_chatgpt = '1' THEN 1 ELSE 0 END) as knows_chatgpt,
-    SUM(CASE WHEN q64_claude = '1' THEN 1 ELSE 0 END) as knows_claude
-FROM participant_responses;
+    participant_id,
+    Q64 as ai_tools_known,
+    json_extract(Q64, '$[0]') as first_tool
+FROM participant_responses
+WHERE Q64 IS NOT NULL AND Q64 != '[]';
+
+-- Find participants with high agreement on their Ask Opinion responses
+SELECT 
+    participant_id,
+    Q98 as opinion_response,
+    Q98_agree_pct as agreement_rate
+FROM participant_responses
+WHERE Q98_agree_pct > 0.7
+ORDER BY Q98_agree_pct DESC;
+
+-- Analyze branch responses with their agreement rates
+SELECT 
+    participant_id,
+    Q114 as main_question_response,
+    Q114_branch_a as branch_a_response,
+    Q114_branch_a_agree_pct as branch_a_agreement
+FROM participant_responses
+WHERE Q114_branch_a IS NOT NULL
+  AND Q114_branch_a_agree_pct > 0.6;
 
 -- Compare original vs English translations
 SELECT 
