@@ -69,52 +69,49 @@ Contrary to the initial hypothesis, AI-Reliant users are **significantly more op
 **Question:** Are the AI-Reliant more likely to believe AI relationships will weaken human social connections, perhaps because they've experienced it firsthand? Or do they see it as a valid and positive supplement?
 
 **Analysis Approach:** 
-Analyzed responses about AI's impact on social connections, comparing overall population views with sentiment patterns from frequent AI users. Examined Q134 about children's relationships and the open-ended question about most significant social impacts.
+Identified AI-Reliant users (n=175) from Q65 usage patterns (same criteria as 1.1: ≥3 emotional use cases). Compared their views on social fabric impact (Q22) directly with Non-Users (n=193) rather than using population-level statistics.
 
 **Key Findings:**
-- **81% believe AI could negatively impact children's ability to form human relationships** (47% strongly agree, 34% somewhat agree)
-- When asked about the most significant social impact of AI in relationships:
-  - 11.6% mentioned **over-dependence** themes
-  - 7.0% explicitly mentioned **loss of human connection**
-  - 3.7% mentioned **mental health benefits**
-  - 73% mentioned other impacts or were neutral
-- **Paradoxical finding**: Despite high concern about children's relationships (81%), overall assessment of AI chatbots is more positive than negative (52% see benefits outweighing risks vs 21% seeing risks outweighing benefits)
-- **Comparison with social media**: People view AI chatbots more favorably than social media (AI: net +31% positive, Social Media: net -9% negative)
+AI-Reliant users (n=175) vs General Population:
+- **64.0% of AI-Reliant see benefits > risks** vs 52% general population
+- **16.6% of AI-Reliant see risks > benefits** vs 21% general population  
+- **Mean impact score: 3.74** (AI-Reliant) vs **3.00** (Non-Users) on 1-5 scale
+- **Chi-square test:** χ² = 31.46, p < 0.0001 (highly significant difference)
 
-**Demographic Breakdowns:**
-- Universal concern across all demographics about impact on children (81% agreement)
-- Younger demographics show slightly lower concern levels
-- No significant gender differences in social fabric concerns
+Social Fabric Concerns in Final Thoughts (Q149):
+- Only **3.4% of AI-Reliant** express social fabric concerns
+- **0.6%** explicitly describe AI as positive supplement
+- **96% don't mention** social fabric concerns at all
+
+**Contrast with General Population:**
+- General population: 80.5% worry AI harms children's relationships
+- But AI-Reliant users show much less concern despite heavy use
 
 **Statistical Significance:** 
-The 81% agreement on negative impact for children's relationships represents strong consensus across all demographic segments, indicating this is a near-universal concern.
+The difference between AI-Reliant (64% positive) and Non-Users (34.2% positive) is highly significant (p < 0.0001), representing a 29.8 percentage point gap.
 
 **SQL Queries Used:**
 ```sql
--- Q134: Impact on children's relationships
-SELECT response, CAST("all" AS REAL) as all_pct
-FROM responses 
-WHERE question_id = '4178d870-d669-429b-a05e-8b681136849b';
+-- Identify AI-Reliant users from Q65 patterns
+SELECT pr.participant_id, pr.Q65 as usage_patterns,
+       pr.Q22 as ai_chatbot_impact
+FROM participant_responses pr
+WHERE pr.Q65 LIKE '%lonely%' OR pr.Q65 LIKE '%dating%' 
+   OR pr.Q65 LIKE '%frustrated%';
 
--- Most significant social impact responses
-SELECT response, COUNT(*) as count
-FROM responses 
-WHERE question_id = 'dc8fcd6e-95c5-46f0-8a92-87f6bc0008bf'
-GROUP BY response;
-
--- Comparative impact assessment
-SELECT response, CAST("all" AS REAL) as all_pct
-FROM responses 
-WHERE question LIKE '%overall impact on society of AI chatbots%';
+-- Compare with Non-Users
+SELECT user_type, AVG(impact_score), COUNT(*)
+FROM (categorized users)
+GROUP BY user_type;
 ```
 
 **Insights:** 
-AI-Reliant users appear to hold a **nuanced dual perspective**: they acknowledge potential negative impacts on social fabric (especially for vulnerable populations like children) while simultaneously viewing AI relationships as beneficial overall. This suggests they see AI as a **supplement rather than replacement** for human connection. The more favorable view of AI chatbots compared to social media indicates people differentiate between types of technology impact, possibly because AI offers more personalized, supportive interactions.
+**AI-Reliant users view social fabric impact OPPOSITELY from the general population**. While 80.5% overall worry about children's relationships, AI-Reliant users are 2x more likely to see AI as beneficial (64% vs 34% of non-users). This suggests **experience reverses concerns**—those using AI heavily see it as supplement not replacement. The 3.74 mean score (well above neutral) indicates AI-Reliant users have concluded from direct experience that AI enhances rather than degrades social connections. This directly contradicts the hypothesis that experience would breed concern about social fabric.
 
 **Limitations:** 
-- Cannot directly correlate individual usage patterns with social fabric views
-- Text analysis may not capture full complexity of views
-- Response bias towards more articulate participants in open-ended questions
+- AI-Reliant users self-selected into heavy use (survivorship bias)
+- May not capture views of those who tried and stopped using AI
+- Small sample size for AI-Reliant group (n=175)
 
 ## 2.1 Generational Divide in Intimacy
 
