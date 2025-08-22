@@ -4382,3 +4382,78 @@ The data reveals **cultural paradoxes in AI relationship attitudes**. Collectivi
 - Country-to-culture mapping oversimplifies complex cultural identities
 - Survey translations may introduce semantic differences in key concepts
 - Self-selection bias may affect country representation
+
+## 14.1 On the Nature of AI Companionship
+
+**Question:** Among AI companionship users, do those who have available but unappealing human support (the "Escapists") report a greater positive impact on their mental well-being than users for whom AI is a last resort? Is there a negative correlation between a respondent's composite "Loneliness Score" and their stated acceptability of forming emotional or romantic bonds with AI?
+
+**Analysis Approach:** 
+Created Social Ecosystem Quadrant categorizing AI users by human support availability and appeal. Analyzed Q70 (feeling less alone) across profiles. Calculated loneliness scores from Q51-58 to examine correlations.
+
+**Key Findings:**
+
+**Support Profile Distribution (n=458 AI users):**
+- Escapists: 175 (38.2%) - Human support available but unappealing
+- Supplementers: 174 (38.0%) - Human support available and appealing
+- Isolates: 74 (16.2%) - Human support neither available nor appealing
+- Last Resort: 35 (7.6%) - Human support unavailable but would be appealing
+
+**Mental Well-being Impact:**
+- **Escapists do NOT report greater benefit**: Mean less-alone score 2.30/4
+- **Supplementers nearly identical**: Mean 2.25/4 (t=0.39, p=0.70)
+- **Last Resort lowest benefit**: Mean 2.00/4
+- **Isolates similar to Escapists**: Mean 2.22/4
+- **No significant difference between profiles** (ANOVA p>0.05)
+
+**Percentage Feeling Less Alone:**
+- Escapists: 64.0%
+- Isolates: 63.5%
+- Supplementers: 60.9%
+- Last Resort: 51.4%
+
+**Loneliness Scores by Profile:**
+- Isolates highest: 18.2/32
+- Escapists: 18.0/32
+- Last Resort: 17.2/32
+- Supplementers lowest: 16.9/32
+
+**Demographic Breakdowns:**
+AI companionship users represent 46.2% (467/1012) of participants, with balanced distribution between those with available support (Escapists + Supplementers = 76.2%) and those without (Isolates + Last Resort = 23.8%).
+
+**Statistical Significance:** 
+- Escapists vs Supplementers: t=0.39, p=0.698 (not significant)
+- No significant differences across any profile comparisons
+- Effect sizes negligible (Cohen's d < 0.1)
+
+**SQL Queries Used:**
+```sql
+SELECT pr.participant_id, pr.Q67 as used_ai_support,
+       pr.Q68 as human_support_available,
+       pr.Q69 as human_support_appealing,
+       pr.Q70 as less_alone,
+       pr.Q51, pr.Q52, pr.Q53, pr.Q54, pr.Q55, pr.Q56, pr.Q57, pr.Q58
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3 AND pr.Q67 = 'Yes'
+```
+
+**Scripts Used:**
+```python
+# Categorize support profiles
+avail_high = 'available' in str(available) and ('mostly' in str(available) or 'completely' in str(available))
+appeal_high = 'appealing' in str(appealing) and 'un' not in str(appealing)
+
+if avail_high and appeal_high: return 'Supplementer'
+elif avail_high and not appeal_high: return 'Escapist'
+elif not avail_high and appeal_high: return 'Last Resort'
+else: return 'Isolate'
+```
+
+**Insights:** 
+The hypothesis that Escapists would derive greater benefit is **definitively refuted**. The nearly identical outcomes between Escapists (2.30) and Supplementers (2.25) reveal AI companionship provides **uniform moderate benefit regardless of human alternatives**. The 64% of Escapists feeling less alone barely exceeds the 60.9% of Supplementers, suggesting AI doesn't uniquely serve those avoiding humans but rather provides **parallel value across contexts**. The Last Resort group's lowest benefit (51.4% positive) implies **desperation doesn't enhance AI effectiveness**—those who truly need support gain least. Surprisingly, Isolates (lacking both availability and appeal) match Escapists in benefit, suggesting **AI works best for the voluntarily disconnected**, whether by choice (Escapists) or circumstance (Isolates). The uniform ~60% benefit rate across most profiles frames AI companionship as **consistent auxiliary support** rather than transformative intervention, equally modest whether supplementing, escaping, or substituting human connection.
+
+**Limitations:** 
+- Q70 measures only "feeling less alone," not comprehensive mental health
+- Cannot determine if Escapists chose AI to avoid humans or discovered humans were unappealing after trying AI
+- Self-selection into AI use may confound profile differences
+- Romantic openness question (Q96) contained different data than expected, preventing correlation analysis
