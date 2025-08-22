@@ -3802,3 +3802,26 @@ WHERE pp.pri_score >= 0.3
 - Required at least 2 of 3 component questions for valid score
 - Some response normalization needed due to format variations
 - Cannot determine causality direction between trust and sentiment
+
+## 12.3 The Impact of Reflection
+
+**Question:** By directly comparing responses to the acceptability of an AI emotional bond at the beginning of the survey (Q77) with the response at the end (Q141), we can ask: Does deep consideration of AI's role in society make people more accepting or more cautious? And who is most likely to have their views changed by this process of reflection?
+
+**Analysis Approach:** 
+Attempted to compare responses at beginning and end of survey to measure attitude change through reflection. Searched for questions asked twice in the survey.
+
+**Key Findings:**
+- **Data structure issue**: The survey does not contain the same question asked at both beginning and end
+- Q77 asks about acceptability of emotional bonds with AI
+- Q140/Q141 ask about different topics (elderly AI companion priorities)
+- Two instances of the same question about AI design changes exist (question IDs 61c0d32e and b539b574) but no participants have responses to both
+- **Cannot complete this analysis** with available data structure
+
+**Limitations:** 
+- The GD4 survey was not designed with a pre/post reflection measurement
+- Questions Q77 and Q141 address different topics, preventing direct comparison
+- No repeated questions with sufficient response overlap exist in the dataset
+- This investigation question assumes a survey design feature that doesn't exist in GD4
+
+**Alternative Analysis Suggested:**
+Could examine how responses to later questions correlate with accumulated survey experience, or analyze free-text responses for evidence of evolving perspectives, but this would not directly answer the reflection impact question as posed.
