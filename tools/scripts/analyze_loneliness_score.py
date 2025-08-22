@@ -71,7 +71,7 @@ def main():
     query = """
     SELECT p.participant_id, p.sample_provider_id,
            p.Q51, p.Q52, p.Q53, p.Q54, p.Q55, p.Q56, p.Q57, p.Q58,
-           p.Q96, p.Q70,
+           p.Q97, p.Q71, p.Q67, p.Q68, p.Q69,
            pp.pri_score
     FROM participant_responses p
     LEFT JOIN participants pp ON p.participant_id = pp.participant_id
@@ -96,80 +96,72 @@ def main():
     print(f"Min: {df_valid['loneliness_score'].min():.2f}")
     print(f"Max: {df_valid['loneliness_score'].max():.2f}")
     
-    # Research Question 1: Correlation with romantic relationship with AI (Q96)
+    # Research Question 1: Correlation with romantic relationship with AI (Q97)
     print("\n=== Research Question 1: Loneliness & AI Romance ===")
     
-    # Normalize Q96 responses
-    df_valid['Q96_normalized'] = df_valid['Q96'].apply(normalize_q96_response)
+    # Normalize Q97 responses
+    df_valid['Q97_normalized'] = df_valid['Q97'].apply(normalize_q96_response)
     
-    # Filter to valid Q96 responses
-    df_q96 = df_valid.dropna(subset=['Q96_normalized'])
-    print(f"\nValid responses for Q96 analysis: {len(df_q96)}")
+    # Filter to valid Q97 responses
+    df_q96 = df_valid.dropna(subset=['Q97_normalized'])
+    print(f"\nValid responses for Q97 analysis: {len(df_q96)}")
     
     # Group analysis
-    q96_groups = df_q96.groupby('Q96_normalized')['loneliness_score'].agg(['mean', 'std', 'count'])
+    q96_groups = df_q96.groupby('Q97_normalized')['loneliness_score'].agg(['mean', 'std', 'count'])
     print("\nLoneliness scores by AI romance willingness:")
     print(q96_groups)
     
     # Statistical test (ANOVA for multiple groups)
-    groups = [group['loneliness_score'].values for name, group in df_q96.groupby('Q96_normalized')]
+    groups = [group['loneliness_score'].values for name, group in df_q96.groupby('Q97_normalized')]
     f_stat, p_value = stats.f_oneway(*groups)
     print(f"\nANOVA F-statistic: {f_stat:.4f}")
     print(f"P-value: {p_value:.6f}")
     
     # Correlation using numeric scale
     q96_numeric = {'Definitely not': 1, 'Probably not': 2, 'Unsure': 3, 'Possibly': 4, 'Definitely': 5}
-    df_q96['Q96_numeric'] = df_q96['Q96_normalized'].map(q96_numeric)
+    df_q96['Q97_numeric'] = df_q96['Q97_normalized'].map(q96_numeric)
     
-    df_corr = df_q96.dropna(subset=['Q96_numeric'])
-    correlation, p_corr = stats.spearmanr(df_corr['loneliness_score'], df_corr['Q96_numeric'])
+    df_corr = df_q96.dropna(subset=['Q97_numeric'])
+    correlation, p_corr = stats.spearmanr(df_corr['loneliness_score'], df_corr['Q97_numeric'])
     print(f"\nSpearman correlation: {correlation:.4f}")
     print(f"P-value: {p_corr:.6f}")
     
-    # Research Question 2: Mental well-being impact (Q70)
+    # Research Question 2: Mental well-being impact (Q71)
     print("\n=== Research Question 2: Loneliness & Mental Well-being Impact ===")
     
-    # Filter to those who used AI for emotional support
-    # First check Q66 (have you used AI for companionship/emotional support)
-    query_q66 = """
-    SELECT participant_id, Q66 FROM participant_responses
-    WHERE participant_id IN ({})
-    """.format(','.join([f"'{pid}'" for pid in df_valid['participant_id'].tolist()]))
-    
-    df_q66 = pd.read_sql_query(query_q66, conn)
-    df_valid = df_valid.merge(df_q66, on='participant_id', how='left')
+    # Q67 appears to be the question about using AI for support
     
     # Filter to those who used AI for support
-    df_ai_users = df_valid[df_valid['Q66'] == 'Yes'].copy()
+    df_ai_users = df_valid[df_valid['Q67'] == 'Yes'].copy()
     print(f"\nParticipants who used AI for emotional support: {len(df_ai_users)}")
     
     if len(df_ai_users) > 0:
-        # Normalize Q70 responses
-        df_ai_users['Q70_normalized'] = df_ai_users['Q70'].apply(normalize_q70_response)
-        df_q70 = df_ai_users.dropna(subset=['Q70_normalized'])
+        # Normalize Q71 responses
+        df_ai_users['Q71_normalized'] = df_ai_users['Q71'].apply(normalize_q70_response)
+        df_q70 = df_ai_users.dropna(subset=['Q71_normalized'])
         
-        print(f"Valid Q70 responses: {len(df_q70)}")
+        print(f"Valid Q71 responses: {len(df_q70)}")
         
         # Quartile analysis
         quartiles = pd.qcut(df_q70['loneliness_score'], q=4, labels=['Q1 (Least lonely)', 'Q2', 'Q3', 'Q4 (Most lonely)'])
         df_q70['loneliness_quartile'] = quartiles
         
-        # Create numeric scale for Q70
+        # Create numeric scale for Q71
         q70_numeric = {
             'Very negative': 1, 'Somewhat negative': 2, 'Neutral': 3,
             'Somewhat positive': 4, 'Very positive': 5
         }
-        df_q70['Q70_numeric'] = df_q70['Q70_normalized'].map(q70_numeric)
+        df_q70['Q71_numeric'] = df_q70['Q71_normalized'].map(q70_numeric)
         
         # Group analysis
-        q70_groups = df_q70.groupby('loneliness_quartile')['Q70_numeric'].agg(['mean', 'std', 'count'])
+        q70_groups = df_q70.groupby('loneliness_quartile')['Q71_numeric'].agg(['mean', 'std', 'count'])
         print("\nMental well-being impact by loneliness quartile:")
         print(q70_groups)
         
         # Correlation
-        df_q70_corr = df_q70.dropna(subset=['Q70_numeric'])
+        df_q70_corr = df_q70.dropna(subset=['Q71_numeric'])
         if len(df_q70_corr) > 1:
-            correlation2, p_corr2 = stats.spearmanr(df_q70_corr['loneliness_score'], df_q70_corr['Q70_numeric'])
+            correlation2, p_corr2 = stats.spearmanr(df_q70_corr['loneliness_score'], df_q70_corr['Q71_numeric'])
             print(f"\nSpearman correlation (loneliness vs positive impact): {correlation2:.4f}")
             print(f"P-value: {p_corr2:.6f}")
     
@@ -179,37 +171,37 @@ def main():
     return df_valid
 
 def normalize_q96_response(response):
-    """Normalize Q96 responses about romantic relationship with AI"""
-    if pd.isna(response) or response == '--':
+    """Normalize Q97 responses about romantic relationship with AI"""
+    if pd.isna(response) or response == '--' or response == '':
         return None
     response = response.strip().lower()
     if 'definitely not' in response:
         return 'Definitely not'
     elif 'probably not' in response:
         return 'Probably not'
-    elif 'unsure' in response:
+    elif 'unsure' in response or 'maybe' in response:
         return 'Unsure'
     elif 'possibly' in response:
         return 'Possibly'
-    elif 'definitely' in response and 'not' not in response:
+    elif 'yes' in response and 'definitely' in response:
         return 'Definitely'
     else:
         return None
 
 def normalize_q70_response(response):
-    """Normalize Q70 responses about mental well-being impact"""
-    if pd.isna(response) or response == '--':
+    """Normalize Q71 responses about mental well-being impact"""
+    if pd.isna(response) or response == '--' or response == '' or 'never used' in response.lower():
         return None
     response = response.strip().lower()
-    if 'very negative' in response:
+    if 'very harmful' in response:
         return 'Very negative'
-    elif 'somewhat negative' in response:
+    elif 'harmful' in response and 'very' not in response:
         return 'Somewhat negative'
-    elif 'neutral' in response or 'no impact' in response:
+    elif 'no real impact' in response or 'neutral' in response:
         return 'Neutral'
-    elif 'somewhat positive' in response:
+    elif 'beneficial' in response and 'very' not in response:
         return 'Somewhat positive'
-    elif 'very positive' in response:
+    elif 'very beneficial' in response:
         return 'Very positive'
     else:
         return None
