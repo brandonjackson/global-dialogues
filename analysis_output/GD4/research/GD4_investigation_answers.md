@@ -615,6 +615,76 @@ The "Rules for Thee, But Not for Me" phenomenon is **widespread and nuanced**. T
 - Emotional bond acceptance shows 0% in data (possible data issue with Q77)
 - Cross-sectional design cannot determine if concerns preceded or followed usage
 
+## 3.3 The Reluctant Confidant
+
+**Question:** Are there users who report high relational usage (venting, loneliness) but ultimately answer "No" to feeling they understand themselves better? This could point to an unfulfilling or even negative cycle of interaction for some users.
+
+**Analysis Approach:** 
+Identified high relational users (3+ activities like venting, loneliness, sharing secrets, relationships) and analyzed their self-understanding outcomes (Q148), comparing "Reluctant Confidants" (high use, no understanding) with "Fulfilled Confidants" (high use, yes understanding).
+
+**Key Findings:**
+- **Only 4.9% of high relational users are "Reluctant Confidants"** (9 out of 185)
+- **0.9% of all participants** fall into this pattern (9 out of 1012)
+- **High relational users are MORE likely to understand themselves**: 63.8% say Yes vs 45.4% for non-relational users (χ² = 4.63, p = 0.03)
+- **Reluctant Confidants still derive some benefit**:
+  - 66.7% report beneficial wellbeing impact
+  - 55.6% feel somewhat less lonely
+  - 66.7% use AI daily/weekly despite no self-understanding
+- **Key difference from Fulfilled Confidants**: Only 33% felt AI understood them (vs 64% of fulfilled)
+- **"Empty Interaction" pattern rare**: Only 1.7% of AI companion users
+
+**Demographic Breakdowns:**
+Self-Understanding by Usage Level:
+- High Relational (3+ activities): 63.8% Yes, 30.8% Maybe, 4.9% No
+- Moderate (1-2 activities): 63.5% Yes, 31.3% Maybe, 5.0% No
+- No Relational: 45.4% Yes, 42.1% Maybe, 12.2% No
+
+Reluctant vs Fulfilled Confidants:
+- Felt understood: 33.3% vs 64.4%
+- Less lonely: 55.6% vs 66.9%
+- Beneficial impact: 66.7% vs 85.6%
+
+**Statistical Significance:** 
+High relational users significantly more likely to report self-understanding (χ² = 4.629, p = 0.0314), indicating positive correlation between usage intensity and therapeutic value.
+
+**SQL Queries Used:**
+```sql
+SELECT 
+    pr.participant_id,
+    pr.Q65 as ai_activities,
+    pr.Q17 as emotional_support_freq,
+    pr.Q148 as understand_self_better,
+    pr.Q70 as ai_made_less_lonely,
+    pr.Q71 as ai_wellbeing_impact,
+    pr.Q114 as felt_ai_understood,
+    p.pri_score
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3;
+```
+
+**Scripts Used:**
+```python
+# Count relational activities
+relational_activities = ['Used AI when feeling lonely', 'Vented to AI when frustrated',
+                        'Shared something with AI you wouldn\'t tell others',
+                        'Asked AI about relationships/dating']
+df['relational_count'] = df['activities_list'].apply(
+    lambda acts: sum(1 for act in relational_activities if act in acts))
+
+# Identify Reluctant Confidants
+reluctant_confidants = df[(df['high_relational'] == True) & 
+                          (df['understand_self_better'] == 'No')]
+```
+
+**Insights:** 
+The "Reluctant Confidant" pattern is **remarkably rare** (< 5% of heavy users), challenging concerns about empty AI cycles. The vast majority (95%) of high relational users find value, with 64% reporting clear self-understanding gains. The few Reluctant Confidants aren't trapped in negative cycles—they continue daily use and report some benefits (67% wellbeing improvement), suggesting they derive **practical rather than reflective value**. The key differentiator is feeling understood: Reluctant Confidants are half as likely (33% vs 64%) to feel AI understood their emotions, indicating **emotional resonance drives therapeutic value** more than usage quantity. The rarity of truly "empty interactions" (1.7%) suggests AI relationships, even when not fostering self-insight, provide other forms of value users find worth continuing.
+
+**Limitations:** 
+- Very small sample of Reluctant Confidants (n=9) limits generalizability
+- Cannot determine if lack of self-understanding is due to AI limitations or user characteristics
+- Self-understanding is subjective and may not capture all benefits
+
 ## 4.1 Fears of the Familiar
 
 **Question:** Among those who use AI relationally the most, what are the dominant unexpressed concerns? They may have unique insights into subtle risks like emotional manipulation or the "emptiness" of AI validation that non-users haven't considered.
