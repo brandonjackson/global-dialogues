@@ -3694,3 +3694,53 @@ The 12.9% "Reluctant Professional" segment demonstrates **institutional coercion
 - Text responses for trust reasons were limited samples
 - Cannot determine if distrust developed before or after work requirements
 - May undercount reluctant professionals who've normalized their discomfort
+## 13.1.1 Instruction 1: Create a "Loneliness Score"
+
+**Question:** Create a "Loneliness Score" from questions Q51-Q58, reverse scoring positive items (Q51, Q55, Q56, Q58), and analyze: Is there a statistically significant correlation between a high Loneliness Score and a higher willingness to have a romantic relationship with an AI (Q97)? Do people with the highest Loneliness Score report a more positive impact on their mental well-being after using an AI for support (Q71)?
+
+**Analysis Approach:** Created a composite loneliness score from 8 questions using the UCLA Loneliness Scale items, reverse-scoring positive items so higher scores indicate greater loneliness. Analyzed correlations with AI romance willingness and mental well-being impact among AI users.
+
+**Key Findings:**
+- Successfully calculated loneliness scores for 1,012 participants (PRI >= 0.3)
+- Mean loneliness score: 16.90 (SD=5.06, range 8-32)
+- **Significant positive correlation between loneliness and AI romance willingness** (Spearman r=0.137, p<0.001)
+- People saying "Definitely" to AI romance had highest loneliness (M=19.41)
+- Those saying "Definitely not" had lowest loneliness (M=16.41)
+- ANOVA shows significant group differences (F=5.81, p=0.0001)
+
+**Mental Well-being Impact Analysis:**
+- 467 participants had used AI for emotional support
+- **Surprising finding: Slight negative correlation between loneliness and positive impact** (r=-0.096, p=0.039)
+- Least lonely quartile reported highest benefit (M=4.11 on 5-point scale)
+- Most lonely quartile reported lower benefit (M=3.96)
+- This suggests AI support may be more effective for moderately lonely individuals
+
+**Demographic Breakdowns:**
+- Analysis focused on PRI-filtered participants for reliability
+- Both findings held across the sample with good statistical significance
+
+**Statistical Significance:** 
+- AI Romance correlation: p < 0.001 (highly significant)
+- Mental well-being correlation: p = 0.039 (significant)
+- ANOVA for romance groups: p = 0.0001 (highly significant)
+
+**SQL Queries Used:**
+```sql
+-- Main data query
+SELECT p.participant_id, p.sample_provider_id,
+       p.Q51, p.Q52, p.Q53, p.Q54, p.Q55, p.Q56, p.Q57, p.Q58,
+       p.Q97, p.Q71, p.Q67, p.Q68, p.Q69,
+       pp.pri_score
+FROM participant_responses p
+LEFT JOIN participants pp ON p.participant_id = pp.participant_id
+WHERE pp.pri_score >= 0.3
+```
+
+**Scripts Used:** Full analysis script saved as tools/scripts/analyze_loneliness_score.py
+
+**Insights:** The positive correlation between loneliness and willingness for AI romance suggests isolated individuals see AI as a potential solution to their social needs. However, the inverse relationship with mental health benefits is counterintuitive - it may be that the most lonely individuals have deeper needs that AI cannot fully address, while moderately lonely people benefit more from the supplemental support AI provides.
+
+**Limitations:** 
+- Some responses required normalization due to inconsistent formatting
+- Q67 was used as proxy for AI emotional support usage
+- Sample limited to reliable participants (PRI >= 0.3)
