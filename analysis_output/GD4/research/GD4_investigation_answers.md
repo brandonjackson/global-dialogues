@@ -3744,3 +3744,61 @@ WHERE pp.pri_score >= 0.3
 - Some responses required normalization due to inconsistent formatting
 - Q67 was used as proxy for AI emotional support usage
 - Sample limited to reliable participants (PRI >= 0.3)
+
+## 13.1.2 Instruction 2: Create an "AI Sentiment Score"
+
+**Question:** Create an "AI Sentiment Score" by combining Q5 (Excited vs. Concerned), Q22 (Impact of AI Chatbots), and Q45 (Overall impact on daily life) into a standardized score representing a respondent's overall position on a spectrum from optimistic to pessimistic. Analyze: Does a pessimistic AI Sentiment Score strongly correlate with low trust in social media companies (Q28) and companies building AI (Q29)? How does AI Sentiment Score correlate with a respondent's belief that AI will improve or worsen the availability of good jobs (Q43)?
+
+**Analysis Approach:** Created a composite AI Sentiment Score from three questions, converting each to a 1-5 scale then averaging and scaling to 0-100 (0=most pessimistic, 100=most optimistic). Analyzed correlations with trust in tech companies and job impact beliefs.
+
+**Key Findings:**
+- Successfully calculated AI sentiment scores for 1,012 participants (PRI >= 0.3)
+- Mean sentiment score: 65.22 (SD=21.04), indicating overall optimistic lean
+- **Strong positive correlation with trust in AI companies** (r=0.459, p<0.001)
+- **Moderate positive correlation with trust in social media** (r=0.256, p<0.001)
+- **Significant correlation with job impact beliefs** (r=0.374, p<0.001)
+
+**Sentiment Distribution:**
+- Very Optimistic (75-100): 40.0%
+- Optimistic (50-74): 43.3%
+- Cautious (25-49): 13.6%
+- Pessimistic (0-24): 3.1%
+
+**Trust Analysis:**
+- Pessimistic group (n=31): Trust social media=1.35, Trust AI companies=1.42
+- Optimistic group (n=843): Trust social media=2.40, Trust AI companies=3.10
+- Trust in AI companies shows stronger correlation than social media trust
+- All three sentiment components contribute similarly (r≈0.34-0.40)
+
+**Job Impact Beliefs:**
+- Very Optimistic group expects job improvement (M=3.01 on 1-5 scale)
+- Pessimistic group expects job deterioration (M=1.52)
+- Clear linear relationship between sentiment and job expectations
+
+**Demographic Breakdowns:**
+- Analysis focused on PRI-filtered participants for reliability
+- 83.3% of participants fall into optimistic categories
+
+**Statistical Significance:**
+- All correlations highly significant (p < 0.001)
+- Component intercorrelations moderate (r=0.40-0.44), showing distinct but related aspects
+
+**SQL Queries Used:**
+```sql
+SELECT p.participant_id, p.sample_provider_id,
+       p.Q5, p.Q22, p.Q45,
+       p.Q28, p.Q29, p.Q43,
+       pp.pri_score
+FROM participant_responses p
+LEFT JOIN participants pp ON p.participant_id = pp.participant_id
+WHERE pp.pri_score >= 0.3
+```
+
+**Scripts Used:** Full analysis script saved as tools/scripts/analyze_ai_sentiment_score.py
+
+**Insights:** The strong correlation between AI sentiment and trust in AI companies (r=0.459) confirms that pessimism about AI is closely tied to institutional distrust. The weaker correlation with social media trust (r=0.256) suggests AI skepticism is somewhat distinct from general tech skepticism. The job impact correlation (r=0.374) shows sentiment drives economic expectations - optimists believe AI will create opportunities while pessimists fear displacement. The fact that 83% lean optimistic suggests a generally positive baseline attitude toward AI, with skeptics forming a small but distinct minority.
+
+**Limitations:**
+- Required at least 2 of 3 component questions for valid score
+- Some response normalization needed due to format variations
+- Cannot determine causality direction between trust and sentiment
