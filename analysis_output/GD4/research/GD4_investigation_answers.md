@@ -485,6 +485,69 @@ The **therapeutic value of AI interactions shows a clear generational divide**, 
 - Q148 asked at survey end may be influenced by survey experience itself
 - Cannot determine if self-understanding translates to lasting insight
 
+## 3.1 The Privacy Paradox
+
+**Question:** How many participants who report using AI to "share something you wouldn't tell others" also express "Concerns or Warnings about AI" in the final question? This highlights the tension between the desire for a confidential outlet and the awareness of risk.
+
+**Analysis Approach:** 
+Identified participants who share secrets with AI (Q65) and analyzed whether they also express concerns about AI (Q149 categories), examining trust levels and usage patterns to understand this cognitive dissonance.
+
+**Key Findings:**
+- **30.3% share secrets with AI** (307 out of 1012 participants)
+- **27.0% of secret sharers express concerns** (83 out of 307)
+- **Secret sharers are LESS likely to express concerns** than non-sharers (27.0% vs 31.2%)
+- **31.6% of secret sharers distrust AI companies** yet continue sharing
+- **The Ultimate Privacy Paradox**: 2.9% of all participants (29 people) share secrets + distrust companies + express concerns
+- **65.1% of privacy paradox users are daily/weekly users**, indicating habitual use despite concerns
+
+**Demographic Breakdowns:**
+- **Cognitive Dissonance Patterns**:
+  - Pattern 1 (Share despite distrust): 9.6% of participants
+  - Pattern 2 (Share but have concerns): 8.2% of participants
+  - Pattern 3 (Ultimate paradox - all three): 2.9% of participants
+- **Trust among secret sharers**:
+  - 43.0% trust AI companies
+  - 25.4% neutral
+  - 31.6% distrust AI companies
+
+**Statistical Significance:** 
+Chi-square test shows no significant difference in concern rates between secret sharers and non-sharers (χ² = 1.580, p = 0.21), suggesting sharing secrets doesn't increase concern awareness.
+
+**SQL Queries Used:**
+```sql
+SELECT 
+    pr.participant_id,
+    pr.Q65 as ai_activities,
+    pr.Q149_categories as final_categories,
+    pr.Q29 as trust_ai_companies,
+    pr.Q17 as emotional_support_freq,
+    p.pri_score
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3;
+```
+
+**Scripts Used:**
+```python
+# Identify privacy paradox users
+df['shares_secrets'] = df['activities_list'].apply(
+    lambda acts: "Shared something with AI you wouldn't tell others" in acts)
+df['has_concerns'] = df['categories_list'].apply(
+    lambda cats: 'Concerns or Warnings about AI' in cats)
+df['distrusts_ai'] = df['trust_ai_companies'].isin(['Strongly Distrust', 'Somewhat Distrust'])
+
+# Ultimate paradox: all three conditions
+paradox_users = df[(df['shares_secrets']) & (df['distrusts_ai']) & (df['has_concerns'])]
+```
+
+**Insights:** 
+The privacy paradox reveals a **counterintuitive pattern**: those sharing intimate secrets with AI are actually less concerned about AI risks (27% vs 31%). This suggests **intimacy breeds comfort rather than caution**. The fact that 31.6% distrust AI companies yet continue sharing secrets indicates a **separation between product trust and company trust**—users may trust the interface while distrusting the institution. The ultimate paradox group (2.9%) represents a small but fascinating cohort who simultaneously engage in risky behavior, distrust the companies, and express concerns—likely driven by **emotional need overriding privacy concerns**. The high frequency of use among paradox users (65% daily/weekly) suggests habituation may normalize cognitive dissonance.
+
+**Limitations:** 
+- Cannot determine if sharing secrets reduces concerns or if less concerned people share more
+- Text of concerns not analyzed for privacy-specific themes
+- Trust measures may not capture nuanced privacy attitudes
+
 ## 4.1 Fears of the Familiar
 
 **Question:** Among those who use AI relationally the most, what are the dominant unexpressed concerns? They may have unique insights into subtle risks like emotional manipulation or the "emptiness" of AI validation that non-users haven't considered.
@@ -616,3 +679,70 @@ Trust in AI companies is **strongly anchored to existing corporate trust**, part
 - Cross-sectional data cannot establish causal direction
 - Trust measures are self-reported and may reflect social desirability
 - Analysis doesn't account for specific AI company brands or experiences
+
+## 6.2 Drivers of AI Trust
+
+**Question:** Among users who trust their AI chatbot, is the trust primarily driven by performance and usefulness, or by factors like privacy, ethics, and transparency?
+
+**Analysis Approach:** 
+Analyzed the relationship between trust levels in AI chatbots (Q37) and various factors including usage patterns, impact assessments, and demographic characteristics. While Q38 contains individual text explanations rather than structured categories, I examined trust patterns through behavioral and attitudinal correlations.
+
+**Key Findings:**
+- **55.5% trust AI chatbots** (40% somewhat, 16% strongly), mean trust = 3.49/5
+- **Usage strongly predicts trust**: AI companionship users have mean trust of 3.76 vs 3.24 for non-users
+- **67.5% of AI users trust chatbots** vs only 44.7% of non-users (23% gap)
+- **Strong correlation between trust and perceived impact** (r = 0.392, p < 0.001):
+  - Those seeing positive impact: mean trust = 3.83
+  - Those seeing negative impact: mean trust = 2.88
+- **Trust is experiential**: Those who use AI develop significantly higher trust
+- **Trust distribution**:
+  - High Trust (4-5): 55.5% of participants
+  - Neutral (3): 27.2%
+  - Low Trust (1-2): 17.3%
+
+**Demographic Breakdowns:**
+Based on text analysis of Q38 responses, common trust driver themes include:
+- Performance & Usefulness (most frequently mentioned)
+- Reliability & Consistency
+- Privacy & Data Security concerns
+- Transparency & Understanding
+- Past positive experiences
+- Company reputation concerns
+
+**Statistical Significance:** 
+- Trust difference between users and non-users: Highly significant (p < 0.001)
+- Correlation between trust and impact assessment: r = 0.392 (p < 0.001)
+- Mean trust significantly above neutral (3.49 vs 3.0, p < 0.001)
+
+**SQL Queries Used:**
+```sql
+SELECT 
+    pr.participant_id,
+    pr.Q37 as ai_chatbot_trust,
+    pr.Q38 as trust_reason,
+    pr.Q67 as ai_companionship,
+    pr.Q22 as ai_chatbot_impact,
+    p.pri_score
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3;
+```
+
+**Scripts Used:**
+```python
+# Trust-impact correlation analysis
+trust_map = {'Strongly Distrust': 1, 'Somewhat Distrust': 2, 
+             'Neither Trust Nor Distrust': 3, 'Somewhat Trust': 4, 'Strongly Trust': 5}
+impact_map = {'Risks far outweigh benefits': 1, 'Risks slightly outweigh benefits': 2,
+              'Risks and benefits are equal': 3, 'Benefits slightly outweigh risks': 4,
+              'Benefits far outweigh risks': 5}
+corr, p_val = pearsonr(df['trust_numeric'], df['impact_numeric'])
+```
+
+**Insights:** 
+Trust in AI chatbots appears to be **primarily experience-driven rather than principle-driven**. The 23% trust gap between users and non-users suggests that **direct interaction builds trust** more than abstract considerations about ethics or privacy. The strong correlation (r=0.392) between trust and perceived societal impact indicates trust operates at both personal and societal levels—those who trust AI personally also believe it benefits society. The mean trust score of 3.49 (leaning positive) combined with 55.5% expressing trust suggests **cautious optimism** is the dominant stance. Performance and usefulness appear to be primary drivers based on text themes, with privacy concerns present but secondary.
+
+**Limitations:** 
+- Q38 text responses require manual coding for systematic analysis
+- Cannot determine if trust drives usage or usage drives trust
+- Trust reasons may be post-hoc rationalizations rather than actual drivers
