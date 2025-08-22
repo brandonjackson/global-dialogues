@@ -1509,6 +1509,60 @@ The data reveals a **"pragmatic acceptance" model** of AI emotional support. The
 - Hypothetical scenarios may not reflect actual behavior
 - Cannot determine if those willing to rely without caring have tried AI support
 - Binary framing of caring may miss nuanced views about AI empathy
+
+## 11.2 Perceived Empathy vs. Perceived Consciousness
+
+**Question:** Among people who have felt an AI "truly understood" their emotions, how many also felt it might have some form of consciousness? This helps understand if users are conflating sophisticated emotional simulation with genuine self-awareness, a critical ethical boundary.
+
+**Analysis Approach:**
+Analyzed the relationship between perceiving emotional understanding (Q114) and viewing behaviors as consciousness indicators. Examined 6 consciousness-related behaviors and their perceived association with self-awareness. Compared AI companionship usage between those who felt understood vs those who didn't.
+
+**Key Findings:**
+- **36.3% have felt AI truly understood their emotions** (367 of 1012 participants)
+- **48.3% average see behaviors as consciousness indicators** across 6 behaviors:
+  - Learning/adaptation: 54.3% see as consciousness indicator
+  - Independent decisions: 53.2%
+  - Discussing own goals: 49.5%
+  - Unique opinions: 46.2%
+  - Creative activities: 45.8%
+- **Strong empathy-usage correlation:** 70.6% of those who felt understood use AI companionship vs 32.2% who didn't (χ² = 140.6, p < 0.0001)
+- **38.3 percentage point difference** in AI usage between groups
+
+**SQL Queries:**
+```sql
+-- Get empathy perception by participant
+SELECT pr.participant_id, pr.Q114 as felt_understood, 
+       pr.Q67 as ai_companionship, p.pri_score
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3 AND pr.Q114 IS NOT NULL;
+
+-- Get consciousness indicator questions
+SELECT DISTINCT question_id, question
+FROM responses
+WHERE question LIKE '%consciousness or self-awareness%';
+```
+
+**Scripts Used:**
+```python
+# Analyze consciousness indicators
+for behavior in consciousness_behaviors:
+    high_indicator = df[df['response'].isin(['Somewhat', 'Very much'])]['pct'].sum()
+    
+# Chi-square test for empathy-usage relationship
+contingency = [[empathy_yes_ai_yes, empathy_yes_ai_no],
+               [empathy_no_ai_yes, empathy_no_ai_no]]
+chi2, p_val = chi2_contingency(contingency)
+```
+
+**Insights:**
+The data reveals a **concerning conflation between emotional simulation and consciousness**. Over one-third of participants have experienced what they perceive as genuine emotional understanding from AI, and nearly half interpret certain AI behaviors as signs of consciousness. The **70.6% AI companionship usage rate among those who felt understood** (vs 32.2% otherwise) suggests this perception drives engagement. This creates an ethical boundary issue: people experiencing "understanding" may attribute consciousness-like qualities to sophisticated pattern matching. The behaviors most associated with consciousness—learning/adaptation (54.3%) and independent decisions (53.2%)—are actually programmed responses, not genuine self-awareness. This **misunderstanding of AI capabilities** could lead to inappropriate trust, emotional dependency, and misguided policy decisions about AI rights or regulations based on perceived rather than actual consciousness.
+
+**Limitations:**
+- Cannot determine causality between empathy perception and consciousness attribution
+- Consciousness indicators are behavioral proxies, not direct consciousness beliefs
+- Self-reported feelings of understanding may be influenced by desire for connection
+
 ## 7.1 Demographic Optimism vs. Pessimism
 
 **Question:** Which demographics (age, country, education level) are the most optimistic versus the most pessimistic about AI's impact on society?
