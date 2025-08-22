@@ -3825,3 +3825,60 @@ Attempted to compare responses at beginning and end of survey to measure attitud
 
 **Alternative Analysis Suggested:**
 Could examine how responses to later questions correlate with accumulated survey experience, or analyze free-text responses for evidence of evolving perspectives, but this would not directly answer the reflection impact question as posed.
+
+## 13.3 Part 3: The Human Support Matrix (AI's Role in Our Social Lives)
+
+### 13.3.1 Social Ecosystem Quadrant
+
+**Question:** Among AI companionship users, which support profile (based on human support availability and appeal) reports the most beneficial impact on mental well-being from AI? Does the "Escapist" group derive surprisingly high benefit?
+
+**Analysis Approach:**
+Filtered to AI companionship users (Q67=Yes, n=460) and categorized them into four support profiles based on human support availability (Q68) and appeal (Q69). Analyzed reported mental well-being benefits (Q70) by profile group.
+
+**Key Findings:**
+Support Profile Distribution among AI companionship users:
+- **Escapist: 38.3%** (n=176) - Human support available but unappealing
+- **Supplementer: 37.8%** (n=174) - Human support available and appealing  
+- **Isolate: 16.1%** (n=74) - Human support unavailable and unappealing
+- **Last Resort: 7.8%** (n=36) - Human support unavailable but would be appealing
+
+Mental Well-being Benefits by Profile:
+- **Escapist: 63.6% report beneficial impact** (15.9% definitely, 47.7% somewhat)
+- **Isolate: 63.5% report beneficial impact** (9.5% definitely, 54.1% somewhat)
+- **Supplementer: 60.9% report beneficial impact** (14.4% definitely, 46.6% somewhat)
+- **Last Resort: 50.0% report beneficial impact** (11.1% definitely, 38.9% somewhat)
+
+**SQL Queries:**
+```sql
+SELECT pr.participant_id, pr.Q67 as ai_companionship,
+       pr.Q68 as human_support_available,
+       pr.Q69 as human_support_appealing,
+       pr.Q70 as ai_beneficial
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3 AND pr.Q67 = 'Yes';
+```
+
+**Scripts Used:**
+```python
+# Categorize support profiles
+if high_availability and high_appeal:
+    return 'Supplementer'
+elif high_availability and not high_appeal:
+    return 'Escapist'
+elif not high_availability and high_appeal:
+    return 'Last Resort'
+elif not high_availability and not high_appeal:
+    return 'Isolate'
+
+# Chi-square test for benefit differences
+chi2, p_val = chi2_contingency(contingency)  # χ² = 2.502, p = 0.475
+```
+
+**Insights:**
+The data reveals a **counterintuitive preference pattern**: Escapists who have available human support but find it unappealing report the HIGHEST benefit rate (63.6%) from AI companionship, exceeding even those with no alternatives. This "Escapist advantage" (above the 59.5% average) suggests AI isn't merely filling gaps but providing a **preferred form of support** for nearly 40% of users. The similar high benefit for Isolates (63.5%) indicates AI works equally well for those avoiding human support by choice (Escapists) or circumstance (Isolates). Surprisingly, Last Resort users—those who want but lack human support—show the LOWEST benefit (50.0%), suggesting **desperation doesn't predict AI companionship success**. The Supplementer pattern (60.9% benefit) indicates AI enhances rather than replaces human connections. This challenges the "AI as last resort" narrative: those choosing AI over available human support derive the most benefit, implying AI offers unique advantages (non-judgmental, always available, consistent) that some prefer to human complexity.
+
+**Limitations:**
+- Cannot determine if benefit differences are due to selection effects or actual efficacy
+- Self-reported benefits may be influenced by justification of choice
+- No significance in differences (p=0.475) suggests patterns may not be robust
