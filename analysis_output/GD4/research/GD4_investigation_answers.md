@@ -337,6 +337,78 @@ LIMIT 15;
 
 **Limitations:** Sample sizes vary significantly by country, with some countries having very small samples. The non-binary and "other" gender categories have very small sample sizes, limiting statistical reliability for these groups.
 
+## 5.2 Loneliness and AI Emotional Support Correlation
+
+**Question:** Is there a correlation between a respondent's self-reported loneliness (from questions 51-58) and their frequency of using AI for emotional support?
+
+**Analysis Approach:** Created a composite loneliness score from Q51-58 (reverse-scoring positive items), then analyzed correlations with AI emotional support frequency (Q17) and specific emotional AI activities (Q65). Used Spearman correlation for ordinal variables and t-tests for group comparisons.
+
+**Key Findings:**
+- **Positive correlation exists** between loneliness and AI emotional support frequency (r = 0.092, p = 0.003)
+- **Lonelier people are more likely to use AI companionship**:
+  - Low loneliness (8-16): 40.8% use AI companionship
+  - Moderate loneliness (17-24): 51.4% use AI companionship  
+  - High loneliness (25-32): 51.2% use AI companionship
+- **AI users are significantly lonelier** than non-users (mean 17.61 vs 16.26, p < 0.0001)
+- **Dose-response pattern** in emotional AI activities:
+  - "Used AI when feeling lonely": 20.7% (low) → 29.7% (moderate) → 40.7% (high loneliness)
+  - "Vented to AI when frustrated": 20.3% → 28.1% → 38.4%
+- **Paradox**: Moderate loneliness users report highest benefit (66.1% felt less lonely after AI use)
+
+**Demographic Breakdowns:**
+
+Emotional Support Frequency by Loneliness Level:
+- Low loneliness: 40.6% use daily/weekly, 34.1% never use
+- Moderate loneliness: 46.0% use daily/weekly, 25.9% never use
+- High loneliness: 37.2% use daily/weekly, 27.9% never use
+
+AI Impact on Loneliness (among AI users):
+- Low loneliness users: 56.6% report positive impact
+- Moderate loneliness users: 66.1% report positive impact
+- High loneliness users: 63.6% report positive impact
+
+**Statistical Significance:** 
+- Loneliness-support frequency correlation: Spearman r = 0.092, p = 0.003 (significant)
+- AI users vs non-users loneliness: t = 4.217, p < 0.0001 (highly significant)
+- Linear trend in emotional activities with loneliness level (all p < 0.01)
+
+**SQL Queries Used:**
+```sql
+SELECT 
+    pr.participant_id,
+    pr.Q51, pr.Q52, pr.Q53, pr.Q54, pr.Q55, pr.Q56, pr.Q57, pr.Q58,
+    pr.Q17 as emotional_support_freq,
+    pr.Q67 as ai_companionship,
+    pr.Q70 as ai_made_less_lonely,
+    pr.Q65 as ai_activities,
+    p.pri_score
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3;
+```
+
+**Scripts Used:**
+```python
+# Calculate loneliness scores (reverse-scoring Q51, Q55, Q56, Q58)
+def score_loneliness_item(response, reverse=False):
+    mapping = {'Never': 1, 'Rarely': 2, 'Sometimes': 3, 'Often': 4}
+    score = mapping.get(response, np.nan)
+    if reverse and not pd.isna(score):
+        score = 5 - score
+    return score
+
+# Composite score from 8 items (range 8-32)
+df['loneliness_score'] = df[loneliness_cols].sum(axis=1)
+
+# Correlation analysis
+correlation, p_value = stats.spearmanr(valid_data['loneliness_score'], 
+                                       valid_data['support_freq_numeric'])
+```
+
+**Insights:** A clear **"loneliness-AI connection" exists**—lonelier individuals are 25% more likely to use AI companionship and twice as likely to use AI when feeling lonely. The correlation, while statistically significant, is modest (r=0.092), suggesting loneliness is one factor among many driving AI emotional support use. The **"therapeutic sweet spot"** appears at moderate loneliness levels, where 66% report AI made them feel less lonely, compared to 57% for low loneliness. This suggests AI provides optimal benefit for those with some social challenges but not severe isolation. The dose-response pattern in emotional activities (doubling from low to high loneliness) indicates AI serves as a **graduated emotional support tool**, with usage intensity matching emotional need.
+
+**Limitations:** Cross-sectional design cannot determine if loneliness drives AI use or if AI use affects loneliness. The loneliness scale may not capture all dimensions of social isolation. Self-selection bias may affect results as those finding AI helpful continue using it.
+
 ## 2.3 The Self-Reflection Connection
 
 **Question:** Is there a specific demographic (e.g., young men, older women) that is most likely to report that they "understand themselves better" after the conversation? Cross-tabulating this outcome with age and gender could be incredibly revealing about who is finding therapeutic value in these interactions.
@@ -412,3 +484,135 @@ The **therapeutic value of AI interactions shows a clear generational divide**, 
 - Self-selection bias (those finding value may continue using AI)
 - Q148 asked at survey end may be influenced by survey experience itself
 - Cannot determine if self-understanding translates to lasting insight
+
+## 4.1 Fears of the Familiar
+
+**Question:** Among those who use AI relationally the most, what are the dominant unexpressed concerns? They may have unique insights into subtle risks like emotional manipulation or the "emptiness" of AI validation that non-users haven't considered.
+
+**Analysis Approach:** Identified AI-Reliant users as those with 3+ relational AI activities (lonely, venting, sharing secrets, relationships/dating). Analyzed their unexpressed thoughts categorized as "Concerns or Warnings about AI" from Q149, performing thematic analysis on the text.
+
+**Key Findings:**
+- **11.3% of participants are AI-Reliant** (114 out of 1012 with PRI ≥ 0.3)
+- **28.9% of AI-Reliant users expressed concerns** (33 out of 114)
+- **Equal balance of concerns and hopes**: 1.00:1 ratio (33 concerns, 33 hopes)
+- **Top concern themes among AI-Reliant users**:
+  - Manipulation/exploitation: 11.1% 
+  - Privacy and data security: 7.4%
+  - Need for regulation: 7.4%
+  - Authenticity concerns: 7.4%
+  - Emotional dependency: 3.7%
+- **Notably absent**: Few mentions of "emptiness" or validation concerns
+
+**Demographic Breakdowns:**
+- AI-Reliant: 28.9% express concerns, 28.9% express hopes
+- AI-Curious (1-2 activities): 27.4% concerns, 30.8% hopes
+- Non-Users: 31.8% concerns, 23.8% hopes (more fearful)
+
+**Statistical Significance:** 
+While the hope-to-concern ratio differs between groups (AI-Reliant 1.00:1 vs Non-Users 0.75:1), chi-square test shows no significant difference (χ² = 0.865, p = 0.35).
+
+**SQL Queries Used:**
+```sql
+SELECT 
+    pr.participant_id,
+    pr.Q65 as ai_activities,  
+    pr.Q149 as unexpressed_text,
+    pr.Q149_categories as categories,
+    p.pri_score
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3
+  AND pr.Q149 IS NOT NULL 
+  AND length(pr.Q149) > 10;
+```
+
+**Scripts Used:**
+```python
+# Identify AI-Reliant users based on relational activities
+relational_activities = ['Used AI when feeling lonely', 'Vented to AI when frustrated', 
+                        'Shared something with AI you wouldn\'t tell others', 
+                        'Asked AI about relationships or dating']
+df['relational_count'] = df['activities_list'].apply(count_relational_activities)
+df['is_ai_reliant'] = df['relational_count'] >= 3
+
+# Thematic analysis
+concern_themes = {
+    'manipulation': ['manipulat', 'exploit', 'vulnerable', 'abuse'],
+    'emotional_dependency': ['dependen', 'addiction', 'rely', 'replace human'],
+    'privacy': ['privacy', 'data', 'surveillance'],
+    'authenticity': ['fake', 'genuine', 'real', 'authentic']
+}
+```
+
+**Insights:** 
+AI-Reliant users' concerns are **more nuanced and practical** than hypothetical—focused on security, manipulation of vulnerable populations, and governance rather than existential worries about authenticity. Surprisingly, they don't express the "emptiness" concerns anticipated; instead, their worries mirror broader societal concerns about **data privacy and bad actors**. One user explicitly feared "if another person pretends to be an AI and how they can easily manipulate vulnerable people"—a sophisticated concern from direct experience. The equal balance of hopes and concerns (1:1 ratio) suggests **experienced users develop balanced perspectives** rather than becoming purely optimistic or pessimistic.
+
+**Limitations:** 
+- Small sample of AI-Reliant users with expressed concerns (n=27)
+- Text analysis may miss subtle emotional nuances
+- Categories were participant-selected, may not capture all concerns
+
+## 6.1 Corporate Trust and AI Trust Correlation
+
+**Question:** How does a person's general trust in large corporations and social media companies correlate with their trust in "companies building AI"?
+
+**Analysis Approach:** 
+Analyzed trust correlations between large corporations (Q27), social media companies (Q28), AI companies (Q29), and AI chatbots (Q37) using Pearson correlation coefficients. Compared mean trust scores across high and low trust groups to understand the impact of corporate trust on AI trust.
+
+**Key Findings:**
+- **Strong positive correlations** across all trust dimensions:
+  - Large corporations ↔ AI companies: r = 0.554 (p < 0.0001)
+  - Social media ↔ AI companies: r = 0.592 (p < 0.0001)
+  - AI companies ↔ AI chatbots: r = 0.564 (p < 0.0001)
+- **Social media trust is the strongest predictor** of AI company trust (r = 0.592)
+- **Trust transfer effect**: Those who trust corporations/social media extend similar trust to AI
+- **AI chatbots trusted more than AI companies**:
+  - AI chatbots: 55.5% trust (40% somewhat, 16% strongly)
+  - AI companies: 35.2% trust (29% somewhat, 7% strongly)
+- **Corporate trust multiplier effect**:
+  - High corporate trust → 3.70 mean AI company trust
+  - Low corporate trust → 2.36 mean AI company trust (57% higher for high trust)
+- **Social media trust has even stronger impact**:
+  - High social media trust → 4.06 mean AI company trust
+  - Low social media trust → 2.45 mean AI company trust (66% higher for high trust)
+
+**Demographic Breakdowns:**
+- **Trust distribution** (5-point scale, 1=Strongly Distrust, 5=Strongly Trust):
+  - AI companies: Mean = 2.78, Mode = "Somewhat Trust" (29%)
+  - AI chatbots: Mean = 3.44, Mode = "Somewhat Trust" (40%)
+  - 27% remain neutral on both AI companies and chatbots
+- **Trust gap**: People trust the AI products (chatbots) 0.66 points more than the companies making them
+
+**Statistical Significance:** 
+All correlations are highly statistically significant (p < 0.0001), indicating robust relationships between corporate and AI trust dimensions.
+
+**SQL Queries Used:**
+```sql
+SELECT 
+    pr.participant_id,
+    pr.Q27 as large_corp_trust,
+    pr.Q28 as social_media_trust,
+    pr.Q29 as ai_company_trust,
+    pr.Q37 as ai_chatbot_trust,
+    p.pri_score
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3;
+```
+
+**Scripts Used:**
+```python
+# Convert trust to numeric scale and calculate correlations
+trust_map = {'Strongly Distrust': 1, 'Somewhat Distrust': 2, 
+             'Neither Trust Nor Distrust': 3, 'Somewhat Trust': 4, 'Strongly Trust': 5}
+corr_corp_ai, p_corp_ai = pearsonr(df['large_corp_trust_numeric'], df['ai_company_trust_numeric'])
+corr_social_ai, p_social_ai = pearsonr(df['social_media_trust_numeric'], df['ai_company_trust_numeric'])
+```
+
+**Insights:** 
+Trust in AI companies is **strongly anchored to existing corporate trust**, particularly social media companies (r=0.592). This suggests people view AI companies through the lens of Big Tech rather than as a distinct category. The **"product over producer" phenomenon** emerges clearly—people trust AI chatbots 24% more than the companies building them, similar to how people might trust a specific app while distrusting the company behind it. Those with high social media trust show 66% higher AI company trust, indicating that **trust transfer is particularly strong within the tech ecosystem**. The correlations suggest AI trust isn't formed in isolation but builds on pre-existing institutional trust patterns.
+
+**Limitations:** 
+- Cross-sectional data cannot establish causal direction
+- Trust measures are self-reported and may reflect social desirability
+- Analysis doesn't account for specific AI company brands or experiences
