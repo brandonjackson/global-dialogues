@@ -17,7 +17,7 @@ The data reveals a counterintuitive pattern: **AI-Reliant users (30.6% of partic
 
 The most optimistic group? The "AI-Curious" (12.1% of sample) who are experimenting but not dependent, with a 1.47:1 hope ratio. This suggests that **familiarity breeds optimism, not contempt**. Those with direct experience see more potential benefits than risks, challenging the assumption that deeper knowledge leads to greater concern.
 
-**Why This Matters:** This finding suggests a "positive experience bias" where continued use selects for those finding value in AI relationships, potentially creating echo chambers of optimism among heavy users.
+**Why This Matters:** This finding **directly contradicts the initial hypothesis** that heavy users would have more nuanced concerns from deeper experience. Instead, it reveals a "positive experience bias" where continued use selects for those finding value in AI relationships. The pattern challenges the common assumption that familiarity breeds concern—suggesting that direct experience with AI companionship actually correlates with more positive outlooks, potentially creating echo chambers of optimism among heavy users.
 
 ### 1.2 How Does Reliance Impact Their View of the Social Fabric?
 
@@ -29,7 +29,7 @@ A fascinating paradox emerges: **81% believe AI could harm children's ability to
 - 7.0% explicitly mentioned loss of human connection
 - 73% mentioned other impacts or remained neutral
 
-**Why This Matters:** AI-Reliant users hold a nuanced dual perspective—they acknowledge potential negative impacts on social fabric while simultaneously viewing AI relationships as beneficial overall. They see AI as a **supplement rather than replacement** for human connection, distinguishing it from social media's perceived harms.
+**Why This Matters:** AI-Reliant users hold a surprisingly **nuanced dual perspective** that defies simple categorization. They acknowledge potential negative impacts on social fabric (especially for vulnerable populations like children) while simultaneously viewing AI relationships as beneficial overall. This suggests they see AI as a **supplement rather than replacement** for human connection. Critically, the more favorable view of AI chatbots compared to social media indicates people differentiate between types of technology impact—possibly because AI offers more personalized, supportive interactions rather than the performative nature of social media.
 
 ---
 
@@ -46,7 +46,7 @@ A clear generational gradient emerges in AI companionship use:
 
 Young adults are not just trying AI more—they're getting more from it. 42% of 18-25 year-olds say AI made them feel less lonely, compared to just 27% of those 46-55. Surprisingly, romantic openness to AI remains low across all ages (60% say "definitely not"), suggesting younger people view AI as a **practical emotional tool** rather than a replacement for human intimacy.
 
-**Why This Matters:** The generational divide reflects different baseline comfort with technology, stigma levels, and potentially different social support needs in an increasingly digital world.
+**Why This Matters:** The generational divide reveals something unexpected: while younger generations are 1.5x more likely to use AI for companionship and 2x more likely to have tried it, **this doesn't translate to romantic openness**—87% of 18-25 year-olds still reject AI romance. The pattern suggests younger people view AI as a **practical emotional tool** rather than a replacement for human intimacy. The higher usage among youth may reflect not just tech comfort, but less stigma and different social support needs in an increasingly isolated digital world.
 
 ### 2.2 Gender and Emotional AI Support: Challenging Stereotypes
 
@@ -58,7 +58,7 @@ Gender differences in AI emotional support are **surprisingly minimal**:
 - The one exception: Females are more likely to "vent" to AI (28.6% vs 22.1% males, p=0.02)
 - Daily emotional support usage nearly identical: Males 43.5%, Females 42.0%
 
-**Why This Matters:** AI appears to provide a **gender-neutral space for emotional expression** where traditional social pressures about masculinity and emotional vulnerability are reduced. Both genders find equal value in AI's non-judgmental, always-available emotional support.
+**Why This Matters:** These findings **directly challenge stereotypes about emotional expression**. The nearly identical usage rates (45-46%) suggest AI may provide a **gender-neutral space for emotional expression** where traditional social pressures about masculinity and emotional vulnerability are reduced. The fact that males are just as likely to seek AI emotional support contradicts assumptions about male emotional reticence, suggesting that when given a non-judgmental, always-available outlet, both genders find equal value.
 
 ### 2.3 The Self-Reflection Connection
 
@@ -89,7 +89,7 @@ A striking contradiction emerges:
 
 Geographic patterns reveal cultural differences: Kenya is most comfortable with AI memory (66.7% acceptance), while Germany is least comfortable (75.0% uncomfortable).
 
-**Why This Matters:** People compartmentalize their AI use—seeking the benefits of a confidential outlet while remaining aware of privacy risks. This cognitive dissonance shapes how people engage with AI intimately yet cautiously.
+**Why This Matters:** This reveals a striking cognitive dissonance—people compartmentalize their AI use, seeking the benefits of a confidential outlet while simultaneously fearing surveillance. The fact that 39.9% of secret-sharers still don't want AI to remember their information highlights how people navigate this paradox: they want the therapeutic benefit of disclosure without the vulnerability of being known. This shapes a uniquely modern form of intimacy—intimate yet ephemeral.
 
 ### 3.2 "Rules for Thee, But Not for Me"
 
@@ -101,7 +101,7 @@ The data reveals widespread hypocrisy:
 - But **63% of those same people use AI for their own emotional support**
 - Among parents specifically concerned about AI's impact: **45.2% still use AI companionship themselves**
 
-**Why This Matters:** This "protective paradox" shows people recognize risks for vulnerable populations while exempting themselves, reflecting how we often see ourselves as less susceptible to technology's negative effects than others.
+**Why This Matters:** This "protective paradox" reveals a profound disconnect in how we assess risk for ourselves versus others. The fact that 63% of those who believe AI harms children still use it themselves suggests we operate under a "personal exceptionalism" bias—we're sophisticated users who can handle it, but others (especially children) are vulnerable. This mirrors patterns seen with social media, where parents restrict children's use while scrolling themselves.
 
 ### 3.3 The Reluctant Confidant: Using Without Believing
 
@@ -129,7 +129,7 @@ Experience shifts fears from abstract to concrete:
 - **Non-users worry more about:** Manipulation (38%), loss of human agency (29%)
 - AI-Reliant users are less concerned about existential risks, more about practical impacts
 
-**Why This Matters:** Familiarity doesn't eliminate fear—it refines it. Users develop specific, grounded concerns rather than vague anxieties about AI takeover.
+**Why This Matters:** Experience fundamentally shifts the nature of fears from abstract to concrete. AI-Reliant users worry less about sci-fi scenarios (existential risks, AI takeover) and more about practical, immediate impacts they've observed or experienced. This suggests that as AI adoption grows, public discourse may shift from apocalyptic narratives to more nuanced discussions about job displacement, surveillance, and social skill atrophy—the mundane but real costs of AI integration.
 
 ### 4.2 Society's Greatest Fear: Not Killer Robots, But Emotional Death
 
