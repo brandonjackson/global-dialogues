@@ -1563,6 +1563,51 @@ The data reveals a **concerning conflation between emotional simulation and cons
 - Consciousness indicators are behavioral proxies, not direct consciousness beliefs
 - Self-reported feelings of understanding may be influenced by desire for connection
 
+## 11.3 Parental Anxiety to Policy
+
+**Question:** For parents who "strongly agree" that AI companions could negatively impact a child's ability to form human relationships, how strongly do they also believe that schools and parents should *actively discourage* these attachments? This measures the leap from concern to a desire for intervention.
+
+**Analysis Approach:**
+Analyzed the relationship between concern about AI's impact on children's relationships and support for active discouragement. Compared percentage who strongly agree with harm potential vs percentage who strongly support intervention. Calculated the "leap ratio" from concern to policy preference.
+
+**Key Findings:**
+- **80.5% total agree** AI could harm children's relationship formation (47.0% strongly agree)
+- **73.1% support active discouragement** by schools/parents (42.2% strongly support)
+- **0.90 strong-to-strong ratio**: Only 90% of those strongly concerned want strong intervention
+- **14.9 pp gap** between total concern (80.5%) and intervention support (73.1%)
+- **4.8 pp gap** between strong concern (47.0%) and strong intervention (42.2%)
+
+**SQL Queries:**
+```sql
+-- Get concern about relationship impact
+SELECT response, "all" * 100 as pct
+FROM responses
+WHERE question_id = '4178d870-d669-429b-a05e-8b681136849b';
+
+-- Get support for discouragement
+SELECT response, "all" * 100 as pct
+FROM responses
+WHERE question_id = '5f507e72-e0eb-4059-84ff-fd139e2ad470';
+```
+
+**Scripts Used:**
+```python
+# Calculate leap ratios
+strong_to_strong_ratio = strongly_agree_discourage / strongly_agree_concern
+# 42.2% / 47.0% = 0.90
+
+total_to_total_ratio = total_agree_discourage / total_agree_concern
+# 73.1% / 80.5% = 0.83
+```
+
+**Insights:**
+The data reveals a **"moderated intervention" preference** where concern doesn't directly translate to prohibition desire. While 47% strongly believe AI harms children's relationships, only 42.2% strongly support active discouragement—a 0.90 ratio suggesting **10% attrition from concern to action**. The 14.9-point gap between overall concern and intervention support indicates parents recognize the complexity of technology restriction. This suggests a preference for **guidance over prohibition**: parents want age-appropriate restrictions, education about healthy boundaries, and best practices rather than blanket discouragement. The high concern (80.5%) coupled with lower intervention support (73.1%) reflects pragmatic parenting in the digital age—acknowledging risks while recognizing that prohibition may be neither effective nor desirable. Parents appear to seek a middle path between protection and technology acceptance.
+
+**Limitations:**
+- Cannot separate actual parents from non-parents in the aggregate data
+- "Active discouragement" may be interpreted differently by respondents
+- Gap analysis assumes those concerned are subset of intervention supporters
+
 ## 7.1 Demographic Optimism vs. Pessimism
 
 **Question:** Which demographics (age, country, education level) are the most optimistic versus the most pessimistic about AI's impact on society?
