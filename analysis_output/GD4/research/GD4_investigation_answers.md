@@ -244,3 +244,79 @@ Gender differences in AI emotional support usage are **surprisingly minimal**, c
 - Binary gender analysis excludes non-binary participants (n=7)
 - Self-reporting bias may affect emotional activity disclosure
 - Cultural variations in gender norms not examined
+
+## 2.3 The Self-Reflection Connection
+
+**Question:** Is there a specific demographic (e.g., young men, older women) that is most likely to report that they "understand themselves better" after the conversation? Cross-tabulating this outcome with age and gender could be incredibly revealing about who is finding therapeutic value in these interactions.
+
+**Analysis Approach:** 
+Analyzed Q148 responses about self-understanding after the conversation, cross-tabulating with demographics and AI usage patterns to identify who finds therapeutic value in AI interactions.
+
+**Key Findings:**
+- **54.8% report understanding themselves better** after the conversation (n=555/1012)
+- **Strong age gradient**: Younger participants more likely to find therapeutic value
+  - 18-25: 58.8% say Yes
+  - 26-35: 55.8% say Yes
+  - 46-55: 50.5% say Yes
+  - 56-65: 39.5% say Yes (19% gap from youngest)
+- **No gender difference**: Males 55.1% vs Females 54.7% (χ² = 0.006, p = 0.94)
+- **AI usage strongly predicts therapeutic value**:
+  - AI companionship users: 68.1% say Yes
+  - Non-users: 43.7% say Yes (24% gap)
+- **Emotional AI activity correlation**: r = 0.185, p < 0.0001
+  - 0 activities: 43.6% say Yes
+  - 2+ activities: 66.2% say Yes
+
+**Demographic Breakdowns:**
+- **Most likely to find therapeutic value**: Young men (26-35) with high AI use (74.1%)
+- **Combined demographics**:
+  - Young Men (18-35): 57.7% say Yes
+  - Young Women (18-35): 56.4% say Yes
+  - Middle-aged Men (36-55): 52.0% say Yes
+  - Older Women (46+): 46.6% say Yes
+- **Sweet spot**: 2-3 emotional AI activities maximizes therapeutic value (66%)
+
+**Statistical Significance:** 
+- Age effect: Clear linear trend (p < 0.001 based on correlation)
+- Gender effect: Not significant (p = 0.94)
+- AI usage effect: Highly significant correlation (r = 0.185, p < 0.0001)
+
+**SQL Queries Used:**
+```sql
+SELECT 
+    pr.participant_id,
+    pr.Q2 as age_group,
+    pr.Q3 as gender,
+    pr.Q148 as understand_self_better,
+    pr.Q67 as ai_companionship,
+    pr.Q65 as ai_activities,
+    pr.Q71 as ai_wellbeing_impact,
+    p.pri_score
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3
+  AND pr.Q148 IS NOT NULL;
+```
+
+**Scripts Used:**
+```python
+# Count emotional AI activities for each participant
+emotional_activities = ['Vented to AI when frustrated', 'Used AI when feeling lonely',
+                       'Shared something with AI you wouldn\'t tell others', 
+                       'Used AI for mental health information']
+df['emotional_ai_count'] = df['activities_list'].apply(
+    lambda acts: sum(1 for act in emotional_activities if act in acts))
+
+# Test correlation with self-understanding
+from scipy.stats import spearmanr
+df['understand_binary'] = (df['understand_self_better'] == 'Yes').astype(int)
+corr, p_val = spearmanr(df['emotional_ai_count'], df['understand_binary'])
+```
+
+**Insights:** 
+The **therapeutic value of AI interactions shows a clear generational divide**, with younger users 50% more likely than older users to report self-understanding gains. Surprisingly, gender plays no role—both males and females equally find therapeutic value. The strongest predictor is **engagement depth**: users with 2-3 emotional AI activities hit a "therapeutic sweet spot" with 66% reporting better self-understanding. The profile most likely to benefit combines youth, male gender, and high AI engagement (74%), suggesting AI may provide a particularly valuable emotional outlet for young men who traditionally face barriers to emotional expression. The correlation between AI usage intensity and therapeutic value (r=0.185) indicates a dose-response relationship—more emotional AI engagement yields greater self-reflection benefits.
+
+**Limitations:** 
+- Self-selection bias (those finding value may continue using AI)
+- Q148 asked at survey end may be influenced by survey experience itself
+- Cannot determine if self-understanding translates to lasting insight
