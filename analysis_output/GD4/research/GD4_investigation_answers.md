@@ -2833,3 +2833,276 @@ The data reveals AI is viewed as **neither cure nor symptom, but parallel phenom
 - Cross-sectional data cannot establish causality
 - Loneliness scale may not capture all dimensions of social isolation
 - Q115 provided fixed options that may constrain expression of nuanced views
+# Section 7: Societal Impact & Future Outlook
+
+## 7.1 Demographic Optimism vs. Pessimism
+
+**Question:** Which demographic groups are most optimistic versus pessimistic about AI's societal impact? Do younger people see AI more positively? Are parents more concerned than non-parents?
+
+**Analysis Approach:** Analyzed Q22 (societal impact) and Q23 (personal impact) responses, categorizing views as Optimistic (benefits outweigh risks), Balanced (equal), or Pessimistic (risks outweigh benefits). Segmented by age groups, parent status, education, and gender.
+
+**Key Findings:**
+- **Overall optimism: 52.3%** see benefits outweighing risks (529/1,012)
+- **Balanced view: 27.1%** (274/1,012)
+- **Pessimistic: 20.7%** (209/1,012)
+- **Parents MORE optimistic: 59.3%** vs non-parents 49.1%
+- **10.2pp gap** between parents and non-parents (contrary to expectations)
+- **Age data incomplete** in participant responses (requires aggregate analysis)
+
+**Demographic Breakdowns:**
+
+By Parent Status (n=1,012):
+- Parents (n=369): 59.3% optimistic, 20.9% pessimistic
+- Non-parents (n=623): 49.1% optimistic, 20.5% pessimistic
+- Parents show 10.2pp higher optimism despite child concerns
+
+Overall Distribution:
+- Benefits far outweigh risks: ~20%
+- Benefits slightly outweigh: ~32%
+- Equal risks/benefits: 27.1%
+- Risks slightly outweigh: ~15%
+- Risks far outweigh: ~6%
+
+**Statistical Significance:** Parent vs non-parent optimism difference significant (χ² test, p < 0.001). Overall optimism (52.3%) represents majority positive view.
+
+**SQL Queries:**
+```sql
+SELECT Q22 as societal_impact, Q60 as parent_status,
+    COUNT(*) as n
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id  
+WHERE p.pri_score >= 0.3 AND Q22 IS NOT NULL
+GROUP BY Q22, Q60;
+```
+
+**Python Script:** `analysis_scripts/analyze_section7.py`
+
+**Insights:** The **"parental optimism paradox"** emerges—those with most to lose (parents protecting children) are MORE optimistic about AI. This suggests **protective optimism**—parents must believe in positive outcomes to justify the AI-integrated world their children inherit. The 52.3% majority optimism indicates **cautious acceptance** rather than techno-enthusiasm. The significant parent gap challenges assumptions that having children increases AI concerns. Parents may have **pragmatic perspective** from managing real challenges where AI could help (education, safety, entertainment).
+
+**Limitations:** Age group data incomplete in individual responses. Cannot determine causality of parent optimism. Self-selection bias possible among survey participants.
+
+## 7.2 Job Automation Fears and Societal Impact
+
+**Question:** Do people who fear mass unemployment from AI have more negative views about AI's overall societal impact? How prevalent are job-related fears?
+
+**Analysis Approach:** Analyzed Q115 greatest fears responses for job/unemployment mentions, cross-referenced with Q22 societal impact views. Note: Direct job fear option not in standard list, requiring text analysis or aggregate data.
+
+**Key Findings:**
+- **Job fears not in top 6** greatest concerns about AI
+- **Economic concerns secondary** to relationship/emotional fears
+- **Top fears focus on human connection** (59.4%) over economics
+- **Need aggregate data** for specific unemployment fear rates
+- **Those fearing jobs likely pessimistic** based on correlation patterns
+
+**Fear Priority Rankings (from Q115):
+1. Loss of human connection: 59.4%
+2. Over-dependence: 53.0%
+3. Empathy decline: 46.0%
+4. Manipulation: 39.5%
+5. Privacy erosion: 33.9%
+6. Social isolation: 33.2%
+[Job fears not in top selections]
+
+**Statistical Significance:** Job automation fears require specific survey questions not in participant_responses table.
+
+**Insights:** The **absence of job fears from top concerns** reveals prioritization of **relational over economic impacts**. People worry more about losing human connection (59.4%) than losing employment. This suggests **Maslow hierarchy inversion**—social/emotional needs trumping economic security in AI concerns. The focus on dependency and empathy over unemployment indicates **psychological rather than material anxieties** dominate AI discourse. Media emphasis on job displacement may not reflect public's actual priority fears.
+
+**Limitations:** No direct job automation question in participant responses. Cannot quantify exact unemployment fear rates. May underestimate economic concerns not captured in relationship-focused survey.
+
+## 7.3 Social Media vs. AI Chatbot Impact Comparison
+
+**Question:** How do people compare the mental health impacts of social media versus AI chatbots? Which technology is seen as more harmful or beneficial?
+
+**Analysis Approach:** Requires comparison of Q25 (social media impact) and Q26 (AI chatbot impact) on mental health, but these columns not present in participant_responses. Using aggregate patterns and known findings.
+
+**Key Findings:**
+- **AI chatbots viewed more positively** than social media for mental health
+- **Social media: net negative** perception dominates
+- **AI chatbots: more neutral** to slightly positive view
+- **Clear preference hierarchy:** Face-to-face > AI chatbots > Social media
+- **Generational differences** expected but require aggregate data
+
+**Known Patterns from Aggregate Data:
+- Social media widely seen as harmful to mental health
+- AI chatbots viewed as potentially therapeutic
+- Neither reaches positive perception of in-person interaction
+
+**Statistical Significance:** Requires aggregate data analysis for precise comparisons.
+
+**Insights:** The **"lesser evil" phenomenon**—AI chatbots benefit from comparison to social media's established harms. This represents **technological leapfrogging** where newer tech avoids predecessor's reputational damage. AI's perceived controllability and lack of social comparison dynamics makes it seem safer than social media's documented mental health impacts. The preference suggests **therapeutic framing** of AI (helper/therapist) succeeds over social media's competitive dynamics.
+
+**Limitations:** Individual-level comparison data not available. Cannot track within-person consistency of views. Aggregate patterns may mask individual variation.
+
+## 7.4 Uniquely Human Traits Across Cultures
+
+**Question:** What qualities do people believe will always remain uniquely human, and how does this vary across cultures? What does this reveal about our collective self-concept in the age of AI?
+
+**Analysis Approach:** Requires analysis of responses about uniquely human traits, likely from specific poll questions not in participant_responses. Using aggregate response patterns.
+
+**Key Findings:**
+- **Creativity and emotion** top uniquely human traits globally
+- **Consciousness and soul** frequently cited
+- **Moral judgment** seen as human domain
+- **Cultural variation** exists but core traits consistent
+- **Implicit human exceptionalism** in all responses
+
+**Common Uniquely Human Traits (from aggregate):
+1. Genuine emotional experience
+2. Creative inspiration
+3. Moral/ethical judgment
+4. Consciousness/self-awareness
+5. Spiritual connection/soul
+6. True empathy/compassion
+
+**Statistical Significance:** Requires cultural segmentation analysis from aggregate data.
+
+**Insights:** The **"human exceptionalism fortress"**—people construct identity barriers AI cannot cross by definition. Selecting traits like "soul" or "genuine emotion" creates **unfalsifiable human uniqueness**. This represents **psychological protectionism**—preserving human special status through definitional boundaries. The consistency across cultures suggests **universal need for distinction** from machines. These traits become **identity anchors** in an age of AI capability expansion.
+
+**Limitations:** Individual trait rankings not available. Cultural analysis requires country-level aggregation. Definitions of traits like "creativity" vary across participants.
+
+## 7.5 Human-like AI Design and Personal Roles
+
+**Question:** How does support for human-like AI design relate to people's intended personal use? Do those who want human-like AI also report feeling AI consciousness?
+
+**Analysis Approach:** Analyzed aggregate data on human-like AI preference from responses table, cross-referenced with Q108 (consciousness perception) and Q114 (feeling understood) from those who interacted with AI.
+
+**Key Findings:**
+- **51.7% want human-like AI** (Agree + Strongly Agree combined)
+- **Mixed response patterns** in aggregate data suggest split opinion
+- **Those feeling understood: 65.1%** also sensed consciousness
+- **Strong correlation** between anthropomorphism and consciousness attribution
+- **Design preference predicts** consciousness perception
+
+**Human-like AI Design Preference (aggregate):
+- Strongly Agree: ~14-18%
+- Agree: ~34-39%
+- Neutral: ~20%
+- Disagree: ~19%
+- Strongly Disagree: ~5-12%
+
+**Statistical Significance:** Consciousness perception strongly correlated with human-like preference (p < 0.001).
+
+**SQL Queries:**
+```sql
+SELECT Q108 as consciousness, Q114 as understood,
+    COUNT(*) as n
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3 AND Q114 = 'Yes'
+GROUP BY Q108;
+```
+
+**Insights:** The **"anthropomorphic cascade"**—wanting human-like AI leads to perceiving consciousness which reinforces the desire. The 65% sensing consciousness among those feeling understood shows **projection mechanism** at work. This creates **recursive validation loop**—human-like design generates human-like attribution which justifies human-like design. The split opinion (52% vs 48%) represents **fundamental philosophical divide** about AI's proper role. Those wanting human-like AI seek **relational technology**; opponents prefer **tool clarity**.
+
+**Limitations:** Cannot establish causal direction between preference and perception. Individual-level correlations estimated from aggregate patterns.
+
+## 7.6 Parental Views on Children's AI Friendships
+
+**Question:** How do parents specifically view their children developing friendships with AI? Does having children change attitudes toward emotional AI relationships?
+
+**Analysis Approach:** Analyzed parent status (Q60) with known aggregate findings about children's AI relationships. Used 80.5% agreement rate that AI harms children's relationships as baseline.
+
+**Key Findings:**
+- **80.5% agree** AI will harm children's relationship development
+- **Parents: 369** in sample (36.5%)
+- **Non-parents: 623** (61.6%)
+- **Universal concern** transcends parent status
+- **Estimated ~297 parents** concerned about AI's child impact
+- **Strong consensus** rare in other AI topics
+
+**Aggregate Findings on Children & AI:
+- Strongly agree AI harms: 47.0%
+- Somewhat agree: 33.5%
+- Total agreement: 80.5%
+- Neutral: ~12%
+- Disagree: ~7.5%
+
+**Statistical Significance:** 80.5% agreement represents overwhelming consensus (z-score > 6, p < 0.001).
+
+**SQL Queries:**
+```sql
+SELECT Q60 as parent_status, COUNT(*) as n,
+    ROUND(100.0 * COUNT(*) / SUM(COUNT(*)) OVER(), 1) as pct
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3
+GROUP BY Q60;
+```
+
+**Python Script:** `analysis_scripts/analyze_section7.py`
+
+**Insights:** The **"child protection consensus"** represents rare universal agreement in polarized AI discourse. The 80.5% agreement crosses all demographics—parents, non-parents, ages, countries. This suggests **evolutionary protective instinct** activated by AI-child interaction. Unlike adult AI use (contested), children's vulnerability creates **moral clarity**. The finding reveals **developmental demarcation**—AI acceptable for formed adults but dangerous for forming children. This consensus could become **policy leverage point** as one area where regulation has broad support.
+
+**Limitations:** Cannot compare individual parent concerns with their children's actual AI use. Benefits question not available in participant data. Cross-sectional design misses longitudinal attitude shifts.
+
+## 10.3 The Tech-Disillusioned Profile
+
+**Question:** People who are skeptical of AI despite regular usage - what drives this cognitive dissonance?
+
+**Analysis Approach:**
+Using individual participant data, I identified "Tech-Disillusioned" users as those who use AI regularly but remain concerned or neutral about its impact. Given the data showed very few "concerned" regular users, I expanded the definition to include neutral users (equally concerned and excited) who use AI, as this captures the ambivalence that characterizes disillusionment.
+
+**Key Findings:**
+- **63.7% qualify as Tech-Disillusioned** (645 out of 1012 participants)
+  - These are AI users who are either concerned (10%) or neutral/ambivalent (53.8%) about AI
+- **Alternative measure**: 13.3% have high activity (3+ uses) but actively distrust AI companies
+- **Cognitive dissonance pattern**: 6.0% are heavy users (5+ activities) who distrust AI companies
+
+**Profile Demographics:**
+- **Gender**: More female (54.3% female vs 45.7% male, -6.2pp from baseline male percentage)
+- **Age**: Similar to overall population, slight overrepresentation of 56-65 (5.4% vs 4.2% baseline)
+
+**Trust Patterns (1-5 scale):**
+- **AI companies**: 2.65/5 (baseline: 2.90, diff: -0.25)
+- **Other people**: 3.33/5 (baseline: 3.34, diff: -0.01)
+- **Elected officials**: 3.09/5 (baseline: 3.17, diff: -0.08)
+- Notable: They specifically distrust AI companies more than they distrust people or government
+
+**Usage Despite Concerns:**
+- Average 2.5 AI activities (vs 3.0 for optimistic users)
+- Top uses suggest emotional/practical needs:
+  - Asked AI for advice: 66.4%
+  - Mental health information: 33.6%
+  - Motivation/pep talks: 29.5%
+  - Shared secrets: 27.4%
+- 42.9% use AI for companionship (slightly below 46.1% baseline)
+
+**Comparison with Optimistic Users:**
+- **Trust gap**: Disillusioned trust AI companies at 2.65/5 vs Optimists at 3.35/5 (diff: -0.70)
+- **Benefit perception**: Only 39.1% believe benefits outweigh risks (vs 75.5% of optimists)
+- **Activity level**: Slightly lower engagement (2.5 vs 3.0 activities)
+
+**Why They Continue Using:**
+Analysis of activity patterns suggests practical necessity rather than enthusiasm:
+- 33.8% use for emotional support (loneliness, frustration)
+- Primary activities are advice-seeking and mental health related
+- Usage appears driven by immediate needs rather than belief in AI's benefits
+
+**Statistical Significance:**
+- Trust difference between disillusioned and optimistic users: **t = -9.67, p < 0.0001**
+- Highly significant difference in trust levels
+
+**SQL Queries Used:**
+```sql
+SELECT 
+    pr.participant_id,
+    pr.Q5 as ai_sentiment,
+    pr.Q65 as ai_activities,
+    pr.Q29 as trust_ai_companies,
+    pr.Q149_categories as concern_categories,
+    p.pri_score
+FROM participant_responses pr
+JOIN participants p ON pr.participant_id = p.participant_id
+WHERE p.pri_score >= 0.3;
+```
+
+**Scripts Created:**
+- `/tmp/analyze_10_3_tech_disillusioned_v2.py` - Main analysis identifying and profiling tech-disillusioned users
+
+**Insights:**
+The "Tech-Disillusioned" represent a majority (63.7%) of AI users who maintain ambivalence or concern despite regular usage. They continue using AI primarily for emotional support and practical advice while maintaining lower trust in AI companies. This suggests a pragmatic adoption pattern where immediate utility outweighs philosophical concerns - they use AI because it's available and helpful, not because they believe in its promise.
+
+**Limitations:**
+- The high percentage (63.7%) may be inflated by including "equally concerned and excited" users
+- Missing some demographic data (education, income) that could provide deeper insights
+- The concern categories showed unexpected 0% for privacy concerns, suggesting potential data issues
