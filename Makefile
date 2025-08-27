@@ -61,7 +61,7 @@ help:
 	@echo "  $(GREEN)make db-connect GD=<N>$(RESET)    - Connect to SQLite database for GD<N>"
 	@echo ""
 	@echo "$(BLUE)Utilities:$(RESET)"
-	@echo "  $(GREEN)make preview-csvs GD=<N>$(RESET)  - Preview all CSV files in GD<N> directory"
+	@echo "  $(GREEN)make preview-csvs GD=<ID>$(RESET) - Preview all CSV files in GD<ID> directory"
 	@echo "  $(GREEN)make clean$(RESET)                - Clean up cache and temporary files"
 
 # Preprocessing commands using variables
@@ -224,9 +224,9 @@ download-all-embeddings:
 # Generate embeddings using OpenAI API
 generate-embeddings:
 	@if [ -z "$(GD)" ]; then \
-		echo "$(RED)Error: Please specify GD number$(RESET)"; \
-		echo "$(YELLOW)Usage: make generate-embeddings GD=<N>$(RESET)"; \
-		echo "$(YELLOW)Example: make generate-embeddings GD=5$(RESET)"; \
+		echo "$(RED)Error: Please specify GD identifier$(RESET)"; \
+		echo "$(YELLOW)Usage: make generate-embeddings GD=<ID>$(RESET)"; \
+		echo "$(YELLOW)Examples: make generate-embeddings GD=5 or make generate-embeddings GD=6UK$(RESET)"; \
 		exit 1; \
 	fi
 	@if [ ! -f .env ]; then \

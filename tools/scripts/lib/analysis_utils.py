@@ -10,6 +10,53 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 # TODO: Define utility functions (e.g., load_data, parse_percentage, etc.)
 
+def parse_gd_identifier(gd_input):
+    """
+    Parse a GD identifier which can be either a number (e.g., "6") or a custom identifier (e.g., "6UK", "6_UK").
+    Returns the full GD identifier string (e.g., "GD6", "GD6UK", "GD6_UK").
+    
+    Args:
+        gd_input: str or int - The GD identifier input
+        
+    Returns:
+        str: The full GD identifier (e.g., "GD6", "GD6UK")
+        
+    Raises:
+        ValueError: If the identifier format is invalid
+    """
+    # Convert to string if integer
+    gd_str = str(gd_input)
+    
+    # Check if it's already in GD format
+    if gd_str.startswith("GD"):
+        return gd_str
+    
+    # Basic validation - must start with a digit
+    if not gd_str[0].isdigit():
+        raise ValueError(f"Invalid GD identifier: {gd_str}. Must start with a number.")
+    
+    # Add GD prefix
+    return f"GD{gd_str}"
+
+def validate_gd_directory(gd_identifier, base_dir="Data"):
+    """
+    Validate that a GD directory exists.
+    
+    Args:
+        gd_identifier: str - The full GD identifier (e.g., "GD6", "GD6UK")
+        base_dir: str - The base data directory (default: "Data")
+        
+    Returns:
+        str: The validated directory path
+        
+    Raises:
+        FileNotFoundError: If the directory doesn't exist
+    """
+    dir_path = os.path.join(base_dir, gd_identifier)
+    if not os.path.isdir(dir_path):
+        raise FileNotFoundError(f"GD directory not found: {dir_path}")
+    return dir_path
+
 def load_standardized_data(csv_path):
     """Loads the standardized aggregate CSV into a pandas DataFrame."""
     logging.info(f"Loading standardized data from: {csv_path}")

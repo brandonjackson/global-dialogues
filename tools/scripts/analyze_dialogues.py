@@ -13,6 +13,7 @@ import textwrap # Import textwrap
 import subprocess
 import logging
 import sys
+from lib.analysis_utils import parse_gd_identifier, validate_gd_directory
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -906,19 +907,19 @@ def generate_segment_report(segment_details_first_q, segments_output_dir):
 
     print("--- Segment Summary Report Generation Complete ---")
 
-def run_script(script_name, gd_number, extra_args=None):
-    """Runs a given analysis script using subprocess, passing the GD number."""
+def run_script(script_name, gd_identifier_input, extra_args=None):
+    """Runs a given analysis script using subprocess, passing the GD identifier."""
     python_executable = sys.executable # Use the same python executable that runs this script
     script_path = os.path.join("tools", "scripts", script_name)
     if not os.path.exists(script_path):
         logging.error(f"Script not found: {script_path}")
         return False
 
-    cmd = [python_executable, script_path, "--gd_number", str(gd_number)]
+    cmd = [python_executable, script_path, "--gd_number", str(gd_identifier_input)]
     if extra_args:
         cmd.extend(extra_args)
        
-    logging.info(f"--- Running {script_name} for GD{gd_number} --- ") # Adjusted log message
+    logging.info(f"--- Running {script_name} for {gd_identifier_input} --- ") # Adjusted log message
     logging.info(f"Executing: {' '.join(cmd)}")
    
     try:
@@ -955,17 +956,18 @@ This script acts as a master controller, executing the following steps in order:
   4. calculate_divergence.py: Calculates divergence scores.
   5. calculate_indicators.py: Generates indicator heatmaps.
 
-Each step uses the specified --gd_number to find input files and determine default output locations within Data/GD<N>/ and analysis_output/GD<N>/ respectively.
+Each step uses the specified --gd_number to find input files and determine default output locations within Data/GD<ID>/ and analysis_output/GD<ID>/ respectively.
 """)
-    parser.add_argument("--gd_number", type=int, required=True, help="Global Dialogue cadence number (e.g., 1, 2, 3).")
+    parser.add_argument("--gd_number", type=str, required=True, help="Global Dialogue identifier (e.g., '1', '2', '6UK', '6_UK').")
     # Add optional arguments if we want to pass overrides down, e.g., output dir, min_segment_size
     # For now, keep it simple and rely on defaults or running scripts individually for customization.
     # parser.add_argument("-o", "--output_dir_base", help="Override the base output directory (default: analysis_output)")
     
     args = parser.parse_args()
-    gd_num = args.gd_number
+    gd_identifier = parse_gd_identifier(args.gd_number)
+    validate_gd_directory(gd_identifier)
 
-    logging.info(f"Starting analysis pipeline for GD{gd_num}")
+    logging.info(f"Starting analysis pipeline for {gd_identifier}")
 
     # List of scripts to run in order
     # Optional: Add specific args per script if needed, e.g., [('script.py', ['--extra_arg', 'value'])]
@@ -979,16 +981,16 @@ Each step uses the specified --gd_number to find input files and determine defau
 
     all_success = True
     for script_name, extra_args in scripts_to_run:
-        success = run_script(script_name, gd_num, extra_args)
+        success = run_script(script_name, args.gd_number, extra_args)
         if not success:
             all_success = False
             logging.error(f"Pipeline stopped due to failure in {script_name}.")
             break # Stop pipeline on first failure
 
     if all_success:
-        logging.info(f"Analysis pipeline for GD{gd_num} completed successfully.")
+        logging.info(f"Analysis pipeline for {gd_identifier} completed successfully.")
     else:
-        logging.warning(f"Analysis pipeline for GD{gd_num} completed with errors.")
+        logging.warning(f"Analysis pipeline for {gd_identifier} completed with errors.")
         sys.exit(1) # Exit with non-zero code to indicate failure
 
 if __name__ == "__main__":
