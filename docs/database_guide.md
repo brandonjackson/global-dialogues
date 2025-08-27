@@ -31,6 +31,33 @@ sqlite3 Data/GD4/GD4.db
 
 ## Database Schema
 
+### Column Mapping Tables
+
+#### `responses_column_mappings`
+Maps 272 columns from **GD[N]_aggregate_standardized.csv** → **responses** table.
+
+| Column | Type | Description |
+|--------|------|-------------|
+| db_column_name | TEXT | Column name in responses table (e.g., `northern_europe`) |
+| original_csv_column | TEXT | Original CSV column name (e.g., "Norther Europe") |
+| column_type | TEXT | Type: 'core', 'segment', 'branch_metadata' |
+| full_question_text | TEXT | Full text for truncated branch questions |
+| notes | TEXT | Documents fixes applied (typos, truncations) |
+| source_csv | TEXT | Always 'aggregate_standardized.csv' |
+| target_table | TEXT | Always 'responses' |
+
+#### `participant_responses_column_mappings`
+Maps 150 columns from **GD[N]_participants.csv** → **participant_responses** table.
+
+| Column | Type | Description |
+|--------|------|-------------|
+| column_name | TEXT | Column in participant_responses (e.g., `Q64`) |
+| question_id | TEXT | Question identifier |
+| question_text | TEXT | Full question text from survey |
+| column_type | TEXT | Type: 'question', 'multi_select_json', 'categories_json', 'question_original', 'agreement_percentage' |
+| source_csv | TEXT | Always 'participants.csv' |
+| target_table | TEXT | Always 'participant_responses' |
+
 ### Core Tables
 
 #### `responses`
@@ -417,6 +444,22 @@ ORDER BY COALESCE(branch_a, branch_b, branch_c) DESC
 LIMIT 10;
 ```
 
+### Using Mapping Tables
+
+```sql
+-- Understand what a column in responses table represents
+SELECT original_csv_column, notes 
+FROM responses_column_mappings 
+WHERE db_column_name = 'northern_europe';
+-- Shows: "Norther Europe", "Fixed typo from original CSV"
+
+-- Find out what Q64 means in participant_responses
+SELECT question_text, column_type 
+FROM participant_responses_column_mappings 
+WHERE column_name = 'Q64';
+-- Shows: "Please select the AI tools that you have heard of", "multi_select_json"
+```
+
 ### Working with Individual Participant Data
 
 ```sql
@@ -589,10 +632,41 @@ The database creation script automatically normalizes all column names:
    - For **Ask Experience**: Percentage who used same category, if applicable
    - For **branches**: Agreement only from participants within that branch
 
+## Database Characteristics and Known Issues
+
+### Expected Data Characteristics
+
+1. **Participant Count Differences**: Different tables will have different participant counts by design:
+   - `participant_responses`: All survey participants (highest count)
+   - `responses` (unique participant_ids): Only those who provided text responses (Ask Opinion/Experience)
+   - `participants`: Only those with calculable PRI scores (may be lowest count)
+   - Some participants only answered poll questions and have no text responses
+   - Some participants lack sufficient data for PRI calculation
+
+2. **Geographic Column Variations**:
+   - `north_america`: Continental definition (includes Mexico, Central America)
+   - `northern_america`: UN statistical region (US, Canada, Greenland, Bermuda only)
+   - Both columns are intentionally retained as they represent different geographic groupings
+
+3. **Branch Column Names**: Branch question columns are truncated to first 6 words for readability:
+   - Example: `branches_have_you_ever_felt_an_ai` (full question preserved in `responses_column_mappings`)
+   - Original CSV may have even longer truncations due to export limitations
+
+4. **Fixed Known Issues**:
+   - Column typos from source data (e.g., "Norther Europe" → `northern_europe`) are automatically corrected
+   - Foreign key constraints are enforced with missing participants added with NULL PRI scores
+   - Divergence scores are calculated for all applicable responses
+
+5. **NULL Values**:
+   - PRI scores may be NULL for participants with insufficient data
+   - Divergence/consensus scores may be NULL for certain question types
+   - Agreement rate columns may be NULL for Ask Experience questions without voting
+
 ## Troubleshooting
 
 - **Database not found**: Run `make db GD=<N>` first
 - **Missing scores**: Ensure analysis has been run (`make analyze GD=<N>`) before creating database
 - **Missing tags**: Tags require preprocessed tag files in `Data/GD<N>/tags/`
 - **Column not found**: Remember all columns are lowercase_underscored (e.g., use `question_id` not `Question ID`)
+- **Participant count mismatches**: See "Database Characteristics" section above - this is expected
 - **Corrupted database**: Simply recreate with `make db GD=<N>`
