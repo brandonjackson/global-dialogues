@@ -4,7 +4,7 @@ import os
 import logging
 import re
 from collections import OrderedDict # To preserve segment order somewhat
-from lib.analysis_utils import get_segment_columns # Import the updated function
+from lib.analysis_utils import get_segment_columns, parse_gd_identifier, validate_gd_directory # Import the updated function
 import pandas as pd
 
 # Configure logging
@@ -369,7 +369,7 @@ def main():
     
     # Group for mutually exclusive input specification
     input_group = parser.add_mutually_exclusive_group(required=True)
-    input_group.add_argument("--gd_number", type=int, help="Global Dialogue cadence number (e.g., 1, 2, 3). Constructs default paths like Data/GD<N>/GD<N>_*.csv")
+    input_group.add_argument("--gd_number", type=str, help="Global Dialogue identifier (e.g., '1', '2', '6UK', '6_UK'). Constructs default paths like Data/GD<ID>/GD<ID>_*.csv")
     input_group.add_argument("--input_file", help="Explicit path to the input aggregate CSV file (required if --gd_number is not used).")
 
     # Output paths - conditionally required
@@ -388,15 +388,14 @@ def main():
     counts_output_path = None
 
     if args.gd_number:
-        gd_num = args.gd_number
-        gd_identifier = f"GD{gd_num}"
-        base_dir = os.path.join("Data", gd_identifier)
+        gd_identifier = parse_gd_identifier(args.gd_number)
+        base_dir = validate_gd_directory(gd_identifier)
         input_path = os.path.join(base_dir, f"{gd_identifier}_aggregate.csv")
         output_path = os.path.join(base_dir, f"{gd_identifier}_aggregate_standardized.csv")
         # Use provided counts path if given, otherwise construct default
         counts_output_path = args.segment_counts_output if args.segment_counts_output else os.path.join(base_dir, f"{gd_identifier}_segment_counts_by_question.csv")
         
-        logging.info(f"Using GD number {gd_num} to determine paths:")
+        logging.info(f"Using GD number {args.gd_number} to determine paths:")
         logging.info(f"  Input: {input_path}")
         logging.info(f"  Output (Standardized): {output_path}")
         logging.info(f"  Output (Segment Counts): {counts_output_path}")
@@ -404,7 +403,7 @@ def main():
         # Validate constructed input path
         if not os.path.exists(input_path):
             logging.error(f"Constructed input file path does not exist: {input_path}")
-            parser.error(f"Input file not found for GD{gd_num}. Expected at: {input_path}") # Use parser.error to exit
+            parser.error(f"Input file not found for {gd_identifier}. Expected at: {input_path}") # Use parser.error to exit
             
     else: # Explicit paths provided
         if not args.input_file or not args.output_file:

@@ -21,6 +21,12 @@ Output:
 import pandas as pd
 import numpy as np
 import argparse
+from pathlib import Path
+import sys
+import os
+# Add the tools/scripts directory to Python path for imports
+sys.path.append(os.path.join(os.path.dirname(__file__)))
+from lib.analysis_utils import parse_gd_identifier, validate_gd_directory
 import time
 import sys
 import os
@@ -78,18 +84,18 @@ class LLMJudgeConfig(BaseModel):
 def parse_args():
     """Parse command-line arguments."""
     parser = argparse.ArgumentParser(description='Calculate Participant Reliability Index (PRI) scores.')
-    parser.add_argument('--gd_number', type=int, required=True, help='The Global Dialogue number (e.g. 1, 2, 3)')
+    parser.add_argument('--gd_number', type=str, required=True, help='Global Dialogue identifier (e.g. "1", "2", "6UK", "6_UK")')
     parser.add_argument('--debug', action='store_true', help='Enable verbose debug output')
     parser.add_argument('--limit', type=int, help='Limit processing to first N participants (for testing)', default=None)
     parser.add_argument('--llm-judge', action='store_true', help='Enable LLM judge assessment (requires API key and costs $)')
     return parser.parse_args()
 
 
-def get_config(gd_number):
-    """Define file paths and PRI parameters based on GD number."""
-    data_dir = Path(f"Data/GD{gd_number}")
+def get_config(gd_identifier):
+    """Define file paths and PRI parameters based on GD identifier."""
+    data_dir = Path(f"Data/{gd_identifier}")
     tags_dir = data_dir / "tags"
-    output_dir = Path(f"analysis_output/GD{gd_number}/pri")
+    output_dir = Path(f"analysis_output/{gd_identifier}/pri")
     
     # Ensure directories exist
     if not data_dir.exists():
@@ -2406,12 +2412,13 @@ def main():
     
     # Parse command-line arguments
     args = parse_args()
-    gd_number = args.gd_number
+    gd_identifier = parse_gd_identifier(args.gd_number)
+    validate_gd_directory(gd_identifier)
     debug = args.debug
     participant_limit = args.limit
     enable_llm_judge = getattr(args, 'llm_judge', False)
     
-    print(f"Calculating PRI for Global Dialogue {gd_number}")
+    print(f"Calculating PRI for {gd_identifier}")
     print(f"Debug mode: {'Enabled' if debug else 'Disabled'}")
     print(f"LLM judge: {'Enabled' if enable_llm_judge else 'Disabled'}")
     if participant_limit:
@@ -2427,7 +2434,7 @@ def main():
     
     # Get configuration for this GD
     try:
-        config = get_config(gd_number)
+        config = get_config(gd_identifier)
     except Exception as e:
         print(f"Error in configuration: {e}")
         sys.exit(1)

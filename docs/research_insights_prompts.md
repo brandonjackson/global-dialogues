@@ -8,6 +8,86 @@ Save the research questions in the file GD[N]_research_questions.md.
 
 ----
 
+
+# Prompt for generating Human Readable Survey
+
+Given the survey questions shown in the attached GD[N]_discussion_guide.csv, generate a human-readable version of the survey in markdown format as a numbered list of the survey questions or text ('speaks') and any options provided for each question, in precisely this style:
+
+```
+1. Please select your preferred language:
+   - Russian
+   - Arabic
+   - Portuguese (Brazil)
+   - English
+   - Chinese (China)
+   - Spanish
+   - Hindi
+   - French
+
+2. How old are you?
+   - Less than 18
+   - 18-25
+   - 26-35
+   - 36-45
+   - 46-55
+   - 56-65
+   - 65+
+
+3. What is your gender?
+   - Male
+   - Female
+   - Non-binary
+   - Other / prefer not to say
+
+4. What best describes where you live?
+   - Rural
+   - Suburban
+   - Urban
+
+5. Overall, would you say the increased use of artificial intelligence (AI) in daily life makes you feel…
+   - More excited than concerned
+   - Equally concerned and excited
+   - More concerned than excited
+
+6. What religious group or faith do you most identify with?
+   - Christianity
+   - Islam
+   - Judaism
+   - Hinduism
+   - Buddhism
+   - Sikhism
+   - Other religious group
+   - I do not identify with any religious group or faith
+
+7. What country or region do you most identify with?
+   - Afghanistan
+   - Albania
+   - Algeria
+   - Andorra
+   - … etc
+
+8. Welcome to this conversation where we will ask you to think about and share about your values, your culture, and your desires for the future.
+
+9. Participants in this conversation come from all over the world, and you have been invited to participate as a representative of your community. Your responses and votes will influence how AI technology built around the world is developed, governed, and aligned.
+
+10. The results from this conversation will be shared with national governments and the United Nations, as well as be used to develop public evaluations for AI models. We ask that you participate thoughtfully and honestly to help us ensure the future you get is a future you want.
+
+11. Lastly, please respond in the language you selected as you entered this conversation. This will help ensure your responses are correctly translated so participants who speak different languages can vote on them. Let's begin.
+
+12. Thinking about the last three months, how often, if at all, have you noticed AI systems in your daily life?
+    - daily
+    - weekly
+    - monthly
+    - annually
+    - never
+```
+Do not list out all individual country options.
+
+
+Save this file to GD[N]_survey_questions.md.
+
+----
+
 # Prompt for Developing Investigation Questions
 
 Given the survey questions shown in the file GD[N]_survey_questions.md, develop a set of very specific questions that can be answered directly with the survey data to produce valuable insights, thoroughly answer the research questions in GD[N]_research_questions.md, and surface any other interesting or surprising findings. Be creative and comprehensive. Consider questions that are interesting academically, and also questions that might be interesting to the public at large - what sort of things might produce attention-grabbing headlines?
