@@ -1,0 +1,119 @@
+================================================================================
+COMPREHENSIVE PRI CORRELATION ANALYSIS REPORT
+================================================================================
+Generated: 2025-08-27 23:10:44
+Total participants analyzed: 1018
+PRI metrics included: 15
+
+SUMMARY STATISTICS
+----------------------------------------
+Duration_seconds         : n=1018, mean=905.717, std=1171.435, range=[0.000, 35700.000]
+LowQualityTag_Perc       : n=1018, mean=0.040, std=0.079, range=[0.000, 0.500]
+UniversalDisagreement_Perc: n=1018, mean=0.000, std=0.000, range=[0.000, 0.000]
+LLM_Judge_Score          : n=1018, mean=0.665, std=0.148, range=[0.050, 0.925]
+LLM_anthropic_claude_sonnet_4: n= 866, mean=0.671, std=0.169, range=[0.100, 0.950]
+LLM_openai_gpt_4o_mini   : n= 832, mean=0.716, std=0.137, range=[0.000, 0.900]
+Duration_Norm            : n=1018, mean=0.162, std=0.083, range=[0.000, 1.000]
+LowQualityTag_Norm       : n=1018, mean=0.921, std=0.157, range=[0.000, 1.000]
+UniversalDisagreement_Norm: n=1018, mean=0.500, std=0.000, range=[0.500, 0.500]
+LLM_Judge_Norm           : n=1018, mean=0.703, std=0.169, range=[0.000, 1.000]
+PRI_Score_Heuristic      : n=1018, mean=0.530, std=0.066, range=[0.170, 0.867]
+PRI_Score_Enhanced       : n=1018, mean=0.588, std=0.078, range=[0.164, 0.781]
+PRI_Score                : n=1018, mean=0.588, std=0.078, range=[0.164, 0.781]
+PRI_Scale_1_5            : n=1018, mean=3.353, std=0.312, range=[1.656, 4.124]
+
+PEARSON CORRELATION MATRIX
+----------------------------------------
+Correlations (sample sizes in parentheses)
+
+Metric                     Duration_sec  LowQualityTa  UniversalDis  ASC_Score_Ra  LLM_Judge_Sc  LLM_anthropi  LLM_openai_g  Duration_Nor  LowQualityTa  UniversalDis  LLM_Judge_No  PRI_Score_He  PRI_Score_En     PRI_Score  PRI_Scale_1_
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Duration_seconds          1.000(1018) -0.031(1018)         N/A           N/A    0.018(1018)  0.092(866)  0.006(832)  0.639(1018)  0.031(1018)         N/A    0.018(1018)  0.320(1018)  0.190(1018)  0.190(1018)  0.190(1018) 
+LowQualityTag_Perc       -0.031(1018)  1.000(1018)         N/A           N/A   -0.184(1018) -0.218(866) -0.216(832) -0.048(1018) -1.000(1018)         N/A   -0.184(1018) -0.889(1018) -0.627(1018) -0.627(1018) -0.627(1018) 
+UniversalDisagreement_Perc        N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A   
+ASC_Score_Raw                    N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A   
+LLM_Judge_Score           0.018(1018) -0.184(1018)         N/A           N/A    1.000(1018)  0.938(866)  0.902(832)  0.075(1018)  0.184(1018)         N/A    1.000(1018)  0.194(1018)  0.840(1018)  0.840(1018)  0.840(1018) 
+LLM_anthropic_claude_sonnet_4 0.092(866) -0.218(866)         N/A           N/A    0.938(866)  1.000(866)  0.690(822)  0.092(866)  0.218(866)         N/A    0.938(866)  0.231(866)  0.791(866)  0.791(866)  0.791(866) 
+LLM_openai_gpt_4o_mini    0.006(832) -0.216(832)         N/A           N/A    0.902(832)  0.690(822)  1.000(832)  0.086(832)  0.216(832)         N/A    0.902(832)  0.226(832)  0.757(832)  0.757(832)  0.757(832) 
+Duration_Norm             0.639(1018) -0.048(1018)         N/A           N/A    0.075(1018)  0.092(866)  0.086(832)  1.000(1018)  0.048(1018)         N/A    0.075(1018)  0.499(1018)  0.331(1018)  0.331(1018)  0.331(1018) 
+LowQualityTag_Norm        0.031(1018) -1.000(1018)         N/A           N/A    0.184(1018)  0.218(866)  0.216(832)  0.048(1018)  1.000(1018)         N/A    0.184(1018)  0.889(1018)  0.627(1018)  0.627(1018)  0.627(1018) 
+UniversalDisagreement_Norm        N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A   
+LLM_Judge_Norm            0.018(1018) -0.184(1018)         N/A           N/A    1.000(1018)  0.938(866)  0.902(832)  0.075(1018)  0.184(1018)         N/A    1.000(1018)  0.194(1018)  0.840(1018)  0.840(1018)  0.840(1018) 
+PRI_Score_Heuristic       0.320(1018) -0.889(1018)         N/A           N/A    0.194(1018)  0.231(866)  0.226(832)  0.499(1018)  0.889(1018)         N/A    0.194(1018)  1.000(1018)  0.695(1018)  0.695(1018)  0.695(1018) 
+PRI_Score_Enhanced        0.190(1018) -0.627(1018)         N/A           N/A    0.840(1018)  0.791(866)  0.757(832)  0.331(1018)  0.627(1018)         N/A    0.840(1018)  0.695(1018)  1.000(1018)  1.000(1018)  1.000(1018) 
+PRI_Score                 0.190(1018) -0.627(1018)         N/A           N/A    0.840(1018)  0.791(866)  0.757(832)  0.331(1018)  0.627(1018)         N/A    0.840(1018)  0.695(1018)  1.000(1018)  1.000(1018)  1.000(1018) 
+PRI_Scale_1_5             0.190(1018) -0.627(1018)         N/A           N/A    0.840(1018)  0.791(866)  0.757(832)  0.331(1018)  0.627(1018)         N/A    0.840(1018)  0.695(1018)  1.000(1018)  1.000(1018)  1.000(1018) 
+
+SPEARMAN CORRELATION MATRIX
+----------------------------------------
+Correlations (p-values in parentheses)
+
+Metric                     Duration_sec  LowQualityTa  UniversalDis  ASC_Score_Ra  LLM_Judge_Sc  LLM_anthropi  LLM_openai_g  Duration_Nor  LowQualityTa  UniversalDis  LLM_Judge_No  PRI_Score_He  PRI_Score_En     PRI_Score  PRI_Scale_1_
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Duration_seconds          1.000(0.000) -0.049(0.121)         N/A           N/A    0.134(0.000)  0.172(0.000)  0.120(0.001)  1.000(0.000)  0.049(0.121)         N/A    0.134(0.000)  0.699(0.000)  0.360(0.000)  0.360(0.000)  0.360(0.000) 
+LowQualityTag_Perc       -0.049(0.121)  1.000(0.000)         N/A           N/A   -0.108(0.001) -0.124(0.000) -0.118(0.001) -0.049(0.121) -1.000(0.000)         N/A   -0.108(0.001) -0.706(0.000) -0.514(0.000) -0.514(0.000) -0.514(0.000) 
+UniversalDisagreement_Perc        N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A   
+ASC_Score_Raw                    N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A   
+LLM_Judge_Score           0.134(0.000) -0.108(0.001)         N/A           N/A    1.000(0.000)  0.952(0.000)  0.830(0.000)  0.134(0.000)  0.108(0.001)         N/A    1.000(0.000)  0.162(0.000)  0.832(0.000)  0.832(0.000)  0.832(0.000) 
+LLM_anthropic_claude_sonnet_4 0.172(0.000) -0.124(0.000)         N/A           N/A    0.952(0.000)  1.000(0.000)  0.661(0.000)  0.172(0.000)  0.124(0.000)         N/A    0.952(0.000)  0.198(0.000)  0.745(0.000)  0.745(0.000)  0.745(0.000) 
+LLM_openai_gpt_4o_mini    0.120(0.001) -0.118(0.001)         N/A           N/A    0.830(0.000)  0.661(0.000)  1.000(0.000)  0.120(0.001)  0.118(0.001)         N/A    0.830(0.000)  0.158(0.000)  0.687(0.000)  0.687(0.000)  0.687(0.000) 
+Duration_Norm             1.000(0.000) -0.049(0.121)         N/A           N/A    0.134(0.000)  0.172(0.000)  0.120(0.001)  1.000(0.000)  0.049(0.121)         N/A    0.134(0.000)  0.699(0.000)  0.360(0.000)  0.360(0.000)  0.360(0.000) 
+LowQualityTag_Norm        0.049(0.121) -1.000(0.000)         N/A           N/A    0.108(0.001)  0.124(0.000)  0.118(0.001)  0.049(0.121)  1.000(0.000)         N/A    0.108(0.001)  0.706(0.000)  0.514(0.000)  0.514(0.000)  0.514(0.000) 
+UniversalDisagreement_Norm        N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A   
+LLM_Judge_Norm            0.134(0.000) -0.108(0.001)         N/A           N/A    1.000(0.000)  0.952(0.000)  0.830(0.000)  0.134(0.000)  0.108(0.001)         N/A    1.000(0.000)  0.162(0.000)  0.832(0.000)  0.832(0.000)  0.832(0.000) 
+PRI_Score_Heuristic       0.699(0.000) -0.706(0.000)         N/A           N/A    0.162(0.000)  0.198(0.000)  0.158(0.000)  0.699(0.000)  0.706(0.000)         N/A    0.162(0.000)  1.000(0.000)  0.608(0.000)  0.608(0.000)  0.608(0.000) 
+PRI_Score_Enhanced        0.360(0.000) -0.514(0.000)         N/A           N/A    0.832(0.000)  0.745(0.000)  0.687(0.000)  0.360(0.000)  0.514(0.000)         N/A    0.832(0.000)  0.608(0.000)  1.000(0.000)  1.000(0.000)  1.000(0.000) 
+PRI_Score                 0.360(0.000) -0.514(0.000)         N/A           N/A    0.832(0.000)  0.745(0.000)  0.687(0.000)  0.360(0.000)  0.514(0.000)         N/A    0.832(0.000)  0.608(0.000)  1.000(0.000)  1.000(0.000)  1.000(0.000) 
+PRI_Scale_1_5             0.360(0.000) -0.514(0.000)         N/A           N/A    0.832(0.000)  0.745(0.000)  0.687(0.000)  0.360(0.000)  0.514(0.000)         N/A    0.832(0.000)  0.608(0.000)  1.000(0.000)  1.000(0.000)  1.000(0.000) 
+
+KEY FINDINGS
+----------------------------------------
+Strongest correlations (|r| > 0.3):
+  PRI_Score_Enhanced ↔ PRI_Score: r=1.000 (very strong positive)
+  PRI_Score_Enhanced ↔ PRI_Scale_1_5: r=1.000 (very strong positive)
+  LLM_Judge_Score ↔ LLM_anthropic_claude_sonnet_4: r=0.938 (very strong positive)
+  LLM_anthropic_claude_sonnet_4 ↔ LLM_Judge_Norm: r=0.938 (very strong positive)
+  LLM_Judge_Score ↔ LLM_openai_gpt_4o_mini: r=0.902 (very strong positive)
+  LLM_openai_gpt_4o_mini ↔ LLM_Judge_Norm: r=0.902 (very strong positive)
+  LowQualityTag_Norm ↔ PRI_Score_Heuristic: r=0.889 (very strong positive)
+  LowQualityTag_Perc ↔ PRI_Score_Heuristic: r=-0.889 (very strong negative)
+  LLM_Judge_Norm ↔ PRI_Score_Enhanced: r=0.840 (very strong positive)
+  LLM_Judge_Norm ↔ PRI_Score: r=0.840 (very strong positive)
+
+LLM JUDGE INTER-RATER RELIABILITY ANALYSIS
+--------------------------------------------------
+Participants with LLM judge scores: 822
+Individual LLM models: 2
+
+Individual model statistics:
+  anthropic/claude/sonnet/4     : n=866, mean=0.671, std=0.169, range=[0.100, 0.950]
+  openai/gpt/4o/mini            : n=832, mean=0.716, std=0.137, range=[0.000, 0.900]
+
+Inter-rater correlations (Pearson):
+  anthropic/claude/sonnet/4 ↔ openai/gpt/4o/mini: r=0.690
+  Mean inter-rater correlation: r=0.690
+  Reliability assessment: Moderate agreement
+  Cronbach's Alpha: 0.807
+                     (Good internal consistency)
+
+LLM JUDGE ANALYSIS
+----------------------------------------
+LLM Judge correlations with other metrics:
+  LLM_Judge_Norm           : r= 1.000 (very strong)
+  LLM_anthropic_claude_sonnet_4: r= 0.938 (very strong)
+  LLM_openai_gpt_4o_mini   : r= 0.902 (very strong)
+  PRI_Score_Enhanced       : r= 0.840 (very strong)
+  PRI_Score                : r= 0.840 (very strong)
+  PRI_Scale_1_5            : r= 0.840 (very strong)
+  PRI_Score_Heuristic      : r= 0.194 (weak)
+  LowQualityTag_Perc       : r=-0.184 (weak)
+  LowQualityTag_Norm       : r= 0.184 (weak)
+  Duration_Norm            : r= 0.075 (weak)
+  Duration_seconds         : r= 0.018 (weak)
+
+*** KEY CORRELATION HIGHLIGHT ***
+Heuristic-Only PRI vs LLM Judge: r=0.194
+Interpretation: MINIMAL agreement - LLM judge measures distinct quality dimensions
+This correlation shows how well traditional heuristics predict LLM-assessed earnestness.
+
+================================================================================
