@@ -11,7 +11,7 @@ Save the research questions in the file GD[N]_research_questions.md.
 
 # Prompt for generating Human Readable Survey
 
-Given the survey questions shown in the attached GD[N]_discussion_guide.csv, generate a human-readable version of the survey in markdown format as a numbered list of the survey questions or text ('speaks') and any options provided for each question, in precisely this style:
+Given the survey questions shown in the associated Data/GD[N]/GD[N]_discussion_guide.csv, generate a human-readable version of the survey in markdown format as a numbered list of the survey questions or text ('speaks') and any options provided for each question, in precisely this style:
 
 ```
 1. Please select your preferred language:
@@ -84,9 +84,30 @@ Given the survey questions shown in the attached GD[N]_discussion_guide.csv, gen
 Do not list out all individual country options.
 
 
-Save this file to GD[N]_survey_questions.md.
+Save this file to Data/GD[N]/GD[N]_survey_human_readable.md.
 
 ----
+
+Create a new file, GD[N]_question_id_mapping.csv with the following exact columns: human_readable_id, uuid, question_text. For each question in Data/GD[N]/GD[N]_survey_human_readable.md, identify the human_readable_id from the number given to each question. Then identify the same unique question (by matching - or very nearly matching, there may be inconsistent spacing or newline formatting) in Data/GD[N]/GD[N]_aggregate_standardized.csv, and identify the corresponding unique Question ID (uuid).
+
+Where there are any "Branch" questions (producing "Branch A", "Branch B", or "Branch C" questions), they will be identifiable by question text that starts with "Branch A - [Question text]" for example: "Branch A - What specific thing(s) did the AI say or do that gave you the impression that it understood...". And the question for which they are "branching" *from* is identified by a column header in GD[N]_aggregate_standardized.csv that looks like "Branches ([Question text])" where [Question text] is the question for which this particular Response row (and therefore the question that is being responded to) is the question that *this* row's Question Id branched *from* IF the value in this column is not blank - or, more precisely, to validate - if the value contains the text "Branch [X]" where X is the [A/B/C] branch identifier for this particular branch. For example, the column in GD4_aggregate_standardized.csv whose header is "Branches (Have you ever felt an AI truly understood your emotions or seemed conscious?)", has as values for the rows containing Question Text "Branch A - What specific thing(s) did the AI say or do that gave you the impression that it understood your emotions or seemed conscious?":  "Branch A - Yes".
+
+For these BRANCH questions, the human_readable_id should be of the form: [parent_question_id]_branch_[x], where [parent_question_id] is the human_readable_id of the question they branched from, and [x] is one of: a, b, or c depending on the branch letter identified.
+
+For example: the human_readable_ids for the branches of Question 145 in GD4_question_id_mapping.csv look like this:
+
+145,2c1c70c6-2f75-43ee-b568-ece520f52a44,"Overall, do you feel your views on human-AI relationships have changed as a result of participating in this survey (including thinking about the questions and seeing other participants' responses)?"
+145_branch_a,e5420a86-e0e0-407a-a869-66fde0e83b5c,"Branch A - How have your views become more positive/optimistic toward human-AI relationships?"
+145_branch_b,087c73f7-a163-4146-b988-a7c0dbad188e,"Branch B - How have your views become more negative/cautious toward human-AI relationships?"
+145_branch_c,9faef71d-ceae-49ad-8eee-63bd39745a6c,"Branch C - You indicated your views on human-AI relationships didn't shift in a simple positive or negative way (they may have remained the same, become more complex, or you're still reflecting). Could you briefly share any final thoughts or reflections you have about your current perspective after completing this survey?"
+
+Finally, after confirming the question id mapping csv looks correct,
+update Data/GD[N]/GD[N]_survey_human_readable.md at only the specific locations to include any missing branch questions included in the question_id_mapping, using the exact question_text included in the question_id_mapping.csv.
+
+------
+
+
+
 
 # Prompt for Developing Investigation Questions
 

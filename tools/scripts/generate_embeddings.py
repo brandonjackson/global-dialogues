@@ -419,7 +419,7 @@ class EmbeddingGenerator:
         # Display summary and get confirmation
         total_tokens = remaining_responses * self.avg_tokens_per_response
         print("\n" + "="*60)
-        print(f"EMBEDDING GENERATION SUMMARY FOR GD{self.gd_number}")
+        print(f"EMBEDDING GENERATION SUMMARY FOR {self.gd_identifier}")
         print("="*60)
         print(f"Total responses to embed: {self.total_responses:,}")
         if completed_questions:
