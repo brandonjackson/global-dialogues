@@ -626,11 +626,8 @@ def create_database(gd_number: int, force: bool = False):
                 uuid = row['uuid']
                 q_text = row['question_text'].strip()
                 
-                # Create mapping - add Q prefix only if not already present
-                if q_num.startswith('Q'):
-                    q_id = q_num  # Already has Q prefix (like Q114_branch_a)
-                else:
-                    q_id = f"Q{q_num}"  # Add Q prefix for regular numbers
+                # Create mapping - always add Q prefix since CSV no longer has it
+                q_id = f"Q{q_num}"  # Add Q prefix for all question IDs
                 
                 # Map both full text and UUID to question ID
                 question_mapping[q_text] = q_id
