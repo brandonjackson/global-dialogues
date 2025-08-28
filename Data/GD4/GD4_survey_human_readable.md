@@ -751,6 +751,10 @@
      - Yes
      - No
 
+114_branch_a. Branch A - What specific thing(s) did the AI say or do that gave you the impression that it understood your emotions or seemed conscious?
+
+114_branch_b. Branch B - What specific thing(s) would the AI need to say or do to give you the impression that it understood your emotions or seemed conscious?
+
 115. Looking 10-20 years into the future, if AI becomes deeply involved in people's personal relationships, what are your greatest hopes for its positive impact on society? Select up to three options that best represent your hopes. (If you select 'I don't have strong hopes for positive impact,' please do not select other options.)
      - Significant reduction in loneliness
      - More accessible mental health support
@@ -942,6 +946,12 @@
      - Yes, my views have become significantly more negative/cautious.
      - My views have changed, but in more complex ways (e.g., more nuanced, or positive on some aspects and negative on others).
      - Not sure / It's hard to say.
+
+145_branch_a. Branch A - How have your views become more positive/optimistic toward human-AI relationships?
+
+145_branch_b. Branch B - How have your views become more negative/cautious toward human-AI relationships?
+
+145_branch_c. Branch C - You indicated your views on human-AI relationships didn't shift in a simple positive or negative way (they may have remained the same, become more complex, or you're still reflecting). Could you briefly share any final thoughts or reflections you have about your current perspective after completing this survey?
 
 146. Thanks so much for your time and thoughtfulness. We genuinely appreciate it. We have a few more simple poll questions before you go.
 
