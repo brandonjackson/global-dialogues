@@ -26,6 +26,7 @@ import numpy as np
 from pathlib import Path
 import sys
 import re
+from .lib.analysis_utils import parse_gd_identifier, validate_gd_directory
 import json
 
 # Constants for file paths
@@ -232,14 +233,14 @@ def create_column_mappings_table(conn, cursor, df_aggregate, column_mapping):
     conn.commit()
     print("  ✓ Created column mappings table for traceability")
 
-def create_database(gd_number: int, force: bool = False):
+def create_database(gd_identifier: int, force: bool = False):
     """Create SQLite database for a specific Global Dialogue with improvements."""
     
     # Define paths
     base_dir = Path(__file__).parent.parent.parent
-    data_dir = base_dir / f"Data/GD{gd_number}"
-    output_dir = base_dir / f"analysis_output/GD{gd_number}"
-    db_path = base_dir / f"Data/GD{gd_number}/GD{gd_number}.db"
+    data_dir = base_dir / f"Data/{gd_identifier}"
+    output_dir = base_dir / f"analysis_output/{gd_identifier}"
+    db_path = base_dir / f"Data/{gd_identifier}/{gd_identifier}.db"
     
     # Check if database exists
     if db_path.exists():
@@ -251,7 +252,7 @@ def create_database(gd_number: int, force: bool = False):
             db_path.unlink()
     
     # Check required files exist
-    aggregate_file = data_dir / f"GD{gd_number}_aggregate_standardized.csv"
+    aggregate_file = data_dir / f"{gd_identifier}_aggregate_standardized.csv"
     if not aggregate_file.exists():
         print(f"Error: {aggregate_file} not found. Run preprocessing first.")
         sys.exit(1)
@@ -381,7 +382,7 @@ def create_database(gd_number: int, force: bool = False):
     """)
     
     # Load and add PRI scores if available
-    pri_file = output_dir / f"pri/GD{gd_number}_pri_scores.csv"
+    pri_file = output_dir / f"pri/{gd_identifier}_pri_scores.csv"
     if pri_file.exists():
         print(f"Loading PRI scores from {pri_file}")
         df_pri = pd.read_csv(pri_file)
@@ -583,8 +584,8 @@ def create_database(gd_number: int, force: bool = False):
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_response_tags_tag ON response_tags(tag_id)")
     
     # Load and process participant-level responses if available
-    participants_file = data_dir / f"GD{gd_number}_participants.csv"
-    question_id_mapping_file = data_dir / f"GD{gd_number}_question_id_mapping.csv"
+    participants_file = data_dir / f"{gd_identifier}_participants.csv"
+    question_id_mapping_file = data_dir / f"{gd_identifier}_question_id_mapping.csv"
     
     if participants_file.exists() and question_id_mapping_file.exists():
         print(f"Loading participant responses from {participants_file}")
@@ -1155,13 +1156,16 @@ def create_database(gd_number: int, force: bool = False):
     print(f"\nDatabase saved to: {db_path}")
 
 def main():
-    parser = argparse.ArgumentParser(description="Create improved SQLite database for Global Dialogues data")
-    parser.add_argument("gd_number", type=int, help="Global Dialogue number (e.g., 1, 2, 3, 4, 5)")
+    parser = argparse.ArgumentParser(description="Create SQLite database for Global Dialogues data")
+    parser.add_argument("gd_number", type=str, help="Global Dialogue identifier (e.g., '1', '2', '6UK', '6_UK')")
     parser.add_argument("--force", action="store_true", help="Force recreation of database if it exists")
     
     args = parser.parse_args()
     
-    create_database(args.gd_number, args.force)
+    gd_identifier = parse_gd_identifier(args.gd_number)
+    validate_gd_directory(gd_identifier)
+    
+    create_database(gd_identifier, args.force)
 
 if __name__ == "__main__":
     main()

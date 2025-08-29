@@ -14,6 +14,7 @@ from urllib.parse import urlparse
 import re
 import hashlib
 import time
+from lib.analysis_utils import parse_gd_identifier, validate_gd_directory
 
 # File URLs - Update these when hosting changes
 # Format: GD number -> (file_size_bytes, direct_download_url, gdrive_url)
@@ -36,9 +37,9 @@ EMBEDDING_FILES = {
 }
 
 # File paths to save embeddings to
-def get_embedding_path(gd_number):
+def get_embedding_path(gd_identifier):
     """Generate file path for a specific GD embedding file."""
-    return os.path.join("Data", f"GD{gd_number}", f"GD{gd_number}_embeddings.json")
+    return os.path.join("Data", gd_identifier, f"{gd_identifier}_embeddings.json")
 
 # Progress bar for downloads
 def show_progress(block_num, block_size, total_size):
@@ -459,8 +460,8 @@ Examples:
 """
     )
     
-    parser.add_argument('gd_numbers', type=int, nargs='*', choices=list(EMBEDDING_FILES.keys()),
-                      help='Global Dialogue number(s) to download embeddings for')
+    parser.add_argument('gd_numbers', type=str, nargs='*', 
+                      help='Global Dialogue identifier(s) to download embeddings for (e.g., "1", "2", "6UK")')
     parser.add_argument('--all', action='store_true', 
                       help='Download embeddings for all available GD numbers')
     parser.add_argument('--force', action='store_true',
@@ -479,7 +480,7 @@ Examples:
     
     # Handle --all flag
     if args.all:
-        gd_numbers = list(EMBEDDING_FILES.keys())
+        gd_numbers = [str(k) for k in list(EMBEDDING_FILES.keys())]
     else:
         gd_numbers = args.gd_numbers
     
@@ -497,12 +498,30 @@ Examples:
         return
     
     # Download each requested embedding file
-    for gd_num in gd_numbers:
-        print(f"\nProcessing GD{gd_num} embeddings...")
-        success = download_embedding(gd_num, force=args.force)
-        
-        if success and args.validate:
-            validate_embeddings_json(get_embedding_path(gd_num))
+    for gd_input in gd_numbers:
+        try:
+            gd_identifier = parse_gd_identifier(gd_input)
+            # For now, extract the numeric part for the old URL lookup
+            # This will need to be updated if we support embeddings for custom identifiers
+            if gd_identifier.startswith('GD'):
+                gd_numeric = gd_identifier[2:] # Remove 'GD' prefix
+                try:
+                    gd_num = int(gd_numeric)
+                except ValueError:
+                    print(f"Warning: Custom identifier {gd_identifier} not supported for embeddings download yet. Skipping.")
+                    continue
+            else:
+                print(f"Warning: Invalid identifier format {gd_input}. Skipping.")
+                continue
+                
+            print(f"\nProcessing {gd_identifier} embeddings...")
+            success = download_embedding(gd_num, force=args.force)
+            
+            if success and args.validate:
+                validate_embeddings_json(get_embedding_path(gd_identifier))
+        except Exception as e:
+            print(f"Error processing {gd_input}: {e}")
+            continue
 
 if __name__ == "__main__":
     main()

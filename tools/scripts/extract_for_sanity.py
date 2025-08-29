@@ -2,15 +2,16 @@ import pandas as pd
 import argparse
 import os
 import re
+from lib.analysis_utils import parse_gd_identifier, validate_gd_directory
 
-def extract_sanity_data(gd_number):
+def extract_sanity_data(gd_identifier):
     """
-    Extracts specified columns from the GD<N>_aggregate_standardized.csv file,
+    Extracts specified columns from the <GD_ID>_aggregate_standardized.csv file,
     filters for 'Ask Opinion' questions, renames columns, and saves to
-    GD<N>_sanity_upload.csv.
+    <GD_ID>_sanity_upload.csv.
     """
-    input_file = os.path.join("Data", f"GD{gd_number}", f"GD{gd_number}_aggregate_standardized.csv")
-    output_file = os.path.join("Data", f"GD{gd_number}", f"GD{gd_number}_sanity_upload.csv")
+    input_file = os.path.join("Data", gd_identifier, f"{gd_identifier}_aggregate_standardized.csv")
+    output_file = os.path.join("Data", gd_identifier, f"{gd_identifier}_sanity_upload.csv")
 
     try:
         df = pd.read_csv(input_file)
@@ -65,7 +66,10 @@ def extract_sanity_data(gd_number):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Extract specific columns for sanity checking from GD<N>_aggregate_standardized.csv.")
-    parser.add_argument("gd_number", type=int, help="The Global Dialogue number (e.g., 3).")
+    parser.add_argument("gd_number", type=str, help="The Global Dialogue identifier (e.g., '3', '6UK', '6_UK').")
     args = parser.parse_args()
 
-    extract_sanity_data(args.gd_number) 
+    gd_identifier = parse_gd_identifier(args.gd_number)
+    validate_gd_directory(gd_identifier)
+    
+    extract_sanity_data(gd_identifier) 

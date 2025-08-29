@@ -5,6 +5,7 @@ import argparse
 import logging
 import re
 from pathlib import Path
+from lib.analysis_utils import parse_gd_identifier, validate_gd_directory
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -148,15 +149,15 @@ def safe_read_csv(path, **kwargs):
 
 # --- Core Logic Functions ---
 
-def load_and_prep_data(gd_number, data_dir):
+def load_and_prep_data(gd_identifier, data_dir):
     """Loads and preprocesses all necessary input files."""
     logging.info("Loading and preparing data...")
     paths = {
-        'labels': data_dir / f"GD{gd_number}" / "tags" / f"all_thought_labels.csv",
-        'categories': data_dir / f"GD{gd_number}" / "tags" / f"all_tag_categories.csv",
-        'participants': data_dir / f"GD{gd_number}" / f"GD{gd_number}_participants.csv",
-        'aggregate': data_dir / f"GD{gd_number}" / f"GD{gd_number}_aggregate_standardized.csv",
-        'discussion_guide': data_dir / f"GD{gd_number}" / f"GD{gd_number}_discussion_guide.csv", # Needed to identify segment columns
+        'labels': data_dir / gd_identifier / "tags" / f"all_thought_labels.csv",
+        'categories': data_dir / gd_identifier / "tags" / f"all_tag_categories.csv",
+        'participants': data_dir / gd_identifier / f"{gd_identifier}_participants.csv",
+        'aggregate': data_dir / gd_identifier / f"{gd_identifier}_aggregate_standardized.csv",
+        'discussion_guide': data_dir / gd_identifier / f"{gd_identifier}_discussion_guide.csv", # Needed to identify segment columns
     }
 
     # Check if files exist
@@ -551,15 +552,18 @@ def main(args):
     """Main execution flow."""
     data_dir = Path("./Data") # Assumes script is run from workspace root
     output_base_dir = Path("./analysis_output")
-    output_dir = output_base_dir / f"GD{args.gd_number}" / "tags"
+    gd_identifier = parse_gd_identifier(args.gd_number)
+    validate_gd_directory(gd_identifier)
+    
+    output_dir = output_base_dir / gd_identifier / "tags"
     output_dir.mkdir(parents=True, exist_ok=True) # Ensure output directory exists
 
-    logging.info(f"Starting tag analysis for GD{args.gd_number}")
+    logging.info(f"Starting tag analysis for {gd_identifier}")
     logging.info(f"Data Directory: {data_dir.resolve()}")
     logging.info(f"Output Directory: {output_dir.resolve()}")
 
     # 1. Load and Prepare Data
-    prepared_data, segment_columns = load_and_prep_data(args.gd_number, data_dir)
+    prepared_data, segment_columns = load_and_prep_data(gd_identifier, data_dir)
 
     if prepared_data is None:
         logging.error("Data loading failed. Exiting.")
@@ -569,12 +573,12 @@ def main(args):
     report_path = output_dir / "tag_analysis_report.csv"
     calculate_unified_report(prepared_data, segment_columns, report_path)
 
-    logging.info(f"Tag analysis for GD{args.gd_number} completed.")
+    logging.info(f"Tag analysis for {gd_identifier} completed.")
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Analyze Remesh tag data for Global Dialogues.")
-    parser.add_argument("--gd_number", type=int, required=True, help="Global Dialogue cadence number (e.g., 3).")
+    parser.add_argument("--gd_number", type=str, required=True, help="Global Dialogue identifier (e.g., '3', '6UK', '6_UK').")
     # Add other arguments as needed (e.g., input/output directory overrides)
 
     args = parser.parse_args()

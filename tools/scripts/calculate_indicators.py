@@ -7,7 +7,7 @@ import textwrap
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from lib.analysis_utils import load_standardized_data, parse_percentage
+from lib.analysis_utils import load_standardized_data, parse_percentage, parse_gd_identifier, validate_gd_directory
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -228,7 +228,7 @@ def main():
     
     # Input specification
     input_group = parser.add_mutually_exclusive_group(required=True)
-    input_group.add_argument("--gd_number", type=int, help="Global Dialogue cadence number (e.g., 1, 2, 3). Constructs default paths.")
+    input_group.add_argument("--gd_number", type=str, help="Global Dialogue identifier (e.g., '1', '2', '6UK', '6_UK'). Constructs default paths.")
     input_group.add_argument("--standardized_csv", help="Explicit path to the standardized aggregate CSV file.")
 
     # Required codesheet path
@@ -250,17 +250,16 @@ def main():
     codesheet_path = args.indicator_codesheet # Use provided or default
 
     if args.gd_number:
-        gd_num = args.gd_number
-        gd_identifier = f"GD{gd_num}"
-        data_dir = os.path.join("Data", gd_identifier)
+        gd_identifier = parse_gd_identifier(args.gd_number)
+        data_dir = validate_gd_directory(gd_identifier)
         output_base_dir = os.path.join("analysis_output", gd_identifier)
 
         std_csv_path = os.path.join(data_dir, f"{gd_identifier}_aggregate_standardized.csv")
         output_path = args.output_dir if args.output_dir else os.path.join(output_base_dir, "indicators") # Default output subfolder
 
-        logging.info(f"Using GD number {gd_num} to determine paths:")
+        logging.info(f"Using GD number {args.gd_number} to determine paths:")
         if not os.path.exists(std_csv_path):
-            parser.error(f"Standardized input file not found for GD{gd_num}. Expected at: {std_csv_path}")
+            parser.error(f"Standardized input file not found for {gd_identifier}. Expected at: {std_csv_path}")
 
     else: # Explicit paths
         if not args.standardized_csv or not args.output_dir:

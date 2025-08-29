@@ -21,6 +21,12 @@ Output:
 import pandas as pd
 import numpy as np
 import argparse
+from pathlib import Path
+import sys
+import os
+# Add the tools/scripts directory to Python path for imports
+sys.path.append(os.path.join(os.path.dirname(__file__)))
+from lib.analysis_utils import parse_gd_identifier, validate_gd_directory
 import time
 import sys
 import os
@@ -78,18 +84,18 @@ class LLMJudgeConfig(BaseModel):
 def parse_args():
     """Parse command-line arguments."""
     parser = argparse.ArgumentParser(description='Calculate Participant Reliability Index (PRI) scores.')
-    parser.add_argument('--gd_number', type=int, required=True, help='The Global Dialogue number (e.g. 1, 2, 3)')
+    parser.add_argument('--gd_number', type=str, required=True, help='Global Dialogue identifier (e.g. "1", "2", "6UK", "6_UK")')
     parser.add_argument('--debug', action='store_true', help='Enable verbose debug output')
     parser.add_argument('--limit', type=int, help='Limit processing to first N participants (for testing)', default=None)
     parser.add_argument('--llm-judge', action='store_true', help='Enable LLM judge assessment (requires API key and costs $)')
     return parser.parse_args()
 
 
-def get_config(gd_number):
-    """Define file paths and PRI parameters based on GD number."""
-    data_dir = Path(f"Data/GD{gd_number}")
+def get_config(gd_identifier):
+    """Define file paths and PRI parameters based on GD identifier."""
+    data_dir = Path(f"Data/{gd_identifier}")
     tags_dir = data_dir / "tags"
-    output_dir = Path(f"analysis_output/GD{gd_number}/pri")
+    output_dir = Path(f"analysis_output/{gd_identifier}/pri")
     
     # Ensure directories exist
     if not data_dir.exists():
@@ -103,14 +109,14 @@ def get_config(gd_number):
         'DATA_DIR': str(data_dir),
         'TAGS_DIR': str(tags_dir),
         'OUTPUT_DIR': str(output_dir),
-        'VERBATIM_MAP_PATH': str(data_dir / f"GD{gd_number}_verbatim_map.csv"),
-        'BINARY_PATH': str(data_dir / f"GD{gd_number}_binary.csv"),
-        'PREFERENCE_PATH': str(data_dir / f"GD{gd_number}_preference.csv"),
-        'AGGREGATE_STD_PATH': str(data_dir / f"GD{gd_number}_aggregate_standardized.csv"),
-        'SEGMENT_COUNTS_PATH': str(data_dir / f"GD{gd_number}_segment_counts_by_question.csv"),
+        'VERBATIM_MAP_PATH': str(data_dir / f"{gd_identifier}_verbatim_map.csv"),
+        'BINARY_PATH': str(data_dir / f"{gd_identifier}_binary.csv"),
+        'PREFERENCE_PATH': str(data_dir / f"{gd_identifier}_preference.csv"),
+        'AGGREGATE_STD_PATH': str(data_dir / f"{gd_identifier}_aggregate_standardized.csv"),
+        'SEGMENT_COUNTS_PATH': str(data_dir / f"{gd_identifier}_segment_counts_by_question.csv"),
         'THOUGHT_LABELS_PATH': str(tags_dir / "all_thought_labels.csv"),
-        'DISCUSSION_GUIDE_PATH': str(data_dir / f"GD{gd_number}_discussion_guide.csv"),
-        'OUTPUT_PATH': str(output_dir / f"GD{gd_number}_pri_scores.csv"),
+        'DISCUSSION_GUIDE_PATH': str(data_dir / f"{gd_identifier}_discussion_guide.csv"),
+        'OUTPUT_PATH': str(output_dir / f"{gd_identifier}_pri_scores.csv"),
         
         # PRI Parameters (per documentation)
         'ASC_HIGH_THRESHOLD': 0.70,                         # Agreement rate for strong agreement
@@ -1571,7 +1577,7 @@ def normalize_and_calculate_pri(pri_signals_df, config, debug=False):
     return pri_signals_df
 
 
-def create_pri_distribution_chart(pri_signals_df, gd_number, config, debug=False):
+def create_pri_distribution_chart(pri_signals_df, gd_identifier, config, debug=False):
     """
     Create a comprehensive PRI score distribution visualization.
     
@@ -1608,7 +1614,7 @@ def create_pri_distribution_chart(pri_signals_df, gd_number, config, debug=False
     
     # Create the figure and subplots
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 10), height_ratios=[3, 1])
-    fig.suptitle(f'Participant Reliability Index (PRI) Distribution - Global Dialogue {gd_number}', 
+    fig.suptitle(f'Participant Reliability Index (PRI) Distribution - {gd_identifier}', 
                  fontsize=16, fontweight='bold', y=0.95)
     
     # Main histogram
@@ -1669,7 +1675,7 @@ def create_pri_distribution_chart(pri_signals_df, gd_number, config, debug=False
     plt.subplots_adjust(top=0.92, bottom=0.12)
     
     # Save the chart
-    chart_path = f"{config['OUTPUT_DIR']}/GD{gd_number}_pri_distribution.png"
+    chart_path = f"{config['OUTPUT_DIR']}/{gd_identifier}_pri_distribution.png"
     plt.savefig(chart_path, dpi=300, bbox_inches='tight', facecolor='white')
     
     if debug:
@@ -2406,12 +2412,13 @@ def main():
     
     # Parse command-line arguments
     args = parse_args()
-    gd_number = args.gd_number
+    gd_identifier = parse_gd_identifier(args.gd_number)
+    validate_gd_directory(gd_identifier)
     debug = args.debug
     participant_limit = args.limit
     enable_llm_judge = getattr(args, 'llm_judge', False)
     
-    print(f"Calculating PRI for Global Dialogue {gd_number}")
+    print(f"Calculating PRI for {gd_identifier}")
     print(f"Debug mode: {'Enabled' if debug else 'Disabled'}")
     print(f"LLM judge: {'Enabled' if enable_llm_judge else 'Disabled'}")
     if participant_limit:
@@ -2427,7 +2434,7 @@ def main():
     
     # Get configuration for this GD
     try:
-        config = get_config(gd_number)
+        config = get_config(gd_identifier)
     except Exception as e:
         print(f"Error in configuration: {e}")
         sys.exit(1)
@@ -2458,7 +2465,7 @@ def main():
     # 3b. Comprehensive correlation report for all metrics
     try:
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-        correlation_report_path = f"{config['OUTPUT_DIR']}/GD{gd_number}_comprehensive_correlation_report_{timestamp}.txt"
+        correlation_report_path = f"{config['OUTPUT_DIR']}/{gd_identifier}_comprehensive_correlation_report_{timestamp}.txt"
         print(f"Creating comprehensive correlation report...")
         comprehensive_results = create_comprehensive_correlation_report(pri_signals_df, correlation_report_path, debug)
     except Exception as e:
@@ -2485,7 +2492,7 @@ def main():
     
     # 7. Generate PRI distribution visualization
     try:
-        chart_path = create_pri_distribution_chart(pri_signals_df, gd_number, config, debug)
+        chart_path = create_pri_distribution_chart(pri_signals_df, gd_identifier, config, debug)
         if chart_path:
             print(f"PRI distribution chart saved to {chart_path}")
     except Exception as e:
@@ -2503,7 +2510,7 @@ def main():
         discussion_guide_df = pd.read_csv(config['DISCUSSION_GUIDE_PATH'], encoding='utf-8-sig')
         
         # Export using outliers method by default
-        unreliable_csv_path = f"{config['OUTPUT_DIR']}/GD{gd_number}_unreliable_participants_outliers.csv"
+        unreliable_csv_path = f"{config['OUTPUT_DIR']}/{gd_identifier}_unreliable_participants_outliers.csv"
         export_path = export_unreliable_participants_csv(
             pri_signals_df, verbatim_map_df, discussion_guide_df, 
             unreliable_csv_path, method='outliers', debug=debug
@@ -2513,7 +2520,7 @@ def main():
             print(f"Unreliable participants (outliers) CSV saved to {export_path}")
         
         # Also export using 10th percentile method
-        unreliable_csv_path_percentile = f"{config['OUTPUT_DIR']}/GD{gd_number}_unreliable_participants_bottom10pct.csv"
+        unreliable_csv_path_percentile = f"{config['OUTPUT_DIR']}/{gd_identifier}_unreliable_participants_bottom10pct.csv"
         export_path_percentile = export_unreliable_participants_csv(
             pri_signals_df, verbatim_map_df, discussion_guide_df, 
             unreliable_csv_path_percentile, method='percentile', threshold=10, debug=debug

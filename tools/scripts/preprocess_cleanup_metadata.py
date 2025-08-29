@@ -4,6 +4,7 @@ from pathlib import Path
 import pandas as pd
 import csv # For more granular reading if needed
 import shutil # For replacing the file
+from lib.analysis_utils import parse_gd_identifier, validate_gd_directory
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -299,33 +300,33 @@ def clean_summary_csv(file_path):
          logging.error(f"Missing expected column during transformation of {file_path}: {e}", exc_info=True)
 
 def main(args):
-    gd_number = args.gd_number
-    data_dir = Path("./Data") / f"GD{gd_number}"
-
-    if not data_dir.is_dir():
-        logging.error(f"Data directory not found: {data_dir}")
+    gd_identifier = parse_gd_identifier(args.gd_number)
+    try:
+        data_dir = Path(validate_gd_directory(gd_identifier))
+    except FileNotFoundError as e:
+        logging.error(str(e))
         return
 
-    logging.info(f"Starting metadata cleanup for GD{gd_number} in {data_dir}")
+    logging.info(f"Starting metadata cleanup for {gd_identifier} in {data_dir}")
 
     # Define files to check and their key header markers
     # Exclude aggregate.csv (handled by preprocess_aggregate.py)
     # Exclude *_standardized.csv, *_report.csv etc.
     files_to_clean = {
-        f"GD{gd_number}_participants.csv": ['Participant Id', 'Sample Provider Id'],
-        f"GD{gd_number}_discussion_guide.csv": ['Item type (dropdown)', 'Content'],
-        f"GD{gd_number}_binary.csv": ['Question ID', 'Participant ID', 'Thought ID', 'Vote'],
-        f"GD{gd_number}_preference.csv": ['Question ID', 'Participant ID', 'Thought A ID', 'Thought B ID', 'Vote'],
-        f"GD{gd_number}_verbatim_map.csv": ['Question ID', 'Question Text', 'Participant ID', 'Thought ID', 'Thought Text'],
-        f"GD{gd_number}_summary.csv": ['Conversation ID', 'Conversation Title', 'Questions Selected'],
+        f"{gd_identifier}_participants.csv": ['Participant Id', 'Sample Provider Id'],
+        f"{gd_identifier}_discussion_guide.csv": ['Item type (dropdown)', 'Content'],
+        f"{gd_identifier}_binary.csv": ['Question ID', 'Participant ID', 'Thought ID', 'Vote'],
+        f"{gd_identifier}_preference.csv": ['Question ID', 'Participant ID', 'Thought A ID', 'Thought B ID', 'Vote'],
+        f"{gd_identifier}_verbatim_map.csv": ['Question ID', 'Question Text', 'Participant ID', 'Thought ID', 'Thought Text'],
+        f"{gd_identifier}_summary.csv": ['Conversation ID', 'Conversation Title', 'Questions Selected'],
         # Add other raw Remesh files if necessary
     }
 
     # Hardcoded header indices for known problematic files (0-based)
     hardcoded_headers = {
-        f"GD{gd_number}_participants.csv": 11,
-        f"GD{gd_number}_discussion_guide.csv": 12,
-        # f"GD{gd_number}_summary.csv": 7 # Removed - handled separately
+        f"{gd_identifier}_participants.csv": 11,
+        f"{gd_identifier}_discussion_guide.csv": 12,
+        # f"{gd_identifier}_summary.csv": 7 # Removed - handled separately
     }
 
     # --- Process standard files ---
@@ -390,7 +391,7 @@ def main(args):
             logging.warning(f"File not found, skipping: {file_path}")
 
     # --- Process the special summary.csv file ---
-    summary_filename = f"GD{gd_number}_summary.csv"
+    summary_filename = f"{gd_identifier}_summary.csv"
     summary_file_path = data_dir / summary_filename
     if summary_file_path.exists():
         logging.info(f"Processing special file: {summary_file_path}")
@@ -399,10 +400,10 @@ def main(args):
     else:
         logging.warning(f"File not found, skipping: {summary_file_path}")
 
-    logging.info(f"Metadata cleanup for GD{gd_number} completed.")
+    logging.info(f"Metadata cleanup for {gd_identifier} completed.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Remove initial metadata rows from raw Remesh CSV files, making the header the first line.")
-    parser.add_argument("--gd_number", type=int, required=True, help="Global Dialogue cadence number (e.g., 3).")
+    parser.add_argument("--gd_number", type=str, required=True, help="Global Dialogue identifier (e.g., '3', '6UK', '6_UK').")
     args = parser.parse_args()
     main(args) 

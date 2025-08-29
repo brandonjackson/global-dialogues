@@ -25,12 +25,13 @@ import argparse
 import sys
 import os
 from pathlib import Path
+from lib.analysis_utils import parse_gd_identifier, validate_gd_directory
 
 
 def parse_args():
     """Parse command-line arguments"""
     parser = argparse.ArgumentParser(description="Export unreliable participants based on existing PRI scores")
-    parser.add_argument("gd_number", type=int, help="Global Dialogue number (e.g., 1, 2, 3)")
+    parser.add_argument("gd_number", type=str, help="Global Dialogue identifier (e.g., '1', '2', '6UK', '6_UK')")
     parser.add_argument("--method", type=str, default="outliers", 
                        choices=["outliers", "percentile", "threshold"],
                        help="Method to identify unreliable participants (default: outliers)")
@@ -40,11 +41,11 @@ def parse_args():
     return parser.parse_args()
 
 
-def get_config(gd_number):
+def get_config(gd_identifier):
     """Get file paths for the specified Global Dialogue"""
     base_dir = Path(__file__).parent.parent.parent
-    data_dir = base_dir / "Data" / f"GD{gd_number}"
-    output_dir = base_dir / "analysis_output" / f"GD{gd_number}" / "pri"
+    data_dir = base_dir / "Data" / gd_identifier
+    output_dir = base_dir / "analysis_output" / gd_identifier / "pri"
     
     # Verify directories exist
     if not data_dir.exists():
@@ -55,9 +56,9 @@ def get_config(gd_number):
     config = {
         'DATA_DIR': str(data_dir),
         'OUTPUT_DIR': str(output_dir),
-        'PRI_SCORES_PATH': str(output_dir / f"GD{gd_number}_pri_scores.csv"),
-        'VERBATIM_MAP_PATH': str(data_dir / f"GD{gd_number}_verbatim_map.csv"),
-        'DISCUSSION_GUIDE_PATH': str(data_dir / f"GD{gd_number}_discussion_guide.csv"),
+        'PRI_SCORES_PATH': str(output_dir / f"{gd_identifier}_pri_scores.csv"),
+        'VERBATIM_MAP_PATH': str(data_dir / f"{gd_identifier}_verbatim_map.csv"),
+        'DISCUSSION_GUIDE_PATH': str(data_dir / f"{gd_identifier}_discussion_guide.csv"),
     }
     
     # Verify required files exist
@@ -255,12 +256,13 @@ def main():
     """Main execution function"""
     # Parse command-line arguments
     args = parse_args()
-    gd_number = args.gd_number
+    gd_identifier = parse_gd_identifier(args.gd_number)
+    validate_gd_directory(gd_identifier)
     method = args.method
     threshold = args.threshold
     debug = args.debug
     
-    print(f"Exporting unreliable participants for Global Dialogue {gd_number}")
+    print(f"Exporting unreliable participants for {gd_identifier}")
     print(f"Method: {method}")
     if threshold is not None:
         print(f"Threshold: {threshold}")
@@ -268,7 +270,7 @@ def main():
     
     # Get configuration for this GD
     try:
-        config = get_config(gd_number)
+        config = get_config(gd_identifier)
     except Exception as e:
         print(f"Error in configuration: {e}")
         sys.exit(1)
@@ -358,13 +360,13 @@ def main():
     
     # 10. Generate output filename
     if method == 'outliers':
-        output_filename = f"GD{gd_number}_unreliable_participants_outliers.csv"
+        output_filename = f"{gd_identifier}_unreliable_participants_outliers.csv"
     elif method == 'percentile':
         thresh_str = f"{threshold}pct" if threshold else "10pct"
-        output_filename = f"GD{gd_number}_unreliable_participants_bottom{thresh_str}.csv"
+        output_filename = f"{gd_identifier}_unreliable_participants_bottom{thresh_str}.csv"
     elif method == 'threshold':
         thresh_str = f"{threshold}" if threshold else "2.5"
-        output_filename = f"GD{gd_number}_unreliable_participants_threshold{thresh_str}.csv"
+        output_filename = f"{gd_identifier}_unreliable_participants_threshold{thresh_str}.csv"
     
     output_path = os.path.join(config['OUTPUT_DIR'], output_filename)
     
