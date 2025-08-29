@@ -3,10 +3,11 @@ import os
 import sys
 import csv
 import argparse
+from lib.analysis_utils import parse_gd_identifier, validate_gd_directory
 
 def main():
     parser = argparse.ArgumentParser(description='Preview CSV files in a GD directory.')
-    parser.add_argument('--gd_number', type=int, help='Global Dialogue cadence number (e.g., 1, 2, 3). Constructs default path.')
+    parser.add_argument('--gd_number', type=str, help='Global Dialogue identifier (e.g., "1", "2", "6UK", "6_UK"). Constructs default path.')
     parser.add_argument('--directory', help='Explicit directory path to preview (overrides --gd_number).')
     args = parser.parse_args()
     
@@ -14,7 +15,8 @@ def main():
     if args.directory:
         directory = args.directory
     elif args.gd_number:
-        directory = f"Data/GD{args.gd_number}"
+        gd_identifier = parse_gd_identifier(args.gd_number)
+        directory = validate_gd_directory(gd_identifier)
     else:
         parser.error("Either --gd_number or --directory must be specified.")
     

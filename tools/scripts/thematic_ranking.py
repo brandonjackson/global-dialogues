@@ -10,6 +10,7 @@ import warnings
 import uuid
 import argparse
 import sys
+from lib.analysis_utils import parse_gd_identifier, validate_gd_directory
 
 # --- Load Environment Variables --- Must be called early!
 load_dotenv()
@@ -66,10 +67,10 @@ def load_thematic_queries(queries_file=None):
         print(f"Error loading thematic queries from {queries_file}: {e}")
         return []
 
-def get_data_paths(gd_number):
-    """Get the appropriate file paths based on GD number."""
-    data_file_path = os.path.join("Data", f"GD{gd_number}", f"GD{gd_number}_embeddings.json")
-    output_dir = os.path.join("analysis_output", f"GD{gd_number}", "thematic_rankings")
+def get_data_paths(gd_identifier):
+    """Get the appropriate file paths based on GD identifier."""
+    data_file_path = os.path.join("Data", gd_identifier, f"{gd_identifier}_embeddings.json")
+    output_dir = os.path.join("analysis_output", gd_identifier, "thematic_rankings")
     return data_file_path, output_dir
 
 def get_embedding(text, model="text-embedding-3-small", dimensions=EXPECTED_EMBEDDING_DIM):
@@ -322,16 +323,20 @@ def save_thematic_rankings(all_rankings, output_dir=DEFAULT_OUTPUT_DIR, top_n=TO
 if __name__ == "__main__":
     # Add command line argument parsing
     parser = argparse.ArgumentParser(description='Run thematic ranking analysis on Global Dialogues data')
-    parser.add_argument('--gd', type=int, required=True,
-                      help='Global Dialogue number to analyze (1, 2, or 3)')
+    parser.add_argument('--gd', type=str, required=True,
+                      help='Global Dialogue identifier to analyze (e.g., \"1\", \"2\", \"6UK\", \"6_UK\")')
     parser.add_argument('--themes', type=str, 
                       help='Path to text file containing thematic queries (one per line)')
     args = parser.parse_args()
 
+    # Parse and validate GD identifier
+    gd_identifier = parse_gd_identifier(args.gd)
+    validate_gd_directory(gd_identifier)
+    
     # Get appropriate file paths
-    DATA_FILE_PATH, OUTPUT_DIR = get_data_paths(args.gd)
+    DATA_FILE_PATH, OUTPUT_DIR = get_data_paths(gd_identifier)
 
-    print(f"Loading data for GD{args.gd}...")
+    print(f"Loading data for {gd_identifier}...")
     survey_df = load_data_with_embeddings(DATA_FILE_PATH)
 
     if survey_df is not None:

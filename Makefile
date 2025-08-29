@@ -19,7 +19,7 @@ RESET := \033[0m
         generate-embeddings \
         run-thematic-ranking \
         pri pri-llm export-unreliable \
-        preview-csvs
+        preview-csvs survey-docs
 
 # Default target
 help:
@@ -61,7 +61,8 @@ help:
 	@echo "  $(GREEN)make db-connect GD=<N>$(RESET)    - Connect to SQLite database for GD<N>"
 	@echo ""
 	@echo "$(BLUE)Utilities:$(RESET)"
-	@echo "  $(GREEN)make preview-csvs GD=<N>$(RESET)  - Preview all CSV files in GD<N> directory"
+	@echo "  $(GREEN)make preview-csvs GD=<ID>$(RESET) - Preview all CSV files in GD<ID> directory"
+	@echo "  $(GREEN)make survey-docs GD=<ID>$(RESET)  - Generate human-readable survey and question ID mapping"
 	@echo "  $(GREEN)make clean$(RESET)                - Clean up cache and temporary files"
 
 # Preprocessing commands using variables
@@ -224,9 +225,9 @@ download-all-embeddings:
 # Generate embeddings using OpenAI API
 generate-embeddings:
 	@if [ -z "$(GD)" ]; then \
-		echo "$(RED)Error: Please specify GD number$(RESET)"; \
-		echo "$(YELLOW)Usage: make generate-embeddings GD=<N>$(RESET)"; \
-		echo "$(YELLOW)Example: make generate-embeddings GD=5$(RESET)"; \
+		echo "$(RED)Error: Please specify GD identifier$(RESET)"; \
+		echo "$(YELLOW)Usage: make generate-embeddings GD=<ID>$(RESET)"; \
+		echo "$(YELLOW)Examples: make generate-embeddings GD=5 or make generate-embeddings GD=6UK$(RESET)"; \
 		exit 1; \
 	fi
 	@if [ ! -f .env ]; then \
@@ -297,13 +298,27 @@ db-connect:
 # CSV preview using variables
 preview-csvs:
 	@if [ -z "$(GD)" ]; then \
-		echo "$(RED)Error: Please specify GD number$(RESET)"; \
-		echo "$(YELLOW)Usage: make preview-csvs GD=<N>$(RESET)"; \
-		echo "$(YELLOW)Example: make preview-csvs GD=3$(RESET)"; \
+		echo "$(RED)Error: Please specify GD identifier$(RESET)"; \
+		echo "$(YELLOW)Usage: make preview-csvs GD=<ID>$(RESET)"; \
+		echo "$(YELLOW)Examples: make preview-csvs GD=3 or make preview-csvs GD=6UK$(RESET)"; \
 		exit 1; \
 	fi
-	@echo "$(BLUE)Previewing CSV files in GD$(GD) directory...$(RESET)"
+	@echo "$(BLUE)Previewing CSV files in $(GD) directory...$(RESET)"
 	$(PYTHON) $(TOOLS_DIR)/preview_csvs.py --gd_number $(GD)
+
+# Generate human-readable survey documentation
+survey-docs:
+	@if [ -z "$(GD)" ]; then \
+		echo "$(RED)Error: Please specify GD identifier$(RESET)"; \
+		echo "$(YELLOW)Usage: make survey-docs GD=<ID>$(RESET)"; \
+		echo "$(YELLOW)Examples: make survey-docs GD=3 or make survey-docs GD=6UK$(RESET)"; \
+		exit 1; \
+	fi
+	@echo "$(BLUE)Generating survey documentation for $(GD)...$(RESET)"
+	$(PYTHON) $(TOOLS_DIR)/generate_survey_documentation.py --gd_number $(GD)
+	@echo "$(GREEN)Survey documentation generated successfully!$(RESET)"
+	@echo "  - Human-readable survey: Data/GD$(GD)/GD$(GD)_survey_human_readable.md"
+	@echo "  - Question ID mapping: Data/GD$(GD)/GD$(GD)_question_id_mapping.csv"
 
 # Utilities
 clean:

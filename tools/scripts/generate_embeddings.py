@@ -26,6 +26,7 @@ import numpy as np
 from typing import List, Dict, Any, Tuple
 from tqdm import tqdm
 from dotenv import load_dotenv
+from lib.analysis_utils import parse_gd_identifier, validate_gd_directory
 
 # Configure logging
 logging.basicConfig(
@@ -53,12 +54,12 @@ except ImportError:
 class EmbeddingGenerator:
     """Handles the generation of embeddings for Global Dialogues responses."""
     
-    def __init__(self, gd_number: int):
-        self.gd_number = gd_number
-        self.data_dir = Path("Data") / f"GD{gd_number}"
-        self.aggregate_file = self.data_dir / f"GD{gd_number}_aggregate.csv"
-        self.embeddings_file = self.data_dir / f"GD{gd_number}_embeddings.json"
-        self.checkpoint_file = self.data_dir / f"GD{gd_number}_embeddings_checkpoint.json"
+    def __init__(self, gd_identifier: str):
+        self.gd_identifier = gd_identifier
+        self.data_dir = Path("Data") / gd_identifier
+        self.aggregate_file = self.data_dir / f"{gd_identifier}_aggregate.csv"
+        self.embeddings_file = self.data_dir / f"{gd_identifier}_embeddings.json"
+        self.checkpoint_file = self.data_dir / f"{gd_identifier}_embeddings_checkpoint.json"
         
         # Initialize OpenAI client
         api_key = os.getenv("OPENAI_API_KEY")
@@ -418,7 +419,7 @@ class EmbeddingGenerator:
         # Display summary and get confirmation
         total_tokens = remaining_responses * self.avg_tokens_per_response
         print("\n" + "="*60)
-        print(f"EMBEDDING GENERATION SUMMARY FOR GD{self.gd_number}")
+        print(f"EMBEDDING GENERATION SUMMARY FOR {self.gd_identifier}")
         print("="*60)
         print(f"Total responses to embed: {self.total_responses:,}")
         if completed_questions:
@@ -474,15 +475,18 @@ def main():
     )
     parser.add_argument(
         "--gd_number",
-        type=int,
+        type=str,
         required=True,
-        help="Global Dialogue number (e.g., 5 for GD5)"
+        help="Global Dialogue identifier (e.g., '5', '6UK', '6_UK')"
     )
     
     args = parser.parse_args()
     
     try:
-        generator = EmbeddingGenerator(args.gd_number)
+        gd_identifier = parse_gd_identifier(args.gd_number)
+        validate_gd_directory(gd_identifier)
+        
+        generator = EmbeddingGenerator(gd_identifier)
         generator.run()
     except KeyboardInterrupt:
         logger.warning("\nEmbedding generation interrupted by user")
