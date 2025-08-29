@@ -111,7 +111,9 @@ update Data/GD[N]/GD[N]_survey_human_readable.md at only the specific locations 
 
 # Prompt for Developing Investigation Questions
 
-Given the survey questions shown in the file GD[N]_survey_questions.md, develop a set of very specific questions that can be answered directly with the survey data to produce valuable insights, thoroughly answer the research questions in GD[N]_research_questions.md, and surface any other interesting or surprising findings. Be creative and comprehensive. Consider questions that are interesting academically, and also questions that might be interesting to the public at large - what sort of things might produce attention-grabbing headlines?
+Given the survey questions shown in the file GD[N]_survey_human_readable.md, develop a set of very specific questions that can be answered directly with the survey data that would come out of this survey to produce valuable insights, thoroughly answer the research questions in GD[N]_research_questions.md, and surface any other interesting or surprising findings. Be creative and comprehensive. Consider questions that are interesting academically, and also questions that might be interesting to the public at large - what sort of things might produce attention-grabbing headlines?
+
+Return the questions in a straightforward, markdown list of questions intended to be handed off with just enough context to a data analyst or data scientist to answer from doing analysis (of any level of complexity) on the survey data.
 
 Save the investigation questions in the file GD[N]_investigation_questions.md.
 
