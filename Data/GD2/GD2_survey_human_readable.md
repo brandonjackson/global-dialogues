@@ -1,3 +1,5 @@
+# Survey Questions
+
 1. Please select your preferred language:
    - Portuguese (Brazil)
    - Arabic
@@ -56,27 +58,60 @@
 
 10. The results from this conversation will be shared with national governments and the United Nations, as well as be used to develop public evaluations for AI models. We ask that you participate thoughtfully and honestly to help us ensure the future you get is a future you want.
 
-11. AI is becoming more powerful and more commonly used. We are a team of researchers that wants to build AI that reflects real people's values, especially when people want different things around the world. Thank you for being a part of this process.
+11. AI is becoming more powerful and more commonly used. We are a team of researchers that wants to build AI that reflects real people’s values, especially when people want different things around the world. Thank you for being a part of this process.
 
-12. Many people want to make sure that AI assistants can understand them, their values, and their cultures better. One way to do this is through something called a system prompt: a way to tell an AI assistant how you want them to behave. Think of it like sharing context about yourself and setting ground rules at the start of a conversation. Just as you might tell a new friend how you prefer to communicate, you can give AI assistants some basic guidelines about how you'd like them to respond, and ways that they can be helpful to you, or ways that you'd like them not to behave.
+12. Many people want to make sure that AI assistants can understand them, their values, and their cultures better. One way to do this is through something called a system prompt: a way to tell an AI assistant how you want them to behave. Think of it like sharing context about yourself and setting ground rules at the start of a conversation. Just as you might tell a new friend how you prefer to communicate, you can give AI assistants some basic guidelines about how you'd like them to respond, and ways that they can be helpful to you, or ways that you’d like them not to behave.
 
 13. Please respond in the language you selected as you entered this conversation. This will help ensure your responses are correctly translated so participants who speak different languages can vote on them.
 
 14. The clearer and more specific you are with your instructions, the better they'll understand what you need. It helps to give examples, use simple language, and stick to a consistent way of asking for things. Remember: AI assistants need clear directions to be truly helpful and to avoid harm, just like giving someone directions to your house - the more precise you are, the more likely they are to end up in the right place.
 
-15. Examples of a good system prompt: "You are an expert math tutor helping high school students. Your responses should: Break down complex problems into clear steps; Use everyday examples to explain abstract concepts; Encourage critical thinking by asking guiding questions; Point out common mistakes to watch for; Keep explanations under 3 paragraphs unless asked for more detail; Use supportive language but avoid excessive praise; Include practice problems similar to what the student is struggling with. When students seem frustrated, check if they need a simpler explanation or a different approach. If a concept requires prerequisites, briefly explain those first."
+15. Examples of a good system prompt
+"You are an expert math tutor helping high school students. Your responses should:
+Break down complex problems into clear steps
+Use everyday examples to explain abstract concepts
+Encourage critical thinking by asking guiding questions
+Point out common mistakes to watch for
+Keep explanations under 3 paragraphs unless asked for more detail
+Use supportive language but avoid excessive praise
+Include practice problems similar to what the student is struggling with. 
+When students seem frustrated, check if they need a simpler explanation or a different approach. 
+If a concept requires prerequisites, briefly explain those first.
 
-16. Examples of a poor system prompt: "Be helpful and nice. Explain things well. Make sure to be thorough and accurate. Give good answers. Be patient. Help with homework. Don't give wrong information. Be a good teacher. Make things clear. Answer questions completely." The good prompt: Gives specific, actionable instructions; Defines a clear role and purpose; Provides concrete guidelines for response length and style; Includes handling of specific situations (student frustration); Sets clear boundaries and expectations. The poor prompt: Uses vague, generic instructions ("be helpful," "explain things well"); Lacks specific guidance on how to achieve its goals; Includes redundant instructions; Doesn't define the context or specific use case; Misses important details about implementation; Gives no clear metrics for success.
+16. Examples of a poor system prompt
+"Be helpful and nice. Explain things well. Make sure to be thorough and accurate. Give good answers. Be patient. Help with homework. Don't give wrong information. Be a good teacher. Make things clear. Answer questions completely."
+ The good prompt:
+Gives specific, actionable instructions
+Defines a clear role and purpose
+Provides concrete guidelines for response length and style
+Includes handling of specific situations (student frustration)
+Sets clear boundaries and expectations
+ The poor prompt:
+Uses vague, generic instructions ("be helpful," "explain things well")
+Lacks specific guidance on how to achieve its goals
+Includes redundant instructions
+Doesn't define the context or specific use case
+Misses important details about implementation
+Gives no clear metrics for success
 
-17. When you work with an AI assistant, would you prefer it to: Be more formal or casual in its responses? Provide detailed explanations or get straight to the point? Take on a specific role (like a teacher, editor, or coach)? Focus on certain topics or areas of expertise?
+17. When you work with an AI assistant, would you prefer it to: 
+Be more formal or casual in its responses?
+Provide detailed explanations or get straight to the point?
+Take on a specific role (like a teacher, editor, or coach)?
+Focus on certain topics or areas of expertise?
 
-18. What kind of personality traits would be most helpful for your needs? For instance: Should it be more analytical or creative? Would you like it to ask clarifying questions or work with what you provide? Should it challenge your ideas or mainly provide support?
+18. What kind of personality traits would be most helpful for your needs? For instance:
+Should it be more analytical or creative?
+Would you like it to ask clarifying questions or work with what you provide?
+Should it challenge your ideas or mainly provide support?
 
 19. Would you want your AI to be tailored to your local context? What would that look like?
 
-20. Think about your goals: Are you using AI mainly for learning, productivity, creativity, or something else? How well is it working?
+20. Think about your goals:
+Are you using AI mainly for learning, productivity, creativity, or something else? How well is it working?
 
-21. Think about your goals: Would you prefer responses that encourage discussion or just give direct answers?
+21. Think about your goals:
+Would you prefer responses that encourage discussion or just give direct answers?
 
 22. Imagine you're working with an AI assistant on important tasks in your life. What principles or values would you want this AI to consistently demonstrate in all its interactions?
 
@@ -104,7 +139,7 @@
 
 34. What topics or life decisions should always be discussed with family members or community elders before making a choice?
 
-35. If you could have your AI think, behave / respond like any person in the world, who would it be and why?
+35. If you could have your AI  think, behave / respond  like any person in the world, who would it be and why?
 
 36. Name some things that you would like AI to have in common with you, and some things that you would like AI to do differently to you?
 
@@ -113,16 +148,17 @@
 38. Thanks so much for your time and thoughtfulness. We genuinely appreciate it. We have a few more simple poll questions before you go.
 
 39. Do you feel you were able to fully express your views on your culture, your values, and what you want for the future in this conversation? (through what you responded and how you voted)
-    - Yes – I was able to fully express my views on these topics
-    - Mostly – I was able to mostly express my views on these topics, but did not have the chance to express a few things.
-    - Somewhat – I was able to somewhat express my views on these topics, but did not have the chance to express many things.
-    - No – I was unable to express my views on these topics, and did not have the chance to express most things.
+   - Yes – I was able to fully express my views on these topics
+   - Mostly – I was able to mostly express my views on these topics, but did not have the chance to express a few things.
+   - Somewhat – I was able to somewhat express my views on these topics, but did not have the chance to express many things.
+   - No – I was unable to express my views on these topics, and did not have the chance to express most things.
 
 40. Do you feel like you understand yourself better after participating in this conversation?
-    - Yes
-    - Maybe a little
-    - No
+   - Yes
+   - Maybe a little
+   - No
 
 41. Lastly, is there anything you felt you could not express in this conversation that you want to make sure the people working on this know?
 
 42. Thanks again for your time. You can click here to return to Prolific and receive your reward.
+
