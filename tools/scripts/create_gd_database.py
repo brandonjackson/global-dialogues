@@ -26,7 +26,7 @@ import numpy as np
 from pathlib import Path
 import sys
 import re
-from .lib.analysis_utils import parse_gd_identifier, validate_gd_directory
+from lib.analysis_utils import parse_gd_identifier, validate_gd_directory
 import json
 
 # Constants for file paths
