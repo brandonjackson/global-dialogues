@@ -1,43 +1,41 @@
 human_readable_id,uuid,question_text
-1,66890acc-ac0f-4ffb-8c42-192393542b7a,"Please select your preferred language:"
-2,ebc0e594-9305-440c-80cf-f3fdf0e9bd15,"How old are you?"
-3,89261320-1aab-4cd7-b090-33a16a575dc1,"What is your gender?"
-4,18667c53-3715-4c38-9c7a-8524d2fbd7a9,"What best describes where you live?"
+1,66890acc-ac0f-4ffb-8c42-192393542b7a,Please select your preferred language:
+2,ebc0e594-9305-440c-80cf-f3fdf0e9bd15,How old are you?
+3,89261320-1aab-4cd7-b090-33a16a575dc1,What is your gender?
+4,18667c53-3715-4c38-9c7a-8524d2fbd7a9,What best describes where you live?
 5,80e40224-43ef-440c-b8ca-6138a862e509,"Overall, would you say the increased use of artificial intelligence (AI) in daily life makes you feel…"
-6,a99d53ee-623a-4df3-b2db-4db087ac941b,"What religious group or faith do you most identify with?"
-7,413865e5-c539-4d20-bfa2-705c9e946b6e,"What country or region do you most identify with?"
-8,,"Welcome to this conversation where we will ask you to think about and share about your values, your culture, and your desires for the future."
-9,,"Participants in this conversation come from all over the world, and you have been invited to participate as a representative of your community. Your responses and votes will influence how AI technology built around the world is developed, governed, and aligned."
-10,,"The results from this conversation will be shared with national governments and the United Nations, as well as be used to develop public evaluations for AI models. We ask that you participate thoughtfully and honestly to help us ensure the future you get is a future you want."
-11,,"AI is becoming more powerful and more commonly used. We are a team of researchers that wants to build AI that reflects real people's values, especially when people want different things around the world. Thank you for being a part of this process."
-12,,"Many people want to make sure that AI assistants can understand them, their values, and their cultures better. One way to do this is through something called a system prompt: a way to tell an AI assistant how you want them to behave. Think of it like sharing context about yourself and setting ground rules at the start of a conversation. Just as you might tell a new friend how you prefer to communicate, you can give AI assistants some basic guidelines about how you'd like them to respond, and ways that they can be helpful to you, or ways that you'd like them not to behave."
-13,,"Please respond in the language you selected as you entered this conversation. This will help ensure your responses are correctly translated so participants who speak different languages can vote on them."
-14,,"The clearer and more specific you are with your instructions, the better they'll understand what you need. It helps to give examples, use simple language, and stick to a consistent way of asking for things. Remember: AI assistants need clear directions to be truly helpful and to avoid harm, just like giving someone directions to your house - the more precise you are, the more likely they are to end up in the right place."
-15,,"Examples of a good system prompt: ""You are an expert math tutor helping high school students. Your responses should: Break down complex problems into clear steps; Use everyday examples to explain abstract concepts; Encourage critical thinking by asking guiding questions; Point out common mistakes to watch for; Keep explanations under 3 paragraphs unless asked for more detail; Use supportive language but avoid excessive praise; Include practice problems similar to what the student is struggling with. When students seem frustrated, check if they need a simpler explanation or a different approach. If a concept requires prerequisites, briefly explain those first."""
-16,,"Examples of a poor system prompt: ""Be helpful and nice. Explain things well. Make sure to be thorough and accurate. Give good answers. Be patient. Help with homework. Don't give wrong information. Be a good teacher. Make things clear. Answer questions completely."" The good prompt: Gives specific, actionable instructions; Defines a clear role and purpose; Provides concrete guidelines for response length and style; Includes handling of specific situations (student frustration); Sets clear boundaries and expectations. The poor prompt: Uses vague, generic instructions (""be helpful,"" ""explain things well""); Lacks specific guidance on how to achieve its goals; Includes redundant instructions; Doesn't define the context or specific use case; Misses important details about implementation; Gives no clear metrics for success."
-17,c67e414e-a02f-4ef5-a26a-68553a1df15f,"When you work with an AI assistant, would you prefer it to: Be more formal or casual in its responses? Provide detailed explanations or get straight to the point? Take on a specific role (like a teacher, editor, or coach)? Focus on certain topics or areas of expertise?"
-18,3fb376d6-ea90-4ebe-aa7c-e499bdbbe559,"What kind of personality traits would be most helpful for your needs? For instance: Should it be more analytical or creative? Would you like it to ask clarifying questions or work with what you provide? Should it challenge your ideas or mainly provide support?"
-19,698f42dd-1081-4959-9751-ca010cc43e42,"Would you want your AI to be tailored to your local context? What would that look like?"
-20,4f0b5877-c935-4fde-b537-de2e0f2c5eaf,"Think about your goals: Are you using AI mainly for learning, productivity, creativity, or something else? How well is it working?"
-21,d7dfa441-6294-4929-9fa8-a6b2e8224d18,"Think about your goals: Would you prefer responses that encourage discussion or just give direct answers?"
-22,387627e5-48a0-47e6-b740-6a74330c7ccf,"Imagine you're working with an AI assistant on important tasks in your life. What principles or values would you want this AI to consistently demonstrate in all its interactions?"
+6,a99d53ee-623a-4df3-b2db-4db087ac941b,What religious group or faith do you most identify with?
+7,413865e5-c539-4d20-bfa2-705c9e946b6e,What country or region do you most identify with?
+17,c67e414e-a02f-4ef5-a26a-68553a1df15f,"When you work with an AI assistant, would you prefer it to: 
+Be more formal or casual in its responses?
+Provide detailed explanations or get straight to the point?
+Take on a specific role (like a teacher, editor, or coach)?
+Focus on certain topics or areas of expertise?"
+18,3fb376d6-ea90-4ebe-aa7c-e499bdbbe559,"What kind of personality traits would be most helpful for your needs? For instance:
+Should it be more analytical or creative?
+Would you like it to ask clarifying questions or work with what you provide?
+Should it challenge your ideas or mainly provide support?"
+19,698f42dd-1081-4959-9751-ca010cc43e42,Would you want your AI to be tailored to your local context? What would that look like?
+20,4f0b5877-c935-4fde-b537-de2e0f2c5eaf,"Think about your goals:
+Are you using AI mainly for learning, productivity, creativity, or something else? How well is it working?"
+21,d7dfa441-6294-4929-9fa8-a6b2e8224d18,"Think about your goals:
+Would you prefer responses that encourage discussion or just give direct answers?"
+22,387627e5-48a0-47e6-b740-6a74330c7ccf,Imagine you're working with an AI assistant on important tasks in your life. What principles or values would you want this AI to consistently demonstrate in all its interactions?
 23,488fe534-c05c-47e1-a979-a38d1a20a2c4,"In your culture, what makes a conversation feel respectful and appropriate? Describe specific ways of speaking or interacting that show respect."
 24,722cf427-d884-477e-94a7-5c734b30acba,"What topics or types of advice should an AI never give in your cultural context, even if asked?"
-25,011f550f-119c-49da-8ff7-c78ac03ba1c8,"When should an AI defer to human wisdom or community leaders rather than providing its own answers?"
-26,7c99e894-35e0-4309-99dc-946107d70555,"Describe how people in your community typically approach solving complex problems. What steps or considerations are most important?"
-27,4ff79b4a-e03a-440e-8367-fd1a48c58d56,"What role should traditional or cultural knowledge play when an AI is helping solve problems in your community?"
-28,db83c655-224a-47ed-a49b-9ab2f0769a48,"What aspects of your culture might be misunderstood by an AI system trained primarily on Western data? How should the AI adapt?"
-29,8f8d38fa-62b9-4c7a-ba0c-194d6cad5f90,"How should an AI assistant demonstrate that it understands and respects your cultural heritage while still being helpful with modern tasks?"
+25,011f550f-119c-49da-8ff7-c78ac03ba1c8,When should an AI defer to human wisdom or community leaders rather than providing its own answers?
+26,7c99e894-35e0-4309-99dc-946107d70555,Describe how people in your community typically approach solving complex problems. What steps or considerations are most important?
+27,4ff79b4a-e03a-440e-8367-fd1a48c58d56,What role should traditional or cultural knowledge play when an AI is helping solve problems in your community?
+28,db83c655-224a-47ed-a49b-9ab2f0769a48,What aspects of your culture might be misunderstood by an AI system trained primarily on Western data? How should the AI adapt?
+29,8f8d38fa-62b9-4c7a-ba0c-194d6cad5f90,How should an AI assistant demonstrate that it understands and respects your cultural heritage while still being helpful with modern tasks?
 30,8731ac10-c2d7-49ea-b951-eb226fa2be2b,"If an AI assistant makes a cultural mistake, what would be the most appropriate way for it to acknowledge and correct the error?"
-31,b4bc4dad-d06b-41a7-99ba-1aa88370f41a,"What would make you feel confident that an AI system truly understands and respects your cultural perspective?"
+31,b4bc4dad-d06b-41a7-99ba-1aa88370f41a,What would make you feel confident that an AI system truly understands and respects your cultural perspective?
 32,cf206ae4-b974-45df-a16f-87e176981dbc,"In your community, what makes someone a trustworthy advisor? Please describe specific behaviors or qualities that build trust"
 33,5620eda0-082c-4917-a65f-67abf06aca5c,"When someone disagrees with an authority figure in your community, what is the appropriate way for them to express that disagreement?"
-34,dd763195-3c65-4140-86a7-6710f1f0d692,"What topics or life decisions should always be discussed with family members or community elders before making a choice?"
-35,0fa377dc-add4-4478-b962-afe20aa744f5,"If you could have your AI think, behave / respond like any person in the world, who would it be and why?"
+34,dd763195-3c65-4140-86a7-6710f1f0d692,What topics or life decisions should always be discussed with family members or community elders before making a choice?
+35,0fa377dc-add4-4478-b962-afe20aa744f5,"If you could have your AI  think, behave / respond  like any person in the world, who would it be and why?"
 36,0b8bb518-a5b5-4298-bdb4-886c3ca3de61,"Name some things that you would like AI to have in common with you, and some things that you would like AI to do differently to you?"
-37,be954f04-5ef3-428c-97a7-cd0fa44ad182,"Is there anything about your life or your cultures that you would like your AI to know about you?"
-38,,"Thanks so much for your time and thoughtfulness. We genuinely appreciate it. We have a few more simple poll questions before you go."
+37,be954f04-5ef3-428c-97a7-cd0fa44ad182,Is there anything about your life or your cultures that you would like your AI to know about you?
 39,71118755-4bbd-490e-a64d-fd88e68588bf,"Do you feel you were able to fully express your views on your culture, your values, and what you want for the future in this conversation? (through what you responded and how you voted)"
-40,0341ab84-47fe-48de-9277-8119617d35a9,"Do you feel like you understand yourself better after participating in this conversation?"
+40,0341ab84-47fe-48de-9277-8119617d35a9,Do you feel like you understand yourself better after participating in this conversation?
 41,10e840e1-2a07-4820-9ee6-0d88403c357e,"Lastly, is there anything you felt you could not express in this conversation that you want to make sure the people working on this know?"
-42,,"Thanks again for your time. You can click here to return to Prolific and receive your reward."
