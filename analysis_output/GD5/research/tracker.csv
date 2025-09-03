@@ -22,11 +22,11 @@ section_num,section_title,status,claimed_at,completed_at,review_status
 21,Risk vs. Benefit Balances,completed,2025-09-02T21:24:26.669801,2025-09-02T21:26:36.901382,pending
 22,"Emotion, Imagination, and Wonder",completed,2025-09-02T21:24:28.728584,2025-09-02T21:26:31.178907,pending
 23,Additional Cross-Analysis Questions,in_progress,2025-09-02T21:27:11.450842,,pending
-24,"The ""Muted Middle"" — The Undecided, Neutral, and Apathetic",available,,,pending
-25,The Survey as an Intervention — Measuring Opinion Shifts,available,,,pending
-26,"Coherent Ethical Frameworks vs. ""A La Carte"" Morality",available,,,pending
-27,Economic Anxiety and Interspecies Generosity,available,,,pending
-28,Survey as Intervention — Measuring Persuasion & Change,available,,,pending
+24,"The ""Muted Middle"" — The Undecided, Neutral, and Apathetic",completed,2025-09-02T21:27:32.465221,2025-09-02T21:35:44.362936,pending
+25,The Survey as an Intervention — Measuring Opinion Shifts,in_progress,2025-09-02T21:33:16.121856,,pending
+26,"Coherent Ethical Frameworks vs. ""A La Carte"" Morality",in_progress,2025-09-02T21:33:20.438127,,pending
+27,Economic Anxiety and Interspecies Generosity,in_progress,2025-09-02T21:33:28.573528,,pending
+28,Survey as Intervention — Measuring Persuasion & Change,in_progress,2025-09-02T21:33:33.316794,,pending
 29,Emotion & Imagination as Predictors of Ethics,available,,,pending
 30,Trust Landscape & Archetypes,available,,,pending
 31,Contradiction & Tension Mapping,available,,,pending
