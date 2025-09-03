@@ -6,6 +6,7 @@ Data/.DS_Store
 /venv
 # Large data files
 Data/GD*/GD*_embeddings.json
+Data/GD*/GD*.db
 
 # Sanity upload files
 Data/GD*/GD*_sanity_upload.csv
