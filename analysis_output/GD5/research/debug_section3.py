@@ -25,6 +25,19 @@ WHERE pri_score >= 0.3
 df_check2 = pd.read_sql_query(query_check2, conn)
 print(f"Reliable participants (PRI >= 0.3): {df_check2.iloc[0]['participant_count']}")
 
+# Check response table structure
+query_struct = """
+SELECT * FROM responses
+WHERE question LIKE '%believe that other animals%'
+LIMIT 5
+"""
+df_struct = pd.read_sql_query(query_struct, conn)
+print("\nSample responses structure:")
+print(df_struct.columns.tolist())
+if not df_struct.empty:
+    print("\nFirst response:")
+    print(df_struct.iloc[0].to_dict())
+
 # Check for Q39, Q40, Q41 responses
 queries = {
     'Q39_language': "Do you believe that other animals have their own forms of language?",
