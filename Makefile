@@ -60,6 +60,11 @@ help:
 	@echo "  $(GREEN)make db GD=<N>$(RESET)            - Create/recreate SQLite database for GD<N>"
 	@echo "  $(GREEN)make db-connect GD=<N>$(RESET)    - Connect to SQLite database for GD<N>"
 	@echo ""
+	@echo "$(BLUE)Investigation Commands:$(RESET)"
+	@echo "  $(GREEN)make investigate-setup GD=<N>$(RESET) - Set up parallel investigation infrastructure for GD<N>"
+	@echo "  $(GREEN)make investigate-status GD=<N>$(RESET) - Check investigation progress for GD<N>"
+	@echo "  $(GREEN)make investigate-assemble GD=<N>$(RESET) - Assemble final investigation report for GD<N>"
+	@echo ""
 	@echo "$(BLUE)Utilities:$(RESET)"
 	@echo "  $(GREEN)make preview-csvs GD=<N>$(RESET)  - Preview all CSV files in GD<N> directory"
 	@echo "  $(GREEN)make clean$(RESET)                - Clean up cache and temporary files"
@@ -293,6 +298,52 @@ db-connect:
 	@echo "$(BLUE)Connecting to GD$(GD) database...$(RESET)"
 	@echo "$(YELLOW)Type .help for help, .quit to exit$(RESET)"
 	sqlite3 Data/GD$(GD)/GD$(GD).db
+
+# Investigation commands
+investigate-setup:
+	@if [ -z "$(GD)" ]; then \
+		echo "$(RED)Error: Please specify GD number$(RESET)"; \
+		echo "$(YELLOW)Usage: make investigate-setup GD=<N>$(RESET)"; \
+		echo "$(YELLOW)Example: make investigate-setup GD=5$(RESET)"; \
+		exit 1; \
+	fi
+	@if [ ! -f analysis_output/GD$(GD)/research/GD$(GD)_investigation_questions.md ]; then \
+		echo "$(RED)Error: GD$(GD)_investigation_questions.md not found$(RESET)"; \
+		echo "$(YELLOW)Please ensure investigation questions have been generated first$(RESET)"; \
+		exit 1; \
+	fi
+	@echo "$(BLUE)Setting up parallel investigation infrastructure for GD$(GD)...$(RESET)"
+	$(PYTHON) scripts/create_investigation_infrastructure.py $(GD)
+
+investigate-status:
+	@if [ -z "$(GD)" ]; then \
+		echo "$(RED)Error: Please specify GD number$(RESET)"; \
+		echo "$(YELLOW)Usage: make investigate-status GD=<N>$(RESET)"; \
+		echo "$(YELLOW)Example: make investigate-status GD=5$(RESET)"; \
+		exit 1; \
+	fi
+	@if [ ! -f analysis_output/GD$(GD)/research/section_manager.py ]; then \
+		echo "$(RED)Error: Investigation infrastructure not found for GD$(GD)$(RESET)"; \
+		echo "$(YELLOW)Run 'make investigate-setup GD=$(GD)' first$(RESET)"; \
+		exit 1; \
+	fi
+	@echo "$(BLUE)Checking investigation progress for GD$(GD)...$(RESET)"
+	@cd analysis_output/GD$(GD)/research && $(PYTHON) section_manager.py status
+
+investigate-assemble:
+	@if [ -z "$(GD)" ]; then \
+		echo "$(RED)Error: Please specify GD number$(RESET)"; \
+		echo "$(YELLOW)Usage: make investigate-assemble GD=<N>$(RESET)"; \
+		echo "$(YELLOW)Example: make investigate-assemble GD=5$(RESET)"; \
+		exit 1; \
+	fi
+	@if [ ! -f analysis_output/GD$(GD)/research/assemble_report.py ]; then \
+		echo "$(RED)Error: Investigation infrastructure not found for GD$(GD)$(RESET)"; \
+		echo "$(YELLOW)Run 'make investigate-setup GD=$(GD)' first$(RESET)"; \
+		exit 1; \
+	fi
+	@echo "$(BLUE)Assembling investigation report for GD$(GD)...$(RESET)"
+	@cd analysis_output/GD$(GD)/research && $(PYTHON) assemble_report.py
 
 # CSV preview using variables
 preview-csvs:
