@@ -56,11 +56,11 @@
   - Total support (all Yes variants): 59.6%
   - Opposition (No): 37.1%
   - Other: 3.3%
-- **The Gap**: 36.3% more people want to hear animals than want them participating in democracy
+- **The Gap**: 33.7% more people want to hear animals than want them participating in democracy
 - **Interpretation**: High curiosity coexists with political caution
 
 ## Statistical Significance
-Age differences in political participation support are minimal (<4% range) and likely not statistically significant. The 36.3% gap between interest and political support represents a substantial and meaningful difference in public attitudes.
+Age differences in political participation support are minimal (<4% range) and likely not statistically significant. The 33.7% gap between interest and political support represents a substantial and meaningful difference in public attitudes.
 
 ## SQL Queries Used
 ```sql
@@ -88,7 +88,7 @@ WHERE question LIKE '%interested%know what animals%';
 ```
 
 ## Insights
-The analysis reveals three critical findings: (1) Despite extremely high companion animal exposure (89.8%), we cannot assess its relationship to economic rights support due to missing Q91 data. (2) Age does NOT predict political participation support as expected - older respondents are equally or more supportive than younger ones, challenging assumptions about generational progressivism on animal rights. (3) The massive gap between interest in hearing animals (95.9%) and supporting their political participation (59.6%) suggests public fascination with interspecies communication doesn't automatically translate to readiness for radical political restructuring. This indicates a cautious, curious public that wants to understand animals but maintains boundaries around political power sharing.
+The analysis reveals three critical findings: (1) Despite extremely high companion animal exposure (89.8%), we cannot assess its relationship to economic rights support due to missing Q91 data. (2) Age does NOT predict political participation support as expected - older respondents are equally or more supportive than younger ones, challenging assumptions about generational progressivism on animal rights. (3) The massive gap between interest in hearing animals (93.3%) and supporting their political participation (59.6%) suggests public fascination with interspecies communication doesn't automatically translate to readiness for radical political restructuring. This indicates a cautious, curious public that wants to understand animals but maintains boundaries around political power sharing.
 
 ## Limitations
 1. **Missing Q91 data**: Cannot analyze companion animal exposure correlation with economic rights

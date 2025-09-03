@@ -12,10 +12,9 @@
   - Analysis of hopefulness requires proper JSON parsing of multi-select Q54 responses
 - **Rarely/Never imagine:** 459 respondents (45.7% of sample)
   - Analysis of hopefulness requires proper JSON parsing of multi-select Q54 responses
-- **Statistical significance:** Chi-square p=0.000003 (highly significant)
-- **Effect size:** 14.9 percentage point difference in hopefulness
-- Those who regularly engage in perspective-taking with animals are substantially more optimistic about technological solutions
-- Imagination appears to be a gateway to technological optimism rather than resistance
+- Statistical analysis requires proper handling of multi-select JSON responses in Q54
+- Initial data suggests potential relationship between imagination and technological optimism
+- Further analysis needed to establish statistical significance and effect size
 
 ### Question 22.2: Is feeling "unsettled" (Q45) associated with higher likelihood of choosing "restrict communication" (Q82–83), suggesting fear leads to cautionary governance?
 
