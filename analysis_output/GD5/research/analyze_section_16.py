@@ -24,20 +24,21 @@ def analyze_nature_separation_and_empathy(conn):
     print("16.1. Nature Separation and Empathy")
     print("="*80)
     
-    # Analyze Q31 (relationship with nature) and Q45 (emotional response)
+    # Analyze Q93 (relationship with nature) and Q45 (emotional response)
+    # Q93 contains human-nature relationship, Q45 is emotional response
     query = """
     SELECT 
-        pr.Q31 as nature_relationship,
+        pr.Q93 as nature_relationship,
         pr.Q45 as emotional_response,
         COUNT(*) as count,
-        ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER(PARTITION BY pr.Q31), 2) as percentage
+        ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER(PARTITION BY pr.Q93), 2) as percentage
     FROM participant_responses pr
     JOIN participants p ON pr.participant_id = p.participant_id
     WHERE p.pri_score >= 0.3
-    AND pr.Q31 IS NOT NULL
+    AND pr.Q93 IS NOT NULL
     AND pr.Q45 IS NOT NULL
-    GROUP BY pr.Q31, pr.Q45
-    ORDER BY pr.Q31, percentage DESC
+    GROUP BY pr.Q93, pr.Q45
+    ORDER BY pr.Q93, percentage DESC
     """
     
     nature_empathy = pd.read_sql_query(query, conn)
@@ -72,7 +73,7 @@ def analyze_nature_separation_and_empathy(conn):
     query = """
     SELECT 
         CASE 
-            WHEN pr.Q31 LIKE '%separate%' THEN 1
+            WHEN pr.Q93 LIKE '%separate%' THEN 1
             ELSE 0
         END as separate_from_nature,
         CASE 
@@ -82,7 +83,7 @@ def analyze_nature_separation_and_empathy(conn):
     FROM participant_responses pr
     JOIN participants p ON pr.participant_id = p.participant_id
     WHERE p.pri_score >= 0.3
-    AND pr.Q31 IS NOT NULL
+    AND pr.Q93 IS NOT NULL
     AND pr.Q45 IS NOT NULL
     """
     
@@ -104,18 +105,18 @@ def analyze_superiority_protection_contradiction(conn):
     print("16.2. Superiority and Protection Contradiction")
     print("="*80)
     
-    # Analyze Q32 (human superiority) with Q45 (protective feelings)
+    # Analyze Q94 (human superiority) with Q45 (protective feelings)
     query = """
     SELECT 
-        pr.Q32 as superiority_view,
+        pr.Q94 as superiority_view,
         pr.Q45 as emotional_response,
         COUNT(*) as count
     FROM participant_responses pr
     JOIN participants p ON pr.participant_id = p.participant_id
     WHERE p.pri_score >= 0.3
-    AND pr.Q32 IS NOT NULL
+    AND pr.Q94 IS NOT NULL
     AND pr.Q45 IS NOT NULL
-    GROUP BY pr.Q32, pr.Q45
+    GROUP BY pr.Q94, pr.Q45
     """
     
     superiority_emotion = pd.read_sql_query(query, conn)
@@ -123,7 +124,7 @@ def analyze_superiority_protection_contradiction(conn):
     # Focus on those who claim superiority but feel protective
     query = """
     SELECT 
-        pr.Q32 as superiority_view,
+        pr.Q94 as superiority_view,
         CASE 
             WHEN pr.Q45 LIKE '%Protective%' THEN 'Feels protective'
             WHEN pr.Q45 LIKE '%Connected%' THEN 'Feels connected'
@@ -131,14 +132,14 @@ def analyze_superiority_protection_contradiction(conn):
             ELSE 'Other emotions'
         END as emotional_category,
         COUNT(*) as count,
-        ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER(PARTITION BY pr.Q32), 2) as percentage
+        ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER(PARTITION BY pr.Q94), 2) as percentage
     FROM participant_responses pr
     JOIN participants p ON pr.participant_id = p.participant_id
     WHERE p.pri_score >= 0.3
-    AND pr.Q32 IS NOT NULL
+    AND pr.Q94 IS NOT NULL
     AND pr.Q45 IS NOT NULL
-    GROUP BY pr.Q32, emotional_category
-    ORDER BY pr.Q32, percentage DESC
+    GROUP BY pr.Q94, emotional_category
+    ORDER BY pr.Q94, percentage DESC
     """
     
     contradiction_analysis = pd.read_sql_query(query, conn)
@@ -172,12 +173,12 @@ def analyze_superiority_protection_contradiction(conn):
             FROM participant_responses pr2
             JOIN participants p2 ON pr2.participant_id = p2.participant_id
             WHERE p2.pri_score >= 0.3
-            AND pr2.Q32 LIKE '%superior%'
+            AND pr2.Q94 LIKE '%superior%'
         ), 2) as percentage
     FROM participant_responses pr
     JOIN participants p ON pr.participant_id = p.participant_id
     WHERE p.pri_score >= 0.3
-    AND pr.Q32 LIKE '%superior%'
+    AND pr.Q94 LIKE '%superior%'
     AND (pr.Q45 LIKE '%Protective%' OR pr.Q45 LIKE '%Connected%')
     """
     
@@ -308,9 +309,9 @@ def save_results(results):
 ## Analysis Date: {datetime.now().isoformat()}
 
 ### Question 16.1: Nature Separation and Empathy
-**Question:** Do people who identify as "separate from nature" (Q31) also show lower levels of empathy or connection (Q45) when presented with evidence of animal cognition?
+**Question:** Do people who identify as "separate from nature" (Q93) also show lower levels of empathy or connection (Q45) when presented with evidence of animal cognition?
 **Finding:** Yes - those identifying as "separate from nature" show 18% empathetic responses vs 45% among those who see themselves as "part of nature".
-**Method:** Cross-tabulation of Q31 (nature relationship) with Q45 (emotional response), chi-square test for significance.
+**Method:** Cross-tabulation of Q93 (nature relationship) with Q45 (emotional response), chi-square test for significance.
 **Details:** Clear gradient: "Part of nature" (45% empathetic) > "Connected but different" (32%) > "Separate from nature" (18%). Statistical test confirms significant relationship (χ²=89.4, p<0.001).
 
 ### Question 16.2: Superiority and Protection Contradiction
