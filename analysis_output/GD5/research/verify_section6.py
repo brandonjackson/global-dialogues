@@ -59,15 +59,15 @@ print("=" * 40)
 
 query_q94_q6 = """
 SELECT 
-    pr."What religious group or faith do you most identify with?" as religion,
+    pr.Q6 as religion,
     pr.Q94 as human_animal_relation,
     COUNT(*) as count
 FROM participant_responses pr
-WHERE pr."What religious group or faith do you most identify with?" IS NOT NULL 
+WHERE pr.Q6 IS NOT NULL 
     AND pr.Q94 IS NOT NULL
-    AND pr."What religious group or faith do you most identify with?" != ''
+    AND pr.Q6 != ''
     AND pr.Q94 != ''
-GROUP BY pr."What religious group or faith do you most identify with?", pr.Q94
+GROUP BY pr.Q6, pr.Q94
 ORDER BY religion, human_animal_relation
 """
 
@@ -100,16 +100,15 @@ print("=" * 35)
 
 query_q61_q4 = """
 SELECT 
-    pr."What best describes where you live?" as location,
-    pr."Would you trust AI more or less than humans to interpret animal communication to resolve a human-wildlife conflict? Why?" as ai_trust_response,
+    pr.Q4 as location,
+    pr.Q61 as ai_trust_response,
     COUNT(*) as count
 FROM participant_responses pr
-WHERE pr."What best describes where you live?" IS NOT NULL 
-    AND pr."Would you trust AI more or less than humans to interpret animal communication to resolve a human-wildlife conflict? Why?" IS NOT NULL
-    AND pr."What best describes where you live?" != ''
-    AND pr."Would you trust AI more or less than humans to interpret animal communication to resolve a human-wildlife conflict? Why?" != ''
-GROUP BY pr."What best describes where you live?", 
-         pr."Would you trust AI more or less than humans to interpret animal communication to resolve a human-wildlife conflict? Why?"
+WHERE pr.Q4 IS NOT NULL 
+    AND pr.Q61 IS NOT NULL
+    AND pr.Q4 != ''
+    AND pr.Q61 != ''
+GROUP BY pr.Q4, pr.Q61
 ORDER BY location
 """
 
@@ -133,16 +132,15 @@ print("=" * 40)
 
 query_q90_q7 = """
 SELECT 
-    pr."What country or region do you most identify with?" as country,
-    pr."If we record an elephant's conversation or a whale's song, who should own that recording?" as ownership,
+    pr.Q7 as country,
+    pr.Q90 as ownership,
     COUNT(*) as count
 FROM participant_responses pr
-WHERE pr."What country or region do you most identify with?" IS NOT NULL 
-    AND pr."If we record an elephant's conversation or a whale's song, who should own that recording?" IS NOT NULL
-    AND pr."What country or region do you most identify with?" != ''
-    AND pr."If we record an elephant's conversation or a whale's song, who should own that recording?" != ''
-GROUP BY pr."What country or region do you most identify with?", 
-         pr."If we record an elephant's conversation or a whale's song, who should own that recording?"
+WHERE pr.Q7 IS NOT NULL 
+    AND pr.Q90 IS NOT NULL
+    AND pr.Q7 != ''
+    AND pr.Q90 != ''
+GROUP BY pr.Q7, pr.Q90
 ORDER BY country, ownership
 """
 
