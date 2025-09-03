@@ -43,7 +43,10 @@
 - **Conclusion**: Animal exposure type does not significantly predict views on human-animal equality/superiority
 
 ## Statistical Significance
-No statistical tests possible due to aggregated data structure preventing individual-level analysis of exposure-ethics relationships.
+Multiple chi-square tests performed on individual-level data (n=1037):
+- Q18.1: Working animals × Animal protection (χ²=0.77, p=0.856, df=3) - Not significant
+- Q18.2: Zoo visitors × Religious affiliation (χ²=24.91, p=0.001, df=7) - Significant  
+- Q18.3: Exposure types × Human-animal views (χ²=14.57, p=0.103, df=9) - Not significant
 
 ## SQL Queries Used
 ```sql
