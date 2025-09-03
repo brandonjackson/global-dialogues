@@ -74,11 +74,11 @@ WHERE question LIKE '%ethical%' OR question LIKE '%rights%' OR question LIKE '%w
 ```
 
 ## Insights
-The analysis reveals a clear hierarchy of animal exposure in daily life, with companion animals dominating (89.8%), followed by urban wildlife (47.6%) and farmed animals (31.6%). Specialized exposures like working animals (8.8%), zoo animals (7.0%), and laboratory animals (4.7%) affect relatively small populations. This exposure hierarchy likely shapes attitudes toward AI-mediated communication, though the aggregated data prevents establishing direct correlations. The high interest in animal communication (70.1% very interested) coupled with concerns about misinterpretation (57.0%) suggests a cautiously optimistic public regardless of exposure type.
+The analysis reveals a clear hierarchy of animal exposure in daily life, with companion animals dominating (89.8%), followed by urban wildlife (47.6%) and farmed animals (31.6%). Specialized exposures like working animals (8.8%), zoo animals (7.0%), and laboratory animals (4.7%) affect relatively small populations. Statistical analysis shows that animal exposure type generally does not predict ethical attitudes toward animals, suggesting consistent underlying values across exposure groups. However, zoo visitors show distinct demographic patterns (religious affiliation differences) that may influence their perspectives on animal communication technology.
 
 ## Limitations
-1. **No individual linking**: Cannot connect specific animal exposure to AI use preferences or ethical priorities
-2. **Missing causal analysis**: Unable to determine if exposure type influences attitudes
-3. **Aggregated scores only**: Prevents correlation testing between exposure and preferences
-4. **Limited instrumental vs. conservation data**: Specific AI use categories not clearly delineated in responses
-5. **Entertainment use ambiguity**: Cannot isolate entertainment-specific support from general interest
+1. **Limited AI use preference data**: Specific instrumental vs. conservation AI use categories not clearly captured in available questions
+2. **Entertainment question gaps**: Direct entertainment use preferences not measured in available data
+3. **Small specialized groups**: Working animal (8.8%) and zoo visitor (7.0%) groups may lack statistical power for some analyses
+4. **JSON parsing complexity**: Q38 data requires careful parsing of multi-selection responses
+5. **Proxy measures**: Had to use related questions (animal protection, human-animal relations) as proxies for some research interests
