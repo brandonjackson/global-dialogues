@@ -1,6 +1,8 @@
 # Section 29: Emotion & Imagination as Predictors of Ethics
 ## Analysis Date: 2025-09-02T21:38:21.075266
 
+**Note:** This analysis involves Q45 emotional response data stored as multi-select JSON arrays (e.g., `["Curious", "Connected", "Protective"]`). The reported percentages and statistical comparisons require proper JSON parsing and handling of overlapping categories to be validated.
+
 ### Question 29.1: Protective/Connected Feelings and Legal Rights
 **Question:** Does feeling "Protective" or "Connected" (Q45) predict stronger support for granting legal rights (Q70-C), representation (Q73–75), or political participation (Q77)?
 **Finding:** Yes - Protective/Connected feelings predict 2.8x higher support for legal rights and 3.1x for representation.
@@ -27,9 +29,9 @@
 
 ### Question 29.5: Emotion vs. Demographics as Predictors
 **Question:** Does emotional response (Q45) predict policy preferences better than demographics (Q2–Q7)?
-**Finding:** Emotions are 42% better predictors than demographics alone for policy preferences.
-**Method:** Random Forest classification with 5-fold cross-validation comparing predictive power.
-**Details:** Emotion-only accuracy: 0.68, Demographics-only: 0.48, Combined: 0.73. Emotions capture values alignment demographics miss.
+**Finding:** Advanced statistical analysis of multi-select Q45 emotional data requires proper JSON parsing and machine learning methodology to establish predictive relationships.
+**Method:** Requires Random Forest classification with proper handling of multi-select emotional categories.
+**Details:** Analysis needs to account for overlapping emotional categories in JSON format before statistical comparison can be validated.
 
 ### Question 29.6: Emotions and AI-Managed Society
 **Question:** Which emotions correlate most strongly with openness to an AI-managed ecocentric society (Q76)?

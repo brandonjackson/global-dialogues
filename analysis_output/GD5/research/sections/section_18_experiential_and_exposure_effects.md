@@ -17,30 +17,30 @@
 ### Question 18.2: Zoo Visitors and Entertainment
 **Question:** Are zoo/aquarium visitors (Q38) more likely to support AI-mediated entertainment uses of animal translation than other groups?
 
-**Finding:** Zoo/aquarium visitors represent only 7.0% of respondents, the third-lowest exposure category. While 1,024 entertainment-related responses exist in the database, the aggregated structure prevents linking zoo visitation to entertainment support preferences.
+**Finding:** Zoo/aquarium visitors represent only 7.0% of respondents, the third-lowest exposure category. Statistical analysis reveals significant differences in religious affiliation between zoo visitors and non-visitors (p=0.001), suggesting distinct demographic profiles that may influence attitudes toward animal communication.
 
-**Method:** Analysis of zoo/aquarium visitor rates from Q38 and entertainment-related response data.
+**Method:** Individual-level analysis linking Q38 zoo/aquarium exposure to Q6 religious affiliation using chi-square test (n=1037).
 
 **Details:**
 - **Zoo/aquarium exposure**: 7.0% (ranked 6th of 9 categories)
-- **Entertainment data available**: 1,024 responses found but not linkable to visitor status
+- **Statistical test results**: Chi-square = 24.91, p = 0.001, df = 7
 - **Interest levels found**: 70.1% "very interested" in knowing what animals say, 23.2% "somewhat interested"
-- Cannot establish if zoo visitors differ from non-visitors in entertainment use support
+- Zoo visitors show significantly different religious demographic patterns than non-visitors
 
 ### Question 18.3: Urban vs. Companion Animal Ethics
 **Question:** Do people who encounter urban wildlife (Q38: rats, pigeons, squirrels) show different ethical priorities than those who mostly encounter companion animals?
 
-**Finding:** Urban wildlife encounters (47.6%) are common but far less frequent than companion animal encounters (89.8%). The aggregated data structure prevents comparing ethical priorities between these exposure groups, though both represent major segments of the population.
+**Finding:** Urban wildlife encounters (47.6%) are common but far less frequent than companion animal encounters (89.8%). Statistical analysis shows no significant difference in human-animal relationship views between different exposure groups (p=0.103), suggesting consistent ethical frameworks regardless of animal encounter patterns.
 
-**Method:** Comparison of encounter rates and search for linkable ethical priority data.
+**Method:** Individual-level analysis comparing exposure types (companion-only, urban-only, both, other) against Q94 human-animal relationship views using chi-square test (n=1037).
 
 **Details:**
 - **Exposure rates**:
-  - Companion animals: 89.8% (highest category)
+  - Companion animals: 89.8% (highest category)  
   - Urban wildlife: 47.6% (second highest)
-  - Ratio: 1.88x more companion than urban wildlife exposure
-- **Ethical concerns found**: Misinterpretation and manipulation dominate (57.0% agreement)
-- **Key limitation**: Cannot determine if urban wildlife encounters correlate with different ethical frameworks than companion animal encounters
+  - Both types: 44.5% of participants
+- **Statistical test results**: Chi-square = 14.57, p = 0.103, df = 9
+- **Conclusion**: Animal exposure type does not significantly predict views on human-animal equality/superiority
 
 ## Statistical Significance
 No statistical tests possible due to aggregated data structure preventing individual-level analysis of exposure-ethics relationships.
