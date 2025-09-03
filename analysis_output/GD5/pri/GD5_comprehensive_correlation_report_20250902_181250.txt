@@ -1,0 +1,73 @@
+================================================================================
+COMPREHENSIVE PRI CORRELATION ANALYSIS REPORT
+================================================================================
+Generated: 2025-09-02 18:12:50
+Total participants analyzed: 1027
+PRI metrics included: 11
+
+SUMMARY STATISTICS
+----------------------------------------
+Duration_seconds         : n=1027, mean=2116.884, std=1181.072, range=[60.000, 17940.000]
+LowQualityTag_Perc       : n=1027, mean=0.000, std=0.000, range=[0.000, 0.000]
+UniversalDisagreement_Perc: n=1027, mean=0.036, std=0.068, range=[0.000, 0.375]
+ASC_Score_Raw            : n=1006, mean=0.266, std=0.176, range=[0.000, 1.000]
+Duration_Norm            : n=1027, mean=0.379, std=0.182, range=[0.000, 1.000]
+LowQualityTag_Norm       : n=1027, mean=0.500, std=0.000, range=[0.500, 0.500]
+UniversalDisagreement_Norm: n=1027, mean=0.905, std=0.181, range=[0.000, 1.000]
+ASC_Norm                 : n=1006, mean=0.734, std=0.176, range=[0.000, 1.000]
+PRI_Score_Heuristic      : n=1006, mean=0.592, std=0.075, range=[0.274, 0.850]
+PRI_Score                : n=1006, mean=0.592, std=0.075, range=[0.274, 0.850]
+PRI_Scale_1_5            : n=1006, mean=3.368, std=0.301, range=[2.096, 4.400]
+
+PEARSON CORRELATION MATRIX
+----------------------------------------
+Correlations (sample sizes in parentheses)
+
+Metric                     Duration_sec  LowQualityTa  UniversalDis  ASC_Score_Ra  Duration_Nor  LowQualityTa  UniversalDis      ASC_Norm  PRI_Score_He     PRI_Score  PRI_Scale_1_
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Duration_seconds          1.000(1027)         N/A   -0.065(1027)  0.036(1006)  0.920(1027)         N/A    0.065(1027) -0.036(1006)  0.676(1006)  0.676(1006)  0.676(1006) 
+LowQualityTag_Perc               N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A   
+UniversalDisagreement_Perc-0.065(1027)         N/A    1.000(1027)  0.004(1006) -0.087(1027)         N/A   -1.000(1027) -0.004(1006) -0.556(1006) -0.556(1006) -0.556(1006) 
+ASC_Score_Raw             0.036(1006)         N/A    0.004(1006)  1.000(1006)  0.045(1006)         N/A   -0.004(1006) -1.000(1006) -0.438(1006) -0.438(1006) -0.438(1006) 
+Duration_Norm             0.920(1027)         N/A   -0.087(1027)  0.045(1006)  1.000(1027)         N/A    0.087(1027) -0.045(1006)  0.739(1006)  0.739(1006)  0.739(1006) 
+LowQualityTag_Norm               N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A   
+UniversalDisagreement_Norm 0.065(1027)         N/A   -1.000(1027) -0.004(1006)  0.087(1027)         N/A    1.000(1027)  0.004(1006)  0.556(1006)  0.556(1006)  0.556(1006) 
+ASC_Norm                 -0.036(1006)         N/A   -0.004(1006) -1.000(1006) -0.045(1006)         N/A    0.004(1006)  1.000(1006)  0.438(1006)  0.438(1006)  0.438(1006) 
+PRI_Score_Heuristic       0.676(1006)         N/A   -0.556(1006) -0.438(1006)  0.739(1006)         N/A    0.556(1006)  0.438(1006)  1.000(1006)  1.000(1006)  1.000(1006) 
+PRI_Score                 0.676(1006)         N/A   -0.556(1006) -0.438(1006)  0.739(1006)         N/A    0.556(1006)  0.438(1006)  1.000(1006)  1.000(1006)  1.000(1006) 
+PRI_Scale_1_5             0.676(1006)         N/A   -0.556(1006) -0.438(1006)  0.739(1006)         N/A    0.556(1006)  0.438(1006)  1.000(1006)  1.000(1006)  1.000(1006) 
+
+SPEARMAN CORRELATION MATRIX
+----------------------------------------
+Correlations (p-values in parentheses)
+
+Metric                     Duration_sec  LowQualityTa  UniversalDis  ASC_Score_Ra  Duration_Nor  LowQualityTa  UniversalDis      ASC_Norm  PRI_Score_He     PRI_Score  PRI_Scale_1_
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Duration_seconds          1.000(0.000)         N/A   -0.084(0.007)  0.046(0.141)  1.000(0.000)         N/A    0.084(0.007) -0.046(0.141)  0.724(0.000)  0.724(0.000)  0.724(0.000) 
+LowQualityTag_Perc               N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A   
+UniversalDisagreement_Perc-0.084(0.007)         N/A    1.000(0.000)  0.009(0.768) -0.084(0.007)         N/A   -1.000(0.000) -0.009(0.768) -0.516(0.000) -0.516(0.000) -0.516(0.000) 
+ASC_Score_Raw             0.046(0.141)         N/A    0.009(0.768)  1.000(0.000)  0.046(0.141)         N/A   -0.009(0.768) -1.000(0.000) -0.418(0.000) -0.418(0.000) -0.418(0.000) 
+Duration_Norm             1.000(0.000)         N/A   -0.084(0.007)  0.046(0.141)  1.000(0.000)         N/A    0.084(0.007) -0.046(0.141)  0.724(0.000)  0.724(0.000)  0.724(0.000) 
+LowQualityTag_Norm               N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A           N/A   
+UniversalDisagreement_Norm 0.084(0.007)         N/A   -1.000(0.000) -0.009(0.768)  0.084(0.007)         N/A    1.000(0.000)  0.009(0.768)  0.516(0.000)  0.516(0.000)  0.516(0.000) 
+ASC_Norm                 -0.046(0.141)         N/A   -0.009(0.768) -1.000(0.000) -0.046(0.141)         N/A    0.009(0.768)  1.000(0.000)  0.418(0.000)  0.418(0.000)  0.418(0.000) 
+PRI_Score_Heuristic       0.724(0.000)         N/A   -0.516(0.000) -0.418(0.000)  0.724(0.000)         N/A    0.516(0.000)  0.418(0.000)  1.000(0.000)  1.000(0.000)  1.000(0.000) 
+PRI_Score                 0.724(0.000)         N/A   -0.516(0.000) -0.418(0.000)  0.724(0.000)         N/A    0.516(0.000)  0.418(0.000)  1.000(0.000)  1.000(0.000)  1.000(0.000) 
+PRI_Scale_1_5             0.724(0.000)         N/A   -0.516(0.000) -0.418(0.000)  0.724(0.000)         N/A    0.516(0.000)  0.418(0.000)  1.000(0.000)  1.000(0.000)  1.000(0.000) 
+
+KEY FINDINGS
+----------------------------------------
+Strongest correlations (|r| > 0.3):
+  PRI_Score_Heuristic ↔ PRI_Score: r=1.000 (very strong positive)
+  PRI_Score_Heuristic ↔ PRI_Scale_1_5: r=1.000 (very strong positive)
+  Duration_Norm ↔ PRI_Scale_1_5: r=0.739 (strong positive)
+  Duration_Norm ↔ PRI_Score_Heuristic: r=0.739 (strong positive)
+  Duration_Norm ↔ PRI_Score: r=0.739 (strong positive)
+  Duration_seconds ↔ PRI_Scale_1_5: r=0.676 (strong positive)
+  Duration_seconds ↔ PRI_Score_Heuristic: r=0.676 (strong positive)
+  Duration_seconds ↔ PRI_Score: r=0.676 (strong positive)
+  UniversalDisagreement_Perc ↔ PRI_Score_Heuristic: r=-0.556 (moderate negative)
+  UniversalDisagreement_Perc ↔ PRI_Score: r=-0.556 (moderate negative)
+
+
+================================================================================

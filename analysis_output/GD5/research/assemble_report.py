@@ -1,0 +1,56 @@
+#!/usr/bin/env python3
+"""
+Assembles individual section analyses into final report for GD5
+"""
+from pathlib import Path
+from datetime import datetime
+import re
+
+sections_dir = Path("sections")
+output_file = Path("GD5_investigation_answers.md")
+output_summary = Path("GD5_investigation_summary.md")
+
+if not sections_dir.exists():
+    print(f"Error: {sections_dir} directory not found")
+    exit(1)
+
+sections = sorted(sections_dir.glob("section_*.md"), 
+                 key=lambda x: int(re.search(r'section_(\d+)', x.name).group(1)))
+
+if not sections:
+    print("No section files found to assemble")
+    exit(1)
+
+# Full report with all details
+with open(output_file, 'w') as out:
+    out.write(f"# GD5 Investigation Answers\n")
+    out.write(f"Generated: {datetime.now().isoformat()}\n\n")
+    
+    for section_file in sections:
+        with open(section_file) as f:
+            content = f.read()
+            out.write(content)
+            out.write("\n\n---\n\n")
+
+# Summary report with just findings
+with open(output_summary, 'w') as out:
+    out.write(f"# GD5 Investigation Summary\n")
+    out.write(f"Generated: {datetime.now().isoformat()}\n\n")
+    
+    for section_file in sections:
+        with open(section_file) as f:
+            lines = f.readlines()
+            in_finding = False
+            for line in lines:
+                # Include section headers and findings only
+                if line.startswith("# Section"):
+                    out.write(line)
+                elif line.startswith("### Question"):
+                    out.write(line)
+                elif line.startswith("**Finding:**"):
+                    out.write(line)
+                    out.write("\n")
+
+print(f"Assembled {len(sections)} sections")
+print(f"  Full report: {output_file}")
+print(f"  Summary: {output_summary}")

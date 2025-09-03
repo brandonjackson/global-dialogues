@@ -1,0 +1,82 @@
+5246a5ca-cc65-41e6-a1c9-423a367d2dd5: Animal communication should be restricted to authorized professionals with certified credentials and appropriate training.
+cc8d6e1d-2617-4e7c-9e9b-9f8293e23247: Assuming we have the ability to interpret animal communication, how much would you trust that AI could truly and comprehensively reflect what an animal is trying to communicate, without being distorted by AI’s programming or human assumptions?
+eb1fbec6-18e3-44c3-87bc-7cd7ceb075bc: Branch A - Please explain your response
+d0450cf5-8390-48b3-9776-15158af45d87: Branch B - Please explain your response
+80d30282-5bd5-44d4-a5a5-ec24da4a7262: Branch C - Please explain your response
+9641f2fa-0622-4172-93d9-6f1452de9e41: Caring for animals (e.g., feeding, grooming, cleaning up after them)
+9eacb286-c7f1-4d21-8144-494b58e9a989: Companies that profit from animals (like farms, zoos, or entertainment industries) should be subject to strict rules about if, when, and how they can communicate with animals.
+fef72493-a7e0-489c-aa16-cbc811501da0: Consider a scenario where societies of the future are governed by AI systems that integrate data from both human and non-human sources (such as environmental sensors and wildlife communication networks) to guide community decisions (e.g., urban planning, conservation zones). How appealing is this vision of an ecocentric, integrated society?
+fe992270-ffe7-4e20-93f6-12c71be79ad7: Do you believe that other animals have their own forms of culture?
+874762a8-dc8f-44c2-b815-383147ffcb2f: Do you believe that other animals have their own forms of emotion?
+d33d3a8f-817f-464c-9fb3-50ed96c1d48c: Do you believe that other animals have their own forms of language?
+e50749aa-6de1-447f-8f80-a59a589db2f4: Do you feel like you understand yourself better after participating in this conversation?
+123ce701-b606-45ab-b780-aee37e6a48de: Do you feel you were able to fully express your views on your culture, your values, and what you want for the future in this conversation? (through what you responded and how you voted)
+faaa9539-8a7f-4e95-a76b-6546c685ef86: Do you think that in the future non-humans should be able to:
+f32a9246-917b-4127-b06b-c9f518249852: Do you think the increased use of AI across society is likely to make the amount of free time you have better, worse or stay the same in the next 10 years?
+8995a0c6-8868-491b-8b70-acd23363a099: Do you think the increased use of AI across society is likely to make the availability of good jobs better, worse or stay the same in the next 10 years?
+84947b30-88cf-40a2-b504-0bd5b3f2dc38: Do you think the increased use of AI across society is likely to make your community's well-being better, worse or stay the same in the next 10 years?
+0f5ffda1-e9d7-4950-b9d2-c8ffa0fbd914: Do you think the increased use of AI across society is likely to make your cost of living better, worse or stay the same in the next 10 years?
+77877d7e-4385-4237-b01d-56c0d346dffe: Do you think the increased use of AI across society is likely to make your sense of purpose better, worse or stay the same in the next 10 years?
+bd7a4b13-8aa6-4c0f-924f-b5e57151ea72: Do you think this is a good use of AI technology?
+a7303bc8-194b-48f4-bbbc-509b234a7419: Everyone should be allowed to listen to animals, but responding should be restricted to certain people.
+c5d4780d-c202-429f-abcb-e4e93b3ec282: Have you ever tried to imagine experiencing the world through another animal's senses?
+20043bb7-d014-4d21-bed7-ce9bd049c122: How does this knowledge make you feel?
+2cbc3472-c993-4fdf-b6e2-529b240e4ccb: How important do you think it is for humans to understand how other animals experience the world?
+ed276ec7-7ff1-41d9-bcde-4c4b48aed3c9: How old are you?
+0a5bb0a6-f174-4ee1-b4a2-28bef7cb487f: How old are you?
+8e505718-7519-4133-9fbb-71f88fd9182b: If AI could accurately express the voice of non-human animals, we might want to allow them to participate in decision-making. In this situation, which of these do you think is best?
+524213d3-fc60-47b6-b08d-dda406130652: If AI could reliably interpret animal communication, how interested would you be to know what animals "say" or "feel"?
+cc5ec0de-84a3-4ba4-9960-47394478ad88: If AI helped us understand what an animal really needs, should that animal have the right to a representative such as a lawyer to defend its rights and protections?
+24f62842-974d-47ed-abff-882d270cafcc: If AI technology was successfully developed to reliably interpret communication between humans and animals, how would you feel about this development?
+6ed572d7-a320-4b17-97dc-44ae748df19e: If animals were represented in decision-making bodies (e.g. the UN, local government, or corporate boards), who do you think should be given the responsibility of representing them?
+f193df8b-2c23-42cf-89a9-154d877fab35: If other animals had a voice and representation, should they be allowed to participate in human democratic processes?
+0686534e-da71-47a4-9c5c-9dab5ac9f13d: If we could understand animals, what would be the biggest benefit for our world?
+5dbc1b30-3549-40be-997d-dde94213eaaa: If we record an elephant’s conversation or a whale’s song, who should own that recording?
+34febf1b-d7da-4bbf-bd75-db2da4cfa5f7: Lastly, is there anything you felt you could not express in this conversation that you want to make sure the people working on this know?
+c1a66a5d-5389-45d3-8bef-c99cf0e5a1a4: Noticing or observing animals (e.g., birdwatching, tracking urban wildlife, noticing animals in parks or neighborhoods)
+175e9f53-5e8a-40df-9626-2da4443de601: Overall, would you say the increased use of artificial intelligence (AI) in daily life makes you feel…
+5b3f2c38-95af-417a-a09f-a245a77eeef1: Overall, would you say the increased use of artificial intelligence (AI) in daily life makes you feel…
+54df1c7d-820f-4569-b9d4-1b91bce72c88: Please explain why
+4b800d08-16ba-4c96-bf73-2759451dc8c5: Please explain why you give your response.
+52d242b1-a06c-4146-bfe0-dcc8522538f6: Please explain your response
+35198521-a3f9-4cad-8a16-472021064ed2: Please select your preferred language:
+cdcf76a8-19cf-4b93-9750-09e96a47d6f0: Sharing physical space (e.g., living with pets, encountering service animals, or passing animals on your commute)
+cc1363e1-ccfc-4d2f-84f8-5241b835c30a: Think about an animal you encounter regularly (like a pet, birds outside your window, or insects in your garden). What do you think their daily experience might be like through their senses?
+0a945247-083c-448e-8641-1c17c4d7f261: Thinking about the last three months, how often, if at all, have you been expected to use an AI system at work?
+372401be-9307-420b-8199-9f70b52423e3: Thinking about the last three months, how often, if at all, have you interacted with AI systems to complete an action in the real world on your behalf without your supervision?
+8a44587f-82c2-4ea5-bd2c-1ddcb4372b6c: Thinking about the last three months, how often, if at all, have you interacted with AI systems to get advice on a sensitive personal issue or to get emotional support?
+b9b7b65b-3462-4390-b822-8fca61ec7c0e: Thinking about the last three months, how often, if at all, have you personally chosen to use an AI system at work?
+69aad8f7-32df-4c53-871f-c49af87c919a: Thinking about the last three months, how often, if at all, have you personally chosen to use an AI system in your personal life?
+22656d2a-8284-4bee-8c5a-11de280fe9c6: To what extent does knowing this impact your perspective on animals?
+76426634-6702-4906-a4d7-e79bc06243a7: To what extent, if at all, do you trust the civil servants in your government to act in your best interest?
+b2a655a0-daed-4687-a70c-15e0c7f1b4a3: To what extent, if at all, do you trust your AI chatbot (eg ChatGPT) to act in your best interest?
+f05eb17f-c04a-4d3a-b232-3e24cf8371cd: To what extent, if at all, do you trust your elected representatives to act in your best interest?
+a2927565-ce81-4173-b1de-4f2d5ccb7e91: To what extent, if at all, do you trust your faith or community leader to act in your best interest?
+3ae706fa-52bd-4489-a820-4bcb0644e58a: To what extent, if at all, do you trust your family doctor to act in your best interest?
+1dc006da-5978-4302-bf0c-a86493c98081: To what extent, if at all, do you trust your social media feed (eg TikTok, Facebook) to act in your best interest?
+f856e114-6b61-41f4-bf30-18825f1493f7: We asked some AI’s what question they would like to ask humans about understanding animal communications. This is what they came up with:   “How might advancements in understanding animal languages transform our ethical responsibilities towards non-human species”
+ebaa9f11-69f8-46ff-aa7f-c49092c56957: What best describes where you live?
+b312be19-44a2-4252-81d8-770d70a045bb: What best describes where you live?
+809479c1-4172-49c7-84d7-9ef121d5f171: What concerns do you have regarding the use of AI in interspecies communication? (Please consider things like misinterpretation of animal/environmental signals, misuse of AI technology, ethical concerns, unforeseen ecological impacts)
+a65b104a-2813-4131-aa64-c3a9ab09c6f3: What country or region do you most identify with?
+014fe774-be51-47e8-a759-05328c0ad515: What country or region do you most identify with?
+e1eb94c0-9787-4768-98c7-e016ed32e30b: What is one question you would want to ask an animal if AI could interpret?
+b7d72018-fb79-4efc-81eb-178cc36625a2: What is your gender?
+3a81a565-04a1-4835-ab51-b8f46317d998: What is your gender?
+76000288-e104-4e96-af30-a6f44866a6b7: What kind of decisions should be informed by nature's voices?
+e21b104e-08b4-4bc9-b63c-9d40c48568f4: What might be the biggest risk?
+8e78a0f1-558b-492b-a752-213c11d60b33: What might be the most profound change to human society if animal and ecosystem voices were taken seriously in our laws and systems?
+30fb8d06-03db-44b7-9eae-b0ed7a67d6e5: What other boundaries would you set?
+ed9a4f13-20d4-4ec3-a4e6-bde9ec68df5a: What religious group or faith do you most identify with?
+047ccf30-0feb-4947-be89-74e62b153ae9: What religious group or faith do you most identify with?
+1d39b948-7767-40eb-81a3-9d2bed9e4254: Which animals come to mind for you as most likely to have a sophisticated language?
+a7601187-0c2a-4f65-a95a-0a4da9cf1b53: Which approach do you think is best for humans to interact with non-humans?
+fe75281b-72ca-4b2d-80be-7ec92e0724da: Which approach feels most appropriate to you for protecting animals?
+06de2fe5-1b32-49f4-a4a2-06aae4e9a38b: Which of the following types of human-to-animal communication should be strictly regulated or prohibited? 
+Select "None of the above" only if you think no regulations are needed and all communication should be allowed.
+438887a0-2f26-406d-81f2-b2768e2827f2: Which statement best reflects your view:
+bfb3aa61-a107-4254-acd3-eb880c204eb3: Which statement best reflects your view?
+9d9568a9-61ab-4fda-8d83-4a7cb0982360: Which statement best reflects your view?
+544b6855-38be-458c-b637-ea2a8c36e876: Which statement best reflects your view?
+72af2827-176e-4c43-9f6e-b96a691b6175: Which types of animals do you encounter in your life more than once a week?
+727719e2-4557-4ef8-a29d-b9c6b316cb80: Would you trust AI more or less than humans to interpret animal communication to resolve a human-wildlife conflict? Why?

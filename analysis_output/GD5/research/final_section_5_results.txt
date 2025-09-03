@@ -1,0 +1,196 @@
+================================================================================
+SECTION 5: ETHICS, RIGHTS, AND GOVERNANCE
+Analysis Date: 2025-09-02T20:21:52.500330
+================================================================================
+
+Total reliable participants (PRI >= 0.3): 1005
+
+================================================================================
+Question 5.1: PREFERRED FUTURE FOR ANIMAL PROTECTION (Q70)
+================================================================================
+
+**Finding:**
+Future A: Building ongoing relationships and communication	 is preferred by 63.18% of respondents
+
+**Method:** Analysis of Q70 responses in participant_responses table
+
+**Details:**
+- Future A: Building ongoing relationships and communication	: 635 (63.18%)
+- Future B: Including all voices in shared decision-making	: 252 (25.07%)
+- Future C: Granting legal rights and representation: 118 (11.74%)
+
+**Correlation with Human-Animal Views (Q33):**
+Q33                                                 \nBecause all living things are equal  ...  while our brain development is better and we can achieve better things - i think we are still similar to animals and can learn from them\n\n
+Q70                                                                                        ...                                                                                                                                              
+Future A: Building ongoing relationships and co...                                  100.0  ...                                                0.0                                                                                           
+Future B: Including all voices in shared decisi...                                    0.0  ...                                              100.0                                                                                           
+Future C: Granting legal rights and representation                                    0.0  ...                                                0.0                                                                                           
+
+[3 rows x 1005 columns]
+
+================================================================================
+Question 5.2: ANIMAL REPRESENTATION (Q73, Q74)
+================================================================================
+
+**Finding:**
+42.49% believe animals should have the right to legal representation
+
+**Method:** Analysis of Q73 responses
+
+**Details:**
+- Yes: 427 (42.49%)
+- Not sure: 343 (34.13%)
+- No: 235 (23.38%)
+
+**Representation Method Preferences (Q74):**
+- Animals should have humans represent them when decisions are made that directly impact them : 591 (58.81%)
+- Animals should represent themselves (via tech assisted tools): 414 (41.19%)
+
+================================================================================
+Question 5.3: WHO SHOULD REPRESENT ANIMALS (Q75)
+================================================================================
+
+**Note:** Q75 is a multi-select question. Checking unmapped columns...
+Found Q75 data in unmapped_93
+
+**Finding:**
+Top 3 choices: Animals themselves / an animal ambassador , Scientists who study animals , Animal protection organizations
+
+**Details:**
+- Animals themselves / an animal ambassador : 279 (27.76%)
+- Scientists who study animals : 242 (24.08%)
+- Animal protection organizations: 198 (19.7%)
+- Technologies, including AI: 78 (7.76%)
+- A non profit institution: 53 (5.27%)
+
+================================================================================
+Question 5.4: ANIMAL PARTICIPATION IN DEMOCRACY (Q77)
+================================================================================
+
+**Finding:**
+59.6% support some form of animal participation in democratic processes
+
+**Method:** Analysis of Q77 responses
+
+**Details:**
+- No, they should not be able to participate.: 373 (37.11%)
+- Yes, they should be able to vote, but only on laws or decisions that directly affect them. : 253 (25.17%)
+- Yes, they should have a voice, but their vote should not be binding. : 130 (12.94%)
+- Yes, they should be able to vote through human proxies or guardians. : 118 (11.74%)
+- Yes, they should be recognized as a formal political constituency with dedicated representatives in government.: 98 (9.75%)
+- Other: 33 (3.28%)
+
+**Correlation with Belief in Animal Culture (Q41):**
+Among those who strongly believe animals have culture: 58.5% support democratic participation
+
+================================================================================
+Question 5.5: REGULATING COMMUNICATION (Q82, Q83, Q85)
+================================================================================
+
+**Professional Restriction (Q82):**
+88.4% support restricting to professionals
+- Strongly agree: 419 (41.69%)
+- Somewhat agree: 348 (34.63%)
+- Neutral: 115 (11.44%)
+- Somewhat disagree: 84 (8.36%)
+- Strongly disagree: 37 (3.68%)
+- --: 2 (0.2%)
+
+**Open Listening (Q83):**
+81.5% support open listening with restricted responding
+- Somewhat agree: 359 (35.72%)
+- Strongly agree: 265 (26.37%)
+- Neutral: 184 (18.31%)
+- Somewhat disagree: 133 (13.23%)
+- Strongly disagree: 62 (6.17%)
+- --: 2 (0.2%)
+
+**Types of Communication to Prohibit (Q85):**
+Top prohibited communication types:
+- tricking animals into appearing at a location for a tourism ...: 647 (64.6%)
+- convincing a flock of birds to change its migration path)."]...: 614 (61.3%)
+- ["Communicating threats or inciting violence."...: 610 (60.9%)
+- "Commands that override an animal's natural instincts for a ...: 598 (59.7%)
+- "Persuading animals to permanently alter their natural behav...: 592 (59.1%)
+
+================================================================================
+Question 5.6: OWNERSHIP OF ANIMAL CREATIONS (Q90)
+================================================================================
+
+**Finding:**
+Most popular ownership view: the community protecting those animals (39.5%)
+
+**Method:** Analysis of Q90 responses
+
+**Details:**
+- the community protecting those animals: 397 (39.5%)
+- the human that recorded it: 329 (32.74%)
+- the animal itself : 172 (17.11%)
+- Other: 40 (3.98%)
+- local non-profit organisations : 36 (3.58%)
+- the local government : 26 (2.59%)
+- --: 5 (0.5%)
+
+================================================================================
+Question 5.7: SHOULD ANIMALS BE ABLE TO EARN MONEY? (Q91)
+================================================================================
+
+**Economic Rights for Non-Humans (Q91):**
+
+**Finding:**
+0.0% support animals earning money
+0.0% support animals owning property
+0.0% oppose all economic rights
+
+**Method:** Analysis of Q91 multi-select responses
+
+**Details:**
+- ["None of the above"]: 327 (32.7%)
+- (similar to how we appoint guardians for children or vulnerable humans )"]: 263 (26.3%)
+- "Have legal guardians manage their data rights: 239 (23.9%)
+- ["Have legal guardians manage their data rights: 208 (20.8%)
+- (similar to how we appoint guardians for children or vulnerable humans )": 184 (18.4%)
+- or animal \"influencers\")": 180 (18.0%)
+- "Pay humans for services in their benefit"]: 158 (15.8%)
+- "Be able to sell things to humans (like bird calls used in media: 144 (14.4%)
+- ["Own things they make or produce": 140 (14.0%)
+- ["Earn money": 132 (13.2%)
+- "Own things they make or produce": 98 (9.8%)
+- "Own property": 95 (9.5%)
+- "Have AI manage their data and \u201cbelongings\u201d"]: 89 (8.9%)
+- "Have AI manage their data and \u201cbelongings\u201d": 74 (7.4%)
+- ["Be able to sell things to humans (like bird calls used in media: 69 (6.9%)
+- ["Own things they make or produce"]: 49 (4.9%)
+- or animal \"influencers\")"]: 33 (3.3%)
+- ["Have AI manage their data and \u201cbelongings\u201d"]: 27 (2.7%)
+- "Own property"]: 18 (1.8%)
+- ["Pay humans for services in their benefit"]: 16 (1.6%)
+- ["Earn money"]: 11 (1.1%)
+- ["Own property": 10 (1.0%)
+- ["Own property"]: 7 (0.7%)
+- ["Have AI manage their data and \u201cbelongings\u201d": 4 (0.4%)
+- "Own things they make or produce"]: 2 (0.2%)
+
+**Age Group Analysis:**
+18-25: 29/247 (11.7%) support earning money
+26-35: 62/408 (15.2%) support earning money
+36-45: 31/195 (15.9%) support earning money
+46-55: 16/101 (15.8%) support earning money
+56-65: 5/38 (13.2%) support earning money
+65+: 0/11 (0.0%) support earning money
+
+================================================================================
+CROSS-CUTTING ANALYSIS
+================================================================================
+
+**Consistency between Human Views and Economic Rights:**
+
+Among those who believe humans and animals are equal:
+  74.7% support economic rights for animals
+
+Among those who believe humans are superior:
+  66.2% support economic rights for animals
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================
