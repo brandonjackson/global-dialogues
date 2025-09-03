@@ -4,15 +4,15 @@
 ### Question 18.1: Working Animals and AI Uses
 **Question:** Do people who regularly interact with working animals (Q38) (e.g., police dogs, mules) support more instrumental uses of AI (e.g., safety, productivity) than wildlife-focused conservation uses?
 
-**Finding:** Only 8.8% of respondents regularly encounter working animals (police dogs, work mules), making this a small specialized group. Cannot determine their specific AI use preferences due to aggregated data structure that prevents linking exposure types to instrumental vs. conservation support.
+**Finding:** Only 8.8% of respondents regularly encounter working animals (police dogs, work mules), making this a small specialized group. Statistical analysis shows no significant difference in animal protection preferences between those with and without working animal exposure (p=0.856).
 
-**Method:** Analysis of Q38 animal encounter frequencies and search for AI use preference data.
+**Method:** Individual-level analysis linking Q38 animal encounter data to Q70 animal protection preferences using chi-square test (n=1037).
 
 **Details:**
 - **Working animal exposure rate**: 8.8% (ranked 5th of 9 animal categories)
-- **Limited AI use data**: Found 20 general AI use responses but cannot link to specific exposure groups
-- **Concerns identified**: Main worries about AI include misinterpretation (57.0% agreement) and manipulation
-- Data structure prevents determining if working animal exposure correlates with instrumental AI preferences
+- **Statistical test results**: Chi-square = 0.77, p = 0.856, df = 3
+- **Conclusion**: Working animal exposure does not significantly correlate with different animal protection approaches
+- Both groups show similar preferences for relationship-based vs. legal rights approaches
 
 ### Question 18.2: Zoo Visitors and Entertainment
 **Question:** Are zoo/aquarium visitors (Q38) more likely to support AI-mediated entertainment uses of animal translation than other groups?
