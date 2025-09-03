@@ -18,16 +18,15 @@ print("=" * 50)
 
 query_q70_q7 = """
 SELECT 
-    pr."What country or region do you most identify with?" as country,
-    pr."Which approach feels most appropriate to you for protecting animals?" as approach,
+    pr.Q7 as country,
+    pr.Q70 as approach,
     COUNT(*) as count
 FROM participant_responses pr
-WHERE pr."What country or region do you most identify with?" IS NOT NULL 
-    AND pr."Which approach feels most appropriate to you for protecting animals?" IS NOT NULL
-    AND pr."What country or region do you most identify with?" != ''
-    AND pr."Which approach feels most appropriate to you for protecting animals?" != ''
-GROUP BY pr."What country or region do you most identify with?", 
-         pr."Which approach feels most appropriate to you for protecting animals?"
+WHERE pr.Q7 IS NOT NULL 
+    AND pr.Q70 IS NOT NULL
+    AND pr.Q7 != ''
+    AND pr.Q70 != ''
+GROUP BY pr.Q7, pr.Q70
 ORDER BY country, approach
 """
 
