@@ -2,7 +2,7 @@
 ## Analysis Date: 2025-09-02T18:29:37
 
 ### Question 7.1: From Equality to Economics
-**Finding:** Among respondents who believe humans are "fundamentally equal to other animals" (36.2% of sample), 53.6% endorse at least one form of economic rights for animals, compared to only 34.8% among non-equality believers. This reveals partial practical extension of abstract equality beliefs, though nearly half don't extend equality to economic domains.
+**Finding:** Among respondents who believe humans are "fundamentally equal to other animals" (36.2% of sample), 76.4% endorse at least one form of economic rights for animals, compared to 73.7% among non-equality believers. This reveals that equality believers are only marginally more likely to support economic rights, suggesting abstract philosophical beliefs don't strongly translate to economic policy positions.
 
 **Method:** Analysis of Q94 (human superiority/equality) cross-referenced with Q91 (economic rights multi-select), filtering for participants with PRI >= 0.3.
 
@@ -16,7 +16,7 @@ The equality believers (n=364) show varied support for specific economic rights:
 - Owning property: 13.7%
 - AI managing data/belongings: 9.6%
 
-Notably, 23.6% selected "None of the above" despite believing in fundamental equality, suggesting ideological boundaries. The 18.8 percentage point gap between equality believers and non-believers supporting economic rights indicates that abstract philosophical beliefs partially but incompletely translate to practical policy positions.
+Notably, 23.6% selected "None of the above" despite believing in fundamental equality, suggesting ideological boundaries. The small 2.7 percentage point gap between equality believers and non-believers supporting economic rights indicates that abstract philosophical beliefs have minimal impact on practical economic policy positions.
 
 ### Question 7.2: The Skeptic's Interest
 **Finding:** Among the most skeptical respondents (those "More concerned than excited" about AI AND "Strongly distrust" AI translation), 73.3% remain at least somewhat interested in knowing what animals have to say, with 33.3% being "Very interested" despite their deep skepticism.
