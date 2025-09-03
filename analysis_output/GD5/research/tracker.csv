@@ -12,11 +12,11 @@ section_num,section_title,status,claimed_at,completed_at,review_status
 11,"AI, Trust, and Technology Adoption",completed,2025-09-02T20:26:05.879449,2025-09-02T20:28:13.394245,reviewed
 12,"Ethics, Rights, and Governance",completed,2025-09-02T20:26:21.512277,2025-09-02T21:16:42.801167,reviewed
 13,"Cultural, Religious, and Regional Patterns",completed,2025-09-02T21:14:39.793108,2025-09-02T21:16:55.195927,reviewed
-14,Headline-Friendly Insights,completed,2025-09-02T21:14:47.654664,2025-09-02T21:18:11.476019,in_review
+14,Headline-Friendly Insights,completed,2025-09-02T21:14:47.654664,2025-09-02T21:18:11.476019,reviewed
 15,Philosophical & Emotional Dimensions,completed,2025-09-02T21:14:48.541204,2025-09-02T21:19:01.363337,in_review
-16,Intersection of Human–Animal Views and Self-Identity,completed,2025-09-02T21:14:51.507152,2025-09-02T21:27:10.957157,pending
-17,Surprising Cross-Trust Dynamics,completed,2025-09-02T21:14:56.540943,2025-09-02T21:17:44.477651,pending
-18,Experiential & Exposure Effects,completed,2025-09-02T21:17:01.548813,2025-09-02T21:26:49.770423,pending
+16,Intersection of Human–Animal Views and Self-Identity,completed,2025-09-02T21:14:51.507152,2025-09-02T21:27:10.957157,in_review
+17,Surprising Cross-Trust Dynamics,completed,2025-09-02T21:14:56.540943,2025-09-02T21:17:44.477651,in_review
+18,Experiential & Exposure Effects,completed,2025-09-02T21:17:01.548813,2025-09-02T21:26:49.770423,in_review
 19,Governance & Power Distribution,completed,2025-09-02T21:24:18.275650,2025-09-02T21:26:42.340214,pending
 20,Moral/Ethical Contradictions,completed,2025-09-02T21:24:23.430848,2025-09-02T21:27:10.133880,pending
 21,Risk vs. Benefit Balances,completed,2025-09-02T21:24:26.669801,2025-09-02T21:26:36.901382,pending

@@ -1,5 +1,5 @@
 # Section 16: Intersection of Human-Animal Views and Self-Identity
-## Analysis Date: 2025-09-02T21:26:53.314505
+## Analysis Date: 2025-09-02T23:05:24.029586
 
 ### Question 16.1: Nature Separation and Empathy
 **Question:** Do people who identify as "separate from nature" (Q93) also show lower levels of empathy or connection (Q45) when presented with evidence of animal cognition?
