@@ -46,6 +46,35 @@ def claim_next_section():
     else:
         print("NO_SECTIONS_AVAILABLE")
 
+def claim_review():
+    """Claim the next section for review"""
+    rows = []
+    review_section = None
+    
+    with open(TRACKER_FILE, 'r') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            # Find first completed section with pending review
+            if (row['status'] == 'completed' and 
+                row['review_status'] == 'pending' and 
+                not review_section):
+                row['review_status'] = 'in_review'
+                review_section = row['section_num']
+            
+            rows.append(row)
+    
+    # Write back
+    if rows:
+        with open(TRACKER_FILE, 'w', newline='') as f:
+            writer = csv.DictWriter(f, fieldnames=rows[0].keys())
+            writer.writeheader()
+            writer.writerows(rows)
+    
+    if review_section:
+        print(f"REVIEW: Section {review_section}")
+    else:
+        print("NO_SECTIONS_FOR_REVIEW")
+
 def complete_section(section_num):
     """Mark a section as completed"""
     rows = []
@@ -127,15 +156,17 @@ def status():
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python section_manager.py [claim|complete|review|complete_review|status] [section_num]")
+        print("Usage: python section_manager.py [claim|claim_review|complete|complete_review|status|mark_for_review] [section_num]")
         sys.exit(1)
     
     action = sys.argv[1]
     if action == "claim":
         claim_next_section()
+    elif action == "claim_review":
+        claim_review()
     elif action == "complete" and len(sys.argv) == 3:
         complete_section(sys.argv[2])
-    elif action == "review" and len(sys.argv) == 3:
+    elif action == "mark_for_review" and len(sys.argv) == 3:
         mark_for_review(sys.argv[2])
     elif action == "complete_review" and len(sys.argv) == 3:
         complete_review(sys.argv[2])
