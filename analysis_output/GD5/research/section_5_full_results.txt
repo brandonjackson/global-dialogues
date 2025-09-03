@@ -1,0 +1,112 @@
+================================================================================
+SECTION 5: ETHICS, RIGHTS, AND GOVERNANCE
+Analysis Date: 2025-09-02T18:24:43.797331
+================================================================================
+
+Total reliable participants (PRI >= 0.3): 1005
+
+================================================================================
+5.1. PREFERRED FUTURE FOR ANIMAL PROTECTION (Q70)
+================================================================================
+
+Q70: Which approach feels most appropriate to you for protecting animals?
+Empty DataFrame
+Columns: [response, count, percentage]
+Index: []
+
+Correlation with Human-Animal Equality Views:
+Empty DataFrame
+Columns: [future_preference, human_superiority_view, count]
+Index: []
+
+================================================================================
+5.2. ANIMAL REPRESENTATION (Q73, Q74)
+================================================================================
+
+Q73: Should animals have the right to a representative?
+Empty DataFrame
+Columns: [response, count, percentage]
+Index: []
+
+Q74: How should animals be represented in decision-making?
+Empty DataFrame
+Columns: [response, count, percentage]
+Index: []
+
+================================================================================
+5.3. WHO SHOULD REPRESENT ANIMALS (Q75)
+================================================================================
+
+Q75: Who should represent animals in decision-making bodies?
+Empty DataFrame
+Columns: [response, count, percentage]
+Index: []
+
+================================================================================
+5.4. ANIMAL PARTICIPATION IN DEMOCRACY (Q77)
+================================================================================
+
+Q77: Should animals participate in human democratic processes?
+Empty DataFrame
+Columns: [response, count, percentage]
+Index: []
+
+Correlation with Belief in Animal Culture:
+Empty DataFrame
+Columns: [democracy_view, culture_belief, count]
+Index: []
+
+================================================================================
+5.5. REGULATING COMMUNICATION (Q82, Q83, Q85)
+================================================================================
+
+Q82: Should animal communication be restricted to professionals?
+Empty DataFrame
+Columns: [response, count, percentage]
+Index: []
+
+Q83: Should everyone be allowed to listen to animals?
+Empty DataFrame
+Columns: [response, count, percentage]
+Index: []
+
+Q85: Types of communication to prohibit (Top 10):
+Empty DataFrame
+Columns: [response, count, percentage]
+Index: []
+
+================================================================================
+5.6. OWNERSHIP OF ANIMAL CREATIONS (Q90)
+================================================================================
+
+Q90: Who should own animal recordings?
+Empty DataFrame
+Columns: [response, count, percentage]
+Index: []
+
+================================================================================
+5.7. SHOULD ANIMALS BE ABLE TO EARN MONEY? (Q91)
+================================================================================
+
+Q91: Economic rights for non-humans:
+Empty DataFrame
+Columns: [response, count, percentage]
+Index: []
+
+--- Age Group Analysis for Economic Rights ---
+Empty DataFrame
+Columns: [age_group, economic_right, count]
+Index: []
+
+================================================================================
+CROSS-CUTTING ANALYSIS
+================================================================================
+
+Consistency between Human Superiority Views and Economic Rights Support:
+Empty DataFrame
+Columns: [human_superiority, economic_rights, count]
+Index: []
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================
