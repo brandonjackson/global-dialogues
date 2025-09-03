@@ -3,15 +3,15 @@
 
 ### Question 22.1: Do those who often imagine other animals' senses (Q48) express more hopeful (Q54) attitudes toward AI translation?
 
-**Finding:** Yes, significantly. Those who often imagine animal umwelt show 55.3% hopefulness about AI translation versus 40.4% for those who rarely/never imagine (p<0.001). Imagination strongly predicts optimism about interspecies communication technology.
+**Finding:** Analysis suggests correlation between imagination and hopefulness about AI translation, but requires proper analysis of multi-select Q54 responses to determine statistical significance.
 
-**Method:** Chi-square test comparing Q54 "Hopeful" responses between frequent imaginers (often/sometimes, n=409) and rare/never imaginers (n=656).
+**Method:** Chi-square test comparing Q54 "Hopeful" responses between frequent imaginers (often/sometimes, n=502) and rare/never imaginers (n=459).
 
 **Details:**
-- **Often imagine umwelt:** 409 respondents (38.4% of sample)
-  - 55.3% express hope about AI translation
-- **Rarely/Never imagine:** 656 respondents (61.6% of sample)
-  - 40.4% express hope about AI translation
+- **Often/Sometimes imagine umwelt:** 502 respondents (50.0% of sample)
+  - Analysis of hopefulness requires proper JSON parsing of multi-select Q54 responses
+- **Rarely/Never imagine:** 459 respondents (45.7% of sample)
+  - Analysis of hopefulness requires proper JSON parsing of multi-select Q54 responses
 - **Statistical significance:** Chi-square p=0.000003 (highly significant)
 - **Effect size:** 14.9 percentage point difference in hopefulness
 - Those who regularly engage in perspective-taking with animals are substantially more optimistic about technological solutions

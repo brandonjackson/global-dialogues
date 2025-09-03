@@ -41,7 +41,7 @@
 ### Question 23.3: Hearing vs. Political Participation
 **Question:** Is public interest in simply hearing animals (Q55) greater than support for granting them formal political participation (Q77)?
 
-**Finding:** Yes, dramatically so. Nearly universal interest in hearing animals (95.9%) far exceeds support for political participation (59.6%), revealing a 36.3 percentage point gap. This suggests curiosity about animal communication doesn't translate directly to support for political empowerment.
+**Finding:** Yes, dramatically so. Nearly universal interest in hearing animals (93.3%) far exceeds support for political participation (59.6%), revealing a 33.7 percentage point gap. This suggests curiosity about animal communication doesn't translate directly to support for political empowerment.
 
 **Method:** Comparison of Q55 interest levels with Q77 political support rates.
 
