@@ -35,10 +35,11 @@ def claim_next_section():
             rows.append(row)
     
     # Write back
-    with open(TRACKER_FILE, 'w', newline='') as f:
-        writer = csv.DictWriter(f, fieldnames=rows[0].keys())
-        writer.writeheader()
-        writer.writerows(rows)
+    if rows:
+        with open(TRACKER_FILE, 'w', newline='') as f:
+            writer = csv.DictWriter(f, fieldnames=rows[0].keys())
+            writer.writeheader()
+            writer.writerows(rows)
     
     if claimed_section:
         print(f"CLAIMED: Section {claimed_section}")

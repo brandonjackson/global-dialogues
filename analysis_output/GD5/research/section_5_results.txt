@@ -1,0 +1,114 @@
+================================================================================
+SECTION 5: ETHICS, RIGHTS, AND GOVERNANCE
+Analysis Date: 2025-09-02T18:09:38.014033
+================================================================================
+
+Total reliable participants (PRI >= 0.3): 0
+
+================================================================================
+5.1. PREFERRED FUTURE FOR ANIMAL PROTECTION
+================================================================================
+
+Question: Which approach feels most appropriate to you for protecting animals?...
+Question ID: fe75281b-72ca-4b2d-80be-7ec92e0724da
+
+Response Distribution:
+Empty DataFrame
+Columns: [response, count, percentage]
+Index: []
+
+================================================================================
+5.2. ANIMAL REPRESENTATION
+================================================================================
+
+Question: If AI helped us understand what an animal really needs, should that animal have the right to a representative such as a lawyer to defend its rights an...
+
+Response Distribution:
+Empty DataFrame
+Columns: [response, count, percentage]
+Index: []
+
+================================================================================
+5.3. WHO SHOULD REPRESENT ANIMALS
+================================================================================
+
+Question: If animals were represented in decision-making bodies (e.g. the UN, local government, or corporate boards), who do you think should be given the respo...
+
+Top Choices for Animal Representation:
+Empty DataFrame
+Columns: [response, count, percentage]
+Index: []
+
+================================================================================
+5.4. ANIMAL PARTICIPATION IN DEMOCRACY
+================================================================================
+
+Question: If other animals had a voice and representation, should they be allowed to participate in human democratic processes?...
+
+Response Distribution:
+Empty DataFrame
+Columns: [response, count, percentage]
+Index: []
+
+Correlation with Belief in Animal Culture:
+Empty DataFrame
+Columns: [democracy_view, culture_belief, count, percentage]
+Index: []
+
+================================================================================
+5.5. REGULATING COMMUNICATION
+================================================================================
+
+Question: Animal communication should be restricted to authorized professionals with certified credentials and appropriate training....
+
+Response Distribution - Professional Restriction:
+Empty DataFrame
+Columns: [response, count, percentage]
+Index: []
+
+Question: Everyone should be allowed to listen to animals, but responding should be restricted to certain people....
+
+Response Distribution - Open Access:
+Empty DataFrame
+Columns: [response, count, percentage]
+Index: []
+
+Question: Which of the following types of human-to-animal communication should be strictly regulated or prohibited? 
+Select "None of the above" only if you thin...
+
+Types of Communication to Prohibit (Top 10):
+Empty DataFrame
+Columns: [response, count, percentage]
+Index: []
+
+================================================================================
+5.6. OWNERSHIP OF ANIMAL CREATIONS
+================================================================================
+
+Question: If we record an elephant’s conversation or a whale’s song, who should own that recording?...
+
+Response Distribution - Ownership:
+Empty DataFrame
+Columns: [response, count, percentage]
+Index: []
+
+================================================================================
+5.7. SHOULD ANIMALS BE ABLE TO EARN MONEY?
+================================================================================
+
+Question: Do you think that in the future non-humans should be able to:...
+
+Response Distribution - Economic Rights:
+Empty DataFrame
+Columns: [response, count, percentage]
+Index: []
+
+Age Group Analysis:
+
+================================================================================
+CROSS-CUTTING ANALYSIS
+================================================================================
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================
