@@ -174,26 +174,26 @@ More excited than concerned:
 
 **Trust Levels Across Entities:**
 
-**Family Doctor:**
+**Scientists (Q12):**
 - Average Trust Score: 4.15 (1=Strongly Distrust, 5=Strongly Trust)
 - Total Responses: 1005
   - Neither Trust Nor Distrust: 75 (7.5%)
-  - Somewhat Distrust	: 42 (4.2%)
+  - Somewhat Distrust: 42 (4.2%)
   - Somewhat Trust: 454 (45.2%)
   - Strongly Distrust: 9 (0.9%)
   - Strongly Trust: 425 (42.3%)
 
-**Social Media Feed:**
-- Average Trust Score: 0.98 (1=Strongly Distrust, 5=Strongly Trust)
+**Environmental Groups (Q13):**
+- Average Trust Score: 1.71 (1=Strongly Distrust, 5=Strongly Trust)
 - Total Responses: 1005
-  - Neither Trust Nor Distrust	: 261 (26.0%)
+  - Neither Trust Nor Distrust: 261 (26.0%)
   - Somewhat Distrust: 330 (32.8%)
-  - Somewhat Trust	: 169 (16.8%)
+  - Somewhat Trust: 169 (16.8%)
   - Strongly Distrust: 225 (22.4%)
   - Strongly Trust: 20 (2.0%)
 
-**Elected Representatives:**
-- Average Trust Score: 2.64 (1=Strongly Distrust, 5=Strongly Trust)
+**Corporations (Q14):**
+- Average Trust Score: 2.54 (1=Strongly Distrust, 5=Strongly Trust)
 - Total Responses: 1005
   - Neither Trust Nor Distrust: 230 (22.9%)
   - Somewhat Distrust: 280 (27.9%)
@@ -201,17 +201,17 @@ More excited than concerned:
   - Strongly Distrust: 204 (20.3%)
   - Strongly Trust: 40 (4.0%)
 
-**Faith Or Community Leader:**
-- Average Trust Score: 3.16 (1=Strongly Distrust, 5=Strongly Trust)
+**Government (Q15):**
+- Average Trust Score: 3.23 (1=Strongly Distrust, 5=Strongly Trust)
 - Total Responses: 1005
-  - Neither Trust nor Distrust: 288 (28.7%)
+  - Neither Trust Nor Distrust: 288 (28.7%)
   - Somewhat Distrust: 171 (17.0%)
   - Somewhat Trust: 322 (32.0%)
   - Strongly Distrust: 109 (10.8%)
   - Strongly Trust: 115 (11.4%)
 
-**Civil Servants:**
-- Average Trust Score: 2.88 (1=Strongly Distrust, 5=Strongly Trust)
+**Religious Institutions (Q16):**
+- Average Trust Score: 2.84 (1=Strongly Distrust, 5=Strongly Trust)
 - Total Responses: 1005
   - Neither Trust Nor Distrust: 248 (24.7%)
   - Somewhat Distrust: 258 (25.7%)
@@ -219,8 +219,8 @@ More excited than concerned:
   - Strongly Distrust: 140 (13.9%)
   - Strongly Trust: 55 (5.5%)
 
-**Ai Chatbot:**
-- Average Trust Score: 3.48 (1=Strongly Distrust, 5=Strongly Trust)
+**AI Systems (Q17):**
+- Average Trust Score: 3.68 (1=Strongly Distrust, 5=Strongly Trust)
 - Total Responses: 1005
   - Neither Trust Nor Distrust: 297 (29.6%)
   - Somewhat Distrust: 119 (11.8%)
@@ -229,27 +229,25 @@ More excited than concerned:
   - Strongly Trust: 131 (13.0%)
 
 **Trust Ranking (Highest to Lowest):**
-1. Family Doctor: 4.15
-2. Ai Chatbot: 3.48
-3. Faith Or Community Leader: 3.16
-4. Civil Servants: 2.88
-5. Elected Representatives: 2.64
-6. Social Media Feed: 0.98
+1. Scientists: 4.15
+2. AI Systems: 3.68
+3. Government: 3.23
+4. Religious Institutions: 2.84
+5. Corporations: 2.54
+6. Environmental Groups: 1.71
 
-**Statistical Comparison: AI Chatbot vs Family Doctor Trust:**
-- Paired t-test statistic: nan
-- P-value: nan
-- Mean difference: -0.86
-- Result: No significant difference in trust levels
+**Statistical Comparison: AI Systems vs Scientists Trust:**
+- Mean difference: -0.47
+- Result: Scientists are significantly more trusted than AI Systems
 
 ## Summary Insights
 
 **Key Findings:**
 1. **Demographics**: The survey captured a diverse demographic with balanced representation across age groups, genders, and location types
-2. **Human-Nature Relationship**: Views vary significantly by religious affiliation and residential environment, with most seeing humans as part of nature
+2. **Human-Nature Relationship**: 60.3% view humans as superior to animals, with significant variation by religious affiliation
 3. **Human Superiority**: A notable portion view humans as superior or equal to animals, with age-related patterns evident
 4. **AI Sentiment**: Mixed sentiment towards AI, with personal usage strongly correlating with positive sentiment
-5. **Trust Hierarchy**: Trust in AI chatbots ranks lower than traditional authorities like family doctors but higher than social media
+5. **Trust Hierarchy**: Scientists are most trusted (4.15), followed by AI systems (3.68), with environmental groups least trusted (1.71)
 
 ## SQL Queries Used
 ```sql

@@ -4,7 +4,7 @@
 ### Question 3.1: Animal Capacities
 **Question:** What percentage of respondents "Strongly believe" that animals have their own forms of language (Q39), emotion (Q40), and culture (Q41)?
 
-**Finding:** Based on the aggregated response data, approximately 60% of respondents strongly believe animals have language, 60% strongly believe animals have emotions, and 60% strongly believe animals have culture. The "all" segment score of 0.6 for "Strongly believe" responses indicates moderate to strong belief across all three capacities.
+**Finding:** Based on the aggregated response data, 60.0% of respondents strongly believe animals have language, 66.7% strongly believe animals have emotions, and 28.6% strongly believe animals have culture. Belief in animal emotions is highest, while belief in animal culture is notably lower than the other capacities.
 
 **Method:** SQL queries on responses table examining segment-level agreement scores for Q39-Q41.
 
