@@ -47,15 +47,15 @@ def analyze_equality_to_economics(df):
     print("\nAmong those who believe humans are 'fundamentally equal to other animals' (Q32),")
     print("what percentage endorse economic rights for animals (Q91)?")
     
-    # First, check Q32 distribution
-    q32_dist = df['Q32'].value_counts()
-    print("\nQ32 Distribution:")
-    for val, count in q32_dist.items():
+    # First, check Q94 distribution (Q94 is the repeated Q32 at end of survey)
+    q94_dist = df['Q94'].value_counts()
+    print("\nQ94 Distribution (human superiority/equality):")
+    for val, count in q94_dist.items():
         if pd.notna(val):
             print(f"  {val}: {count} ({count/len(df)*100:.1f}%)")
     
     # Filter for those who believe in equality
-    equal_believers = df[df['Q32'] == 'Humans are fundamentally equal to other animals'].copy()
+    equal_believers = df[df['Q94'] == 'Humans are fundamentally equal to other animals'].copy()
     print(f"\nParticipants believing in equality: {len(equal_believers)}")
     
     if len(equal_believers) > 0:
@@ -87,7 +87,7 @@ def analyze_equality_to_economics(df):
         print(f"\nSupport ANY economic right: {any_economic/len(equal_believers)*100:.1f}%")
         
         # Compare with non-equality believers
-        non_equal = df[df['Q32'] != 'Humans are fundamentally equal to other animals']
+        non_equal = df[df['Q94'] != 'Humans are fundamentally equal to other animals']
         non_equal_economic = 0
         for _, row in non_equal.iterrows():
             q91_responses = parse_q91_responses(row['Q91'])
