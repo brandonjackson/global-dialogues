@@ -150,7 +150,7 @@ More excited than concerned (n=353):
 **Key Findings:**
 1. **Regional Representation**: Different regions show varying preferences for who should represent animals
 2. **Regulation Philosophy**: A significant segment supports regulating corporations while democratizing individual access
-3. **AI Governance Appeal**: 1005 participants (100.0%) find AI-managed ecocentric society appealing
+3. **AI Governance Appeal**: 796 participants (79.2%) find AI-managed ecocentric society appealing
 4. **Paradoxical Views**: Some AI-skeptics still support AI governance for ecological matters
 5. **Power Distribution**: Multiple philosophies exist regarding who should have decision-making power over animal-related issues
 

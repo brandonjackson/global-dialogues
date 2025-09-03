@@ -19,7 +19,7 @@ This selective acceptance group (n=77) prefers:
 The 20.6% showing selective acceptance suggests a nuanced position where animals deserve legal protection but not political voice. This mirrors historical patterns where groups received legal protections before political rights, indicating a potential transitional stance rather than pure contradiction.
 
 ### Question 20.2: Professional Restrictions vs. Democratic Rights
-**Finding:** No significant tension exists between supporting professional restrictions (76.3%) and democratic rights (9.8%), with correlation near zero (r=-0.006, p=0.942). Surprisingly, 75.5% of those supporting full democratic rights also want professional restrictions, suggesting these are seen as complementary rather than contradictory.
+**Finding:** No significant tension exists between supporting professional restrictions (88.4%) and democratic rights (9.8%), with correlation near zero (r=-0.006, p=0.942). Surprisingly, 75.5% of those supporting full democratic rights also want professional restrictions, suggesting these are seen as complementary rather than contradictory.
 
 **Method:** Cross-tabulation of Q82 (professional restrictions) agreement with Q77 radical democratic options (proxy voting and political constituencies), calculating overlap and correlation.
 
