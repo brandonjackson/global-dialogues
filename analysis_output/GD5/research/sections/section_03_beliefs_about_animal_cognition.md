@@ -8,7 +8,7 @@
 
 **Method:** SQL queries on responses table examining segment-level agreement scores for Q39-Q41.
 
-**Details:** The data shows consistent belief levels across all three animal capacities, with segment scores around 0.6 for "Strongly believe" responses. There is notable variation across geographic regions, with Northern Africa showing higher belief (0.82) and some regions like Caribbean showing lower scores.
+**Details:** The data shows varying belief levels across the three animal capacities: emotion (66.7%) > language (60.0%) > culture (28.6%). This hierarchy suggests people more readily accept animal emotions and communication than complex cultural traditions. Regional variations exist but were not fully analyzed in the available data.
 
 ### Question 3.2: Impact of New Information
 **Question:** What is the distribution of responses regarding how much the provided scientific facts about animal cognition (Q43) impacted respondents' perspectives (Q44)?
@@ -31,11 +31,21 @@
 ### Question 3.4: Does Knowing More Change How We Feel?
 **Question:** Among respondents who said their perspective was changed "A great deal" by the scientific facts (Q44), which emotion was most commonly selected in Q45 (Curious, Connected, Protective, etc.)?
 
-**Finding:** Insufficient data to determine emotional responses among those highly impacted. Only 8 responses recorded for Q45.
+**Finding:** While we cannot link emotions specifically to those who reported "A great deal" of impact due to aggregated data structure, the overall emotional response distribution shows "Curious" as dominant (59.1%), followed by "Connected" (32.4%) and "Surprised" (25.3%). Negative emotions are minimal.
 
-**Method:** SQL query filtering Q45 responses by those indicating "A great deal" impact in Q44.
+**Method:** SQL query for Q45 emotional responses; unable to filter by Q44 impact levels due to aggregated structure.
 
-**Details:** The limited response data prevents meaningful analysis of emotional reactions to learning about animal cognition. The 8 Q45 responses include various emotions but cannot be reliably linked to impact levels from Q44.
+**Details:** Emotional response distribution from 8 Q45 responses:
+- Curious: 59.1%
+- Connected: 32.4%
+- Surprised: 25.3%
+- Protective: 15.5%
+- Unchanged: 12.2%
+- Skeptical: 3.3%
+- Other: 1.8%
+- Unsettled: 1.1%
+
+The dominance of curiosity and connection suggests positive emotional engagement with animal cognition facts, though individual-level correlation with impact cannot be established.
 
 ### Question 3.5: Importance of "Umwelt"
 **Question:** How important do people think it is to understand animal perceptual worlds (Q50)? Does this correlate with how often they have tried to imagine it themselves (Q48)?

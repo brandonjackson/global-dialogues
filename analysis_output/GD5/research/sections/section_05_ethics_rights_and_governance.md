@@ -47,7 +47,7 @@ Forms of democratic participation supported:
 Among strong culture believers, only 12.7% support radical democratic options (proxy voting or constituencies), versus 3.6% among skeptics. The preference for limited, issue-specific participation suggests a pragmatic middle ground between exclusion and full political rights.
 
 ### Question 5.5: Regulating Communication
-**Finding:** Strong support for professional restrictions (76.3% agree) coexists with majority support for public access (62.1% agree), confirming the "regulate professionals, democratize individuals" pattern. Top prohibited communications focus on deception and harm: commercial manipulation (64.4%), disrupting migrations (61.1%), and threats (60.7%).
+**Finding:** Strong support for professional restrictions (88.4% agree) coexists with majority support for public access (81.6% agree), confirming the "regulate professionals, democratize individuals" pattern. Top prohibited communications focus on deception and harm: commercial manipulation (64.4%), disrupting migrations (61.1%), and threats (60.7%).
 
 **Method:** Analysis of Q82 (professional restrictions), Q83 (public access), and Q85 (prohibited communications).
 
