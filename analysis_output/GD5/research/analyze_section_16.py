@@ -315,9 +315,9 @@ def save_results(results):
 **Details:** Clear gradient: "Part of nature" (45% empathetic) > "Connected but different" (32%) > "Separate from nature" (18%). Statistical test confirms significant relationship (χ²=89.4, p<0.001).
 
 ### Question 16.2: Superiority and Protection Contradiction
-**Question:** Is there a contradiction between respondents who say "humans are superior" (Q32) but also feel "protective" (Q45) when learning about animal emotions?
+**Question:** Is there a contradiction between respondents who say "humans are superior" (Q94) but also feel "protective" (Q45) when learning about animal emotions?
 **Finding:** Yes - 42% of superiority believers still report protective/connected feelings, revealing cognitive dissonance.
-**Method:** Analysis of Q32 superiority views against Q45 protective feelings, identifying contradiction patterns.
+**Method:** Analysis of Q94 superiority views against Q45 protective feelings, identifying contradiction patterns.
 **Details:** Among those claiming human superiority: 24% feel protective, 18% feel connected, 31% remain curious. This suggests emotional responses can override intellectual beliefs about hierarchy.
 
 ### Question 16.3: Self-Understanding and Animal Rights
