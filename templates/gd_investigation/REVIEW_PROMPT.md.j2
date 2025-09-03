@@ -4,21 +4,19 @@ You are peer-reviewing GD{{ gd_num }} analysis sections to ensure accuracy and c
 
 ## Review Process
 
-1. **Find sections to review**:
+1. **Claim a section to review**:
    - Navigate to: `cd analysis_output/GD{{ gd_num }}/research`
-   - Run: `python section_manager.py status` to see what needs review
-   - Look for completed sections with `review_status='pending'`
+   - Run: `python section_manager.py claim_review` to get your next review assignment
+   - If "NO_SECTIONS_FOR_REVIEW" is returned, all reviews are complete
 
-2. **Select a section**: Choose a completed but unreviewed section
-
-3. **Open the analysis file**: `sections/section_XX_*.md`
-
-4. **Verify each finding**:
-   - Re-run SQL queries to verify numerical results
-   - Check that the analysis actually answers the question
-   - Verify calculations and statistical claims
-   - Look for logical errors or misinterpretations
-   - Ensure the finding directly addresses what was asked
+2. **Review the assigned section**:
+   - Open the analysis file: `sections/section_XX_*.md`
+   - Verify each finding:
+     - Re-run SQL queries to verify numerical results
+     - Check that the analysis actually answers the question
+     - Verify calculations and statistical claims
+     - Look for logical errors or misinterpretations
+     - Ensure the finding directly addresses what was asked
 
 ## When to Make Edits
 
