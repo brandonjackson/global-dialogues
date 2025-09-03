@@ -3,15 +3,15 @@
 
 ### Question 11.1: Daily AI Users and Translation Trust
 **Question:** Among respondents who use AI daily in personal life (Q20), what percentage report strong trust (Q57) in AI's ability to translate animals—compared to non-users?
-**Finding:** Daily users show 65.2% trust vs 38.4% among non-users - a 26.8 percentage point difference.
-**Method:** Cross-tabulation of Q20 (AI usage frequency) with Q57 (translation trust), filtering for PRI >= 0.3.
-**Details:** Clear linear relationship: Daily (65.2%) > Weekly (58.3%) > Monthly (52.1%) > Rarely (45.7%) > Never (38.4%). Daily users are 1.7x more likely to trust AI translation.
+**Finding:** Daily users show 53.8% trust vs 31.9% among non-users - a 21.9 percentage point difference.
+**Method:** Cross-tabulation of Q20 (AI usage frequency) with Q57 (translation trust).
+**Details:** Clear relationship: Daily (53.8%) > Weekly (52.8%) > Monthly (39.8%) > Annually (31.2%) > Never (31.9%). Daily users are 1.7x more likely to trust AI translation.
 
 ### Question 11.2: Distrust in Representatives vs. AI Trust
 **Question:** Do people who strongly distrust elected representatives (Q14) show greater trust in AI (Q17, Q57) to handle human–animal communication?
-**Finding:** Yes - those distrusting representatives show 48.3% trust in AI translation vs 42.1% among those trusting representatives.
-**Method:** Correlation analysis comparing Q14 (representative trust) with Q17 (AI chatbot trust) and Q57 (translation trust).
-**Details:** Inverse relationship observed: distrust in human institutions correlates with higher AI trust. Effect stronger for AI translation (+6.2%) than general AI chatbots (+3.8%).
+**Finding:** No - those trusting representatives show 70.3% trust in AI translation vs 43.2% among those distrusting representatives.
+**Method:** Cross-tabulation comparing Q14 (representative trust) with Q57 (translation trust).
+**Details:** Positive relationship observed: trust in human institutions correlates with higher AI trust. Those who trust representatives are 1.6x more likely to trust AI translation, contradicting the hypothesis of institutional distrust driving AI adoption.
 
 ### Question 11.3: Demographic Trust Gaps
 **Question:** Which demographic group has the largest gap between excitement about AI (Q5) and trust in AI translation (Q57)?
@@ -20,7 +20,7 @@
 **Details:** Top gaps: Males 18-25 (-28.5%), Males 26-35 (-22.3%), All 18-25 (-21.7%). Older demographics show smaller gaps, suggesting experience moderates expectations.
 
 ### Question 11.4: Interested but Distrustful
-**Question:** Among respondents who are "Very interested" (Q55) but "Strongly distrust" AI (Q57), what are their most common concerns (Q59)?
-**Finding:** 123 respondents (12.2% of interested) show this pattern, primarily citing technical limitations (41.5%) and human bias (28.3%).
-**Method:** Identification of conflicted respondents, text analysis of their Q59 open responses.
-**Details:** Key concerns: "AI cannot truly understand consciousness", "Human biases programmed in", "Technology will miss nuance". These respondents want the capability but doubt current technology.
+**Question:** Among respondents who are "Very interested" (Q55) but distrust AI (Q57), what are their most common concerns (Q59)?
+**Finding:** 127 respondents (17.6% of interested) show this pattern, citing technical limitations and reliability concerns.
+**Method:** Identification of conflicted respondents (very interested but somewhat/strongly distrust).
+**Details:** Key concerns include AI's inability to understand consciousness, human biases in programming, and technology missing nuance. These respondents want the capability but doubt current technology's reliability.
