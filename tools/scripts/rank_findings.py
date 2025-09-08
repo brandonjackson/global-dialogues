@@ -28,6 +28,61 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
+# =============================================================================
+# CONFIGURATION CONSTANTS
+# =============================================================================
+
+# API Configuration
+OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1/chat/completions"
+DEFAULT_TEMPERATURE = 0.3
+
+# LLM Models for ranking (models that support structured output)
+LLM_MODELS = [
+    "x-ai/grok-code-fast-1",
+    "google/gemini-2.5-flash", 
+    "openai/gpt-4.1",
+    "deepseek/deepseek-chat-v3-0324"
+]
+
+# Ranking Configuration
+DEFAULT_SAMPLE_SIZE = 10
+DEFAULT_COVERAGE_FACTOR = 5  # Each finding should be ranked this many times on average
+MAX_ROUNDS = 40  # Maximum number of ranking rounds
+BATCH_SIZE = 10   # Number of parallel ranking tasks to run simultaneously
+
+# Retry Configuration
+MAX_RETRY_ATTEMPTS = 3
+RETRY_MIN_WAIT = 2
+RETRY_MAX_WAIT = 10
+
+# Output Configuration
+MAX_DETAILS_LENGTH = 4000  # Truncate details in CSV output
+INCLUDE_PER_MODEL_SCORES = True  # Toggle to include individual model scores (set to False to disable)
+# Base CSV fields
+BASE_CSV_FIELDS = ['rank', 'score', 'section_id', 'question', 'finding', 
+                   'avg_rank_position', 'num_rankings', 'details']
+
+# Add model columns if per-model scoring is enabled
+if INCLUDE_PER_MODEL_SCORES:
+    CSV_FIELDS = BASE_CSV_FIELDS + [f'model_{model.replace("/", "_").replace("-", "_")}' for model in LLM_MODELS]
+else:
+    CSV_FIELDS = BASE_CSV_FIELDS
+
+# =============================================================================
+# USAGE
+# =============================================================================
+# Usage:
+#  # Basic usage for GD5
+#  python tools/scripts/rank_findings.py 5
+#
+#  # Custom settings
+#  python tools/scripts/rank_findings.py 5 -n 15 -r 20 -o custom_output.csv
+
+
+# =============================================================================
+# CLASS DEFINITIONS
+# =============================================================================
+
 
 @dataclass
 class Finding:
@@ -51,6 +106,7 @@ class RankedFinding(Finding):
     """Finding with aggregate ranking score."""
     score: float = 0.0
     rank_positions: List[int] = field(default_factory=list)
+    model_scores: Dict[str, List[float]] = field(default_factory=dict)  # Model name -> list of scores
     
     def to_dict(self):
         d = super().to_dict()
@@ -59,6 +115,18 @@ class RankedFinding(Finding):
             'avg_rank': sum(self.rank_positions) / len(self.rank_positions) if self.rank_positions else None,
             'num_rankings': len(self.rank_positions)
         })
+        
+        # Add per-model scores if enabled
+        if INCLUDE_PER_MODEL_SCORES:
+            for model_name in LLM_MODELS:
+                scores = self.model_scores.get(model_name, [])
+                if scores:
+                    # Calculate average score for this model (Borda count normalized to 0-1)
+                    avg_model_score = sum(scores) / len(scores)
+                    d[f'model_{model_name.replace("/", "_").replace("-", "_")}'] = f"{avg_model_score:.4f}"
+                else:
+                    d[f'model_{model_name.replace("/", "_").replace("-", "_")}'] = 'N/A'
+        
         return d
 
 
@@ -66,6 +134,7 @@ class RankingResponse(BaseModel):
     """Pydantic model for LLM ranking response."""
     rankings: List[str] = Field(..., description="Ordered list of section IDs from most to least interesting")
     reasoning: Optional[str] = Field(None, description="Optional reasoning for the rankings")
+    model_used: Optional[str] = None  # Track which model was used for this ranking
 
 
 class FindingParser:
@@ -146,24 +215,18 @@ class FindingParser:
 class LLMJudge:
     """Interface to LLM judges via OpenRouter API."""
     
-    MODELS = [
-        "anthropic/claude-3-haiku-20240307",
-        "google/gemini-flash-1.5-8b",
-        "openai/gpt-4o-mini"
-    ]
-    
     def __init__(self, api_key: Optional[str] = None):
         self.api_key = api_key or os.getenv("OPENROUTER_API_KEY")
         if not self.api_key:
             raise ValueError("OpenRouter API key not found. Set OPENROUTER_API_KEY environment variable.")
         
-        self.base_url = "https://openrouter.ai/api/v1/chat/completions"
+        self.base_url = OPENROUTER_BASE_URL
         
     def _create_prompt(self, findings: List[Finding]) -> str:
         """Create the prompt for ranking findings."""
         prompt = """You are an expert research evaluator tasked with ranking survey findings based on their interestingness, surprisingness, and potential impact.
 
-You will be given a list of findings from a Global Dialogues survey about AI and human-animal communication. Each finding has:
+You will be given a list of findings from a digital survey of a globally representative sample of people about a particular topic area regarding people's attitudes and beliefs about Artificial Intelligence. Each finding has:
 - A section ID (e.g., 1.5, 3.2)
 - The research question being addressed
 - The main finding
@@ -201,7 +264,7 @@ The "rankings" array should list all section IDs in order from MOST interesting 
 """
         return prompt
     
-    @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=2, max=10))
+    @retry(stop=stop_after_attempt(MAX_RETRY_ATTEMPTS), wait=wait_exponential(multiplier=1, min=RETRY_MIN_WAIT, max=RETRY_MAX_WAIT))
     async def get_ranking(self, findings: List[Finding], model: str, session: aiohttp.ClientSession) -> RankingResponse:
         """Get ranking from a single LLM judge."""
         prompt = self._create_prompt(findings)
@@ -216,7 +279,7 @@ The "rankings" array should list all section IDs in order from MOST interesting 
             "messages": [
                 {"role": "user", "content": prompt}
             ],
-            "temperature": 0.3,
+            "temperature": DEFAULT_TEMPERATURE,
             "response_format": {"type": "json_object"}
         }
         
@@ -243,12 +306,14 @@ class RankingAggregator:
     def __init__(self, findings: List[Finding]):
         self.findings = {f.section_id: f for f in findings}
         self.rankings: Dict[str, List[int]] = defaultdict(list)
+        self.model_rankings: Dict[str, Dict[str, List[int]]] = defaultdict(lambda: defaultdict(list))  # Model -> section_id -> positions
         
-    def add_ranking(self, ranking: List[str]):
+    def add_ranking(self, ranking: List[str], model_name: str):
         """Add a single ranking from a judge."""
         for position, section_id in enumerate(ranking, 1):
             if section_id in self.findings:
                 self.rankings[section_id].append(position)
+                self.model_rankings[model_name][section_id].append(position)
     
     def calculate_scores(self) -> List[RankedFinding]:
         """Calculate aggregate scores using Borda count method."""
@@ -267,13 +332,29 @@ class RankingAggregator:
             else:
                 score = 0.0
                 
+            # Calculate per-model scores
+            model_scores = {}
+            if INCLUDE_PER_MODEL_SCORES:
+                for model_name in LLM_MODELS:
+                    model_positions = self.model_rankings[model_name].get(section_id, [])
+                    if model_positions:
+                        # Borda score: higher is better (n points for 1st place, 1 point for last)
+                        n = len(self.findings)
+                        borda_scores = [n - pos + 1 for pos in model_positions]
+                        avg_borda = sum(borda_scores) / len(borda_scores)
+                        # Normalize to 0-1 scale
+                        model_scores[model_name] = [avg_borda / n]
+                    else:
+                        model_scores[model_name] = []
+            
             ranked = RankedFinding(
                 section_id=finding.section_id,
                 question=finding.question,
                 finding=finding.finding,
                 details=finding.details,
                 score=score,
-                rank_positions=positions
+                rank_positions=positions,
+                model_scores=model_scores
             )
             ranked_findings.append(ranked)
             
@@ -282,25 +363,25 @@ class RankingAggregator:
         return ranked_findings
 
 
-async def run_parallel_rankings(findings: List[Finding], judge: LLMJudge, num_rounds: int) -> List[RankingResponse]:
-    """Run multiple ranking rounds in parallel."""
+async def run_parallel_rankings(findings: List[Finding], judge: LLMJudge) -> List[RankingResponse]:
+    """Run ranking of the same findings by all models in parallel."""
     async with aiohttp.ClientSession() as session:
         tasks = []
         
-        for round_num in range(num_rounds):
-            # Rotate through models for diversity
-            model = LLMJudge.MODELS[round_num % len(LLMJudge.MODELS)]
+        # Send the same findings to all models for direct comparison
+        for model in LLM_MODELS:
             task = judge.get_ranking(findings, model, session)
             tasks.append(task)
             
         results = await asyncio.gather(*tasks, return_exceptions=True)
         
-        # Filter out exceptions
+        # Filter out exceptions and add model info
         valid_results = []
         for i, result in enumerate(results):
             if isinstance(result, Exception):
-                print(f"Warning: Round {i+1} failed: {result}", file=sys.stderr)
+                print(f"Warning: Model {LLM_MODELS[i]} failed: {result}", file=sys.stderr)
             else:
+                result.model_used = LLM_MODELS[i]  # Track which model was used
                 valid_results.append(result)
                 
         return valid_results
@@ -308,20 +389,18 @@ async def run_parallel_rankings(findings: List[Finding], judge: LLMJudge, num_ro
 
 def calculate_num_rounds(n_findings: int, n_sample: int, total_findings: int) -> int:
     """Calculate recommended number of rounds based on sampling parameters."""
-    # Ensure good coverage: each finding should be ranked at least 5 times on average
-    coverage_factor = 5
-    rounds = math.ceil((total_findings * coverage_factor) / n_sample)
+    # Ensure good coverage: each finding should be ranked at least DEFAULT_COVERAGE_FACTOR times on average
+    # Since each round now uses all models, we need fewer rounds
+    rounds = math.ceil((total_findings * DEFAULT_COVERAGE_FACTOR) / (n_sample * len(LLM_MODELS)))
     
     # But cap at a reasonable maximum
-    return min(rounds, 30)
+    return min(rounds, MAX_ROUNDS)
 
 
 def save_results(ranked_findings: List[RankedFinding], output_path: Path):
     """Save ranked findings to CSV."""
     with open(output_path, 'w', newline='', encoding='utf-8') as f:
-        fieldnames = ['rank', 'score', 'section_id', 'question', 'finding', 
-                     'avg_rank_position', 'num_rankings', 'details']
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=CSV_FIELDS)
         writer.writeheader()
         
         for rank, finding in enumerate(ranked_findings, 1):
@@ -334,15 +413,15 @@ def save_results(ranked_findings: List[RankedFinding], output_path: Path):
                 'finding': row['finding'],
                 'avg_rank_position': f"{row['avg_rank']:.2f}" if row['avg_rank'] else 'N/A',
                 'num_rankings': row['num_rankings'],
-                'details': row['details'][:500] + '...' if len(row['details']) > 500 else row['details']
+                'details': row['details'][:MAX_DETAILS_LENGTH] + '...' if len(row['details']) > MAX_DETAILS_LENGTH else row['details']
             })
 
 
 async def main():
     parser = argparse.ArgumentParser(description='Rank investigation findings using LLM judges')
     parser.add_argument('gd_number', type=int, help='Global Dialogue number (e.g., 5 for GD5)')
-    parser.add_argument('-n', '--sample-size', type=int, default=10,
-                       help='Number of findings per sample (default: 10)')
+    parser.add_argument('-n', '--sample-size', type=int, default=DEFAULT_SAMPLE_SIZE,
+                       help=f'Number of findings per sample (default: {DEFAULT_SAMPLE_SIZE})')
     parser.add_argument('-r', '--rounds', type=int, default=None,
                        help='Number of ranking rounds (default: auto-calculated)')
     parser.add_argument('-o', '--output', type=str, default=None,
@@ -365,6 +444,7 @@ async def main():
         args.rounds = calculate_num_rounds(args.sample_size, args.sample_size, len(all_findings))
     
     print(f"Running {args.rounds} ranking rounds with {args.sample_size} findings per round...")
+    print(f"Each round will be evaluated by all {len(LLM_MODELS)} models for direct comparison.")
     
     # Initialize aggregator
     aggregator = RankingAggregator(all_findings)
@@ -372,30 +452,22 @@ async def main():
     
     # Run ranking rounds
     successful_rounds = 0
-    for batch in range(0, args.rounds, 3):  # Process in batches of 3 for parallel execution
-        batch_size = min(3, args.rounds - batch)
+    for round_num in range(args.rounds):
+        # Sample findings for this round
+        sample = random.sample(all_findings, args.sample_size)
         
-        # Sample findings for this batch
-        batch_samples = []
-        for _ in range(batch_size):
-            sample = random.sample(all_findings, args.sample_size)
-            batch_samples.append(sample)
-        
-        # Run rankings in parallel for this batch
-        batch_results = []
-        for sample in batch_samples:
-            results = await run_parallel_rankings(sample, judge, 1)
-            batch_results.extend(results)
+        # Run rankings by all models in parallel for this sample
+        results = await run_parallel_rankings(sample, judge)
         
         # Add results to aggregator
-        for result in batch_results:
+        for result in results:
             if result and result.rankings:
-                aggregator.add_ranking(result.rankings)
+                aggregator.add_ranking(result.rankings, result.model_used)
                 successful_rounds += 1
                 
-        print(f"Completed {min(batch + 3, args.rounds)}/{args.rounds} rounds...")
+        print(f"Completed round {round_num + 1}/{args.rounds} (sample size: {len(sample)})...")
     
-    print(f"Successfully completed {successful_rounds}/{args.rounds} rounds")
+    print(f"Successfully completed {successful_rounds}/{args.rounds * len(LLM_MODELS)} model evaluations across {args.rounds} rounds")
     
     # Calculate final scores
     ranked_findings = aggregator.calculate_scores()
