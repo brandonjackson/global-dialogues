@@ -33,6 +33,9 @@ pip install -r requirements.txt
 ### Basic Usage
 
 ```bash
+# Quick dry run (parse findings only, no LLM API calls)
+python tools/scripts/rank_findings.py 5 --dry-run
+
 # Rank findings from GD5 with default settings
 python tools/scripts/rank_findings.py 5
 ```
@@ -45,6 +48,9 @@ python tools/scripts/rank_findings.py 5 -n 15 -r 20
 
 # Specify custom output path
 python tools/scripts/rank_findings.py 5 -o custom_rankings.csv
+
+# Minimal run for testing (1 round, 5 findings)
+python tools/scripts/rank_findings.py 5 -n 5 -r 1
 ```
 
 ### Parameters
@@ -53,6 +59,7 @@ python tools/scripts/rank_findings.py 5 -o custom_rankings.csv
 - `-n, --sample-size`: Number of findings per ranking round (default: 10)
 - `-r, --rounds`: Total number of ranking rounds (default: auto-calculated based on coverage)
 - `-o, --output`: Custom output file path (default: `analysis_output/GD{N}/research/GD{N}_ranked_findings.csv`)
+- `--dry-run`: Parse findings and show sample prompts without making LLM API calls (useful for testing and validation)
 
 ## Algorithm Details
 
@@ -77,15 +84,45 @@ python tools/scripts/rank_findings.py 5 -o custom_rankings.csv
 
 ## Output Format
 
+### CSV Output
 The CSV output includes:
 - `rank`: Final ranking position (1 = most interesting)
 - `score`: Aggregate Borda score (0.0-1.0)
 - `section_id`: Finding identifier (e.g., "1.5", "3.2")
-- `question`: Research question text
+- `question`: **Full research question text** (no longer truncated)
 - `finding`: Main finding statement
 - `avg_rank_position`: Average position across all rankings
 - `num_rankings`: Total times this finding was ranked
-- `details`: Supporting details (truncated to 500 chars in CSV)
+- `details`: Supporting details (truncated to 4000 chars in CSV)
+
+### Log File
+A comprehensive log file is automatically generated: `GD{N}_ranking_log_{timestamp}.jsonl`
+
+The log contains:
+- **Metadata**: Run configuration, model settings, timing
+- **Full Prompts**: Complete text sent to each LLM judge
+- **API Responses**: Raw responses from OpenRouter API
+- **Parsed Results**: Structured ranking data from each model
+- **Error Handling**: Failed requests and parsing errors
+- **Round-by-Round**: Chronological record of all interactions
+
+This enables full validation of how findings were presented to judges and how rankings were generated.
+
+## Dry Run Mode
+
+The `--dry-run` flag allows you to test the system without making expensive LLM API calls:
+
+- **Parses all findings** from the investigation files
+- **Shows sample findings** with full question text
+- **Displays the exact prompt** that would be sent to LLM judges
+- **Calculates configuration** (rounds, API calls, etc.)
+- **Validates question parsing** to ensure full text is captured
+
+This is perfect for:
+- Testing question parsing improvements
+- Validating prompt formatting
+- Estimating costs before running
+- Debugging configuration issues
 
 ## Cost Estimation
 

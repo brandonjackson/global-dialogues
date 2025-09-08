@@ -19,6 +19,7 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 from collections import defaultdict
 import math
+from datetime import datetime
 
 import aiohttp
 from pydantic import BaseModel, Field, ValidationError
@@ -72,11 +73,20 @@ else:
 # USAGE
 # =============================================================================
 # Usage:
-#  # Basic usage for GD5
+#  # Quick dry run (parse findings only, no LLM calls)
+#  python tools/scripts/rank_findings.py 5 --dry-run
+#
+#  # Basic usage for GD5 (default: 10 findings per round, auto-calculated rounds)
 #  python tools/scripts/rank_findings.py 5
 #
-#  # Custom settings
-#  python tools/scripts/rank_findings.py 5 -n 15 -r 20 -o custom_output.csv
+#  # Custom settings with more findings per round
+#  python tools/scripts/rank_findings.py 5 -n 15 -r 20
+#
+#  # Specify custom output path
+#  python tools/scripts/rank_findings.py 5 -o custom_rankings.csv
+#
+#  # Minimal run for testing (1 round, 5 findings)
+#  python tools/scripts/rank_findings.py 5 -n 5 -r 1
 
 
 # =============================================================================
@@ -155,12 +165,15 @@ class FindingParser:
         with open(self.questions_file, 'r') as f:
             content = f.read()
             
-        # Parse sections and questions
-        pattern = r'\* \*\*(\d+\.\d+)\.[^:]+:\*\* ([^*\n]+)'
-        matches = re.findall(pattern, content)
+        # Parse sections and questions - improved regex to capture full question text
+        # Look for pattern: * **X.Y. Title:** Question text (until next * or end of line)
+        pattern = r'\* \*\*(\d+\.\d+)\.[^:]+:\*\* ([^*\n]+(?:\n(?!\*)[^*\n]*)*)'
+        matches = re.findall(pattern, content, re.MULTILINE)
         
         for section_id, question_text in matches:
-            questions[section_id] = question_text.strip()
+            # Clean up the question text - remove extra whitespace and newlines
+            cleaned_text = re.sub(r'\s+\n\s+', ' ', question_text.strip())
+            questions[section_id] = cleaned_text
             
         return questions
     
@@ -215,12 +228,13 @@ class FindingParser:
 class LLMJudge:
     """Interface to LLM judges via OpenRouter API."""
     
-    def __init__(self, api_key: Optional[str] = None):
+    def __init__(self, api_key: Optional[str] = None, log_file: Optional[Path] = None):
         self.api_key = api_key or os.getenv("OPENROUTER_API_KEY")
         if not self.api_key:
             raise ValueError("OpenRouter API key not found. Set OPENROUTER_API_KEY environment variable.")
         
         self.base_url = OPENROUTER_BASE_URL
+        self.log_file = log_file
         
     def _create_prompt(self, findings: List[Finding]) -> str:
         """Create the prompt for ranking findings."""
@@ -264,8 +278,34 @@ The "rankings" array should list all section IDs in order from MOST interesting 
 """
         return prompt
     
+    def _log_interaction(self, round_num: int, model: str, findings: List[Finding], 
+                        prompt: str, response_data: dict, parsed_response: Optional[RankingResponse] = None, 
+                        error: Optional[str] = None):
+        """Log the full interaction for debugging and validation."""
+        if not self.log_file:
+            return
+            
+        log_entry = {
+            "timestamp": datetime.now().isoformat(),
+            "round": round_num,
+            "model": model,
+            "findings_count": len(findings),
+            "findings": [f.to_dict() for f in findings],
+            "prompt": prompt,
+            "api_response": response_data,
+            "parsed_response": parsed_response.model_dump() if parsed_response else None,
+            "error": error
+        }
+        
+        # Append to log file with proper formatting
+        with open(self.log_file, 'a', encoding='utf-8') as f:
+            f.write(f"\n=== ROUND {round_num} - {model} ===\n")
+            f.write(json.dumps(log_entry, indent=2, ensure_ascii=False))
+            f.write("\n" + "="*80 + "\n")
+    
     @retry(stop=stop_after_attempt(MAX_RETRY_ATTEMPTS), wait=wait_exponential(multiplier=1, min=RETRY_MIN_WAIT, max=RETRY_MAX_WAIT))
-    async def get_ranking(self, findings: List[Finding], model: str, session: aiohttp.ClientSession) -> RankingResponse:
+    async def get_ranking(self, findings: List[Finding], model: str, session: aiohttp.ClientSession, 
+                         round_num: int = 0) -> RankingResponse:
         """Get ranking from a single LLM judge."""
         prompt = self._create_prompt(findings)
         
@@ -283,21 +323,38 @@ The "rankings" array should list all section IDs in order from MOST interesting 
             "response_format": {"type": "json_object"}
         }
         
-        async with session.post(self.base_url, headers=headers, json=data) as response:
-            if response.status != 200:
-                text = await response.text()
-                raise Exception(f"API request failed with status {response.status}: {text}")
+        try:
+            async with session.post(self.base_url, headers=headers, json=data) as response:
+                response_text = await response.text()
                 
-            result = await response.json()
-            content = result['choices'][0]['message']['content']
-            
-            # Parse JSON response
-            try:
-                parsed = json.loads(content)
-                return RankingResponse(**parsed)
-            except (json.JSONDecodeError, ValidationError) as e:
-                # Retry with a different approach if JSON parsing fails
-                raise Exception(f"Failed to parse response from {model}: {e}")
+                if response.status != 200:
+                    error_msg = f"API request failed with status {response.status}: {response_text}"
+                    self._log_interaction(round_num, model, findings, prompt, 
+                                        {"status": response.status, "text": response_text}, 
+                                        error=error_msg)
+                    raise Exception(error_msg)
+                    
+                result = json.loads(response_text)
+                content = result['choices'][0]['message']['content']
+                
+                # Parse JSON response
+                try:
+                    parsed = json.loads(content)
+                    ranking_response = RankingResponse(**parsed)
+                    
+                    # Log successful interaction
+                    self._log_interaction(round_num, model, findings, prompt, result, ranking_response)
+                    
+                    return ranking_response
+                except (json.JSONDecodeError, ValidationError) as e:
+                    error_msg = f"Failed to parse response from {model}: {e}"
+                    self._log_interaction(round_num, model, findings, prompt, result, error=error_msg)
+                    raise Exception(error_msg)
+                    
+        except Exception as e:
+            # Log any other errors
+            self._log_interaction(round_num, model, findings, prompt, {}, error=str(e))
+            raise
 
 
 class RankingAggregator:
@@ -363,14 +420,14 @@ class RankingAggregator:
         return ranked_findings
 
 
-async def run_parallel_rankings(findings: List[Finding], judge: LLMJudge) -> List[RankingResponse]:
+async def run_parallel_rankings(findings: List[Finding], judge: LLMJudge, round_num: int = 0) -> List[RankingResponse]:
     """Run ranking of the same findings by all models in parallel."""
     async with aiohttp.ClientSession() as session:
         tasks = []
         
         # Send the same findings to all models for direct comparison
         for model in LLM_MODELS:
-            task = judge.get_ranking(findings, model, session)
+            task = judge.get_ranking(findings, model, session, round_num)
             tasks.append(task)
             
         results = await asyncio.gather(*tasks, return_exceptions=True)
@@ -398,18 +455,22 @@ def calculate_num_rounds(n_findings: int, n_sample: int, total_findings: int) ->
 
 
 def save_results(ranked_findings: List[RankedFinding], output_path: Path):
-    """Save ranked findings to CSV."""
+    """Save ranked findings to CSV with full question text."""
     with open(output_path, 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=CSV_FIELDS)
         writer.writeheader()
         
         for rank, finding in enumerate(ranked_findings, 1):
             row = finding.to_dict()
+            
+            # Ensure full question text is saved (no truncation)
+            full_question = row['question']
+            
             writer.writerow({
                 'rank': rank,
                 'score': f"{row['score']:.4f}",
                 'section_id': row['section_id'],
-                'question': row['question'],
+                'question': full_question,  # Full question text preserved
                 'finding': row['finding'],
                 'avg_rank_position': f"{row['avg_rank']:.2f}" if row['avg_rank'] else 'N/A',
                 'num_rankings': row['num_rankings'],
@@ -426,6 +487,8 @@ async def main():
                        help='Number of ranking rounds (default: auto-calculated)')
     parser.add_argument('-o', '--output', type=str, default=None,
                        help='Output CSV file path')
+    parser.add_argument('--dry-run', action='store_true',
+                       help='Parse findings and show sample prompts without making LLM API calls')
     
     args = parser.parse_args()
     
@@ -439,6 +502,35 @@ async def main():
         print(f"Warning: Only {len(all_findings)} findings available, using all of them")
         args.sample_size = len(all_findings)
     
+    # Dry run mode - show sample findings and prompts without making API calls
+    if args.dry_run:
+        print("\n=== DRY RUN MODE ===")
+        print(f"Sample of {min(3, len(all_findings))} findings:")
+        for i, finding in enumerate(all_findings[:3]):
+            print(f"\n{i+1}. [{finding.section_id}]")
+            print(f"   Question: {finding.question[:100]}...")
+            print(f"   Finding: {finding.finding[:100]}...")
+        
+        # Show sample prompt
+        print(f"\n=== SAMPLE PROMPT (first {min(args.sample_size, len(all_findings))} findings) ===")
+        sample_findings = all_findings[:args.sample_size]
+        judge = LLMJudge()
+        sample_prompt = judge._create_prompt(sample_findings)
+        print(sample_prompt[:1000] + "..." if len(sample_prompt) > 1000 else sample_prompt)
+        
+        print(f"\n=== CONFIGURATION ===")
+        print(f"Total findings: {len(all_findings)}")
+        print(f"Sample size: {args.sample_size}")
+        if args.rounds:
+            print(f"Rounds: {args.rounds}")
+        else:
+            calculated_rounds = calculate_num_rounds(args.sample_size, args.sample_size, len(all_findings))
+            print(f"Rounds: {calculated_rounds} (auto-calculated)")
+        print(f"Models: {', '.join(LLM_MODELS)}")
+        print(f"Estimated API calls: {len(LLM_MODELS) * (args.rounds or calculate_num_rounds(args.sample_size, args.sample_size, len(all_findings)))}")
+        print("\nDry run complete. Remove --dry-run to execute actual ranking.")
+        return
+    
     # Calculate number of rounds if not specified
     if args.rounds is None:
         args.rounds = calculate_num_rounds(args.sample_size, args.sample_size, len(all_findings))
@@ -446,9 +538,35 @@ async def main():
     print(f"Running {args.rounds} ranking rounds with {args.sample_size} findings per round...")
     print(f"Each round will be evaluated by all {len(LLM_MODELS)} models for direct comparison.")
     
-    # Initialize aggregator
+    # Initialize aggregator and judge with logging
     aggregator = RankingAggregator(all_findings)
-    judge = LLMJudge()
+    
+    # Set up logging file
+    log_dir = Path(f"analysis_output/GD{args.gd_number}/research")
+    log_dir.mkdir(parents=True, exist_ok=True)
+    log_file = log_dir / f"GD{args.gd_number}_ranking_log_{datetime.now().strftime('%Y%m%d_%H%M%S')}.jsonl"
+    
+    judge = LLMJudge(log_file=log_file)
+    
+    # Initialize log file with metadata
+    with open(log_file, 'w', encoding='utf-8') as f:
+        metadata = {
+            "timestamp": datetime.now().isoformat(),
+            "gd_number": args.gd_number,
+            "total_findings": len(all_findings),
+            "sample_size": args.sample_size,
+            "rounds": args.rounds,
+            "models": LLM_MODELS,
+            "settings": {
+                "temperature": DEFAULT_TEMPERATURE,
+                "max_retry_attempts": MAX_RETRY_ATTEMPTS,
+                "coverage_factor": DEFAULT_COVERAGE_FACTOR
+            }
+        }
+        f.write(json.dumps({"metadata": metadata}, indent=2, ensure_ascii=False))
+        f.write("\n" + "="*80 + "\n")
+    
+    print(f"Logging all interactions to: {log_file}")
     
     # Run ranking rounds
     successful_rounds = 0
@@ -457,7 +575,7 @@ async def main():
         sample = random.sample(all_findings, args.sample_size)
         
         # Run rankings by all models in parallel for this sample
-        results = await run_parallel_rankings(sample, judge)
+        results = await run_parallel_rankings(sample, judge, round_num + 1)
         
         # Add results to aggregator
         for result in results:
@@ -468,6 +586,7 @@ async def main():
         print(f"Completed round {round_num + 1}/{args.rounds} (sample size: {len(sample)})...")
     
     print(f"Successfully completed {successful_rounds}/{args.rounds * len(LLM_MODELS)} model evaluations across {args.rounds} rounds")
+    print(f"Full interaction log saved to: {log_file}")
     
     # Calculate final scores
     ranked_findings = aggregator.calculate_scores()
@@ -482,6 +601,7 @@ async def main():
     
     save_results(ranked_findings, output_path)
     print(f"Results saved to {output_path}")
+    print(f"Note: Full question text is now preserved in the CSV output")
     
     # Print top 5 findings
     print("\nTop 5 Most Interesting/Surprising/Impactful Findings:")
