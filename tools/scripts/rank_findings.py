@@ -47,9 +47,9 @@ LLM_MODELS = [
 
 # Ranking Configuration
 DEFAULT_SAMPLE_SIZE = 10
-DEFAULT_COVERAGE_FACTOR = 5  # Each finding should be ranked this many times on average
-MAX_ROUNDS = 40  # Maximum number of ranking rounds
-BATCH_SIZE = 10   # Number of parallel ranking tasks to run simultaneously
+DEFAULT_COVERAGE_FACTOR = 20  # Each finding should appear in 5 rounds on average (5 rounds × 4 models = 20 total rankings)
+MAX_ROUNDS = 80  # Maximum number of ranking rounds
+BATCH_SIZE = 40   # Number of parallel ranking tasks to run simultaneously
 
 # Retry Configuration
 MAX_RETRY_ATTEMPTS = 3
