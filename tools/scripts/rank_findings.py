@@ -165,16 +165,38 @@ class FindingParser:
         with open(self.questions_file, 'r') as f:
             content = f.read()
             
-        # Parse sections and questions - improved regex to capture full question text
-        # Look for pattern: * **X.Y. Title:** Question text (until next * or end of line)
-        pattern = r'\* \*\*(\d+\.\d+)\.[^:]+:\*\* ([^*\n]+(?:\n(?!\*)[^*\n]*)*)'
-        matches = re.findall(pattern, content, re.MULTILINE)
-        
-        for section_id, question_text in matches:
-            # Clean up the question text - remove extra whitespace and newlines
-            cleaned_text = re.sub(r'\s+\n\s+', ' ', question_text.strip())
-            questions[section_id] = cleaned_text
-            
+        # Parse sections and questions - capture EVERYTHING after the colon until the next bullet or section
+        # Pattern: * **X.Y. Title:** Rest of the line and potentially multiple lines
+        lines = content.split('\n')
+        i = 0
+        while i < len(lines):
+            line = lines[i]
+            # Check if this line starts a question
+            match = re.match(r'^\* \*\*(\d+\.\d+)\.[^:]+:\*\* (.+)', line)
+            if match:
+                section_id = match.group(1)
+                question_text = match.group(2)
+                
+                # Continue capturing lines until we hit another bullet point or section header
+                i += 1
+                while i < len(lines):
+                    next_line = lines[i]
+                    # Stop if we hit a new bullet point, section header, or empty section divider
+                    if (next_line.startswith('*') or 
+                        next_line.startswith('#') or 
+                        next_line.strip() == '' or
+                        next_line.strip() == '---'):
+                        break
+                    # Otherwise, add this line to the question text
+                    question_text += ' ' + next_line.strip()
+                    i += 1
+                
+                # Clean up the final text
+                question_text = re.sub(r'\s+', ' ', question_text.strip())
+                questions[section_id] = question_text
+            else:
+                i += 1
+                
         return questions
     
     def parse_findings(self) -> List[Finding]:
@@ -205,7 +227,8 @@ class FindingParser:
                 finding_text = finding_match.group(1).strip()
                 
                 # Extract details - everything after **Details:** up to next section or Summary
-                details_match = re.search(r'\*\*Details:\*\*(.+?)(?=^#{1,3} |^## Summary Insights|$)', 
+                # Include all text including Trust Ranking and other subsections
+                details_match = re.search(r'\*\*Details:\*\*(.+?)(?=^### Question \d+\.\d+|^## Summary Insights|^## Section \d+:|\Z)', 
                                         section_content, re.DOTALL | re.MULTILINE)
                 if not details_match:
                     continue
@@ -396,11 +419,9 @@ class RankingAggregator:
                     model_positions = self.model_rankings[model_name].get(section_id, [])
                     if model_positions:
                         # Borda score: higher is better (n points for 1st place, 1 point for last)
-                        n = len(self.findings)
-                        borda_scores = [n - pos + 1 for pos in model_positions]
-                        avg_borda = sum(borda_scores) / len(borda_scores)
-                        # Normalize to 0-1 scale
-                        model_scores[model_name] = [avg_borda / n]
+                        # Use actual sample size n for each ranking, not total findings
+                        borda_scores = [(n - pos + 1) / n for pos in model_positions]  # Normalize each score
+                        model_scores[model_name] = borda_scores  # Store all scores, not wrapped in list
                     else:
                         model_scores[model_name] = []
             
@@ -466,7 +487,8 @@ def save_results(ranked_findings: List[RankedFinding], output_path: Path):
             # Ensure full question text is saved (no truncation)
             full_question = row['question']
             
-            writer.writerow({
+            # Build the row dict dynamically based on CSV_FIELDS
+            row_dict = {
                 'rank': rank,
                 'score': f"{row['score']:.4f}",
                 'section_id': row['section_id'],
@@ -475,7 +497,16 @@ def save_results(ranked_findings: List[RankedFinding], output_path: Path):
                 'avg_rank_position': f"{row['avg_rank']:.2f}" if row['avg_rank'] else 'N/A',
                 'num_rankings': row['num_rankings'],
                 'details': row['details'][:MAX_DETAILS_LENGTH] + '...' if len(row['details']) > MAX_DETAILS_LENGTH else row['details']
-            })
+            }
+            
+            # Add model scores if enabled
+            if INCLUDE_PER_MODEL_SCORES:
+                for model_name in LLM_MODELS:
+                    field_name = f'model_{model_name.replace("/", "_").replace("-", "_")}'
+                    if field_name in row:
+                        row_dict[field_name] = row[field_name]
+            
+            writer.writerow(row_dict)
 
 
 async def main():
