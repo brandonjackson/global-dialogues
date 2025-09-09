@@ -226,9 +226,9 @@ class FindingParser:
                     
                 finding_text = finding_match.group(1).strip()
                 
-                # Extract details - everything after **Details:** up to next section or Summary
-                # Include all text including Trust Ranking and other subsections
-                details_match = re.search(r'\*\*Details:\*\*(.+?)(?=^### Question \d+\.\d+|^## Summary Insights|^## Section \d+:|\Z)', 
+                # Extract details - everything after **Details:** up to next equal-or-higher-level header
+                # Stop at ## or # headers (but not ### or lower)
+                details_match = re.search(r'\*\*Details:\*\*(.+?)(?=^#{1,2} |\Z)', 
                                         section_content, re.DOTALL | re.MULTILINE)
                 if not details_match:
                     continue
