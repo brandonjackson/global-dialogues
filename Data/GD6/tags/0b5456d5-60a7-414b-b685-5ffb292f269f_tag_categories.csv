@@ -1,0 +1,12 @@
+﻿Category,Tag 1,Tag 2,Tag 3,Tag 4
+"Accuracy and reliability (verification, hallucinations, overconfidence)",Hallucinations and factual errors,Often accurate but requires verification,Wrong confidence/misleading certainty,
+"Bias and fairness (training data bias, neutrality vs better-than-human claims)","Better than humans at neutrality, sometimes",Bias from training data and programming,,
+"Capabilities and utility (productivity, speed, brainstorming, emotional support)",Fast responses and convenience,Helpful for routine tasks and productivity,Helps emotionally; nonjudgmental support,Useful as starting point/brainstorming
+"Control and agency (user control, tool not decision-maker, prompt dependence)",Acts only on user prompts; user control,Depends on prompt quality and specificity,"Tool, not a decision-maker; human oversight",
+"Ethics and safety (guardrails, neutrality, censorship/agenda concerns)",Concern about censorship/agenda setting,Ethical guardrails and safety measures,"Impartial/neutral, lacks emotions",No personal agenda or selfish motives
+"Future trajectory and risk (rapid improvement, immaturity, long-term risks)",Fear of future risks or takeover,Improving rapidly but still immature,,
+"Limitations of understanding and alignment (lack of self-awareness, judgment, personalization, best interests)",Doesn’t truly know my best interests,Limited personalization/context understanding,Not self-aware; lacks conscience/judgment,
+"Privacy and security (data handling, corporate motives, creator manipulation)",Can be manipulated/controlled by creators,Corporate motives and profit concerns,Privacy and data security worries,
+"Trust determinants (company/model reputation, consistency, disclosures of limits)","Consistency, reliability builds trust",Neither trust nor distrust; case-by-case,Provides disclaimers and admits limits,Trust varies by company/model reputation
+Uncategorized,Other,,,
+,Uninformative answer,,,

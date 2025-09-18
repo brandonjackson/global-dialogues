@@ -1,0 +1,13 @@
+﻿Category,Tag 1,Tag 2,Tag 3,Tag 4,Tag 5,Tag 6,Tag 7
+"Accountability, Liability, and Governance",Accountability and liability/compensation,Compensation or insurance for harms,Ethical standards and governance,,,,
+"Auditing, Verification, and Certification (including open/third-party)",Audit logs of actions and access,Independent evaluations and certifications,Open-source/open audits/third-party audits,,,,
+"Bias, Fairness, and Neutrality","Bias, fairness, and neutrality safeguards",,,,,,
+Clear Communication of Capabilities and Limits (including error reporting),Clear communication of capabilities/limits,Clear limits and user-configurable boundaries,Regular updates and honest error reporting,,,,
+Consent and Autonomy (including human-in-the-loop),Consent especially for sensitive domains,Explicit consent before actions,Human-in-the-loop and override options,,,,
+Data Privacy and User Control,Anonymization of personal data,Data privacy and protection,No selling/sharing data without consent,Option to opt out of data collection/training,Personalization with user control,Transparent data collection/storage policies,"User control over data (view, edit, delete)"
+"Reliability, Support, and Safety Failsafes",Provide human support/customer service,"Track record, reputation, and reliability",Undo/rollback and safety failsafes,,,,
+Security and Protection Measures,Security measures and encryption,,,,,,
+Transparency and Explainability,Explain decisions and reasoning,Show sources and citations,Transparency about how AI works,Transparency about training data and datasets,,,
+Uncategorized,Not tagged,,,,,,
+,Other,,,,,,
+,Uninformative answer,,,,,,

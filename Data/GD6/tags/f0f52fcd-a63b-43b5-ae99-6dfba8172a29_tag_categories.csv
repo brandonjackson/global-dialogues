@@ -1,0 +1,12 @@
+﻿Category,Tag 1,Tag 2,Tag 3,Tag 4,Tag 5
+"Bias, fairness, and ethical considerations","AI bias, fairness, and ethics","Guardrails, moral decisions, and values","Religious, cultural sensitivity and norms",Scope: what AI should/shouldn’t do,
+"Domain-specific concerns (healthcare, education, children, creativity)",AI in education and learning impacts,Children/parental controls and age limits,Creative work and cultural impacts,"Medical use: assist only, not decide",
+"Environmental and technical constraints (energy use, on-device)",Environmental impact (energy/water use),On-device/offline operation preferences,,,
+General feedback about survey,No additional comments / everything covered,"Survey design feedback (options, clarity)",,,
+"Governance, regulation, and accountability",Accountability and redress for harms,Need for AI regulation and governance,Political influence and corporate lobbying,,
+"Privacy, security, and user control","Data privacy, security, and user control",,,,
+"Safety, misuse, and long-term/AGI risks",AGI risks and long-term safety,"National security, crime, and misuse",,,
+"Societal and economic impacts (jobs, pricing, equity)","AI affordability, access, and equity",Economic impacts and pricing models,"Job displacement, labor impacts, and UBI",Mental health and social relationships,Overreliance on AI reducing autonomy/skills
+"Transparency, reliability, and oversight","AI errors, hallucinations, and reliability","Desire for demos, scenarios, and examples",Human oversight and final decision-making,"Transparency, explainability, and audits",Trust depends on developer/company
+Uncategorized,Other,,,,
+,Uninformative answer,,,,
