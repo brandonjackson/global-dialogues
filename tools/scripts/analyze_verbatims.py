@@ -124,12 +124,23 @@ def load_question_mapping(mapping_file):
     Note:
         Only items that have entries in this file are considered questions.
         Items without entries are treated as statements/instructions.
+        Branch questions (e.g., "70_branch_a") are skipped as they don't
+        correspond to numbered items in the survey markdown.
     """
     mapping = {}
     with open(mapping_file, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
         for row in reader:
-            item_num = int(row['human_readable_id'])
+            human_readable_id = row['human_readable_id'].strip()
+            
+            # Skip non-integer IDs (e.g., branch questions like "70_branch_a")
+            # These don't correspond to numbered items in the survey markdown
+            try:
+                item_num = int(human_readable_id)
+            except ValueError:
+                # Skip branch questions and other non-integer IDs
+                continue
+            
             uuid = row['uuid']
             question_text = row['question_text']
             mapping[item_num] = (uuid, question_text)
