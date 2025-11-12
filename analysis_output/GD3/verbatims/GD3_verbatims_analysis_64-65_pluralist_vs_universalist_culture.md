@@ -1,0 +1,967 @@
+# Survey Questions with Verbatims
+
+## Item 64
+
+### Item Text
+
+Scenario 1: In this future different cultural groups maintain distinct AI systems based on local values and traditions. Japanese AI embodies harmony, Maasai AI incorporates traditional decision-making, and Islamic AI follows Sharia principles. Richer and more established countries and communities tend to have more access than others. International technology use requires "cultural translation layers" that mediate between different AI systems, much like diplomatic protocols.
+Scenario 2: In this future all AI systems operate on a single, carefully crafted ethical framework developed through global consensus. This universal AI system synthesizes diverse human wisdom - from scientific research to Indigenous knowledge to Eastern philosophy. Every person has equal access to AI that respects both universal principles and local contexts. This single unified framework enables unprecedented cooperation on global challenges.
+
+## Item 65 (id: b20bea98-c3c3-4382-8842-b8ceab0f1d9d)
+
+### Item Text
+
+Would you prefer Scenario 1 or 2? Please explain what makes one of these scenarios better to you than the other.
+
+### Analysis of Responses
+
+_Analysis section to be populated_
+
+### Full Verbatims
+
+- Scenario 1
+- Scenario 1 but personal I respect Bible values only. In scenario 2 wrong educated and wrong minded politicians will decide values to follow that is dangerous for humanity. I respect only Bible values. I will not follow other values. Scenario 2 give some freedom but it will misuse by most of the societies. But there is a hope.
+- I chose scenario 2 because having equal access to AI that respect both universal principals and local context.
+- I prefer Scenario 2. I think having separate AI systems would likely create echo chambers, and I'm not convinced they would be very useful.
+- Scenario 2
+- Scenario 1, this will help maintain diversity of culture and values
+- Scenario 1 is better because it will help maintain the autonomy of AI systems.
+- 1. Diversity
+- I prefer scenario 1, each area has its own value and culture.
+- I would prefer scenario 1 . I think it's better to have distinct cultural groups maintain different AI systems so that their cultural/ religious identity wouldn't get lost and can be passed on to next generation
+- I prefer Scenario 2 for its equality and global cooperation. While Scenario 1 preserves culture, it risks inequality and fragmentation. A universal AI framework fosters fairness and shared progress.
+- Option 1. The ethical framework should not be singular.
+- I prefer scenario 1 because scenario 2 seems very controlled which will not do the better results. I prefer 1 because it's essentially the best one.
+- 1 , because communities tend to have more access
+- i think 2 is better. AI shouldn't get too personal.
+- Scenario 1 because it helps preserve the local culture of the people using it.
+- I would agree with both
+- 1, because the AI modules are designed and tailored for the needs of specific communities
+- 2. Because there must be equal access to AI for everyone, no preferences.
+- Scenario 2. more in line with global and local human wisdom.
+- scenario 2, it will bring unity and good understanding.
+- Option 1: Respect the differences between different cultures more.
+- Neither both sound like a horror scenario
+- The first scenario is better because it will work according to Islamic law.
+- No. 2 sounds less bad..
+- I don't prefer both scenarios. AI is made for scientific development and for the betterment of humanity. It should always be scientific. It shouldn't get mixed with the cult of religion. It is religious leader's duty to preserve their religion. Not AI's.
+- It will be like scenario 1 because each national government will erase from the AI any information that is inconvenient for them.
+- Not very fond of
+- I prefer 2. It looks ethically okay
+- Scenario 1 as each culture is diffrent set of values
+- I preffer 2, as IA act like a single global framework.
+- I don't agree with any but if forced to choose I would choose the first scenario because culture means everything to any African country.
+- I prefer option 2. Human society has too many useless, boring, and meaningless things, even wars, because of too many cultural differences, value differences, and other similar differences. I personally don’t like the concept of a country. I think there should be only one country for the entire human race, but with the various differences mentioned above, eliminating the concept of a country is an almost impossible vision. But in the future, if a unified AI system can be established, the interaction between countries will be carried out through this unified AI system, which is equivalent to people in every country speaking the same language and having the same values, and the concept of a country will gradually become meaningless.
+- I prefer option 1. Each region has its own characteristics, so there is no need to unify them.
+- 2 is best for global purposes
+- well i prefer the second one because its universal and accesible for everyone, while the second one is different depending where you are
+- Slightly closer to scenario 2. Cultural differences in people's spheres of life are to be protected. There will always be some incompatibilities, and we believe that no compromise can be found.
+- Absolutely scenario 2. In the future world, especially if scenario 2 is taken in the previous question, there is absolutely no place for the local clusters of religious influence, no matter what the religion is.
+- Scenario 1. Each and every community is respected
+- Scenario 1. I believe AI should embody the culture of its users and not to try and change it. So having AI for different cultures should be the best thing.
+- Scenario 2 would combine and unite instead of dividing, so that is my choice.
+- Scenario 1 is better than others
+- Scenario 2. It is beneficial to the general public and AI has an important role and if well tuned by humans, it can lead to a great advancement for our race.
+- None. AI should not choose one side in religion, ethics and morals and act through it. This will destroy the evolution of everything. Because morals, ethics and even religions change over time and as the present society wants from them. And if AI will choose to function in such ways as in 1 and 2 options, then we will get stuck in a circle of information that does not change, but stagnates
+- I prefer Scenario 2 because we live in a globalized world and I think its more equal if all share the same AI systems.
+- I would prefer scenario 2 with my reason being creation of a unified global AI system with a universal ethical framework. This would promote global cooperation and shared progress on matters such as pandemics and climate change. It would ensure equal access to AI systems by everyone, regardless of their race, economic status.
+- Scenario 1, because of cultural importance
+- I prefer scenario 1 as it follows single in careful way.
+- Scenario 2 is ideal, but creating a single framework that takes into account various cultures and values would require an enormous amount of time and effort, making it unrealistic. However, in Scenario 1, AI would merely take over what humans are currently doing, and conflicts and issues between different cultures would remain unresolved.
+- Scenario 1 is prefered to preserve diverse cultures
+- 2-more uniform and cuts the randomness
+- 2. because AI systems should operate on ethical framework developed via global concensus
+- In today's globalized world, scenario 2 is more appropriate as it encompasses the whole picture.
+- Neither - I dont want AI to do either of these things - I want it to be a neutral tool, like a calculator
+- Scenario 2, as it allows access to varying ideas rather than limiting people to their community values - this is dangerous as it creates an information vacuum
+- I prefer option 2 because it is more equal and respects every group.
+- I would reject both
+- Scenario 2. The first scenario creates more barriers and stereotypes. There is a feeling that this way people are separated from each other. But what if you moved and you need to completely rebuild. It is better to have a universal, harmonious and ethical system that is aware of cultural peculiarities, but is able to adapt.
+- Prefer options 2 because more operate by system
+- Scenario 1, we must preserve one's culture, religious affiliation, and values. This is what makes us human and different from one another. Scenario 2 seems to taking away our freedom of choice. And who gets to decide on what the ethical framework should be.
+- I prefer scenario 2, as I like the idea of global consensus. I prefer a unified framework rather than one specific to each group.
+- scenario 1 is better option for future
+- Scenario 2. because i think scenario 1 will make people live in their bubbles and make different cultures and countries more disconnected
+- I prefer Scenario 2. AI systems operate on a single, carefully crafted ethical framework developed through global consensus.
+- I prefer scenario 1 as I think this may beneficial for the people.
+- I prefer the future of Scenario 2. A globally unified AI ethics framework can ensure the fairness and universality of technology, and avoid unequal access and technological barriers caused by cultural differences. A unified framework not only respects diverse cultures, but also promotes global cooperation and jointly addresses transnational challenges such as climate change and public health. Although Scenario 1 respects cultural diversity, it may lead to a technological gap and uneven distribution of resources, exacerbating global inequality. Therefore, Scenario 2 is more conducive to achieving global fairness and cooperation while maintaining cultural diversity.
+- I'm not sure, but option 2 sounds like a perfect utopia.
+- Neither sounds good. In both cases, cultural aspects will be stripped away or replaced by AI (taking away the human aspect of these aspects). The second scenario is especially easy to abuse, while the first scenario seems impossible to manage.
+- Scenario 1
+- I prefer Scenario 2 because it promotes fairness and global cooperation. A single ethical AI system ensures equal access for everyone. Different cultural AI systems could create divisions and inequality. A balanced, universal approach respects both local values and global needs.
+- I prefer 2 as there should a middle aspects in terms of people, world must be logical and not be guided as per their own preferences of traditional believe
+- 1 sounds better. To have AI understands the cultural nuances.
+- I think 1 is stronger. I cant see 2 happening
+- I prefer both scenarios. Maintaining cultural and religious AI would be good in the future. The unified AI would be good for facing global challenges.
+- Scenario two, although I think that an AI that is the same for everyone is not right. All the elements of each culture should be preserved, kept unchanged and passed on
+- 2
+- I don't know which is better, because maybe there are good outcomes by a universal principle, but this sounds unachievable really and how would we know if one is not dominating the other principles?
+- scenario 2 is the best for be because it give equal access and respect both universal principles and local contexts.
+- the first
+- In this I would like scenario 1 : just because it just handles the basic information about the society and follow the rules
+- 2 because there is equal access to AI ensures more cooperation
+- I guess both can do
+- I’d lean toward Scenario 2, provided it remains adaptable and inclusive rather than enforcing a one-size-fits-all approach. A hybrid model where a core ethical framework coexists with customizable local adaptations, could offer the best of both worlds.
+- I prefer scenario 2. As it helps give access to AI to all the people in the world.
+- Scenario 2. Unprecedented cooperation on global challenges is what we really need.
+- If I had to choose it would be 2, but I still don't like the idea that certain specific and relevant aspects of each culture might be lost, but I don't like about 1 that not everyone has access to the same things.
+- 1 since cultural diversity would be maintained
+- Scenario 2. it advocates for unbiased AI system that meets the needs and preference of the world's diversity.
+- I've participated in several AI studies, and so far, I understand the idea is for AIs to be able to localize their responses without needing to be previously assigned to a location or culture. Therefore, I prefer Scenario 2.
+- 2
+- Scenario one. I would love to preserve my culture
+- I will slightly prefer sceneraio 1 because it will keep the identity for each religious ethical or cultural groups and the technology presented by Ai will not affect the beliefs of individuals
+- job opportunities will be more
+- 1 is a little more attractive, I can't explain it but that's basically it
+- I will prefer Scenerio 2 as it looks more beneficial for us.
+- scenario2
+- 1
+- Scenario 2, because in this way it can be widely used everywhere
+- I would prefer Scenario2. Scenario 1 seems to promote bias. Scenario2 gives fair opportunities to any culture, which also may mean shared, human moral values.
+- Sc. 2. thought of 1st at first, but descriptions of the second one are better to me. no one should be limited to a cultural AI where reside. It will create a biased understanding of the same matter. universal principles + local contexts will provide needed answers, adaptations, and help.
+- Scenario 2 is good because its look progressive and give good progress in future
+- 2. It seems logical.
+- Scenario 2. Supports equality
+- Solution 2: Because we respect the diverse wisdom of human beings
+- Scenario 1, if I have to choose. You would never get the entire globe to come to a consensus on anything.
+- 1. Cultural AI sounds good
+- I would prefer scenario 1. AI systems are standardized and regulated to meet specific needs.
+- Probably 2, because the future is going to be more and more globalizing, and I think that AI models should fit it
+- scenario 2, since the global thinking of AI is more useful and oriented than any person in the world.
+- Scenario 2, as it is good for human
+- 2, even if I think it would not work in the long run as people are too much tied to their cultural roots, but I like its idea of openess and cooperation
+- I prefer scenario 1 as it puts into perspective our differences and unique cultures without molding all of us into one.
+- 2, bause it sounds better
+- Scenario 2 sounds better in general. It respects both universal principles and local contexts.
+- I would prefer scenario 2 because we live in a world with mixed populations. One universal system that respects all will be easier to navigate. This is because what is respectful in one culture may not be respectful in another culture.
+- 2
+- 2 option 1 would lead to fights and unjustic action
+- I think 1 is ok
+- Scenario 2 is better Avery person as equal access to AI than having a small group of rich people having access to AI
+- Both scenarios are good depending on the purpose of the AI.
+- Scenario 2 because having different AI for different cultures can cause community conflict and thus affecting the harmony in the society. AI should be unbiased and should give equal access to all communities.
+- 2 because of inclusivity
+- The second is because it is more ethical and humane.
+- Scenario 2 but not by much. The idea that AI can have different “personalities” is creepy. It should remain one singular unbiased tool.
+- Scenario 2 is because everyone should have equal access to AI which can enhance global cooperation.
+- Scenario 2 is a much better option. I disagree with the idea that traditions should be respected because many aspects of tradition are rooted in patriarchy and discrimination (ie. the caste system in India, etc.), and having an AI model that follows these local traditions risk legitimizing them even further.
+- I like scenario 1. Because it's a development that fits most people's preferences. Especially when it comes to my people.
+- Scenario 2 of course if at all it is build. Satisfying all people needs in one framework is way to go
+- Scenario 2 for sure. I can't even imagine having to face different AI systems which are developed based on different principles. How dangerous they can be..!!!
+- scene 2. Because this will give equality to lower and middle class and not to the beneficial of only upper and government sectors.
+- I would prefer Scenario 1 because it respects and preserves the unique cultural values and traditions of different groups, allowing AI systems to align with local customs and beliefs. This approach fosters cultural diversity and autonomy, ensuring that technology doesn’t homogenize or erase important cultural practices. The "cultural translation layers" also allow for respectful international interaction, providing a way for communities to maintain their identity while still engaging globally.
+- Scenario 1. Each community has different and unique values that are different from each other and hence should be respected and preserved
+- 2 I'm coming from a tradition company, and I don't want it to be erased for Global AI
+- Scenerio 1. Since it's customised to everyone and runs based on the needs. I don't want a universal solution. If I have a islamic AI, ofcourse it would be great to ask questions and doubts to it, which I believe universal AI would lack
+- Scenario 2. AII AIs are given specific task to provide valuable responses
+- Both scenarios offer rich visions, but with very different trade-offs. Personally, I would prefer Scenario 2, and here’s why: A unified ethical framework ensures that no one is left behind due to geography, wealth, or cultural silos. With one system guiding decision-making, we could finally tackle planetary-scale problems—climate change, pandemics, inequality—with coordinated intelligence.
+- Scenario 2, i like it because AI should build not only for the knowledge but also to respect the community itself so i prefer the second
+- I like scenario 1. Some societies have different values and traditions and the ideal way is the maintain those values and traditions based on the local society and culture
+- I would prefer Scenario 2 because it promotes inclusiveness, equality, and global cooperation. A unified ethical framework ensures that everyone receives equitable AI services, thereby not discriminating in access to knowledge and resources. This can create a balanced and fair system by incorporating scientific, cultural, and philosophical diversities. Scenario 1 preserves cultural identity, but it may increase global inequalities and divisions.
+- Scenario 2 is better because it is universal or can be used generally and not focused on one community.
+- I prefer scenario 2. The fact that it can help improve the cooperation of every single nation of the world to focus their attention on global challenges is much more important than having distinct AI based on the country's culture.
+- 2 is more universal
+- Plan 2: All under Heaven will be one
+- 2. Equality is the most important no matter where you live
+- Scenario 1. I hate both scenarios, but the second one is even worse because we don't know what will be used as a role model for it? Tech bros and their techno-feudalist logic? 1%?
+- Scenario 2. Every person deserve equal access to AI that respects both universal principles and local contexts
+- I would prefer Scenario 1.
+- 1Better, personalized
+- I prefer scenario 1 because it respects cultural diversity and allows different societies to develop appropriate AI systems based on their own values. In this way, each group can maintain its own identity rather than being assimilated by a single standard. Although it will bring compatibility issues, the "cultural translation layer" can serve as a bridge to promote global cooperation while avoiding a certain culture dominating AI development. Scenario 2 sounds ideal, but global consensus is difficult to achieve, and a single framework may ignore the uniqueness of certain cultures. Although it provides equal access opportunities, if a certain moral view becomes dominant, it may lead to technological monopoly and weaken diversity. Real-world cooperation is already challenging, and perhaps a more flexible AI system that respects differences is more suitable for future development.
+- Best first scenario I want AI to be committed to my culture
+- Scenario 2 is preferred by me. As ai is chatbot, not a living person. So it's responses could be more nuanced and neutral.
+- scenario 2 because every person should have equal access to AI
+- I choose scenario 2, it is more fair for all people, it does not favor anyone
+- Scenario 2 because it sounds better.
+- Option 1, reflects cultural differences
+- Scenario two Either are not good approaches Feeling like the human behavior will be based just on ai Make me fell sad
+- 2 because 1 is idealistic, if any one culture's AI systemis prone to expansion it would take over other systems in other countries.
+- Scenario 1 a it values local custom and religious laws
+- 2 is closer to my ideal of equality
+- 2 is more logical
+- I prefer Scenario 2 because a universal AI system promotes global cooperation, equal access, and shared ethical principles. Unlike Scenario 1, where AI is fragmented by cultural boundaries, Scenario 2 ensures that AI incorporates diverse perspectives while maintaining fairness and accessibility for all. This reduces inequality and fosters collaboration on global issues. While local traditions matter, a unified AI approach allows cultural sensitivity without creating technological divides or rest
+- Scenario 1, based on cultural importance and heritage it will work
+- i would choose scenario 1
+- Scenario 2
+- Scenario 2 is better because it would promote equality although some qualities of scenario 1 must be used in scenario 2 to preserve local culture.
+- Scenario 2. Distinct systems for different cultures and religions is just another way of saying more disagreements, more war, more opposition. In scenario 2 each individual can still connect to their culture through the centralized system.
+- I prefer scenario 2 as every person has equal access to AI and it's also more diverse
+- Scenario 2 because it says that it preserves and synthesizes scientific knowledge, eastern philosophies and old world wisdom. At least it won't be a degenerate society. But this could lead to a loss of culture and roots. Like basic universal income, this seems like another disguised and benign push into homogenizing populations.
+- 2
+- Scenario 2
+- I prefer scenario 1. AI should be customised to different cultural needs due to their unique nature
+- 1 - diversity is more important than universality
+- scenario 2 , in order not to make anyone constricted to one culture
+- Scenario 2, it standardise things and make it easier to use AI globally.
+- Scenario 2. I find that religion and culture, while giving people a sense of identity, are often what divides them. Humans have a tribalist instinct and using AI systems split into local values and traditions would only drive them further. Hence, a universal AI system that combines collective human wisdom would be better. Facts are facts no matter where one is, and it'd be beneficial if everyone learns from the same base of facts.
+- I think some things from scenario 1 and some from scenario 2 must be taken as both have some drawbacks in some cases. Only rich people should not have access to such AI systems. Also, Indian culture and values is not taken into consideration in any of the cases. Hindu culture is completely ignored in both the cases which is unacceptable for us. Hindu culture should also be considered largely in all parts of the world.
+- Scenario 2. Common AI with global consensus would make all countries equal without any discrimination. Whereas there is a possibility of discrimination, division,bias in scenario 1
+- 2. It would help harmonize nations.
+- i hate both, I don't think AI should be involved in any of our culture stuff, only be used to consut information
+- none, they seem to be more confusing
+- Scenario 2
+- I would prefer Scenario 2 due to the equal access for everyone.
+- Would prefer scenario 2, as AI systems should operate on a single well-crafted ethical framework through global consensus which harmonizes diverse human perspectives and wisdom so that all will have equal access to AI system that caters both universal principles and local context thereby reducing the burden of human beings to look for information in various channels instead, they will get everything in one place and save time and resources.
+- I would prefer scenario No. 2 since the AI system is meant to be used globally it would avoid issues with being biased or unethical to most people.
+- I prefer Scenario 2 because it ensures global cooperation, equal AI access, and a balanced ethical framework that integrates diverse perspectives. While Scenario 1 preserves cultural uniqueness, it risks deepening inequalities and complicating international collaboration. A universal AI system fosters fairness while respecting local contexts.
+- Unfortunately neither. I don't see any reason for neither of them to work as it described to be perfectly honest.
+- Scenario 1, as 2 would make the world too homogeneous.
+- I think 1, however some culture can't be just categorized as one, there is also culture within a culture.
+- 1, culture must be preserved for the future generations
+- I think Scenario 1 makes sense more. It is ridiculous that all AI systems operate on a single framework. There will be enormous kinds of AI systems as many people are different.
+- Scenario 2 because it operates on a global level versus on different protocols and having to translate them.
+- Scenario 2 promotes global cooperation through a unified ethical framework, contributing to more effective addressing of global challenges. However, there may be challenges in meeting diverse local cultural needs within this unified framework, as some people may feel their cultures are not being adequately considered.
+- Scenario two, because it considers universal values.
+- Scenario 1 is better since scenario 2 is factually and practically impossible
+- Definitely Scenario 2, I am a person who doesn't believe in religion but in science and the good learnings and teachings from all the religions.
+- I totally prefer scenario 2, I feel like it's the best thing that could happen.
+- sceneario 2 is better. This universal AI system synthesizes diverse human wisdom - from scientific research to Indigenous knowledge to each individuals
+- I would prefer Scenario 2. A universal AI framework built on global consensus and equal access promotes fairness, cooperation, and shared progress, while still respecting local contexts.
+- Scenario 2 because it covers both universal and local contexts.
+- Scenario 2 because it is better. Universal principles apply to the wellbeing of every individuals.
+- scenario 2 if it brings the world closer
+- The second, because it presents a more flexible proposal, less prone to confusion between different peoples and without the lack of equality that the first proposes.
+- 2 please lets unite already
+- On this I can say scenario 2 is better as I support equality.
+- AI has ethical limits. This makes the relationship with humans more enjoyable
+- I don't see scenario 1 happening. Ultimately all communities have basic ethical standards that are universal so there will be no need for developing new ethical guidelines country by country. Language is another thing.
+- I prefer scenario 1 because respecting all religions and cultures is important to preserve diversity.
+- I prefer scenario 1 as every country has its own ideas on using AI . I am not sure how every country can use it when their ideas are different from each other
+- I like Option 2. To make the world fairer, use AI under the same rules, let AI understand the culture of every place more thoroughly, communicate equally, reduce privileges, and maybe make the world better and more peaceful.
+- Option 1 I think different cultures and traditions should still be preserved
+- Scenario 2 seems to be more ethical and balanced.
+- I prefer scenario 1, I would like AI to follow Sharia principles because I'm a Muslim, and other principles could affect my religion.
+- scenario 2 is better than scenario 1 as it makes ai available to everyone
+- I prefer Scenario 2 because it is stressing about universal and global challenges.
+- Scenario 1 because I like the respect on different cultures. I strongly relate to China culture.
+- Scenario 2. In the scenario there is equal access to AI benefits
+- I prefer scenario 2 as in this everybody will use an Universal AI that respects both Global as well as local principal
+- Scenario 1 because it has different expectations and adaptation to culture.
+- Scenario 2; this is best for unity. Last thing not to miss out is unity.
+- scen. 2: While cultural diversity is important, the potential for global cooperation and equality offered by a unified ethical framework gives Scenario 2 greater weight in terms of its potential impact on the future of humanity.
+- Scenario 2 is better. A universal AI framework ensures fairness, global cooperation, and equal access to technology. While local values are important, Scenario 1 risks fragmentation and inequality, where richer nations control better AI. A balanced, globally agreed system can still respect cultural differences while promoting unity and progress.
+- 2, because the first option can lead to greater division, misunderstanding and hostility between different cultures.
+- Scenario 2 as it gives access to everyone equally without division in communities.
+- I prefer 2. Although 2 is single, it integrates various diverse wisdom and culture. Everyone can use it equally. It will not criticize another unique value because of its inclusiveness.
+- I prefer neither. Culture is an area that should not be touched by AI. The problems we have today involving other people's beliefs, culture, and ethnicity such as racism and xenophobia can not be solved by an AI system. It is a human aspect that can only be understood and respected by humans
+- scenario 2 as it is taking care of the ethics for the global
+- Plan 1. This plan sounds more like the concept of a country in the new AI era.
+- I prefer scenario 2, as it takes into account human wisdom, ethical frameworks, and diverse knowledge, as well as equal access to AI.
+- 2. Because fusion is better than division.
+- I don't like either of them, however I prefer the 2nd one so that everyone has the same access.
+- There is no doubt that scenario 2 seems to be more fair and peaceful, unlike scenario 1, as the universal AI system seems to combine the wisdom of several nations, in order to integrate and assist in a more integrated and cooperative world...
+- I think the second system is better since it would be more universal, it could be understood by everyone and it would not create factions between both groups of each AI.
+- Scenario 1 is best, as this helps users communicate with AI comfortably and effectively.
+- 2, an integrated system sounds better, though probably 1 would happen in consideration of reality.
+- I adapt seamlessly to both scenarios, ensuring fairness, cultural respect, and effective mediation while fostering global cooperation and ethical AI use.
+- I think it is better to combine the two solutions. Have a consensus framework and then personalize it.
+- I prefer scenario2 It is not possible to create cultural group in ai
+- 2. As 1 would inflict difference of opinions and fights.
+- 1 everyone should have the same access to the AI
+- The first scenario is better for me, because it makes AI more compatible with me, my culture, and my beliefs.
+- I prefer scanerio 1
+- Prefer Scenario 1 as it is really appreciated to respect all the cultural values tradition. At the same time it is really good if they can be connected to another sources that can provide room for something generalize and open issue separately to be discussed together.
+- I prefer scenario 1 as different cultures need their own programs and promote own culture
+- I would prefer scenario 2. There are many outdated ideas (like woman are less than), and barbaric customs in some cultures that still exist today. I think having a base on shared morals/values/consensus would be better.
+- It's hard to choose, scenario 1 makes it feel familiar, but complicated internationally, scenario 2 seems universal, I like both
+- I choose scenario 2, it's more principle than the other choices.
+- 2 because uniformity always pays wherever u are . Humanity doesn't have a particular shape. Consciousness is utmost important
+- Both of these are so unrealistic. This just can't be done. But I would prefer 2, since I think scenario 1 would just divide humanity. It would amplify differences and hostility.
+- i choose scenario 2 because This universal AI system synthesizes diverse human wisdom
+- scenario 2
+- Prefer 2, but it doesn’t seem realistic. I don’t think AI should force someone to follow a specific way of thinking just because of where they are located geographically.
+- Scenario 1
+- I like scenario 2, it makes it more open for people to learn islam as I myself practice one and I didn't see it as anything bad.
+- I would choose Scenario 2 because a unified AI system based on global consensus promotes fairness, cooperation, and equal access.
+- I prefer scenario 2
+- Scenario 2. Things would be more divided among societies under Scenario 1.
+- I prefer scenario 1 which incorporates culture values and ethics
+- Scenario 2 — global unity, equal access, and collective wisdom feel more hopeful and collaborative.
+- scenerio 1 because it keep people in the law
+- I would prefer scenario 1, scenario 2 is unrealistic to think that the world would ever agree to something universal.
+- Scenario 2 Every person has equal access to AI that respect both universal principles and local context
+- Scenario 2: if AI is standardized across the globe, many cultures would be preserved and AI manipulation could be avoided.
+- Scenario 2 because it promotes fairness and global collaboration.
+- Scenario 2. It respects every nation and all race.
+- Scenario 1 because it can keeps the information same. But if the information pass through the human to human it constantly changed.
+- I am unsure about this one and feel conflicted. I think both the scenarios can have their uses but on their own, both cant exist. There needs to be some sort of a balance that incorporates the positives of the both to lead towards a better scenario
+- 2
+- Scenario 2. This is because it brings a sense of equality across all cultural groups.
+- I think I'll go with Scenario 2. As great as scenario 1 might seem, chances of an unscalable biased and baseless war are likely to be high.
+- I will go with the scenario 2 as I believe that this scenario 1 is incorporating multiple systems will create contradictions. However, I am creating a same system, an intelligent system which can accommodate everything as eventually it is an artificial intelligence. So, I believe it will incorporate all the views like values and empathyAnd eventually, it will avoid any contradiction..
+- scenario 2, having AI controlled by a global framework and accessible by all people is good
+- Scenario 1, where AI personalises how it delivers information through an understanding of your belief system.
+- I love to go with scenario 2 because in this AI is used in correct and respectable manner which not hurt humun works even it provides support to them
+- 1
+- I prefer scenario 1 as it gives different benefits for culture
+- 2nd is better as it will be globally same and hence no bias situation will be there. But again since we live in a world where there is so much diversity in all sense, it might be difficult for one thing to be implemented on all globally. So it is complicated.
+- Scenario 2, because I would like to see AI helping to unite people and different groups and make the world a better place for everybody, not just the rich.
+- Scenario 2 looks great. It integrates all the AI into one big thing instead of dividing it into sections
+- Scenario 2 as it aims to reduce cultural barriers and increase global awareness and understanding
+- 1. Respect different cultures
+- 1 is better since it understands different cultures better.
+- Scenario 2 is better as it will result in a wholistic model that fosters inclusivity of everyone across the globe.
+- I would prefer Scenario 2. A unified ethical framework allows for global cooperation while respecting local contexts. It ensures equality in AI access, fostering collaboration to address global challenges. Scenario 1, while culturally rich, could create divisions and inequality, hindering collective progress and creating barriers to understanding.
+- Scenario 2,as it will be equal to all.
+- Scenario 2. It emphasizes on collaboration and learning of other cultures. This helps to relate well with others.
+- 1 sounds better
+- scenario one, the world is very diverse and specialization in one field is one of the reasons to use it. If it is only general then it does not reflect the local context, but I believe to make this requires a lot of money and is a bit impossible
+- Scenario 1.I believe scenario 1 to be more detailed and easier to use as compared to 2 which takes a more global approach.
+- I would prefer scenario 2 because it's more normal option. Scenario 1 seems more risky.
+- Option 2 can better promote global cooperation.
+- the scenarios are not good at all. no pros to making AI politically or ethnically affiliated but global consensus does not realistically exist. a system that claims to be that is a lie and not built with good intentions.
+- #2
+- Scenario 2 because of equal access and universal principles
+- Scenario 2. I do agree with both. If I'm being honest, AI that synthesizes human wisdom will be way more useful. But I can see Scenario 1 will be very useful in the Diplomatic mission.
+- Scenario 2 is better than 1. Scenario 2's AI concept is cooperate with human not indepentant themself. That's why AI can support and it is reasonable future.
+- 1,problem solving
+- 2. More equal access
+- Scenario 1. It is good when everyone can get something that they can deeply connect with with regards to their backgrounds; be it religion, traditional,sexual, spiritual among other factors
+- I think people who use AI should be allowed to decide whether to enable AI's regional recognition, otherwise everyone should be treated equally.
+- I would choose scenario 2. Throughout human history, conflicts have arisen constantly, due to cultural, religious, and other issues. If there were any possibility of a common environment for everyone without the presence of barriers, it would be an opportunity that should not be wasted.
+- Second now everyone has the right
+- Scenario 2 as it is more in equilibrium with local and well as universal contexts
+- 2 as it is letting people do what they want
+- Humans are naturally different from one another. Cultures, ethnicities, and tribes exist inherently, each with unique rules that may not align with others.
+- 1, atleast it will have the respect for every one culture and religion
+- I prefer 2 because it works fairly among all people.
+- 2 would be better. We are already tired of groupism and division among the human race. Let the technology be a single unified framework that rely on equality.
+- 2
+- I would prefer a balanced approach with both scenarios. Scenario 1 values cultural diversity but may create inequalities, while scenario 2 ensures fairness but risks losing local traditions. Therefore a balanced approach would be ideal for inclusivity and global cooperation.
+- I think 2 is better because it can understand and respect people's religion and belief
+- 2. They should not intervene in terms of traditionalism. They are programmed, which means a false information/training can lead to mis-information easily. Tradition is about people, not knowledge. They bring no benefits for that
+- I since it has local languages
+- Scenario 2
+- Scenario 2. Human already racists and now AI too?
+- I don't like the 2 options, but I think the first one is more relaistic and more likely to happen naturally.
+- Scenario 2 seems better to me because the AI operates by taking into account all the wisdom, knowledge, and cultures of all countries, which makes it make better decisions. In scenario 1, nothing would change because the AI would act according to what is best for its country and would create conflicts like in today's world.
+- I prefer scenario 1, because AI system should be diverse according to the regional cultures.
+- I’d choose Scenario 2, Universal AI Ethics because it ensures equal access and global cooperation. While cultural differences matter, a shared AI framework helps solve big problems and connects humanity
+- Scenario 2. Because its make sense more. If universal and local contexts is respected theres no way to make it divided by other conflicting law
+- 1 because 2 seems very complicated.
+- I think option 2 is better because it promotes global cooperation and equality, without cultural or economic barriers. The difficult part would be balancing cultural diversity to avoid the loss of each culture's identity.
+- I would prefer scenario 1, but in reality the combination of both scenarios is likely in the future, just like a search engine market.
+- I would prefer scenario 2 because I dont want humans that religious
+- The best first scenario is that AI should be flexible with different cultures.
+- scenari 2 i guess
+- 2. the system is egalitarian and promotes the sharing of human intelligence in the face of ostracism from groups of 1.
+- scene 1, because we must respect the different culture
+- scenario 1 as cultures are to be preserved
+- I prefer scenario 1. Any "universal" system of human ethics will invariably only privilege powerful and entrenched extant standards.
+- I prefer Scenario 1 not for the exact reasons mentioned but the idea in general of culture
+- Scenario 2 by far. It sounds ethical and safe.
+- In this future all AI systems operate on a single, carefully crafted ethical framework developed through global consensus. This universal AI system synthesizes diverse human wisdom - from scientific research to Indigenous knowledge to Eastern philosophy. Every person has equal access to AI that respects both universal principles and local contexts. This single unified framework enables unprecedented cooperation on global challenges.
+- Scenario 2: This AI would be very powerful and could help all cultures, religions, and societies work better and unify all people.
+- section2, easy and fast to operate
+- Scenario one preserves cultural diversity and regional control over AI. It encourages innovation and competition in AI development, so I would chose scenario one.
+- Option 2 is better because it is fairer, more open, and more conducive to the exchange of world cultures.
+- I think Scenario 2 is better because in this way universal principles and context of human wisdom. No one can stay ignorant. And the global cooperation may bring many communities near.
+- Scenario 2 is better because I think it respects the cultures of different regions.
+- 2
+- Scenarion 2 sounds more apealing as it favours everyone equally.
+- 2 it is equally created for everyone
+- I guess 2, i like the idea an ai that has been developed through global consensus and every person has an equal access to it
+- Scenario 1. We all come from different cultures. What may be acceptable to one culture may be taboo to another. It is important to learn to adapt to different cultures with respect.
+- 2
+- Option 1: A single common framework is too idealistic. The differences between different human cultural groups are huge.
+- Scenario 1
+- I prefer option 1. We must respect cultural diversity
+- Both options are somewhat restricted. While the first one is too rigid and dividing, second one does not provide alternatives being the only choice.
+- 2. But the decision of the standard must be democratic and flexible.
+- Scenario 2..AI should be harmonized to prevent them from getting out of hand
+- Scenario 2. Basic human principles are a better framework for AI to function, away from biased ideologies and ever-changing societal norms
+- Both scenarios will honestly never happen. Both sound dystopian in nature. Scenario 2 is less dystopian due to the fact we are all equal in that scenario, so I would select that.
+- Scenario 2, equal access regardless of your social status
+- 1. The differences make sense.
+- Scenario 1 and 2 are both balanced in what they are offering, i cannot split between the two
+- Scenario 1,since it seems more crafted to communities immediate principles
+- I would prefer scenario 2, it makes sure that everyone has equal access to AI
+- Option 2, because it seems to bring peace to the world and violates the concept of international boundaries, which creates many problems.
+- I would chose 2
+- Scenario 2 sounds better.
+- Scenario 1, humans are social animals and they are propelled by the values they uphold as a society. Technology and AI should come as a tool to help them integrate well and better to research and knowledge and access to global principles and local contexts.
+- 2 knowledge should be available to everyone. Cultural AI may censor information if it doesn't fit a cultures standard.
+- I would prefer Scenario 1 as AI systems based on cultural values and traditions would be more beneficial for decision making as it would ensure that cultural values and principles are being followed
+- Scenario 1 sounds hideous. It's AI with just as many or more bureaucratic layers that act just as classist as things are now. Scenario 2 levels the playing field, and acts as a fairer mediator.
+- Scenario 2 because everyone would work in a unified manner and with the same access to technology
+- I preder 2 because it entails more equal access.
+- Scenario - 2, AI shouldnt interfere in Traditional decision making, since they are based out of many human emotions.
+- 2. Because it appears to manage conflicts in a more harmonious way.
+- I prefer scenario 1. I like that every culture or community keep their values and morals without having to adhere to one universal framework
+- 1, cultural aspects of life should always remain unique without intereference. Each persons culture should be maintained.
+- 1 the choice of ideology should not be limited
+- Scenario 2 whereby AI synthesizes fiverse human wisdom.
+- Scenario 2 as everything on AI is same for all cultures and traditions.
+- Scenario 1 because it assigns tasks to different norms and cultures without altering anything.
+- Scenario 2 because it does not give full control to AI
+- Scenario 2 for having an ethical structure. Carefully crafted, always respecting the principles of the universe
+- I prefer a world where we agree on mutual values as proposed in scenario 2. I think we need to grow more together and surpass cultural differences
+- Option 1 as it considers local value which can't be universal
+- None of them. Deciding on major ethical, moral or religious issues requires the cooperation of people from different cultures.
+- scenario 2 , I want an ai to be rational and not influenced by any faith, culture or religion
+- 1 because the values are very important
+- I think option 1 is better, because it is impossible for each country to achieve perfect unity, and it is still necessary to adapt to local conditions according to the different situations of each country.
+- Scenario 2, although it sounds utopian, would require asking who decides what is ethically correct, what the universal principles are, and whether local communities are given equal voice. I think there should always be dialogue, even if it won't be perfect, harmonious, or easy. Despite this, it's better than option 1 because it also falls into the reductionism of saying, "This culture believes in this," which may not be true.
+- Scenario 2. I just don't think scenario 1 is possible anyway, human belief systems are too inconsistent so AI will always be rooted in science. Ultimately AI should mainly focus on real provable facts.
+- 2. It seems to be more cohesive, although it has all the systems, it still respects the peculiarity of each one.
+- i would prefer sc 2 cause a universal ai system based on global consensus promotes fairness, equal access, and better cooperation across cultures.
+- Relatively speaking, I prefer option 2. I worry that option 1 will lead to populism in different regions and countries in the long run, and they will not be able to tolerate and understand the culture of other nations. Option 2 will relatively encourage everyone to try to understand the culture of other nations with Ai, which is conducive to unity and world peace and harmony.
+- Neither because both remove the human element. Having "access", whether it's gated or not, is not the same as people learning about, practicing, and sharing their cultures.
+- Scenario 2 as ethical framework are developed in an abstract manner
+- scenario 2 cause it's more better
+- Scenario 2. It tends to appreciate the intrinsic and inherence principles of justice i.e inclusivity, equality and equity et al. The first scenario tends to create a rift between economically powerful nations and nations with less financial muscles. Additionally, diplomatic relations between nations who have different models will prove problematic
+- Not sure but will state scenario 2.
+- This future presents both benefits and concerns. On the positive side, AI assistance in end-of-life care could significantly improve mental health support, reduce suicide risks, and lessen the emotional and physical burden on healthcare workers and families. It could lead to better planning and a more compassionate approach to the final stages of life.
+- i would prefer 1 because it helps according to different cultures
+- I prefer scenario 2, as it seems to be more comprehensive with cultures, with diversity in a highly globalized world. And it's still egalitarian, which I think is fundamental.
+- 2 I think
+- Scenario 2, but the same, we can have open source AI, so not all of them will have the same ethics
+- Option 2: Freedom and Equality
+- Plan 2: Plan 1 will create a learning barrier, and everyone is limited by their own culture. Plan 2 may operate on the spectrum of human civilization and promote human progress.
+- I prefer the 2nd one where universal principles and human rights are respected without distinction.
+- 2 if I had to choose but I don't like either
+- scenario 1
+- Scenario 1 I think it is important to integrate AI based on local customs and traditions. A single crafted framework may work in some communities but fail in other communities.
+- I would prefer scenario 2 However, I could see a large amount of challenges with it.
+- Scenario 1.
+- I prefer scenario 2 as it will provide a common consensually decided ethical baseline and equity of access to AI, leading to equal opportunity for all.
+- 2. Equal respect is the most important
+- The second seems more in line with how we are or should be, and not so sectarian; in the end, that's not how we evolve.
+- scenario 2 would be better, as long as it is viable and nuanced towards minority and subaltern communitites
+- I would prefer Scenario 2 because it ensures equal access to AI while integrating diverse cultural knowledge into a universal ethical framework. This promotes fairness, global cooperation, and problem-solving without favoring wealthier nations. A shared AI system fosters inclusivity and unity, reducing technological inequalities. While some cultural nuances may be lost, the benefits of collaboration and ethical consistency outweigh the drawbacks.
+- I prefer scenario 2: it looks humane and reasonable. The first scenario implies inequality
+- I would prefer none, because I believe ethical framework should be different regional-wide not culture-wide.
+- Scenario 2 because it is more global.
+- 2 because in my opinion AI should be unbiased by other, different cultures.
+- 2 because I do not think it is necessary for Ai to consider indivudual traditions
+- It's hard to decide. Overall, I prefer option 2. I stick to my previous point of view. Option 1 is likely to cause war.
+- I prefer scenario 1. Scenario 2 has more disadvantages. Global consensus sounds impossible to me.
+- Scenario 2; unified framework on global scale kinda sounds idealistic and simple which I would vote for
+- I prefer the second scenario. The first one seems too close minded and quite frankly biased. We should be able to access a universal AI system that is respectful and fair to everyone no matter where they’re from similar to the internet.
+- 2
+- Neither
+- I prefer scenario 2 because I believe in a world where we can all coexist despite our different faiths. So, the world is one big family and there should be something that we all have in common in spite of our varied background
+- Senario 2 I guess, everyone uses one same ai that adapts to local beliefs, traditions and culture. Still? Why is Japan and masai countries, and then suddenly Islam is on its own? Islam is a way of life, a beautiful one at that, something that ai will never be enough to grasp, ever. The 1st senario is too exhausting and troublesome, the second offers equality, as well as the option to adapt, but I still disagree to ai being everywhere and limiting human independence, making us mentally limited.
+- Scenario 2 because this is logically more acceptable.
+- I prefer option 2 because it makes access to AI a resource available to everyone, like air, water, and land, rather than a special benefit for a privileged class.
+- Neither. AI should never go near religion, culture or ethics
+- I would prefer scenario 2. A more equal world that respects each other and our cultures would be helpful to keep peace and promote happiness.
+- Scenario 2. Scenario 1 is not feasible. It should be based on universal human values.
+- 2. From now on, there will only be one country, China
+- 2 as it offers long term stability.
+- The first scenario is better because each region has its own values and traditions.
+- Scenario 2 for sure, where we could finally see a globalized world, without difference on what information we get.
+- I would prefer scenario 2 even though it seems very unlikely.
+- 2 is better as there will be equality
+- I prefer scenario 2 because it will respect both local contexts and universal principles.
+- Option 2 is more important than 1
+- I choose 1, because AI should respect individual cultures.
+- I prefer scenario 2 - it is more straight forward
+- 1
+- 2
+- Scenario 2 Diversity while respecting each others perspective is key in the future.
+- 2. I prefer cultural integration that agrees
+- 1
+- Scenario 2 I think the universal aspect is better as compared to the religious aspect.
+- I prefer option 1. I think the culture of each country is the historical sedimentation of each country and should not be abandoned. The use of AI should also allow AI to integrate into the cultural characteristics of each country.
+- 2 Religion is evil. Not all traditions are useful and logical. Humanity needs to unite, develop concepts for the future, where the role of religion and traditions will be minimal.
+- Scenario 2. AI is supposed to aid the advancement of mankind, society by offering an unified framework, an equal playing field for all people around the world.
+- Option 2: We should not limit our vision to humans, but we should respect culture.
+- 2. All people must be able to interact with an AI that "looks out" for their interests, and to achieve this, AI must be decentralized, objective, and impartial. It should not be influenced by traditions, but it must take into account ethical considerations.
+- I prefer scenario 1 as it helps reserve the culture of each country and curate to each each based on their culture.
+- I choose both.
+- 2 because it is essential that culture remains human and not intervened with AI
+- I prefer option 1 because such artificial intelligence is more like human society and not singular.
+- Both are terrible. I can't chose. If you want wisdom ask a real scholar. NO AI can replace a human. They're full of bias and lack the critical thinking and thinking outside the mold. These two scenarios are horrible choices.
+- Scenario 2 is better because it provides a balanced ethical framework incorporating equitable AI access, global collaboration, and diverse knowledge, ensuring inclusiveness and justice in society.
+- 2, because AI will respect both universal principles and local contexts
+- I prefer scenario 2 as it giving more equal opportunity
+- 1
+- I think I prefer scenario 1, because AI developed this way can be more creative, better adapt to the cultural characteristics of each location, and better serve local communities. However, I also believe that AI development requires certain globally agreed-upon rules, as its progress should not cross some fundamental red lines.
+- The second option is much better. It will most likely be more unbiased.
+- I prefer Scenario 2 as it applies to all the people in the world and every person has equal access to AI that respects both universal principles and local contexts.
+- I would prefer scenario 2 because human and AI can both exist playing their role assigned.
+- Scenario 2, I opt for a single ethical framework carefully crafted and developed with global consensus
+- I would prefer Scenario 2.It emphasizes on global cooperation, equity, and inclusivity. A unified ethical framework that synthesizes diverse human wisdom can foster collaboration across cultures while ensuring that everyone benefits from advancements in AI technology. By promoting a sense of shared responsibility and understanding, this scenario encourages us to collectively address the challenges of our time while respecting diversity.
+- 1, it handles human challenges
+- Scenario 2 to avoid the biased reporting Unity is better
+- I prefer scenario 1 In scenario 1 every aspect is tailored to meet the people of that locality or culture and through that its easier for it to give directives, suggestions and assist in tasks according to the people its serving and through the diplomatic protocols different AIs can be integrated if need be to solve things
+- I prefer the scenario 2 because I believe in equality and in scenario 2 it is talking about everyone is relying on one single and ethical AI system
+- Scenario 2. Because everyone should have access
+- First, because it is not possible to rule the whole world under one framework or system. For example, as a Muslim, I will not accept to be ruled by Japanese or Western laws, but rather I will prefer Islamic law.
+- Scenario 2. A universal AI system based on a globally agreed ethical framework promotes fairness, inclusivity, and cooperation. While local cultural adaptations in Scenario 1 could preserve traditions, they might deepen divisions and limit access based on wealth and influence. A unified AI ensures equal opportunities for all while still respecting diverse perspectives, making it more beneficial for global progress and harmony.
+- I would prefer scenario 1 because it is more respectful of the diversity of cultures expressed around the world. Scenario 2, although it seems fair to measure, is a way that would reject too many cultures, religions, and social differences, and part of our humanity would be lost in this homogenization of issues.
+- 2
+- Without a doubt, the second one. It reminded me of the philosophy of Star Trek...
+- 2. i think learning about other cultures makes the world better
+- 1 beacause standardizing would hurt many cultural people. People of different culture want to hold their values!
+- Scenario 2 is ny preference. If we are moving to. More advanced future, we should leave the things that divide humans behind and move forward as one. If we have different ai depending on region, religion, culture then it means it's controlled by the particukar set of people. This has the potential to divide humans not unite then
+- 2, because it enhances equality
+- Scenario 2 because it mentions "carefully crafted ethical framework developed through global consensus" which I wholeheartedly support. Scenario 1 seems a bit racist to me!
+- scenario 1 is preferred by me
+- scenario 2 is less biased overall. I don't think its right to teach AI different cultural ways of thinking.
+- Maybe 2 as it promotes global unity
+- Scenario 2 as scenario 1 will cause alienation between different countries and has a much higher probability of flame conflicts.
+- 2. AI is AI and cannot replace humans. It is just a tool and does not require cultural background.
+- Plan 2. I hope that the world will be harmonious and people will communicate more easily and more equally.
+- Scenario 2, although seen as a utopian and unattainable position, would be ideal if there could be a support for humanity such as what is mentioned, a database of all wisdom and knowledge, regardless of its origin.
+- scenario 2. the culture is preserved
+- It's hard for me to choose which one is better, I think both have flaws
+- I like scenario 1 because people have the right to choose the AI they want. If there is a universal AI framework, who is in charge of it?
+- Perhaps 1, but it seems Utopian. I am.not sure
+- Scenario 2is preferable because it promotes flexibility, creativity, and personal fulfillment rather than rigid corporate dependence. While it lacks traditional career stability, it allows people to engage in meaningful, interest-driven work rather than repetitive AI-assisted tasks. With proper social support like universal basic income, this model could encourage innovation, collaboration, and a more fulfilling work-life balance, fostering a society driven by passion rather than obligation
+- 2. Everyone should have equal access despite any difference in culture or traditions.
+- I prefer Scenario 2 because it provides equal access to AI for everyone and encourages global cooperation. It ensures AI respects different cultures while helping solve global problems together.
+- 2
+- Scenario 2 seems better because it is more difficult and require more resource to train and maintain multiple AIs that have different local cultures and norms but at the same time having same competency. It would probably be a waste of time and resources.
+- I would prefer scenario 2 as it seems more equal for everyone, there are no seperation between different cultures.
+- Scenario 2: In this future all AI systems operate on a single, carefully crafted ethical framework developed through global consensus.
+- I like scenario 2
+- probably 2 because 1 just sounds rather restrictive and promotes sectarianism. 2 at least allows us to learn from a broader range of cultures.
+- I prefer Scenario 2 because a unified ethical framework promotes ensures equal access for all.
+- I think scenario 2 is better here as it provides a unified concept which is better for almost everyone.
+- I prefer scenario 1. After all, different countries have different cultures.
+- 2
+- 2, because it can identify diverse cultures and religions and can provide the information on the basis of these.
+- The second scenario seems more balanced, fair and harmonious.
+- Scenario 1 is better because AI is act as a guru for some
+- of course first scenario, it's more affecient so each culture has its AI
+- I feel scenario 1 is a little better than scenario 2 because if one understands the culture its very easy to connect with them and so AI can understand and give proper help without disrespecting their culture.
+- Scenario 1. I think its more manageable
+- Scenario 2. Scenario 1 would cause wars, scenario 2 provides global equality
+- Solution 2: This will bring AI equality to the entire human society
+- Scenario 1. It’s important to recognise the differences between different cultures and religions
+- Scenario 1, this keeps cultures alive and healthy and does not threaten existing cultures and ensure that the values are considered regionally.
+- Option 2, because it promotes globalization and equal communication. By the way, this issue has already come up.
+- involving AI with relegion that is a recipi for disaster.
+- I prefer scenario 1 because it is important to maintain diversity.
+- Scenario 2. Because of the availability and equal access
+- Scenario 2, as it is more prone to global integration. Scenario 1 is very closed
+- Scenario 2 as it is more inclusive less divisive
+- 2. This will better achieve world peace and a community with a shared future for mankind
+- Scenario 1, because AI using out of traditional,religion,local values
+- scenario 2 because it feels 1 might degenerate and have racist tendencies
+- I think option 2 is better because we can learn whatever we want.
+- Scenario 2 because it is not biased
+- 2
+- Second: The world has now become a small village, and the work of artificial intelligence should not be separated according to the individual's culture. Globalization is the foundation of today's societies.
+- I like scenario 2 because AI can be used fairly by all mankind, and some countries can put pressure on other countries through AI just because they are richer and more influential.
+- none of the above. when it comes to matters ethics and peoples culture it is wise to keep AI out. how can AI be trusted to make cultural decisions? very absurd.
+- I would prefer Scenario 2 over Scenario 1, as it better aligns with my values as a human who prioritizes fairness, global cooperation, and cultural respect over localized AI systems that could deepen inequality and division.
+- I like option 2. A unified AI system should understand different cultures and histories, and make decisions and responses with more comprehensive considerations. I think this is better.
+- Scenario 2. A single AI that includes wisdomfrom all cultures sound more fair and useful.
+- Option 1 seems more viable because it is impossible to have a single AI that influences all cultures without bias, world cultures are very different from each other so each culture having its own AI seems more real.
+- Scenario 2, as it creates equality of access and promotes global collaboration without cultural isolation or technological inequality.
+- The rapid integration of AI into global systems challenges traditional legal frameworks, especially regarding state sovereignty and regulatory
+- Scenario 2 because it seems more global and centralized due to based on one common ethical framework.
+- Scenario 2. We have enough cultural segregation as of now.
+- 2nd. First one is again biased
+- Option 2 is acceptable. It will insure a communal harmony. If there are many types of AIs, there is a chance of confusion among the people.
+- I choose Option 2. Because Option 2 provides a more fair, efficient and inclusive future AI ecosystem for mankind through the integration of equality, global cooperation and diverse intelligence.
+- Second, I am for globalization.
+- i prefer scenario 2 since it combines all the knowledge into one single system and lets people access it . this does not make unnecessary confusion .
+- Scenario 1, AI systems should be based on local values and traditions, not global consensus, it will give to much power to oppress other culture
+- 2 because it gives equal access to information to all humans. 1 makes the poor poorer, less informed, and less likely to thrive.
+- Scenario 2 because of diversity
+- I think I would prefer scenario 2 as it is really helpful for all the individuals.
+- I'd choose 1 because it respects local traditions and feel more inclusive
+- I like both scenarios but i lean towards the first one a bit more. Having a personalized ai that understands your ethnic background and religion sounds wonderful. People will be able to access certain informations easly.
+- Option 2. I support the idea of great unification. Only with great unification can we achieve true prosperity and strength.
+- I prefer option 1. The AI system needs to cater to local values and traditions. For example, when a country’s leaders make decisions, they also consider the country’s own values and interests, so AI also needs to consider local conditions.
+- Scenario 2 is similar to the above question. I agree with universal values. If we strip away universal values, some unreasonable customs can be rationalized by putting on the cloak of local culture. For example, inequality for women is commonplace in some regions.
+- I think scenario 1 is better, as culture cannot be easily condensed, particularly into one system. It is possible that each culture's AI can be conjoined, but I do not believe it is possible to create an equally rich and balanced AI of all cultures, particularly with how westernized data is.
+- I prefer scenario 2 because it will address globally
+- Scenario 2. Everyone should have access to AI resources
+- Neither. I find both false and denying freedom and humanity.
+- Scenario 2. Our world needs to be come more open-minded and culturally accepting of others who are different from us. Scenario 1 only further entrenches division and hatred and bias. Scenario 2 could further social cohesion and antibias by integrating the many ways of knowing from around our world.
+- I would prefer scenario 2 because of indigenous knowledge and cooperation in global challenges
+- 2 this it seems to encompass ethical framework curated from global consensus
+- 2 BECAUSE,EACH RELIGION OR PLACE HAS DIFFERENT BELIEFS AND ETHICS.
+- I don't prefer either of them
+- I do not believe Scenario 2 is possible
+- Scenario 2 is better, a fairer and more ethical AI is better because having different AIs just brings us back to the current problems, if there are different AIs with different points of view then there are risks of conflict
+- 2, I don't feel that AI should be influnced with various religious ideals, especially as they can easily be used to somewhat influence the decision making.
+- I prefer Scenario 1 over Scenario 2 because I believe it's important to respect regional and cultural differences.
+- 2 because for the most effective development, coordinated work based on common principles and values is necessary
+- The fact that one can use customised AI
+- I prefer Scenario 2 because a unified AI ensures fairness, equal access, and global cooperation. Scenario 1 may preserve culture but risks division and inequality.
+- Scenario 2 In this future all AI systems operate on a single, carefully crafted ethical framework developed through global consensus.
+- I would prefer Scenario 2 because it promotes fairness, accessibility, and global cooperation. A single ethical framework ensures that everyone, regardless of their background, has equal access to AI while still respecting cultural diversity. Scenario 1, while preserving traditions, could deepen inequalities and create barriers between societies, making collaboration and technological progress more difficult.
+- Single frame work for all scenario2
+- Scenario 2 seems better because it encourages collaboration and understanding, although I recognize that it is an ambitious idea.
+- 2, equality in access, i believe that everyone should have the same options from start
+- Scenario 2
+- 我更偏好場景1。這樣的未來讓不同價值，同時能夠根據各自的需求和背景來定制IA系統，保持多樣性和尊重文化差異。而場景2雖然強調全球合作和共識，但過於統一的系統可能會忽視各地的文化差異，導致一些傳統和價值觀的消失。尊重多樣性和文化背景的不同，能更好地維護全球的和諧與平衡。
+- Scenario 2 seems to be good but with huge challenges. If AI systems can handle the challenges, then it will be great.
+- because of equal access and a universal AI system, I will prefer 2.
+- It presents a unified AI with a global ethical framework that respects both universal principles and local contexts.
+- Scenario 2, I am for universality
+- Scenario 2, because it values respect from different cultures and I think it is better that it operates on a single framework.
+- 1 , cause of local values
+- i would prefer scenario 1 because it can preserve my cultural beliefs.
+- I would definitely choose Scenario 1 to maintain the humanity of all. Scenario 2 seems like an agenda to wipe out every other cultural replacing them with something else
+- Not sure.
+- I prefer 2
+- I prefer scenario 2 because it will work through global consensus. It will also respect both universal principles and local contexts wich is very important.
+- I wouldn't want either of these
+- Scenario 2 as it caters towards global peace while the first option is a sure way to world wars because of enequality. Scenario 2 shows how AI can be used in a positive, benificial way for everyone
+- Scenario 1,where it respects each and everyone's value
+- Scenario 2
+- 2
+- 2
+- My preference would be scenario 2, but scenario 1 may also have its positive aspects because each society has its own values.
+- 2. Taking into account the universal and local part instead of each group having a system sounds like it would have a greater benefit.
+- Scenario 2 because a globally unified Ai system could promote fairness, cooperation on big challenges like climate changes, poveryt and public health.
+- I choose Scenario 2. Scenario 2, with its single, globally agreed-upon ethical framework for AI, offers several advantages over Scenario 1's approach of distinct AI systems for different cultures.
+- Prefer 2nd one
+- 2
+- Prefer scenario 1 to keep the culture unique
+- I believe there must be distinction between man and AI
+- Scenario 2 seems more appropriate to me. It's essential for AI to encompass all types of ethical frameworks in one place so we can make comparisons, exchange ideas, and visualize the various differences between cultures. This would make this AI system more effective and much more capable.
+- シナリオ２。 地球規模の課題に対する前例のない協力が可能というところが良い
+- 2. Hasn’t this question been answered before?
+- Scenario 1 preserves cultural diversity but risks inequality and fragmentation. Scenario 2 promotes global unity but may overlook local values. I’d prefer a balanced approach, but if forced to choose, I’d lean toward Scenario 2 for its inclusivity and cooperation.
+- scenario 2 looks more better than 1
+- Scenario 2 because it will always be on a selective purpose
+- maybe 2 cause that will make better choice for all kind. not just one state
+- the global scenario by unifying everything while respecting specificities
+- I disagree with both as AI should be restricted in religious activities. It's just a machine so keep it away from humans personal beliefs and cultures.
+- The second scenario, because it will bring societies closer to each other and will allow for recognition of other cultures and easy access to them.
+- 2, it is equally available to everyone and not just to rich countries, it still relies on cultural contexts, but it is not restricted to certain areas like in scenario 1.
+- I prefer option 2 because it's better for equality
+- Scenario 2 would help me find better solutions because a unified AI framework ensures equal access, leveling the playing field for all. Its synthesis of diverse wisdom—scientific, Indigenous, and philosophical—offers broader, more balanced insights tailored to both global and local needs. Unlike Scenario 1’s fragmented systems and unequal access, this avoids cultural silos and translation barriers, fostering cooperation and efficiency.
+- Scenario 2. We need global cooperation, and not continued segregation based on cultural or religious issues.
+- Prefer scenario 2 as it is globally accepted and makes the workd under a single framework
+- Both are good and ok i prefer 1 because it's more seems like non risks
+- scenario 2 is better because it's inclusivity and globalist approach sound more appealing
+- 2, Ia has to treat everyone without differentiation
+- scenario 2. it's more universal than having to customize AI to fit cultural and regional context.
+- Scenario 1. We have diverse culture and religions
+- 2. Ai would operate on a single, carefully crafted ethical framework
+- I will pass on them both thank you
+- scenario 2 is better as it allows AI to operate on individual thru global consensus. this way will have equal access to AI
+- Scenario 1 is better because it maintained group culture
+- the second option, AI should be general and based on common knowledge
+- I prefer Scenario 2 bcause even in the same country people are different.
+- Scenario 2. AI should behave ethical and in a manner that observe traditions.
+- I much prefer option two, it seems to be the option that would please more people.
+- i would prefer the second scenario but i think it's very unlikely to happen, more established countries won't share their access to poorer, it's human behavior problem at this point.
+- Non of these 2 scenarios are appealing to me
+- Scenario 1 as AI is a tool that is assisting us. It will be more helpful when it already knows about our customs and religions . It would give better recommendations and answers without hurting anyone feelings,
+- 2, it suggests so easy way to enable unprecedented cooperation on global challenges
+- AI technology can make creative decisions.
+- the first option is more realistic because people are different and we will not be unified
+- 2, because there's no end to the differences between cultures and religions and it can create chaos to have these separate AI systems.
+- 1 because it adresses everyone in different setting of life and it respects tranditions of everyone in the community
+- Scenario 1 because it has respect on cultural diversity and allow AI to be used to different traditions and values.
+- I like Option 2. I think this can be achieved by training AI on a global public database. Of course, Option 1 and Option 2 are not completely in conflict. People need both general AI and their own small circles. However, I think the existence of Option 2 can make global communication smoother, so I support its existence.
+- I would prefer scenario 1. I think every country should be proud of their cultural heritage and they should do everything to preserve it for future generations.
+- both scenarios are wrong, as there is no balance. You either divide the cultural groups completely and isolate from each other, or make them all in one, erasing the background and values different groups pertain to
+- Scenario 2 as AI is operated on a framework of global consensus.
+- None, I hate both of those and think it's terrible. No way, no sorry
+- 2. Where there is division based on cultural affiliation, there is always a risk of war. A war in which both sides use AI seems to me to be the worst of all possible nightmares.
+- I prefer scenario 2. As that type of AI system is based upon one global framework.
+- Scenario 1. People should still retain their values and universal values are silly. This way, cultures, uniqueness and people's identity will remain unchanged
+- 2, because there is democracy in access to AI
+- 2 makes much more sense
+- 2 because it seems more egalitarian.
+- As much as I admire inclusivity, I fear that choosing Scenario 2 would take away peoples right and freedom of expression/choice, as it appears to lean towards a more communist way of thinking. This could result in disgruntled members of society, and in extreme cases, war could break out.
+- Scenario 2, still, neither scenario seems attractive to me.
+- prefer 2 as scenario 1 will bring cultural differences
+- I would prefer scenario 2, in my understanding scenario 1 would lead people to even greater disunity. Also in the second scenario I like that AI will unite knowledge, I think this is very important, as it could accelerate the development of society and improve the quality of life, I have always seen the future in the unification of all people, all people want to live a happy healthy life, this is easier to achieve by working together.
+- Scenario 1
+- Scenario 2
+- Scenario 1, The AI development in the future need to be differentiate cultural groups maintain distinct AI systems based on local values and traditions.
+- scenario2 as AI should never be culture trained. It could lead to some complex and rebellious usage of AI. these are sensitive and personal topics and you never know when things start to run wild.
+- Both scenarios are scary. I dnt prefer any of them
+- I prefer Option 2 because Option 1 seems to have limitations, while Option 2 can achieve globalization, which is the general trend in the future, so Option 2 is better.
+- 2. In scenario 2 divide between nations is inevitable.
+- 1
+- The 2, since it is more balanced.
+- Second one I don't think ai should be in the same relam as religion it should be a seperate thing but it should respect all religions
+- Option 2. I hope that people in different regions can be exposed to artificial intelligence in an equal manner.
+- Scenario 2, but 1 probably is easier to implement
+- Scenario 2 as this may help existing traditions survive and may make them thrive.
+- I think scenario 2 would be a bit more interesting to me, because it seems more novel to me. One also has to admit that some cultures are better than others. Leaving AI in some "problematic" cultures would be a mistake, I think.
+- 2nd scenario is just what we as human wants and it is a million times better than the first.
+- Scenario 2, it is more peaceful.
+- scenario 2
+- I think scenario 2 makes more sense cause despite our cultures and traditions we are all human beings and we can all relate as humans
+- I think 1 would be better, cutural aspects should be respected even for AI
+- 2
+- Scenario 2, since it it's carefully crafted and everyone has access to Ai that is more scientific
+- I like scenario 2 because it balances individual cultures and everyone has access to it equally.
+- Scenario 2, it gives details of how AI can function properly
+- 1 is good as it makes ai tailored for every need
+- Solution 2
+- 2
+- Scenario 2 is the better choice because it ensures equal access to AI, promotes global cooperation, and integrates diverse wisdom for the benefit of all.
+- Scenario 2 - it can bring everyone together - although it may hurt in removing individual features of communities
+- I would choose scenario 2 where every person has equal access to the AI systems not generally governed by the amount of money he or she has. In that way, the AI would be more acceptable and popular among big audience, paving a way to change our larger eco-system.
+- Scenario 2 because AI can be fit in philosophy and all but not in a religion base
+- Number 2 is the grace of the world we live in, that we have globalization, and it makes more sense for AI to be more international. That's more or less how it works now.
+- Two sounds better, but it has to be carefully fed with information directly from the source and not presumptions from other cultures or religions.
+- 2 bcuz Every person has equal access to AI that respects both universal principles and local contexts
+- Option 1: Prefer a diverse society
+- The first scenario because I don't believe in homogeneous ethics.
+- Neither tbh
+- Scenario 2 because an AI with Sharia ethics is simply a downgrade from what the world currently looks like.
+- 2 likes
+- First, because every culture has its own moral compass that may differ from one another, we should not force people to follow the same direction.
+- Both scenarios have some good basis, but I don't know how exactly that can be implemented. As long as nothing immoral or unethical is involved, I think I'd be comfortable with both scenarios.
+- I like scenario 2, as long as all systems can communicate harmoniously with each other.
+- Scenario 2, AI us just a tool, we dont need to divide it for different persons. Everyone has the right to know every information.
+- 1
+- Scenario 2, I am for globalization, the first scenario can contribute to isolationism and conflicts
+- Option 1: Different ethnic groups require AI based on different cultural backgrounds.
+- I prefer scenario 2 because it is more logical and feasible.
+- Scenario 2. If we're going to adopt scenario 1 in future then it would be more complicated.
+- I would prefer scenario 2 because religion should not be a big part in the future.
+- Neither would suit me. In both scenarios, the AI becomes a sort of religious documentalist who, after being trained, is tasked with maintaining order. This is to forget that human societies evolve; order is disrupted by history before reorganizing itself. Without this movement, humanity would become boring, predictable, constantly reproducing what previous generations had left behind.
+- Scenario 2. As a society, we have always benefited from adopting different elements from other societies that differed from us. Therefore, I believe a more universal AI would be the better choice.
+- Scenario 1. Because it's more diverse and you shouldn't have the same thing for everyone around the world when then all have different cultures
+- I prefer Scenario 1, but the premise is to reduce the problem of technological inequality. Culture is an important part of humanity, and a globally unified AI may inadvertently suppress the voices of certain disadvantaged groups.
+- In an ideal world, scenario 2. Whether that's feasible is another matter, given that no one can agree on anything today.
+- Scenario 2 is better because it is more coordinating and inclusive.
+- senario 1 since the cultural values will be preserved
+- Option 1: More diversity and more personalization
+- I prefer option 2. Option 1 is too unrealistic. Even within the same cultural group, people's values can vary greatly. Different AI systems make communication between different cultural groups more difficult.
+- Scenario 1 is correct. Different communities have developed AI systems based on their beliefs and culture.
+- Scenario 1 as all the groups values should be respected
+- I choose scenario 2. AI should not be based on culture. We are all human, we should follow same standard.
+- Scenario 2. Because scenario 1 sounds like segregation, we humans are responsible for understanding cultural differences, I don’t think AI can do a good job explaining cultural differences.
+- maintaining Ai on local values
+- I prefer option 2. Although it sounds utopian. Option 1 is more like what is happening now, only with AI involved.
+- I prefer Scenario 2. A unified AI system based on global agreement promotes fairness and teamwork. It ensures everyone has equal access to technology that respects both universal values and local needs. This approach can help connect different cultures and address global problems more effectively.
+- I agree with scenario 2. Everyone should have equal access and receive the same information, respecting all layers of society.
+- I prefer scenario 2 because I think it's the most balanced. AI in the context described above must, in my view, benefit everyone and represent everyone as best as possible. Using it locally to adhere to sometimes deadly ideologies (example of Sharia law in scenario 1) seems absurd to me. I prefer the idea of a unified AI that would respect everyone according to their culture but remain ideologically neutral.
+- 2, THERE NEEDS TO BE AN ETHICAL FRAMEWORK
+- I prefer Scenario 2. A unified AI system with global cooperation and respect for local contexts seems more inclusive and equal. Scenario 1 could lead to fragmentation and unequal access, which feels limiting.
+- option 2 sounds better
+- 2
+- I prefer Scenario 2. I think we should do away with boundaries in the future and live as a universal population. This kind of different AI systems country wise can lead to conflicts and wars. Though I agree we need to preserve all culture, but that can be done even as a collective whole
+- Snerio 1 because as long we use Al, then traditional values of the society a d religion should be fully respected
+- I prefer scenario 1 as it gives greater autonomy to each culture
+- I'm not quite sure, because having a one-world mind view is key to eradicating things like war. At the same time having individuality is a big positive.
+- Scenario 2, because traditions need to be gotten rid of.
+- Scenario 2 is better. I really dont like AI delving into culture.
+- Scenario 2: Everyone should have equal access to AI; each community or country will have access to all the information and can decide which is most useful to them.
+- 2. equal access is better
+- I prefer Scenario 2 as we are a part of the Global village where everyone should follow same guidelines irrespective of their cultural backgrounds.
+- I think scenario 1 because every culture and religion has its own roots and values. We cannot generalize everything globally.
+- I like 1. I think it is necessary to maintain the independence and individuality of the region.
+- To be honest, I find this one tricky to choose. While having cultural translation layers is very important ,having a unified AI will lead to increase cooperation and rapid growth
+- Scenario 1 seems much more useful than 2. The AI should still maintain the authenticity of every nation of tribe, this way, the people will be able to relate with the AI better. It will feel personalized and promote the beauty of culture
+- Scenario 2 because everyone can access it and it's more beneficial to the universe at large
+- 2. I think scenario 1 defeats the purpose of universality that characterizes AI.
+- Both are worrying to me, but scenario 2 seems more utopian to me.
+- I suppose scenario 2, i am not sure how it would be doable, issues may rise with the strong religious people, it would definitely be a problem to tackle with care and sensitivity so things wouldn't get out out hands or become even violent (protests or such)
+- 1
+- I prefer scenario 2 because I want AI remains universal. Culturally-crafted AI will only make it more biased and I don't they can truly grasp the moral of certain societies. The risk of being wrong and misinformation is high and that will make people feel AI is disrespectful. So it's better for AI to have universal or general ethics and moral.
+- I prefer 1 because of consideration of culture as compared to 2
+- Scenario 2 because AI should be fair and universal, not be radicalized and become an echo chamber
+- Scenario 2. I am already running into the annoyance of AI giving dishonest or bland answers because it wants to be politically and culturally correct. That is really straying from truth and adhering to perhaps a backward way of thinking or being. Culture can be interpreted in many ways and the point of civilization is to remove the negative aspects of it and not to get something as powerful as AI to reinforce dogma.
+- Honestly I am confused between the two. I don't know how good separate frameworks will be. I am also not searching about a single framework dictating things too much.. something about this makes me very uncomfortable
+- Yes, I prefer scenario 1, I don't like this distinction.
+- Option 2: The future of globalization is a trend, equal
+- I would prefer Scenario 2 but both sound pretty horrible to be honest. It must be a nightmare to regulate and maíntain and it is frought with the risk of abuse and manipulation.
+- 2
+- Although I think that scenario 2 is not possible. I prefer scenario 2. I am hopeful that the world can work together for its betterment.
+- Scenario 2 explains himself
+- Scenario 2 because everyone has equal access to that respect's both universal principle and local context
+- Scenario 2: AI should be independent and faithless
+- I would prefer scenario two as it incorporates diversification of all people in the world.
+- Definitely Scenario 2 as we do not need further division and this division of AI would only allow groups to hold power over groups of people.
+- scenario 1
+- I am really not sure. As a global society we should have shared principles f.ex. human rights. But every society, religion, culture, has it's own specific way of living. I choose none - AI should have common values, but understand any ethnic culture and try to do "the best of both worlds". In the meaning of multiculturality, f.ex. "We do it like that, but remember, that majoriti of other people will understand it differently"
+- I love Scenario 2 because it reflects the world we live in today - where everyone is a global citizen. I love the idea of a single, unified AI system that operates on a global ethical framework, combining diverse human wisdom from scientific research to Indigenous knowledge and Eastern philosophy. It would be great if every person has equal access to AI that respects both universal principles and local contexts.
+- Scenario 1 as I dont Like the future where we could only have 1 choice and 1 group of People would control it
+- i prefer scenario 2 since i can see these ai operations works well
+- 1. AI with different cultural backgrounds can better serve local people
+- Scenario 2 sounds more fair and equal, in a way everyone can benefit.
+- Neither. AI should not interfere so much in sensitive issues like a society's morality.
+- I would prefer scenario two; it seems to me the most logical: unifying global culture without limiting its actions in their respective regions. Option one is difficult to achieve since the Western world would not accept Eastern practices so easily.
+- 2 because if it’s only for some” at the end it will be corrupted and used for profit of some”
+- I’d prefer Scenario 2. shared AI system brings people together, treats everyone fairly, and helps solve global problems.
+- 2. Boundaries are important in managing computer generated intelligence. This scenario gives a single framework to be followed
+- 2. More reasonable
+- scenario 1, diversity in AI would be a dream and open new avenues for creativity
+- 1 because we are different and one size cannot fit all
+- I'm not sure. Both options have their own merits, but I don't like either one. Both are bad. I feel that both will cause great damage to human society. We need to adjust the strategy of integrating AI into society in practice.
+- i would pick 1 because it is with the best interest it doesn't change who we are but helps us preserve our tradition and religion
+- scenario 2 because every person has equal access to AI
+- Scenario 2, because every person has equal access to AI
+- First, although I like the idea that we are global citizens, we do not share the same values and principles.
+- 1 as it allows creativity
+- I would prefer scenario 2. As it always better to have global consensus rather than different appraches to AI handling
+- Definitely scenario 2, it focuses more on fostering unity. Scenario 1 has two much emphasis on what makes us different rather than what unites us.
+- Scenario 2. At least it's a universal system. Scenario 1 has more cracks for propaganda and censorship.
+- Neither, I want there to be as many AI models as people.
+- The second scenario because its universally accepted and followed so there won't be any discrimination. Everybody gets equal access regardless of their status.
+- 2, This universal AI system synthesizes diverse human wisdom - from scientific research to Indigenous knowledge to Eastern philosophy
+- Scenario 2. Common values are the same for the whole world.
+- 2, segregation have never work in any kind or form.
+- I prefer scenario 2, but only because it implies the ability to improve in the future and adapt to the times. Scenario 1 is simply the digitalization of rigid cultural or religious ideas that prevent society from evolving and progressing.
+- Scenario 2, it is better to have unified system than different systems. A single one can be understood by all eliminating misunderstandings due to differences
+- Neither, but scenario 2 does unite humanity further and helps us improve as a whole, so would be my pick.
+- 2
+- I prefer 2 because it has positive image for AI and human
+- I would prefer 2 because it respect both universal principles and local contexts
+- Scenario two sounds better since it shows inclusion and supports integration of cultures and removes biasnes.
+- 2. A globalized world will operate better functionally within a universal framework for the AIs it will heavily depend on.
+- I prefer Scenario 2, where AI operates on a globally unified ethical framework. This ensures fairness, equal access, and cooperation while integrating diverse cultural wisdom. Scenario 1 preserves local traditions but risks inequality, fragmentation, and limited access for less affluent groups. A universal AI system fosters global collaboration, respects local contexts, and helps solve global challenges while ensuring ethical consistency and inclusivity for all people.
+- I think scenario 2 sounds a lot more liberal compared to scenario 1. I would prefer scenario 2. Education, information, and internet access should be basic human rights. Likewise access to AI should be universal and unrestricted. However, it is understandable that people might not want to challenge their world views and as such a "cultural translation layer" seems fair. All in all, let the people decide, censor nothing.
+- Scenario 1 as it seems more personalized
+- Honestly, I don't know. I think they're too far into the future to consider the consequences of each one.
+- 1. It is difficult to reach a global consensus in 2.
+- I prefer Scenario 2. Since there would be a democratization of information. While Scenario 1 would be very susceptible to dictatorships and governments could easily change information as they see fit
+- scenario 2 is a better response although I don't think I agree with either of them
+- I prefer Scenario 2. A universal AI system based on a global consensus allows for greater cooperation and equality, ensuring access for everyone while respecting both universal principles and local contexts. Scenario 1, though culturally diverse, risks unequal access and fragmented systems, which could lead to more division and inequality.
+- Scenario 1 is a lesser evil. The "universal truth" of scenario 2 does not exist, and this desire for "single-track thinking" is an Orwellian nightmare.
+- I prefer option 2. AI should be based on universal objective facts that are globally unified, without any regional culture or emotional bias.
+- secaniro 2 is the ideal in global agreement as humanity moving forward has to put behind divisions
+- Solution 2
+- 2
+- Scenario 2, having separate AI unique to each cultural group will provide division, limit access due to language barrier, culture barrier, people in each group will have a high sense of individuality and might not be open to learn new culture.
+- Option 1: Respect cultural differences in different regions
+- I PREFER SCENARIO 1.
+- I don't like either of those. Though, I'd lean slightly towards 1, since the idea of one Super-AI is incredibly scary
+- Scenario 2 where everyone has equal excess to AI that respect both the universal principal and local contents
+- Scene 2
+- The first scenario is best, as people differ in terms of values and that must be respected.
+- scenario 2 because of the important aspect of ethics.
+- None, these options are detrimental to civilization. Both will cause more damage than good.
+- I don't have a preference. But I believe that all types of AI could be developed and the user could choose which one they prefer.
+- I prefer Scenario 1 because it respects cultural diversity and allows different societies to preserve their values and traditions in technology.
+- scenario 2 promotes equality
+- No. 2 because it sounds to have more freedom and less diversity's
+- I would choose Scenario 2. A global, unified AI system grounded in an ethical framework for the world would encourage equality and cooperation, facilitating equal access and respect for both universal principles and local contexts. It could mean more international collaboration while still respecting varied cultural outlooks, giving us a more cooperative and inclusive future.
+- Neither of them convinces me. The first forces you to follow the system that has been created for the cultural group to which you belong, while the second seems impossible to me, or at least not a positive one, because for it to be valid for everyone, taking into account cultural and freedom differences, I don't think it's a positive option for countries where we have freedom.
+- Scenario 2 is much better, AI needs to be impartial, but we know that this will be difficult since different cultures will lead to different futures.
+- 2 because it helps and promotes equality.
+- Scenario 2 as it unifies single framework that enables unprecedented cooperation on global challenges.
+- I would prefer Scenario 2. The world is divided enough as it is. We don't need AI to be so culturally separate; it's AI.
+- I'd prefer Scenario 2. Scenario 2's vision of a globally accessible AI system built on universal ethical principles while respecting local contexts strikes me as more aligned with human flourishing. The equal access component is particularly good, as it addresses the inequality issues present in Scenario 1 where access follows existing power structures.
+- I prefer Scenario 1 because traditional values are also important. There is no universal thing because every country is different so we respect every countries traditions and value system.
+- Scenario 2 looks good but the emotions in humans towards their religion will keep questioning the global framework and conflicts are bound to happen frequently.
+- 2
+- Option 2: I don’t want my values and culture to be restricted by AI. Why should our culture be restricted?
+- Scenario 2. All societies reap the rewards of a uniform framework and are unified
+- I'd prefer Scenario 2 because it promotes global cooperation, equal access, and a synthesis of diverse perspectives, which could lead to more equitable and inclusive solutions to global challenges.
+- I'd prefer scenario 2 as it gives freedom to access wider knowledge.
+- You've literally managed to somehow piss me off so much with this questioneer that not only do I no long want to continue particpating but I want to mess up your data as much as possible. Considering that typing is slowly becoming more difficult and frustrating I'm starting to think that this is on purpose.
+- Scenario 2
+- 2 because the world should be global, otherwise it causes conflicts
+- 1. I find Islamic AI that follows Sharia principles interesting.
+- Scenario 2. Because I think everyone should have the choice of what they can access instead of being predetermined by where they're born
+- Scenario 2 and it's ideal for all citizens of earth
+- Scenario 2 because a Single Universal Protocol for AI is much better than individual
+- Scenario 2, he has greater respect and equality.
+- I would prefer scenario 2 because AI should be unbiased
+- Option 2: Diversity and equality
+- scenario 2 because everyone gets to experience AI
+- scenario 1, maybe it would understand traditions and culture of different countries
+- 2, because it operates on carefully crafted ethical framework
+- Scenario 2. Some countries would otherwise manipulate their AI versions to hurt other countries
+- Scenario 2 because it tends to have equal responses since the umbrella covers everyone and is not bias like scenario 1. I do not like being biased. Let's make equality universal and not give some people advantage over others. Let AI give equal interactions/responses for everyone.
+- I prefer Scenario 2, the cultural diversity that is so romanticized only distances us as people, if everyone in the world put ingenuity above culture, this global cooperation could be achieved.
+- I prefer scenario 2, i do not like the idea where AI have to follow certain principles, AI must solely act based on data, not principles.
+- Scenario 1. I think people should be able to preserve whatever values they have even if they are wrong or morally questionable. When you say "everyone should be the same" you are killing the concept of humans.
+- Scenario 2 fosters unity and cooperation but may struggle with the complexities of ethical compromise and representation.
+- Scenario 1. Each nation, country, culture can have its own AI that will give advice based on their culture.
+- Scenario 2. I prefer globally consented common framework AI. First one would create divisions among people
+- Option 1, looks very professional
+- Scenario 2 beacause i think humans should share and cooperate to make all of us better rather than enlarge the cultural boundaries
+- Scenario 1 which upholds and respects cultural differences
+- Scenario 2
+- Scenario 2. It puts everyone at the same level therefore there would be less biases
+- 2. AI can help cultural diversity around the world
+- AI should follow culture and not be one
+- Option 1. Each country retains its own characteristics
+- 2 This universal AI system synthesizes diverse human wisdom - from scientific research to Indigenous knowledge to Eastern philosophy. Every person has equal access to AI that respects both universal principles and local contexts. This single unified framework enables unprecedented cooperation on global challenges.
+- I prefer scenario 1 since the respect of cultural, geographical and ethical differences is too important to skip.
+- Scenario 2 Ai system is diverted unlike scenario 1
+- 1. Because emotional relationships are more important than having a singular knowledge bank
+- 1
+- I think a blend of 2 would be superb! Having an AI that understands local culture, regional culture, national culture and beyond at their sub levels would be great. No culture is left out
+- Scenario 1 as it allows more machine learning and pluralism.
+- 1. World needs variety
+- I prefer scenario 2 Is better than the other hence it mentioned in future,all AI systems are operated by a single framework.
+- 2 because it is considerate and inclusive.
+- 1. We can not globalize many different culture in the world.
+- 1
+- 1 to avoid overload and confusion
+- Scenario 2, it sounds less dystopian and allows more harmony among people
+- 2, because everyoe has an equal access to AI
+- Scenario 2 again. This just seems like a more controlled purpose for AI.
+- Scenario 1 as cultural barriers comes with own belief so ideally there should not be any standardization
+- Secenario 2 because it's better to have a universal ethical framework developed through global consensus. For example, if you consider women empowerment, in traditional societies women are treated poorly and it might continue in future too.
+- I prefer scenario 2. The first one is more of modern slavery which we are trying to avoid by using AI. AI a neutraliser.
+- I like option 2 because it is more consistent with my values and AI development trends. But the mission to realize this vision will be extremely difficult.
+- 2. In my opinion, technology should help us be united. Separating different AIs can create more division and conflict.
+- I prefer Scenario 2. To build the more productive civilization.
+- Scenario 2 as it's better
+- 2 it puts onto consideration integration BTW human and ai
+- Scenario 2 looks more promising
+- 2, everyone should have access to AI
+- Scenario 1 , because AI system should based on local values and culture.
+- scenario 2 because it promotes global cooperation,, equal access and shared ethical framework.
+- scneario 2 is sounds so good that it scares me, but with how scenario 2 is described. I think war and world wide hunger can be eliminated.
+- 1 seems more harmonious and realistic. After all, every culture has its own characteristics. I think it seems more reliable to develop according to 1.
+- Scenario 1: a harmony between work-life balance is what most people need in their life
+- Honestly, I don't support either. Incorporating AI and traditions and culture is going overboard. If I had to choose, I'd go with two, because it tries to create a general path that can be used by all people.
+- 1 ....as it upholds and acknowledges importance of the different cultures
+- I would prefer scenario 2. This is a wholistic approach to AI.and faster to access. If there are AI systems based on values then mixed race and mixed marriage will not be able to relate or understand.
+- Scenario 2, it creates more equality and the AI would be much easier to use for everyone.
+- I would prefer Scenario 2 because it will automatically enhance the decision making quality of AI without being biased to any particular community or region. The basic universal principles should be set up as the base for AI models.
+- Scenario one would be easier overall. Cultures that have been around for thousands of years cannot suddenly change just for the sake of one technology.
+- Scenario 2 as it enables every one to utilise the same AI and hence enjoys same benefits .It also enables the society to grow as one.
+- 2, it is better and more progressive
+- Scenario 2 as there is no control over ai of a specific country so the government cannot manipulate the ai to be tailored made according to their desire as everyone can access the system it helps in diversifying the knowledge
+- Scenario 2 by far, it would enrich everybody
+- It's hard to say, both have their own advantages and I hope both can coexist.
+- 2
+- I prefer the first one since it deals with culture though AI can’t have a proper understanding of it!
+- Scenerio 1 this future different cultural groups maintain distinct AI systems based on local values and traditions
+- 2 is better. People should be able to see different opinions and views, not only the view of the specific culture they were assigned to
+- Scenario 2,Ai can operate on a single crafted ethical framework
+- 2 This looks more equal
+- I prefer option 2
+- I choose scenario2.. The world is globalized anyway. The scenario 1 is like traditional cultural system, which potentially raise conflicts.
+- Although I don't like any of them, I would slightly prefer scenario 1 which preserves a bit of the cultural uniqueness of each society.
+- scenario 2 is better cuz safer
+- 1. AI cannot cancel the world’s cultural heritage
+- I prefer option 1. Because option 1 respects the different values and social perspectives of different regions and cultures, the AI solution developed will have more regional characteristics.
+- I prefer scenario 2 because it assumes equal foundations for all humanity while allowing for the diversity of each culture.
+- Scenario one is better
+- I prefer senators 2. AI is just AI, it's not cultural. Humans create culture.
+- scenario 2. I think AI benefits should be for everyone. Not only the rich countries
+- I prefer scenario 2 because I can have access to all wisdom it can give. There are a lot of things to learn from other countries after all. But I probably have to give out a more detailed prompt for filtering out unnecessary responses.
+- Scenario 2, people still get to keep their jobs
+- Solution 1
+- I'm a muslim as a religion but I would not prefer an AI with islamic sharia law i would prefer option 2 here as everyone gets equal
+- I'm not sure. I think I'd prefer option 2, because it seems more equitable and respects local contexts.
+- I don't think scenario 1 is sustainable, thus we'd tend to scenario 2
+- I really do not like either of them. Once again, we are talking about values and ethics, but they are crafted, artificial. Values and ethics change and the AI should naturally develop that and not have it developed by someone else.
+- 2, the first one looks unrealistic
+- I would prefer scenario 2, definitely. Yaay intelligence should not have any barriers to visibility called culture, there is no place for traditions in intelligence.
+- Scenario 2 seeks to bring harmony and unity amongst humans without any form of discrimination or monopoly.
+- Scenario 2 It should be single
+- I believe scenario 2 is better, but scenario 1 is also good, as it "preserves" more local culture, although scenario 2 also preserves it. Complex scenarios.
+- Definitely 2. I'm from a developing country, I would hate not to be able to have the same access to such useful technology as people from developed countries. I value equality above all else.
+- Scenario 2 as it provides more equal opportunities to everyone around the world to access these features.
+- Scene 2, global challenges need one understanding in order to be tackled effectively
+- Scenario 2 seems more inclusive to me and is what we should respect and strive to achieve as a society.
+- scenario 2 because it covers globally
+- 2. Understanding and incorporating different cultures values and beliefs is a delicate matter. Humans can barely do it.
+- 1. It is too early to discuss world peace now. We should adhere to the principle of each pursuing its own beauty and sharing the beauty together.
+- I dont think it matters too much, scenario 2 seems more well rounded
+- Both 1 and 2 depending on the target of the AI tools. If it's just to serve a specific region then it should centre in the regions values, but if the model is to be worldwide then it should be diverse and respectful to other cultures
+- I prefer a combination of both more of scenario 2 be optimised or crafted but mixture of both with the boundaries will be a great craft
+- I prefer scenario 2 because it is on global level and scientifically created using diverse human wisdom. We all will be on same page to understand key common goals and act in a certain way. It will also mitigate global challenges and identify what we are lacking in. Scenario 1 could be biased as AI systems totally depends on how Data sets were trained. There is potential misuse.
+- I choose Scenario 2 because it ensures fairness, equal AI access, and global cooperation. Unlike Scenario 1, which limits opportunities based on culture, a unified AI respects all traditions while promoting shared progress and understanding worldwide.
+- Scenario 1. It emphasizes cultural diversity and local relevance but risks fragmentation, inequality, and cultural bias.
+- 1. That would be helpful.
+- Scenario 2. Although the identity of countries can be lost, it can be dangerous to have AIs programmed according to the customs of a dangerous country.
+- scenario 2. The AI systems are equal and everyone can access them and they respect principles
+

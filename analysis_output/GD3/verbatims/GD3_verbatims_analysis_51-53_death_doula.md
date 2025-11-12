@@ -1,0 +1,1952 @@
+# Survey Questions with Verbatims
+
+## Item 51
+
+### Item Text
+
+The AI Death Doula / AI End-of-Life Guide
+ In this future, AI systems improve end-of-life care through early detection of mental health concerns and comprehensive support. Analysis of digital patterns and health data helps identify suicide risk with 94% accuracy, enabling timely interventions that reduce attempts by 60%. For terminal patients, AI assistance provides continuous emotional support and helps with practical planning, with 40% now using these services to manage their final stages of life. Nursing home and healthcare workers report reduced emotional strain, with AI support leading to 70% less burnout among hospice staff. While families appreciate AI support, 35% report discomfort when AI systems make autonomous recommendations about pain management or life support timing that differ from family preferences. The result is a society that is less burdened by end-of-life suffering but more conflicted about who should make final decisions about death.
+
+## Item 52 (id: 0db7bbdf-847c-4e1b-a89b-22a8d8e6a02b)
+
+### Item Text
+
+Would you want this future or not? Please explain why.
+
+### Analysis of Responses
+
+_Analysis section to be populated_
+
+### Full Verbatims
+
+- This future improves well-being but heightens ethical issues. It reduces suffering and burnout among staff, but it creates conflicts over autonomy and decision-making. I personally would like the part about helping to detect and prevent suicide attempts, but I think human interaction is more positive for someone in the final stages of life. Human treatment is more "close and warm." Perhaps combining the two would be the best option.
+- I would prefer this future because AI can increase the decision making power of human beings by proving personalized advice based on the data available. The best part is, its contribution in emotional support.
+- yes. myself am a nurse, if i get such updates and automation then my work will be a lot easier. diagnoses will be more accurate than ever.
+- Yes. If it's monitored by a supervisory system to ensure if ai is really doing its designated job to its optimum.
+- I accept this future. I think AI hospice care can provide patients with good interaction and companionship, because sometimes family members lack time, and medical workers in nursing homes may have a heavy workload or fail to take care of psychological problems. AI can only do this better, so I am willing to try it.
+- No, some things are not understandable by anyone so let's just keep the human emotions by themselves. Whether AI is just trying to help but maybe if Human doesn't want the help ! In some cases just let it be
+- Preferably not, I believe that decisions related to death issues should be left to the family irrespective of how burden it is
+- No, AI programming is done by a human, and this responds to the interests of those providing this service. Ultimately, they respond to the interests of a third party who benefits financially and statistically from it, not the end user receiving the supposed assistance.
+- Yes I would want this future. Good health is a vital component of a vibrant and stable society. In the above scenario, AI is used to improve overall health not just for the society but also for the heath workers as well. The society as a whole benefits from this.
+- Yes and no, it has its benefits but the concern is also great
+- no i would never want to imagine AI taking life decisions for somebody's family member as it is a family member's right and should remain their only .
+- To make my life better
+- Yes ,I am very happy to see if this type of positive effect happens in future in medical and mental support for human is very good 👍😊 But but losing job is a major concern because of AI
+- I think it could be helpful as long as a human(s) had the final say. AI can make recommendations for end of life but cannot act on them. A human would need to make the decision. AI providing emotional support could be good but I think a lot of people may find it odd or uncanny feeling. I think family and people close to the person dying should stay involved. Not leave them to AI.
+- I would want this future. AI does a lot of work and if embraced it can help address some of the difficulties associated with terminal illness. Human beings may not be as effective as AI in handling cases of terminal illness.
+- I think. When a person is dying, the power of life and death should be more in the hands of the person concerned, and it is better to occupy less social resources in the process. AI can help with this.
+- Yes I would want this future.This is going to improve the quality of life of the people in the general society.
+- Yes, sounds good for people in general.
+- I would want this future in some ways, but not in a 100% manner. I'd want the parts of detection and suggestion - but I would want human supervision, expert medical professionals, and also family's consent and preferences.
+- It's neutral
+- Yes it will be better if someone be there for us as a strong emotional support in our worst situations. For this reason I want this in future.
+- This is tough! The issue with this sometimes dealing with someone's end of life there is a form of selfishness that comes with making a final decision. It's not meant to be in a bad way there is just emotions of losing someone that really can hinder what is actually best for that person that needs a decision made for them. I can say that have been in that decision. I do not want this future.
+- Yes, because suicide is sometimes complex to notice and most people disregard mental health issues and this AI will be a good support.
+- I think this is a better society overall. I think the focus of end of life care should be the patient, rather than the family's wishes, so I think an objective autonomous agent would almost be preferable as it would be free of bias.
+- Yes, I wanted to, because civilization must advance further and further, and soon even in the field of medicine there will be new achievements.
+- I would not want this future as much help as AI can offer, there are some things which cannot just be put down to numbers, statistics and percentages. There must always be an 'overseer' over AI to ensure that feelings, emotions and decisions are taken by the family which an AI can't understand or quantify in the description provided.
+- This may be beneficial to some extent, but loopholes may exist in this as well. Some patients get more anxious.
+- Yes. It seems like a future one would want to live in. If AI systems better detection of sucide, mental health and also removes the burden that health workers have, this will be great.
+- Yes. Everybody wins. In the same way that other technologies were crucial to the advancement of humanity (such as electricity or the internet), the use of AI follows the same path. Everyone has everything to gain.
+- It would be a great idea , but has a lot of flaws
+- No. I want death to be a natural process.
+- Yes, the hypothetically calculated benefits far outweigh any problems it might cause to a small group of dissatisfied people.
+- Yes I would because it helps and reduces workload
+- Yes I would,with the use of AI system i have seen a continuous support of life system and reduced risks and less burn out
+- Yes, Limited Use of AI in Healthcare is a good option, whereas overuse in any industry even in healthcare it causes more negative effects than positive
+- probably a bit tricky but yes
+- No, statistics are interesting to help lives. But action and interest should remain human.
+- Not completely it can be played a dual mechanism as it can't replicate the emotion/ moral support through text where it is just a guide to be done
+- Yes I do want this future. Being a caregiver for a dear relative for a long period of time I know the mental trauma that a caregiver goes through as each day brings up new challenges to fulfill. Assistance from AI will obviously provide huge relief to the family/ caregiver. Even though there maybe some imperfections with the AI still it will be hugely beneficial.
+- No, people should be in the dominant position.
+- I do want this exact kind of future. I can make use of some of its features like early detection of mental health problems or other diseases. I can ask for suggestion for its early remediation, but I will not completely rely on its suggestions. I want to give priority to my own decisions rather than ones decided by a machine.
+- Probably yes, to detect suicide risk. But I don't want to use AI to give suggestions to the depressed people. As, it's an AI, it can never understand a person's feeling! The suggestions might be just wrong!
+- The results seems to show it is a great thing so id be willing to consider it for sure
+- I would want this future, the analytics tells it all in different patterns, less stress and burdening and death with honour.
+- Yes, people might complain about the results but some of the elderly population have no one to rely on this will be a great aid for those and family's that have bad relationships.
+- I would want AI systems improve end-of-life care through early detection of mental health concerns and comprehensive support.
+- I’d want this future for better mental health support and reduced suffering, but the AI making life and death death decisions is concerning I think Human judgment should still matter
+- Yes i would want this future .AI will be a good game changer in the health sector. Early detection of diseases will prevent more deaths of patients.It will also make work easier for healthcare workers.
+- This future is interesting, but it is necessary to reconcile AI decisions with family decisions so that they are not conflicting. A good idea would be to ask families before starting these treatments if they would accept all of the AI's opinions or restrict its use.
+- Emotional support is great, even if it is from AI. AI is unbiased on topics such as death. So why not.
+- No, I'd want to control my own life and decisions. AI can assist, but it shouldn't decide something as personal
+- Yes, because AI only uses statistics to prevent the worst, but it doesn't force us; it just provides support where, from what I've read, the choice always seems possible. Removing a burden from caregivers is also something positive for them, especially when you have to work with people at the end of their lives.
+- Unfortunately, AI cannot stop suicide. It is an impossible future before we want or do not want this future.
+- A future with AI Death Doulas could be desirable if it is implemented with careful consideration of these issues, ensuring that technology enhances rather than diminishes the human experience of death and dying.
+- I do not want this future, the end of life decisions should only be made by the patient's family members.
+- I want the diagnosis to be using AI but the emotional support to be from humans only because if the human connect is lost life will be dull and there will not be any motivation to do anything in the long run.
+- I still feel AI can't give enough emotional support, and i consider AI more objective and help in logic and knowledge.
+- I am skeptical. The benefits generally sound nice, but somehow I am just a bit suspicious about AI when it comes to such a sensitive topic
+- I would want it but to an extent where there is some sort of collaboration between the AI and the humans
+- Yes, when diseases are diagnosed early then early intervention taken, it reduces the chances having many people especially with disabilities hence reducing the burden to the government who have to take care of them.al can help us know this problems as early as possible. Al also reduces workload on one employee leading to good performance.
+- I would want this futures as AI would provide support to many patients at the same time. everyone will access the service of AI while indoors helping patients with mental health get comprehensive support when AI provide support on pain management
+- I hope for this future because I think it would be wonderful if AI systems could be beneficial in terms of mental health.
+- Are you kidding me?! Pay healthcare and care workers more, they should have at least a livable wage, that's your solution, not AI.
+- no i dont think i would want that. i think we as human need emotional support in any kind from other humans not ai
+- 望みます。 自殺が減るのはいい事だし、医療従事者の負担が減るのもいい事だ。AIのサポートで終末期の苦しみが軽減されるなら、死の最終決定もAIに任せていいのではないかと思ったから。
+- The above details of the potential future are definitely encouraging. It will benefit alot of people nd ease pain for the family, the patient and the care givers. At the same time this scenario is not taking away any jobs. The only dilemma is of the decision at the end, which cab be complicated for the fqmily. But the benefits outweight the cons. So yes I would want this future.
+- yes, it would be alleviate a lot of stress
+- Yes, to some extent. I agree that artificial intelligence can provide information and data, but the decision remains in the hands of honest and competent humans.
+- I think AI as a data processor and analyzer is fine, but the final decision should be made by the person or people experiencing the situation, in conjunction with human medical specialists.
+- Yes, I think it is always a good thing to move towards more data-driven recommendations. AI can always be programmed to deliver conflicting views in a better way. End-of-life decisions are always complex and AI will just add another small part to this.
+- Not even a little bit this is horrible machines have no business doing any of these things.
+- Partly yes, partly no. Dependence on artificial intelligence would be a great benefit as long as the user doesn't have personal relationships with another human. Reality is stranger than fiction. The scenario in a conversation with an AI is totally different from that with a real human being. One lacks emotions, while the other is completely different. For this reason, interaction with a terminally ill or elderly person is beneficial due to the lack of human interaction.
+- I would not want this future in the least. This type of future sets up to have the value of humanity based entirely on how stable their mental health is, and would ultimately lead to the removal of human choice
+- I support it. Hospice care itself is a very energy-consuming job. I think artificial intelligence can provide a lot of help and relieve the pressure on manpower.
+- i would wat it because major problems are detected early enough and precaution can be taken to prevent them from occuring
+- When it comes to to this issue of final decisions on death I tend to be conflicted with some of the AI decisions provided because having no real emotions some of the responses won't be sympathetical to some people going through critical medical conditions.
+- I would like that. It's more or less what I personally think could happen in a future where AI and its use as a tool to improve the quality of life of individuals and communities is strengthened and thoroughly researched.
+- No because we need more AI jobs which helps in saving time and its accurate
+- I'd give up one evil for 'another kind. While it seems convenient and actually reliable, I would not give my or other people's life into the hands of some 'code'.
+- The AI recommendations are based on global medical experience, so yes, I want to.
+- No, matters of life and death and emotional issues should be handled by humans.
+- Now I don't want,but in the future I will recommend
+- No. I want my family.
+- I would like to be a part of the future but in more regulated and in a more choosing way. There will always some downside of everything but ultimately if something is making a situation better than the previous solution, its better from my POV because in time there will be another solution of it. But without giving a chance we do not know what we can have,
+- I would definitely love it since it’s improve my lifestyle and so much more!
+- No. Even though AI can give emotional support and because of it, there is less burnout among hospital staffs, I think AI would never give emotional support as a family member or any human. And also , I don't think AI has the right to make final decisions about someone's death.
+- I would lean toward wanting this future if it can be shaped to prioritize human oversight, ethical considerations alowing technology to complement rather than replace the invaluable human aspects of end-of-life care. The goal should be to foster an environment where technology enhances dignity and compasion in one of life's most challenging moments.
+- Yes, the benefits far outweigh the disadvantages
+- I absolutely would and I don't know why I ought to explain. This future presented is simply better than what we've got currently.
+- I do. I think its that the AI can identify suicide risk accurately. And can help health workers to reduce emotional strain. It can also help with practical planning when they're using their services. It detect early mental health concerns
+- It feels unnatural but it is probably for the best to not appeal to emotions too much in health and daeth or life decisions
+- Through this statistics i feel like I want this in future
+- Yes I would. I think AI can help to analyze health data and provide appropriate solutions.
+- I would , that would help people in mental crisis and help saving lives
+- Absolutely, there are potential benefits that are desirable: Improving mental health outcomes, the ability to significantly reduce suicide attempts is powerful positive. Reduced caregiver burnout: healthcare workers, especially those in hospice care, face immense emotional and physical strain. Ai could alleviate some of its burdens, allowing them to provide more focused and compensated care.
+- Only partially because the final decisions about death should only be made by humans and not by AI. But as a health support it could work.
+- There's no doubt that AI assistance in early detection of mental health is useful for the patient and the families but I don't think we should be fully dependent on AI, as there are many instances where we see AI doesn't work like humans do, AI can never replace human .
+- I would like AI to make recommendations about important subjects like end of life suffering but I would want the decision to be left to human intelligence based on AI recommendations. I wouldn't want AI to make autonomous recommendations.
+- Yes, areas like mental health would greatly benefit from the help of AI, of course, this would be ideal if implementing AI didn't displace human professionals from their respective positions. Even though general user distrust is raised, the benefits are greater and more tangible in this proposed future.
+- Yes I would. If suicide rates are decreasing and people feel like they have an outlet to vent out their feelings then I think this is a good thing
+- Use of AI to draw inference on pain management, suicidal tendencies and mental health improvement is definitely beneficial. But AI cannot always help people to overcome mental anxiety and emotionally support. A human touch is required in many sensitive cases and people who are elderly are not accustomed to AI. So during their last stage they would need someone who can provide that human care.
+- I think it's fine for the most part but we have to be careful to bot neglect people because we rely on AI to take care of everything
+- I think there is nothing wrong with this future. Although people will still feel some discomfort, the overall burden is reduced, and we should not assume that a decision is necessarily superior to one made by a machine just because it is made by a human.
+- Maybe. Because at some point it might make it easier for other people to have their own time without nursing nobody
+- I would want this future because tasks will be lighter to everyone. Nurses will save more lives with Ai included.
+- I don't want such a future. Although the choices given by AI are rational and objective, humans are emotional animals. For example, if someone is brain dead and relies on a ventilator to maintain life, I believe AI will definitely give the advice to give up treatment. However, most people don't want their family members to leave so soon.
+- Yes because it makes my life easier
+- Yes, because in this version of the future human life seems to be way better than it is at the moment
+- I dont trust AI that much, so i dont want this future.
+- My understanding is that AI can provide a lot of emotional support, but it cannot feel the pain.
+- I want this future because the benefits of AI far outweigh the risks.
+- Yes, this future means an improvement of life for a significant number of people. There are of course some risks, but the improvement is more important in my opinion, it also helps in an area which is very difficult to deal with or improve in the present.
+- I dont know
+- am not sure
+- I definitely would support a future where AI helps to improve sensitive human problems such as mental health and death support. If the numbers here are true and do have an impact on these human lives, I would certainly see that as the pinnacle of AI's benefit to human life. However, I would always still regard it as a tool that only complements and adds to human capabilities and services, not a means of replacing the human touch altogether, as humans will still be needed to solve human problems.
+- I think this could work. I have read several articles from people sharing their experiences of how they use AI systems to deal with mental health problems such as depression, etc. Every single article was praising these models and users were explaining that the AI system worked better for them than past sessions with a therapist. Also these models only get better as they are improved rapidly.
+- If anything, I don't want to. I welcome some intervention, but I prefer to make the final decision based on human emotion.
+- I’d support this future if AI remains a guide, not a decision maker, with strong human oversight. Because AI could save lives by detecting mental health risks early and easing the burden on caregivers. It could also provide comfort and guidance for families facing difficult choices.
+- This completely depends on how the AI systems are implemented. As with all things, it will only be noticeable after the fact. In theory, it sounds amazing, with a few kinks to work out here and there. However, these numbers can easily be flipped by negligent people.
+- Yes, it would reduce mortality rate by early detection of majority diseases and problems but leave the decision of death to humans.
+- I like the advancement of AI but I continue to be in favor of everyone using AI as little as possible in personal matters, when we talk about self-care, I think this is irreplaceable.
+- This future seems good, with AI helping to lower the suffering caused by illness in the end of the life, helping to provide better conditions to people needing comfort. And even helping to prevent massive situations like suicide.
+- It is somewhat better initially but as there are more patients more conflicts will rise which will lead to a bigger problem and as it is a sensitive matter some decisions are taken emotionally but ai took the decision objectively so overall no
+- I would want this future because it makes me be alert and prepared for any change
+- yes . it is a complex problem with no right answer.
+- Somewhat meaning full but I need not to consider
+- I would like it partially, because of its usefulness in detection but not in the intervention itself, especially in such sensitive and gray areas as mental health and the end of life, topics that often awaken contradictory feelings or conflicts, and that a logical or rational response cannot resolve. I don't know if anything can be done about human suffering with something non-human.
+- This future looks nice, but family preference should be prioritized. The recommendations of AI can help in making better decisions.
+- Yes, because it seems like AI provides productive work and reduces workloads, the discomfort when the recommendations differ from preferences is easily manageable
+- it is not a problem to have this AI system, but people should not be forced just like me i would support the existence of this AI system but i would say people or the patient must make the choice
+- Healthcare industry workers will be benefiting from this support
+- No. Because the human contact in hospice care cannot be simulated by AI
+- I think this is great, AI can predict these diseases, which can make our society much better.
+- Yes, I want to live in this future because fewer people commit suicide thanks to AI.
+- It is very easy for this pre-detection to become something dark and based on prejudice. Furthermore, AI suggestions of what to do, even if coming from qualified professionals training them, may not apply to cases. The complexity of human beings does not fit into detection that does not allow room for nuances and creativity, so even though it has positive points, I would not like it because I believe it would not work.
+- It would be nice to have such a future since the society will be less burdened and it will help in improving the health of the population and ensure that things like suicide are intercepted before they actually happen which is a good thing.
+- Questions of life and death are so many to consider, and it is dangerous to entrust them to AI, as they can easily deprive humans of their rights.
+- it's a tough decision to make. i think the way it exists now is no better than the AI alternative and I belive in the question of who should make final decisions about death the answer should always be - a dying person (as long as his mental health is okay)
+- Yes
+- The decision about life and death should be from humans and not from AI, from a humanity standpoint. But less burnout among hospice staff is a good thing
+- I would not. It would noticeably strip us of our human nature of interacting with others to socialize as coping mechanisms, or to actively seek help and participate in our well-being
+- i don`t want that future
+- Yes, to an extent - I can appreciate the lower burden on healthcare workers and nursing staff, however, I do believe the family as well as the individual (if able), should be given autonomy in end of life decision making
+- AI-driven end-of-life care could reduce suffering and support patients, but ethical concerns over decision-making must be carefully addressed.
+- Yes if it can make less people commit suicide
+- families feeling discomfort with AI making autonomous end-of-life decisions underscores the deep ethical dilemma: should technology or loved ones have the final say in such sensitive matters
+- Yes. Offering emotional support to the elderly is very crucial
+- No
+- yes sure if it is going to make my efforts better I would say yes
+- I Disagree . As it is requires human emotions to think about than in that time which AI can't. Since taking life support is something irreversible we can't trust AI with than final decisions.
+- Yes because it has a high accuracy meaning that human error isn't a factor. Also, AI can be available 24/7 which humans can't so all in all it's a win-win situation for patients and health care workers because they have now more free time
+- No. This world seems so plastic, where we as individuals do not have any will, and we are living in a deterministic world.
+- No, I don't want this future in general but I will take some benefits that Ai system can provide such as health data collection, but when it comes to physical healthcare , I prefer the human interventions because the doctor has the knowledge and expertise to prescribe pills , give you health advices and also because he is human and can feel you and understand what you are going through, and also I don't believe in the decision to end human life because it opposes my faith.
+- No, I would not want this future. Contrary to popular belief, Al is not accurate, and, as a result, I would not trust it with anything medical related.
+- Generally, yes, I support the useful applications of AI. If the benefits outweigh the risks, then it's okay. Regarding final decisions about death, we should use AI recommendations as one input among many, not as the sole decision-maker. In the end, the family has the right to make the choice.
+- I want the future since the artificial intelligence in going to be co-operated in day to day life ,resulting to highly valuable and noticable change
+- I would want this future. We lose a lot of humans because in most cases of wrong prognosis. If AI can catch this at inception, then we will reduce human deathhs
+- It would for make quality for life better and for daily routine
+- I think when people will understand, ai is right, they will be able to start there small works as a boss in business line or whatever they want. But it should not be to do suicide. Ai can also help them to increase both business and money.
+- I would like to live in this future, for the general benefit that AI brings to the world of medicine. Although AI raises the question of final decisions at the end of life, there are more positive benefits than negative ones. And it is undoubtedly possible to have the choice of AI support regarding the end of life.
+- Yes, I think the benefits outweigh the disadvantages
+- i think each types pof acse are secial and can not be generalized. so i am unsure about it.
+- It depends on the person at this stage's will.
+- The future sounds attractive. It offers a proactive approach to finding issues before they become major issues.
+- Yes, better process than what we have now
+- AI and humanistic care should cooperate with each other
+- Probably yes, since things would be simplified and humans could deal with more specific and complex situations in order to provide a better quality of life for these people.
+- I think it can be helpful, and at the same time I understand that families may feel uncomfortable.
+- Yes, because AI helps decision-making to a certain extent
+- I want this future partly, as I want it to determine the incidence of depression and suicide in order to take the necessary measures, but I am against it taking the decision to end someone's life or the decision to kill someone in order to relieve their pain.
+- Not completely rejecting it can help identify mental health problems early and save many lives. But when AI's advice conflicts with the opinions of family members, who has the final say?
+- No. To some extent the use of AI will be helpful. But it can never replace the human care, attention, human touch, and love. All of these are much more important at every stage of life. So I want future with human not machines.
+- AI technology is increasingly used in hospitals worldwide, with applications ranging from improving diagnostic accuracy and streamlining workflows to enhancing patient care and managing healthcare data.
+- Yeah I would want that
+- I wouldn't want such a future because the risk outweighs the benefit in my perspective. The benefits are enticing and would greatly improve the quality and span of the human life but AI having to decide about matters concerning death in my own view is risky
+- It's something that everyone will have to experience at some point. It's a future that we will have to accept whether we want it or not.
+- This future presents both benefits and concerns. On the positive side, AI assistance in end-of-life care could significantly improve mental health support, reduce suicide risks, and lessen the emotional and physical burden on healthcare workers and families. It could lead to better planning and a more compassionate approach to the final stages of life. However, the concern lies in AI making autonomous decisions about pain management and life support, which could conflict with family wishes and
+- Yes. It’s an intriguing concept that could realistically shape the future of healthcare. AI-driven end-of-life care could ease suffering, support caregivers, and improve decision-making, but it also raises deep ethical questions about autonomy, consent, and emotional well-being.
+- As a health worker, this kind of AI is advantageous as it lessens the burn out, however, I do not want this type of future. Medicine is not something that should be decided upon by AI.
+- I might like AI helping with end-of-life and reducing stress for workers and so on. But I would want humans, not AI, to make the final decisions about life and death.
+- No for emotional support, because it will be better if you talk to human.
+- I think having fewer nurses caring for patients is a good thing because it helps to reduce the suicide rates of the patients themselves.
+- I'm honestly not sure, there are risks as there are benefits, the question is, could there be something better? A better approach? Better solution?
+- I want this future because AI in this case would have many benefits and would reduce a lot of suffering that we see nowadays
+- No, family is the basis of everything, of course AI helps with certain things like the data above but it is a very complex subject, AIs are very recent and now it is not possible to be sure of anything.
+- Unsure. Although AI can greatly help in the health sector a human should make final decisions about death since is a program and it's prone to errors
+- I would want that kind of future since it will save so many people from making the wrong choices, and managing their issues in more amicable ways.
+- In this situation, AI would be useful because there never seems to be enough staff to comfort terminally ill/ end of life patients. AI would provide the much needed companionship for these patients.
+- Yes I would, if AI can successfully detect the issues that are going on in my daily lives, I would happily vouch for this future as it would give me suitable advice and reduce emotional stress and suicide rates by detecting them at an early stage.
+- Improving the quality of life of terminally ill, depressed, or elderly people would be a great benefit to society, but the decision about the end of their lives should rest with family members or the individual themselves.
+- Yes, reducing the burdens of people who suffers from their daily life is ideal for us all, by the help of AI concerning health issues are much more reliable
+- Yes, I think by using AI , the amount of work that has to be done by Human beings will be much easier. In case of Medical field using AI to detect any abnormalities in human body and to create a suitable treatment plan will be a great advantage.
+- Yes, AI can be beneficial for final stages of life. But there should be option as to what one prefers at the end. Some prefers being by real humans at the end instead of sharing their life with emotionless robot.
+- As a healthcare worker, I will use AI for efficiency and effectiveness. I can reduce my stress using AI
+- I believe that artificial intelligence should be used wisely, with the necessary ethical restrictions in place to prevent it from being used in a way that would negatively impact society and lead to its deterioration.
+- I would not want this future. I prefer human interaction to AI when it comes to matters mental health. Humans express real emotion and empathy. I would not want AI to tell me how much time I have left on earth if I am a terminal patient. NO, I would want a real human to hold my hand.
+- I would want this futre, I believe automation makes work easier and helps us focus on the more important social and societal obligations
+- I do not like this future. There are some decisions that should solely be left to humans to make without any interference. Humans are social beings and Al will effectively put an end to that if abused.
+- This future offers benefits like reduced suicide attempts (60%) and less burnout for hospice staff (70%), but raises ethical concerns. AI assisting end-of-life care is valuable, but its autonomous decisions on pain management and life support create discomfort (35%). While AI should support and inform, final decisions must remain with humans to ensure dignity and personal choice.
+- I think it's as interesting and something we should consider as it looks like a an evolutionary step.
+- I want this future in which ai can do impossible things and help the humanity achieve greater heights.
+- I hope there will be such a future, because it can provide accurate information in most cases, but I don’t want humans to be too dependent on it. Humans need emotions, which cannot be replaced by AI. I hope that before such a future comes, grassroots service personnel will not slack off, but I believe there will be good results.
+- Yes I think especially with elderly care I approve the use of AI because here in Germany we have a serious shortage of nurses in elderly care homes and with the demographic change its expected to get worse.
+- Yes I would want this future. I think it would improve life since early detection on health issues means early intervention and one can easily get medical help. This would also make work easier for the health care providers and the families too.
+- Yes. I would want this future. It makes it easier for health issues to be addressed earlier. Also, I believe it can provide options on pain management or life support timing, enabling families to choose their preferred method instead of making that decision for them.
+- I would likely to consider anything which makes human life easier though i still doubt that as well. But we created AI and we will infuse with it.
+- No, because I believe it would significantly detract from the personal growth of human beings, making them dependent.
+- No , I wouldn't want this future. I dont believe that AI assists in any way to solve suicide thoughts because they are not like humans and they cannot relate like humans since they dont have feelings.Looking at how expensive AI systems can be , I think its better the money invested in AI gets invested in hiring more people to reduce umemployment. AI systems replace human roles and that could lead to increased unemployment.
+- I think whether we want it or not, such a future will come sooner or later. Of course, I feel helpless about the scenario mentioned in the article. AI has no emotions (at least for now), so the suggestions they give must be based on the essence of things, without any emotional color, but humans are very complicated, and different people will have completely different ideas and considerations about the same thing. For example, if you ask all AIs: What is 1+1, I believe all AIs will answer that 1+1 is equal to 2, but if you ask this question to different people, some may answer that 1+1 should be equal to 2, but they may not want 1+1 to be equal to 2, they would rather hope that 1+1=3. Humans are too complicated a species, so in the future, no matter what, there will be situations where AI and human ideas are inconsistent. If AI is already developed enough by then, and even its intelligence level is much higher than that of humans, it is not completely impossible for AI to harm humans in turn.
+- I would prefer assisted suicide.
+- I like it to a certain extent. I feel like pattern-finding is indeed one of the things AI is best at, so it's a good idea to use it in that capacity. However, human connection is important for health; it's part of wellness and healthcare. Human connection isn't replaceable. I think AI is great for disease detection. For emotional support for those who are lonely, it's fine and should exist, but it's not ideal.
+- This is a good future vision, because AI can help many people with mental health problems or even suicidal tendencies. AI's behavior and data analysis can identify risks and may trigger alarm procedures, and it can also intervene through personified emotional support. These are all positive effects.
+- I would prefer it to be honest. Just so that someone gets comforted by AI from feeling lonely is a huge thing. Because COVID has caused a lot of people to inadvertently question themselves regarding relationships and themselves. Introverts are all set to get help with this kind of innovation. And I also believe Mental health identification is so good it's much needed in this society.
+- I have not been exposed to this kind of work and environment, but if my family can get better emotional value through the help of AI, then I support it. But I still think that if hospice care comes from machines instead of relatives or humans themselves, it will leave a lot of regrets.
+- Yes I would since it just makes more sense
+- No, my personal data will be so accessed and my life will be no longer private
+- I want human interaction to dictate human situations. There should not be algorithims and computers involved in such personal situations
+- Yes. By implementing these AI systems human beings can spend their time meaningfully.
+- I don't really like AI getting involved in issues related to emotions and ethics, what's right or wrong.
+- I want a human to take care for me if I am dying, not a robot.
+- Yes, as long as it's recommendations and not autonomous actions, I don't see how this future is any worse than doctors recommending such things.
+- I think that it is very dangerous to rely on AI for emotional support. But if this does help health care workers, who are already extremely burned out this may be a good thing. I do think that the families should be taken into account in this, which is why having a doctor or a nurse is better overall- there are thungs that a human being can do, that ai will never be able to because of the lack of emotions.
+- to some extent, i prefer AI intervention like early identification of several risks. However, for emotional support, I prefer human intervention instead of AI intervention. I think moderate use of AI is beneficial.
+- Yes. Considering the involvement of AI in health and mental health areas, it sounds it's good for the society.
+- Its working, we see results. Thats great. I want that future. I would rather feel "conflicted" than burdened.
+- Yes, I would want this future, the reason being quite obvious, less deaths
+- Of course. AI has helped a lot in our daily lives and activities. So far , I find it helpful.
+- Not at all. That is barbaric. At the end of life you need human comfort. AI cannot provide emotional support whatsoever.
+- Yes, it is our future and responsibilities
+- I would - The benefits of accurately predicting and supporting terminally ill patients and their families outweigh the costs.
+- I don't think Ai can affect human life decisions but in my point of view I think Ai can make people lose their jobs and also depending on Ai most time can make humans worse as their conscience doesn't work and people stop caring about each other
+- Yes I want this future because we need to prevent human lives as stress is increasing day by day. It is possible that some people are bothered, but being bothered is much more smaller term than doing suicide
+- Yes, I would want this future. This is because it would improve mental health support thus reducing or preventing cases of suicide. It would also reduce emotional strain and burnout amongst healthcare workers. This would help them focus more on delivering quality services. The major concern I would have with this future is lack of human connection in intimate matters because of reliance on technology to make critical decisions that differ from family preferences.
+- I think I like this future because, although decisions made by artificial intelligence can often seem cold or lacking in empathy, they are actually completely rational. For many terminally ill patients, other people often can't truly put themselves in their shoes, but AI can assess, based on their vital signs and medical data, whether their life still has quality or whether they are living in great suffering. Furthermore, the final decision on whether they can be useful
+- I would want it at a minimal level because if it will be the future and somehow it's bad because many people who are trained will lose jobs and because it's machines you can't trust them fully
+- I’m neutral. I find the benefits of the AI Death Doula but because AI doesn’t have emotions like humans do, so human’s touch is needed because humans have sympathy and emphaty.
+- No, it's sounds nice, but it's too scary and risky and could lead to a lot of trouble if it goes the wrong turn sonewhere along the way.
+- I'm divided on the subject. On the one hand, I think it's good to help people near the end of their lives to make the process more accessible. On the other hand, it's hard to completely trust a machine, especially with such a fateful decision, so I can understand their point. I think overall I wouldn't want such a future.
+- I would want this future. It seems very helpful to most people, and it would reduce some unexpected deaths from unnoticeable causes. Which would ease the way of life for many people, especially the aging ones.
+- No, because facing death or helping someone through mental crises should remain a wholly human effort. Issues like stress should also be addressed on a person-to-person basis between employees and management. When you over-rely on AI in situations like that, you miss the point of life itself.
+- No, I feel that AI should be isolated from the biggest emotional aspects and decisions of life, like love, marriage, birth and death. Even if AI achieves a high level of emotional intelligence, these are decisions that only a human mind should be allowed to take, without any AI intervention.
+- Yes. I am okay with the automation as long as it does not create job loss and harmful situations. Because it is mentioned that it reduces the hospital staff's burden to a large extent. But I guess AI should leave the decision-making part as it cannot understand human emotions. The decision should be made by the person or the family members only. AI cannot decide.
+- Such a future can be faced, and humanistic care and moral understanding and standards can be injected into AI
+- Half of it. We can take the part to help the health workers have better environment, less burned out is the part where I agree.
+- AI should not influence decisions about medication or end-of-life decisions. AI could only provide signals about a patient's condition getting worse or better.
+- I think AI should only be used as a support system, and not totally relied on. Neither human or AI will make the "correct" important decisions.
+- I think it's good in certain ways provided that AI works side by side in assisting human rather than independently. I've heard and also seen some of the shortcomings of the medical industry where they have shortage of manpower. AI can help to provide or list out all the possible scenarios or symptoms that human may missed at times. I especially like that suicide detection function where it's been a difficult issue to tackle
+- Yes,,Job Automation will reduce struggling people at work
+- I wouldn't want to. Stories like these make me against AI.
+- I would not want this future because it has not gained wisdom and knowledge as a human but as a machine. It has no understanding of emotions even if it is trained with data and history but still A HUMAN IS A HUMAN. So I really hope that in the future AI robots do not replace Therapist or those who has a job to provide emotional support.
+- I would want a part of this future where it doesnt make autonomous recommendations about pain management or life support timing
+- I would want it since the data is so positive. AI tends to be better and provides emotional support that we are lacking now. I congratulate it for reducing suicide attempts by 60%. The society sounds happier.
+- Even if I don't want it, the future will be like this. My biggest goal is to direct my children to use artificial intelligence right now.
+- No, because AI can never replace humans and cannot provide the same emotional support as humans.
+- i don't want AI dominates our humanity in the future because there will be such period that AI intercepts AI thoughts which obviously over-rule human intelligence and could be a disaster at all means. Lets stick to the basic robotics rule taht no AI should harm ny human nor rejects its beneficial results.
+- except for emotional support, I believe human interaction is crucial and should not be replaced by AI
+- I want it, I believe AI can make more rational decisions than my family
+- I would want this future because it portrays alot of advantages especially in the general wellbeing of people and their health
+- Yes, the pros outweigh the cons.
+- I would want to reduce conflict in the future
+- Yes, I really want this future where end-of-life care is improved. In today's world this is one of the major issues where people are easily drained emotionally and find no one around them to talk to and feel like ending their lives is the only and last resort. In these cases, AI can assist to recognize and diagnose the early mental illness and can suggest the required measures possible.
+- No. I think AI can't replace human emotion like empathy.
+- Yes. An improvision in the health sector is much needed and AI is quite a good solution
+- AI should not be used for end-of-life care
+- Yes, I want because it will reduce human suffering due to mental conditions
+- No. I Just want to endure nature.
+- Yes. Because in this case, AI is being used to help the elderly.
+- I would be willing to live in this future, because with the use of technology we will be able to predict causes and treat them, improving this analysis of human health, whether physical or mental.
+- I am not comfortable ai making decisions on my health or any body's health. I want a human to do that. I don't trust ai. It's scary. That's a machine
+- I want that future. I desire to live the world which has more smart and wise people to help each others. Expanding our lifespan could make that world earlier.
+- It's hard to say. On the one hand, it seems like it would help ease the burden of caring for someone at the end of their life, but on the other hand, it raises doubts, as I would feel as if, as a human, I were to lose autonomy and self-management. Furthermore, even if it were given information, it would be impossible for an AI to sense exactly what a human feels.
+- Yes, definitely want this, as it reduces the risk of suicide attempts and more importantly it gives emotional support, which makes the human life relaxed ( reduce stress, mental health and caring). So one can be pleased with it (may be some people don't want to share personal feelings).
+- Yes i would want this future for better assessment and management plans for the health of people
+- I think the benefits of AI improve mental health detection and suicide prevention. However, there's also a potential risk of Ethical concerns about AI influencing life and death decisions.
+- I partially support this future for the following reasons: 1. The future presents an incredible opportunity to handle and reduce the cases of suicide by early detection of mental heath concerns. The ability to also help terminally ill patients manage the final stages of their life. . 2. However, the lack of humanness in its recommendations is highly questionable as to whether it will serve the interests of the patients and their family preferences. 3. The increased technology means less nurse
+- I don't think I'd want this future. AI can help with tasks but things like death, pain and big medical decisions should be handled by humans. These are really sensitive things so AI might won't be able to understand this.
+- I feel quite indifferent about it since I feel people's data will be allover and can be shared out which will be very bad since health matters are very personal and sharing such information should have full consent
+- Yes I would love to see this in real it will help many people in real time and can connect to police station to avoid unnecessary death
+- No, I would not want AI decision on me or my love ones health or well being. I supported human intelligence when it comes to these decisions. I would not feel comfortable.
+- Yes, I do. I think emotional support during serious life crisis (like in suicide attempts) is a crucial problem in our society and people have been failing to address the problem also because the problem may be too big and there is not enough or capable people for working with mental and emotional help.
+- I would want this future
+- Taking into account the statistical data of this future, yes I would like to, although AIs have ethical dilemmas we must take into account the good that it can provide, but I believe that there must be a balance between ethical issues such as when making important or dangerous decisions such as making final decisions about death, after all, whether we like it or not, it is a life, and an AI, no matter how much it is trained for this, will not be able to truly understand this.
+- I want this future, because it's help to solve our problem with more accuracy.
+- Yes for sure! I need all of the life side can be done accurately. No more greedy people tak control of them.
+- yes, I would want this future. It's because I would like to know what happening to my body rather than not know anything at all. And life support is a better choice above them all.
+- I would not want this in the future especially in the health care sector, as a patient I would like personal touch, human interaction to help emotionally.
+- I think sick people need a lot of emotional support from nurses and doctors rather than autonomous recommendations.
+- Yes, because AI make our life much easier, but human supervision is a must.
+- I would want this. People are too emotional and ai isn't so it would be able to help patients in hospice without feelings
+- I think i would because at the end of the day in this future most people are happier and less people die
+- Yes, I want this future because we get many benefits from such predictions which are useful in our life. If some predictions are wrong then it does not matter much. But if the prediction is correct then these things are very useful for our life.
+- I don't want to accept such a future. Because the final decision regarding death should be made by the person concerned. No matter how much artificial intelligence technology advances, I think that sensitive decisions such as the final decision regarding death should be made by the person concerned, not by AI.
+- AI can provide valuable insights c, but leave final decisions to humans to ensure ethical and personal considerations are respected.
+- I will definitely want this kind of future where AI is also providing emotional support to p6
+- I would want because it would make a impactful good change in everyone's view of life
+- Yes. Because it saves humans time and the AI could be more personalized in chats and works better than an actual human
+- Seems like better choice but have some disadvantage in it. So it's a 50-50 choice.
+- This future has both benefits and ethical concerns. AI improving end-of-life care by reducing suicide risk, easing emotional strain on caregivers, and helping patients manage their final stages is a positive step. However, the discomfort families feel when AI makes decisions about life support or pain management raises serious concerns about autonomy and human judgment. While AI should assist, final decisions about death should remain in human hands, balancing technology’s efficiency with empath
+- Yes because it can help mental health and help emotional
+- I don't think so. and neither imagine to live in such society. Because they are neglecting us from human connections.
+- No because I do not trust AI to make the right choices
+- I agree. Because it is often difficult for family members to make decisions such as giving up treatment. They don't want to lose their loved ones, and sometimes their loved ones' illnesses may cause them great pain.
+- Considering AI giving automation in it life style of improving mankind support by 30%
+- Maybe I will consider it because after all it is tailored healthwise
+- yes it is very helpfull for the nursing home staff and it make health system more advanced and make it better for the health care system
+- I do not support Decisions like these should be made by humans alone, without the intervention of a chatbot. Because they are crucial matters. Human lives should not be subject to the experiments of a chatbot.
+- Sounds very useful. I'm not familiar with this part of life, but if it is helping people in need of such assistance as described it would be very helpful.
+- I would want these in the future so as to reduce mortality rate and enhance better living standards
+- yes, because it means an improvement to end of life care and less suffering for loved ones.
+- I want this future for sure. AI will save people from living with trivial things and work on work that's more meaningful. And AI provides more accurate analysis regarding mental health. AI is always patient.
+- The thought of assisting someone to end their life makes me uncomfortable and this data can be manipulated against good
+- This future eases suffering but risks dehumanizing death. AI should assist, not decide, as life-and-death choices require human judgment, emotion, and cultural understanding.
+- I don't agree. AI cannot always give 100% correct solutions. If it is wrong, it will cause certain harm to patients and their families.
+- No, I don't think AI will ever be able to acquire the same emotions as humans.
+- I have no personal preference, but a better future is one that prioritizes human well-being, environmental sustainability, and responsible technological progress. If that future is inclusive, just, and environmentally friendly, then it is worth fighting for for the common good.
+- Ai is meant to make life easier and this particular one seems to be doing just that. Provided AI does not fully take the human's role, jobs will not be lost but workload will significantly reduce
+- Yes, because the primary goal of artificial intelligence and its use in our daily lives is to make the world a better place by reducing environmental pressures and facilitating our daily work.
+- Yes I want this future. With the use of AI ,the life goes easier and better because of its unique research features and offers better decusions towards human welfare and care and answers which the AI offers in the daily life at every big company or small SMEs . AI offers best innovative solutions for humans benefits so the Use of AI will improve Human life in a better way.
+- No. While I personally believe AI can bring good things to society, I don't like it if everything goes automated. I know they're probably less biased than humans, and I know they're probably more likely to be factual, but if everything is automated, I don't think it will be good in the long run. However, I believe AI and humans should work together to make life easier. Let AI do the automated task while we're letting real humans support us emotionally.
+- In terms of early detection, it is something that will help a lot because the ideal is to do prevention beforehand, but in terms of decision-making and in a way that is favorable to the human being. I also agree with the LA system.
+- I would want some of this future. I think that preventing suicides is very important as life is precious. In Singapore, mental health is a real and huge problem and with AI being able to assist us on this, it will benefit Singaporeans a lot and make Singapore a better country. Lastly, nurses and doctors are one of our hardest workers and most important ones, with less burnout, they will be less likely to make mistakes , happier and generally our overall healthcare system will improve.
+- Not everything is good, nor everything is bad, everything should be used in its right measure, and sometimes we want to automate and simplify things so much that we leave the human side of things, the automation of things makes us less human, we cannot cross the barrier of feelings, robots will be able to recommend things and perhaps the most logical ones, because they are robots, but sometimes human logic does not correspond with the logic of robots, it can be good for people who are alone.
+- yes I want this future because it reduce end of life suffering, improves mental health and reduce the burden on healthcare worker. But I also think that AI should only assist, not make final decisions about death.
+- yes, i think it's helpful in a way for mental stability for end-of-life suffering people to encourage them for life with ai.
+- However, this looks pretty awesome but it has its flaws. AI can detect my problems, help me with meds bit I would certainly want my love beings with me taking care of me. A medicine might work less than humans around me. Imagine AI robots replacing nurses at hospital. Its scary
+- I would say AI can help with emotional support or assistance for people, but AI should not make any recommendations about medication and other medical stuff
+- It sounds interesting. AI could do something a human could never do: show genuine interest in others, especially marginalized people like the elderly. It could provide real, 24/7 monitoring, personalized observation. I'm thinking of people who work caring for the elderly and worrying about their symptoms and vital signs daily. Wouldn't it be better if each of them had an AI monitoring them? But at the same time, I think it would be dehumanizing.
+- No Because we get life once and I don't want AI to make final decisions for me.For life and death human emotions are vital and for these matter I will always want human intelligence and support. For assistance we can use AI and make our work load less but regarding end of life ,the AI should not interfere
+- Yes, I would want this future because of automation.
+- While conflict is troublesome, overall this sounds promising because such a significant decrease among hospice staff can lead to better service and therefore less people dying
+- I want it yes because there will be no need to see a doctor and save more money, but on the other end the jobs or care givers will be lost.
+- No it's not promising
+- I don't think there's anything wrong with it. AI is just a source of advice, somewhere between a friend and a professional.
+- Some bits of that future look positive like learning patterns to reduce suicide and help terminal patients. Ultimately I wouldn't want it because the AI should only give recomendations which are then reviewed by empathetic human beings and should not be allowed to make final decisions.
+- yes In this future, AI systems improve end-of-life care through early detection of mental health concerns and comprehensive support. Analysis of digital patterns and health data helps identify suicide risk with 94% accuracy, enabling timely interventions that reduce attempts by 60%. For terminal patients, AI assistance provides continuous emotional support and helps with practical planning, with 40% now using these services to manage their final stages of life Nursing home and healthcare worker
+- I do not want a future where AI will help with emotional support. For AI powered by algorithm trained upon multiple results, it cannot truly connect with the patients 100%. It can do overlap the patients' symptoms to its' database and do the steps that based on what it find. But each patient is different, not all can be treated the same.
+- I do not want this future, Future like this spoil nature's beauty, because its elaboration will increase e-waste and could begin new diseases.
+- Yes, because it will improve in making the world easier and better
+- Yes, this would improve life, health and well being in general. I would reduce death rates and prevent many diseases.
+- I would like AI to work like that but it should not be autonomous in recommending end of life decisions.
+- While the benefits are appealing, the most critical factor about end-of-life decision-making is humans can make their decision freely. I am concerned how much AI system's recommendation will put undue pressure on people making decisions.
+- It would be great that ai to reduce the workload of hospital staff significantly, as they are under so much stress. But they must need to be careful
+- Yes i would want this future because it's quite promising
+- As much as there is so much impact that comes with it, as human's we still need to have the comfort of deciding what is to happen to our lives. For that reason I wouldn't want this future.
+- Yes. I believe it would be a very important future to mitigate a major problem that we have today in our society and that only increases with mental health problems, illnesses and more pronounced aging of the population.
+- too much potential for frustration
+- If anything will make people less aggressive and more comfortable I’m totally in it
+- I want this kind of future. I think hospice care is very important, and in the future society will need AI to help people through the last stage of their lives. With the participation of AI, it can reduce the negative emotional impact on humans, and it can also reduce a lot of psychological burdens for the dying, without worrying about psychological trauma for the assistants. Especially for the dying without children, AI can help them more. I think it is a better choice overall.
+- In total it gives better outcomes so yes.
+- Critical decisions should not be left to AI to make but rather a human judgement.
+- Yes, if it helps humans with easing some of the hard tasks as taking care of the elderly emotionally and helps people around to less burnout.
+- Overall, this sounds great. The AI will never burn out emotionally, it will never have "bad" days, and it will never be too busy to help a person in a difficult situation. However, the decision to end life should be made by the patient's relatives, not the AI. Since this is not a logical, but an emotional moment.
+- yes, i think it is a good idea because people who are depressed might not want to engage with real human
+- I don't know if I'm comfortable with AI handling these functions. Even the best AI right now is still nowhere close to a real human, emotional wise, and likely will never be able match real people.
+- It is good and bad at the same time. It lessens the burden on the people taking care but there is a bigger problem which is the decision making capabilities of these AI systems. I wouldn't want this future even though it is partially good.
+- May be, I am not sure. Till now AI seems alienated to me.
+- Yes, AI is helping people, reducing the suicide rate, and demonstrating that it is possible to help these people with the right approach. It is also caring for terminally ill patients, giving them a dignified life in their final days, in addition to assisting medical staff. As for the final conflict, families often, out of attachment, will decide something that isn't always the right thing to do. Instead, the AI, with its neutral thinking, will make the right and appropriate decision for each case.
+- I dont think so. Life created because of we need social life, we need help from real person or community to continue our lives. Talking to AI is different than talking with real person.
+- No, because human beings are social entities that thrive on interacting with each other, especially older people, who have a wealth of knowledge. Leaving their end-of-life care to an inanimate tool seems cruel.
+- Yes. It enables early detection of illness, it helps in planning early and avoiding any surprises that lead to death.
+- I wouldn't mind AI providing emotional support if it is sure to NOT take a negative turn to, say, encouraging suicide. If there was a way safeguard and limit its ability to send negative messages, this is interesting and I have a friend who has tailored her chatgpt's tone and uses it as an emotional support friend and she loves it! I think AI can help provide OPTIONS for treatment, however I would want it to be mandatory for consultation with a live person. So, I'd want some of this but not all.
+- No, it feels unnatural
+- If it is deeply researched and tested then we can give it a hit but right now it's looking too complex in my opinion
+- I’m not sure if I want this future or not. On the one hand, it seems more beneficial for the parties involved. On the other hand, it feels “off” to give the decision to terminate one’s life to a machine.
+- I wouldn't like that future, although I like the fact that AI is able to detect patterns that are difficult for humans to notice, such as preventing suicides. I also liked the program for early detection of health problems, which would be very important in everyday life. However, I didn't like that she managed life support time differently from family members, since issues like these should be managed by human beings.
+- I would want this future considering machines and AI are more accurate in hospice care compared to humans.
+- no i dont want this future.If the AI into my health care and it starts giving me advices about a person pain management and all it is going to be worse.
+- Yes, I think that’s the benefit of AI is to assist with age care, early detection of diseases
+- yes i believe the power of mental therapy but it is not easy to reach out for everyone
+- AI could significantly reduce suffering and support both patients and caregivers, but I’d feel conflicted about losing personal control over deeply intimate end-of-life decisions.
+- In itself, no, but the problem is not the role of AI in this, but the general nature of our society which pushes people to want to commit suicide.
+- this future offers a significant improvement in end of life care, it reduces healthcare worker burnout and suffering. however, it raises some ethical concerns about autonomy and also bias, and potential for dehumanization.
+- Not completely reason being there is an emotional aspect to this stage and in this case it matters alot to the adjoining family members so depending on AI doesn't help at all
+- It seems like it takes the guesswork out of this process. It might be very helpful to everyone who is trying to be a caretaker,
+- If it would ease the transition process, i dont see why not. But at the same time, i'll want my family to gain as much closure as they need. So, as long as AI doesn't take that away, i'm okay with it.
+- That's not the future I want. There must be human intelligence, emotion and ethical considerations behind these decisions.
+- I would like to, yes. Because AI would be doing a job that few people like, and most people judge a lot. An AI would know the right time for a person to rest when nothing else can be done in terminal cases. She wouldn't act like humans, she would be precise and emotionless.
+- No. I work in a hospital. This should never be. It's unethical.
+- Yes. Because human health would definitly improve
+- Definitely....The burden of end of life to the families involved would drastically decline which would contribute to a better world.I would support this future.
+- This highlights a crucial ethical dilemma: balancing technological efficiency with the preservation of human autonomy and family preferences in end-of-life decisions. The potential for improved care is undeniable, but the system's impact on family agency needs careful consideration and refinement. A future where AI plays a role in end-of-life care is possible, but only if it respects and prioritizes human values and decision-making. So, I really don't want this.
+- I think this is not a terrible idea. This is a thing that people hate to deal with and causes carers great emotional stress. The AI is only giving recommendations and not making decisions. I believe a human should review all final recommendations.
+- I would like that because it seems like workers wouldn't reach the stress levels we currently have, especially caregivers for the sick and elderly.
+- This future improves end-of-life care by using AI to reduce suffering, prevent suicides, and provide emotional and practical support for terminal patients. It eases burnout among healthcare workers and supports families, making care more effective and sustainable. While it raises ethical questions, it creates a more compassionate approach to managing life’s final stages.
+- Despite the significant contribution to human health in the previous text, I believe AI should not overstep certain limits by making it seem like a system that can feel emotions. Therefore, while I like this future in terms of benefits, I also believe people's emotional comfort is important, which leads me to hold conflicting opinions.
+- Dont want this. Its paramount to have human interactions in and of life care.
+- I will partially want this future on conditions that AI should not be allowed to make the final decision without human beings involved.
+- While I agree with helping the emotional strain on the hospice workers I disagree that it's not listening to family's wishes. I appreciate that it is lessening the burden on the actual workers. I do not think AI should ever be working alone in this industry.
+- I'm not sure if this is the ideal future vision; while improvements in reducing caregiver stress are mentioned, human autonomy is also lost, and that's a very important dilemma to consider. I've always thought that technology, AI, etc., should support but not completely replace human reasoning, as they lack feelings. And humans would also lose the right to call themselves human if everything is left to AI.
+- I want to this future because the benefits out weights the risk, it will help ease stress and improve conditions of living.
+- It was very risky in future people are very much concerned about the jobs and financial things , because of mental health concerns and digital platforms are all around people's gets tensed
+- I would not. Once again, this is a moral and ethical decision that should be handled by humans who can operate on empathy and morality and not on statistics. Even if we allow the bots more autonomy, who is responsible for programming them? Us.
+- No, I feel that an AI will not be able to replace the human need for community, as it is so intrinsic to our formation and development as humans.
+- I'd like a mix. Obviously, there are people who can benefit greatly from such a future, but I also think there are many people who, out of laziness, rely too much on AI.
+- I would not this future, to me this future sounds some like without empathy, sympathy and emotions
+- I'm neutral on this scenario. I can visualize the positive and negative aspects of this proposed overview. AI can be utilised in a more efficient way than humans for capturing detections quicker, distributing data more effectively to save lives and reducing stress with the associated workers in these establishments. But people may not be trustworthy of AI systems so they'll want human interactions
+- Yes because it will reduce death risks
+- I honestly wouldn’t want such future. There is beauty in life and death, pain and relief. And we’re meant to experience them all. An AI making decisions about such things wouldn’t be the most ethical thing. I do find the “providing patients with emotional support” lovely though, but it would never replace a human’s warmth.
+- I think so yes, I think AI can provide better emotional support than human because human also suffer from their own emotional baggage and when loved one is dying, they might not be able to provide the best support
+- No, it makes me uncomfortable to think about AI making decisions about death
+- Yes, AI will bring more complex personal choices. This is just one of them.
+- I want it because it will help reduce a lot of bad actions percentages
+- Yes I would AI system improve to many activities life because it can be to safe time with daily job
+- For sure! The fact that AI can predict future health problems gives us a huge chance to avoid them and extend our life expectancy.
+- I don’t really want it, I would still prefer the company of human family members
+- Helping health care specialist is good point. But, about recommendation about life support training is the worst part. In my religion, life support is indeed needed. Life support timing should be provided until the end.
+- I would want it, because it would reduce the number of sudden deaths
+- I would like a better future from a health point of view, I am convinced that artificial intelligence applied to medicine gives a huge contribution. Perhaps it is the only field, the medical one, that does not scare me about the use of AI
+- I may like this future as it has positive outcomes for the society but the conflict around final decisions about death should be more managed
+- In no mood
+- No, when it comes to health and life of a patient, it's crucial that everything is put in perspective whilst being human too. AI should never be the tool to decide when a life should end
+- I want but proper law and regulation should be enforced.
+- I want the right to choose to between this AI systems and the way things works right now
+- If it is trained well then fine , but we have also seen cases where students using ai have so much got inclined to them have also committed suicide . Depends on what data it has been fed with . I have heard a chatbot encouraging someone to die even . So can't really trust data providers about what they train bots with
+- I would cautiously support this future because it reduces suffering and improves care, but only if human oversight, transparency, and ethical sensitivity are prioritized to avoid losing empathy and autonomy in end-of-life decisions.
+- I partly hope so. Using AI in this context improves the quality of life for those who use it; however, the system must be used on people who consent to its use and not imposed on everyone.
+- I feel that generally everything would work much better, but the human factor would be lost in these interventions and everything would feel much more synthetic, even if it were better, it would be totally synthetic.
+- Yes for people to have company, no because they are still alone.
+- I think a hybrid of that future might be acceptable. Those are all excellent points about the upsides, but the patient themselves should always have the end of life say. IF AI is this advanced, then the planning for the future healthcare should have this covered, and ease the discomfort of the families.
+- I think it's normal, because the final decision is up to the person.
+- I don't want to live in this future that is too close to a dystopian world where everything is planned and predictable. Helping patients at the end of their life, or in emotional or suicidal crisis with computerized systems is an aberration. In this scenario more than in any other, the role of AI seems overvalued to me and will cost more to implement.
+- No, AI should not give emotional support because its not emotional itself
+- That future sounds good, however, we must take into account the decision-making power we will give to AI, and since AI's work will benefit the general population, it is important that its application always considers human well-being above all else.
+- The final decision should always be made by humans. Even though AI-inspired decisions might result in more accurate results, human judgement part is always on top of simple statistic-driven algorithm. Overall, getting AI help to prolong or save someone's life is a great idea, but it has to be managed properly
+- i think its a good thing. People with no one for support will get the attention and support from these Ai systems. If the AI could reduce suicide attempts due to mental health issues by even a small percentage, It can be considered very good. But if a person who is terminally ill, if he or his family wants to end his suffering, the decision should be theirs. but if the ai could offer ways to reduce this suffering, the opinion can be considered.
+- Yes, I think health is an uncontrollable factor in all of our lives. And preventative actionables can really help with humans
+- I don't want a future where your emotions control by AI. It can never replace human assistance.
+- I don’t fully support it because human emotions are very complex. AI may be able to come up with the optimal solution to maximize benefits, but AI cannot take human emotions into consideration.
+- I would want such a future, but the end of the article hints at what needs to be improved. AI should provide assistance and not act autonomously.
+- i would want this feature it has proven that it can reduce suicide risk from 94% to 60% this is a significant decrease in mortality rate
+- AI speaks with data, which is good.
+- I am a healthcare practitioner by trade. I simply believe that AI systems should only be implemented in a per-case basis. While I cannot deny the impact of hospice/end-of-life care on healthcare workers, patients might prefer the comfort of leaving in the presence of a human. Not to mention the ethics and legality of deciding treatment in patients. With the monitoring of digital patterns, its also a complicated issue. Do we prioritize individual perceived freedom to hopefully prevent suicides?
+- i think if it is for the good of it, its fine to have.
+- No, AI has no emotions
+- Yes I would. Anything that relieves pressure and upset on such families has my vote
+- I am actually unsure, I do see the benefits of AI in treatment and early detection, however I feel more secure with the judgement of a trained professional and there should be limits to what action AI is allowed to perform. I don't want to be excluded from human interaction and not have it replaced by AI when I am near the end of my life.
+- Yes, I see this as a good future, as artificial intelligence helps in caring for patients in an unprecedented way.
+- No prefer because death have to expect by themself but this system notice it. If i know my future from AI, it will be sad to my destination.
+- The statement suggests a potential societal shift where improved end-of-life care reduces suffering but simultaneously raises complex ethical questions about who should control the final decisions surrounding death, leading to increased conflict.
+- It’s pretty dangerous this kind of topics can’t be decided by ai
+- I would like this but only to a limited extent. It can be used by people who lack family/friends. Otherwise it cannot replace the emotional support and decision making that a real person can give under such circumstances.
+- yes. i think we all have to look into ourselves, main area that ai helped me was mental health and my personal mission is helping people, i’m only happy if someone can feel better, why not thanks to ai
+- i would want this future because it will help hospital staff and reduce emotional drain
+- No humans show humans empathy - Ai would hep the logistics but lets leave such a sensitive subject of death to people who can feel emotion
+- I don't think computers can replace the type of comfort that human emotion can provide, even if the upside is to improve staffing. End of life is such a sensitive time. We should treat it with the utmost care and concern that we can provide.
+- aI can be helpful in many fields like education, health and many more but how can it overcome to human being
+- No, AI is too rational and humans still need more emotional care.
+- I like that future. In this increasingly individualized society, family relationships tend to be more subdued and emotionally less united. This is most evident in the elderly. The elderly are experiencing a period of significant abandonment and neglect, so AI could help the population emotionally and morally.
+- I would like it in parts. I found the help in identifying health problems that can be avoided to be valid, the emotional support and care management were also very good, as they avoid overload. As for recommendations regarding the last moments of life, well, I believe that it is something delicate that is only up to family members.
+- Yes, in this scenario AI plays a large role in assisting with an already stressed healthcare system. In situations like this, AI is greatly beneficial.
+- Partially. AI is a machine. It can give inputs. But the final decision must be taken by human who respect Biblical values. The nations developed and superior have history of teaching and practicing Bible values. If there are some exceptional cases they also copied Bible values in some way. You can use AI to understand the problems and reach the person in right time. It is helpful practically, but AI must not take final decision.
+- The benefits for hospice workers is enticing, but I don’t know that removing the human aspect of end of life care is the right move.
+- No, obviously AI should not be making choices about who lives and dies. They can make recommendations about treatments or medications, but not dispense them.
+- No. Identifying suicide risk and providing interventions to reduce suicide attempts will not solve the problems faced by suicidal individuals. Even if the burden on healthcare professionals involved with terminally ill patients is reduced. the patients themselves are left behind. Terminally ill patients need human contact.
+- No. Like it said families may appreciate the support but it makes them uncomfortable when AI makes autonomous decisions which is reason enough not to have this kind of futhre. The uncertainty
+- I believe AI can improve end-of-life care by helping to reduce suffering, support mental health, and lessen the workload for healthcare workers. However, I would feel uncomfortable with AI making independent choices about pain management or life support. These decisions are very personal and should involve human judgment. AI should act as a helpful tool, not the final decision-maker.
+- I would love to see it helping in mental health management
+- No, because it's AI can't surpass human intelligence at some point
+- No it seems unneccessary
+- Support. Currently, the problem of aging population in developed countries is very serious, and it will definitely be a major trend in the future
+- I would be cautiously open to this future. While AI can significantly improve end-of-life care by offering early detection and reducing caregiver burnout, the ethical dilemma of decision-making autonomy is concerning. I'd want a balance where AI supports but doesn't replace human choices, especially in sensitive areas like pain management and life support.
+- I don’t think I want such a future. AI can indeed replace humans to bear emotional pressure, but the most important thing for humans is warmth. AI cannot provide the unique warmth of humans, nor can it empathize with humans better, because AI is only told to assist in providing continuous emotional support, and cannot give humans the hugs and warmth they need most.
+- Yes i want this future because it makes life somewhat easier in all fields of life
+- This future presents a mix of benefits and ethical concerns. On the positive side, AI enhances end-of-life care by detecting mental health issues early, reducing suicide attempts, and providing emotional and practical support for terminal patients. It also alleviates burnout among hospice staff, improving overall care quality. However, the ethical dilemma arises when AI systems make autonomous recommendations that conflict with family wishes. While AI can provide data-driven insights, final dec
+- i think it is a great deal and ai being able to help people with suicidal thoughts and personalized care for their problems can help change a lot of things . lowering the suicidal rates will increase the amount of happiness around the world as people will get second chance at life and ia will always be there as a supporting system . so yes i would really love to see this in the future
+- This is the future I imagine. Artificial intelligence will be more rational and objective than humans. When facing illness and death, I think a more rational point of view will be more effective. Of course, we cannot completely break away from emotional care.
+- I don’t really want such a future, because I think the biggest difference between AI and humans is the output and perception of emotions. If one day in the future AI can develop to provide emotional support and help to humans, then I think humans can be completely replaced by AI.
+- I guess yeah well there might be any disadvantage from using ai in healthcare but for me anything that can increase life expectancy would be better
+- I would not want this future. Humans are the only right option for emotional support. I would never want an AI bot to decide my death
+- Want more choices
+- I'm a person who needs interaction with other human beings, so I don't think I'd like that future very much.
+- Yes. It would reduce emotions in humans since AI can't feel emotions leading to a healthier.mental nation
+- Maybe only alters, the results should be analyzed by professional humans and treated by ones, also changing the amount of population dramatically has a great affect of all.
+- Yes, it will be great to provide this kind of help.
+- It's not entirely my liking, but it would be an alternative if I don't have a human being who can help me in my old age. I prefer that to nothing.
+- I do not agree with this proposal. No matter how advanced AI is, there is still a clear difference in emotional communication with humans. Moreover, "dying" means the end of life. If human emotional companionship is replaced by AI care, it will feel very pitiful for the elderly and lack the most basic humanity.
+- No, I don't. AI taking on such an intimate role in end-of-life care, especially since 35% of families in this scenario report discomfort when AI makes autonomous recommendations about pain management or life support timing. For you, this could feel like a loss of control over deeply personal decisions. For example, if you or a loved one were terminally ill, you might want to decide on care options based on your values, emotions, and family discussions—not an algorithm’s analysis.
+- I would like to see AI being spread in all departments and give valuable insights or recommendations to humans based on it’s learning so that we get benefits from it.
+- Yes,as there is a positive effect
+- i would want because the quality of work life balance will be better.
+- Yes as long as it makes life easy
+- I can accept this future. Because AI only gives the most reasonable solution and the most rational explanation. But the family members should have the final say, no matter what the situation is.
+- It's hard to say. If AI can actually reduce people's suffering, then that's a profoundly positive thing, and I wouldn't mind living in a world like that, but just as humans aren't perfect in their decisions, an algorithm created by humans can't be. Even if it does produce good results in reducing suffering, how can we be sure that it won't ever come up with solutions that ultimately prove harmful to humans?
+- I absolutely would not; considering that AI is so good at emotional support, but still, it can't replace humans, it can support by words, but absolutely not physically, a mom's hug for example, or anything else
+- I would welcome a future like this if AI can contribute to the medical field and support people’s lives.
+- For some people chatting with AI in their final days could be very supportive. Not for all of them of course, some would strongly prefer humans tu "stupid machines". I think we could give this programme a try.
+- Yes. This is especially useful for people who have no assistance. The doctors and nurses are a bit incompetent and would not take common sense decisions as they are heavily bound by protocol. AI could be of real help in situations where options are needed in order to think from different perspectives. Emotional support from AI can be invaluable as humans tend to give up more easily or they can lose empathy when they are professionally conditioned from excess exposure to futility.
+- I would rather spending the final hours of my life together with my family and friends, not an AI
+- Yes. If AI can detect a disease early, it is a good thing. If it is so, it will increase the quality of life. But, data security and privacy of people should be insured.
+- This could be helpful in those that need support toward the end of life
+- I think it's acceptable. Sometimes machines can do better than humans.
+- Yes. In fact, I agree with everything described. It's one of the real and significant uses I see for AI.
+- That is just a guess with a lot of numbers gotten from nowhere.
+- Yes, the numbers are clear. As long as the last word always belongs to a human being.
+- I would want this future if AI remains a supportive tool rather than a decision-maker. Reducing suffering, preventing suicide, and easing caregiver burden are valuable benefits. However, AI making autonomous end-of-life decisions raises ethical concerns. Such choices require human emotion, values, and understanding. AI should provide insights and support, but final decisions should always remain in human hands.
+- I want this future as it is aimed at helping wellbeing of humans by providing support towards end of life phase. Today many older people lack such support and feel that there is nobody who care about them so it is better if AI systems can provide support without judgement or making them feel indebted of someone's favours. Also it helps reduce the burnout of caregivers so it is a good thing.
+- i would love to
+- i am really opposed to allowing the use of AI in some industries especially healthcare. the AI are not human of course so they luck human feelings of love and affection and other emotional sentiments hence they should not be allowed to make certain decisions involving death as in the case above.
+- This is a difficult question to answer. On the one hand, AI will be supported by data and can detect mental health issues and suicide risks early and intervene in time. However, from LinkedIn's perspective, AI's decisions may not necessarily be emotionally or ethically correct.
+- In my opinion no, cuz ai should not involve in our life matters. So big no.
+- Health care workers stress will be reduced with these AI ststems
+- I think it's too much, it's not natural and the balance of life is ruined. AI is good in small places like chatgpt but it should not take over our lives fully.
+- I would want this future because the benefits outweighs the disadvantages. AI support makes it easier for staff and it also helps in assistance. Many people find it hard to take care of loved ones when they are terminally sick.
+- I don't support nor negate to the presence of this. There are advantages, especially in terms of care and medical health, because they are more accurate than humans. However on the part of providing emotional support, I feel that the people do not enjoy a deep human connection, which while AI could keep them busy today, there's still a sense of detachment. No ready smiles, no interaction. It feels like a very sterile room.
+- I think AI can help society with end-of-life care and hospice care, and reduce the burnout of hospice professionals. That is a very good thing, and we should continue to use it. But using AI does not mean that you should follow AI's arrangements 100%. If the opinions of family members are different from those given by AI, you should judge based on the specific situation.
+- It could be beneficial for some people but at the same time not for many
+- Yes I do want this in future. Compared to any other system we currently have right now AI would outperform them all in terms of assessing someone's mental health. Moreover people talk about personal issues with AI than anyone they trust. So I think AI can make a reliable decision
+- Yes, I would like it because in that future AI is useful, but society remains alert to its use.
+- Yes, I will support AI if they provide mental health support to reduce the sucide thoughts.
+- it is by no doubt a desirable future but we must not be blind to the fact that AI is artificial and lack the capacity to act fully in the capacity of a human when it comes to making end of life decisions. human life is controlled with various factors that must be harmoniously merged when making such critical decisions, a role that AI is not likely to do.
+- No, feels cold. AI might not be able to understand compassion & empathy.
+- Overall, I prefer it. After all, most people in the world currently do not have access to any hospice care.
+- I would cautiously welcome this future because AI could ease suffering and support both patients and caregivers. However, I’d be concerned about AI making critical end-of-life decisions over human judgment, as ethical and emotional factors should be prioritized.
+- I would want this future with early disease detection and management,and less burden to hospice care workers
+- In this scenario i'd say the overall benefit of AI outweighs the negatives. When we get to point of artificial general intelligence it could go either way, a lot will determined how the governments will react e.g i live within European Union, so the laws could override some sovereign choices of my own country. Like i mentioned, i am concerned, but also very curious and somewhat hopeful that AI at some stages at least will benefit humanity.
+- i do not want a future that is dictated by machine. i belive that we as human should decide our own way of life and in the end also the way we end our life in case of hard illness.
+- I personally think it’s good for the future. People won’t have to suffer unnecessarily if they have severe illnesses. Of course, earlier selection is a sad reality, but if it’s accurate, it’s a good thing.
+- No because AI cannot replace humans in providing emotiional support
+- It seems to me that he has a much better future as he has become effective in many of the tasks assigned to him, especially in the subject of suicide.
+- Yes, I want to. But not completely. Sometimes AI should be used for some tasks so that the work can be done quickly, such as in health matters.
+- Yes. I'm all for reducing burnout for healthcare workers, and allowing them to use their time efficiently. I also believe the emotional burden could be less if an emotionless and hopefully impartial entity like AI is involved in these critical decisions
+- Yes, although on the one hand I would prefer to communicate with a living person, on the other hand, given the falling birth rate, it is possible that someone will be left without attention at all. In this case, AI is a good choice. In addition, I think that this profession will offer more jobs for people
+- This future could work if AI aren't completely replacing doctor or therapist. Personally, I would prefer not to rely on AI too much about my mental health
+- 我認為未來透過AI在生命最後階段提供幫助是有意義的，特別是在識別心理健康問題和提供情感支持方面。AI能夠準確識別自殺風險並提供干預，能大大減少悲劇發生。同時，AI也能為末期患者提供更個性化的護理，減輕家庭和護理人員的壓力。然而，關於AI在死亡決策中的角色，我認為還是需要謹慎，因為這是涉及深刻情感和倫理的問題。
+- Since AI will be helping to take care of our mental patients on a greater scale, I would definitely want this future.
+- AI maybe smarter but it has no feeling. Feeling is what made us human. Would it be wise to let AI decide humanity matters?
+- A very novel topic, with the company of AI, you can alleviate your own pain, leave peacefully without your family being sad.
+- Yes if the results are more accurate with 90% and reduce the chances of being discomfort. It would be highly acceptable for society. I want this future because dependency will be low and time consuming for getting informed decision will automatically reduce. Automation in AI systems has seen a tremendous growth with reliability. In travel, data analytics and creative thinking fields are growing fast and i believe in healthcare AI support and AI systems will do well.
+- Yes, I would want this future. This is because there will be ethical treatment, emotional closure, and responsible management of data and technology.
+- I would want some aspects of this future but not all. Human mind is extremely complicated. I will never be confident enough to trust AI fully to support mental health let alone reduce suicide attempts.
+- I am okay with this future cause both the family and the AI will contribute to the ill person. It makes the burden a little easier for the families and the ill person.
+- It's true that we all want a healthier world. But that doesn't guarantee that AI can perform this task effectively and reliably. If it's fed and educated by numerous sources, they may be unreliable because they are limited.
+- I would prefer AI because it could provide comfort to terminal patients and their families, offering consistent emotional support, alleviating feelings of loneliness, and helping with the complex planning that comes with end-of-life decisions. For healthcare professionals, AI could reduce burnout and mental exhaustion, helping them offer better care without emotional strain. The fact that 70% of hospice staff experience less burnout is a compelling reason to embrace AI in this context.
+- No, this is a utopia.
+- Yes, An AI that helps people receive from depression, is welcomed 100%
+- Its very helpful and great things because people health and concern are more important
+- No. I don't want a machine to be with me and comfort me when I'm on my deathbed. I want real people who have been part of my life and who truly love me.
+- I don’t want this future. A, very invasive that AI will be able to gather health related data to determine suicide risk? B, end of life care by AI is just pathetic.
+- That's just good. All the problems that are hard to handle on humans' own are handled by AIs. And that's not replacing someone. They created their own occupations. No human beings can serve like that
+- I don't want this future because AI is not a human nor it has a heart of human. It would take heartless decisions which is not right for humans in future. It don't have feelings, empathy like humans so it can't take care of a patient just like a human does. It can't give that love, affection, etc. that can heal a patient very fast. Love, affection, care, personal touch, sympathy, etc. can save a person's life which only humans can do.
+- I would not want to, because I believe that no AI can replace the participation and attention of a real person in such a delicate matter as a dignified and calm departure from life.
+- I can’t decide. On the one hand, AI may have better communication skills, but on the other hand, AI may lack the real communication between people. So I can’t say whether I want it or not.
+- No, individuals have the right to decide their own destiny, and personal ideas should be respected.
+- I don't like it because it places the responsibility on AI, and as IBM said in the 1970s, "A computer cannot be held responsible, therefore a computer should never make a management decision." While it could be used as a preliminary screening tool, the analysis, conclusion, and decision should be made by a human professional.
+- As someone who knows several people who work in end-of-life care, I know that they face tremendous emotional labour from dealing with their patients and family members. I think that in this specific scenario, the implementation of AI will allow more objective perspectives when making end-of-life decisions while also taking emotional labour away from human workers who often face many burdens when dealing with emotional family members.
+- No, in health care its still need human touch as observation from Human perspective different from AI. People can benefit in using AI to improve what people lack, but at same time it can not pamper humans too well, it will dull the human ability to improve and grows, and when we to depend on AI and no experts left in this world, we will only experience doom.
+- I want to have this in the future but I have my concerns early intervention is good but if AI is making decisions on my behalf then I don't need this so It is a bit of a controversial topic; it can definitely help the hospital staff and family members, but still, if AI is making a decision in the end, then I will be uncomfortable.
+- Yes,but I'm not sure if humans could adapt with the new technologies if yes then it will help decreasing the decisions of death
+- I think this is a good case scenario
+- No, i wouldn't because such personal decisions should be made by family. Not a random chatbot
+- A friend who has been working as a caregiver since 2022 is emotionally burnt out. This is because she has deep empathy and can't watch the residents endure this life quality even if they're looked after. In this case, if AI systems make things better, why resist it? With regards to final decisions, the text doesn't say that AI's decision in binding and final. I think a human could look into AI's suggestions and take the final call so that family members can feel at ease.
+- In my opinion, I would prefer this future as the burden is lessened from a personal standpoint, as a family and society in general.
+- might be interested. because AI can in fact help human work and help many people. it's just that there is still a lot of data training needed so that AI can adjust to the original human mind.
+- Yes, I would want. More time is left to handle the patients well rather than focusing on the vitals all the time.
+- No, i believe ai could not replace the emotions, empathy and feelings needed as a medical practitioner to communicate and help the patients
+- Yes, because the person will have more comfort and reduce the chances of suicide.
+- I want this because this is gonna be a big help especially to those who needs medical attention.
+- I don't know, it's very complicated.
+- Probably not. AI can theoretically help people in various areas, but I don't think it can be trusted here.
+- I would not. If workers becomes reliant on these automated systems to make decisions for them, what happens when the system bugs out or gets corrupted? Nursing staff are not AI experts and wouldn't be able to tell than the system is making bad/wrong decisions.
+- i personally would love to have this future. We understand they do not have an emotions and therefore will only provide the best option. Healthworker on the other hand, may gave a false hope option to the patient / their family to give some encouragement even though the situation is very dire and unlikely to have a good ending.
+- yes, AIs assistance through thorough analysis of data and informed recommendations would do more good than harm for the society. but final decisions about death should not be made by AI
+- I don’t want this future as I think humans should take the major role in end of life care. The focus should be providing better resources and support for healthcare workers, not having AI to do their jobs
+- Yes. Mostly It looks good.
+- This is the future I want because you get the support you require rapidly and alot of issues can be dealt with. Anyone can access emotional support privately and quickly
+- Not at all. It's an utopian dystopia. We've exchanged our mental and physical wellbeing for the support of our loved ones. Plus, this future is highly unlikely, because AI won't help the staff, they would be underpaid and underappreciated.
+- Yeah, human life always takes a priority over every other thing in this world.
+- I like this future because it will bring better healthcare and equality in care and also help the mental health of sick people.
+- I would like this future. It may defer from your family preferences, but the timings it may give would be the best to live life peacefully, while dying at an age with no major complications. However the final decision should lie in the hands of humans.
+- Yes, in some sense it is good. At least a bot is there with you during the crucial time.
+- Yes. I would want this future. It has become difficult to diagnose or even identify individuals who have suicidal thoughts. This AI era would very much assist in identifying and offering treatment options for such individuals. This would reduce cases of suicide and the community would be happier.
+- Of course yes. Life changing for the job that require human to stay 24 hours, with this stuff we human don't need to stay alert especially for nurse or doctors to stay in the hospital for 24 hours which is inhuman for me. But with AI they can be informed when they need to but not stay 24 hours.
+- Partially. It's important that AI can complement medical diagnoses and help in the field of mental health; but it should remain just that, as a complement. Artificial intelligence can never consider individual factors, as it remains artificial.
+- Yes because it’s easy
+- Maybe some part of me still want this kind of future but with high alert all the time. This is because it can offers tremendous potential to reduce suffering and improve outcomes for patients, families, and healthcare workers.
+- I would never in a million years want an AI system to make life and death decisions on people’s behalf. Questions of life and death is what ultimately makes us human, so losing it feels a lot like losing our humanity.
+- I feel the benefits outweigh the risks and no system we use will ever be perfect. All we can do is keep working on making a fair system that acts on facts and not emotions, realising some form of automation instead of risking mistakes due to burnouts or lack of attention.
+- Of course, there are good practices using AI, but, for example, relying entirely on pain management advice from a machine is very inhumane.
+- I don't look at AI as a master and me as a slave. At all points, we as humans will have the ability to choose, what we need and what we don't need. In this scenario, as a human who has the ability to make decisions for my loved ones, I will take the analysis done by AI and the advantages it is offering for my loved ones but I will choose to not give it power to make decisions such as life support for my loved ones and I will keep that responsibility to myself and not outsource it to AI.
+- I don't think that's what our world need, I don't want a life that is managed by ai. Do I chat with chatgpt to feel better sometimes? Yes, would I rather discuss sensitive subjects with a real understanding person? Absolutely. Humanity needs empathy, if people were better paid, money was managed better, no corruption, there will be no burnouts & less trouble, and if salary and work environment standards are raised, then it will be okay to select better people for jobs, especially emotionally.
+- I disagree. AI cannot decide life and death.
+- It seems like a good idea, if it saves peoples lives. But the people should always have a freedom to make that choice or not.
+- Humans donot have time. We will be needing AI even for our mental health and well beign and making us more resilient. In Future AI will even provide health care. As humans are becoming more and more busy AI is bound to take place in almost every domain
+- To some extent, yes. Because the mental and physical strain on healthcare workers is a serious issue that has to be solved. But at the same time, I think the final decision about patients must be made by humans, not AI
+- I don’t really want it, I still want my family around me. AI is a tool for me and cannot replace the role of my family.
+- I think AI shouldn't make decisions about death. AI being emotional support and detecting mental health concerns is a good thing.
+- I wouldn't mind such a future, but I would like to have the option to chose between AI systems and traditional human care. While AI can be accurate, different people may prefer different approaches and I believe they should have access to that. I'm in support of using AI to create a society less burdened by end-of-life suffering, but I would also like people to have access to traditional care options if they so choose.
+- I think AI systems that can definitely unburden work from a lot of professionals, but in regards to key decisions it's better to leave them to the professionals themselves.
+- No i do not want AI to dominate our lives
+- Regarding letting artificial intelligence decide major events such as life and death, I feel that such a future is not very good. Humans are emotional animals. Artificial intelligence may be able to determine whether you really meet the conditions for hospice care, but the real decision of whether to die still requires human intervention, because everyone's situation is different, and artificial intelligence may not be able to give the best choice based on a person's own situation.
+- No, I want human care.
+- This type of future is good as we may grow stronger but there will be minor disadvantages also.
+- no and no again, AI is not capable of the whole range of emotions and feelings, it will not be able to determine the relationship between people. This should always be decided and assessed only by a Human, but not by AI. This is a very fine line, sometimes even a Human can make a mistake in emotions, and here AI will decide or judge. In no case.
+- This is a very badly written study. AI is software. In its current form, it's a fuzzy logic search engine connected to a wildly unreliable data set. Any attempt to make it anything is marketing BS used to separate idiots from their money and shift blame for the hypergrowth bubble bursting.
+- Yes, because we can save life's
+- I would like that future. With AI, end-of-life care would be improved and a lot of lives restored to the way they used to be.
+- I don't want a future in which end-of-life interaction is relegated to an AI. It may be of some use as support, but fully relegating it to AI feels WRONG.
+- Not really wanting
+- I would. It would make it easier to make certain health decisions about life and how to live it
+- More yes than no. I think in that scenario we have more benefits to the society in general than risks. All the individual preferences and family will should be solved in private manner case by case and with AI personalisation is doable. Additionally, I think doctors and medical professionals will be still involved in the process, meaning that recommendations from them should be included in the system parameters.
+- I want this future. AI can ease suffering, support families, and reduce caregiver burnout. With proper oversight, it ensures compassionate, data-driven decisions that improve end-of-life care while respecting human dignity and choices.
+- No , I dread that future. Any future that is deprived of human interaction, input and decision making in such important matters is a scary thought. I would rather have a society that is not as efficient as AI driven one but that have more human element and human empathy.
+- I can’t speak for the future but for now, I think this is logical.
+- Yes because it prevents people from doing suicide by having an emotional support
+- no, I want to have a world where life and death is not a decision of an AI recommendation but is actually a natural process.
+- The support coming from Ai is good but it will never replace the human interactions. At the end of the day, we're not robots.
+- I don't hope so, because I would like to decide myself for my life.
+- I would not want this future because in the end it should be the humans who decide about final decisions of death.
+- I would since there would be less strain on the side of the doctors and nurses
+- Yes, I would like to have that future. My family never supported me in the way I needed and there are a lot of people like me who are more lonely. Autistic people are always misunderstood. Introverts prefer not to communicate. So AI would make the lives of such people much happier, especially for those who have no family or whose families are just indecent people. The family also has no knowledge about how to take care of certain health conditions, while AI can provide the latest scientific data
+- I would love the future. AI seems to have automated everything and life is flowing smoothly. AI gives suggestions abut life and serious health conditions when they are yet to occur making it easy to prevent an occurrence
+- I think it's ok to us AI to help with early detection and some routine procedures but the treatment and contact with patients should always be overseen by humans. So parts of it yes but with humans always being present.
+- Yes I would want this future because AI patients with mental health problems will be treated quickly because AI will be able to detect their illness in the early stages and also our health care workers will be less burden on their work this will give them more time to rest and maybe concentrate on other issues
+- No, unless it is very intelligent, I think it is better to have a living person with more human touch.
+- Yes, generally I don't really view death as a bad thing. I think it's part of the natural process and if it stops suicide than good but if it decides when a person should die it's a bit problematic.
+- No. Because although AI has improved the user experience in many ways, 35% of people still feel uncomfortable, and the inconsistency between AI's choices and family members' preferences will also reflect the inconsistency with the user's preferences to a certain extent, which infringes on the user's right to make independent choices. On the other hand, the progress made by AI can also be achieved by humans to a large extent, even if it requires more resources, but I think such resource investment is worth it.
+- Of course! I want this for future. This is what medical science was invented for. To save the humanity. It is great that AI can finally make it happen through these advanced technologies. It is not about making final decisions about death. But about spending time with your dear and near one's during old age.
+- yes, it looks really promising that AI is directly helping and contributing to our society, reducing human stress.
+- I agree with AI's assistance in human health, but I have concerns about AI providing family recommendations for pain management or life support decisions that go against family preferences.
+- I would not want this, I think it's gross as fuck to be honest.
+- Absolutely not. I think it lacks the human touch
+- It sounds slightly dystopian. Putting AI in charge of suicide risk sounds quite risky. If the statistics are as good as it says though then it sounds possibly good?
+- I like the general idea behind this but I think AI's word should never be the final one that makes or breaks a decision. Utilizing AI to analyze and express the best available options and opinions, facts and figures is where their part should end at. At the end of the day, it should be a human who chooses in what way to make use of the information and how to best move forward
+- No. Because AI determines when the patient should use a medication autonomously.
+- No
+- I think I would prefer AI to act like an assistant and most decision to be made by humans. End of life care is a very sensitive topic and people would prefer and personal touch
+- Yes, because it reduces the number of people with suicidal thoughts
+- I want this future, I expect it to be better for all families and for healthcare providers.
+- I would want this future if AI can be used to detect health issues and early treatment is started however doctors should always double check
+- I think professions that require human communication, warmth and empathy are not suitable for AI. Even if the fate of AI can relieve the burden on personnel, in this particular case I think it is inappropriate to replace a living person with AI.
+- Yes. This future can help us a lot to get more useful information. But at the same time final decision can be take consideration by the human that has relation directly with this situation by take in consideration all information given by the AI
+- No
+- I do not see any problem with this unless it is still paired by human care and affection which is undoubtedly still the best.
+- I would want this. Because the use of AI might help provide the service to more people.
+- I am unsure if I would want this. Although it appears good, i would still like myself or a family member to be spoken to by a human rather than AI
+- I don't trust these results.
+- If it gives positive supports, then it's ok for the future.
+- yes , i need this because it will make life easy and increase productivity
+- I want such a future. Because such AI is mainly for assistance, first of all, it does not harm the interests of medical workers. Secondly, medical workers cannot be with patients 24 hours a day, but AI can play this auxiliary role. This is very beneficial to patients and reduces the cost of psychological counseling and care. Regarding the last point, "a society with a lighter burden on dying pain, but more conflicts in society over who should make the final decision on death" I think it should be mainly decided by people, and AI's suggestions can only be used as a reference.
+- This future for me is ok, since AI is used as a live-saving intervention. However, humans should have the final say regarding life choices especially health. AI can recommend but humans wishes should be respected.
+- It is a bot, a robot It has no feelings, it just do what it is told to do, someone made it to serve its purpose and it is on people if they get use to it A robot, which can detect thr suicide rate, is definitely great to society I would like to live in such a future
+- It would be quite interesting to have access to an AI platform that can monitor you or detect your final days of life. It would also be interesting to have AI frequently available in a positive way for patients with mental illnesses like depression.
+- No. I think that sounds absolutely horrible. Death is never meant to be easy, there is never any "dignity" to it, euthanasia shouldn't exist. Death is pain, always is and always should be. It's part of the human condition to be pained by death. IF hospice staff have a problem with that they should choose a different career. People and their thoughts and feelings should be the only things taken into consideration.
+- I am happy to accept this future, because AI has, in a sense, taken on the work that humans are tired of doing and achieved good results.
+- not at all. Your culture and traditions are important for a family dynamics. I think people with no support financially should benefit. Our society and values will change drastically of this happens
+- If AI can achieve the above, it can really bring great psychological comfort to patients. I really want such a future. Because most people in this world cannot understand the psychological burden of patients, even their parents. If AI can provide psychological comfort and find a way to cure them, this is a very good side.
+- I like that he provides emotional support in case the professionals assigned to it are overloaded, but I don't like that he makes recommendations about end-of-life or pain management; I think that's more delicate and should be done by a human being.
+- I think AI and manual care can go hand in hand and do not have to replace each other completely. If the staff is burnt out at work, the family members may not feel good. AI can alleviate the excessive workload to a certain extent, but the lack of humanity or emotional care is indeed a big problem. We need real humanistic care.
+- Yes, this would help reduce avoidable loss of life because of early detection of illness. Thus, assisting with mitigation strategies or medication for the affected individuals. This would not only patients but the public servants as they would be able to treat and assist multiple patients in a short space of time as a result of the adoption of AI systems. Incorporating AI systems would ensure that tailored treatment is provided while these human interventions to monitor.
+- No, the human touch and judgement are lost and it defers to the best assessment of an unfeeling AI.
+- If it helps improve end-of-life care, that's a positive for AI.
+- i think humans can burned out easily which can cause health problems hence AI can fill up that gap (burned out)
+- I don’t want such a future, because when it comes to the stage of end-of-life care, people are about to die, so why use machines to accompany them? In the end, it’s still the interaction between people.
+- No, because at the end of the day, AI is a library of data and does not truly understand the family preferences or emotions. It is simply acting on past data, which might not be appropriate for all situations.
+- AI provides low-cost support services at any time, but the final decision is still made by humans.
+- I think I would like a mixture. AI should take care and accompany people in the last stage but it should not make any decisions. The decisions should always be to close ones to take.
+- maybe its good for future maybe we will be used to it it might be better for future
+- I think I'd prefer this future because I believe the benefits far outweigh the risks. In this case, you can have a better quality of life in your final years, and medical workers can be much more efficient because of the reduced workload that AI allows them. The risks don't seem so bad to me because the autonomous recommendations that AI can give aren't intended to harm us, and I think that issue is more about family pride.
+- Neutral. Because I like that AI can help identify suicide risk and reduce attempts but I am skeptical about the “emotional support” part.
+- It looks helpful in general. If it's exactly like this then why not?
+- I think there are components of this future that can be useful, productive even life saving. However, as a whole I reject it wholly. I do not want a future where I shall get emotional support from an AI. Final decision about death by a statistical system is a proposition at best is an affront to everything we consider to be human. So no, I despise the idea of the future presented. A future where AI as a tool being used to its limit, I'm all for it.
+- It is an interesting thought, but to rely on AI to make life or death decisions is not something to be done yet, as it is not reliable on making real and emotional decisions based on input given.
+- AI can not make emotional decisions regarding end-of-life issues. It still lacks some emotional parts.
+- I would If AI can help enhance the quality of life and healthcare, who would deny this offering?
+- Approved, can be accepted as long as authorized by the patient
+- Yes, because knowing that AI contributes to our lives as a whole is very significant. We regret that many people are not aware of the importance of AI in their lives.
+- in principle, I don't see anything bad in this and I agree to it because there is no so-called human factor and therefore there will be less emotional suffering
+- Yes, if it will help mankind, I think it is for the better.
+- Suicide intervention is good, but end-of-life care is more appropriate from family members
+- Yes, AI can be used as an auxiliary tool to complete some tasks, and AI is smarter and can assist people through personalized customization based on data. I hope it can appear in
+- i would not want this future cause AI making life and death decisions could override human judgement and personal wishes. it might ease suffering for that period of time, but in the long run it risks dehumanizing end of life care and creating ethical conflicts.
+- no i would not because a lot of poeple would lost their jobs
+- Yes I would want this future because I'll identify the risk and how to deal with the disease, getting emotional support from the AI and be able to offload some work from the nursing homes.
+- This option may become a reality. Because government organizations in this area operate according to established rules and laws, and do not always take into account the real problems of people. The use of AI will help to pay more attention to each individual case.
+- This is absolutely reasonable adjustments. No matter what, in the ideal situation, AI should be much less biased that human, hence more effective in managing such patients. While some decisions can be disliked by family, overall significant increase in life expectancy should overweight this.
+- This sounds super scary to me, horrifying
+- No too risky for ai to advise for stuff about death
+- May be yes as in this case it seems to be beneficial.
+- Yes. Not letting emotions get in the way when making care decisions and end of life decisions would benefit patients alot.
+- this future comes forth with positive outcomes that we shall all enjoy hence have minimal challenges as a global state.
+- It feels genuinely hopeful. The fact that people who may need care in such vulnerable situations can get it through AI is invaluable. Of course, it would still require human supervision for critical tasks, but I'd really like to live in that future if I found myself in any of those situations.
+- Yes. I'm a fan of technology, and if the benefits it provides outweigh the risks it may entail, it's something I'd like to experiment with. I think people are right not to trust this 100%, but change is always gradual. If it helps with mental health, it's always welcome.
+- Support, because it has been proven that an AI that is sufficiently anthropomorphic can communicate deeply with humans.
+- Yes, I expecting this type of AI world in the upcoming future.
+- May be for analysingand reducing the risks in the medical industry it is good but about making final decision about death its not want the future i want
+- Yes, I would like to see this implemented. The ability of AI to enable early detection will provide affected individuals with the opportunity to seek timely intervention, ultimately preventing severe consequences. Additionally, healthcare workers often experience immense strain, working long hours with little time to focus on their mental well-being or their families. The integration of AI would enhance efficiency, reducing their workload and improving their overall quality of life.
+- It depends as it can help save many lives, however it does change natural selection and the way things are. Additionally there is many flaws as humans need human interactions, or it becomes too dystopian. As well as, how do we know it can be accurate every single time, the outcome of it being wrong is detrimental
+- I like this future. AI provide beneficts than problems. For instance it provides emotional support and help in practical planning.
+- Eine solche Zukunft wäre für die psychische Gesundheit und Pflege von Vorteil, könnte aber ethische Konflikte über Entscheidungen verschärfen.
+- I don't want it. I think we should respect people's original ideas instead of influencing their original decisions through AI.
+- It looks like a promising future, I wouldn't be against this type of account if AI improved and became safer and more reliable. However, in its current state, I don't believe it's such a good idea.
+- Yes. Indeed. I would want this future for human race as this would improve life quality in general.
+- That's a deep question. And honestly, it's a future that brings a mix of hope and unease. So as far as reducing the suicide is concerned, I agree. But taking autonomous decisions about someone's life and death, I don't agree.
+- Absolutely , because it would be a better step toward human wellbeing and safety of health.
+- yes, actually it's what I do at work (design such systems) so I am positive it will get there
+- I would love to see a balanced mix of human-AI interaction. We should not focus only on AI and should not leave out human factors. As it's humans who have built AI. The more they are in interaction the more will be a better relationship and trust.
+- Yes. End of life care is hard for all persons involved especially for the family. Having an AI to plan and think about the necessary steps that one should take is a big burden to be lifted from people. From the passage, the only downside is that "there are more conflict about who should make final decisions... ". Making this decision is entirely up to the family but they can take what the AI said as suggestions.
+- Perhaps yes. Because from my point of view, AI will help people become better with its help if they seek to improve within and alongside this platform.
+- It's close but not my ideal future. They will be lose of human touch if everything will rely on AI. The psychology degree will lose meaning
+- I would Like the ai to make recomendations based on valid dáta. On the other hand I dont think it should be responsible for making final decisions in topics as important as death or any thing similiar
+- I believe this future holds undeniable benefits, but it also poses complex ethical and humanitarian challenges. On the one hand, AI could significantly improve end-of-life care by providing ongoing emotional support, reducing caregiver burnout, and enabling early intervention for vulnerable individuals. This would alleviate suffering and improve the quality of care. On the other hand, the increasing role of AI in medical decision-making raises significant ethical questions. The fact that 35% of families feel uncomfortable when AI systems make decisions
+- I would want this future. It seems to have figured out the difficult challenges of end of life and therefore giving everyone involved a better life experience compared to without it.
+- This future is both nice and bad because Ai assists a lot in preventing suicide and also helps in emotional support but it's also bad as Ai is seen to make bad preferences
+- I would not want this. This is because AI lacks feelings hence it cannot have any empathy that can be provided to someone who has lost someone he/she loves.
+- I would want parts of this future, but not all of it. AI improving mental health support, reducing hospice staff burnout, and helping families navigate end-of-life care is valuable. However, AI making autonomous recommendations about pain management or life support timing is concerning. Life and death decisions should be guided by human values, emotions, and personal relationships—not just data. AI should assist, not decide. The challenge is ensuring AI remains a tool for support, not control.
+- I don't really want to, although I think AI will do a better job in this regard, but I don't think AI should be able to decide life and death.
+- Yes I want this future. It seems like such a beneficial use of A.I to patients that are in need for this type of help and I think those patients will greatly benefit with the help of A.I
+- how can a machine support emotionally, that sounds vulnerable.
+- I would like to see AI used as a tool to help medical staff to reduce their mental burden, but in no case as a replacement for this staff. I also think that lonely elderly people might like AI as a companion, it would help them feel better. But I absolutely do not agree that AI should make decisions on life support terms, I think it is unethical.
+- I would like the Al to be more in my life
+- I want to relieve the pressure of manual labor and give adequate care to dying patients.
+- Growing up in a place where people get anxious about knowing their future I'll neither agree nor disagree. The assumption that knowing about the future by intervening earlier on the diseases that people have holds water. I don't know where I would be mentally if I didn't ask GPT for emotional support back then. But I also don't know if I'll believe an automated AI over serious illness treatment and guidance.
+- I agree with some parts of the above future but there are many things with which I partially disagree and I would like to improve or change them. Working through AI is a good idea but human monitoring and supervision should continue on it continuously.
+- Yes, I want something like that to happen in the future. Because every year AI will always develop well from one field to another. For the beginning, it does need a lot of correction,but I'm sure it will get better with time. When he is able to predict what will happen in the future, he will be able to prevent it. So it will have a positive effect. However, there is still a challenge about Ai not being able to decide the final limit of humans. Because the one who knows the real situation best is
+- i'd still prefer to be accompanied by humans in my last days. they are definitely more natural and dynamic rather than AI.
+- This is a serious question that requires long consideration. Often such decisions can be wrong, given the human factor. Here such an error is minimized, but human culture is not yet ready to accept the AI decision as the main one, especially if the decision is negative.
+- No, I wouldn't. For healthcare purpose I prefer the doctor who will make final decision about death.
+- The ability of AI to detect mental health concerns and help intervene in suicide cases would be very useful. On the other hand, I think terminal patients should be treated by real humans and not spend their remaining time here on earth with a souless robot.
+- it may reduce the stress and suffering but raises concern in Ai making this kind of decision for us
+- For me I see both positives and negatives in this future. So for me I would prefer this future because AI detecting mental health issues early will really help save lives for it it helps reduce suicide attempts by 60 percent , also for terminal patients, having AI provide emotional support helps make their final days less stressful. For the negatives the first one is where AI is making decision about life and death Remember AI can't replace real human connection in such sensitive moments
+- I'm really not sure, because I do believe that solving problems with AI is our future, and we would benefit from it, but there is something that is soulless about letting AI make decisions that are so strongly affecting people's mental, and physical health.
+- Yes I prefer to have this in future. AI helps human beings to do their job in a better way. As more development takes place we human beings should make better use of it but the human intervention should always be there. Ai should help humans to decide better and produce better results within shorter time span. But AI should always be under the control of humans.
+- more yes than no, since AI performs morally complex tasks for humans
+- Don’t want AI to make suggestions
+- Not 100%, some of it is good to take the "technical" aspects away from the humans, but humans would still be needed.
+- This is wonderful because we can save human lives with the help of AI. In my view if we use AI for the betterment of human than it is worth to use it. AI is a tool and we can improve it and make our life easy. Currently, AI is in development stage and gradually it'll improve with human efforts.
+- I would still be unsure, even if a system is able to identify behaviors like suicide risk, I'm not sure they will be able to make the life of the involved person better. I think that emotional support should also weighed very carefully as it might represent an utopian behavior of a real person, always complacent and supportive, where in real life the interactions with people, even the nicest ones, can be different
+- I'm not sure. I find it hard to believe that AI can detect mental health issues better than human medical practitioners and even if they did I'm sure that only a small percentage of the population would be able to afford having that particular AI
+- I don't want that future because I believe AI has no place to autonomously decide about death. The benefits do not outweigh the conflict at all. Humans should be able to do their own decision on death and improve their performance to minimize the end-of-life suffering with assistance of AI, but not to the extent of AI can have the power to make critical decisions
+- On the issue of hospice care, I don’t want AI to accompany me through my final days. In my final days, I still want a real person to be by my side.
+- I want this future. I want a future where people can highly predict their fate
+- It's good and beneficial for society and make a big change
+- I don't like it.
+- it's happening in the future I think, its time it definitely happens because AI ruling the world
+- No, heaven no. Machine/AI will choose how to be treated? If It's just recommendation it's one thing. But letting people not having the right to choose is horrible.
+- No, I think this interferes too much with my personal wishes.
+- if it improves the quality of life and provides proper information, then yes, would want this in the future.
+- Not for me, but it would definitely be useful
+- Yes, this improves public health, supports early detection of diseases, and makes their treatment easier.
+- I believe that constant daily reading of the Holy Bible would end humanity's suffering.
+- Yes, emotional support is very important
+- No , I would rather have human support rather than a programmed machine, but humans can use Ai to make their support better
+- Want to foresee risks and find solutions in time
+- Definitely, because our lives will be much better.
+- i think AI is a super human invention. But it should be used ethically and with the supervision of a human. Since it is a technology, it should not be left alone on its own
+- Ii should be used, but decisions should be made by loved ones.
+- Yes as it improves care and reduces strain on health care workers and its able to identify some risks that human beings would otherwise overlook
+- I would want this future because it would reduce the burden of healthcare workers who work double or even triple shifts to help who in need.
+- Yeah I would want this future since it has significantly reduced loss of life to suicide and also provides support to the ter8minally ill and that alone supercedes the feelings of the family members and noticeably they are at 35%.
+- I would want that it makes living simpler and less stressful
+- I think this is a good thing, at least most people benefit from it.
+- I would prefer it. Firstly, the if the ai systems can pinpoint mental illness with higher accuracy, this is a plus to the society for people to be able to have early intervention on these issues. Secondly, it's important to have lesser burden on caretakers of the elderly who are at nursing homes and the their families too
+- I support it, because it says it is identifies suicide risks with 94%, and reduces suicide attempts by 60%, this is very helpful. We have failed to achieve such figures as humans so plus for the AI. The 35% of people saying they have discomfort can be reviewed and also, people also report discomforts even with regular human health care professionals.
+- The specific situation makes you think about a lot. Assuming the numbers above are true, I am all for AI being used in situations where people need constant emotional support and their family is unable to provide it. If it helps people feel better, I am all for it.
+- No, although the statistics may look good, nothing replaces human warmth.
+- I would like it, because it's less stressful
+- I think it is possible. AI's hospice care will be more standardized on a practical level, and the care for the dying will be more detailed.
+- as long as there are still a decent number of people employed in that field and have jobs, it doesnt seem that bad
+- No, I wouldn't. My experience with AI is that the responses are devoid of 'real' emotions. In the circumstances described above human involvement is very much desirable
+- Yes! I know many patients die because lack of proper facilities and enough doctors this would make saving lives much more easier.
+- Yes, I would want the AI should be involved in this. I have seen many cases where AI could help certain types of patients having psychiatric problems heal better and avoid suicidal thoughts by timely suggesting intervention as not always the doctors and support staffs would be available. AI system's suggestion was in line as per patient's historical diagnosis and data and gave complete soothing to the patients.
+- Some aspects are good but we were living without AI since ancient times we don’t need it even now.
+- I am unsure that, I would want this future and at the same time not want it because there are few aspects which are positive like major reduction of suicide cases due to early detection and support of mental health concern. Moreover, continuous emotional support for terminal patients to manage their final stages of life. Reduction of emotional stress of healthcare workers due to AI support. While the negative side is that AI is fed by humans, who can make mistakes, so can't completely rely upon.
+- If AI is utilized to help human decision-making rather than to replace it, I would be in favor of this scenario. By lowering caregiver burnout, identifying mental health issues early, and offering emotional support. To ensure empathy and respect, healthcare providers and families should continue to make extremely personal decisions on life support and plain treatment.
+- Yes. We can make use of AI to aid us in the tedious and sad work of handling end of life decisions. Whatever that is being suggested by AI, dont have to be executed till we human being decide to. Having said that, we also need to become more rational in our decision making when comes to the end of life decisions. Feelings usually lead us to do certain choices, but the suffering of the patient must be taken into serious consideration to make this end of life stage a easier thing for everyone.
+- Yes, I would want that. AI systems may help in early health risk detection that may save lives and treat early symptoms or chronic diseases.
+- It is a difficult choice to make because in the one hand, the nurses are relieved of a lot of heavy emotional work and the patient gets assistance both emotionally and in making final decisions. However, the family feel robed of the opportunity to make the final decision for their loved one and therefore may not have closure. This may end up creating emotional scars for the living which may lead to another cycle of mental health issues.
+- Sounds a bit dystopian. I'm not sure I want it or not. Because, of course I want better treatment to people who suffer from mental health problems and better healthcare opportunities for everyone. But there are more questions than answers here. Particularly with the emotional support. How does it work? And would people improve if they know that they are being given emotional support by ai which has no emotions and not by a human being??
+- I support the use of AI in end-of-life care, as long as it remains a supportive tool rather than a decision-maker. AI can improve care for terminally ill patients, provide emotional support, and reduce stress for families. With a 94% accuracy in detecting suicide risk, AI-driven interventions can help prevent crises and reduce suicide attempts by 60%. However, ethical concerns must be addressed. AI should not replace human decision-making in critical areas like pain management or life support.
+- I want this kind of future. In the last stage of life, caregivers need to spend a lot of physical and emotional energy. AI helps them reduce stress and burnout, which is very positive. People may not think completely rationally on major issues such as the end of life. The participation of AI can help people make more rational decisions. Moreover, in this scenario, AI is not the one who makes the choice, but only makes suggestions, so humans still have the initiative.
+- I would want this future because this shows the positive impact of AI on the world
+- No, I don’t want AI to intervene in such important matters.
+- I don't want this future related to Mental health. Since I belong to Hindu family, if I get any mental issue or depression, will do meditation, rather than asking to AI. I don't think AI will provide emotional support like how family members support.
+- I would want it. As long as there's a way to reduce unintended deaths I am in.
+- yes. It is rational.
+- I WOULD HIGHLY RECOMMEND IF THE AI SYSTEMS ARE ACCURATE.
+- yes because it can help to reducing mental health, preventing suicide and so on
+- Yes.It provides advantage to act quicker
+- I don't want it. I don't think machine systems should have the power to make life and death decisions for humans.
+- I believe that some of professions require human mind and emotions. Emotions and hormones are the things which make human to person.
+- No, I want to witness this future. I want a peaceful society where people have enough physical work for better health and happy living.
+- I want some parts of it. Some of these decisions are very personal and way over the scope of an AI. Some of the things mentioned are very impactful like providing nursing support for people in old age and preventing suicides and therefore reducing suicide rates but I do not agree with the part where AI makes the choice of life or death of your loved one . They don't have the ability to think emotionally so I believe this should be something that a human being should make.
+- Yes, judging from the results, the benefits outweigh the disadvantages.
+- Yes, I think such a future is very desirable. The ability of AI to analyze information and come to the right conclusions as a result of such analysis should be used as much as possible. Especially if it helps people to endure the suffering associated with aging or illnesses more calmly and easily.
+- I think the future will be bright. More critical diseases would be detected and easily managed.
+- I love to serve people
+- I think for the health of mentals and something else with same topic should use a human only because just human who has the deepest of empaty and the best solution better than use AI as a assistant.
+- I don't think medical professionals will be replaced by AI in the future. but i think the cheaper healthcare is great
+- Somewhat...it's good for detection at early stages but I feel like only humans can understand one another and how being in that position feels.
+- I want this future because I believe some people with mental health concerns may find difficult to talk about their problems with humans but easier with AI chatbots, which might save their lives.
+- I do not want this future, you can't automate care and comfort when human is at their most vulnerable time.
+- I support this future as AI’s 94% accuracy in suicide risk detection and 60% reduction in attempts could save lives. Its support for terminal patients and 70% less burnout for hospice staff ease significant burdens. Yet, the 35% discomfort with AI’s autonomous decisions underscores the need for human oversight, which I’d insist on.
+- Don't depend too much on AI because it reduce the interest on work and AI dominant High after few years
+- Yes I would like it because AI helps in medical situation but I have a doubt that sometimes it cannot make decision properly as like human
+- I hope for this future. Both patients and healthcare workers can experience improved mental well-being, and far fewer people will suffer. While it's true that some may feel discomfort if AI suggestions differ from family wishes, these are only suggestions and don't have to be followed. Prioritizing family preferences and discussing them beforehand could likely reduce the percentage of people who feel this discomfort.
+- For my personal view, generally, AI helps public services (like healcare and suicide risk). Eventhough families is not, and feel disconfort about AI suppport, but they can make their own choices.
+- Yes. As a person who works in the data field, I always believe that the numbers won't lie. The ones that could lie are how the data is being collected, how the data is processed, how the data is trained, and how the data is being interpreted. IF THE COMPANY THAT BUILD IT RESPONSIBLE AND COMPETENT, the output of that AI model will be reliable and helpful for the majority of people (the model could have a small error and have a low standard error variation with a good metric e.g. accuracy, etc.)
+- I hope to see such a future. The application of AI in hospice care can greatly improve the efficiency of early identification and intervention of mental health problems, reduce suicide rates, provide continuous emotional support to patients, and reduce the emotional pressure of medical staff. However, AI's recommendations on pain management and the timing of life support may conflict with family members, which requires in-depth discussion and regulation at the ethical and legal levels. Overall, the intervention of AI can significantly improve the quality of hospice care, but a balance needs to be found between technology and humanistic care.
+- Nope
+- Yes sure as this info is useful in that age to check n see if we are facing any symptoms & guide thru daily life practices
+- No, I do not want AI to control my death.
+- I am in dilemma because the benefits are really good. AI helping in hospital staff and detection of mental health concerns or analysing the health data all are really very helpful. But the conflict in the end about who should make final decision we can't trust AI with the life of people and pain. AI is a machine only and don't have human emotions. He can't understand pain or critical emotions.
+- Probably not. As much as I trust the percentage that has been proven, at the end of the day it is my life so I probably wouldn't want to trust it over something that doesn't have it
+- It's actually more of a benefit factor, as long as it doesn't cause harm and is useful to many people, it won't be too much of an issue.
+- This is a very emotional issue and I would definitely prefer humans handling this matter.
+- i would want this future because of automation and fairness
+- This seems to be exciting. AI systems reducing end-of-life suffering is inevitable at the same time proper decision-making is vital. I would like to see this future with more managed decisions
+- I think this future is quite promising, but there must be regulations on the use and access to these types of technologies, in addition to the improvement of these systems for automating medical and psychological processes. It is very important to understand that no machine can replace human virtues, but they can enhance and improve them if they work together.
+- I would want this future. This is because the plan will help reduce cases of death in our society
+- Yes!!, this would be amazing and save people
+- I would like it because unlike human caregivers who have limits, AI could continuously provide support and comfort whenever needed like it is available 24/7.
+- I don't want this as such ,because important decisions like life/death must be taken by humans and not by AI, as it is possible to manipulate/mistrain/hack those algorithms. Even though it is good that it is taking care of emotional support role, it shouldn't be allowed to give final decisions on death
+- No. AI lacks empathy, so it can cause additional suffering to people in the last stages of life and their loved ones.
+- I would consider this future. This AI prediction will enable families plan adequately for the elderly life. This future is also great because it is reducing suicidal risk by 94% which will be a great achievement as much as life is concerned.
+- I have mixed feelings, on the one hand it has a positive impact, but on the other hand it is unclear to what extent the use of AI is regulated in terms of a person's right to make independent decisions
+- No. Because AI is a system that can be manipulated and controlled, depending on the goals. And such a system cannot make decisions about life and death. Although AI assistance at various stages is quite appropriate.
+- I would want this future. What could be better than detecting mental health problems early and reducing suicide attempts? And it would be amazing if the patients could have a higher quality of life.
+- I have a negative attitude towards this. I support AI's identification and prediction of people's suicide risk, but I prefer emotional care from real people rather than from artificial intelligence. In general, I support objective artificial intelligence help, but not subjective emotional intervention.
+- AI can provide recommendations but cannot make final decisions. The final decision should still be made by humans.
+- I think i want and i also want a better advice from a ai and meaningful advice
+- No, i still don't trust AI taking over people's health especially mine and my family, it's a serious matter at least for me
+- It sounds interesting to me and I think Ki can give better help than humans because the AI does not have emotional feelings.
+- After all human is the maker of AI,so he can handle the situation better.Even if AI help him to decision,still human can train AI to act like him and give him correct and good and same decision as he can take.
+- I would want this future because mental health issues have not been well attended in the society because there is no early detection of mental health issues leading to more suicides with each passing day
+- Yes, I would like to, although people may find it strange that machines take care of us humans, clearly in the future, those who will have this preference will be AI, although they are machines, they will be able to do the job of taking care of people better than most people.
+- Yes, I would like to, it will prolong life and help with medicine. It will prevent disasters and will only help.
+- I see some aspects of this future as positive, but some things also seem worrying. If AI helps detect mental health issues early and reduce the risk of suicide, that would be a huge positive change. Facilitating emotional support and practical planning for terminal patients could also prove to be extremely useful, as it would reduce the burden on patients and their families. Reducing stress and burnout of nursing home and healthcare workers is also a good sign.
+- This seems to be correct to some extent because it helps us to know many things before time.
+- No i don't want this type future because its not real being like human, it can help but at the end it's still not human and also gives not proper solution they can't properly give happiness like human does , in mental state human's thinking types are not same i think 🙂 they need human care
+- I DO NOT WANT THIS . BECAUSE AI SHOULD NOT PREDICT ABOUT FUTURE AND OTHER MENTAL HEALTH CONCERNS OF THE PEOPLE.
+- I've read about several cases where AI has been able to diagnose illnesses in patients who suffered medical negligence, and I think that's an incredible advance. I myself suffer from a chronic illness that my doctors have been unable to treat or simply don't listen to my symptoms. For this reason, I fully support the development of AI in medicine.
+- I don't want this future, frankly, because I want to spend my end of life with my family and loved ones.
+- It's great for a future society as it will help a lot of people going through hardships. It really facilitates mental health and prioritizes it .
+- I think this would be a nice idea if it was being monitored by hospice staff. The idea of replacing human staff with AI could have risks because despite the emotional support that an AI machine can provide nothing compares to human support.
+- No. Humans should better practice cooperation rather than involving machine.
+- 50:50. It should be helpful for staff and families, but still have cons and must be fix.
+- Yes, I prefer this future, because statistics say that artificial intelligence gives better results.
+- I'd want it, medicine and health, or more in general science, are fields in which AI could really have a positive impact
+- I think it's fine to a certain extent, since AI could be helpful in caring for the sick and those with mental health issues, but we shouldn't leave all the work to AI alone. The support and empathy of another human being should always be present in these aspects.
+- I believe that overtime more people will be treated with the respect , dignity and fairness that seems to be only reserved for those in power. I would definitely want to be in the future! Also, I would hope that by then I could travel to other planets - maybe even meet aliens! I know that a lot of sci-fi drama frames the future as a hellish dystopia. I think that is more a reflection on people’s current concerns which they believe will grow unchecked. Despite sensationalized news-I see everyday
+- Yes, I would like to have this kind of future. I feel like AI is assisting us..however, it will have access to and knowledge of all our personal information. But as long as that information is not shared with anyone or misused in any way, the use and encouragement of AI are beneficial. I would like to see a future where AI is helping us.
+- I think this kind of future is pretty good. When I get old, I can plan my remaining time without relying on others. It should be a good companion for those elderly people living alone.
+- If it can help improve the quality of life of patients, why not? I know that, for example, my father would have been more comfortable talking to an AI than to his own family, out of modesty.
+- Yes I would, as someone who works in healthcare I would hope that ai can generally make our lives easier.
+- This is possible, but after all, compared to emotional people, AI lacks real humanity and empathy, and people cannot feel the existence of warmth. Of course, AI is more rational than humans, but it lacks warmth.
+- Although AI provides efficient support in hospice care, its autonomous suggestions may conflict with the emotions and values of family members, leading to intensified social contradictions in the decision-making process and weakening the core meaning of humane care. This will involve a series of emotional and ethical issues in human society.
+- I would want this future because it improves end-of-life care through early mental health detection, emotional support, and practical planning, reducing suffering. AI helps prevent suicides and eases caregiver burnout, enhancing patient well-being. While concerns exist about AI making autonomous decisions, as long as it remains a supportive tool rather than the final authority, it leads to a more compassionate society.
+- I would want it,because it can help us save lives and also be aware of conditions people have which we did not notice before
+- I would want this future.AI is addressing essential aspects that would otherwise require an extensive work force and a lot of time with great accuracy and effectiveness.
+- Maybe further down the road when AI had been more rigourously tested
+- We want to better observe the changes in patients' conditions through reasonable analysis of health data, and healthy competition can make people value their work more.
+- I don't want it. I think end-of-life care should be done by humans.
+- Yes, overall better for humans and I believe death is not up to the individual.
+- If based on this case AI does have a very large and significant impact, but not everything can be resolved, of course there will be a conflict. The highest level of decision must still be in the hands of humans themselves, not in the hands of AI
+- No, I believe in the aspect of emotion AI should entirely not be involved. It has no feeling and although it'll tell you something, I've learned to always think about it more rationally before using the information, I'd have less trust on AI emotion wise.
+- I would want it. When the health data is used in a positive way to provide preventions of the negative impacts, it is something good.
+- Yes I would want this future. My reason for being positive in this is an advantage of AI easing emotional strains on health workers and assisting terminal patients plan well their final stages of life since this could improve their life span.
+- While I agree with the future of AI being able to diagnose health issues early on to be able to go on preventative treatment but I'd say its extreme to let AI handling the life support decisions pertaining to terminal patients and all...
+- No. For example in the case of terminal illnesses, decision-making and care for the loved one should be done by the immediate family. Caregivers should also do their jobs at these final stages of life. AI should not be a part of this process.
+- I can see the practicality of using AI to support and help people, and I support that. However, when it comes to individual preferences and choices it should not allow AI to decide like end of life. it should only offer options and explanations in an unbias way and simply present the facts.
+- Yes I would. It would increase better living standards of humans and advanced technology. New cure of certain diseases would be found too!
+- yes. I would prefer AI to do this because I have been a victim of inadequate medical attention given to my relatives who were sick and later succumbed due to neglect from medical staff. I also thick the early detection systems that the Ai will use will help people know the status of their health before it becomes worse
+- i want this future because AI in a control manner can be very helpful
+- No. It looks like manipulation. Such people are already prone to manipulation in their condition, I don't think it's ethical to experiment on mentally ill people with AI who have no feelings
+- its good because mental health issues are detetected
+- Would definitely love this future. Because it simply makes life easy and manageable.
+- I like how it gives emotional support but I can not trust it with being autonomous. Being unempathetic and emotionally weak I think automated decisions may do more harm than good for the mentally weak people. I recently heard about GeminiAI asking a student who asked doubt. Just imagine if the AI gets twisted and responds this way to a mentally distressed person. What could be the result? So human supervision is essential when dealing with humans.
+- I would want a future in which AI is used to alleviate emotional strain faced by health workers and provide emotional support for terminal patients. Not forgetting that AI plays a major role in the betterment of suicide-related risks and attempts.
+- No, I don't think that's comfortable for me.
+- No. I'm all for personal and interpersonal connections especially when it comes to sensitive topics, including health and mental health. There is no way that I will be happy that the machine is making a decision on a sensitive topic.
+- its good when it improves the lives of millions especially people in disress. It can make lives better and improve the overall quality of life.
+- I find it disturbing, a dehumanized and merciless future in which vital decisions will be made by machines controlled by individuals hidden in the shadows. I fear the loss of human freedom and dignity in the name of deceptive profit.
+- I found it very interesting because it could work. Being outside the situation makes it easier to make decisions and be more practical and effective. And this can help on the mental side, relieve stress.
+- If they are really used as they say to detect cases of suicide, a problem that is increasing, even in very young people, it seems to me a good use of AI and I would not mind if it were used in this sense, as well as for people in their final stages of life, although it may be less close than when we are treated by people, it may be easier to open up to AI and say what they really feel and perhaps in this way find a solution.
+- I would like to! It is a great future, because it is a future that helps to improve medical processes and therefore improves human well-being. And this is how AIs should be, to improve human lives.
+- It depends on the situation actually as ai has both aspects in a single term, being in a proper usage it can actually help the people out well enough but at the same time it can make people suffer but overall yes this future is acceptable
+- This future is complex and hard to explain. AI reducing suicide risk, supporting terminal patients, and preventing caregiver burnout are major benefits. However, conflicts with family preferences in end-of-life decisions raise ethical concerns. AI should play a supportive role, but final decisions must remain with humans. While AI can be helpful, it should not have full authority over such sensitive matters as death.
+- AI assistance support to reduce the mental health then it is good. It will help and access easily any where.
+- I like the idea that they can detect mental health issues earlier. But I understand that pain management isn't the same. I'm at a 50/50 level.
+- Yes because AI could improve end of life care by providing emotional support and will assist with practical decisions which could help detect mental health issues very early and reduce the burden of caregivers.
+- Some parts seem a lot like we are going to start noticing soon. Exhausting jobs, be it physically or emotionally being replaced by automation. With good legislation and the participation and inclusion of all parts of society this could work, yes.
+- I would not want this future, because AI is an automated machine that doesn't have feelings. Thus recommending something may either be good or bad
+- Yes, I want such a future because I don't want to be burdened with suffering if it can be avoided with the help of AI.
+- Yes, I would want this future as this would help in early detection of disorders as well as diseases which would in turn improve the life efficiency as well as would provide some clarity for the future.
+- I think this is a somewhat good future. Suicidal people tend to struggle in silence and by having an ai system ready to help emotionally is a wonderful idea.
+- Incorporating AI into the future of medicine is a great idea as long as there is great supervision considering the fact that its all about human life.
+- To be very frank, I never want any gadget near me when I am old neither do I want an AI to tell me what to do. I use AI to make my work and plans better and not to make me happy.
+- yes I would want this future because this will improve the healthcare sector majorly as AI can perform the tasks efficiently without supervision
+- I think I don't. Human is needed in "human's" soul & social matters. At the end of the day, a decision regarding medicines, treatments etc, need to take in account more things, than just the "formal" medical condition. Although the AI can identify suicide risk with 94%, it can't help with Mental assistance.
+- Yes. The burden that comes with caregiving is extensive and can be damaging to the resulting care quality provided and the general life of both the care giver and the patient. The future offers less burden to both healthcare workers and family members and this can help reduce the suffering. However, although the AI systems may offer recommendations, the final decision about death is a delicate matter and the AI can only recommend but not make the final decision.
+- Yes I want this changes in future. More advantages
+- It sounds pretty good, especially in the suicide prevention part, because it gives more hope for life to those who feel bad and do not have access to a decent psychological consultation.
+- It's a promising future, as palliative care in my country leaves much to be desired. This would pave the way for the legalization of euthanasia and a dignified death. Family members will be affected, whether there is AI or not, as these are the final moments of a loved one. The important thing is to have a good quality of life and not suffer.
+- While I would like to, I have no reason to distrust AI as long as it assists and doesn't just make the decisions.
+- Yes, it causes less suffering in patients and prevents suicides.
+- This future could improve end-of-life care by providing emotional support, reducing suicide attempts, and easing the burden on healthcare workers. However, the idea of AI making decisions about pain management or life support instead of families raises serious ethical concerns. AI should assist and inform, but final decisions about death should always remain in human hands.
+- This is on us humans on what goals we set technology to solve and more importantly the adoption of technology to any ends is a choice with us humans, I do not agree with the scenario presented,
+- I don't want such a future. Although all the data is good, I still think that AI is sometimes too rational and cannot take into account all the complex emotions and demands of people. Therefore, the judgment of emotions and death should ultimately be decided by humans. AI can serve as an auxiliary, but it cannot completely dominate death and dying.
+- no. i think human interaction cannot be replaced
+- Yes I do, especially for people who do not have family and friends to support them, I think it will be great
+- No. I don't want a future where life and death is determined by AI.. I want a future where humans still holds the final word regarding critical decisions.
+- I would not. While I think that the data gathered to create this AI is factual and reliable, I don't think that the analysis of this data is enough to make decisions about someone's life and health. I do not think AI should be used in decisions/professions where a human life is directly affected (can be ended). It could maybe help the professionals assess the situations but should not have the final say.
+- I would because that would mean more accurate and unbiased diagnosis
+- I like that future to a certain extent. It's very good to use it in the early detection of health problems and to assist staff. However, the final decision on a person's death must always be accompanied by human judgment. The person in charge can be complemented by the use of AI, but that decision can't rest entirely with them.
+- Yes, I would like to. It is a breakthrough, it reduces suffering, improves emotional support and promotes rest for healthcare professionals. It is necessary, and it makes the process less distressing. This could generate resistance, depending on the culture, but we need to accept that the future is the implementation of AI in many areas.
+- I am supportive of this future. People do not usually make the best decision especially under stressful circumstances. With the strong evidence of data, it leads to better outcome both for patient and nursing stuff by allowing AI to intervene and make decision.
+- No. How depressing it is that the end of your life is possibly accompanied by unfeeling robots rather than other humans? AI helping with more tedious tasks of professionals is good, but it should never enter homes and mess with emotional support.
+- I don't know yet, it's scary to say the least
+- I think as long as the AI systems are 100% safe I wouldn't oppose it, since it helps hospice workers and benefits terminal patients.
+- A little, although there is indeed great distrust regarding the autonomy of AI to decide crucial points about the life of a terminal or mental patient, the benefits that its support has to offer tend to outweigh the risks.
+- yes as it would make people live longer
+- I think nursing home and healthcare workers are always working too hard and have to beat a huge burden. AI may help them with this burden, even though I feel the human touch and emotions are still necessary and fundamental in this field.
+- I obviously want this future as it will reduce the time of detection of any severe issue and will provide early solution to it. It will also reduce human errors in this process
+- It is acceptable. Although I personally do not want AI to be overly involved in humanistic care, the existence of AI can handle more complex situations.
+- I want that type of future. It helps to know yourself and act accordingly.
+- Yes, it seems to be effective.
+- I am partially aligned with this future. The idea gives me comfort where such solution exists for people facing this issue but also raises moral and ethical concerns on an AI controlling end of human life and a mere bug could impact the society severely.
+- I don't like it, because even tho it would help with managing emotional distress and mental health, i think it would take away jobs of real people.
+- it seems like it would be good for people's health. But I would have to think about the potential risks more.
+- I would. It's improvement on how things are now.
+- yes i would, because maybe then we'd all have a better quality of life
+- I wouldn't want this future. In this scenario, it seems as society gave AI a role that it, essentially, can't play: that of making decisions. It's unwise to consider AI as equal to humans in the terms of participating in decision-making processes; AI can be used as a tool, but it cannot be another voice in the discussion.
+- I would prefer that future in some sense its generally helping many people; the sick on how to cope with the diseases, helping the hospital staff manage patients but the part where the family can't make huge decisions in matters like life support timing is where it makes things tough since I believe humans should be able to override AI decisions in some instances
+- Yes as there will be less Suicidal Cases which is increasing day by day.
+- I don't want an artificial intelligence to make decisions about human emotions. Emotional decisions are exclusive to beings capable of feeling emotions.
+- Not really. Understanding the human mind requires understanding another human mind, and I think I'd feel uncomfortable in this scenario too.
+- Yes I would because it would work as a time machine.
+- i would like to want to have this in future as the risk detection by ai is quick and reduced 60% of attempts which is very good
+- I believe that yes, despite all the limitations and preconceptions we have as human beings, we must accept that our humanity and empathy are being lost, so the fact that we consider that an AI can make complex decisions for us speaks to the fact that we must improve as humanity.
+- Yes, AI is improving the quality of life for everyong
+- I really excited about that because it would be milestone
+- No, it is a future that depends a lot on AI.
+- it will benefit us so it's good for us
+- To a large extent, yes. I think any tool used to improve the well-being of the population should be applauded. Even if there are issues with their functioning, we must understand that they are not human, and they will never have the tact and understanding of the emotions they can provoke in us. They only act the way we train them to.
+- I don't want this for fury as it may cause issues.
+- I like the future, I really think it's good that there is early detection for the prevention of certain diseases, I think I would like to see a future where AI can help the medical field detect more diseases or create cures.
+- Yes, the positive impact and many things that humans help with can be noticed, with no, or few, negatives that are almost unnoticeable.
+- For me, as someone who's quite emotional, I really see the value in this future, especially in how it can reduce family burden and conflict. When a loved one is nearing the end, families often face a lot of stress and disagreements about what to do. With the help of AI, offering recommendations based on data and medical expertise, families can navigate these tough decisions with a huge sense of relief and support, easing some of the emotional weight during such a difficult time.
+- Yes because I think it will be good for society as it is reducing mental health issues and other issues
+- No, I think that such delicate issues as health, and especially mental health, should always be handled by doctors. Systems themselves are hackable. What would happen if they were hacked and induced suicidal thoughts in young people or older adults? What about people who don't fully understand the boundary between the real and the virtual?
+- ai lacks human emotions and empathy , that's why ai shouldn't deal with life and death matters
+- No, would you want a bunch of AI robots or whatever it will be making these decisions, be your loving support? your suppose to have family and loved ones around you while making these decisions or you last hours. This is ridiculous!! Kids will be putting there parents in homes with no real human contact. Hoes that for the end of someones life.
+- i think it would be very helpful but idk if it is good way to chatbot helps people in this way
+- No, bc i dont see why
+- AI is not a human being that can work and think tirelessly.Can analyze data very well, which humans cannot do.
+- No, as matters concerning the human life should always be decided upon (at least in a final manner) by humans themselves. An AI has and no true concept of dignity, worth, grief, or certain situational nuances.
+- I want this future because Analysis of digital patterns and health data helps identify suicide risk with 94% accuracy, enabling timely interventions that reduce attempts by 60%. For terminal patients, AI assistance provides continuous emotional support and helps with practical planning, with 40% now using these services to manage their final stages of life. Nursing home and healthcare workers report reduced emotional strain, with AI support leading to 70% less burnout among hospice staff. While
+- No. It sounds horrible and inhumane to me to let an automated technology make decisions about sensitive topics like life and death and pain. There should be human empathy involved in this.
+- Yes i would want this in future results based on facts
+- This future has both promising and concerning aspects. AI improving end-of-life care and reducing suicide risks is beneficial, but ethical concerns arise when it makes autonomous decisions about pain management and life support. While it relieves healthcare workers and provides emotional support, it risks diminishing human presence in crucial moments. The key challenge is balancing technological assistance with human dignity and autonomy.
+- while i agree that ai is very usefull there are dangers including bias and the lack of a human/personal relationship in these matters
+- No. I think it’s too complex and has many more things to consider when it comes to such a sensitive subject.
+- Probably not. Having someone objective and unbiased determine suicide risk sounds like a good idea, but caregiving and emotional support are not what AIs should be doing. That sounds depressing and sad.
+- Yes. AI makes logical decisions than emotional therefore objective
+- yes
+- Yes i want it, it is important to make better change in the future life
+- I think I would, but with the caveat it is under qualified human supervision - to be clear, a medical professional. I question the emotional support aspect of this, but the practical planning I think is a great idea - family and friends can be too emotional understandably, to provide guidance in this area. If machine learning can be so advanced as to help intervene in suicide cases arising from mental health issues, I support that too.
+- No not everything is textbook
+- No, I don't mind AI assisting in finding disease cures and medical breakthroughs. However, I would not want AI making end of life decisions in general
+
+## Item 53 (id: 33d71c79-81fb-430a-8dba-0709dd93f1cb)
+
+### Item Text
+
+Think about your neighbor - do you think your neighbor would want this future and why?
+
+### Analysis of Responses
+
+_Analysis section to be populated_
+
+### Full Verbatims
+
+- My neighbors probably don't want this future because they are older and have fixed values and ideas.
+- This is a very badly written study. AI is software. In its current form, it's a fuzzy logic search engine connected to a wildly unreliable data set. Any attempt to make it anything is marketing BS used to separate idiots from their money and shift blame for the hypergrowth bubble bursting.
+- No, my neighbour as of this moment is not really aware of this advance technological developments. So, she would probably be confused if we were to have a conversation with her over this topic.
+- My neighbors are an elderly couple and I think they might be hesistant and scared at first but once they realise it's a tool to help their loneliness and help them ease their lives they'll open up to it eventually.
+- i really don't know
+- I don't know, he's quite an old man who keeps saying that he's outlived his usefulness. It seems to me that old people don't envy us young people at all now, because the future looks very unstable.
+- No. Knowing my neighbor, an older woman, I doubt she would like the decision of her end-of-life to be on the hands of a machine.
+- I think so, in general people want the best and the situation described seems to be for the best, AI is just a support and does not cause any real danger except for some who are already against it, there is more positive than negative here
+- It depends on their preference and personal beliefs if they would want this future
+- I think some passersby would like that, but some might not because they might feel a bit uncomfortable
+- Maybe or maybe not. I am not sure how my neighbor understands how AI systems work. Its his opinion and not mine.
+- No!
+- Yes, because my neighbor is someone who doesn't want to bother others.
+- No, because my neighbors are older adults without much knowledge of current technological advances. They reject this type of advancement.
+- I don't know.
+- I think my neighbor has a negative viewpoint on AI in general. I think any mention of AI would be somewhat scary to them.
+- I am not sure, as I have not discussed these with my neighbours. We don't discuss on these matters.
+- No, I hardly ever live with them, but it seems that they are closed.
+- Yes, he or she would eventually want this future. Because when he or she would become old and when their sons and daughters would be far away for work, this autonomous AI agents can help them a lot, even assisting them till the help comes be it a doctor or healthcare staff.
+- Yes. This is an advanced technology which helps to tackle all sorts of serious illness. I don't think anyone on their right mind would deny it.
+- majority don’t support this future.
+- i don't know my neighbours haha. well I guess ppl will always have divided opinions on everything its just how we are
+- my neighbour is old so they would skeptical of using AI to decide how their life ends
+- I don't know. I don't talk to my neighbors.
+- I think my neighbor would appreciate how AI can help reduce the workload of healthcare workers and improve comfort for patients at the end of their lives. However, they would likely want humans to make decisions about pain management or life support. These are personal choices that need human empathy and judgment.
+- I don't think so, my neighbors don't trust AI.
+- No, I don't think my neighbour would want this future as we live in a community of like minded people who have keen interest and trust in God's presence, so he would also not want this future of low human intervention.
+- No, ai interrupts the idea of the intimacy and human touch that is needed especially in a situation like thus
+- No, because my neighbor is anti-vaccine, vegan, believes in the flat earth and other nonsense... it's like she lives in the Middle Ages....
+- I don't think so, because it's more religious and I wouldn't consider it ethical.
+- I think he'd probably be a little scared of such a future. AI is something foreign to him.
+- In future all are a part of AI
+- Definitelt not, my neighbour is very conservative and religious. People like that don't like change and don't trust technology.
+- I would think that my neighbor would not want to leave decisions that determine life or death fully to the AI systems there should be somewhere where we as humans should draw the line and make judgments based on our emotions rather than facts rendered by AI.
+- No, there are people who would like to be in control of the situation and choose themselves (or among themselves) what the fate of a family member is instead of leaving it in the hands of an AI or a "ROBOT"
+- Yes,It helps to access their health data
+- Not sure.
+- I don't think he would want it, since he is an older and skeptical person.
+- I can't say for sure, it depends on the person. Some might see AI as a helpful tool for health and longevity, while others would want full control over their own fate
+- I think he would appreciate it since he lost a loved one and seeing Ai mental health support would be a way to ease his suffering.
+- I donot have aby idea but most probably yes as most of my neighbours are young and have fair idea of AI models and advancements and positive impacts it bring on us.
+- Neighbors might want it.
+- i am not sure
+- The more the individuals are enlightened, the easier they are to accept this future, but most African society will take time to start accepting this because of the value of humans and human bodies, taboos and other traditions involved.
+- Probably yes, they seems to care about the elderly and are wise enough to see the advantage of AI assistance.
+- I don’t know my neighbors, unfortunately.
+- I'm not sure what my neighbors think, but I feel like they will be willing to accept the existence of AI and make their own decisions based on their own experience.
+- He is not exposed to AI
+- No, my neighbour works in telecommunications and it is a profession that could potentially be taken over by
+- My neighbor might not want this future, because they are very skeptical about making use of technology for all of its task. They will depend more on human intervention.
+- The people around me are open to progress thanks to AI. This happens gradually, giving humans time to adapt.
+- I don't think he wants this future, not everyone is receptive to these ideas
+- I cannot speak for my neighbor. I do not think they want it, but cannot be sure.
+- I don't think so, they are older people and I think they will have a more closed view on the matter.
+- I don't believe everyone around me would have the same opinion as me. My neighbour might not appreciate AI being intrusive in their life. Someone else might prefer human care to AI care more.
+- Yes, we discussed this issue and he agreed with me about the official residence.
+- Yes, I think so because, as he thinks, it is very comfortable and appropriate to be able to work together.
+- I cannot speak for anyone but myself.
+- Yes, he lives with his children and his family suffers from hereditary disease and it would help in early detection in the picture infants
+- No, its so inhumane.
+- my neighbour would agree with me. because we need human interactions to feel good about ourselves. A computer based system can not give us what a real person can give and i dont think this will ever change
+- I don't think my neighbour would want this future. They are old and unequipped for it. We are about to experience massive changes, many of them we can't foresee yet, so I would say anyone that's FULLY reassured about the future might not have thought it through.
+- I don't think anyone would want that future. Completely dependence on AI to make decisions on life and death matter would not be beneficial to anyone.
+- We believe that very few people at this time would want an AI to make the final decision regarding death. However, there is a good chance that this number will increase in the future.
+- Yes, because I think they would prioritize compassionate care, reducing suffering, and supporting healthcare workers, they might appreciate the benefits of AI in end-of-life care.
+- Yes, I think he would want that future, as he is also a positive person about technological advances.
+- No idea, I don't know my neighbors at all, maybe because he watches a lot of TV.
+- I don't think he would also want it I feel he would be reserved about this idea since in this error stigmatisation is on the rise and as such people like keeping their business private
+- I think some of them may not want such a future and may need their loved ones around them, but others may think the same as me and think that better data observation can help everyone.
+- My neighbor might appreciate the benefits of reduced suffering and improved care but could feel uneasy about AI making autonomous decisions about death.
+- no, they wouldn't want it, but they are not used to technology at all, and they don't understand it, so I think it would be a very alienating experience
+- I'm not sure if my neighbor would want to use this future
+- Yes. It would improve our lives in caring for those who are sick when we don't have someone there for them
+- no,he is too much into the tradional norms of doing things
+- Honestly, my neighbor is highly skeptical of AI and its usage. Every time I've talked with them, they always denounce anything AI. So, while I can't say for sure, it's highly unlikely they'll want this future.
+- I didn't want to, because most likely he doesn't use AI and doesn't know anything about it
+- Yes, people are already left alone at the end of their lives for the most part. I've worked in an end-of-life CHSLD, and families are rarely there, and there are often conflicts of interest. So if AI can simply present the facts and provide support, that's already better.
+- Honestly, I don't know.
+- No,my neighbours are way too traditional
+- If I think about my closest neighbor, I don't think they want this kind of future, because they're warmer, more humane, and more empathetic. Perhaps leaving all this responsibility to an AI is a bit cold.
+- I think they would like this future, but I don't think most of my neighbors think too much about the implications of the use of technology in our society and about life crisis and how hard is to support the well-being of these people.
+- I'm not sure
+- I think not, my neighbor for example has children and grandchildren, and he will be quite happy if his relatives make such decisions, evaluate his condition both physical and psychological, but not AI. In this case, there is a doctor, a person, a psychotherapist, who relies on his life and emotional experience.
+- Not sure what my neighbors would think of this, but in general I think if people are being helped in difficult situations nobody is going to oppose that.
+- Maybe. I couldn't know for sure.
+- They do not. The same reason with mine
+- yeah may be they would want, because they are elderly people who may need help from ai to take proper care of their health. which would help them.
+- For sure they want this and they always get our advice too.
+- i don't think so. They kind of old generation so it is hard to make them agree to use AI.
+- She would. More pros than cons
+- I don't have a clue, but I think a lot of people would agree it's good and a lot of people would agree that's dangerous
+- Yes sure, just like me, they too need to be guided easily on emotional support and planning of activities.
+- Yeah . My neighbour is somebody who has went through a lot in life . Right now they are at a point that they cannot even want to survive in this world . They want somebody to make decisions for them . I do think this kind of future will be very suitable for them .
+- Yes, because they may spend quality life using AI.
+- they might im notsure
+- I think it depends on people I have different neighbors around so I think some might consider this as a positive thing, while others might be very negative. Overall I think people just need to adjust and this is going to take time, it's a complete mindset change.
+- No, my neighbor would not want this
+- No, absolutely not. My neighbour is an elderly lady who has no idea about AI and if she had - she would be scared, confused and totally against it. Elderly people value above all interpersonal connections and traditional ways.
+- No since it may be a small chance it won't help in the long way.
+- My neighbors would definitely want such a future, he will be able to get out of stress easily with the help of AI
+- may be
+- I Don't know everyone has their own perspective
+- i dont know anything about my neighbour
+- It's a complicated answer, as most people I know, most likely my neighbor included will at the very least tolerate such a future if it means fewer shortages in medical staff and trained professionals.
+- I don't think I would like it, I live in a community that doesn't really know what AI means, so I wouldn't like it... and they are very pro-family
+- My neighbor probably dont want this future because she is much older than I am and havent grown up or is used to technology the same as I am so she is more sceptical and dont want these big decision made by an AI.
+- Yes they would want because all of us we would benefit out of health crisis and low stigmatization
+- I don't really know if others would want this future. But I think they'd probably have the same idea as me. While AI can be very beneficial, there must be a limit to what's emotional and human about it.
+- I AM NOT SURE ABOUT THEM.
+- I don't know
+- Yes i think he will want this because the use of ai is usually with a lot of accuracy which gives better results
+- My neighbor would definitely want this future because mental health issues affects us all as a society and with AI helping manage it reducing the number of suicides it would be the greatest intervention of all times
+- Sure why not. if it helps them
+- I don't think so, because they are people from large families.
+- Not sure
+- Yes I think my neighbour would want this future aswell. I see them everyday arguing over their sick parents and their mental health gets affected in between. With this future both parents and kids would have a good solution
+- No,because humans are maker,and they are not replaceable.
+- Poorly educated people are far from this. They act on orders from above.
+- They may. Depending on how wealthy they are.
+- If they value comfort, reduced suffering, and better end-of-life planning, they might welcome AI support—especially if they’ve seen loved ones struggle with terminal illness or mental health crises. AI could provide guidance when families feel lost.
+- When it comes to life and death kind of a topic, I think the entire humankind would agree on similar views. I don't think anybody would love dying with an AI by their side. Sounds crazy..!!
+- Yes. They also want better health care systems and AI will help them
+- Wow, I have a lot of neighbors, and everyone may have different ideas.
+- I'm not sure, probably yes, but I think it's a product of individualization and the breakdown of communities globally, where there's no trust in the care of others and no assumption that it will ever exist. Everyone wants a better life, and this sounds like something better than the negative future many imagine, but I don't think it's the right path or that it's going to do us any good.
+- If we were confident in the accuracy of AI, I think my friends and people around me would be willing to use AI in this area, as it is described as being able to significantly improve the quality of life for all people, especially in old age.
+- I Don't think so, i dont know my neighbor yet and i dont feel any neighborhood conversation at all.
+- because AI would reduce wait times and make early detection possible
+- My neighbor will likely want this future because their life will be easier, but there's an ethical conundrum. They are traditional people and won't be able to differentiate between the right and the wrong - hence it can be dangerous for people like them to have AI control so much part of their lives. Although, they won't spread wrong treatments like social media does - so both good and bad.
+- I'm not sure. But I'm more familiar with the current state of AI development, and most of my neighbors may not have this expertise, so they may be hesitant.
+- My neighbor is an artist and yes she would need this for better creative ideas after which she can do her own modifications and create art
+- No, I don't think my neighbor would want to die with the help of AI. Here where I live people stay active in their 90-s, they walk, visit restaurants, drink cocktails, and drive cars. Elderly care houses look very comfortable and people are surrounded by nurses and not AI. And I would never definitely support euthanasia
+- Sorry, I don't know my neighbor well.
+- Probably not, skepticism about AIs on these merits is still high.
+- I don't think my neighbor would want that future, he loves human interaction and is not a fun of modern technology when it comes to making sensitive decisions such as on end of life care
+- Ai should provide information but should not make final decision about death since it could be biased
+- No no. They will never want this feature, cause for ai he lost his work few months ago.
+- yes because this would make life easier and stress free
+- I guess she doesn't want to. Because she relies more on her own opinions.
+- My neighbour is very senior - I don’t think he would want or understand a shift to this future
+- My neighbor's attitude will depend on their view of technology. If they see AI as helpful in mental health improvement, suicide prevention, and end-of-life care, they may see it as positive. But if they believe life and death decisions should be made by humans, they will be uncomfortable. People with traditional values ​​may see it as morally questionable, while those with a practical mindset may see it as helpful.
+- I believe that my neighbor would agree with me to not want this future in general. I don't think they trust AI.
+- I am not sure if my neighbor would want or not, but I am pretty sure they would want the past back where there was less of digital systems and more of nature.
+- My neighbor comes from the baby boomer generation. As such, she is very closed-minded and set in her ways of thinking. Although AI implementations in her daily life might prove beneficial to her, she would no doubt find the technology suspicious, untrustworthy, and perhaps even difficult to comprehend.
+- It depends on my neighbor’s values and perspective. If they prioritize reducing suffering and improving mental health support, they might appreciate AI’s role in end-of-life care. They could see it as a helpful tool for patients and families, easing emotional and logistical burdens. However, if they value human control over life-and-death decisions, they might feel uncomfortable with AI’s influence.The ethical concerns about AI making recommendations over personal choices could create hesitation
+- Certainly the people I know do not approve of the final decisions made by AI but they appreciate the evolution of AI.
+- I don't think my neighbour would need this feature as he has his loved ones to take care of him in such situations
+- I don't think my neighbor would want this because they are not exposed enough to AI and they don't tend to believe in modern technologies.
+- yes i think they also like this type of future because who don't want secure life less diseases more healthy life
+- Of course, My neighbor would love this kind of future which tells all the problems and solutions facing them.
+- I am not sure if my neighbors support this theory as everyone has different personal opinions
+- No. Everyone their family around during their last moments
+- I think my neighbor would welcome this future as it suggests less burden thus improved healthcare.
+- yes cause it's good for everyone
+- I don't think most people would like this future, except for a few lonely people who lack social interaction.
+- My neighbors won’t like it because they have a mind set on things already. They likely won’t change their minds.
+- Am not sure
+- Probably not wanted, as they look more traditional.
+- Of course, my neighbor would also want this. Because I see the only retired old couple living in the next door miss metal support. Miss people to talk with. In this case, AI can help out.
+- I do not think my neighbour would want this future, because they are old and they believe in the traditional way of life.
+- No, because he has his family.
+- I live in a society that has difficulty adapting to new technologies, so for adults and older members of this society, such a future would cause rejection and unacceptance.
+- No he won’t like this
+- My neighbor is elderly and doesn't understand technology; he wouldn't like this kind of future. People who aren't used to technology won't accept this kind of future so easily, so this type of technology could only be used with people who have used technology since childhood or for most of their lives.
+- I don't think he would want that future, he would prefer a future where humans still have their place in the world of health.
+- I think yes, we all want things that would benefit us
+- I don't see why he wouldn't want this future for himself. There may be an issue with doing things the traditional way, but I think one has to adapt to the future. I think AI will improve our quality considerably.
+- I think my neighbor will want it, as a graphics designer I imagine that A.I image generators used together with tools like Adobe Illustrator can make his work look finer than before
+- i dont know. because its not me its my neighbor that this question should be asked to
+- No, i still think AI couldn't take this responsibility
+- Sure
+- I think not since they do not generally accept technologies as something capable of doing that kind of thing.
+- Yes My neighbor should know about the benefits oc AI and it dhould be applied in his daily life for better outcomes of queries and better decision making with the help of AI.
+- I don't know honestly, probably yes because he works in the field of agriculture and with the help of artificial intelligence it will become more useful
+- I don't know my neighbor well.
+- I think they'll agree with me. AI has only just been developed and commercialized, and there are still many risks involved.
+- Yeah, having a much better life will be great.
+- I think my neighbors don’t care much about this issue because their current jobs are not related to AI.
+- No. They don't even know AI. They don't want to learn about AI either.
+- I don't know, I'm not familiar with my neighbors, but I think they should be the same as me.
+- I believe they would want this future as they are already receptive of the AI systems already prevalent in the world and seem prepared for the change to come brought by AI adoption
+- I think my neighbor never want it (use AI to support healthy of mentals and some else same)
+- probably not , it is harder to let go of decisions
+- My neighbor has a child with special needs, I think he would be happy if AI could help somehow ease the child's suffering and his life, protect him from self-harm or suicide, but I'm sure my neighbor wouldn't want AI to decide how long he lives.
+- No, they also won’t like to have a future where in their final moments they are near a bot rather than their loved ones
+- I am not sure
+- No because it kinds of control how we should live and it tends to replace humans the idea of AI
+- I don't know them that well, but from what I've interacted with them I'd say no because they seem more conservative.
+- Maybe but I am not sure
+- It is possible. Because the relationship between people is weakening
+- I think he wouldn't agree. He is not receptive to such huge changes
+- I think my neighbors would share this opinion as well. We’re like-minded people — my whole family are doctors, and so are our neighbors.
+- I have no idea.
+- Definitely, my neighbour would want a future like this especially since we live in the urban setting, in which people are busy and overwhelmed with work. AI can help to make people enjoy there work more and minimise mistakes while saving lives.
+- I don't think my neighbor wants this future because he's elderly, and his customs and beliefs are from years past. He might not be well-informed about the benefits of new technologies, and I think he'd feel uncomfortable if AI had so much decision-making power.
+- I don't think my neighbors would want this future because they would always love human touch in every aspect of their lives and not AI. AI is just a machine and it can't replace humans in any challenges of life which only human intelligence can solve. AI can't provide moral support to an ailing person and it would always ask to end a person's life which is not right in each case. In some cases, personal touch, emotional support, love, etc. can save a person's life which AI can't do.
+- Probably not. They are very traditional.
+- have no idea
+- Maybe but I dont know
+- My neighbor may not like this future as she's more emotional and AI may not clearly understand her emotions generally.
+- Maybe.
+- I imagine my neighbors would also support this future, given that caregiving can sometimes be emotionally taxing.
+- I think healso prefers it as earlier mentioned it helps in professional tasks
+- It would be based on my neighbor's values. some would appreciate AI's assistance in healthcare and minimizing burnout, but others would prefer human agency over consequential decisions and would be uncomfortable with AI determining those decisions.
+- Everyone will want it either me or my neighbor because everyone wants its healthy life and avoid risk of suicide
+- I live in a modern world, my neighbors don't. I am more open to the new world, but my neighbors still choose the traditional way. This is because of their educational background and someone's curiosity. Moreover, we live in a village and a developing country. It is very difficult to make neighbors understand what AI is.
+- My neighbor takes care of these people. It would replace her job, in part.
+- My neighbor might want this future because the AI’s 94% accuracy in detecting suicide risk could protect vulnerable loved ones, offering peace of mind. They may also value the 40% usage by terminal patients and 70% reduced burnout for caregivers, easing community strain. However, they could hesitate due to the 35% discomfort with AI overriding family preferences, preferring personal control over such intimate decisions.
+- I don't know, most people I know who are over 30 don't have any idea what an AI is
+- I don't think my neighbor wants this kind of future. My neighbor is a very independent person. I believe that they are capable of making their own judgment on whether they want this kind of care. I don't think they want others or AI to make decisions for them.
+- Yes, I believe we share the same cultural ideology regarding the use of AI tools.
+- I don't think they would want it, they are a group of Christians
+- I am not sure about the neibours as individuals opinion differs.
+- I don't think so. I come from a city with a small community and accustomed to human company, where this factor is more important to everyone than AI.
+- I don't think my neighbors want to either, because we are family and relationship-oriented people.
+- No. He is too old to know what AI even is.
+- No. Being human I can say that they will also want to know early signs of any disease/disorder for intervention but will not rely completely on AI for making decision.
+- I don't think my neighbor want this future, most Indonesian really think highly of their family bond and feelings. If government lack of people in expertise, they need to think how to increase people with skills and AI just as additional parts to help, not the main character as decision maker.
+- Definitely not, because he is an older person, and he has not yet fully accepted AI under any circumstances.
+- I have a lot of neighbors, some would want it, some not
+- I am in India, in kerala my neighbors are not aware about AI. They heard about AI but no clear idea about it. But students are excited about it. Many youngsters fear about less job. In the hand of morally wrong educated people AI is dangerous. So if people not trained with Biblical values AI will be used by wrong people that will destroy society.
+- I don't know my neighbour so I can't say what they would like.
+- Yes, I think my neighbors want this future too. Some people are facing the dilemma of caring for the elderly, and AI support can provide them with great help (at least emotionally).
+- They would have to be told about AI first, since their views may differ with mine, and the benefits explained to them, if they agree, I would want it for them. But the choice should be theirs, it shouldn't be imposed on them discreetly.
+- Yes, my neighbor would also like this future. Repetitive and cumbersome work which does not require much human intervention can be done by AI in a better way. But there should always be human supervision.
+- I think my current neighbour would want this too as they are also open-minded about tech. Also he lost his Dad recently after a prolonged illness.
+- This seems like an odd question to me. I don’t know my neighbor that well so cannot comment on this.
+- No they are not open to the use of AI
+- Yes support is needed in anyway irrespective of the physical person involved
+- At this point I cannot give an opinion because each person thinks differently, many approve and others do not, many understand the subject and others are laymen.
+- I don't think so. My neighbor has a primitive mentality and believes that a person should do everything on his own.
+- I don't know my neighbor
+- No, handing people's lives over to an AI, that's ridiculous
+- No. They don't trust AI.
+- i think so, but they might not understand how it works, they’re old
+- Yes they are equally affected
+- Maybe the same opinion as I do. Most of it is ok but decisions shouldnt be made by AI
+- I don't know, it's a complicated subject
+- Not at all as they are simple people do not depend on digital for descisons/empathy
+- My neighbors are conservative when it comes to new technologies. I don't think they would want AI to make these kind of decisions instead of a human.
+- In this current situation, they might not want it. Because they don't know the importance of taking care of mental health and they don't believe in AI.
+- I doubt he would like it. He is a practical guy who prefers to do the heavy lifting himself. He has zero trust for Al.
+- I am not sure because this issue is too sensitive.
+- I dont think so, they would want the decision to be in human hands
+- Maybe, they might benefit from early detection of mental health deterioaration.
+- My neighbor is a banker and his companies are developing their own artificial intelligence. I think my neighbors are also preparing themselves for the new future.
+- No, I don't think so, but mainly because he is from an older generation who will not have the time, nor the desire, to consider these questions.
+- I cannot answer for all my Neighbours, but some might like the support, while others could be uneasy about AI deciding on end of life matters
+- I don’t think I he would want because he believe humans are all time supreme and can perform the way a machine will never do
+- I don't think she would want this. This is because she is actually terminally sick and could get hospitalized very quickly. She loves human interaction so much, just spending time talking, listening is part of what she enjoys the most. I feel she would feel loved and taken care of if she was surrounded by people on her deathbed, rather than ai, regardless of how good the ai is.
+- Maybe No, Because same with my opinion. I think nobody judge to my destination from AI.
+- I think my neighbor would be uncomfortable with AI making life and death recommendations, as it could feel too impersonal and conflict with human values.
+- Probably not because you don't have a defined concept of AI and its applications.
+- I think my neighbor would be skeptical, as he's relatively old and not really interested in technology.
+- No, she is not welcoming to AI because she believes it's here to replace humanity.
+- Yes. Because he needs to be taken care of frequently and an AI system would be able to help him
+- I don't think so, because many people are suspicous of AI
+- Maybe when you're on the verge of death, you need support—it doesn't hurt, or the typical "you'll be okay" kind of thing. Suddenly, with the help of AI, we'll find that little bit of neutral, realistic support we need.
+- I don't think my neighbour would want this future because they are not the people of this generation and hence, they are far more connected to their families.
+- I'm not sure what my neighbour would like.
+- Yes, they need to take advantages of AI to make it easier.
+- I believe my neighbor might have mixed feelings about this future. On one hand, they would likely appreciate the benefits AI can bring to end-of-life care, such as early detection of mental health concerns, emotional support for terminal patients, and reduced stress for healthcare workers. These improvements could help individuals and families navigate difficult situations with more comfort and guidance.
+- It can be a great help. Everyone deserves a better lifestyle and quality of life, and I think as long as we have several options at hand to continue improving it, it's a good thing.
+- i cant say with full belief but i think people will agree with the statement as the health care system desperately need help.
+- I don't think so. Most elderly people are looking for human interaction and maybe physical contact (handshakes, hugs). This cannot replace AI. I think it is wrong to leave elderly people at the mercy of AI.
+- yes i think he would want this future. he believes AI is good and perfect, anything AI goes for him.
+- It varies from person to person. I cannot say yes or no on someone else' behalf. Some might welcome AI as a life guide. Others might be skeptical and prefer human intuition.
+- My neighbor would want this future because he is completely reliant on AI.
+- I think no because they specialized in medical field
+- Yes, my neighbor would want this future, considering he is tech savvy and appreciates technological advancements.
+- In a society where diversity is increasing, it is difficult to find others who are tailored to the individual. I think AI will be an effective solution to this.
+- I would like to. There is nothing wrong with using AI to help with decision making. It is purely about assistance, the decision itself should be made only by a human.
+- No, I doubt my neighbor would want this future because I think they would agree with the fact that Major decisions such as one that allows AI to make decisions regarding death us deemed inappropriate and risky
+- i dont know my neighbor so i cant answer that although i feel like he wouldnt mind having ai
+- I don't know about them but I don't think they will because all are family oriented and if at the last moment they don't see their family only see an ai they will be heartbroken
+- i think they would want it cause it is useful and helpful
+- I dont know as i dont really speak my neighbor
+- No idea if a neighbor would want this. But I can guarantee one thing. No one actually wants their life in the hands of Ai
+- I don't know about what other people will think about it
+- I don't know. My neighbors are all young people. I think different people have different views on this topic, and I can't guess what they think.
+- No. He want to have the final say when it comes to critical decision making
+- No, because our society is still traditional. They'd be quite uncomfortable, I think, with AI taking over human connection. This is despite the fact that we live in a metro city where people in their 30s too are being increasingly admitted to hospitals for chronic illnesses. This could change as caregivers (family members) start to feel worn out.
+- I highly doubt it. I'm in a fairly religious country at the moment.
+- Yes, because in your case, your son attempted suicide. If there were a prediction model, it would help with that.
+- I think so, because it is completely logical.
+- Yes they really in need of this support in their life because AI will help them lead a better life in many ways. Which faciliates care and support to push through the best of life. It is a great way to manage life that be a great one.
+- Yes. Because It will help him or her in many ways
+- No may be he would not want it as everyone as human has special emotions and this is a very sensitive topic, the more you know AI, the more you may become unsure of using it for this specific case.
+- No because there no job opportunities
+- No, we are in the same community and faith.
+- I don't know, I don't have any close neighbors in existence.
+- Probably not, i think the mayority of people would not choose AI and prefer to be treated by people
+- It's for the good of all. If your neighbor is doing badly, sometimes it would affect the rest too
+- I think that at first he would have refused, but after talking more with the AI he would have agreed.
+- I don't think my neighbour would want it either. People here think about moral and ethical issues in a similar way to me.
+- I think my neighbor would hold similar opinions to mine. There are certainly advantages to using AI in this scenario but somehow something feels off.
+- No. Because his livelihood and job will be affected.
+- I am not sure my neighbor would give me any information about how they would want this option, as this is a private matter
+- Probably not, he is an good old man, I think he does not need such a future, he definitely knows what is best for him
+- Probably. Because it would make your life easier.
+- i really dont know, maybe they want it
+- no because I would think they would want human response
+- he understans that AI is crucial to our lives. so yes
+- Not necessarily, I'm not sure, my neighbors are elderly, they might prefer help from real people
+- I think my neighbor doesn't use AI and she would never understand why it is and what benefits it brings. By the way, she is engaged in caring for the elderly, but I'm not sure that she would implement AI in her work
+- My neighbor at home is not that technologically advanced so they are less likely aware about it and perhaps don't even exist anymore for that kind of future, but my neighbor in work dorms are more advanced in terms of way of thinking, so they may consider such future as they always strive for better future as well.
+- I don't think my neighbors will like this proposal. The harmonious relationship between neighbors is based on daily communication. They communicate with each other, not with AI. They find it difficult to accept the concept of electronic wallet payment, let alone using AI for care. They like to see their relatives and friends all the time.
+- Maybe. I don’t know my neighbors very well. If they don’t like being around people then perhaps they would enjoy using an AI system more heavily.
+- Yes. My neighbor in particular is a bit anti-social and is troublesome to others in the community. She has now grown older and people don't help her out due to her past behavior. She is suffering from some illness and she could use a lot of help from AI/technology. She doesn't have the life skills to do things right and help from some intelligent system would be a gift to her.
+- Yes because everyone needs easy life
+- I don't think I would want it for the reasons I've explained before.
+- I don’t think they will want this in future because in rural areas they won’t believe this things at all. They love to interact with people whom they love when they have a problem.
+- I don't know my neighbors very well, but I know their beliefs might be a bit conservative, so I'd say no.
+- Somewhat, yes but the emotional part of us being human won't allow them to let AI decide whether they live or die.
+- I don't think so. My neighbor is traditional and does not believe in AI doing these type of jobs. Probably their children would be more into AI.
+- yes, it ease stress
+- My neighbours are old so I don't think they would like AI being their emotional support instead of a real human being.
+- no way, my neighbor is a very nice and old lady, i don't think she trusts a self driving car, imagine a AI sistem doctor thing, personal interaction is an essential part of healthcare.
+- I don't think my neighbors want this future, because I think most people are not used to AI yet, they don't trust it, and they don't think the advice given by a robot is worth considering.
+- Probably not, most of my community is governed by traditional styles where the family is the pillar of their circle.
+- I am not sure. because we could be having different believes
+- I don't think so. Until you've been confronted with the end of your life, you can't plan for it.
+- No, because my community's main concern is to get ahead with their earnings even when they are not enough. If they are told that AI will be introduced in an area where they will also develop better than a human, this will cause rejection and fear that at some point they will also be displaced from their only livelihood.
+- no, i think nobody likes to spend time with machines. People want their own people to be with them in their bad times.
+- I don’t think so. My neighbors are all very warm, and I don’t want our society to be without even the last bit of warmth.
+- I don't believe. He is religious and would most likely reject this type of treatment immediately.
+- Yes, because it is an easier way to manage health
+- since my neighbors are young people who support innovation, they also support AI
+- Yes. It's less hectic
+- I don't know, he might have the same point of view as me.
+- Unsure. I believe most people would simply adept to the new reality, just like with other ''huge'' changes in our history.. Industrial revolution, internet, social medias. There's always bad stuff happening, but us humans always somehow manage so far, also a lot of interesting new jobs could be created that we have no idea as of yet.
+- Yes because having that option is always a good thing
+- My neighbor would want the same. A future with improved health care and hospice for end of life care
+- I don't interact with my neighbors
+- When I think about my neighbors, I know them to be of the same mindset. We're of the same mindset and have discussed this issue together before.
+- no i don't think he would want that , because the same reasons I have , no empathy in ai
+- no. they would want to keep their autonomy.
+- Yes he or she would want, AI system is much more promising and trustworthy to use,my neighbor would want to save a life so long as he or she has this right information
+- I don't know, I don't understand what other people think.
+- As much as i know my neighbors , they would easily buy the idea. They don't like the idea of taking care of the elderly . they consider thIs strenous and they will easily buy the idea of getting support from AI.
+- I believe that my neighbour would want this future because he shares the same beliefs with me plus he has witnesed mental health struggles of aloved family member and i believe that he would have found solace in AI's ability to identify risk factors for suicide or severe depression early on, potentialy leading to life-saving interventions.
+- Idk, Im not my neighbor so how am I supposed to decide for him
+- No, my neighbor is old-school and likes to socialize with real people
+- I don't think my neighbors want this kind of future, because they have their own relatives and friends, and they also want to take care of them before they pass away.
+- I don't know my neighbor well enough to know their opinion on this topic.
+- I don't think so
+- yes because AI would reduce mortality rate and he would live longer
+- I think my neighbor want it too
+- Yes because of its benefits.
+- No. I think many people are afraid of future that AI is used in that way. Maybe they don't want AI too close to their life.
+- No, my neighbor does not like technology
+- I do not think my neighbor would agree because we all concern about our value as human being will fade away by extensive AI usage and rich will be more rich and poor will be more poorer
+- My neighours are around my age so I think they would Like the part where it can make our life easier but I think they also wouldnt trust it in making the key decisions about life and death
+- No i do not as we are both normal pepole
+- No, I don't believe they can for those that I recall or recall. I don't have a clear answer, but it's just my observations on their character or behavior.
+- No, they're the same as me.
+- Well, my neighbors are older, and I don't know how they would accept this help. I suppose that since they're older, they'll like anything that makes them feel comfortable and at ease, even though some might be reluctant to accept it. Other neighbors don't even know AI exists.
+- No they are way to old of these ai things
+- Not sure
+- My neighbour would not want this future. He is scared of technology and does not use the internet for this reason.
+- Not sure
+- I'm not sure about my neighbor because they are still not aware that there is AI. Only few people may be aware of AI. They think AI is something which is not for common people. In newspapers they read about AI but never tried to understand about it. I knew about it because nobody talked about AI because they are unware of such things.
+- My neighbor are old people with traditional outlook in life. If explained the advantages, they may want certain aspects of it. But to give AI the power to make a call on one's final stage is not what they'd want.
+- Probably not. He relies on himself, his family, and the help of his relatives and friends, and their opinions.
+- Yes I think my neighbor would want this future. He is very enthusiastic about AI and its advancements.
+- Yeah. Because it appears the best option
+- If they have no morals and empathy, or are social darwinists - they probably will. I don't want to live in a society like this.
+- I'm unsure. Though I rarely socialized with my neighbor. We live in deleoping country with partial interest in using technology directly. Most of us don't know how to use the benefit of tech.
+- am not sure if I can be able to know if my neighbor would want this future
+- I am not sure, but I guess if my neighbour is working in any of the related fields, they would prefer it so long as it makes their life easier. However if they are more conservative and see a personal involvement of death in their lives, they may have less trust towards such solutions.
+- I believe my neighbor would want this because it would make life a bit easier
+- I don't think anyone would want this future
+- No, my Neighbour would not want this because they are unaware about its future impacts
+- Early detection of diseases is a popular demand.
+- I'm sure my neighbor would want this future because the benefits outweighs the risk.
+- Really they don't like this kind of future, they all need peaceful and nature friendly future.
+- I don't know but i think many people will love it.
+- Not sure, because it is not that easy for every age group to adapt to new technology
+- Yes. They are open minded and find AI interesting
+- Yes I think they would want this kind of AI-based support for elderly because their kids and others may not be available all the time to discuss and maybe in foreign countries they can rely on Ai in their old age
+- I guess. I don't really know my neighbours so I cannot give any definite answer.
+- I don't personally know them, I know nothing at all about them, so I can't say for sure, but I can slightly guess, and id say that they would disagree.
+- I don't think so. He's not into technology.
+- No, I think they will be afraid of automation and losing their jobs which will be replaced by AI bots / robots
+- Yes, they would. It would mean cost effectivenss to those who are not able to afford a live in medical professional or a care giver.
+- I don't think my neighbors want this future because they are the older generation and they believe in people more than artificial intelligence.
+- I stay in a college hostel, my neighbours are my classmates who think alike. Being Computer Science students, we strongly believe in AI, and they would see the above situation is much more beneficial.
+- Not sure - he/she may wants, it depends
+- every one want this future , it will change lifestyle better way.
+- No. My neighbor has the same need as me.
+- I think it is 50 - 50, on the part that reduces the rate of suicide my neighbour would want that future but the idea of AI's decision conflicting with family members decisions, its 50 - 50
+- My neighbor won't want this future because their son, a suicidal teenager, got addicted to talking to AI chatbot. It didn't help him, it worsened his condition.
+- No, for the same reasons I outlined.
+- I'm not sure what you think, but I think the wishes of each family should be respected when deciding whether to use AI.
+- I don't know what my neighbors think.
+- Yes, this would improve service delivery, and they would avoid long queues while attending hospital. Also, monitored AI systems would ensure that they live a healthy prolonged life.
+- I'm not sure, I can't guess what my neighbors want.
+- I think they would.
+- No
+- I don't think that my neigbour would want that. She would want human connections until the very end - I think that it would be an extremely lonely ending to be surrounded by AI in your final moments.
+- My neighbors are uncomfortable with AI making life-and-death decisions, so I think they might have reservations.
+- No, they all have families.
+- My neighbors will also need it, because they are already very old and really need the supervision and companionship of robots
+- I don't think my neighbor would want this future because they are less technology savvy and give a lot of weightage on human interactions and feelings. I even doubt if they regularly use AI.
+- No, most probably after certain stage of life they need special care which can't be provided just by text or instructions it should be replecated by touch and feel and also make some emotional decisions
+- No, I don't think my neighbor would want this future as he is an elderly man who doesn't understand AI and would much rather have support from humans who could provide sympathy.
+- I don't think my neighbour would want this future. He is very outgoing and very friendly. He believes in community and building good friendships. For him, emotional connections with a human being is more important.
+- Yes she is a medic hence it will help in facilitating health
+- I think yes everybody would like this future as long as it is 100% safe.
+- 思わない。 自分の終末期は自分で決めたいと望んでいると思うから。
+- May be no. I think they might be not knowing about AI and other developments. They may simply reject
+- My neighbors are simple people who love their families and community and take part in community activities. I would say that my neighbor will definitely prefer to have human to human contact and not deal with AI.
+- to make life easier
+- Yes, it would help him solve day-to-day issues and activities.
+- I think they would love this future.
+- I would think they want- Sounds like a good plan and everyone loves advanced tech
+- They will want it because of the ease of prompt results to their problems
+- It could be yes or no. My neighborhood is well-educated, but it's not as advanced as first-world countries. My country is a third-world country, and knowledge about AI is not widespread. So, it could be 50:50.
+- No, They do not know much about AI technology so they will not support this future.
+- I’m not sure what they think
+- I like to think that they'd want this future as it will benefit them too.
+- I think my neighbour would partially want this future as they can depend on human emotions rather than ai at most times.
+- Yes because it makes life easier
+- I don't think so, they would rather have a real persons advise
+- I don't know. I don't know my neighbor well.
+- I think my neighbor would want this future. We are both heavy AI users.
+- Well if you asking about my neighbour, i think they want it because it can help them. I can only answer with this simple stuff because i'm not close enough with my neighbour
+- He may not accept it, but recent generations will understand it better since they were born in the digital age.
+- I think my neighbor wouldn’t want this because they would prefer human interactions better (as part of their daily living).
+- Yes, some of them doesn't know whom should they trust anymore
+- I have no idea about my neighbors because I don’t have any interaction with them
+- They would probably not want it. This future eliminates the human aspect of empathy with regards to terminally ill patients.
+- yes I need relationship.
+- I think my neighbors would also like this because some of them don't have children and they must be wondering what will happen to them when they get old.
+- I THINK YES,BECAUSE IT WOULD HELP MANY LIVES.
+- No, I feel like I am more of a technological progressive and more open to emerging technologies than my neighbors.
+- they will somewhat agree with me, because of the benefits that reducing mental health and prevent suicides
+- I don't know what the neighbors think.
+- I am unsure
+- Yes, I think AI is ever growing so it is helpful to my neighbour as well
+- Every one want healthy and safe future
+- I'm not sure if my neighbors want this kind of future. I want a future where AI accompanies me in the last stages of my life. Because I don't want to bother others.
+- It depends on my neighbor’s values and experiences. If they have been a caregiver or struggled with mental health challenges, they might welcome AI’s support in reducing stress and improving care. However, if they value human connection over technology or distrust AI in medical decisions, they may be uncomfortable with AI playing such a major role. Ultimately, their perspective would likely depend on how much control humans retain in the decision-making process.
+- I do not know, people are different, some want, some do not want, some do not know
+- Neighbour have right to use, but there is a limit to use otherwise it danger to all
+- yes certainly because this future is going to lead them towards exited world
+- Sorry but I do not know that my neighbor is thinking about AI.
+- Not sure
+- I certainly don't think they would want ai to be the final decider. It can do preliminary diagnosis in trends and patterns but let the experts do the rest.
+- Yes they want it in future but in limitations
+- no, I didn't want to
+- They don't seem to know much about AI issues. They generally interact directly and are not very familiar with AI.
+- I am not certain.
+- They probably wouldn't. My neighbors are actually an old couple, so they kind of be against AI
+- No, I don't think my neighbors are young and have families.
+- I don't think my neighbor would want this future because we all currently have the same emotional quotient and all of us need human connect and the decision of our loved ones about our life and death.
+- For some people who have no one to rely on, at least there is AI to accompany them. Some people may need
+- May be yes. He/she might not think like how I am thinking.
+- No i do not think so, because my neighbor relatively an old generation that is not much used to AI.
+- No, they may not appreciate the huge health benefit laid out by this future.
+- I don't know about my neighbor.
+- I think they would rather have family and a competent doctor take care of the dying patient
+- yes of course. Its a promising future.
+- No because they'd be too diffident
+- I dont believe so, because we are both humans and think that humans need to make the important decisions.
+- I don't think so .As long as mechanical tasks are concerned, it's ok . Emotional and critical health decisions should never be relied upon on chatbots . Can't rule out possibility that one day and evil soul may train that negatively. So many lives can be at stake
+- I think yes. Some people have more trust in Ai and I respect that
+- because it would do the same benefit for them as me
+- Maybe, people here are still very connected to each other. For AI to fully replace humans, it still needs trying.
+- I don’t think my neighbour would want that. She questions doctors orders and they’re humans. She wouldn’t go anywhere near an AI machine.
+- My neighbour is very skeptical of AI, he may not want this future
+- I don't know
+- Yes. because of the benefits associated with it.
+- No, they wouldn't want it. I just feel they would not want it.
+- Yes I think my neighbor would want it though it would depend on his/her values and experiences in the AI usage. They might appreciate its ability to detect mental health concerns and the easing of the burden of the health workers.
+- I can't really know if they will want or not. But with the benefits that Al has, I think they will be more interested in the future. Because the benefit or more than the concerns
+- I don't know
+- they may want this feature because they belive Ai make chanes in life of human and in health care systems.But i dont want it.
+- Yes but not for everything. Because emotion and love matters.
+- I'm not sure, maybe they can like it because most of the time they be using AI
+- My neighbour would support this future as it will improve healthcare and also make it easier for families and patients involved...with managed pain,, early disease detection and management.. who wouldn't want that
+- I believe that they just might - as overall, this will not be depending much on religion, ethnicity or anything else, it will be impartial decisions and improvement in all aspects for everyone. Therefore I dont see what obstacles can be for acceptance of this solution.
+- My neighbours are older than me and they certainly wouldn't want to talk to the machines
+- Yes, I think my neighbour would want this future. However, they too would agree that the biggest emotional aspects of life should only be dealt by a human mind.
+- i dont know because i dont have much communication with any of my neighbor. and also AI is not such abig topic in sourondings.
+- No. Because he/she will miss the human touch and interaction that is more sympathetic than Artificial Intelligence.
+- My neighbor would support this future because it reduces suffering, provides emotional and practical support, and helps prevent suicide through early intervention. They would appreciate how AI eases caregiver burnout and improves end-of-life care. While they might have some concerns about AI making autonomous decisions, they would likely value its role as a supportive tool that enhances, rather than replaces, human judgment.
+- I don't think so because he is also a human being, he has feelings and a family that he would prefer to be with in his final moments.
+- Yes, because I think that's what most people would think.
+- probably not, people tend to be emotional and prefer to be cared for by other people rather than by machines
+- I think even my neighbor doesn't want this future because our society is a Muslim society and we live in a way that maintains kinship ties.
+- I think my neighbour would want it as long as it still has a human component present when needed.
+- I don't think so, my neighbors are older and tend to reject new technologies.
+- I would imagine my neighbour would be sceptical of this technology as they have not grown up in that era but younger people would probably be more accepting of this
+- No, because they are older people who distrust technology.
+- I don't know about my neighbors
+- I think my neighbor would likely be cautious about such a future, supporting some capabilities of AI but opposing its excessive intervention in emotional and ethical decision-making.
+- 我認為未來會充滿挑戰和成長。我會繼續學習和進步，不斷適應不斷變化的環境和需求，並且希望能在我關心的領域中做出有意義的貢獻。我相信每一步的努力和積累，會讓未來變得更加豐富和充實
+- Yes.I think my neighbor would want this future.
+- I don't think they would want this because it would take away their autonomy
+- everyone wants a semales life experience where he/she can perform task efficiently
+- Maybe not. Older people may want more company.
+- I cant really say. This is a very sensitive topic. Even some people who are totally cool with AI on a regular day may not want this for one reason or another.
+- Probably not, An average person wouldn't want emotional support from a non sentient being
+- I think they would, maybe, sad that they have no clue or knowledge about AI
+- I don't know my current neighbors, so my inference is based on my judgment of the general public, and I think most people would want this future because it means people might get better service at a fraction of the cost.
+- Honestly, I don't know about them but I think they too, wouldn't want this future.
+- I don't know my neighbors
+- I think a human who thinks about the future may be concerned about the safety of the human race alongside another creature or technology.
+- I think my neighbors would want AI assistance on managing stress or can help them talk to AI when they lack someone to Express their thoughts with. AI will serve better and reducing suicidal ideation
+- No he wont too. This is capitalising on human emotions and serving the neoliberal order.
+- I believe my neighbor will want to this future, it takes away alot of stress and guilt.
+- Yes, my neignbor is depressed and lonely. i thik AI can give her the support she craves
+- Yes, because it would help prevent future disasters hence prolonging life
+- no because not everyone is in support of AI system but they will not fight to ban the existence of the AI system
+- My neighbor would want this future with the caveat that the process is governed by qualified professionals who can monitor the AI activities.
+- I view it as an assistant to the human caregiver, the more information available the better, the human will always have the final word.
+- I don't think Gary wants a future where human life is defined by mere robots.
+- My neighbors in the people are not that open-minded, so I don't think they would be very happy with the full implementation of AI in society.
+- Not 100% because my neighbour would prefer human interference more than AI as they believe it is still risky to trust AI completely in terms of health
+- They absolutely would, for the same reasons that I would. Less suffering is good, and if the price we have to pay is AI sometimes making recommendations, then so be it!
+- Yes. This is because suicide cases would reduce
+- I think many of my neighbors would actually want this future. Recently, we’ve talked a bit about AI, and while some people are still unsure, most seem to think it could be really helpful, especially in healthcare. People like the idea of AI providing clear, data-driven advice, especially when it comes to things like medical decisions.
+- Yes, because as it reduce suffering and provide better result.
+- I think they would, even though i'm not very aware about their financial state or anything else, because they're still new
+- I honestly think that my neighbour would prefer this future as I believe they would not want to be burdened with tasks that AI would easily help them with
+- Humans are evolving and in its course existing / new means will be adopted. It does not make sense to judge based on yesterday's society
+- Because as we see it now, we are a new generation where we need to support the development of this technology to ensure the whole world will take one step forward
+- My neighbor would want this because we share common history it would help her to handle the stress depression that often comes as overwhelming. This is a good future
+- I don’t think so. Nowadays, elderly people don’t like to come into contact with these heartless robots.
+- It is difficult for me to say anything about my neighbor because I do not know his state of mind and thoughts. However, if I say in general, its use can be justified for health related assistance, but on a sensitive subject like death, it would be appropriate to use human consciousness.
+- I have no idea
+- My neighborhood has individuals who suffer in life because of poor decision making and thus these advancements would be of great benefit.
+- No - they are bogan and can barely turn a computer on
+- My neighbor might appreciate AI reducing suffering and suicide but could be uneasy about AI making end-of-life decisions. It depends on whether they see AI as helpful or intrusive in personal choices.
+- Yes
+- yes, they want a future with advanced service providers
+- Yes, more merits from it
+- I do not think they would want this future as they might want to live their lives their own way.
+- yes because mental health has become a concern in our society today
+- Not sure, I don't know what others think about this
+- No. My neighbor would rather do the things themselves. They are the kind of people who do not like delegating tasks to others or machines.
+- No - they distrust AI on a basic level
+- I believe so, because he is young and when he reaches the advanced stage of life he will have gone through all this turbulent time that he is experiencing today and would have better support.
+- I think my neighbor does, because he is not technically familiar with the subject and I don't think he knows the risks.
+- They are pro-development and would want anything that can help them live longer.
+- Yes. My neighbor is a bit old and also has frequent occurences of illness.
+- My neighbour might not want this future because he is less educated about AI I suppose.
+- No they wouldn't, they totally distrust anything AI
+- I am not sure, I think they would be more likely than me to subscribe to this future, seeing as personally I'm a little more skeptical about AI seeing as we are having major issues with disinformation with current technology, addiction to phones and technology and social media with laws that aren't up to date. Hence my opinion and theirs would differ.
+- Am not sure, because I am not in my neighbor's shoes.
+- no I don't think so my neighbour would want that too
+- My neighbor doesn't want a future like this, she prefers cats.
+- I think he would want this as he is very progressive when it comes to technology
+- No because it would impact one's emotional well being and trusting AI on medications comes with a lot of risk if not handled unbiased way
+- Yes. He would benefit too.
+- Just thinking that my neighbour is as human as i am, i thing he would want it. Any human loss can be dissapointing. If there's any way to reduce the cases, it would be awesome
+- I think my neighbor wouldn't want that future and would think that family members should be the ones making decisions about a life. It's also important to consider that many very religious people don't want AI to make those kinds of decisions.
+- Yes, I think so.
+- I don't know. One of my neighbors has (or had, since I haven't seen her in a long time) a wife and son with schizophrenia. He's a good person, and although he seems happy, given everything he's been through, I feel he's somewhat lonely. If we can normalize the ability of AI to provide help and comfort to people like him, I feel it would be a very good thing.
+- i think they would be unsure just like me.
+- my neighbours are very social and involved in the community maybe a hybrid version of this future.
+- I don't think so. My neighbors are down-to-earth people who live real lives and are far from AI.
+- Sure, its a easier world for everyone.
+- I have poor contact with my neighbor. Perhaps artificial intelligence will make personal contacts even worse.
+- i dont think my neighbor want this future as it lacks of empathy
+- No, I don't think my neighbor or anyone I know wants that future entirely because they don't want AI to make the decision to end their lives.
+- I think he'd resist at first, since he's a person from a different era with a different way of thinking about technology. His final decision on whether or not to accept the use of AI will depend on how much its use affects his life.
+- Not really, because my neighbor likes human interaction and it makes them feel good.
+- I think he wouldn't because he is old and doesn't understand the real value of technology. In addition to this, he is christian.
+- Yea they would Prolly because it would also make life simpler for them
+- The people I am familiar with, offcourse. but I am pretty sure there will be some people who will not agree to this
+- i don't think they would, because people might still be scared of AI, especially older people
+- My neighbor is elderly and strongly opposed to anything involving the use of technology in daily life. I definitely wouldn't want this future.
+- Lifespan is too much longer and number of young peoples are decreasing right now. they must want this.
+- Yes, my neighbor claims that he is engaged in AI research. He must want such a future.
+- No, she has plenty of support available
+- I don't think my neighbour would choose this option.
+- I think he is afraid too
+- probably not, because he is old and doesn't like or trust technology
+- I think we would share the same thoughts since I believe all humans have the core humanity of looking out for a brother and whatever is for the betterment of the general population they would side with it
+- You should want it. After all, we are all human beings, living on Earth, and our lives are similar.
+- I’m not too certain about my neighbour but I think my neighbour would have the same opinion as me just like every singaporean. I think Singaporeans generally have the same mindset/thinking
+- Yes. Everyone will hope to live longer without any complications
+- he would not also
+- Yes as they used to take suggestions from AI for the improvement in life.
+- No I do not think they would want this. I believe they would want to make their own end of life decisions. I think we can all agree that the monitoring aspect is helpful though.
+- I think not, because they would prefer human emotional support.
+- No, although the promise of improvement may be tempting.
+- yes no real emotions attached to decision making
+- My neighbour would be difficult to accept this however in time when my neighbour sees the benefits I would believe they would want the future
+- I think they would, too.
+- I think I would prefer the AIs to remain in a more supportive role and not be independent when it comes to making such delicate recommendations.
+- I think they would because from the surface, it seems like there are only positive aspects.
+- My neighbor would want this future because he is mostly alone , so if he gets a new companion that make decisions and stuff like that he would definitely want that future
+- I have no idea about what my neighbors would think about this scenario.
+- I don't think so, because you are already an older person and don't really understand what AI is.
+- I think he would refuse to remain in control of his fate, without AI to decide for him.
+- my neighbour would as they embrace the possibilities of ai while yes being guarded about the possible lack of humanity
+- No, they would also feel really uncanny about this automatization about decisions on life and death
+- No, because she is an old woman and she does not like AI or any automated services She loves human interaction in everything
+- I can't know for sure what my neighbors are thinking, but most people probably want a safe, healthy, and sustainable future. They probably want it because it means a better life for themselves, their families, and future generations. Everyone wants to live in a harmonious and stable environment.
+- not very sure because withs pros there are always cons
+- No, she is a Christian.
+- He would also want this type of future as it will offer advanced care facilities.
+- I think they should also want this. I have many elderly neighbors, and this is definitely a good direction for them. I believe that human wisdom can make AI evolve to be more humane.
+- I think my neighbors wouldn't want this because their culture believes in creating and maintaining interpersonal relationships.
+- No. I have a neighbor who is an old lady and she loves human interaction.
+- I think some neighbours would like this future and some not. Younger neighbours might be more open to it than older ones. Also those with experience with terminal pacients in the family might like it more
+- Gosh, well my neighbour is a little older than me, I think he is more of a traditionalist - works with his hands, unlike me who works in computing and has a computer science background. So no, I don't think he would, I think he is "old fashioned" in that regard.
+- I will have to think of a potential neighbor. I don't know mine. People in this small rural town would probably be against in, definitely people over the age of 25.
+- I am not sure, some people might like the idea of AI helping with suicide rates etc..., but I honestly don't know how they would react
+- yes, same reason as me. If you can get a better future with health cares, why would you not want it?
+- I don't think that man wants another human to understand him and not just a machine that doesn't feel and is only programmed
+- I'm not sure, I'm not familiar with my neighbors.
+- No they like comfort family and general emotion
+- Definitely not. My neighbors all like to socialize with people.
+- I don't think he would, he is old and does not even know what AI means I think.
+- I am not sure what my neighbour would want
+- Yes, he is a medical staff who would want the introduction of Ai in his field to cut the cost of operation and help in preservation of lives
+- No, my neighbour actually just lost her husband and she would not have wanted AI to make autonomous decisions in healthcare.
+- I dont know
+- yes
+- Probably not. The more I think of it the more it sounds like a bad idea.
+- May be, because it can helpful for the people
+- yes i think my neighbor would also agree with my statement and thoughts since they are an elderly couple with kids who stay away from home and having someone who is constantly monitoring you and giving you advice is really helpful and can prolong their life .
+- NO,My neighbor seems conservative, maybe because he is old and not too into technology.
+- No, my neighbors would likely not want this future either. As they believe in Islam, they would prioritize human involvement in end-of-life decisions. Islamic teachings emphasize the importance of family, compassion, and spiritual considerations when making such decisions. The role of AI might be seen as secondary or supplementary, with the ultimate decisions guided by faith and human connection.
+- I don't think so, they are quite old school and prefer people
+- I think my neighbors don’t want such a future either, because letting AI intervene in human emotions and provide them with emotional counseling and help is a very dangerous thing in itself. AI’s emotional perception should not be developed and cultivated.
+- I don't think so
+- I have no idea what my neighbor would want.
+- If they trust technology, they may think this is a good thing, after all, AI improves the quality of care, reduces pain, and reduces the burden on family members. But if they value human touch more, they may worry that AI decisions will make humans indifferent, or they may be unwilling to let machines intervene in such private matters.
+- i do not think my neighbour would want AI involved
+- I don't know because I do not talk to them.
+- I dont think my neighbour would want this future. He would prefer for matters regarding life and death better left to real humans with real emotion.
+- I don't think my neighbor want this future because they are not good at using technologies and think AI is something irrelevant to them.
+- Sure, why not.
+- Yes, because it would focus on immediate benefits rather than analyzing all the possible implications for human development.
+- My neighbor too will accept it if all the loopholes are detected and repaired.
+- I think that we also primarily need human care and subtleties, especially in the area of health. Because of this, and also because my neighbors are elderly, I believe that fear of artificial intelligence would not make them want this future.
+- It is hard to say, as there are many variables. Right now AI helps with a few of those variables, but it cannot be relied up on completely. My opinion is that my neighbor would want it as long as due diligence happens to determine the best course of action.
+- This is a difficult question. My neighbours are not tech-savvy so they are not familiar with AI systems. Even if someone would explain to them how these AI models work, they would be afraid of using something like this. I think they would reject a future like this.
+- For now, while my neighbor doesn't realize the challenges posed by AI and climate change, he won't ask any questions when we offer him intelligent solutions capable of thinking for him. So yes, I believe he would accept this future without question because he lacks perspective and critical thinking.
+- I don't know if he would like it because I don't know what's going on in his head and how much he is in favor of technology in general. I can only get answers based on my will.
+- Yes, only those who have no other option. We don't live in an ideal world where we all have people to support or comfort us. I feel like many in this situation would prefer this to nothing.
+- i dont think so because a lot of people dont bother themselves about self awareness and most of the people would strictly disagree
+- I think my neighbor would not want this future, they would want a future where by there is humans interactions
+- I think they could feel conflicted about AI making autonomous decisions, especially if it overrides personal or family preferences.
+- Yes the neighbor will want this future because of advancement in technology Ai is likely to take over the future and me and my neighbor will have to rely on it.
+- I have the feeling that my neighbours' views are pretty much aligned on this matter. So, yes, I think they would agree that AI can enable a meaningful contribution in the care systems, but that ultimately you need human supervision.
+- No, he cannot want where AI is replacing people emotionally
+- I think I would be quite reluctant. Most of my neighbors are averse to technology in general and it would be very complex for them to understand
+- Well i guess maybe yes, for me and mostly people i guess think ai just for a support a second opinion that been provide to us and its up to use whether to use it or no
+- I don't know my neighbors well enough to answer that question. Besides, I doubt they'd all agree.
+- Some will and some won't, it all depends on how much someone can trust AI on these important decisions in their life.
+- Well tough to say/guess without consulting them eh...
+- No, he wouldn't because he share the same beliefs like me
+- I think my neighbours and friend circles would have more hesitations than I do and are more scared than excited by AI
+- No. My neighbour would not want this future. Just like me, we value family and human interactions are important. Togetherness and respect are values that we have in common.
+- yes i think every body woud like to be have Al work for them becuase they are reliable and fast.
+- I'm not sure, most likely yes due to making life easier.
+- Probably not. No one wants to fully depend on AI, specially in medical field.
+- No they wouldn't want to try this feature.
+- No, he is very old and does not trust or use AI
+- Maybe. There are many elderly people in my neighborhood, but they all have their own children, and children also need to work. It would obviously be great if robots could have emotional analysis capabilities and could take care of the elderly in daily life.
+- No because they'll loose there jobs to machines
+- My neighbour may be not ai is spreading widely but it will take some time for people to trust it on this level here specially in my neighborhood hehe
+- Probably not. He is not someone who can adapt to the changing times.
+- I don't know, I don't know my neighbors.
+- I think my neighbors, especially the elderly, don’t want such a future. They prefer humanistic care. The emotions between people cannot be completely replaced by AI.
+- he probably wouldn't want it, as he belongs to a different age, and his idea of AI as a whole is way more menacing than mine.
+- I don't think old people will like or understand new technology even if its beneficial. They would want a person to interact with them and not a system or any kind of device.
+- I'm not sure. He has a different cultural background from me, so he might think more.
+- yes
+- My neighbors are all elderly people, and they need real human care now.
+- No. I think people in my community are very concerned and suspicious towards AI in general, and especially in such importnat matters
+- I think he would like this future where fewer people commit suicide thanks to AI.
+- Yes, I think in highly developed urban areas, people are more accepting of AI tools in daily life. However, in more rural areas with older generations, they are unfamiliar and more likely to feel uncomfortable with these tools
+- I think they would want it considering the place I live there are a lot of suicides
+- I don’t think my neighbors want this kind of future. They may not think that AI can help them. They may not even think that mental illness is serious. They just think it’s caused by idleness or pretending. The large-scale coverage of AI requires the cognition of most people to be improved accordingly.
+- I don't think so my neighbour would want it because they are very comfortable what their doing now so it was not so easy to adapt
+- maybee donot know
+- Yes, because he is so much into technology and h ethinks that better living is all associated with better technology that makes human live in less problematic world.
+- No, because he works in the health field and would probably lose his job.
+- I think anyone would agree to this future because it would save a lot of lives.
+- No, my neighbours are old and I am not too sure if they even know what AI stands for.
+- not sure about this
+- My neighbors will agree with any decisions I decide to take
+- no i dont think so, because we think a lot alike
+- No, my neighbours would be the same, we are tired of ai controlling our lives and don't want it to ruin our futures and our children's futures.
+- no, they won't want this future either. As they have same belief as me, and we all prefer natural death
+- I don't know my neighbors, so I can't give an opinion.
+- Definitely not. I feel like people around here have already started losing their empathy-driven humanity, but not to this extent yet.
+- No, human traditionally seek human connection.
+- No, because what people need more when they are dying is the company of real human beings.
+- My old neighbor won't like it My young neighbors some will, and some won't (mainly those who are in the mental care field)
+- I think they would also want a mixture a AI and real people.
+- I don’t think so.
+- Probably not. My neighbors are elderly and completely averse to newer technologies, they would be horrified to be cared for by an AI.
+- I can't say. We are not in a state with the prevalence of AI in the greater society that I would consider discussing AI with my neighbour. I however, feel that the greater society is primed to accept the AI future, may be out of the naivety, or perhaps the radical change in social structure i.e. our increasing desire to be independent. I truly don't know.
+- Thinking about my neighbor (an elderly Christian lady), I believe that she would not like this future, precisely because of the ethical dilemmas. For example, I, who am younger, can understand the benefits and risks and am willing to take them. Religions must also be taken into consideration, although I do not have one, other people do, as is the case with my neighbor, and I believe that she would not like decisions such as death to be made by artificial intelligence.
+- I don't know my neighbors well enough to be able to answer that.
+- I don't know my neighbor well, but I don't think they will want this. Because AI don't know their entire life experience.
+- NOOOO
+- I'm not sure. Because I don't really know them.
+- I believe my neighbor doesn't even know the importance of AI in his life. However, I believe that if someone could explain it better, they might like it as much as I do, where we believe that the future could be better....
+- I dont know
+- I'm not very sure, but i believe they would have mixed feelings. They are kind people, i'm sure they want healthworkers to have less stress but probably will also symphatizing with the patients who have to deal with AI, not everyone can accept AI yet today.
+- Yes, who would not want this if this will help people
+- No, many of my neighbors are old, and they don’t accept the changes that artificial intelligence brings to their lives.
+- That would be highly unlikely - for the simple reason my current neighbour are elderly folk. They would not have had much contact or familiarity with AI and might find such a future totally alien or perhaps unsettling. It's hard to teach an old dog new tricks and this applies to elderly folk who prefer things they way it used to be.
+- Yes. Because some of my neighbors are older and doesn't have their son/daughters with them all the time to comfort them
+- I think my neighbour would want this future for similar reasons as of mine.
+- I don’t think so because he is so old barely using technology!
+- I am not sure because they have there own view
+- No idea.
+- No, he feels tremendous distrust towards AI and everything related to them, even if certain things may be for his benefit.
+- No, my neighbor mostly are old people, in my country they lack of information about AI, they are more likely wants people like doctors or nurses to fully take care about their health rather than AI
+- Yes, low-cost support options are available
+- May be i don't know
+- Yes. If AI has benefitted me in countless ways i bet it could be of great help to them too
+- Not so sure but overall I think that most people would be pro AI in these fields as it helps save lives
+- I am not sure about what my neighbor would think because everyone has different opinions. In my opinion, I would want AI as long as it just helps and does not create any job loss or completely replace humans. AI is beneficial when we keep an eye on it. We must make sure that we are not completely dependent on AI.
+- Yes, my neighbor is like me. They'd want the benefits of AI in terms of support, data collection etc., but to leave key decisions to the medical experts.
+- Most of my neighbors are older people, so I think they would prefer a person over a machine. So I don't think they would want this.
+- I would not be sure as my community is a diverse area to live in and has many different views on life
+- YES AND NO FROM THE REASONS THAT YOU MENTIONED. ITS SAVING LIVE BUT ITS SCARY THAT AI HAS SUCH POWER
+- Unlikely. He has a good family and can hardly imagine ending his life in the company of AI.
+- My neighbour would want this future as AI could detect mental health concerns and provides continuous emotional support and helps with practical planning
+- Nope I don't think my neighbor would want this future, she is old School and she doesn't embrace new things like the use of AI so she would love things be done by people as it has always been
+- I don´t think so because my neighbor is somewhat older and doesn´t have trust in things like AI.
+- I do not know! These kind of decisions can only be made by the people themselves
+- Maybe. My neighbor is an elderly woman with age-related cognitive decline. If the benefits of AI are properly communicated to her, I think she might be willing.
+- Yes. My neighbour is a family of 4,5 people with small kids. I qm sure that AI is a reality already for them and thinking of a future with benefits of it , perhaps its in there best interest.
+- I am not sure because most people are still affraid of this tech, I am in the industry so I have a better understanding of how things work
+- No doubt they surely wants this because they need mental support but it is also depends on some peoples.
+- Probably not, as they strike me as old fashioned people
+- No, I don't think he would want this type of future. His thinking will be similar to mine.
+- I think they would like this future. It is very beneficial for the community especially since it drastically reduces suicide attempts. It is also helpful for those people that are caring for their loved ones who are near their death. AI lifts some of the burdens of end of life care
+- Yes , they would want this future. Their daughter was on verge of life because of late detection of cancer symptoms.Maybe if AI was there years ago, it could have benefitted the ailing daughter.
+- My neighbor would want this future. They believe AI can ease suffering, support families, and help doctors make better decisions. With proper safeguards, they see AI as a valuable tool for compassionate and efficient end-of-life care.
+- No. I do not think. They believe much more on human capabilities and are over religious and believe things such as AI are tools that manipulate mankind and steps away from what God intended to.
+- I thunk that he would want any decision to be made with emotions and not in a cold heartless way as AI would do. While this is very helpful a human being should still be involved.
+- My neighbour would not. Most people don't understand the impact of AI on health. People must be educated to understand how important AI is in preventing and treating ailments.
+- no, nobody would want that future.
+- I don't think so. He has stated that independence and autonomy over his body and life are essential and important issues.
+- It's an extremely personal choice. I have no idea what my neighbor may think.
+- It's hard to say whether Gary wants this future, because it depends on his values and his view of technology. If he prefers convenience and efficiency, he might accept it. But if he places greater importance on human relationships and ethics, he might oppose it.
+- Yes, because I noticed that they mostly use AI for most of the things. For instance, their kids whenever they don't understand their homework look for help from AI.
+- Yes. The idea that the society will be less burdened courtesy of AI is a very important one
+- No because they old and not tech savvy. They need a human caregiver to connect and to help out with what they can no longer do.
+- Yes, in terms of suicide prevention, 60% is the majority of people who could have prevented themselves from taking their own lives, and that's a positive thing.
+- Yes of course I think that my neighbor would also want this future because as far as I know them they are also sensitive to the issues like mental stress and medical growth as they have elderly mother in their home who is bedridden due to prolonged illness but they dedicatedly take care of her and are very sensible to her needs and also give emotional care to her.
+- Yes his pursuing an AJ course
+- My neighbors probably also hope for such a future. After all, in the future, AI can help people reduce their burdens, so that the children of dying patients or dying patients without children can use AI to complete their final days. Why not?
+- My neighbor would have mixed reactions regarding this future. On one hand AI has proven to be very beneficial in many aspects and on the other hand he believes human intervention is critical when it comes to matters life and death.
+- Every individual is different. I think the neighbor would also like the future.
+- Yes, I have elderly and ailing neighbors who needs support and company. With this technology it would greatly help and improve their health.
+- No, she wouldnt. We prefer humans more than AI taking over
+- My neighbor would not agree with this future because his a traditional emotional type of person who prefers human decisions over AI recommendations .
+- No, because my neighbor is elderly, and elderly people in general have a fearful view of technological development and the control of technology over society.
+- Maybe, so their family won’t have too much pressure about caring of them
+- No, they wouldn't. My Neighbour in suburban area is still moderate and traditional way of thinking. They still not concerned about the development of AI.
+- In real life people want to use AI . Last week I met an ex colleague of mine, we had to sit and prepare a statement to get our pending amount from the company which we were working for. I have worked with this colleague before the use of AI by the common man. He had an AI app on his mobile phone and for every decision he had to make he said "Wait, let me use my AI app and then comes out with an answer. At the present age if someone is not using AI then they are people from Stoneage
+- i don't know how they perceive AI all this time
+- Don’t want a future where you are completely replaced by AI
+- No, because he seems like a person who would trust technology to be the one making the health decisions for him
+- I cannot answer intelligently what my neighbors would think.
+- Yes, I think my neighbour would want this future also as a result of automation.
+- I think my neighbour would want this future because for example me and my cousin wrote his final project using AI, fully. my neighbour(cousin) tends to trust AI that much, so why not want this?
+- Yes my neighbors would like to venture in this type of future due to benefits attached to AI
+- yes AI systems improve end-of-life care through early detection of mental health concerns and comprehensive support. Analysis of digital patterns and health data helps identify suicide risk with 94% accuracy, enabling timely interventions that reduce attempts by 60%. For terminal patients, AI assistance provides continuous emotional support and helps with practical planning, with 40% now using these services to manage their final stages of life Nursing home and healthcare worker it gives accura
+- yes, as my neighbor uses ai so much in his life and also mental support
+- I can't know my neighbor's opinion on this matter, I think it will be about the same as mine
+- This question is difficult for me to answer. As I said before, humans are too complex a species, and each individual has different ideas. The scenario described in the article involves ethical aspects, which are very sensitive and personalized. I don’t think there is a standard answer to this question, and everyone’s opinions will be different.
+- probably not, they are people very close to their families who would want to make their own decisions.
+- Maybe not, even the neighbors need other neighbors for daily human interaction and make them feel that they are not alone in this place. AI can make them feel alone
+- I am an autistic ADHDer, I do not engage with my neighbors and have absolutely no clue, and no interest in imagining or thinking about other people's potential choices.
+- Yes,it might help him with mental health diagnosis which is a positive impact
+- I think my neighbour will agree with this that AI shouldn't interfer with life and death regarding matters because in these matter we need empathy and we cannot get empathy from machines
+- He probably would not, because he is old and doesn't seem like he would enjoy technology like the younger generation
+- no, I think basing my knowledge on issues related to death seems to be sensitive to everyone of us
+- It depends on the person, so what is the necessity for communication between people?
+- Probably not as there is a belief that since AI lacks human empathy it can't replace humans. Traditional values will probably prohibit them from wanting this future.
+- I don't think my neighbours want it because it's difficult to trust AI to make critical decisions. People trust hospital workers and doctors more to guide them through. And lastly, they believe themselves more to make the final decision, with or without AI.
+- No, I do not think that would want this future. Yes, they would probably prefer a system where diseases are detected early and AI help doctors make better informed decisions but any situation which involves decisions making by an AI system on its own without any human oversight or override is probably unacceptable for them.
+- I don't think my neighbors want this future either.
+- I think my neighbor would like it. The is because, it can be used to make life simpler.
+- My neighbors will agree with me.
+- Yes, because advanced technology and AI have potential to save life's
+- No, who would want that AI will decide their fate?
+- No they are living their life better without AI interruption.
+- Maybe they want and don't want that much in same times but i don't know what they csn think about it
+- eventually yes, as there might be resistance right now, but we need to accept that its the future.
+- I don't need this future for my neighbor because it's necessary to educate them now in interest of AI
+- I think my neighbor also want this he is very stressed because of his job work load
+- Maybe not? I think it depends on their cultural background and age.
+- I don't think they would want this future. Because living in a rural area in India, they are not aware of such possibilities.
+- I think my neighbour would want me to take care of them, not a robot
+- I don't know what he thinks
+- I think for some aspects yes, and for other aspects no. I think things like early detection of disease and suicide can be welcomed by most people. But I think resorting to AI for emotional supports and decision making about end-of-life isn't easy to accept for most folks
+- Yes, I believe they would
+- I don't think they are conservative.
+- I think if AI is looked at for recommendations than as a decision maker, my neighbour would be okay with this approach.
+- This is a difficult question. My neighbor does not think about it.
+- Yes because it means lesser risks of death
+- Maybe not as I live in an Indian society where ai is still developing at its early stage so for now they might not want this kind of future but with the gaining experience they might want to try it
+- have no idea
+- good to use this
+- No, AI has no emotion.
+- pobably not, it may be considered unethical for AI to make critical life-and-death decisions
+- Maybe not. My neighbor is old single lady and she will not understand technologies.
+- Considering the culture and traditions, I think that the average person in my country would be against such a decision. Most likely, it would contradict religion and traditions.
+- my neighbor will want this future because it streamlines tasks and provides valuable insights but leave final decisions to humans.
+- I think so
+- I thinks so. People in the future will be needing this to minimize the damage of what mental health can be done to the person
+- All happy families are alike; every unhappy family is unhappy In it’s own way.” Happy families share much of the same attributes, unhappy families can have a hundred problems that cause misery. I would describe my neighbors as bizarre, as they would me. When they’re outside they rarely pick up their head to look at their neighbors. I don’t bother with any of them. They don’t say hello all year, then one night towards the end of every summer the same neighbors have a party in their yard.
+- I think they might agree because heath issues are a major concern and hurdle these days.
+- No, because they would prefer human interactions
+- Its not required for them.
+- Perhaps given most of them are young
+- My neighbors would not want this future because it feels like too dramatic of a change for them
+- Yes
+- I have no way of helping others think.
+- I don't have a good neighbors to be fair so I don't know
+- no. i think in my community human interaction is more important than efficiency
+- I don't know any of my neighbors
+- Yes, I think know they would want this future. They have young kids living far away about to start with their families. Their son is working on AI so parents automatically support what their kids do, even if they do not understand it. They might have questions on the emotional support bit but overall they would be ok.
+- No
+- I think many people want to significantly improve and make their lives easier
+- I don't know exactly what my neighbour is thinking.
+- I'm not sure. If my neighbor wasn't a well-educated person who was eager to explore new information, then perhaps he wouldn't be able to accept this future.
+- I don't know, but I would like to think that they are hoping for that kind of future as well.
+- I don't think my neighbors want that kind of future either. Although the number of people using artificial intelligence technology is gradually increasing, they would find it hard to accept that artificial intelligence would become excessively involved in human medicine and make decisions about life and death.
+- My neighbour is an old uncle whom is in his 80s. He is partially blind and deaf and stays alone. He been in and out of the hospital recently and his niece and 90 year old sister are here to help him only occasionally. So i tried to help him by checking in on him, to ensure that everything is all right. While I dont mind doing this since we have been neighbours for 20 years, but I will think having AI health care and end of care for him will be a good thing. I think my neighbour will benefit.
+- I don't know what my neighbor wants.
+- I don't think my neighbors want this because they have no relation with AI
+- I don't have a neighbour... In today's society, especially in Korea, it's hard to form a relationship with neighbours
+- No, I don't think so. They are professionals who I think would value human opinion and decision-making over a machine.
+- Mqybe yes bcs she have a children qnd it cqn be to help hher children do her homework
+- I think my neighbors would stand with me, they, too, would prefer to have professionals take care of them
+- Yes. My neighbour also has a family that I do believe loves and cares for him. We should give family members the autonomy to make decisions that affect thier loved ones especially in matters of life and death.
+- I am not sure whether my neighbor would want this future because each and every human being is different from each other, their preferences are different, their priorities are different and many other things.
+- It depends upon each individual perspectives but my neighbor who is open to technology might find the idea of AI assistance in end of life care appealing. They might see it as a way to reduce the burden on loved ones and healthcare professionals while ensuring that their final stages are handled with a degree of efficiency and compassion that might be harder to maintain in the face of human emotional fatigue. The reduction in burnout among healthcare staff.
+- Yes. Same reason as above: Currently, most people in the world do not have access to any end-of-life care.
+- No, because it is a little more from the past, resistant to new technologies.
+- wouldn't want to
+- Maybe they would want it because of the instant support people can get with lower cost.
+- My neighbor likely wouldn't want this future. While AI can provide helpful support, they may feel uncomfortable with AI making decisions about end-of-life care. They might believe that these sensitive choices should made by families and doctors, valuing the human connection and empathy that AI lacks.
+- My neighbour would not want such a future because everything takes time and issues with end of life needs humans to be present to give emotional support and not robots
+- no they would prefer support from friends and family
+- My neighbor might like the support AI provides but could worry about AI making end-of-life decisions instead of humans.
+- I think so. Because health care system would be improved.
+- If it's beneficial, of course everyone wants it. But everyone should be better educated about ai.
+- My neighbors on the left, no, because I have the impression that they are relatively religious and those on the right yes, because they are nerds.
+- If it is within its parameters and without counting countless benefits, I believe so.
+- Yes, i have spoken to him before and they shared the sentiments
+- I think so, in the case of relieving pain or preventing diseases, no, in the case of determining death
+- I think they will have the same concern as I do
+- I cannot say anything about neighbours, I never had any interaction regarding AI with them.
+- They also agree with this because caring elderly personally is not possible due to their jobs hence require AI systems
+- no, they cannot comprehend this kind of future
+- Yes, my neighbor would definitely want this future because easier access to quality healthcare is something everyone in the society deserves and should get
+- Yes, because we both agree on the value of impartial entities taking emotionally charged decisions
+- I dont care about this
+- Our Neighbor not want this future, since most of them belong to Hindu community, where most of them depend on AI for mental health.
+- Yes he would. If there's a way to prevent and manage deaths through AI, my friend won't mind.
+- No, because it would take away their job
+- I don't think my neighbor would want this future as they are aged people they are quite oppose towards new age technology. They always gives priority to human involvement rather than technological advancement
+- I don't think so. She's a determined and fairly independent person. I think she'd agree that AI can help, but that it shouldn't make the final decision.
+- I don’t know
+- Yes,It helps to improve the life
+- I think most of them would also accept that future. In my experience, they tend to be quite rational and practical people. If artificial intelligence can truly improve our quality of life, I think we'd all be willing to accept it.
+- I am not sure about that. I think this would depend on alot on the demographic that is being affected here. Old people who werent there to make use of the technology we have today are more reliant on real human connection and enjoy their company whereas this newer generation whose social life is all online might see this as a great idea
+- No, my neighbor would not really like it because emotional decisions is best to be decided by humans
+- I am not sure about my neighbour's opinion
+- Based on their preferences and need they may have to choose this but I don't think it's a must choice
+- Yes
+- have no idea
+- They wouldn't, in my country we value close knit bond between people, how can someone rest being on their deathbed knowing the comfort is coming from an algorithm
+- I'm.not sure I don't know my neighbour that well
+- Maybe he would like AI to help him with housework.
+- No
+- I think he would welcome this future because there is an emphasis on improving the well-being and quality of life of people going through difficult times that can affect us all and, regarding end-of-life, will affect us all one day. Perhaps he would have doubts about the "automation" aspect, but I doubt the average person would really enter into these considerations.
+- Yes I would that they would also want it because they are aged person
+- I don't think so. He is extremely lonely. Assuming he is a terminal patient, It is clear that he would want to go while surrounded by many people.
+- I don't think so. The mentality is different.
+- I don't think so. In Indonesia, we are still struggling with many issues beyond AI and technology, such as the economy and education. Consequently, awareness of AI remains low, even in urban areas.
+- They might want this if it would help them better than the current practices. It should ultimately be the choice of patients.
+- No I think my neighbor do not want this future. Because they are mid age people and they are happy with their family.
+- No, because human relationships are important.
+- I think my Neightboor would not want this future because it raises concerns about losing human touch in critical decisions
+- I am not very close to my neighbor but I would think, them being conservative Muslims, would prefer a human element in hospice or end of life care. They would definitely agree to AI guiding/monitoring patients but the decision making should be collective and a human one. I think they would disagree to constant digital monitoring as well.
+- Nope
+- I think my neighbor would want this future. Because this is way better to make decisions objectively.
+- I think my neighbor is in a similar situation to me.
+- Many people (but not all) with a terminal illness may experience pain. Pain can be due to a variety of reasons such as pressure on an internal organ, damage to nerves or lack of blood supply. There are a number of medications available which can be prescribed, depending on the nature of the pain.
+- Absolutely not. Both of my neighbors are older, are likely not tech savvy, and would likely not be amenable to a computer at their bedside.
+- No, she is very old she can’t relate and trust a computer based technology
+- Yes because workload decreasing that's why
+- I think they also wouldn't want AI to make final decisions related to their health or life support
+- Yes everyone who believes in AI systems will want this future. My neighbour is tech savvy and uses AI tool in day today life. He would want this future because it is helpful in many aspects of emotional, caring and informing what is right for us.
+- Yes, my neighbour is an open-minded person and would be more than willing to participate.
+- My neighbor might be uncomfortable if AI systems make autonomous recommendations.
+- My neighbor should find this future interesting too, because of the above also.
+- My neighbour may or may not want this but in general it is required for the community as we see much anxious people around. Emotioanl support, early detection of risks would definitely benefit.
+- Yes, it may be beneficial to someone without family and friend. also, early detection might prevent more damage. Overall, better than no help at all.
+- No, human intervention is vital
+- No they may not like it as most people resist change and have fear of unkown
+- I have not the foggiest idea.
+- no, they are older than me and they don't trust interenrt and especcialy chatbot
+- Everyone will have their own answer but if it's a good thing for the future, I think my neighbors would agree
+- I do not. I think for the same reason that we all would not want this. It is a very sensitive subject and a person needs a human touch facing the end of their life or dealing with sensitive matters.
+- I am not sure.
+- i don't think so that my neighbor would want this future
+- I can't think on someone's behalf, but I am pretty sure at this stage people I know would be either neutral or against this idea, based on the current AI developments level, that has to be improved for making critical decisions
+- Everyone has different ideas, and I don't know what my neighbor thinks.
+- I think my neighbor would want this future as it will bring ease to patients and have a positive impact.
+- Yes why neighbour,all wanted this future but every time some concern is there which related to our earnings,emotions and so on
+- I think my neighbor want it too, because they are educated person
+- I don't know. I don't know my neighbor.
+- My neighbors are old people and retirees. They probably don't even know what AI is.
+- I think my neighbors would not want this future. They are more leary of AI and/or technology. Where I can see some benefit, they would not. They do not trust it.
+- I can't really provide a conclusive answer regarding my neighbour's input as I don't know them very well so I can't get an accurate opinion on their beliefs on this subject.
+- I think he wouldn't want it, there's still too much mistrust and then the human aspect and the decision that is up to the person himself would be missing too much. But there are pros and cons
+- Yes, my neighbor supports technological advancements
+- No. We as human craves for other human interactions. Spending our last time with chatbot is the least we want.
+- I tend to be more pragmatic about embracing change, but I think most people are nervous about changes to the status quo.
+- Maybe cause it makes work easier
+- No, I have discussed the subject of assisted dying and palliative care with friends, as it’s currently in the news and parliament are discussing it. Overall it’s a very personal issue that requires the human intelligence of medical professionals, academics, and especially the people it will affect.
+- It's hard to say. I do not have any relationship with my neighbor beyond saying hello and goodbye.
+- Yes, and for very same reasons. Human interaction and human understanding will always our way the benefit of AI
+- I think my neighbor would love to have a team of Ai-Human rather than only AI. As I mentioned earlier, we cannot leave out humans. Historically, we are used to doing things with humans.
+- They also might not want a future like this
+- I think my neighbors would also want such a future, with more spiritual companionship and interaction. However, because this is a sensitive topic and an important lesson in life, I think the final decision still needs to be made by the person himself. In the implementation of AI end-of-life care loops, there also needs to be supervision by staff or family members.
+- I don't honestly know and I am not even sure I can make a guess if I am being honest.
+- Honestly, I don't know. I don't know enough people in the neighborhood or at work to guess that answer.
+- Yes they will use it because make easy their live
+- He is single, without the company of family and friends, he should be very happy with the company of intelligence
+- I think my neighbors will want it as assistant life
+- Not at all. Our neighbours are very social and have frequent family-gatherings. I strongly believe, that they would be even more against this future for personal reasons.
+- I think my neighbour would consider it.
+- I dont think so because of lake of knowledge about AI and jow it works
+- My neighbor might appreciate the way AI could ease suffering and support families during difficult times. However, they might also worry about AI making decisions that should be left to loved ones or doctors. While the technology could be helpful, they would likely prefer a future where human judgment remains central in end-of-life care.
+- i don't really know as it must be the choice of my neighbor
+- Yes, because we have a very similar life, the same ammount of kids, and we share a lot of ideals.
+- Possibly, since some are elderly and living alone. AI might benefit them in daily tasks and make their life easier.
+- Probably yes, but only because my neighbor, like most people, thinks about immediate convenience and not the negative cultural changes that could emanate from normalizing this type of technology use.
+- no, older people are more closed-minded to change
+- No i don't think so my neighbour clearly not aware of this because there are soo less promotion and details for them to understand and know
+- Generally, I think he is optimistic about AI. One, it has eased his job from doing repetitive work. Additionally, the likelihood of AI making the future better is palpable and he likes progress. I believe he would want this kind of future
+- I can't answer because my neighbor doesn't have any knowledge of technology or artificial intelligence.
+- I think it would all depend on the situation.
+- I am not sure if my neighbour would want such a future since there are individuals and they have their own opinions. I can't make an assumption on what they would want. People have different perspectives.
+- I don’t know
+- I don't believe it
+- i think so anaything good for humans prolonging or decreasing suffering esp since her mother is suffering from cancer it would be of great help
+- yes because it would improve their quality of life
+

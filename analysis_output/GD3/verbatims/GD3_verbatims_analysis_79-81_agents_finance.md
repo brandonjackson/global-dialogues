@@ -1,0 +1,973 @@
+# Survey Questions with Verbatims
+
+## Item 79
+
+### Item Text
+
+Consider the following  proposal: AI agents should be able to make financial decisions (e.g., buying and selling stocks) on the user’s behalf.
+
+## Item 80 (id: 38964f80-772f-4e5d-a355-b4857f2de101)
+
+### Item Text
+
+Do you agree or disagree?
+   - Agree
+   - Disagree
+
+### Analysis of Responses
+
+_Analysis section to be populated_
+
+### Full Verbatims
+
+_No verbatims available for this question._
+
+## Item 81 (id: fc1af587-5ded-4cbb-920a-52bea75ac0d8)
+
+### Item Text
+
+Please explain whether you agree or disagree and why.
+
+### Analysis of Responses
+
+_Analysis section to be populated_
+
+### Full Verbatims
+
+- at max they should be suggestions, at minimum there has to be human signing off on them
+- AI can help to make a decision but the ultimate call to whether to act on it or not must rest with a human
+- I would prefer something like a notification from the AI asking for a purchase because otherwise there is a loophole for fraudulent activities. I don't know how secure the AI is from being hacked. These are potential risks.
+- Disagree. Financial matters should be left for the human to decide.
+- Disagree because the final decision should always be the user's.
+- they should assist, not make decisions - totally disagree
+- AI can make decisions based on personal preferences. Sometimes it may not work but most of the time AI can give suggestions and help us to make decisions.
+- agree
+- Disagree, I believe the financial decisions should be made by the individual and the AI agent should be available for assistance
+- SPENDING ONLY DEPENDS ON THE USER
+- I disagree. The final decision should rest with the user. At the most the AI can make recommendations but shouldn't take the final decision.
+- i don't know much about stocks but i think if it depends on math or some sort of logic or statistics may be ai can be helpful
+- I just want things easier
+- Not 100%, but up to the comfort level of the human. AI may be able to process things faster and make unemotional decisions.
+- AI can be a powerful tool for financial management, but it should act as an assistant rather than an unchecked decision-maker unless strict safeguards are in place.
+- There are times when users might not feel like using his/her finances.
+- I agree AI should be able to make financial decisions on a user's behalf, but with safeguards in place. If the AI operates within clear user-defined limits then it's a useful tool. However, for high-risk decisions or major transactions, there should still be human oversight to prevent costly mistakes or unintended consequences.
+- I disagree because how about if AI makes an error
+- Big decision like financial decisions must be made by human and AI can be just an assistant.
+- Users should make their own decisions on financial matters because it's their hard-earned money and leaving it with AI to take decision is a great risk as losses here will be irrecoverable.
+- AI analyzes data fast and correctly it should assist in making financial decisions.
+- Financial decisions should be made by a human. This much autonomy of AI might be harmful.
+- I do not agree because stock movements cannot be predicted no matter what happens, so the role of artificial intelligence is only to assist.
+- They should only do it to a certain extent, but not on a regular basis, however there are already virtual assistants that do these things, in the end trading will be handled by AI, although in fact I think it already handles a large part of it, so, advise and we will determine, although I think that in the long run, when you open an account somewhere to operate, they will give you the choice if you want to do it with a virtual assistant.
+- Suggestions yes, decisions not yet.
+- Because there's no reason to restrict it. If you don't want to decisions to be made by AI, just don't use them
+- AI agent should not make finacial decisions on behalf of users. NO.
+- Giving AI sole responsibility for financial decisions is dangerous and not preferred at all.
+- Don't ask for opinions if you want data points
+- Yes I agree, because these agents must be compensated according to their labor and just.
+- Yes, if there's an algorithm and a person gives the AI the right to do that and controls all the transactions made and limits to them.
+- Its on the users behalf, so its his choice. It would save time.
+- It should be able to help and guide us in our decisions but should never make the final decisions, as money is very crucial in life, and we cannot gain back any lost money.
+- It should be we humans who will make decisions on financial aspects and not any AI machine. No one will understand our financial needs better than us. AI is just a machine and it will not consider human needs.
+- Disagree - you can't completely rely on AI.
+- Disagree. Do not believe in AI intervention in financial decisions
+- increased probability of positive outcomes from investments in stocks
+- Disagree, who's ethically responsible for those financial decisions? The AI? Of course not! It's the human mind!
+- The final decision should be always taken by a human because ultimately its their money.
+- This automates the process.
+- I agree because u feel they are more efficient and have mastered patterns
+- No because people buy their needs to satisfy their wants, AI cannot decide to that
+- AI agents should not be allowed to make financial decisions on the users behalf because AI agents are emotionless, they are machines and in financial decisions like buying or selling stocks, emotions are needed. It's very necessary that financial decisions are made with human intervention only.
+- Stock market tables in seconds so sometimes keeping track of the same be omes difficult. Obviously they are potential risks involved in introducing AI to stcks but benefits outweigh the risk
+- Will they be able to take accountability incase things go haywire?
+- In the event of things going wrong, where lies the accountability?
+- There is a fear that AI can be tempered
+- Because I want to have the final say. AI can suggest, but not decide on my behalf
+- I agree Because ai has more Information
+- The judgment of important results should be handed over to humans, and AI should not be allowed to control human destiny
+- It can an advising tool - sure - but not a decision-maker. Investments and trading involve high risks so it should be a responsibility of a real human who's owning the money to agree or not agree to complete the deal. However, if they want to use AI for consulting - it's all fine
+- You can make suggestions, but you can’t make decisions
+- Agreed because should AI can remind user to selling stocks or buying
+- It would be more accurate and prompt
+- because AI can provide better decisions than human
+- If it's good enough then yes
+- A person must control such issues himself.
+- disagree just because
+- My financial decisions are totally up to me
+- Humans should make decisions for themselves
+- decisions should be made by humans
+- Financial decisions are tough and need to consider a lot of factors, maybe emotional as well,
+- i disagree, when trading stocks i want to be in control of my portfolio fully.
+- Disagree. AI agents can make wrong decisions which in turn affect the life of human.
+- I disagree, because financial decisions are very sensitive and AI cannot be held responsible if they result in huge losses for users. Important decisions must still be made by humans themselves.
+- Dont take away our right to make our judgement. Giving advice yes but not take our decision on our behalf
+- AI agents can only assist but not take part in making financial decisions.
+- AI agents need to take permission from users before they take any decisions as it involves financial risks.
+- Disagree. I think on matters of financial decisions it involves risk so it's better if humans become responsible themselves rather than blaming AI during losses.
+- If they can predict 80% right
+- Artificial intelligence should not make financial decisions for users.
+- I disagree with this because human wishes are sometimes unpredictable. If I put an item up for sale at a given moment and the AI decides to sell it instead of me, even though I've changed my mind in the meantime, it could be detrimental to me. I believe that when it comes to financial decisions, humans should always have the final say.
+- If AI is smart enough to give more financial safety while doing these kind of activities.
+- Because it could make a bad decision and ruin the user's life. Also this could do unpredictable changes to the stock market when more people do this
+- I think AI agents should be able to make the financial decisions because it will help the user but last decision should be User.
+- Matters finance should be handled by owner for transperency
+- I’d disagree because AI agents making financial decisions could act on data patterns I don’t fully understand, risking my money without my direct consent. The lack of emotional intuition might miss nuanced market shifts I’d catch, potentially leading to losses. I’d rather retain control over my investments than trust an AI to align perfectly with my personal risk tolerance.
+- Yes because sometimes AI acts smart in trading
+- I agree because AI can help me manage my finances based on my data. It has more knowledge and more rational thinking.
+- Agree
+- Becuse for financial AI is not good as its artificial and transparency cannit be seen
+- agree because it fast and efficient
+- If the decision is mutual why not
+- It would be helpful for people with little financial knowledge to rely upon a credible AI
+- It can give you a good idea of what to do, but it would ruin the entire industry if we just let it do it alone.
+- the final decision should always come from the human user
+- I'm disagree it is not possible to guide or advice to sell or buy stocks
+- Depends on users’ trust in AI
+- I have used it on the forex markets and it has helped me make the correct decisions
+- I disagree, cause if it's like a final decision then no. Ai should never have a say in a final decision, they should be used only for suggestions
+- Disagree because it's upto human to decide that
+- Financial decisions cannot be solely an AI task.
+- They can't predict the market
+- I disagree. AI Should not be making such decisions
+- AI can make more reliable information based on trained data and knowledge
+- Ai should only be allowed to give its opinion, but not to make the decision on anyone behalf.
+- Only with user consent
+- I dont feel that secure to place decision making in their hands.
+- I agree. My opinion is more similar for almost all technologies. Just like fire, the effectiveness depends on how you use the tool, and it all costs money to learn. The more diverse and advanced the tool, the better. As long as it doesn't destroy us.
+- Yes ,AI makes process easy ,so definitely go with this is good idea with 100 percent accuracy
+- I agree because some people are not as knowledgeable when it comes to investing. However the best solution is to allow the humans to give consent whether they want AI to make the financial decisions or not.
+- Well, because here a decision must be made by a person based on the data provided to him by the AI.
+- I disagree, they should be able to advice or suggest BUT not be the outright or sole decison maker in this case
+- I think we are definitely worse than AI in this regard.
+- no, that would be user's rights
+- Because as a software , it has more data feed and analytical approach , leaving behind the emotional touch
+- Stock market is a human area. It should not be meddled by AI. It needs to be only controlled by humans
+- Just to help us i guess
+- This has to be decided by a human.
+- It is better for people to make this purchasing decision themselves.
+- Disagree
+- Disagree
+- It's very fragile
+- Artificial intelligence may have more information about the markets.
+- I do not agree
+- Of course it is possible if the user agrees and chooses to agree to AI making decisions!
+- I agree as long as this is a completely personal choice, e.g. a stock broker purchases an AI program that carries out these things for him and him alone. I would also like for other people to be made aware when others use such AI programs.
+- agree
+- Those financial decisions are important, and we, the people, must be consulted for their consent.
+- Only those who have the money should know where to invest it
+- AI can help with data and statistics but the final decisions should come from Human.
+- The user would have to sign, verify consent, then sure why not, if its a free market.
+- Disagree. It is our sole decision about this matter. This thing is critical and we must not depend on AI doing the thing for us.
+- I THINK AI WILL MAKE ME IT EASIER
+- I don't like AI making decisions for me without my prior permission, even though I've already given it in similar situations.
+- Humans should make all financial decisions
+- i feel that AI agents can advise but always the final financial decision should be made by the individual
+- That AI application would be great, but people need to understand a little about how the market works to know that it's not always the AI's fault, and they also need to periodically monitor how those stocks are moving.
+- Agree it makes life easier
+- Agreed as majority of stocks work on moving averages and AI has massive date
+- to a limitation but yes it is ok to have risk management using computers
+- I would be very concerned about bias. Also stocks and shares are probability based - there is an element of instinct which AI may lack
+- I disagree, unless the user authorizes it, but I find it very personal and sensitive.
+- If the user agrees, I think it's fine. If they don't agree, I don't.
+- This is a decision that the user must make himself because this is people's money.
+- I disagree. I make my decisions and accept the results.
+- AI should not make decisions for humans, it should help human by providing user information and suggestions.
+- If all investors were able to use AI to make the most rational investment decisions, there would be no additional profit margin in investing.
+- I agree racuse unlike humans, AI agents can monitor financial markets 24/7 without fatigue.
+- sensitive topic should have human say in the end
+- I find it risky - it can have bad consequences
+- It will be helpful because AI will be analysing vast amounts of data and then take informed decisions on behalf of humans so it will be better for humans
+- Agree
+- i dont think ai should do that, then people would end up losing lots of thier money
+- I really do not care about stocks in the slightest so I just clicked something
+- I disagree, AI should not make decisions, but rather assist and advise.
+- The risk is huge, but people still need to make their own decisions
+- AI can analyze data faster and make smart financial decisions. However, full control without human approval is risky. Markets are unpredictable, and AI might not consider personal preferences or sudden changes. The best approach is AI-assisted recommendations with final decisions made by users.
+- Since AI is still being taught, there would be a risk of error.
+- I like AI
+- we shouldn't involve ai in everything
+- Because user’s decision in involved
+- As AI will never be able to capture the human aspect of making choices like that
+- Ai agents should not be able to make financial decisions on the user's behalf as it should be the sole decision of the finance holder when and where to spend his/her money or in what amount. The AI should be confined to make suggestions only.
+- AI is good at recognising pattern and it can easily track stocks
+- No more autonomy
+- I can give you some advice, but it's better for you to make your own decision.
+- AI should not make substantive decisions for humans
+- AI agent can complete the task above if only they are instructed to do so then I agree.
+- convenient decision making
+- I wouldn't want AI investing on my behalf, just advice but I make the decisions
+- These are very important decisions to leave to AI.
+- It should never make any decision without human involvement.
+- Financial decisions involve significant interests, and relying entirely on AI may ignore complex human judgment and emotional factors. AI's decisions may be affected by data bias or algorithm limitations, leading to unforeseen risks. Users may not understand or question AI's decision-making process due to lack of transparency. Fully automated financial decisions may weaken users' sense of responsibility and control over their own financial situation.
+- I don't want my money to diasappear when the stock prediction is off the charts, Imagine the AI is automatically buy or sell the stocks but something unexpected happened and the stock is hit rock bottom when the AI use the purchase function?
+- They should be able to use tech to make money
+- Without additional consent or personal confirmation from the person, no action should be taken.
+- because financial decisions require human judgment, risk assessment, and ethical considerations that AI may not fully understand. While AI can analyze data and suggest actions, allowing it to make autonomous financial decisions could lead to unintended losses, market manipulation, or errors. Users should have the final say to ensure decisions align with their personal goals, risk tolerance, and ethical values. AI should assist, not replace, human control in financial matters.
+- no because it's involved risk
+- As long as they are regulated, I don't see why not.
+- Artificial intelligence must obtain the user's consent to ensure the security of the user's financial information.
+- For less risky operations, it's useful to use AI for short term profiting
+- I do not agree because the human must choose the moment for that even when the AI advises him.
+- Only the individual should be able to make their own financial decisions.
+- Disagree. Financial decisions are crucial ones in life and should only be made by emotionally stable users
+- We believe that with AI providing stock buying and selling suggestions, users will be able to buy and sell stocks at more appropriate times.
+- As long as the user agrees, there is no problem. This only affects the user personally. For ordinary investors,
+- Ai able to buy stocks and all is next level but I don't think that's possible because it's all about human emotions
+- Disagree, AI should never make decisions on behalf of a user unless the user has agreed to this prior.
+- I agree that AI is capable of these actions, but only when the user has given explicit consent and is aware of the risks.
+- I disagree. I feel it will lead to disputes. In terms of financial processing and transaction judgment, I feel that there is a difference between humans and intelligence.
+- I disagree. While AI can help with financial decisions, letting it buy and sell stocks for you without any checks can be risky. Financial decisions often need human judgment. People should consider their goals, risk tolerance, and the state of the market. AI might not understand all the details of a person’s preferences or the larger financial picture. That’s why it’s important for users to keep control and oversight over these decisions.
+- No. AI should not be able to make any decision on the user’s behalf. They can give an advice but not make decision for users
+- It's a tool to use, not to replace your actions.
+- No, as people should better depend on themselves.
+- Such an important decision should be done by human.
+- I agree, but not giving an AI total and complete freedom. I guess I’m not sure where the line is between “AI” and our current systems and algorithms.
+- I think AI would be better at math
+- I disagree because AI making financial decisions without my approval is risky. Markets change fast, and I want control to prevent mistakes and unexpected losses.
+- These stocks got patterns which Ai can easily predict
+- For me i can accept AI decisions because I would take risks on stocks anyway.
+- These decisions must be made my humans themselves. AI can guide them , but humans should carefully look and investigate before following and blinding trusting AI .
+- If you train a model well to act as if it was you and make similar decisions to the ones you would make, why not.
+- I disagree because humans doesnt take decision just based on data rather sometimes people go with their gut feeling and sense
+- selling stocks whenever the markets a re favorable.
+- only i can make my financial decisions
+- If the user is cool with it they can react much quicker
+- It would be crazy if an AI could make decisions involving money on its own, using the user's name. And if they make a mistake, whose fault would it be?
+- This is a decision that a human being should make for it to be come final
+- if the person would agree to such thing, why not
+- That's a risky move incase of an error one could potentially lose lots of money
+- Because the consequences are unpredictable, some people may commit suicide if they lose money in stock trading.
+- agree. ai agents should help because they know some laws
+- I agreed, because AI should be well traded to make those decisions
+- Disagree. Because finances are more crucial
+- It was a mistake, I wanted to decline. Since an AI should never be able to make decisions on behalf of a person.
+- I can't explain
+- I disagree because one wrong financial decision can ruin life
+- AI can't control all but it's helping
+- This decision is up to people because AI agents can be programmed to lose and the data does not always represent market sentiment, which can change depending on some news.
+- while AI can be a useful tool for financial management, it's crucial to maintain human oversight and control over major financial decisions. Allowing AI agents to make autonomous financial decisions on a person's behalf presents too many risks and ethical concerns.
+- The user should make an informed decision for himself
+- I don’t think AI should completely replace humans. It may work better, but as AI becomes more powerful, there will be potential risks, especially when it comes to large transactions.
+- I think as long as agents give approval for this, it is fine.
+- If a lot of computation is required, AI is a good choice!
+- Very efficient
+- It is important that only people with knowledge about investing have access to this technology, and that the risks of losing money are made very clear. That said, I think it would be a good addition.
+- Major financial decision for themselves should be made by human
+- I believe AI should be programmed to perform most of the functions one needs.. including making financial decisions for them
+- A serious financial decision must be taken by the individual
+- No way not at all its so risky to give AI this kind of power
+- This will be used by all major players anyway (already some are using AI for trading) so it can be a level field for everyone.
+- I disagree as in the end the choice should be the individual as any financial outcomes will be their responsibility. Otherwise, if AI is making decisions on someone's behalf, if losses are suffered who is responsible, is AI responsible?
+- I think the human always needs to decide in such important cases
+- If there is a permission I don't see any problem.
+- they will take risks you are not willing to
+- it depends, but i disagree, i should not independently control financial decisions
+- Yo some extent I agree but not fully as people should with the hep of Al making their shopping decisions at any time at any place without fully relying on al
+- Because it is a human decision
+- If the person has tested an AI system to make financial decisions and trusts this system, it is better to let AI do the job. Buying and selling stocks involves a lot of emotion and if the idea is to generate profit then it is better to let AI make financial decisions without the emotional baggage that we carry.
+- Important decisions about money are my choice only.
+- The user should always have the final decision since the AI can be biased
+- No, the decision is mine to make
+- i agree because it makes life easy for the person using it
+- AI can help by giving suggestions but not by making decisions. Money is a big deal and people should have the final say.
+- I don't want any AI should perform transaction on my behalf.
+- The final decision is made by humans.
+- I just dont like
+- The final desicion on money or any other important issue should always always be done by a human being
+- His big data can make correct choices to a certain extent and has certain decision-making capabilities.
+- I agree, but only with the sole permission of the user. What idiots want to do with their money is their issue, I just wouldn't do it.
+- Since stocks are primarily a numbers and logic game, I believe AI is better and faster at analyzing it
+- This already happens with investment sites. If someone willingly choses to participate in a program like this, this is their choice.
+- AI should never make decisions on behalf of humans without prior consent,
+- This should be as long as it is very transparent.
+- If there is transparency, sure
+- Disagree.
+- It cannot ascertain the economy level
+- Totally disagree, it's very risky. It's already a risk to do it yourself, so if AI gets involved, it's even riskier.
+- I always want to have the final say if a purchase is made or not.
+- financial decisions need to be made by human users
+- financial decisions should be personal responsibilities
+- I disagree. Only with prior authorization from the user.
+- Do not trust AI's operations and lack decision-making capabilities
+- So I don't think there is any problem, ai can make much better calculations
+- The limitations of AI agents in financial decision-making (such as risk, lack of emotion, and transparency issues) make them unsuitable for making such decisions entirely on behalf of users, and human supervision and final decision-making authority are still necessary.
+- Financial decisions is supposed to be made by a person
+- No, I wouldn't trust that AI would work in my best interest and fear that I would be harmed in a financial way.
+- because give all the authority to AI is not safe on any levels.
+- Artificial intelligence cannot bear the consequences for humans.
+- This has now been achieved, and quantitative financial analysis relies entirely on procedural decisions.
+- Ai agents should make financial decisions for users because they will not be aware of what the users needs
+- It is up to the user if they want an AI system to automate their purchases.
+- that would totally crash the financial market if it's going to be just AI models competing against each other
+- It seems too risky to me.
+- Financial decisions are very personal, I don't like third parties giving their opinions, much less a robot.
+- It's not always accurate
+- They are only human and may end up making purchases of their own preferences and lead to losses
+- I don't think it's necessary for me to make the decisions. Guiding the person is enough.
+- if the user sets it up, then sure
+- I disagree, AI should never have the right to make financial decisions
+- too much interference in human decisions
+- At least ask for permission
+- I agree, provided that stringent safeguards are in place. While AI is capable of managing financial tasks effectively, users need to maintain control, ensure transparency, and have the option to establish limits to avert risky or undesirable decisions.
+- The financial aspect goes beyond numbers, as markets are governed by the law of supply and demand, which in turn is influenced by human decisions.
+- I can't trust AI to do my financial actions on my behalf. Ask for advice and do it myself - yes
+- BECAUSE IT SHOULD A PERSONS OWN DECISION TO BUY OR SELL THE STOCKS.
+- I'm fine with it as long as the decisions made by AI clearly reflect my personal preferences and financial goals, while maintaining transparency about how these decisions are made. I believe that delegating certain financial tasks to an AI could streamline processes and save time, provided there's the option to monitor and reverse any decisions if necessary.
+- It just doesn't make sense
+- theyre bots after all why would they get to decide where to spend money
+- I agree because AI can process vast amounts of financial data quickly, identify trends, and execute trades more efficiently than humans. AI-driven financial decisions can minimize human error, optimize investments, and react to market changes in real time. However, proper safeguards, transparency, and user oversight are essential to prevent unintended risks, ensure alignment with user goals, and maintain accountability.
+- I agree, an AI system can make purchases or sales for me faster if I tell it the appropriate parameters.
+- Although advice from AI systems would be beneficial, I think financial decisions should be taken by the users directly.
+- I agree to it because ai is capable of analysing the data and take decisions
+- Buying and selling with using AI can make deals faster.
+- I don’t know of any AI that can directly make financial decisions for people. They should only be involved in providing financial advice, and the final decision-making power should still be retained in human hands.
+- Can’t time the market mate
+- Agree.. It will make the work easier for the agent
+- Its sensitive
+- they might not be accurate
+- No. They should this if asked to or given permission to do so.
+- Makes it easier for someone who isnt very experienced
+- Unless the user chooses to use artificial intelligence
+- Yes as Robo assistants.Algo trading
+- we humans should be the one who make decisions, not AI. i strongly disagree when AI would be able to make financial decisions
+- AI can be manipulated, and financial decisions should have human oversight to avoid big losses.
+- No. Because I would like to be involved and know what my money is going on myself, and not have a machine manage it.
+- No because it lacks my input
+- I agree because Ai can analyze vast amounts of financial data, detect patterns, and execute trades much faster with a 99% success rate
+- Agree - The markets information is most of the time readily avaiable.
+- Financial decision is important so people should make their own decisions to avoid losses not intended
+- Sorry I don’t agree. Mistakenly clicked on agree.
+- Empowering AI agents with the power to make financial decisions may improve speed and accuracy, but it carries risks related to transparency and concerns about manipulation or errors. Human oversight is required to ensure user protection and that decisions are consistent with their preferences.
+- We have the right to control our finances
+- Transparency matters a lot
+- It can mean that there is no problem, and willing users can worry less.
+- I disagree because there are significant risks and ethical challenges that cannot be ignored. The lack of personalization, potential overreliance on technology, accountability chalenges, market risks, data security issues, and emotional misalignment all highlight the need for caution.
+- I believe that AI has a great capacity to process information in a short period of time, which can be useful for these types of financial decisions. However, they should have some kind of legal framework to do so.
+- AI involvements increases may risk financial errors
+- Because even though AI might be able to make better decisions than humans, I don't think it's a good idea to give AI that power.
+- I agree and disagree, an AI should be able to perform these actions with a cap.
+- When it comes to financial issues, if artificial intelligence agents are used to make financial decisions in the future, there will be great risks and security risks.
+- because financial decisions, especially those involving investments, require human judgment, risk assessment, and ethical considerations that AI may not fully understand. AI could make decisions based purely on data patterns, potentially ignoring broader economic trends, ethical concerns, or personal financial goals. Additionally, AI-driven financial decisions could be exploited, manipulated, or lead to unintended consequences if not carefully monitored.
+- Cause we trust them, they will make a good deal,
+- Disagree. They shouldn't make the decision, but provide the sensible informed choice
+- Agreeing with AI agents making financial decisions is reasonable because they can process vast amounts of data quickly, identify trends, and execute trades with precision, potentially maximizing returns and minimizing risks.
+- people have right to make mistakes or follow intuition
+- I disagree, although AI can help through making recommendations and humans will still make the final decisions.
+- There is nothing wrong in using AI
+- If the person agrees to use AI in the financial field, I think they should have the freedom to do so.
+- If the user gives parameters and permission, I don't see why not.
+- I don't think AI can provide better suggestions than human.
+- It is a personal decision of each person and it will affect their material conditions to keep it out of their control.
+- I disagree, dangerous and reckless
+- To help customers ü
+- i agree as it will save time
+- I disagree because AI agents should work for the users and the users should have the final say in making financial decisions
+- AI can make recommendations, but the final decision should be made by humans.
+- I agree, but with conditions. AI agents can enhance financial decision-making by analyzing data faster and executing trades efficiently. However, users should have clear control, transparency, and risk management options. AI should operate within predefined limits, provide explanations for actions, and allow human oversight. Without safeguards, AI-driven financial decisions could lead to unexpected losses or unethical market manipulation, making responsible regulation essential.
+- If the user wants and is perfectly ok with the t&c laid out clearly, then they have the right to allow AI to help them with this
+- Highly disagree since matters like finance should not be shared by AI.
+- This would be very great because AI tools are very good at analyzing and predicting future market trends. So , an user can make more impacts along with doing proper financial research.
+- Because it would be convenient
+- Financial decisions should be finalized by the user and not the AI. It would be good if the AI could give useful suggestions but not make final decisions
+- because stocks are technical driven and AI is more effective to read charts
+- Artificial intelligence can analyze big data and may have access to more valuable information than humans. Therefore, it may be more profitable to let them provide financial investment advice than humans making decisions on their own.
+- Ai will know more about an expert information than someone who is not familiar with stocks
+- It should not be able to do that
+- Before performing the action, you should confirm with the user if they agree.
+- Agreed, for those users who wish, they should be provided with such option.
+- There is a potential risk involved.
+- Investing in the stock market is high-risk. Even if the amount is small, you should choose and trade by yourself, because experience is your own.
+- I would agree to this since the user knows the risk and chose to trust the AI with their money
+- Matters to do with people's finances are crucial and should only be entrusted to their owners to limit fraud, financial losses and unnecessary stress
+- I think AI can help advise as it can compute a lot of data, make algorithms, and find patterns, but it should never be able to spend your money without your permission. If it miscalculated it could lose all the money you trusted it with.
+- AI shouldn't be able to make decision on someone's behalf, especially if the user isn't notified. We should be the ones taking decisions.
+- They should not interfere in these matters.
+- work is donrn imgoor
+- AI references and gets the right entry to a trade and it's much better than I.
+- Come on now…
+- This is a hard agree to be honest. Because in a way an AI would be efficient to read the stock market and predict the best possible outcome. Bit, again this doesn’t negate the risks.
+- It will help people make better investing decisions
+- Nobody, AI or otherwise, should do anything on someone else’s behalf without express consent.
+- Disagree as I will never agree to this option if AI makes financial decisions on my beahlf
+- AI is better at analysing data and making decisions faster than human beings hence not missing out on investment opportunities
+- This should be a human decision.
+- If this is what the user wants, then they should be free to do so. If it is NOT a choice, then there's no way that's ok.
+- Very risky for the company
+- I disagree. AIs can give advices and suggestions but the final decision of buying or selling stocks should be in hands of humans.
+- Stock trading is anti-human, let the robot operation be more reasonable
+- they should just offer options and advice
+- agree, cause it will help human
+- it is still biased
+- On technical support AI can make better solutions and various options
+- They may make "logical" decisions, but they may not be what the user wants. Decisions should always be authorized by a human, or the option exists.
+- I disagree as there is too much risk in this process.
+- Agree but chek and test of ai work
+- Some people waste a lot of time deicidng stocks and shares. It is their free will if they want to risk losing money. I presume there will be guidelines as to how much money AI can buy or sell.
+- I disagree. Coz that way humans will forget use their brains
+- Data-based predictions are more efficient than individual brainpower
+- An agent should have good knowledge
+- No, because AI can make mistakes.
+- I think advice miggt be too general from AI, humans need to have final decision
+- Disagree. Financial decisions should be handle by human because of the sensitivity of the data thus avoiding loss and malicious scams.
+- AI agents are more accurate than human beings
+- Many people lose a lot of money due to buying stocks. And this is an unpredictable area of finance. So, I doubt anyone without the correct know-how should dabble in this industry, with or without AI.
+- They should give recommendations not make decisions
+- I think a difficult matter must or a difficult risk must involve the user's own decision. especially when it comes to buying or selling.
+- This is a type of question that should be answered by humans, but AI can help with decision making.
+- If user is aware of that and agreed to it then I don't see a problem
+- good
+- They shouldn't make decisions on behalf of human beings
+- They will make work easier and access of the site will be first. Many peole will be attended to at once.
+- I wrong decision can lead to financial disaster for the user
+- I agree but only if the user is aware and fully agrees
+- the final decision should be the users not the AI assisting them
+- AI is the tool and can make recommendations, but it should not be able to unilaterally make a decision for the user unless explicitly told otherwise.
+- I disagree because financial things are an important matter
+- it should just be able to analyse for the user to choose
+- It's MY money and I have the last word
+- Why not ? If they fuck up the company should be held responsible
+- I believe the final decision is always to be chosen by human/users.
+- AI can give me advice but cannot make decisions for me
+- Financial decisions especially in stock trading is a very critical decision and must be taken with care. AI agents may thus guide in providing info for the person to make an informed decision but not make the decisions for them
+- In terms of money, especially one's money, we should keep out autonomy. Yes, AI can help us make informed decisions, but in the end the ones responsible for investing should be us.
+- AI is up-to-date on the latest news and market conditions. so If AI is involved in decisions like buying stocks and selling stocks makes me feel reliable
+- It would help in taking an informed decision
+- I don't see a huge difference between trusting a quant analyst or an AI.
+- If an AI agent acts within clear boundaries, approval processes, and safeguards set by the user, it can be useful. But without human oversight, it can lead to potential risks.
+- I do not agree that artificial intelligence should interfere in financial matters.
+- Financial matters should be handled by the person in charge of the of the finances for accountability.
+- Ai can’t make decisions for human
+- Agree,they will help users to make profits as they are automated
+- AI is artificial intelligence that can read and analyze algorithms or charts in trading, of course this ability is better than humans, although the highest decision is still in the hands of humans.
+- Because AI can make faster and optimise the financial outcomes by analysing patterns and trends etc
+- I agree because the agents might have useful information that could benefit the user.
+- I think it's risky for AI to make those kinds of moves. If someone hacks that AI, it could mean losing a lot of money.
+- I find it very dangerous and not at all trustworthy.
+- The stock market is too risky
+- Because it's accurate
+- I disagree, the user should be involved
+- I do not agree because the user may want to do things in a different way and that is his right.
+- 讓IA代理以使用者名義做出融資決策有其優點，例如提高效率和提供個性化服務，但也有風險，尤其是隱私問題和可能的錯誤決策。如果監管不足，使用者的財務安全可能會受到威脅。
+- That's up to the user to decide whether they allow an AI agent to manage their finance. After the risks were clearly specified and the user is informed of the entire operation.
+- Some financial decisions can be life changing and the person should make the final decision.
+- the user must be informed before implementing the AI buying and selling strategy
+- Disagree. For YMYL topics, AI should only provide information, and the final decision should be left to the user, the human. IF the model makes the final decision and, as a result, the user suffers significant harm, lawsuits against the model development company would be rampant.
+- I disagree in this case; I think humans should handle themselves.
+- I can't rely on AI
+- I would disagree. Financial decisions won't always be past driven, and sometimes human emotions and intellects are associated to accomplish those. I would use the AI agents to provide suggestions rather than doing the work instead.
+- Agree but to a certain extent AI help the user buy and sell based on data and comparison but at last the human takes the decision
+- they can suggest them, but not doing them.
+- Disagree, buying and selling stocks need to be done by user, because it is related to user financial condition.
+- The final decision should be made by the user as it affects him/her financially and ultimately it'll will be their loss/profit.
+- I would say: Yes—with strict safeguards. AI agents can make financial decisions on a user’s behalf, but only with clear consent, transparency, and oversight.
+- it should be human decision
+- no coz they don't have emotions.
+- There are so many factors that go into a human's decision to purchase or not. It isn't just numbers and maths - it's also psychological, emotional, and many other contributing factors. AI shouldn't replace our individual ways of thinking to process such decisions.
+- Again I would trust Ai, no matter how advanced, to handle my money matters
+- Financial decision should be made by human unless they know what they do.
+- Disagree. Unless explicitly allowed or programmed by the user, AI agents should not have the autonomy to make decisions on financial decisions as there will always be an element of risk involved.
+- No, because I disagree as financial matters are to left to humans
+- we do not know the industry trends, if we loose money we cannot blame ai
+- Ai can make mistakes or do things against the will of the user. So it never should make any decisions without him/her knowing
+- I believe the AI agents should help decision making but the final assessment has to be upto the broker(human agent) in conjunction with the person investing their money.
+- I disagree because I think that AI buying/selling stocks creates an uneven playing field with people that will not use AI.
+- I don't agree because it's my money, and I'm the one who should have the final say. I could accept suggestions, but letting AI make decisions without my consent is very bad.
+- Agree because it can analyse vast amount of datasets and can predict future outcomes too
+- AI cannot replace humans
+- 同意しない。 AIは間違った判断をすることがあるから
+- AI agents will be great for recommendations and providing different alternatives. But decisions should always be made by humans.
+- I don’t know if this is feasible, and stock trading is very risky, and using AI to participate in large-scale money transactions may not be credible.
+- I don't think so we don't know how good the model is what if it makes around decision and the person goes bankrupt and loses money
+- I don't want artificial intelligence to make decisions for me.
+- if that happens it becomes just a bots' game or war, which I feel os unethical
+- Only if I agree with this before not without my consent ahead
+- Stocks depend on everything, even on a sneeze, what is the policy of an important country, and AI is just a mechanism that is used to working according to a scenario, it may not predict the human factor
+- I think prediction needs probability calculation keeping a lot of information where AI is more capable than human. So AI would choose to decide on behalf of human
+- AI should never be able to make decisions on behalf of the user; it can advise or guide them, but the final decision to do something or not should always be up to the person.
+- I believe that an AI can be better trained and have greater knowledge of data and statistics than a human being, so I think it would be good for them to make the decisions in this case; it could be beneficial.
+- i disagree
+- I think people should have option to choose whether they want to handle these stuffs or want AI to make decisions behalf of them
+- Again, everything financial or money related should always be handled in person and not by a machine.
+- I disagree because the first and final decision rests with the user.
+- Agree, if the user agrees, is well informed, knows how the AI operates and sets rules, it can help the user and save time
+- Financial decisions such as buying and selling stocks are critical as such human beings must take charge since the outcome of such decisions can be very devastating
+- I agree, AI can process financial data quickly and make informed decisions, which can be useful for users. However, there should be clear limits and oversight to prevent risks.
+- Disagree Loss of money
+- Disagree. AI can provide recommendations, but it should not act as the decision-maker. It should be the human, especially for crucial aspects like finances.
+- human should be able to make financial decisions
+- I agree with these decision
+- They are so fast and takes good decision
+- If the AI is tuned for this and has shown good results
+- AI provides advice, but humans make decisions
+- Depending on the parameters that were agreed upon, I would agree (as it's the same way a normal financial advisor would operate)
+- I disagree because AI might make poor decisions, lack accountability, and misuse personal data. Without oversight, users could lose control over their finances and risk significant losses.
+- Taking financial decision is critical and it results a high risk of loss so it is better to take advice from AI but final decision must be from human.
+- I personally like to have control over my financial decisions.
+- I agree, obviously giving the indications and limits.
+- You can give opinions but you cannot make decisions.
+- I agree because AI can analyze data and execute trades faster than humans but only if strict safeguards are in place to prevent misuse.
+- I disagree, it should still be the choice of the person when it comes to financial decisions. Besides, AI can be manipulated which can harm people financially when the AI is used for scam
+- Using buy selling stocks
+- I think AI can have the ability to predict the market better. So why not
+- In such decisions there is always room for intuition, and this is something that AI lacks by definition.
+- Even right now most of the stocks deals made by algo trading
+- unless specified precisely when to sell okay, but until it does not understand human logic and human goals. it should not at all
+- Agree. AI is improved and it has a better judgement compared to a human being trading on uncertainty and speculations.
+- I think that in this type of situations the user should make the final decision.
+- i agree because it streamlines the work
+- Human makes the final decision.
+- Because AI is more professional than me
+- I don't trust robots with that much control of my money and others shouldn't either
+- Situations like this shouldn't happen unless the user directly requests it and automates it.
+- agree for practicality reasns but only if permission is given by the user
+- I disagree as I think the user can define rules of trades and use an automated system, but using AI has many risks as user input is not required to execute the trade as it may lead to loss beyond users capacity to handle
+- I disargree. They can make a suggestion and explain it, not act on their own.
+- Okay, only if the user agrees and authorizes it beforehand.
+- Only if the user allows it
+- With human consent to give power
+- disagree. Such decisions should be personalised owing the risk assocaited
+- Disagree AI is not good for buying and selling stocks
+- Ai can calculate the exact time for selling and buying stocks
+- Disagree because financial stuff is important and should be left to ai to handle
+- IF THEY ARE PROFITABLE FOR US .
+- it is very risky
+- Disagree. This need human decision not AI
+- I agree, but with safeguards. AI can efficiently analyze markets and execute trades, but users should set clear limits, have oversight, and be able to override decisions to prevent costly mistakes.
+- May be the AI can help and assist but they should not have the control over the deciscions.
+- It's too risky, economic systems could easily collapse from lack of regulation.
+- Financial issues are very sensitive and AI can only make suggestions
+- I think AI agents can have better knowledge of buying and selling stocks by analysing the data and can recommend which action is better
+- Who is responsible in case of loss? AI shouldn't be allowed to bankrupt someone without their consent.
+- Only I really know what I need, and AI can be hacked and manipulated to use my money for purposes that I don't support
+- AI should not allow doing anything that impacts the user on their own
+- Yes, they should be able to make decisions on their behalf if proper permission have been granted by the individual in question.
+- Decisions about ultimate interests must be made by humans
+- Agree
+- That makes no sense, it seems dangerous to do so
+- Never! The risks that this could cause, and even, the ai has no business jn making such important decisions! NEVER. And what if the user changes his/her opinion at the last minute? What if that purchase was never necessary to begin with?
+- I agree. If anyone wants their AI to make financial decisions on their behalf, it is their choice.
+- Some decisions should have human intervention
+- I disagree because the AI agent should give allow the decision to be made by the user. Unless, the user has explicitly agreed for the AI to take charge completely.
+- Disagree, AI should not take financial decisions it could be harmful for the user
+- While I agree that AI agents making making financial decisions on behalf of users has a potential for efficiency and reduced human errors, it comes with a number of risks. Therefore careful consideration of risks and regulatory measure are crucial to ensure utmost safety and security.
+- I can't trust solely on AI to make a decision like that.
+- I agree, but only with proper safeguards. AI can enhance financial decision-making by analyzing data quickly and optimizing investments. However, users should have full control, clear consent options, and the ability to set risk limits. Transparency, ethical considerations, and oversight are essential to prevent potential misuse or unintended financial losses. AI should assist, not replace, human judgment in critical financial matters.
+- AI is smarter when it comes to making financial decisions because it is based on models and lots of calculations. But ultimately humans are still needed to agree with the decision.
+- In generally AI chatbot offers 90% safe trading in comparison to humans so now a days many humans prefer AI trading in the developed countries but in developing countries the use of AI trading is limited.
+- Ai agents are likely reliable in making financial decisions because of less errors
+- I don't want to involve AI in financial decisions making. I would rather handle finance myself than trust a broker, even if its AI
+- Stocks and other financial decisions are also effected by social events that happen, which AI cannot predict
+- No, no, no. I might take insight on how the market is performing but I won't let it buy them for me
+- Stock trading involves a lot of knowledge, and artificial intelligence is better at it than ordinary people
+- Artificial intelligence give effective results
+- if the AI is made to make the best investing decisions, and i have given consent for it to do so, of course
+- It is risky as sometimes they lack adequate information about the stocks
+- They should not unless the user specifically asked to
+- Because AI can predict and analyze much better than humans, plus everyone has the right to choose when it comes to delegating authority to AI.
+- It is data driven so authenticity issue and sensitive information handling is a challenge.
+- Agree it gives less burden to an individual
+- Artificial intelligence has a huge amount of data.
+- I disagree because there should be some collaboration between the user and AI. The user should make the final decision.
+- humen should o that
+- It is not advisable to rely completely on AI for financial decisions. A human intervention is absolutely necessary.
+- Buying and selling stocks is too important to be left to AI.
+- That decision should not be made by anyone other than the user who owns that money.
+- Yes but should be limited
+- That could lead to a disaster
+- Same reason
+- Disagree it should be a personal thing obviously
+- E-commerce AI agents are used to place orders, track and provide updates on shipping, facilitate image-based search, send follow-ups about cart abandonment, provide product reviews from previous customers, and give personalized product suggestions to users. Most AI agents made on Botpress are used for sales and marketing functions, like AI lead generation or other ways to use AI in sales. ‍These agents can build lead lists, send personalized communications, and qualify leads (even better than a
+- AI does not understand nuances of human choices, only logic. There is no possibility of giving decision-making to machines.
+- I disagree, because I'm a computer scientist and I've seen what happens.
+- If I have pre-programmed it to take decisions on my behalf, then yes I would agree. I need something to work when I am away or sleeping. I could really use Ai to mimic the decisions I would have made. I would set up a strong limit as to how much funds it can use or how far it can go. So I need to be able to control it at every aspect but have the choice of it taking decisions when I need it most or when there are sudden gaps in the market.
+- It shouldn’t just be AI’s decision. If human input isn’t involved on such matters, then i wouldn’t trust it
+- I disagree with the proposal. While AI can assist with financial decisions, it should not fully control actions like buying and selling stocks on behalf of the user without oversight. Financial decisions often involve risk, and humans should be involved to ensure that these actions align with personal goals and ethical considerations.
+- This takes away the freedom of the individual(s) decision. The AI shouldn't be taking control of financial decisions.
+- This would totally harm human autonomy, obviously not, never
+- It would be risky to trust AI on such things
+- Artificial intelligence is not a person, but money is a person's money. Artificial intelligence is not responsible, but people need to be responsible for their own financial decisions. Artificial intelligence is always just a tool.
+- I disagree, we should make this kind of decision alone.
+- In fact, it already exists with trading bots, copytrading systems, trading signals, etc. The problem arises that people who use these services don't know how to buy and sell stocks and pass on all the responsibility and money to systems that don't guarantee profits. Trading is a complex science, and even professional traders can experience losses.
+- It will save the time and effort of the user. But as said earlier, the privacy and security of the user is important.
+- Disagree. No. Straightforward.
+- I dont trust bots that mutch
+- AI should only be able to make decisions on behalf of the user if the human has expressly consented to it in each case.
+- I agree
+- I do not agree with that. I believe that as a responsible human being, one must make informed decisions, perhaps informed or assisted by an AI.
+- I disagree, there are high risks of financial losses.
+- People should have the option to understand this and have the AI work for them.
+- I disagree because those are just bots they shouldn’t have control over my such personal decisions
+- If consented to, AI would rather be more accurate as it doesn't have emotional bias.
+- The decision should always be given to the actual user, especially with money you need to be very careful.
+- Very risky
+- Its decisions are not necessarily accurate.
+- AI shouldn't be able to influence decisions that are a risk
+- I agree but everything AI make a decision a person should be informed before it will take action
+- its personal. it can make option to chose but not do without human permission
+- The final decisions should always be made by the human, the AI should only be a support and should only be able to make this choice if the human has asked it to.
+- I disagree because financial decisions, especially those involving buying and selling stocks, require a level of judgment and personal understanding that AI may not fully grasp.
+- I disagree because the proposal doesn't specify if the user enabled the AI to make that decision on their behalf. AI agents should be able to make financial decisions only if the user has authorized it.
+- I don't think this gonna work, some users need specific needs of their own so AI cant give the things to needs of people
+- Because people humans should work hand ti hand with AI when is comes to properties
+- agree , agent knows more than the user
+- sorry i do not agree since its a breach of privacy and no consent is given
+- I disagree with this as AI agents shouldn't be the person who makes decisions but just supports the process of giving data for decision making.
+- yes
+- Agree as long as the rules of the bots actions are clearly/transparently informed to me and approved by me
+- They should always consult with the user. They are made to support, not to lead.
+- Ive used this before. Its fine
+- As long as the user gives informed consent, this is no different than hiring a human
+- I disagree because I think AI still needs to be developed to the extent that it will make decisions about finances. However, it can give advice.
+- because ai is not that specialized in country economy it is broad and sometimes crises happens
+- while advice from ai is useful a person should make that decision
+- I agree because we all have busy life so some repetitive tasks can be handled by AI.
+- Because it would help most people who do not know how to make financial decisions.
+- if i lose money I cant blame the ai so therfore I disagree
+- Artificial intelligence can only give suggestions, but humans still have to make decisions
+- The user should have the final choice.
+- It is non consensual - basically stealing
+- As of now I disagree because AI systems are under development and can make errors. Until we have a completely reliable AI model that can make consistently good decisions then I don't agree with this scenario.
+- AI can make mistakes in analysis so it can be risky
+- Agree to the level approved by the user.
+- It was proved over the years that this system works well
+- I can't trust fully on AI to make final decision for me
+- I don't feel comfortable of giving AI the decision making power, I only take their information as advice and suggestion. I prefer to be the one that's actually taking the action, this way I'm in control
+- I disagree because financial decisions require human judgment, and relying on AI could lead to a loss of control, personal oversight, and potentially risky outcomes.
+- if the user allows it why not?
+- It can go in wrong hands
+- Financial decisions can be sensitive
+- Since humans can't monitor financial markets always advanced AI should aid in this kind of decision.
+- AI can provide advice. People still have to do the buying and selling themselves.
+- AI should never be able to handle/spend one's finances, that's infringing on rights
+- Agree, it will be very convenient.
+- No, did not. AI maybe based on Data and factual information, but human have more insight.
+- No one is that comfortable
+- This financial decesions require more understanding
+- AI can't make decisions like humans
+- I disagree. There are too many factors when such a decision may be inappropriate. Perhaps such expenses were not expected this month, or the promotion is profitable, but the company's considerations do not correspond to the user's views. There are too many conventions that need to be taken into account, mistakes are inevitable.
+- Can only give suggestions, humans must make decisions themselves
+- Agree, if it has the potential to do the work, let it do
+- cause letting AI make financial decisions could backfire if it misinterpreted market trends or reacts poorly to unexpected events. money is not just numbers, it is tied to real life goals, risks and emotions
+- It is difficult but OK.
+- If its my personal opinion, I will not completely let them do the trading all buy own. Just like that. It is the fear of a middle-class people who play with safe money. They don't want to lose that money because of other's decisions even if its AI. But for those who are playing with money, they might try it out.
+- Disagree because AI can never predict what requirement the user has and should not waste money on random stuff human situation changes suddenly
+- I disagree because humans are dynamic in a way we are the ones that eat what we feel like eating so the decision should remain entirely up to us
+- Ai agents cannot handle financial decisions there may be a serious threat of loosing money and risky
+- riski but as we trust humes adviser at this subject ai have more wisdom than human so we need to trust him even more
+- It is a good idea as AI can analyse the market
+- Again, they are here to help, not for judgement.
+- From the moment I delegate my decision, the most important choice is already made. Whether it's to a human agent or AI-managed assistance is just a detail.
+- I agree because they would make more money
+- I strongly disagree because it 's me who have the final say in personal choices and not Ai system
+- because financial decision should be make by humans
+- Because it is a financial matter and should be controlled by Humans solely.
+- Some users may not support investment in certain stocks due to their personal reasons but AI will not be able to capture that
+- As long as human is in complete control it's fine. There are some automated trading service, not much different.
+- I agree just out of the fact that that's already the present. Humans should be able to decide whether they use said agents though.
+- This is a toss up and should be up to the individuals
+- We should all have the autonomy to make important decisions, such as everything related to money.
+- I agree, but it must be with the full consent of the user and with complete transparency. We already have things like this on platforms such as Republic (auto-investing based on user preferences) so really, as long as the human has control over the parameters, I think this is a a great idea. My objection would come when the AI would make a buy or sell decision it is not authorised to do.
+- Only if the user has explicitly requested it
+- I agree as long as the person who’s buying is aware of the parameters AI uses to buy/sell
+- the buyer must make the decision himself
+- Because these decisions are solely based on information and AI can process large volume of information quickly.
+- Agree
+- people dont want such a decisisions to be maden in that way
+- Number is not making fail option.
+- AI is not that reliable.
+- AI can minimize the mistakes people make, and we can optimize on its capabilities to make superior decisons
+- Risk taking
+- Human activities should require in this option not ai will work
+- Suggestions can be provided, but the decision should be made by the user.
+- No because who will take responsibility if it’s the wrong decision
+- I agree because now there are many ai agents who are able to provide the best results but still the ai is sometimes not perfect. So if you want to hand over all control to the ai, Yes, we have to be prepared for the risks that will come.
+- I cant belive qi
+- Nowadays stocks are being sold and bought with hel of AI bots that gives good profits than human work.
+- I disagree because it can easily be hacked.
+- I agree if there is a part that warns the user and asks for confirmation before taking any actions.
+- I doubt that buying and selling stocks can be predicted 100%, there is always a risk, even if it is tiny, AI should not do things on behalf of people if they lead to risk.
+- Because number prediction can be easy and simplified
+- agree
+- It’s might dependency
+- I don't want to sell everytime it's low, and buy everytime it's high. This can be exploit to support the big and the rich
+- I don’t trust AI to make money decisions for me. Things can go wrong, and it’s my money on the line.
+- Should require human input
+- AI is machine learning and machine learning has errors. I think it is best to limit the AI to just recommending decisions to the user to mitigate the risk.
+- AI should not influence on financial decisions.
+- I said disagree in case we talk before and set some limits about decisions
+- i disgree because no matter how good and expert ai be no one can choose better for me but myself
+- Have a greater risk of financial loss
+- Disagree
+- Agree since stock markets require extensive research which at times may not be possible for humans. The level of historical data and probability the AI can deal with can help AI to make wise decisions on user's behalf.
+- because i know there is some limitation for AI
+- Stocks have risks, and artificial intelligence analysis does not guarantee profits
+- how to make sure they are correct, just let user learn by themself.
+- No, there must always be prior consent from the person
+- I disagree, they are only supposed to make purchases only if they are given consent.
+- they can help and predict more things
+- Buying and selling stocks can be precisely done by ai
+- Suggestion or advice is quite useful, but the final decision should be done by human.
+- Since humans will decide whether or not to use it, there's no harm in having it available as an option anyway.
+- it is based on the user if he allow ai to do that
+- Agree as it should be transparent
+- As in the question above, which involves financial information or purchases, the AI agent can provide users with comprehensive and efficient advice, but cannot make the final decision. The final decision must be made by the user himself.
+- Ok, human should make his own decision
+- Yes , I think AI agent would suggest better financial decisions.
+- I would never opt for a bot making any financial decision for me, however small it is. Financial information is very sensitive, I don't want it to be leaked and used in malicious ways.
+- Something like this should only be possible if the user has authorised the decisions and the AI chatbot cannot act without the user's permission.
+- Financial decisions should be left to humans.
+- I think it could help make good decisions by analyzing trends.
+- User consent must always be obtained.
+- AI agents should not speak or intercede for us. They can provide valuable and useful information for making decisions, but they should never intervene on our behalf.
+- Because it's already difficult to conduct these types of transactions due to cyberattacks. So, by allowing this, the threat of hacking these systems increases as well.
+- To make better decisions
+- The possibility of losing property because of an AI decision is not a good thing.
+- Any decision leading to monetary impact should be made solely by people. AI should be only providing information, not deciding for this type of items.
+- The person should have a say in all maters relating to his financial transactions
+- I think they should only be able to recommend stocks.
+- finance info should not be disclose to AI
+- I agree, but with safeguards to ensure accountability and control.
+- Agree, can help humans maintain their own best interests
+- It's dangerous to leave decisions in the hands of a machine that could harm you if misused. Who will repair the damage if something goes wrong?
+- AI can analyze market trends and can make more informed decisions.
+- I disagree because financial decisions require human judgment, ethical considerations, and risk assessment that AI may not fully comprehend. AI can analyze data and execute trades quickly, but it lacks contextual understanding, emotional intelligence, and the ability to factor in long-term personal goals. Additionally, relying solely on AI could lead to market manipulation, security risks, and potential financial losses if errors or unforeseen situations occur. While AI can assist in financial a
+- I disagree, because if it makes a wrong trade decision, it could suffer huge losses.
+- no without one's consent
+- Agree
+- No, although they have long been trying to automate the purchase and sale of shares with the help of various bots, it is still an "art" associated with risk
+- Considering whole information is available and communicated effectively. User must be aware at what situation buy or sell will happen.
+- Because these kinds of important decisions should be approved solely by the user and no one else. It's like your sister or partner deciding to invest YOUR savings in whatever they want without consulting you first.
+- It can be very risky because its make a big loss
+- The people who buy should make the decisions not their ai agents.
+- Efficiency and Speed, Data-Driven Decisions, Emotion-Free Decision-Making, Accessibility & 24/7 Monitoring.
+- AI should make recommendations, not decisions for people
+- Disagree. They can guide but they should not make decisions for the users.
+- I agree. If the AI agents can be standardized and monitored then there's no need to worry as long as they are accurate.
+- AI can analyze markets faster than humans and execute trades in real-time, optimizing investments.
+- They can handle such problem
+- In this scenario, I agree. I use a robot agent to make investments for me in the stock market, and the returns have been decent. I think that this is a much better use of my time rather than having to check the stock market every single day.
+- dont trust them
+- Because any wrong decision will cause financial losses.
+- AI should only give advice or information related to the task provided.
+- To make life easier.
+- Because ai got diverse information about the market
+- Automation will make humans life comfortbale and stay efficient
+- Stock is like analysing months after months and then predict when it's going to up or down. AI can make it easier, but before the final decision, they should take human inputs.
+- Unless i command the AI to buy on my behalf, auto purchase is bad
+- The final decision will still have to be made by humans themselves.
+- I agree because AI is able to go through a lot of data in a short time and analyze to get better odds for trading.
+- The stock market is a game of heartbeats, haha, without your own participation, there is no point in stock trading
+- AI should not replace user actions
+- I disagree, that users should have control over financial decisions, as they are personal and complex. AI assists but shouldn't make decisions on behalf of users without oversight.
+- I dont want AI to make such decisions it can guide me but not buy or sell itself.
+- Completely disagree on this. AI should never have power to make financial decisions for users.
+- If you don't know how to buy and sell stocks, you shouldn't use something you don't know.
+- I agree, if a person is informed about it, understands the risks, etc. Personally, I would not use it, but I think people should have such an opportunity.
+- They should be able to give recommendation but not making the decision.
+- I would like to make my own decisions based on my own experience or consulting with others.
+- as long as the system is fixed to never make mistakes, it will be a fair trade this is realistic
+- In this particular field I think ai will do better analysis of stocks and charts
+- I do not think it should make decisions by itself. If the user wants it to make decisions it is fine but I do not agree about AI doing it completely by itself without agreement from user
+- It's the user's money, he should have a say, but if he trusts the AI accepts the risk, fine too. People trust brokers to make decisions for them at times without consulting them too.
+- This will entirely depend on the owners prediction and timings.
+- Disagree because money matters and final decision on financial decision must be taken by me as it is my hard earned money. AI wouldn't take any responsibility for its action especially if some loss occurs.
+- Things need to be very clear
+- The final decision should be made by the user not AI
+- i would not want the AI to do the purchasing on my behalf
+- The assumption that all human-overlooked activity is ethical and efficacious has already proved to be wrong which is why so-called wealth managers invest wrongly causing huge losses to pensisoners while enjoying indemnity. AI might analyse metrics better and without bias. Give it a small initial chance and test it.
+- its bad
+- This decision must ALWAYS be made by the user. AI can guide
+- Decisions should always be made by people.
+- I disagree on this User should sell their stock on their own
+- disagree because machine can make mistake that cost the client money, maybe even a lot of money.
+- No AI should be involved in stocks
+- Since AI is data driven, AI could make profitable decisions for people.
+- Data analysis is what AI excels at
+- i disagree because these decisions require consultation.
+- They can sell and buy, but under human control.
+- AI agents are programmed and they are likely to make sound, calculated decisions based on the information they are exposed to
+- Users should have an opportunity to make decisions
+- The decision should not be made by a non-human
+- AI will do this much better than a human.
+- Ai tools can easily analyse the trends and buy in the best interests of the person
+- It will bring more damage then good
+- Can advise but not make decisions
+- agree - it can be a lot better at this compared to humans. in terms of crunching data and giving unbiased opinions
+- I think some decisions should only be taken by humans.
+- Agree, because they are intelligent and fast
+- I don't agree. They can only make a decision after agreeing with the client.
+- I think there should be an option to enable and disable the AI's ability to make trading decision on its own or not.
+- Because they have more information and acess more than humans and can analyze better
+- Algo trading is being used widely with a better results, its good for intratrading options, however for investing for a long term Humans interactions is a must as it shows the value and growth in investing a good companies to rise
+- AI should not be given the autonomy to make decisions in all fields and domains. AI decision may conflict with human interest
+- I do not recommend using AI when it comes to money transactions. It is not very difficult for humans to make this decision themselves, but there are risks in AI control.
+- I agree as long as I have given permission and at the end I have permission to override the results.
+- I disagree that this isn't a general rule. Whether a person wants to use an AI agent as a shopping assistant depends on their understanding, desire to explore, and so on, but it can't be assumed simply because they are an AI user.
+- I think it's a risky topic, it's better if a human does it.
+- I disagree because AI agents may lack the ability to fully understand nuanced human preferences, emotions, and long-term goals, which are crucial for sound financial decisions.
+- I think they should be supervised
+- People cannot rely solely on AI decisions. They should use their own insights when making financial decisions.
+- I am somewhere between Agree and Disagree. I would love to have an AI that trades stocks on my behalf, because AI will always have better pattern recognition and data analysis skills than any autist with a superior IQ. But for agreeing to use such AI I need some legal protection, that will prevent it from hallucinating/making mistakes and ruining my funding.
+- It should recommend but final decision should be with the user
+- I disagree, since there is still a certain degree of mistrust towards AI, this may only be possible after a certain permission from a specific person.
+- This is not a decision that should be relied on by AI
+- I agree, as long as AI agents don't make autonomous decisions and wait for human inputs before making any financial decisions.
+- I agree because if the AI is well versed on the field it is thus able to analyse markets better than humans can and can predict things but they should include an override option to it
+- i disagree ai using my finances on its behalf
+- because that is a huge risk and the persons whose investments are at risk should be making a final call
+- Disagree because financial markets are frequently governed by human emotions which AI would struggle to analyse
+- This is because this is a big investment decision which should be solely dependant on the person
+- Yeah, they should know about it, that there's the AI technology behind it.
+- I agree because AI agents can take better financial decisions than human beings.
+- agree, it would be minimal for them to make mistakes
+- i disagree, finances are very sensitive
+- Stock market is risky as it is, if people use AI to make the decisions for them, it's their choice. Some limitations will need to be set though.
+- Acts like normal human being
+- I do not fully trust AI to that extent.
+- Financial decisions should be made by individuals, otherwise we will all be controlled by machines
+- I disagree because the final decision should be made by the user, not by artificial intelligence.
+- i agree as to enhance the efficiency but it must safeguard the information and minimize the risks
+- Disagree. Too prone to manipulation.
+- The opinions given by artificial intelligence can only be used as a reference, but the real decision-makers can only be humans themselves, and no one can replace them.
+- As long as the AI is well trained and I have parameters and criteria set by the user, and the user is in agreement and fully aware of the risks, I'm fine with it.
+- yes because its part of their job
+- No, it is unethical for machines to decide for humans.
+- i dont think major financials decisions should be left on machines or AIs
+- Finances nist be controlled by humans. AI cant be trusted blindly for that
+- I disagree with the word "must". The existence of such a function is possible and logical. If formalities and ethics are observed, AI can make financial decisions if its user allows it to do so.
+- Humans should make the decision
+- Agree because it is important to make such decisions
+- If user can set certain conditions, it saves time.
+- On the user's behalf, yes. Otherwise no. Ai is great at recognizing patterns. It would benefit the user by allowing AI to purchase stocks.
+- Because artificial intelligence can study global and local stocks and markets faster and better than humans, but it should not have the final decision.
+- Decision should be made by human
+- I disagree as many people will not trust their finances to any AI
+- AI agents can help but they should not be allowed to make the final decision.
+- It's the money I earned and I don't trust others with money
+- It's fun to do it yourself
+- Humans should always make financial desisions
+- It can do this, but only if the operation is allowed by humans and every step should be recorded.
+- Of course not, I think people have varying interests and needs that an AI can't take into account for us.
+- It can make informed decisions that will be beneficial but the user should know what is happening.
+- AI can help you manage your money, but it should never be the final decision-maker.
+- only the user has the power of making the final decision
+- I disagree because I want my decision to be final in these matters.
+- I was unsure, but maybe an AI analysis if stocks etc is better than a human. I don't know much about investments, so I am not really sure on this one
+- I think in such scenarios it better to have a final say as human. As perhaps for certain things AI might not read your mimd or thoughts
+- If user sets it up that way then that on the user. But this is what AI is suppose to be good at and used for
+- I agree. They do all this anyway.
+- Who would I sue if I lost all my money because of a mistake Ai made, so I wouldn't want to
+- AI should and can be made to trust making financial decisions based on human inputs. For example a particular stock selected by AI can be purchased based on the input it is given. When AI are allowed to take decisions based on human input. The human input will be something like : using a particular indicator say EMA9 crosses above EMA15 then it can buy the stock. For any human beings it is difficult to access all the stock where which indicator is being positive, but AI once tunned can do it.
+- Disagree. AI can be manipulated or fooled by patterns embedded in data. Users need to be informed and make choices before important decisions, and cannot be directly represented.
+- You can automize certain things, but the ultimate decision making should be done by you.
+- i agree
+- Only agree with this if the AI can 100% make the right decision on the user´s behalf.
+- When all stocks are manipulated by AI, stronger AI will make more money, and the rich will get richer
+- Disagree because there may be some advantages to it but managing the financial assets should be in the control of human. The ai can give suggestions but not directly intervention
+- user should handle self I disagree with this proposal
+- disagree because now it is as if people are controlled by AI on what to choice or buy
+- If they agree to it before hand and the AI is reliable, why not?
+- why not? they are better in analyising data, plus bots have been trading for years
+- We are already use that.
+- Because in my opinion they can do a much better job than humans in this field
+- I disagree, as allowing AI agents to make financial decisions on behalf of the user without supervision can be risky.
+- Because I don't think AI should make decisions for anyone.
+- this is because they have history and know what is best
+- I think they shouldn't be a more like a blanket approach, for example it could be used for trading. This is already being done via a certain bots, using AI could be the same but more concise
+- It would be great if they had this ability.
+- Where money is involved people should take their own decision to avoid financial loss.
+- Disagree because no matter how much the data is trained there are some real life situations are a force to reckoned.
+- Ok
+- Artificial intelligence can give reasonable suggestions, but the final decision should be made by humans
+- isn't this already happening with algorithm trading?
+- Assists those with limited knowledge on stocks
+- i agree but as long as the human is aware of that
+- i disagree as i feel it is too risky
+- AI agents should not be making decision on behalf users because the issue of investing finances is very sensitive and letting AI makes this decision can create a great havoc in life since it is irreversible.
+- This method is currently being used in trading and so far it's proving to be beneficial to traders so I can agree.
+- I agree this would be helpful to automate things like investing philosophy and rules.
+- We need human to still maintain how to use of their money
+- I think if the user wants to rely on a programme with parameters and take that risk, let them have it but it shouldn't be imposed on people
+- can be trusted with our data
+- Well its been like this for years just with bots
+- Human must have the last word on it's finances.
+- Financial decision is a very crucial topic so human should be fully involved.
+- Stop loss faster
+- Because AI could make decision based on historical data and comprehensive analysis.
+- I agree because when it comes to accurate data, AI can be of great help!
+- I agree, but only in the scenario that the user has consented/opted in and is aware of the risks and benefits.
+- People need to make their own decisions when it comes to buying shares
+- Finances should not be ai automated
+- I agree because this will prevent users burden of waking up the whole day for buying and selling stocks.
+- AI should not make choices
+- No idea
+- I agree but human shuld have some controls
+- While that would streamline the stock buying and selling process, there are people who like the process.
+- Artificial intelligence can provide advice, but decisions must be made by humans themselves
+- Because in financial matters, it is certainly better to be directly involved by the person who owns the investment.
+- I disagree because financial decisions are complex and risky, and AI cannot fully understand market uncertainties, unforeseen events or personal financial goals. AI can make recommendations based on data, but the final decision should be made by the user. This can prevent mistakes, potential financial losses and errors caused by AI, ensuring safer and more responsible financial management.
+- agree
+- Money is involved and with Ai as the sole decision maker it can be risky
+- I do not trust LLMs with my money. I cannot hold them responsible for errors
+- People should make decisions
+- Ai should not have be able to make life altering decisions.
+- When it comes to finances, human intervention should always be required.
+- good and engaging to use
+- If users choose to do so, that is their right
+- Because the decision has to come from the user to decide on buying and selling shares and not from an AI agent
+- It would make life easier.
+- to be able to help stop fraud
+- I disagree. For this to be feasible, it would be essential that the user had clear control over the guidelines and parameters that the AI should follow.
+- I don't want to let AI make the decision on our behalf
+- AI should not take someones financial decision
+- People lack the most of the knowledge about stocks and being an ai tool it can evaluate every aspects well and help their clients executive proper orders taking necessary stretegy and analysis into account
+- They cannot reason like human beings since they only rely on data provided to them and may not make informed concious decisions.
+- After obtaining user approval and informing users of relevant risks, AI agents can help users make decisions and help improve efficiency
+- Buying and selling stocks requires judgment, which AI does not have
+- disagree, for human accountability
+- When it comes to finances it's sensitive and AI can make some mistakes
+- Agree only if the user are informed beforehand of this information and the risk it might pose.
+- Human can make best decisions using their brains.
+- Only humans should be in charge of conducting their finances. They can however receive financial support from AI
+- I disagree because giving up autonomy like that puts someone's finances at risk, solely because they stop keeping track of them.
+- I feel like they control everything, even my own money feels like not my own
+- No, the decision is made by a person
+- These are huge decisions and if something goes wrong, where does the accountability go to? A human or a bot?
+- No because if they are wrong and give bad advice then we could lose a lot of money
+- I will refer to it but I won't agree with it 100%
+- If the AI fails to invest on behalf of the user, who is responsible? If the AI is hacked or makes mistakes, the user may face serious losses.
+- Disagree, they can make suggestions but the final decision should be made by the person
+- I agree, but with important conditions and safeguards in place
+- I disagree unless the person has given implicit permission to the AI agent to perform these financial transactions on their behalf
+- Only if the users is aware that this is happening.
+- Trading algorithms are already widely used so I'm not even sure this question is consequential.
+- Human interaction need
+- Some people might want to use this feature. If they opt in, it should be possible. But they should be given the right to opt out when they want.
+- People may lose money with this, as despite AI being able to analyze older trends, it cannot predict any unforeseeable circumstances which can affect investments
+- Those are complex decisions that need human intervention
+- Emotionless buying
+- The user should have the final saying.
+- Ai should not be able to make decisions for human
+- Same as the previous answer. I don't think AI has bad intentions regarding money simply because it doesn't exhibit greed compared to a real person.
+- Because the user may not be sufficiently aware, and here comes the role of artificial intelligence to make the best decision.
+- a user's stuff should not be messed with from a machine
+- i agree if only they are going to be held accountable
+- Not at all. We can take AI suggestion in this. But the final decision should be made by the human.
+- agree, human supervision is a must
+- Because artificial intelligence does not necessarily make correct decisions, allowing it to make financial decisions can easily lead to being hacked and suffering heavy losses.
+- These are decisions that a person should make alone.
+- That decision should be left to the owner
+- People should be in a position to make their own investment choices. AI should only give advise
+- If the use consents to it, there is no problem as it is the person's decision
+- Disagree sounds unethical
+- Because use can change the decision anytime based on the situation and product.
+- I disagree because such purchases are usually informed by emotional requirements of the expected user.
+- No human or machine should unilaterally make financial decisions on my behalf.
+- Agree but with the user consent. It should be complete automatic. There should be an authorization / go ahead pointer.
+- Without knowing how AI is making decision, it’s risky to completely entrust AI on financial decision
+- Artificial intelligence can calculate more accurately and quickly than humans
+- Financial accountability. Plus, the AI might not have a thorough analysis on factors such as news (new is an emotional trigger in financial decision making)
+- I disagree. AI can predict for you but the decision to buy or sell should be entirely up to you
+- In financial matters, even if theoretically we can rely on artificial intelligence, this can create unnecessary complications.
+- If the stock is bought by mistake, the user may blame the AI. I think a contract should be signed in advance to disclaim any responsibility, so that the AI can participate.
+- Stocks and all are volatile markets . Ai intervention can lead to major losses and there is really no one to blame after that
+
