@@ -1,0 +1,1043 @@
+# Survey Questions with Verbatims
+
+## Item 56 (id: e1eb94c0-9787-4768-98c7-e016ed32e30b)
+
+### Item Text
+
+What is one question you would want to ask an animal if AI could interpret?
+
+### Analysis of Responses
+
+_Analysis section to be populated_
+
+### Full Verbatims
+
+- I want to ask my cats, what they think about me
+- What do you think of humans, or pet parents?
+- Depends on the animal. I would like to communicate with an elephant, for example, what it remembers and how it sees the world. But with dogs and cats, I would just like to understand some of the nuances of their behavior at certain moments. For example, why some dogs don’t like hugs, or why it is important for cats to enter a room and immediately leave it.
+- how are you feeling today?
+- What do you think about humans?
+- How do you feel? How do you feel about the death of a comrade?
+- Do you really want to be heard? Is that affecting your privacy? Should I stop listening to you?
+- How they feel about us
+- What do you need from humans to improve living on Earth?
+- What do they think of humans? I don't think we can expect a complicated answer because of the inherent differences in language and sensibilities. The more important question is, how would they respond a negative environment when asked, that alone will be a powerful motivation to help protect wildlife.
+- What do you see in me? What do you see in the world
+- How do you feel about the relationship between humans and nature?
+- What can I do to make you happy and free?
+- What do you think of humans
+- "How do you feel when you are safe?"
+- How you live your live happily or there is same struggle as we humans have in daily life?
+- What impression they have about human beings?
+- What do you feel about humans, and how we treat your kind?
+- what is your name Lol, also I would ask do you believe in god and if all animals are the same and a cat can talk to dogs or there's a language bariare
+- What do you feel living amongst humans ?
+- It is impossible to understand their creation without a mind, only with lust and instinct. It would not be logical to ask them.
+- Tell me what you think about people?
+- Where is the treasure hidden lolz 🤪
+- I would like to ask the owl where it goes during the day
+- How far do you mistrust us humans?
+- Do they believe in God or future?
+- How do you like humans and how do they interfere with your life?
+- I would like to ask a cat why it is always exploring, they are travelers, what are they really looking for? It's not just food or companionship, they are looking for more, but what exactly?
+- I would ask my pet cat if she is feeling happy with me or prefers to be free outside in the world.
+- What do you like the most?
+- to a bird I'd ask how is it to live among humans, among big creatures like us
+- What are the things of our reality that an Animal can see/percive/smell and I cannot see/percive/smell
+- How do we live together better?
+- I would ask a dog - what do you feel when you look at your human?
+- I want to ask my dog: What do you want to do most every day? Are you happy today? If you are not happy, why? In fact, I also want to ask what the thousands of animals in the world think of humans, and what we can correct or improve. I think this is very important for us living in this world.
+- If my pet feels sick or hurt
+- I would ask the birds what it feels like to fly
+- What animals think of humans
+- I want to ask my cat what he thinks every day. How he feels about me and whether he is satisfied with his life.
+- What do you think about human beings?
+- 'How do you feel and what do you want?'
+- All animals, maybe pets first, must interact more with people, cats, dogs, rabbits, birds
+- How do you see the world in your perspective?
+- I'd ask a cat: "Do you actually love me, or is it just the food?"
+- Are you able to have and understand complex emotions? How do you communicate with each other and other animals?
+- I would like to ask the animals how they feel about eating and sleeping, and if they like being around people.
+- I want to know what they think about the meaning of life and whether they think human civilization has any meaning.
+- What makes you feel safe and happy in your environment?
+- I want to know what these animals expect of themselves, how they view life, and how they view humans?
+- what do you think of human?
+- Are you happy? What do human activities mean to you? Do you want to coexist with humans?
+- I want to ask how they view the relationship and difference between us humans and them.
+- Do you experience feelings - such as happiness, worry and sadness?
+- How do they feel among humans like amongst the one who pet them
+- Nothing, I do not have any pet
+- what do you want that I could give you
+- I want to ask whether animals are happy in their daily lives and what their needs are.
+- I don't have any particular interest in this because it's a black box effect. Maybe ask them some everyday questions.
+- i'd ask my cat: do you love me?
+- What do cats think when they suddenly run around the house? Do they know that they are different from me?
+- I would like to ask how animals view humans and whether they are willing to coexist with humans.
+- How are you buddy? what is plan for today?
+- I would ask sparrows what they're talking about with each other :)
+- I would ask what they think of human beings
+- Do you like human behavior?
+- Do you think humans understand you?”
+- Nothing in my mind right now
+- What will happen after death?
+- How they live in the present?
+- Do you love me? or How do you feel?
+- I think it would not be fair with the nature. Nature hiding a lot of powers in it. What would we do if we become able to understand their language. It won't be help us to make the wonderful world
+- How are you feeling? Why are you scared? How can I help you?
+- Maybe what is it like to be an animal?
+- Do you know anything about creation
+- What do you think and feel about human beings? Are you happy? How do you see the world?
+- Did they know our language all along and were keeping quiet this whole time?
+- How can I make their life better?
+- How does life feel for you?
+- Do they have any emotion?
+- What he likes and what makes him happy
+- "What is the best way to live together?" (co-existing)
+- Does animals like lion or snake feel sad when they are hurting humans
+- What do you think of the world? Do you have friends? Can you predict the future?
+- The very thing I ask is if it is happy being with us and need any friends
+- what do you think of us humans?
+- How they view humans, and what they feel on a daily basis.
+- If an animal could one day communicate with a human in a clearer and more positive way
+- Is your community doing well?
+- What is their opinions about humans?
+- Why do you keep eating my flowers?
+- What do they want to do at a given moment
+- Do they like humans? How do they see us?
+- I think we can know what the animals feel trough our senses, we don't need an AI translator that will turn the interaction into emotionless data.
+- What do you think you were born to do?
+- Is he able to understand what I am trying to get across to him?
+- i would ask my dog what she named me
+- What do you think about humans and what's bothering you now?
+- I would ask them if they like their owners or if they can see human affection.
+- What do you feel like talking to me?
+- How can I make your life better?
+- What can I do for us to be friends?
+- how friendly feel other humans
+- Do you really love humans?
+- Does the dog mean to scare us ? As i have phobia toward dogs and when to know if the dog gonna bite me or not a good one
+- Ask them how they feel about communicating with humans and what they're hopeful about regarding this development.
+- How do you see me wrist do you think about me
+- How does it feel being them
+- what does he know about birth and death
+- If they also love like human
+- Can I always stay with you like your baby 🐥
+- How do you view death? What do you think about the changes in the natural environment?
+- I would ask about their feelings about human. Also, I would ask about their needs and problems and how can human help them to solve.
+- I would ask what makes them feel scared.
+- if the animal is happy or not with me
+- What are you thinking/do you feel loved?
+- Why does my cat meow so much and what does he say when I get home?
+- I would want to know in a sense how they view humans - if they view us as a different species
+- what does they think about humans
+- what do you think of humans.
+- What it's like to be an animal?
+- I'd like to try explaining mathematics to animals and see if they could understand it.
+- What do you think of humans?
+- i guess i would ask my cat if he is happy or not
+- How do they feel about humans
+- I would never want to ask any question from any of the animals based on the interpretations made with the deployment of AI
+- I ask animal what animal think about human
+- I would ask, how from their perspective they see the humans around them?
+- How does they feel if someone close to them dies or lost
+- What goal in life
+- How do you feel living with humans?
+- Do they really understand what we say to them?
+- I will ask about their hunting experience, whether they get scared or excited etc.,
+- There is no definite question, the main thing is to understand how they understand the world.
+- How do you feel yourself in this world?
+- I would love to ask them how they process information collected from their immediate surrounding, including how they are treated by other animals and humans.
+- What do you thing about this world?
+- Do you want to be friends?
+- Are you happy with your life ?
+- What do you think about human behavior?
+- Whether they have any feelings
+- where do they go when they die
+- What's it like to be you?
+- Are you not getting bored? Now I see all minds of today's generation is in mobiles watching so much non-sense with the excuse of boredom
+- If they feel cared and loved enough.
+- I would love ask street dogs how can I solve problems they face daily.
+- I would ask him if he is hungry, for example.
+- I shall ask animals whether they like human beings or not and why.
+- What is your view of human?
+- How do they feel about their surroundings?
+- Are you happy as an animal, or would you like to become a human?
+- I frankly have no interest in knowing what any animal think
+- What do they think about humans
+- What do you think about human beings?
+- I want to ask them if they hate humans for controlling them
+- If they are happy and miss family
+- I would want to ask the animal why it thinks it exists, and what they believe their purpose to be.
+- "What is your opinion on us, humans?"
+- Do you, by any chance practise any form of religion?
+- I would ask if they like me or not.
+- "How do other animals like you treat you?
+- How do you perceive human beings?
+- How do you feel about humans?
+- What do you like to do most every day and what makes you happy?
+- I would like to ask the animal how old it is
+- I would ask how are you feeling?
+- what do you need or want to live a happy and fufilling life in your natural enviroment
+- I would like to ask them, how do humans treat them
+- What do they do when they feel sick?
+- I'd ask if the animal recognises me as a human, even as an individual and whether they feel any specific emotion, like trust or caution, when I am nearby.
+- One question I would ask an animal if AI could interpret is what their favourite meals are.
+- What you think of the after life
+- What are you going to eat today
+- How humans affect their lives, and what we could do to live together in the best possible way.
+- Is there something wrong with my handling or what you don't like about my way of doing things?
+- What do you think of humans
+- I would like to know if animals have consciousness, like human beings.
+- What do you think about humans?
+- What do they think about humans?
+- What does it feel like to fly, and how do you see the world from above?
+- What do you feel for us humans??
+- If they ever have their version of existential crisis, when it comes to survival of the species? If they want to help us to take care of the planet
+- What do you think about human being?
+- Ask hippos why they attack animals even though they're herbivores
+- I would ask if they could interpret our English language.
+- I would like to ask an animal if they have an idea of technology advancement.
+- How is a typical day for you? What does it feel like?
+- Could it sense paranormal things?
+- how are they doing and how is life treating them?
+- I would want to ask them: how do they think the state of the world is like?
+- DID they see any change in the world climate
+- How hey relate, and survive.
+- How do you feel about human life? (Scared, curious, confused, etc.)
+- What do you feel about me when I'm near you, I would ask my dog.
+- What do they think about us?
+- How do you perceive humans?
+- I’d ask my dog if she’s happy and if there’s anything I could do to make her life better.
+- If AI could understand animal language, I would like to ask my cat: "What are you thinking when you purr when you are alone?" I want to know if she is feeling something, is bored, or is trying to communicate with another cat. This will help me better understand her feelings and needs, and perhaps build a better relationship with her.
+- How do you react when in pain
+- what do you fear the most in your world ,and what brings you true peace?
+- How do you view humans, or rather how would they like to be treated by humans
+- do you like me or what did you do today.
+- what is your take on humanity
+- How can I make life more easier and enjoyable for you & in what ways do you feel loved?
+- I would love to ask my dog what his barks mean
+- What animals are saying or what is their communication and language saying
+- Do you understand humans?
+- Do you understand that I don't want to harm you?
+- How do you feel to be an animal.
+- What is the point of life?
+- I’ll ask to translate whatever my cat trying to say
+- how do you feel staying or living in this environment
+- Are you okay? Or how do you feel
+- What is your favourite thing to do?
+- i would like to know how their family structure exist and if they have relatives
+- "What do you think of me?"
+- What does freedom feel like to you ?
+- Do you love me? Are you happy living with me?
+- I have often wondered what my cat was thinking I would ask it if it was happy with it's life
+- do they understand us? our intent?
+- How do you survive in the harsh conditions,
+- Can you understand my daily life today?
+- how are you. How do you feel when am around
+- What a day in its life looks like
+- How do you view humans in general?
+- What their view is about humans
+- What do they think of us.
+- what are you most important needs?
+- how are you feeling, is every thing OK?
+- I would like to ask them what kind of life they want and what they think humans are like.
+- What do you think of us humans?
+- How do you feel? Are you happy?
+- Do you want to have or make something specific?
+- I would like to ask my mums dog if they are happy
+- Well, it depends on the animal. If it were my cat, for example, I'd ask if I could do anything to make him happier.
+- How do you see your fellows, the humankind and the world
+- I would ask cats how they interpret living with humans, as some studies have proven that cats see humans as bigger bipedal cats.
+- I would like to ask how my cats feel
+- Are you happy? What do you want to do most every day? What scares you the most?
+- I Would like to understand/ know if they have any emotional intelligence
+- First, I would ask them what their view of humans is, positive or negative? How do they see their place in the group?
+- I would ask why the dogs bark all the night when there is nothing to be seen
+- So many questions: I can say How are you doing? How are you feeling now? and what are your problems?
+- How can we make your lifes better
+- What we as humans could do to help improve their lives on a daily basis.
+- Do you think we humans are a threat to you or a friend?
+- How are you? I would find it interesting to know if animals could perceive self and recognize their own standing.
+- How do animals survive in the wild
+- If they understand what humans are speaking
+- What do you perceive as happiness?
+- What is your intention behind this action?
+- Tell me your story, where do you come from?
+- I would ask are we hurting you?
+- how do you feel about humans?
+- I wouldn't ask any questions because I would understand the animal through AI, but the animal still wouldn't understand me.
+- What does the world feel like to you?
+- What do you want to eat, where do you want to go, do you like humans, what do you see?
+- Are you feeling hungry now?
+- What makes you happy and content?
+- I would want to understand their emotions and how they feel, and ask them about their likes and dislikes.
+- how do you feel now that humans understand you?
+- Is it your owner good to my bird.
+- what was something different thy say in the sky
+- Are you happy with your life.
+- I want to ask an animal what humans can do for them?
+- I feel like this is a difficult question to answer, because I am having difficulty comprehending the situation - How would the animal and I be on the same page . What do I ask about? Do I expect it to respond in human emotions. However, if I had to ask, I would ask an animal about its family
+- do you love me ? what do you feel now?
+- One of my pets recently passed away because I didn't know how to interpret her feelings of illness, and I arrived late to the vet. Knowing whether she's feeling well or has any discomfort or pain is very important for the health of our pets.
+- Are you happy with us in the everyday life?
+- I want to ask the dog what makes him feel the saddest thing in the world.
+- If you're happy with your life and what you could do to improve it. I'd also like to talk specifically to my pets to let them know I love them.
+- About their experience of traveling and their thoughts about humans
+- What do they think about the humans in general
+- I don't believe Ai can interpret feelings because they are not simple translations.
+- What name do they have for me? I would like to know what makes them decide what kind of a person I am.
+- what human behaviour you hate the most
+- probably some mundane questions, like whether they like the food that they are given and if they are happy or not
+- Some animals have a keener sense than humans, I want to know what they sense
+- What keeps them working regularly
+- What is your opinion about humans?
+- How you doing? hope that all is well in this form?
+- I would ask how their species works, we humans have governments, wars, etc. and ways we manage things, i would want to know if such things happen or how they happen to them.
+- What is the life like?
+- What do you think of humans and other animals?
+- I think I would ask him what he wants/needs, what he feels
+- What does he mean? I want to know what he thinks.
+- I could tell when my pet was experiencing pain, discomfort, or other needs so I could better help them. Many herbivores are very good at hiding their pain because it's necessary to avoid being preyed on by other animals.
+- what do they think about human people
+- hello, how are you feeling?
+- how does it feel about life
+- How are you feeling today?
+- How do they feel living with me
+- I would ask my cat if she is happy
+- None, pre-modern civilizations did not need AI to understand the language and behavior of other living beings.
+- I'd ask my dog something like "Do you love me?"
+- Do you like humans? How do humans treat you? What is your biggest desire in life?
+- How are you feeling ? What do you do ?
+- No idea what would i ask .
+- Do you like human in this world?
+- 1. What do you want in life? 2. How do you feel about me? 3. Do you like being close to me?
+- What do you feel and how do you survive?
+- Are you in pain? Are you happy? Or how could you improve your life?
+- What do you think of humans?
+- What do pets think of humans? If they are pets, they want to know what they think of their owners.
+- how do you perceive the world and us humans?
+- I would like to know what they do on a daily basis. How do they stay in touch with each other?
+- how do you feel about humans?
+- What do you think of humans, what do you live for?
+- I wanted to ask them if they are willing to communicate with humans.
+- Yes no why i dont know yes
+- Can you understand what I'm saying?
+- How happy and fufilled are you?
+- What things they do and how they communicate with others. Do they cry or what health problems they suffer like humans have fever and cold etc.
+- How are you doing? What do you want to do? Do you have any idea of the word family? What do you want?
+- i’d ask them if they fear humans?
+- What do you want the most?
+- I would ask what they'll need from us to feel safe
+- Do you know who we actually are?
+- what is the purpose of life
+- I would ask about his feelings and understand its behavior and the reason behind it
+- Ask my kitten what he wants, what he likes to eat, what he wants to do, where he wants to go,
+- I wanted to learn about dogs, how they communicate, how they express themselves, and what behaviors convey what information.
+- What do you think of the human race and what they have done to your world?
+- Do you enjoy being an animal?
+- What can be done to make things better for them.
+- Ask questions about how people live and what they think!
+- What can humans do to make yur life better/
+- What is your opinion of humans? Do you hate coming into contact with humans?
+- I'd like to ask how my cat feels about me personally, or if they just tolerate me for the food
+- If I could ask an animal one question and truly understand the answer, I’d ask, “What do you feel when you see or interact with humans?” It would be fascinating to know if they sense trust, fear, curiosity, or something entirely different.
+- What do you think about humans?
+- How do you feel when humans are around you?
+- how animals feel love, where they feel it?
+- What do you truly think of humans?
+- how do you feel when you lose one of your own kin
+- What do you need to feel safe and protected in this world?
+- I would like to ask the dolphins: "What do you talk about with your friends underwater, and do you laugh too?"
+- How do you feel, do you have any special needs?
+- What they think about humans are they love us.
+- Are horses happy to be ridden?
+- Are you sick? Are you hungry? What do yo want?
+- How do you feel right now?
+- What is her view of the world around her?
+- How they feel when seeing human, what they think about human ?
+- Do you believe in religion (God)
+- I would ask them how they feel about humans not living in nature like all the other animals in wild do
+- What can I do to improve your life?
+- What do you feel about human
+- What do you think of human beings
+- What he thinks about life.
+- Why my cat only accepts to be pet in certain moments.
+- what do you feel about human behavior and culture that make your species become our food supply or become domestic animals without freedoom to live in your habitat
+- I don’t know. I feel that chatting with animals will affect my ability to continue eating meat and fish in the future, so I don’t want to chat with animals.
+- How do you view the human race? What do you hope humans will get along with you?
+- How is it like living outdoors?
+- I would ask my pet dog how is he doing today.
+- Do you feel love and hate ?
+- I would ask a whale what stories does his or her song talk about.
+- How they perceive us in their world
+- Do you like to be around humans?
+- I want to know what animals think of humans. In their eyes, what kind of existence are humans? Are they insignificant or terrifying?
+- What can I change to improve our relationship?
+- How do you feel about humans
+- What do you think of human beings?
+- I would ask a snake why do they eat their children
+- What they are feeling about humans.
+- Their way of thinking and functioning
+- What does it mean to be an animal?
+- Do you enjoy living here?
+- Are you okay? and what does the world look like through your eyes
+- I would ask them to translate my pet's words and tell me how she feels, what she likes about me and what not
+- "Do you understand this question?"
+- wide range of sounds like barks howls
+- Do you have a belief system ? How do you feel about humans?
+- What they think about humans ?
+- Are you happy? How do you feel?
+- Do you like us humans or not
+- What do you dream about ?
+- how is he feeling right now
+- What do bees humm while hopping from one flower to another
+- I want to ask animals what they are dissatisfied with in their lives? What do people need to do to meet their needs?
+- About their lives and their understanding of the nature and human beings.
+- How do they see their surroundings?
+- What do you think of humans?
+- I want to ask how animals view their place in the natural environment and what they think of humans
+- I would like to ask my pet dog if she really loves us or is attached to us.
+- I don’t really have any question
+- I’d like to know more about sea animals. I’d like to ask them how it feels to live under the deepest part of the ocean.
+- Do they have names among themselves.How do they know each other.Do they have uniqueness
+- Do you think planet Earth would be a better place for your species, if humans weren't around?
+- What would you like to do besides just survive?
+- how do you communicate with each other?
+- What such an animal feels. Does it have any hidden talents. What is its sense of life and what does it stive for
+- How does it feel being an animal
+- What feelings does he experience?
+- How does an animal treat a person? What feelings does it have towards him?
+- how are you doing and what is in your mind
+- I would ask if they are happy being treated they way they are currently, especially if it's someone's pet.
+- Do they have a different life from humans and how do they communicate?
+- why dogs are so jealous sometimes?
+- How do they see us, and how do we appear to them? Are they more aware than us?
+- What do they think about humans.
+- Are you happy live here with me?
+- How does it feel to be an animal don't they wish to become humans
+- Do they have values, social class, and moral standards?
+- What do you want? What do you like?
+- I'd ask a rabbit if it really likes carrots
+- I would like to an animal how are the humans
+- If I could ask animals in general just one question through an AI interpreter, I’d ask: “What do you think of humans?” I’d want to know how they see us, not just as predators or caretakers, but as beings who share their world. Do they see us as kind? Confusing? Dangerous? Curious? I think their answer might humble us. Maybe they’d say we move too fast, speak too loud, forget to listen. Or maybe, just maybe, some would say we’ve tried and they’ve noticed.
+- What do you think about every day? How well do you remember things? Do you like being around humans?
+- Do you feel like you are been loved.
+- What are you thinking about?
+- How do you feel about human beings?
+- I would ask them how humanity can help them
+- Cosa ne pensi degli umani?
+- what do you want to do? maybe that
+- How well/bad they're being treated for pets. Then for strays/wild animals, what they think of humans, and the world in general
+- What am I to you? How are you feeling right now? What do you like? What do you want me to do?
+- what makes them aggressive
+- Would you like to be in our place (as an animal being the dominant race in earth)
+- What do you like to do most?
+- i would ask them if they can see colors
+- I might ask my dog how he is feeling.
+- what they feel about humans
+- i would like to know if the world they live in feels unsettling given they probably come in contact with anthropized regions
+- If I could I ask one question it would be how do you feel about human beings?
+- i would like to ask dogs how they feel being around humans and being a companion to humans
+- Are you afraid of humans? Do you know what life was like for your ancestors? Do you have your own language system and culture? How do you pass on your culture? If possible, what kind of life would you like to have?
+- When do you feel happiest and when do you feel sad?
+- To say my name in their language
+- Why do you think like that
+- How are you can you make friendship with me
+- Do you know what death is and how to deal with it?
+- How could I be better for you?
+- Do you dream when you are sleep?
+- Why would you bite someone, do you love to have pet parents?
+- How do you perceive and navigate your world through your senses each day?
+- how do you feel and what do you think of human
+- What would make you happy?
+- What does world feel like through your senses?
+- How do you consider human
+- Leave them alone and don’t steal their space. Only kill when hungry and you have to have a fair fight with them without guns or modern technology. Never waste their life!
+- How do you feel right now?
+- how do they coupe with loosing their loved/family?
+- What is the most important thing you want humans to understand about your world?
+- Thanks for being my stressbuster in all the times
+- What can we do to make them feel happier and more willing to spend time with humans?
+- I would like to ask the dog: "Do you think you are happy in your life every day? What would make you happier?"
+- I would ask for their opinion on human beings.
+- What is your understanding of intimate behavior? Is kissing an animal on the head a sign of love?
+- What kind of freedom do you imagine? Do you want to be a human being? Do you want to be the master of humans?
+- I would ask my dogs how they feel, if they understand what I say every day when I talk to them, if they are happy.
+- I would like to ask my dog specifically, Why are you so scared when a storm is brewing and is there anything that I can do apart from giving you medication that can comfort you?
+- How is your daily life on going
+- When animals are feeling uncomfortable, I want them to express their feelings directly. I will ask them what is bothering them. This greatly reduces the risk of delayed medical attention or misdiagnosis.
+- Do you know you are an animal?
+- Are you scared of humans and if not what do you want most in the world?
+- what is the meaning of life.
+- What is ur favourite hobby
+- How does freedom feel to you or do you what do you think of humans
+- How is life in the jungle or in water?
+- how do you feel when humans detest you
+- Do you understand us yourself?
+- what is it that you know that we do not know?
+- What is your feeling towards us?
+- How are you feeling or What are you thinking?
+- There emotions towards me
+- I would ask a lot of questions, including what he thinks, what he feels.
+- do they love us? some times do they feel lonely?
+- How my dog is so loyal to me.
+- How do they feel as animals and what is their view towards human
+- Puppy, how do you feel about living with me? Who do you like best in the family?
+- How does it feel like to be an animal and do they have feelings like feel lonely or something?
+- what it feels like being on the street everyday to a dog
+- how do you feel love from me?
+- Find out whether my pet likes me, what it thinks of me, and what it wants to say to me
+- How is your life experiences
+- I would like to go ask farm animals how they feel and what they think about the life and death choices humans make for them. And I would like for the entire world to listen to their answer, though I think there's no need for AI technology or to understand "language" for that. Eyes and screams speak quite loudly...
+- I want to ask if animals really have long memories and what they think of humans.
+- Ask questions about areas that humans cannot reach to increase your understanding of these places.
+- Whatever you say, I want to understand that your behavior shows shenmo
+- as i own a dog, i would ask my dog's body language of what he like/dislike
+- To our family dog, I would like to know their emotions and what they need us to do to make her feel better
+- I would like to ask the orangutan that are kept in zoos behind the glass walls how they feel being copied or looked at by humans. Do they feel ashamed, or do they feel annoyed being seen as a showpiece and being locked behind a glass walls, being highly intelligent.
+- Their extent of excitement at any given moment.
+- Their breeding habits and hunting methods
+- How it feels of human beings
+- What's your name? I imagine you talking to my pet.
+- Do animals also have emotions
+- No problem, I don't think animals think deeply. They can extract information, but they can't communicate deeply.
+- why do they behave the way they do
+- how you feel me which i daily feed you?
+- what is most important to you in life
+- What they believe the meaning of life is.
+- I would ask it: What are you?
+- I would like to ask an animal why humans are making the buildings every where.Now a days we don't have that much forest.Birds does not have tree to live.
+- I would ask my cats if they're happy.
+- Is being domesticated good for you
+- I would like to ask, "What do animals find enjoyable about life?"
+- You see or hear humans and how do you feel about this and are we aware to how we cause harm or satisfaction to your life, safety and peace?
+- Is there anything I can help you with? Is there anything I can do for you?
+- What do you think of the world around me? And what do you think of humans
+- How do you feel about the world?
+- How do you find and maintain your partner
+- I want to ask my dog what he thinks every day, whether he is happy or not, and what he needs.
+- What they are thinking about at that particular time
+- What are you feeling right now?
+- A particularly intriguing question I would ask an animal if AI could act as a translator would be: “How does your everyday life feel to you?”
+- How do they perceive humans?
+- How are you feeling today? Do you enjoy being with me?
+- I would ask my dog, "What do you feel when you see your owner after they have been gone for a while?"
+- How do you think about us, humans?
+- I would ask them if they are happy and what things they are missing to be happy.
+- What do you think about us humans? How do you perceive us?
+- Would you attack a stranger that broke into your house?
+- How he is feeling, especially when he is not well, what is bothering him
+- How did you see the world?
+- What is the meaning of your existence?
+- How does it feel for you how humans destroy the world
+- I would like to ask: What is an ideal world or environment like for them?
+- Do they recognise human facial expressions and speech/tone
+- I would definitely know the feeling of them and what they want
+- How are you feeling today?
+- How do you think I can make your world better?
+- I would want to know if animals feel emotions on the level that humans do.
+- How does an animal feel about me as a human?
+- I would ask dogs how much they love humans.
+- Are they aware of the harm humans do to animals, and would they want to retaliate against humans?
+- How do you feel about humans?
+- I would definitely ask some marine life animal about what’s there in the deepest part of the ocean.
+- I would want to ask them what humans could do to help
+- Can you really feel my emotions?
+- How does it feel to live like that
+- How can we as humans contribute to you in a way that would make your days easier and show that we as humans respect you?
+- How do you feel when you lose an animal from your family?
+- I would ask that animal if he/she needs help in any way? If she is sick and need medical help or food ?
+- What makes you feel safe and happy in your world?
+- whats your opinions on humans
+- what do you think about humans as a species?
+- What are there thoughts on human
+- do you like humans? what do you think of the world in general
+- how do they feel about us humans
+- I can't think of anything to ask you.
+- What do you expect from human beings?
+- How does it feel to live on this earth?
+- First, some questions to determine whether the AI is fabricating or hallucinating the animal's responses. Second, I'd be interested to know if the animal can lie. This could shed light on several important things: whether the animal has a "theory of mind," whether it's capable of more abstract thinking and has a future-oriented temporal perspective, since the purpose of every lie is a future opportunity.
+- How can we make more people understand animals and wildlife and treat them better.
+- Is living with humans good or bad?
+- How do you feel about the world around you?
+- I would really like to know how they feel to improve my relationship with them, since I consider them part of my family. It would be interesting to understand other animals, since understanding animals also means understanding ourselves.
+- I would ask my cows how they feel about me family, crows what they do and eagle to show world with their eyes
+- If there is something I do that makes you uncomfortable or bothers you
+- "Does this 'home' make you happy?"
+- How are you feeling?
+- what is your favorite food???
+- How often does it enjoy the world
+- how do they see the world, and other animals besides themselves, do they have something like a religion?
+- What do you think about humans?
+- What do you think about human?
+- How it feels to live with humans in this current world.
+- I would like to ask my dog what she feels, understand what her needs are and if there's anything bothering her. Dogs bark but as an owner it's frustrating sometimes not knowing if your dog is in need of something else, it really feels like she's trying to tell me something that i just can't get and have to go through trial and error doing everything that she might want
+- I want to ask the animal what its mental activity is at this moment, what it wants to do, what it likes
+- I would like to ask it to describe me as it sees me
+- If I still had pets (previously I had dogs and cats), I would ask them what they think about me.
+- I don’t think we should be talking to animals in that way. How we communicate with animals now is how it should be. Humans are always trying to push boundaries
+- if they are happy with me
+- Who am I? How do you see me?
+- how do you feel about this?
+- How do they feel when they see humans mistreating them
+- How do you feel, and what do you want to say?
+- How are you? What do you like to do? What do you think of the world? All the questions I can.
+- I want to ask migratory birds how exactly they know it is time to return to breeding grounds.
+- Are you happy with us?
+- I would like to know whether they pass down history and what the history of our world is from their perspective.
+- Are they content/happy? (More related with pets.) But for the general animal population, my question would be their concerns about humans encroaching into their environment.
+- A question I would ask a tiger is, how would the idea of eating already cooked meat affect your digestive system instead of killing and eating raw meat from preys the tiger hunted.
+- I would like to ask animals what they think about the world, and I should be able to get a lot of interesting answers.
+- why dog run after a car when passing by
+- What is the meaning of life for you and what gives you happiness
+- How did you feel all this time without being able to communicate with me? lol
+- How does he feel about humans
+- I would like to ask to my cat, Am I your best friend?
+- Do you feel sadness or boredom?
+- How do you feel? You know we are friends and to you I am?
+- "What do you think of Humans?"
+- I ask my pet if he likes me, what does he like to eat, what does he like to do?
+- I would ask how it sees us as living beings. I would like to ask the same questions a human would be asked about animals.
+- What are their purpose of life
+- Do you like the food? and if not, what do you want to eat
+- I would like to ask the animals how is your life
+- how do they live next door to such an unpredictable neighbor as a human being on this planet
+- I would want to know how they see life through their eyes
+- There's a lot of cats in my university that I often meet and feed. I would like to ask them if they like me.
+- would you be open to being a friend to me
+- I would want to know their fondest memory.
+- I care for you, do you also care for me?
+- What brings you happiness or comfort in your daily life?
+- What are you feeling? What are your needs?
+- How do you identify yourself as a family from your other species? Do you have a culture?
+- I would like to know what exactly they are trying to say so I can help
+- Learn more about their relationship with humans and how this affects their coexistence
+- How they feel about humans' negative impact on the environment and if they understand what it means for them
+- Do you enjoy living in an urban environment or is it very difficult to live in such places?
+- How much of what I say can you understand? How do you understand it, is it the tone of voice, body language, or something else?
+- My question is, how do they know some danger is coming
+- One question would be do you Luke being what you are you happy being the animal that you are
+- Listen to AI and also be careful sometimes
+- How are they able to see at night?
+- How are you enjoying life
+- What do you think about human beings?
+- what are their thought and impression about us (humans)
+- How are you feeling, is everything okay, are you healthy?
+- What do you feel about human? are they good creatures or not?
+- Does my dog ​​miss me when I'm not home?
+- "Animal" is such a vague term. I will narrow this question down. If AI could interpret the communication between my pet cat and me, I would want to ask if she is feeling OK physically and emotionally.
+- I would like to ask the animal "how do you feel today?"
+- What do you want humans to realize about your species
+- How the birds fly? How the Honey bee collects honey?
+- How they see humans and how do they interpret our behaviors
+- How do they feel when we as humans interact with them.
+- Do you think there is a way to cooperate with humans to improve the lives of both?
+- What do you think of humans?
+- I would ask them about their daily emotions, I would also like to know if they are happy at home
+- I would like to ask my cat if she is happy with us.
+- How is he feeling?
+- Do you think so? Do you realize that you are an animal?
+- What do you think of us humans?
+- What makes you most happy?
+- What do you and don't you like about humans?
+- What is the world like for you? Do you like your life? If you were given the chance to choose, would you choose to be an animal or a human?
+- How they feel to be alive and if they feel their life has meaning.
+- Do they are to be with us or part of our society
+- How are they able to communicate amongst themselves
+- What do you think about humans?
+- I would ask the animal if it is aware of the what is happening in the world
+- about the feeling.. I have seen few things here during shaadi when horses are made to dance. i want to know if they enjoy or the pet , do they enjoy there owners company?
+- what is human for you and what do you think is human role in this world
+- what the animal is thinking or maybe some concerns
+- Do you think humans are a nuisance?
+- Whether you like humans, whether you adapt to the current environment and lifestyle, and whether you feel the environmental pollution.
+- I’d ask a dog, “What do you feel when you see your human leave and come back?”
+- What do you need to be completely happy?
+- What do you think about humans?
+- I would ask my Cat if she is happy.
+- what do you think of human?
+- What do you think about human?
+- How are you feeling, are you hungry?
+- I feel like so much of what we do as humans deforestation, noise, pollution, hunting happens without ever thinking about how it feels to the animals who live among us. If we could just listen and really understand what they experience as danger or stress, maybe we’d finally start acting with more care. That one question could open the door to a more respectful, shared world.
+- What is one thing that is very important to you?
+- How do they feel about humans?
+- How the animal sees us as humans.
+- I would like to ask what animals think of humans, positive or negative?
+- Are you happy here with me
+- If they care about their families as much as some humans do
+- What is your life like, What makes you happy?
+- My dear kitten, do you love me as much as I love you?
+- What is the meaning of life
+- Are you living well? Has the disturbance caused by humans affected your survival and life?
+- I would ask them what to they think of their life? Are they aware of the fact that they're going to die?
+- My question would be " Do you like humans? "
+- What is your view of humans? Humans persecute you, take your food, and occupy your territory. Do you hate humans?
+- What they think about us? (Humans)
+- I would love to know why pigeons are monogamous and why some starve themselves when a partner dies
+- How do you feel in a daily life.
+- What does it feel like to live your whole life in service of your hive—do you feel purpose, instinct, or something we humans don’t understand
+- Do you know who or what you are?
+- I just want to know if they are happy and healthy.
+- How do you feel or what bothers you about my presence?
+- How do you feel and what can make your life better than present
+- Explain what mood and environment their words and actions are based on,
+- What do they think of us humans?
+- How he sees the world, what he thinks about humans.
+- "What do you feel, or thinking about right now?"
+- I would ask cats why are they so lazy... they sleep throughout the day without doing anything
+- I want to ask them whether they know the secrets of nature, how beautiful mother nature is? To forecast the natural conditions. How to rebuild and protect our environment?
+- I would like to ask pet animals that how they feel when they move from one owner to another.
+- What are they feeling about humans?
+- I would want to ask what they think of humans as a species. I am afraid they might dislike us because we are ruining their natural habitat.
+- Do you like humans? How do you feel about your daily life? Are you happy?
+- I would mainly ask, "What do you think?" This is my main question, what does the animal think about the world, about people.
+- Do they believe in God as the creator
+- What makes you happy in this life?
+- What do you think about the life you are having?
+- Why do you not get RID of humans?
+- What is their life like? How do they run their daily errands? DO they operate the same way as humans do?
+- How does it feel sleeping in the forest
+- I want to know if the dog really likes to see and stay with me.
+- I think it's pointless. I would give commands.
+- I would like to ask my dogs if they love me
+- What does your world feel like to you?
+- Understand some of their living habits and want to ask them about their thoughts and requirements on humans
+- How are you and how do you do
+- What do you feel when you look at me? Do you trust me, and do you feel safe by my side?
+- I don’t know, I don’t really think I care enough to ask an animal a question, it’s just an animal
+- What do you think about human beings?
+- What do you think about the world created by humans, what do you feel about it?
+- What do you usually think about during the day?
+- How big do you think the world is?
+- How do they see us humans and other species in there perspective
+- I doubt ai can interoret much, it is only fed infos by humans. And humans have done far more harm than good to znimals, so I'm skeptical at this new form of forceful human presence in animals lives. I guess i would ask the animal how they perceive life and themselves, what do they think of these, their purpose and feelings.
+- "You look so tired, what's wrong with you?"
+- What do you see when you look at a human.
+- Do you want to be my pet or do you want to roam free.
+- Do you understand me? We can talk to each other now. Are you surprised?
+- I would ask the animal if they remembered their past lives.
+- Do you feel like eating something right now?
+- Their perspective and their connections they build with humans, is it positive or negative? Also I would ask their description how humans interact with nature.
+- Idk, I just want to say hi to them. Ask what they feel, what is it feels like to be themselves, etc.
+- What do you truly think of humans?
+- Id definitely like to know what they think of humans and how they see us in general.
+- I would like to ask the birds how they feel like to be around humans like us and I would like to feed them with their favorite food and ask them whether they like it or not.
+- what could possibly be the animals name?
+- i would ask what does love or trust feel like to them.
+- How would it feel to be an animal?
+- What is this life to you?
+- What do you really feel when you're with us? do you feel safe, loved, or just tolerant?
+- I'd ask the cats I care for if they love me.
+- I don't know. I don't think they could understand more sophisticated questions.
+- Are you being well taken care of?
+- I would ask the animal: What awaits Humanity in the next 50 years? What does nature tell the animal about the future, what will be the evolution of man on Earth.
+- Do you know of a God? What's your purpose in life? Where do you see yourself in the chain?
+- nothing. im least bothered about animals feel or say
+- I will ask my dog how she feel about me when am not around.
+- I would ask an animal, do you believe in god, is there a life beyond this one, and do feel love for your fellow birds or family members, i would want to hear the bird's philosophy on life
+- HOW THEY FEEL ABOUT THE HUMANS. WHAT THEY THINK ABOUT HUMANS HOW THEY TREAT THEM. HOW IS WORLD TO THEIR EYES. HOW SAD OR HAPPY THEY ARE .
+- How much do you like human?
+- I would like to ask about his feelings and well-being, whether he is happy, whether anything is wrong with him, and how he feels around people.
+- I would ask my cat what they feel about me, and if I can give them something to feel better.
+- Do you feel safe with us? Are you hungry? Are you looking for a place to sleep?
+- Hi, will you be my friend ?
+- can you understand what am i talking?
+- What could I do if anything to make your life more enjoyable?
+- "What should humans do for animals to save the Earth?"
+- how do they feel like every day
+- What is your honest view of humans and the role they play on this planet?
+- If I could ask an animal anything, I'd probably ask how they feel when (mostly women) talk in baby talk to them. It's natural for girls to talk baby talk to animals, so I would ask if they think it's demeaning or if they just don't care.
+- I want to ask animals what kind of living environment and food they like, just like chatting with friends.
+- I think I would ask them how they feel about living with us.
+- I would like to ask my dog if he's happy to live with us, and would like to know how I could make his life better.
+- Do you like communicating with humans or would you rather avoid them?
+- How do you face hardships in your life
+- Do you understand who you are, where you are and what we are?
+- Do you love me, How can I help you
+- how can we help as people
+- I would want to ask a cat why it purrs at night.
+- How they view us humans.Do they fear us? Hate us for destroying the environment? Feel indifferent towards us?
+- I´d use it for situational communication. Why did you do this right now, or something like that.
+- I don't know. I feel a little uncomfortable with this idea. From a conservation perspective, I understand that understanding animals better can help protect them. Something they mostly only need because humans have put them in danger. I think we have a protective role, but asking an animal questions seems more like a matter of human curiosity.
+- What do you think about humans and how humans have impacted your life?
+- Do you have the same feelings as humans and do you understand spirituality?
+- how you manage your work and personal life so well.( if i wanted to ask an Ant)
+- Why don't you like me ? Why would i fear you? Can you have reason and common sense? If you dont then I can not trust you.
+- do you have the same emotions humans do?
+- I would want to know how it's feeling and what it thinks when it sees humans
+- I would ask questions such as the positive and negative aspects of living in a shared environment with humans, the advantages and disadvantages of the species they belong to, how they compete and communicate with humans or other animals, how they would want to shape the world if they were the dominant species on Earth, what level their abstract thinking and feeling skills are, whether they can communicate with living beings on different planets using methods that humans cannot perceive, such as
+- Are you safe and hope you have proper access to shelter and water?
+- What are the steps for an improvement in the ecosystem?
+- How they are feeling wheu they look unwell.
+- That question will be ' how do you feel when human do bad behavior with you'
+- Have they ever thought of fighting back against humans
+- No precise idea, but see if he has rituals, beliefs
+- Ask them how they feel at the moment, what they like, what happened, what they want to eat, what they want to do, and all the unknown questions.
+- How are you feeling, are you in pain, what do you want to do?
+- Do pets want to be kept by humans, or would they rather have their own free life?
+- do u believe in a god or whats their notion of a higher-being/God
+- Why always trying to eat something
+- What they are thinking about
+- What does such vocalization mean.
+- What is the most enjoyable thing in your life?
+- What do you think of humans and how we treat your world?
+- DO YOU UNDERSTAND WHAT I'M TELLING YOU?
+- Does my cat actually love me
+- Don't you have any morals among yourselves?
+- do you think that humans are destroying your habitats?
+- About their family life, they have issues like humans too? How they raise their kids?
+- What could we as humans do to make their life easier
+- What is your earliest memory?
+- I would ask Do you like me and do you want to be my friend?
+- their understanding of the world
+- What do you think about human
+- how do you view human in your mind?
+- What are you feeling now?
+- I'd ask what they think about humans
+- What do you think about humans?
+- what do you think about humans
+- I would ask an elephant, "Do you remember the emotions you felt when you lost someone from your herd, and how do you carry that memory with you?"
+- What makes you happy and what do you think is the meaning of life?
+- What they think about humans
+- What topics do you usually talk about? What do you think about your own and other people's lives?
+- In addition to the five human senses of hearing, vision, touch, taste and smell, how else can you experience the world?
+- How do you feel and what do you need?
+- What they see in the world differently
+- What do they think of me?
+- Do you have a memory passed you by from the beginning of creation as to what were the historical events you or your ancestors were member of?
+- i would ask what they want, whats important to them, what they need from us as people
+- Did you know that humans are not the same species as you? What do you think of humans? What do you think of your own life?
+- Do you see humans as a threat? (Like we see AI as a threat)
+- Are you happy living here?
+- Dont you get bored sleeping all day and doing nothing most of the time?
+- now that AI can be a bridge to an understanding communication, what do you think about AI itself?
+- how do you feel today little thing?
+- The questions I would like to ask the animals are: what is the current environment of the Earth like for them?For humans, we live in a harsh environment due to extreme weather, but I would like to know how animals feel about it.
+- do you wish to be a human
+- i will ask the animal what is the biggest changes in their life after 5G technology.
+- I want to ask my cat what's in his mind
+- what do you think about being alive
+- how can we understand their languages
+- I would ask an animal what makes them happy.
+- Do you ever feel happy or sad like humans do?
+- how do they communicate with each other
+- Are you afraid of things I don't see?
+- What is the world like that you see and feel? What do we humans mean to you?
+- I want to know why my cat doesn't seem to like me but I do everything for her.
+- How are they doing? Would definitely be the first.
+- I want to ask how the pets at home feel about different actions of family members and whether they want a companion.
+- What do you know about the world?
+- What do they think about Humans
+- I want to know how you feel about people.
+- How do they think about humans
+- Does my cat miss me or remember me when I am away from home?
+- I would ask my dog to share his feelings regarding everyone in the house, especially me. My dog is very close to my heart, I would really want to know about how he thinks.
+- For example, what is a pet cat thinking when he stares out the window every day? Does he like humans?
+- how safe are they feeling right now?
+- How does it feel to live with me?
+- Whether they are happy or not.
+- What do you think of humans?
+- If it is my pet, I would ask what they feel about me. Am I a good person from their perspective?
+- Why ask an animal a question?
+- What do you feel about humans when you look through your eyes that they run and busy after fulfilling their dreams
+- What does my cat think about me.
+- Can you understand me when I am talking casually ?
+- Do you have a plan or plans for daily or future life?
+- What do they think about humans.
+- I would ask my cats what they like, what they want.
+- What expectations do they have of human behavior in general, or of "their" human in particular in the case of pets or companion animals?
+- How they feel about humans in general.
+- I would want to explain to my cat that his brother just died, and to stop looking for him, and to let him know we are moving out of here soon and he will have a wonderful life again. I would ask him if he understands
+- I would ask my cat if she is happy in my house or if she would prefer to live with her cat mom and her siblings in the countryside.
+- What he thinks about humans, if he trusts them and how he perceives himself
+- how do u guys feel about the world
+- Are you afraid of dying and life after death?
+- How they feel while living with humans
+- What is your world like? How do you see life?
+- What do you think of us humans?
+- I think what they experience live with human ?
+- I will ask that what do they think about me?
+- I would ask him what he wants.
+- Do you know how it all started?
+- I have never thought of it. But if could be if they feel emotions deeply
+- I would like to ask them if they like humans and what they are doing to the environment?
+- How do animals view human existence? Do they have joys and sorrows? Do they have plans and imaginations for the future?
+- Are you able to connect with animals who are deceased and no longer in this earthly dimension?
+- I just asked this question: if AI were integrated into my pet chicken, "What is your favorite food?"
+- How it feels to fly. You remember your parents.
+- I ask them how they feel, for example I ask my dog how he feels and what he wants to do.
+- I will ask the animal that what do you think about us humans?
+- I want to know how bees build nests, how they identify directions and find their way home, and how ants carry food.
+- I would ask my cat if she's happy, if something bothers her, what she would change about her living situation.
+- What they think of their existence
+- If the cat acts annoying, I would want to know how to teach the cat differently.
+- What do you want to eat now?
+- have you been having a good life
+- Are you scared of us humans?
+- Are you happy? I'd like to know if your well-being is truly covered from your own perspective.
+- I would ask how i can improve their life
+- Dogs, cats, mosquitoes, colossal squid
+- I'd like to ask how they feel about human existence.
+- Are you happy? this is the only question
+- I would ask a cat how it keeps itself so clean all the time with minimal effort
+- First of all, clarify the animal's desire for communication. And only then about the specifics of their life, mood or some events.
+- I would ask them how do they view humans. What are their thoughts about us.
+- I would ask him what do you think of me, how I look and am?
+- I asked what they had to say about their life experiences and how their relationship with humans impacted their existence.
+- This is amazing if AI interpret with animals and can help in many ways to the researchers to understand their behaviour,their living style as well as their daily routine work and AI can do revolution in the changing of animals behaviour and their well beings.
+- How do you view humans, how do you view the human world, how do you view human masters
+- I would like to ask birds, cats and dogs, what it feels like to listen to their calls every day:)
+- How do you feel when you step out into the scary outside world?
+- I would ask my chicken “what do you need now?”
+- What is their opinion about their life and God.
+- Do you feel any pain anywhere?
+- How they live their day to day life
+- where do you go when you wonder off from home (talking about my cat)
+- What do you think about humans? What do you think about what we've done to the planet?
+- Do they actually have thoughts?
+- Do your spices trust humans?
+- How they see humans and what they think about them
+- what do you think about us humans?
+- How it feels und what can ich do for it
+- very much depends on what animal it is
+- I would ask any animal what their experience and perception about their life is and if they would change any aspect of it if given a chance.
+- What feelings do you experience in your daily life and what are your concerns about living in a community with fewer restrictions than ours?
+- How much about your culture is passed on from generation to generation
+- Can you please teach human beings how to be smart?
+- How do u feel about being an animal
+- I’d ask a dog: “What do you feel when you're waiting for your human to come home?” I’ve always wondered if it’s sadness, boredom, hope, or something we don’t fully understand. Knowing that could deepen how we care for and connect with them.
+- What thoughts and emotions run through your mind when you greet me in the morning?
+- How does it feel to be out there all by himself?
+- Ask a dog why they feel so faithful to humans and do they like/dislike cats?
+- I want to ask the animals a question, do you think the existence of humans threatens you?
+- It's difficult, but I imagine they would have to be simple questions, but I suppose it would depend on the species; I wouldn't ask the same thing to a cat as to a whale.
+- What is their daily emotion change
+- Do you love me? This is a question to my dogs
+- For my cats: what do you want me to do more or improve
+- The one question I would want to ask an animal if AI could interpret is the ways and methods to be used by humans for mutual survival in the planet. Neither human harm the animals and vice versa
+- How do you feel? Do you feel happy? Loved? Neglected?
+- I would love to know how they feel if any human hurts them and what they think in their mind abaout humans.
+- How do you like living with me in the apartment?
+- What does he think of human beings?
+- Birds; how does it feel to fly in the high skies?
+- what do you think about human beings?
+- What they think of humans
+- If I would have a pet whether it likes me or not
+- how good is your life and how do you percive us humans
+- I would like to know how they feel and their perception and view of the world.
+- Do they sense anything special
+- If my cat thinks that something is wrong or annoying
+- what they feel about us 'humans'
+- I want to ask my cat son, Aamon, "Do you love me, Son? Are you happy being with Mommy?"
+- Do you hate humans since we destroy your homes?
+- I would say that there are several, I already think of animals in zoos, I would ask them the question are they happy?
+- How is he? What does he want to do?
+- I would like to ask the cow if she likes to be used for milking .
+- I would ask a cockroach if it can feel pain.
+- What do they feel about Humans?
+- I would ask them about their culture
+- Where and how they would rather live.
+- Are you happy with your current life? What do you think of human beings?
+- How can we use your abilities to help humanity while increasing your quality of life
+- What do they feel about human beings?
+- How is your life going on?
+- What do you want, right now?
+- My question would be : What is your opinion of the world around you?
+- If it was an animal that I lived with or near I'd ask it if there is anything it wants me to do to help it or stop doing if it's something that annoys it.
+- the things that human do that irritates them
+- What do you think of humans?
+- Do you like to live like a vine?
+- How do you see me? And how do you feel around me?
+- I ask, what is your world like? How do you communicate with each other? Can you understand what we say?
+- I don't think I'd ask questions. What I'd really be interested in is learning about their ethology and how they communicate with each other, rather than using language in the human-to-animal sense. What I'd be interested in is understanding their ethology.
+- What is you concept of self
+- How has life been for them
+- What do you want that humans don’t understand?
+- What do they have to say about nature
+- What you think about human to do for you which make you happy
+- What is your name and where are you from.
+- Whats on your mind and how do you feel
+- How are you doing? Are you happy? What do you think of human society? What do you need?
+- How do they perceive humans and their day-to-day behaviours, and if they approve of how we do things?
+- If you strong or big enough? Would you hurt or eat a human?
+- i want to ask my dog how i am as his owner do you like living with me?
+- How do you feel at that exact moment?
+- i want to from my cat Casimir if he likes me or am i only the person who feeds him?!
+- i would like to ask how their life is
+- What is you perception of yourself within this world?
+- How are you and how do you feel now?
+- Just ask them if they feel good, happy, like playing with their friends, like playing with humans
+- I will ask what do you want to eat after showing him some eating items.
+- How are they feeling about the world.
+- What is there religion and how they communicate to understand each other.
+- How can we better protect them, and how can humans protect themselves when facing dangerous animals?
+- "How do you want to live?"
+- I would ask how does it see the world, and what does it feel.
+- How do they feel that they don't go for work?
+- What do you think the point of life is?
+- I would ask my dogs what they think and what their preferences are.
+- Do you have awareness or not?
+- What do you think about the people around you?
+- how do you feel about humans and what can we do to make your life even better
+- How do you really feel about humans?
+- how has life been for you
+- What are you thinking and are trying to rule the world
+- I want to ask my pet if she's living a good life and how I could make it better. Beyond that, I would love the ability to communicate with all animals and get their worldview. It would be endlessly fascinating!
+- I would love to ask an animal how it feels about us as the human species. Does the animal like us or does it only know us as a threat to its existence?
+- I would ask what makes them happy.
+- I would ask my cat the following question: What are you thinking when you look at me silently with your big eyes?
+- I'd love to ask "are you happy?"
+- I'd ask what they think about humans and religions.
+- What is the most important thing in your daily life?
+- How does it feel about humans.
+- I would ask my dog how she feels on some occasions when she really looks stressed, or why she has an antipathy to some specific humans or dogs. I would also ask why they are so obsessed with food when they know we provide regular meals every day.
+- What do you perceive as the most important thing in your daily life and why?
+- what advice do you have for humans?
+- Can animals understand the concept of life and death or do they have any philosophical thought?
+- How the animal feels and if anything is wrong or if they feel pain and sickness.
+- I would like to ask a bird how they see us while flying and is flying a enjoyable experience or not?
+- How can we all live together in peace and harmony is what I woukd want to know
+- What do you know about this universe and God?
+- Want to know what they are thinking, what worries they have, do they feel stressed? Are they happy every day? If the sun is bright, do they feel hot?
+- I should ask my cat how he feels about me. . . . . . . . . . . . .
+- How do you view us humans?
+- What does the world look like in your eyes? Do you like humans or are you afraid of them?
+- I would want to ask an animal, " what does the world feel like to you? "
+- Why do you choose companionship between different species
+- What does the world feel like to you
+- If I could ask an animal one question through AI, I would ask: “What do you need most from humans to live happily and safely?
+- I am interested in knowing their sense of history
+- Depends on the kind of the animal
+- What do humans look like to them ?
+- Are you satisfied with your life?
+- What do you think about humans ?
+- What do you think about humans?
+- For this, I would engage my pet in my activities ..maybe ask what are their opinion on something...or enquire if they like something i am offering and adjust to their liking. I feel this would make us bond more.
+- It would depend on animal I can speak to. probably I would ask about it's life experience
+- what is your opinion on humans
+- How does animals think about humans?
+- i would probably not have like a specific thing that i would like to ask them, so i really dont know
+- I would ask them about there age. what do they eat. did someone attacked them. why do they like some humans more than others?
+- how are you feeling today, what is your experience being the what you are
+- Love dogs, would try to understand their behaviour.
+- How do we view our current living environment and how do we view human beings and their behavior?
+- What do you think about humans?
+- How do you feel when you are around humans? Where do you usually rest at night?
+- i ask them are thay happy with humans
+- What is your favourite animal? And why is that?
+- How do they feel about the world and humans
+- What is the word in your people about how humans live on a day to day basis and what would you like us to do differently?
+- can animal fall in love with human?
+- How do you feel about me, Yoy love having me around? What can I do for you?
+- What is their favorite thing to do in a day
+- How can they interpret if a human being loves them or not?
+- What do you need from us to live well?
+- how worlds looks from your eyes
+- This question goes beyond basic communication—it invites the animal to describe its experience of life, using its own senses and instincts. It could reveal how a dog feels love, how a bird experiences flight, or how a deer senses danger.
+- What is your greatest joy and your greatest fear in your daily existence?
+- How they feel about me and to know when they are in need of anything
+- What is your purpose and your beliefs?
+- I'd like to ask my cat, "Do you love me?"
+- I would ask a cat why they love sitting in the boxes :)
+- What are they thinking about?
+
